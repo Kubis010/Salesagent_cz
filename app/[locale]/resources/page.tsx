@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { getTranslations, type Locale } from '@/lib/i18n'
+import { getTranslations, type Locale, type Translations } from '@/lib/i18n'
 
 export async function generateMetadata({
   params,
@@ -19,7 +19,7 @@ export default async function ResourcesPage({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params
-  const t = getTranslations(locale as Locale)
+  const t: Translations = getTranslations(locale as Locale)
   const base = `/${locale}`
 
   return (

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { getTranslations, type Locale } from '@/lib/i18n'
+import { getTranslations, type Locale, type Translations } from '@/lib/i18n'
 import HeroPipeline from '@/components/home/HeroPipeline'
 import RoiCalculator from '../../components/RoiCalculator'
 
@@ -10,7 +10,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>
 }): Promise<Metadata> {
   const { locale } = await params
-  const t = getTranslations(locale as Locale)
+  const t: Translations = getTranslations(locale as Locale)
   return {
     title: locale === 'cs'
       ? 'AI SDR jako outsourcovaná služba | SalesAgent.cz'
@@ -25,7 +25,7 @@ export default async function HomePage({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params
-  const t = getTranslations(locale as Locale)
+  const t: Translations = getTranslations(locale as Locale)
   const base = `/${locale}`
 
   return (

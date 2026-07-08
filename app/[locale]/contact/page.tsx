@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { getTranslations, type Locale } from '@/lib/i18n'
+import { getTranslations, type Locale, type Translations } from '@/lib/i18n'
 import ContactForm from '@/components/ContactForm'
 
 export async function generateMetadata({
@@ -46,7 +46,7 @@ export default async function ContactPage({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params
-  const t = getTranslations(locale as Locale)
+  const t: Translations = getTranslations(locale as Locale)
 
   return (
     <div style={{ paddingTop: '100px', paddingBottom: '80px', paddingLeft: '24px', paddingRight: '24px' }}>

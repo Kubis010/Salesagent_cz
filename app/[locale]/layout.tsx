@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import '../globals.css'
-import { locales, getTranslations, type Locale } from '@/lib/i18n'
+import { locales, getTranslations, type Locale, type Translations } from '@/lib/i18n'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 
@@ -119,7 +119,7 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params
-  const t = getTranslations(locale as Locale)
+  const t: Translations = getTranslations(locale as Locale)
 
   return (
     <html lang={locale}>
