@@ -86,7 +86,7 @@ export default async function PricingPage({
             marginBottom: '80px',
           }}
         >
-          {t.pricing.tiers.map((tier) => (
+          {t.pricing.tiers.map((tier: { name: string; monthlyLabel: string; price: string; priceNote: string; features: string[]; cta: string; highlight: boolean }) => (
             <div
               key={tier.name}
               style={{
@@ -155,7 +155,7 @@ export default async function PricingPage({
                   gap: '10px',
                 }}
               >
-                {tier.features.map((f) => (
+                {tier.features.map((f: string) => (
                   <li
                     key={f}
                     style={{
@@ -209,7 +209,7 @@ export default async function PricingPage({
             FAQ
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
-            {t.pricing.faq.map((item) => (
+            {t.pricing.faq.map((item: { q: string; a: string }) => (
               <div
                 key={item.q}
                 style={{

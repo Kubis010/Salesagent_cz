@@ -197,7 +197,7 @@ export default async function HomePage({
             gap: '20px',
           }}
         >
-          {t.howItWorks.steps.map((step, idx) => {
+          {t.howItWorks.steps.map((step: { number: string; title: string; body: string }, idx: number) => {
             const icons = [
               // 01 targeting
               <svg key="0" width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="var(--accent)" strokeWidth="1.6"/><circle cx="12" cy="12" r="4" stroke="var(--accent)" strokeWidth="1.6"/><circle cx="12" cy="12" r="1.5" fill="var(--accent)"/></svg>,
@@ -288,7 +288,7 @@ export default async function HomePage({
               gap: '24px',
             }}
           >
-            {t.forWhom.items.map((item) => (
+            {t.forWhom.items.map((item: { title: string; body: string }) => (
               <div
                 key={item.title}
                 style={{
@@ -382,7 +382,7 @@ export default async function HomePage({
                 Co konkrétně stavíme
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                {t.services.automation.examples.map((ex, i) => (
+                {t.services.automation.examples.map((ex: { label: string; icon: string }, i: number) => (
                   <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
                     <div style={{ width: '22px', height: '22px', borderRadius: '6px', background: 'rgba(34,160,107,0.12)', border: '1px solid rgba(34,160,107,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: '1px' }}>
                       {ex.icon === 'connect' && <svg width="11" height="11" viewBox="0 0 16 16" fill="none"><circle cx="3" cy="8" r="2" stroke="var(--green)" strokeWidth="1.5"/><circle cx="13" cy="8" r="2" stroke="var(--green)" strokeWidth="1.5"/><path d="M5 8h6" stroke="var(--green)" strokeWidth="1.5" strokeLinecap="round"/></svg>}
@@ -434,7 +434,7 @@ export default async function HomePage({
             </a>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', paddingTop: '4px' }}>
-            {t.services.agency.examples.map((ex, i) => (
+            {t.services.agency.examples.map((ex: { label: string; icon: string }, i: number) => (
               <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
                 <div style={{ width: '20px', height: '20px', borderRadius: '50%', background: 'rgba(255,107,74,0.08)', border: '1px solid rgba(255,107,74,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: '1px' }}>
                   <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1.5 4l1.5 1.5L6.5 2" stroke="var(--accent)" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/></svg>
@@ -476,7 +476,7 @@ export default async function HomePage({
               marginBottom: '20px',
             }}
           >
-            {t.references.items.map((r) => (
+            {t.references.items.map((r: { client: string; sector: string; value: string; result: string }) => (
               <div
                 key={r.client}
                 style={{
@@ -565,7 +565,7 @@ export default async function HomePage({
 
               {/* Credentials */}
               <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
-                {t.founder.credentials.map((c, i) => (
+                {t.founder.credentials.map((c: { value: string; label: string }, i: number) => (
                   <div
                     key={i}
                     style={{

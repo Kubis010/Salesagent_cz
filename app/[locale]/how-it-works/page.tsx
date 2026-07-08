@@ -43,7 +43,7 @@ export default async function AboutPage({
 
         {/* Sections */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
-          {t.about.sections.map((section, i) => (
+          {t.about.sections.map((section: { title: string; body: string }, i: number) => (
             <div
               key={i}
               style={{
