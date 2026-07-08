@@ -1,0 +1,50 @@
+# SalesAgent.cz
+
+> AI Sales Development Rep jako outsourcovaná služba pro B2B firmy v ČR/SK a mezinárodně.
+> AI Sales Development Rep as an outsourced service for B2B companies in CZ/SK and internationally.
+
+## Co je SalesAgent.cz / What is SalesAgent.cz
+
+SalesAgent.cz provides an outsourced AI SDR (Sales Development Representative) service. It is NOT a SaaS tool — it is a fully managed outbound sales system operated on behalf of the client.
+
+The system automatically:
+1. Finds target companies via Google Maps and business registries based on defined ICP (Ideal Customer Profile)
+2. Scrapes and analyses each prospect's website using AI
+3. Generates personalised cold emails for each prospect (not template-based — actual contextual copy)
+4. Sends outreach via email and LinkedIn (automated connection requests and follow-ups)
+
+## Distinction from sister product
+
+- **SalesAgent.cz** = active outbound AI system (finds and contacts leads)
+- **Sales Robots (salesrobots.cz)** = inbound conversion widgets for websites (chatbots, callback banners, video banners)
+
+These are complementary products, not competitors.
+
+## Target market
+
+- B2B companies in Czech Republic and Slovakia
+- International companies expanding into CZ/SK markets
+- Scale-ups needing systematic prospecting without hiring a full sales team
+
+## Pricing model
+
+Setup fee (one-time) + monthly running fee. Three tiers: Start (up to 200 contacts/month), Growth (up to 500 contacts/month, email + LinkedIn), Scale (unlimited, CRM integration).
+
+## Company
+
+Sales Robots s.r.o.
+IČO: 09586563
+Generála Šišky 2082/26, Praha – Modřany
+info@salesagent.cz
+
+## Pages
+
+- [Homepage (CS)](https://salesagent.cz/cs)
+- [Homepage (EN)](https://salesagent.cz/en)
+- [How it works (CS)](https://salesagent.cz/cs/how-it-works)
+- [How it works (EN)](https://salesagent.cz/en/how-it-works)
+- [Pricing (CS)](https://salesagent.cz/cs/pricing)
+- [Pricing (EN)](https://salesagent.cz/en/pricing)
+- [Contact (CS)](https://salesagent.cz/cs/contact)
+- [Contact (EN)](https://salesagent.cz/en/contact)
+- [Czech Business Register Guide](https://salesagent.cz/en/resources/czech-business-companies-register)

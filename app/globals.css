@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --bg: #0B1320;
+  --bg-2: #0e1726;
+  --bg-card: #131c2e;
+  --bg-card-hover: #1a2438;
+  --text: #F5F3EE;
+  --text-muted: #94A3B8;
+  --green: #22A06B;
+  --accent: #FF6B4A;
+  --border: rgba(255, 255, 255, 0.09);
+  --border-strong: rgba(255, 255, 255, 0.16);
+}
+
+/* Warm light band — re-scopes the design tokens so existing
+   components flip to dark-on-cream automatically inside it. */
+.section-light {
+  --bg: #F5F3EE;
+  --bg-2: #efece4;
+  --bg-card: #ffffff;
+  --bg-card-hover: #fbfaf7;
+  --text: #16110b;
+  --text-muted: #6a6358;
+  --border: rgba(20, 17, 11, 0.10);
+  --border-strong: rgba(20, 17, 11, 0.20);
+  background: var(--bg);
+  color: var(--text);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(900px 600px at 78% -5%, rgba(255, 107, 74, 0.10), transparent 60%),
+    radial-gradient(700px 500px at 8% 8%, rgba(34, 160, 107, 0.07), transparent 55%),
+    linear-gradient(180deg, #0B1320 0%, #0c1422 100%);
+  background-attachment: fixed;
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Faint dot grid — adds texture to dark areas */
+.dot-grid {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+/* Soft accent glow blob, place absolutely behind content */
+.glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-mono-data {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Live indicator pulse */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(0.85); }
+}
+
+@keyframes flow-right {
+  0% { transform: translateX(-100%); opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { transform: translateX(100%); opacity: 0; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-8px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.animate-pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease both;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.4s ease both;
+}
+
+/* Pipeline connector line animation */
+@keyframes connector-fill {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+.connector-fill {
+  animation: connector-fill 0.8s ease forwards;
+}
+
+/* Hover utilities for server components */
+.link-muted {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.link-muted:hover { color: var(--text); }
+
+.card-hover {
+  transition: border-color 0.2s;
+}
+.card-hover:hover { border-color: var(--border-strong) !important; }
+
+.btn-accent {
+  background-color: var(--accent);
+  color: #0B1320;
+  transition: opacity 0.2s;
+}
+.btn-accent:hover { opacity: 0.88; }
+
+.btn-outline {
+  border: 1px solid var(--border);
+  color: var(--text);
+  transition: border-color 0.2s;
+}
+.btn-outline:hover { border-color: var(--border-strong); }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 3px;
+}
