@@ -8,8 +8,35 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>
 }): Promise<Metadata> {
   const { locale } = await params
+  const cs = locale === 'cs'
   return {
-    title: locale === 'cs' ? 'Jak to funguje — AI SDR' : 'How it works — AI SDR',
+    title: cs ? 'Jak to funguje — AI SDR' : 'How it works — AI SDR',
+    description: cs
+      ? 'AI SDR systém vyhledá firmy, prostuduje jejich weby a odešle personalizované e-maily i LinkedIn zprávy. Přečtěte si, jak celý proces funguje krok za krokem.'
+      : 'The AI SDR system finds companies, reads their websites and sends personalised emails and LinkedIn messages. See how the process works step by step.',
+    alternates: {
+      canonical: `https://salesagent.cz/${locale}/how-it-works`,
+      languages: {
+        cs: 'https://salesagent.cz/cs/how-it-works',
+        en: 'https://salesagent.cz/en/how-it-works',
+        'x-default': 'https://salesagent.cz/cs/how-it-works',
+      },
+    },
+    openGraph: {
+      type: 'website',
+      locale: cs ? 'cs_CZ' : 'en_US',
+      url: `https://salesagent.cz/${locale}/how-it-works`,
+      siteName: 'SalesAgent.cz',
+      title: cs ? 'Jak to funguje — AI SDR | SalesAgent.cz' : 'How it works — AI SDR | SalesAgent.cz',
+      description: cs
+        ? 'AI systém pro outbound B2B prodej — krok za krokem.'
+        : 'AI system for outbound B2B sales — step by step.',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: cs ? 'Jak to funguje — AI SDR | SalesAgent.cz' : 'How it works — AI SDR | SalesAgent.cz',
+      description: cs ? 'AI systém pro outbound B2B prodej — krok za krokem.' : 'AI system for outbound B2B sales — step by step.',
+    },
   }
 }
 

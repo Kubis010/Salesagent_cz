@@ -8,8 +8,35 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>
 }): Promise<Metadata> {
   const { locale } = await params
+  const cs = locale === 'cs'
   return {
-    title: locale === 'cs' ? 'Kontakt — AI SDR' : 'Contact — AI SDR',
+    title: cs ? 'Kontakt — AI SDR' : 'Contact — AI SDR',
+    description: cs
+      ? 'Domluvte si nezávazný 30minutový hovor. Projdeme váš trh a ukážeme, jak by AI outreach vypadal konkrétně u vás.'
+      : 'Book a free 30-minute call. We will walk through your market and show what AI outreach would look like for your business.',
+    alternates: {
+      canonical: `https://salesagent.cz/${locale}/contact`,
+      languages: {
+        cs: 'https://salesagent.cz/cs/contact',
+        en: 'https://salesagent.cz/en/contact',
+        'x-default': 'https://salesagent.cz/cs/contact',
+      },
+    },
+    openGraph: {
+      type: 'website',
+      locale: cs ? 'cs_CZ' : 'en_US',
+      url: `https://salesagent.cz/${locale}/contact`,
+      siteName: 'SalesAgent.cz',
+      title: cs ? 'Kontakt — SalesAgent.cz' : 'Contact — SalesAgent.cz',
+      description: cs
+        ? 'Domluvte si 30minutový hovor zdarma.'
+        : 'Book a free 30-minute call.',
+    },
+    twitter: {
+      card: 'summary',
+      title: cs ? 'Kontakt — SalesAgent.cz' : 'Contact — SalesAgent.cz',
+      description: cs ? 'Domluvte si 30minutový hovor zdarma.' : 'Book a free 30-minute call.',
+    },
   }
 }
 

@@ -60,6 +60,15 @@ export async function generateMetadata({
         'x-default': 'https://salesagent.cz/cs',
       },
     },
+    twitter: {
+      card: 'summary_large_image',
+      title: isCz
+        ? 'SalesAgent.cz — AI SDR jako outsourcovaná služba'
+        : 'SalesAgent.cz — AI SDR as an outsourced service',
+      description: isCz
+        ? 'AI Sales Development Rep pro B2B firmy. Outbound na autopilotu.'
+        : 'AI Sales Development Rep for B2B companies. Outbound on autopilot.',
+    },
     other: {
       'llms-txt': 'https://salesagent.cz/llms.txt',
     },
@@ -71,7 +80,7 @@ const organizationSchema = {
   '@type': 'Organization',
   name: 'Sales Robots s.r.o.',
   url: 'https://salesagent.cz',
-  logo: 'https://salesagent.cz/logo.png',
+  logo: 'https://salesagent.cz/logo.svg',
   contactPoint: {
     '@type': 'ContactPoint',
     email: 'info@salesagent.cz',

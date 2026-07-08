@@ -16,6 +16,14 @@ const pages = [
   },
 ]
 
+const blogPosts = [
+  { slug: '', priority: 0.8, changeFrequency: 'weekly' as const },
+  { slug: '/sales-automation-ai-b2b-outreach', priority: 0.75, changeFrequency: 'yearly' as const },
+  { slug: '/how-to-implement-sales-automation', priority: 0.75, changeFrequency: 'yearly' as const },
+  { slug: '/sales-agent-definition-and-what-he-do', priority: 0.7, changeFrequency: 'yearly' as const },
+  { slug: '/how-to-expand-your-business-and-sales-to-the-european-union', priority: 0.7, changeFrequency: 'yearly' as const },
+]
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = []
 
@@ -33,6 +41,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
       })
     }
+  }
+
+  for (const post of blogPosts) {
+    entries.push({
+      url: `${BASE_URL}/blog${post.slug}`,
+      lastModified: new Date(),
+      changeFrequency: post.changeFrequency,
+      priority: post.priority,
+    })
   }
 
   return entries

@@ -8,8 +8,37 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>
 }): Promise<Metadata> {
   const { locale } = await params
+  const cs = locale === 'cs'
   return {
-    title: locale === 'cs' ? 'Ceník — AI SDR' : 'Pricing — AI SDR',
+    title: cs ? 'Ceník — AI SDR' : 'Pricing — AI SDR',
+    description: cs
+      ? 'Tři tarify AI SDR služby — Start, Grow od 5 900 Kč, Scale. Žádné roční závazky, žádné skryté poplatky. Outsourcovaný outbound pro B2B firmy.'
+      : 'Three tiers for AI SDR service — Start, Grow from €239, Scale custom. No annual lock-in, no hidden fees. Outsourced outbound for B2B companies.',
+    alternates: {
+      canonical: `https://salesagent.cz/${locale}/pricing`,
+      languages: {
+        cs: 'https://salesagent.cz/cs/pricing',
+        en: 'https://salesagent.cz/en/pricing',
+        'x-default': 'https://salesagent.cz/cs/pricing',
+      },
+    },
+    openGraph: {
+      type: 'website',
+      locale: cs ? 'cs_CZ' : 'en_US',
+      url: `https://salesagent.cz/${locale}/pricing`,
+      siteName: 'SalesAgent.cz',
+      title: cs ? 'Ceník — AI SDR | SalesAgent.cz' : 'Pricing — AI SDR | SalesAgent.cz',
+      description: cs
+        ? 'Tři tarify outsourcovaného AI SDR. Grow od 5 900 Kč / měsíc.'
+        : 'Three tiers for outsourced AI SDR. Grow from €239 / month.',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: cs ? 'Ceník — AI SDR | SalesAgent.cz' : 'Pricing — AI SDR | SalesAgent.cz',
+      description: cs
+        ? 'Outsourcovaný AI SDR od 5 900 Kč / měsíc.'
+        : 'Outsourced AI SDR from €239 / month.',
+    },
   }
 }
 
@@ -22,7 +51,22 @@ export default async function PricingPage({
   const t = getTranslations(locale as Locale)
   const base = `/${locale}`
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: t.pricing.faq.map((item: { q: string; a: string }) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: { '@type': 'Answer', text: item.a },
+    })),
+  }
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
     <div style={{ paddingTop: '100px', paddingBottom: '80px', paddingLeft: '24px', paddingRight: '24px' }}>
       <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
 
@@ -230,5 +274,6 @@ export default async function PricingPage({
         </div>
       </div>
     </div>
+    </>
   )
 }

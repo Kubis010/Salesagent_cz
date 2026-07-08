@@ -28,7 +28,12 @@ These are complementary products, not competitors.
 
 ## Pricing model
 
-Setup fee (one-time) + monthly running fee. Three tiers: Start (up to 200 contacts/month), Growth (up to 500 contacts/month, email + LinkedIn), Scale (unlimited, CRM integration).
+Setup fee (one-time) + monthly subscription. Three tiers:
+- **Start** — up to 200 companies/month, email outreach
+- **Grow** — up to 500 companies/month, email + LinkedIn outreach (5 900 Kč/month in CZK; €239/month in EUR)
+- **Scale** — unlimited, CRM integration, custom pricing
+
+No annual lock-in. Pricing is per month with no long-term commitment required.
 
 ## Company
 
@@ -48,3 +53,11 @@ info@salesagent.cz
 - [Contact (CS)](https://salesagent.cz/cs/contact)
 - [Contact (EN)](https://salesagent.cz/en/contact)
 - [Czech Business Register Guide](https://salesagent.cz/en/resources/czech-business-companies-register)
+
+## Blog
+
+- [Blog Index](https://salesagent.cz/blog)
+- [Sales Automation: How AI Is Changing B2B Outreach](https://salesagent.cz/blog/sales-automation-ai-b2b-outreach)
+- [How to Implement Sales Automation in Your Company](https://salesagent.cz/blog/how-to-implement-sales-automation)
+- [Sales Agent Definition and What He Does](https://salesagent.cz/blog/sales-agent-definition-and-what-he-do)
+- [How to Expand Your Business and Sales to the European Union](https://salesagent.cz/blog/how-to-expand-your-business-and-sales-to-the-european-union)
