@@ -28,7 +28,7 @@ export default function ContactForm({ t }: { t: Translations }) {
     formData.append('form-name', 'contact')
 
     try {
-      await fetch('/', {
+      await fetch('/contact.html', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams(formData as any).toString(),

@@ -269,7 +269,7 @@ export const cs = {
       email: 'Pracovní e-mail',
       message: 'Co řešíte / koho chcete oslovovat',
       submit: 'Odeslat',
-      success: 'Zpráva odešla. Ozvu se do 24 hodin.',
+      success: 'Zpráva odešla. Ozveme se do 24 hodin.',
       error: 'Něco se nepovedlo. Zkuste to prosím znovu.',
     },
     info: {
