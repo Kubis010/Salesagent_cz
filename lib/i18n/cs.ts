@@ -179,7 +179,7 @@ export const cs = {
       {
         name: 'Grow',
         monthlyLabel: 'měsíčně bez DPH',
-        price: 'od 5 600 Kč',
+        price: 'od 5 900 Kč',
         priceNote: 'Včetně LinkedIn automatizace',
         features: [
           'Až 500 oslovených firem měsíčně',

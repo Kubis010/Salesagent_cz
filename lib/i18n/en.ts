@@ -167,7 +167,7 @@ export const en: Translations = {
       {
         name: 'Start',
         monthlyLabel: 'per month (excl. VAT)',
-        price: 'from 3,600 CZK',
+        price: 'from €149',
         priceNote: 'Get in touch',
         features: [
           'Up to 200 companies reached / month',
@@ -181,7 +181,7 @@ export const en: Translations = {
       {
         name: 'Grow',
         monthlyLabel: 'per month (excl. VAT)',
-        price: 'from 5,600 CZK',
+        price: 'from €239',
         priceNote: 'Includes LinkedIn automation',
         features: [
           'Up to 500 companies reached / month',
@@ -196,7 +196,7 @@ export const en: Translations = {
       {
         name: 'Scale',
         monthlyLabel: 'per month (excl. VAT)',
-        price: 'from 9,900 CZK',
+        price: 'from €449',
         priceNote: 'Everything included',
         features: [
           'No cap on companies',

@@ -33,14 +33,29 @@ export default function Footer({ locale, t }: FooterProps) {
         <div>
           <div
             style={{
-              fontFamily: 'Space Grotesk, sans-serif',
-              fontWeight: 700,
-              fontSize: '18px',
-              letterSpacing: '-0.02em',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '10px',
               marginBottom: '8px',
             }}
           >
-            SalesAgent<span style={{ color: 'var(--accent)' }}>.cz</span>
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="32" height="32" rx="7" fill="#FF6B4A"/>
+              <path d="M13 12.5V10.5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+              <rect x="8" y="12.5" width="16" height="11" rx="2.5" fill="white"/>
+              <rect x="8" y="16.6" width="16" height="1.5" fill="#FF6B4A"/>
+              <rect x="14.5" y="15.6" width="3" height="3.4" rx="0.8" fill="#FF6B4A"/>
+            </svg>
+            <span
+              style={{
+                fontFamily: 'Space Grotesk, sans-serif',
+                fontWeight: 700,
+                fontSize: '18px',
+                letterSpacing: '-0.02em',
+              }}
+            >
+              SalesAgent<span style={{ color: 'var(--accent)' }}>.cz</span>
+            </span>
           </div>
           <p
             style={{
@@ -115,6 +130,23 @@ export default function Footer({ locale, t }: FooterProps) {
             Resources
           </div>
           <nav style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            <Link
+              href="/blog"
+              style={{
+                fontSize: '14px',
+                color: 'var(--text-muted)',
+                textDecoration: 'none',
+                transition: 'color 0.2s',
+              }}
+              onMouseEnter={(e) =>
+                ((e.target as HTMLElement).style.color = 'var(--text)')
+              }
+              onMouseLeave={(e) =>
+                ((e.target as HTMLElement).style.color = 'var(--text-muted)')
+              }
+            >
+              Blog
+            </Link>
             <Link
               href={`${base}/resources/czech-business-companies-register`}
               style={{

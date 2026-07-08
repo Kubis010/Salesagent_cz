@@ -13,6 +13,14 @@ export function middleware(request: NextRequest) {
     return NextResponse.next()
   }
 
+  // Skip paths that must keep their exact URLs for SEO/GSC
+  if (
+    pathname.startsWith('/blog') ||
+    pathname.startsWith('/czech-business-companies-register')
+  ) {
+    return NextResponse.next()
+  }
+
   // Check if pathname already has a locale
   const hasLocale = locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`

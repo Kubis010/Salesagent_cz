@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getTranslations, type Locale } from '@/lib/i18n'
 import HeroPipeline from '@/components/home/HeroPipeline'
+import RoiCalculator from '@/components/RoiCalculator'
 
 export async function generateMetadata({
   params,
@@ -636,6 +637,9 @@ export default async function HomePage({
           </p>
         </div>
       </section>
+
+      {/* ── ROI CALCULATOR ── */}
+      <RoiCalculator locale={locale} />
 
       {/* ── CTA ── */}
       <section

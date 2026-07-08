@@ -18,6 +18,7 @@ export default function Header({ locale, t }: HeaderProps) {
     { href: `${base}/how-it-works`, label: t.nav.howItWorks },
     { href: `${base}/pricing`, label: t.nav.pricing },
     { href: `${base}/about`, label: t.nav.about },
+    { href: '/blog', label: 'Blog' },
     { href: `${base}/contact`, label: t.nav.contact },
   ]
 
@@ -50,15 +51,30 @@ export default function Header({ locale, t }: HeaderProps) {
         <Link
           href={`/${locale}`}
           style={{
-            fontFamily: 'Space Grotesk, sans-serif',
-            fontWeight: 700,
-            fontSize: '18px',
-            color: 'var(--text)',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '10px',
             textDecoration: 'none',
-            letterSpacing: '-0.02em',
           }}
         >
-          SalesAgent<span style={{ color: 'var(--accent)' }}>.cz</span>
+          <svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="32" height="32" rx="7" fill="#FF6B4A"/>
+            <path d="M13 12.5V10.5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+            <rect x="8" y="12.5" width="16" height="11" rx="2.5" fill="white"/>
+            <rect x="8" y="16.6" width="16" height="1.5" fill="#FF6B4A"/>
+            <rect x="14.5" y="15.6" width="3" height="3.4" rx="0.8" fill="#FF6B4A"/>
+          </svg>
+          <span
+            style={{
+              fontFamily: 'Space Grotesk, sans-serif',
+              fontWeight: 700,
+              fontSize: '18px',
+              color: 'var(--text)',
+              letterSpacing: '-0.02em',
+            }}
+          >
+            SalesAgent<span style={{ color: 'var(--accent)' }}>.cz</span>
+          </span>
         </Link>
 
         {/* Desktop nav */}
