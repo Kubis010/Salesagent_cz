@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import '../globals.css'
 import { locales, getTranslations, type Locale, type Translations } from '@/lib/i18n'
 import Header from '@/components/layout/Header'
@@ -136,6 +137,17 @@ export default async function LocaleLayout({
         <Header locale={locale as Locale} t={t} />
         <main>{children}</main>
         <Footer locale={locale as Locale} t={t} />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-TL9MFZ92P0"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-TL9MFZ92P0');`}
+        </Script>
+        <Script
+          src="https://towhdopfkjwvbfobvoli.supabase.co/functions/v1/contextual-loader?site=90f638ef-eab0-434d-85aa-7dfe88f6b44a"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )
