@@ -169,7 +169,7 @@ export default function Page() {
               SalesAgent.cz runs the full prospecting and outreach process as a managed service — we handle targeting, research, personalised messaging and follow-up. You get qualified replies, we handle everything before that.
             </p>
             <a
-              href="https://bookings.cloud.microsoft/bookwithme/user/480895b1333541dc94be634dd588fada%40salesagent.cz"
+              href="https://outlook.office.com/bookwithme/user/480895b1333541dc94be634dd588fada@salesagent.cz/meetingtype/jwdxCRPBn0CvHccZ7eLwAg2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile"
               target="_blank"
               rel="noopener noreferrer"
               style={{

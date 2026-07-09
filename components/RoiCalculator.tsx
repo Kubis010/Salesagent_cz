@@ -3,7 +3,7 @@
 import { useState } from 'react'
 
 const BOOKING_URL =
-  'https://bookings.cloud.microsoft/bookwithme/user/480895b1333541dc94be634dd588fada%40salesagent.cz'
+  'https://outlook.office.com/bookwithme/user/480895b1333541dc94be634dd588fada@salesagent.cz/meetingtype/jwdxCRPBn0CvHccZ7eLwAg2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile'
 
 const SERVICE_COST_CZK = 5900
 const TOTAL_COMPANIES = 1000

@@ -139,7 +139,7 @@ export default function Header({ locale, t }: HeaderProps) {
 
           {/* CTA */}
           <a
-            href="https://bookings.cloud.microsoft/bookwithme/user/480895b1333541dc94be634dd588fada%40salesagent.cz"
+            href="https://outlook.office.com/bookwithme/user/480895b1333541dc94be634dd588fada@salesagent.cz/meetingtype/jwdxCRPBn0CvHccZ7eLwAg2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile"
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -238,7 +238,7 @@ export default function Header({ locale, t }: HeaderProps) {
             </Link>
           </div>
           <a
-            href="https://bookings.cloud.microsoft/bookwithme/user/480895b1333541dc94be634dd588fada%40salesagent.cz"
+            href="https://outlook.office.com/bookwithme/user/480895b1333541dc94be634dd588fada@salesagent.cz/meetingtype/jwdxCRPBn0CvHccZ7eLwAg2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setMenuOpen(false)}
