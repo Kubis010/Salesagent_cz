@@ -257,12 +257,20 @@ export default function Footer({ locale, t }: FooterProps) {
         <p style={{ fontSize: '12px', color: 'var(--text-muted)' }}>
           © {year} Sales Robots s.r.o. {t.footer.rights}
         </p>
-        <Link
-          href={locale === 'cs' ? '/en' : '/cs'}
-          style={{ fontSize: '12px', color: 'var(--text-muted)', textDecoration: 'none' }}
-        >
-          {locale === 'cs' ? 'English' : 'Česky'}
-        </Link>
+          <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
+            <Link
+              href={`/${locale}/privacy`}
+              style={{ fontSize: '12px', color: 'var(--text-muted)', textDecoration: 'none' }}
+            >
+              {t.footer.links.privacy}
+            </Link>
+            <Link
+              href={locale === 'cs' ? '/en' : '/cs'}
+              style={{ fontSize: '12px', color: 'var(--text-muted)', textDecoration: 'none' }}
+            >
+              {locale === 'cs' ? 'English' : 'Česky'}
+            </Link>
+          </div>
       </div>
     </footer>
   )
