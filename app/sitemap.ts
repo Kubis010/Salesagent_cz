@@ -24,6 +24,10 @@ const blogPosts = [
   { slug: '/sales-agent-definition-and-what-he-do', priority: 0.7, changeFrequency: 'yearly' as const },
   { slug: '/how-to-expand-your-business-and-sales-to-the-european-union', priority: 0.7, changeFrequency: 'yearly' as const },
   { slug: '/jak-personalizovat-cold-emaily-ai', priority: 0.8, changeFrequency: 'monthly' as const },
+  { slug: '/automatizace-prodeje-jak-ai-meni-b2b-osloveni', priority: 0.8, changeFrequency: 'monthly' as const },
+  { slug: '/jak-zavest-automatizaci-prodeje-ve-firme', priority: 0.8, changeFrequency: 'monthly' as const },
+  { slug: '/obchodni-zastupce-definice-a-co-dela', priority: 0.75, changeFrequency: 'monthly' as const },
+  { slug: '/jak-expandovat-s-obchodem-do-eu', priority: 0.75, changeFrequency: 'monthly' as const },
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -16,6 +16,34 @@ const posts = [
       'Automatický cold mailing nemusí znamenat spam. Jak AI personalizuje cold emaily na základě webu každé firmy a proč to generuje víc odpovědí než šablony.',
   },
   {
+    href: '/blog/jak-zavest-automatizaci-prodeje-ve-firme',
+    title: 'Jak zavést automatizaci prodeje ve firmě',
+    date: '12. února 2025',
+    description:
+      'Praktický návod krok za krokem — od definice ideálního zákazníka po měření výsledků. Co nastavit před spuštěním a jak se vyhnout nejčastějším chybám.',
+  },
+  {
+    href: '/blog/automatizace-prodeje-jak-ai-meni-b2b-osloveni',
+    title: 'Automatizace prodeje: Jak AI mění B2B oslovení',
+    date: '5. února 2025',
+    description:
+      'AI automatizace B2B obchodu nahrazuje rutinní prospekting. Co se ve vašem pipeline skutečně změní — a co to znamená pro váš obchodní tým.',
+  },
+  {
+    href: '/blog/jak-expandovat-s-obchodem-do-eu',
+    title: 'Jak expandovat s obchodem do Evropské unie',
+    date: '15. ledna 2025',
+    description:
+      'Praktický průvodce expanzí B2B obchodu do EU — průzkum trhu, právní rámec, lokalizace, strategie oslovení a jak najít správný vstupní bod.',
+  },
+  {
+    href: '/blog/obchodni-zastupce-definice-a-co-dela',
+    title: 'Obchodní zástupce — definice a co vlastně dělá?',
+    date: '9. ledna 2025',
+    description:
+      'Co obchodní zástupce skutečně dělá den co den, jaké dovednosti role vyžaduje a jak se liší od běžného obchodníka.',
+  },
+  {
     href: '/blog/how-to-implement-sales-automation',
     title: 'How to Implement Sales Automation in Your Company',
     date: '12 February 2025',
