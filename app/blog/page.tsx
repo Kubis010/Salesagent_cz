@@ -9,6 +9,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    href: '/blog/jak-personalizovat-cold-emaily-ai',
+    title: 'Jak personalizovat cold emaily pomocí AI — průvodce pro B2B firmy',
+    date: '13. července 2026',
+    description:
+      'Automatický cold mailing nemusí znamenat spam. Jak AI personalizuje cold emaily na základě webu každé firmy a proč to generuje víc odpovědí než šablony.',
+  },
+  {
     href: '/blog/how-to-implement-sales-automation',
     title: 'How to Implement Sales Automation in Your Company',
     date: '12 February 2025',

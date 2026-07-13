@@ -10,10 +10,10 @@ export async function generateMetadata({
   const { locale } = await params
   const cs = locale === 'cs'
   return {
-    title: cs ? 'Ceník — AI SDR' : 'Pricing — AI SDR',
+    title: cs ? 'Ceník — AI obchodní zástupce | Automatizace prodeje' : 'Pricing — AI Sales Agent | Sales Automation',
     description: cs
-      ? 'Tři tarify AI SDR služby — Start, Grow od 5 900 Kč, Scale. Žádné roční závazky, žádné skryté poplatky. Outsourcovaný outbound pro B2B firmy.'
-      : 'Three tiers for AI SDR service — Start, Grow from €239, Scale custom. No annual lock-in, no hidden fees. Outsourced outbound for B2B companies.',
+      ? 'Ceník AI obchodního zástupce — automatický cold mailing a vyhledávání B2B kontaktů. Start, Grow od 5 900 Kč, Scale. Nástroj na automatizaci prodeje bez ročních závazků.'
+      : 'AI sales agent pricing — automated cold email and B2B contact prospecting. Start, Grow from €239, Scale custom. Sales automation tool with no annual lock-in.',
     alternates: {
       canonical: `https://salesagent.cz/${locale}/pricing`,
       languages: {
@@ -27,17 +27,17 @@ export async function generateMetadata({
       locale: cs ? 'cs_CZ' : 'en_US',
       url: `https://salesagent.cz/${locale}/pricing`,
       siteName: 'SalesAgent.cz',
-      title: cs ? 'Ceník — AI SDR | SalesAgent.cz' : 'Pricing — AI SDR | SalesAgent.cz',
+      title: cs ? 'Ceník — AI obchodní zástupce | SalesAgent.cz' : 'Pricing — AI Sales Agent | SalesAgent.cz',
       description: cs
-        ? 'Tři tarify outsourcovaného AI SDR. Grow od 5 900 Kč / měsíc.'
-        : 'Three tiers for outsourced AI SDR. Grow from €239 / month.',
+        ? 'Automatizace B2B prodeje od 5 900 Kč / měsíc. AI cold mailing a vyhledávání kontaktů.'
+        : 'B2B sales automation from €239 / month. AI cold email and contact prospecting.',
     },
     twitter: {
       card: 'summary_large_image',
-      title: cs ? 'Ceník — AI SDR | SalesAgent.cz' : 'Pricing — AI SDR | SalesAgent.cz',
+      title: cs ? 'Ceník — AI obchodní zástupce | SalesAgent.cz' : 'Pricing — AI Sales Agent | SalesAgent.cz',
       description: cs
-        ? 'Outsourcovaný AI SDR od 5 900 Kč / měsíc.'
-        : 'Outsourced AI SDR from €239 / month.',
+        ? 'Automatizace B2B prodeje od 5 900 Kč / měsíc.'
+        : 'B2B sales automation from €239 / month.',
     },
   }
 }

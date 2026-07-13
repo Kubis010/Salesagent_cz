@@ -20,27 +20,27 @@ export async function generateMetadata({
   return {
     title: {
       default: isCz
-        ? 'SalesAgent.cz — AI SDR jako outsourcovaná služba'
-        : 'SalesAgent.cz — AI SDR as an outsourced service',
+        ? 'SalesAgent.cz — AI obchodní zástupce | Automatizace B2B prodeje'
+        : 'SalesAgent.cz — AI Sales Agent | B2B Sales Automation',
       template: '%s | SalesAgent.cz',
     },
     description: isCz
-      ? 'AI Sales Development Rep, který sám vyhledá firmy, prostuduje jejich web a odešle personalizovaný email. Outsourcovaný outbound systém pro B2B firmy.'
-      : 'AI Sales Development Rep that finds companies, reads their website and sends personalised emails. Outsourced outbound system for B2B companies.',
+      ? 'AI obchodní zástupce, který automaticky vyhledá B2B kontakty, prostuduje web každé firmy a odešle personalizovaný cold email i LinkedIn zprávu. Nástroj na automatizaci prodeje pro B2B firmy — bez náboru, bez databází.'
+      : 'AI sales agent that automatically finds B2B contacts, reads each company website and sends personalised cold emails and LinkedIn messages. Sales automation tool for B2B companies — no hiring, no databases.',
     keywords: isCz
-      ? ['AI SDR', 'AI obchodník', 'automatizovaný outreach', 'generování leadů', 'cold email', 'LinkedIn automatizace']
-      : ['AI SDR', 'AI sales', 'automated outreach', 'lead generation', 'cold email', 'LinkedIn automation'],
+      ? ['AI obchodní zástupce', 'automatizace B2B obchodu', 'automatický cold mailing', 'AI generování leadů', 'automatické vyhledávání B2B kontaktů', 'personalizovaný cold email', 'nástroje na automatizaci prodeje', 'AI prodejní asistent', 'cold email automatizace', 'LinkedIn automatizace']
+      : ['AI sales agent', 'B2B sales automation', 'automated cold email', 'AI lead generation', 'automated B2B prospecting', 'personalised cold email', 'sales automation tools', 'LinkedIn automation'],
     openGraph: {
       type: 'website',
       locale: isCz ? 'cs_CZ' : 'en_US',
       url: `https://salesagent.cz/${locale}`,
       siteName: 'SalesAgent.cz',
       title: isCz
-        ? 'SalesAgent.cz — AI SDR jako outsourcovaná služba'
-        : 'SalesAgent.cz — AI SDR as an outsourced service',
+        ? 'SalesAgent.cz — AI obchodní zástupce | Automatizace B2B prodeje'
+        : 'SalesAgent.cz — AI Sales Agent | B2B Sales Automation',
       description: isCz
-        ? 'AI Sales Development Rep pro B2B firmy. Outbound na autopilotu.'
-        : 'AI Sales Development Rep for B2B companies. Outbound on autopilot.',
+        ? 'AI obchodní zástupce pro B2B firmy. Automatický cold mailing a vyhledávání kontaktů.'
+        : 'AI sales agent for B2B companies. Automated cold email and contact prospecting.',
     },
     robots: {
       index: true,
@@ -64,11 +64,11 @@ export async function generateMetadata({
     twitter: {
       card: 'summary_large_image',
       title: isCz
-        ? 'SalesAgent.cz — AI SDR jako outsourcovaná služba'
-        : 'SalesAgent.cz — AI SDR as an outsourced service',
+        ? 'SalesAgent.cz — AI obchodní zástupce | Automatizace B2B prodeje'
+        : 'SalesAgent.cz — AI Sales Agent | B2B Sales Automation',
       description: isCz
-        ? 'AI Sales Development Rep pro B2B firmy. Outbound na autopilotu.'
-        : 'AI Sales Development Rep for B2B companies. Outbound on autopilot.',
+        ? 'AI obchodní zástupce pro B2B firmy. Automatický cold mailing a vyhledávání kontaktů.'
+        : 'AI sales agent for B2B companies. Automated cold email and contact prospecting.',
     },
     other: {
       'llms-txt': 'https://salesagent.cz/llms.txt',
@@ -100,11 +100,12 @@ const organizationSchema = {
 const serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
-  name: 'AI SDR — Outsourced AI Sales Development',
+  name: 'AI obchodní zástupce — automatizace B2B prodeje',
+  alternateName: 'AI Sales Agent — B2B Sales Automation',
   provider: { '@type': 'Organization', name: 'Sales Robots s.r.o.' },
-  serviceType: 'AI Sales Outreach',
+  serviceType: 'Automatizace B2B obchodu',
   description:
-    'Fully managed AI Sales Development Representative service. The system finds target companies, analyses their websites, generates personalised cold emails, and sends LinkedIn outreach — all automatically.',
+    'AI obchodní zástupce jako outsourcovaná služba. Systém automaticky vyhledá B2B kontakty, prostuduje web každé firmy, napíše personalizovaný cold email a odešle LinkedIn zprávu. Nástroj na automatizaci prodeje bez náboru obchodníků.',
   areaServed: ['CZ', 'SK', 'Internationally'],
   availableChannel: {
     '@type': 'ServiceChannel',

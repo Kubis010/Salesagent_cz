@@ -10,10 +10,10 @@ export async function generateMetadata({
   const { locale } = await params
   const cs = locale === 'cs'
   return {
-    title: cs ? 'Jak to funguje — AI SDR' : 'How it works — AI SDR',
+    title: cs ? 'Jak to funguje — AI obchodní zástupce' : 'How it works — AI Sales Agent',
     description: cs
-      ? 'AI SDR systém vyhledá firmy, prostuduje jejich weby a odešle personalizované e-maily i LinkedIn zprávy. Přečtěte si, jak celý proces funguje krok za krokem.'
-      : 'The AI SDR system finds companies, reads their websites and sends personalised emails and LinkedIn messages. See how the process works step by step.',
+      ? 'Jak funguje automatizace B2B obchodu: AI obchodník vyhledá firmy, prostuduje jejich weby a odešle personalizovaný cold email i LinkedIn zprávu. Celý proces krok za krokem.'
+      : 'How B2B sales automation works: AI sales agent finds companies, reads their websites and sends personalised cold emails and LinkedIn messages. Step by step.',
     alternates: {
       canonical: `https://salesagent.cz/${locale}/how-it-works`,
       languages: {
@@ -27,15 +27,15 @@ export async function generateMetadata({
       locale: cs ? 'cs_CZ' : 'en_US',
       url: `https://salesagent.cz/${locale}/how-it-works`,
       siteName: 'SalesAgent.cz',
-      title: cs ? 'Jak to funguje — AI SDR | SalesAgent.cz' : 'How it works — AI SDR | SalesAgent.cz',
+      title: cs ? 'Jak to funguje — AI obchodní zástupce | SalesAgent.cz' : 'How it works — AI Sales Agent | SalesAgent.cz',
       description: cs
-        ? 'AI systém pro outbound B2B prodej — krok za krokem.'
-        : 'AI system for outbound B2B sales — step by step.',
+        ? 'Automatizace B2B obchodu pomocí AI — krok za krokem.'
+        : 'AI-powered B2B sales automation — step by step.',
     },
     twitter: {
       card: 'summary_large_image',
-      title: cs ? 'Jak to funguje — AI SDR | SalesAgent.cz' : 'How it works — AI SDR | SalesAgent.cz',
-      description: cs ? 'AI systém pro outbound B2B prodej — krok za krokem.' : 'AI system for outbound B2B sales — step by step.',
+      title: cs ? 'Jak to funguje — AI obchodní zástupce | SalesAgent.cz' : 'How it works — AI Sales Agent | SalesAgent.cz',
+      description: cs ? 'Automatizace B2B obchodu pomocí AI — krok za krokem.' : 'AI-powered B2B sales automation — step by step.',
     },
   }
 }

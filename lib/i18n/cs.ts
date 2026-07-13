@@ -8,9 +8,9 @@ export const cs = {
   },
   hero: {
     badge: 'AI obchodní zástupce',
-    headline: 'Rozjedeme váš obchod naplno\npomocí AI a unikátního SW.',
+    headline: 'AI obchodní zástupce,\nkterý prodává za vás.',
     subheadline:
-      'Automatizujeme prodej u firem. Vyhledáme relevantní společnosti, prostudujeme jejich weby a oslovíme je přes personalizované e-maily i LinkedIn outreach. K vám se dostanou jen ti, co mají reálný zájem.',
+      'Zautomatizujeme vyhledávání B2B kontaktů a delegujeme cold mailing na AI. Systém prostuduje web každé firmy a odešle personalizovaný cold email i LinkedIn zprávu. K vám se dostanou jen ti, co mají reálný zájem.',
     cta: 'Domluvit nezávazný hovor',
     ctaSub: 'nebo se podívejte, jak to funguje',
     pipelineLabel: 'Systém běží naživo',
@@ -36,12 +36,12 @@ export const cs = {
   howItWorks: {
     title: 'Jak to celé funguje v praxi',
     subtitle:
-      'Nenajímáte si software. Najímáte si kompletní B2B proces, který vyhledává firmy, čte jejich weby a generuje schůzky na autopilotu.',
+      'Hledáte nástroje na automatizaci prodeje? AI obchodník najde firmy, přečte jejich weby a generuje schůzky na autopilotu — bez náboru a bez databází.',
     steps: [
       {
         number: '01',
-        title: 'Precizní cílení bez databází',
-        body: 'Společně definujeme vašeho ideálního zákazníka (obor, velikost, region). Náš systém pak aktivně prohledává rejstříky a internet, aby našel přesné shody. Nepoužíváme mrtvé nakoupené databáze, ale získáváme čerstvé relevantní kontakty v reálném čase.',
+        title: 'Automatické vyhledávání B2B kontaktů',
+        body: 'Společně definujeme vašeho ideálního zákazníka (obor, velikost, region). AI prodejní asistent pak aktivně prohledává rejstříky a internet, aby našel přesné shody. Nepoužíváme mrtvé nakoupené databáze — generujeme čerstvé B2B kontakty v reálném čase.',
       },
       {
         number: '02',
@@ -50,8 +50,8 @@ export const cs = {
       },
       {
         number: '03',
-        title: 'Hyper-personalizované oslovení',
-        body: 'Pro každého rozhodovatele vygenerujeme unikátní e-mail. Nejde o šablonu s doplněným jménem – text zprávy přímo reaguje na obsah jejich vlastního webu. Díky tomu působí zpráva přirozeně, vyhýbá se spamu a generuje násobně více odpovědí.',
+        title: 'Personalizovaný cold email na míru',
+        body: 'Pro každého rozhodovatele vygenerujeme unikátní e-mail. Nejde o šablonu s doplněným jménem – text zprávy přímo reaguje na obsah jejich webu. Automatický cold mailing, který působí jako zpráva od člověka a generuje násobně více odpovědí.',
       },
       {
         number: '04',
@@ -98,13 +98,13 @@ export const cs = {
     note: 'Konkrétní reference a doporučení rádi předáme na vyžádání.',
   },
   services: {
-    title: 'Nejen oslovování',
+    title: 'Automatizace B2B obchodu na míru',
     subtitle:
-      'Stavíme obchodní infrastrukturu — od prvního kontaktu po uzavřený obchod. Na míru, bez šablon.',
+      'Stavíme obchodní infrastrukturu — od AI generování leadů po uzavřený obchod. Na míru, bez šablon.',
     automation: {
       badge: 'Vývoj na míru',
-      title: 'Obchodní automatizace na míru',
-      body: 'Navrhneme a postavíme systémy přesně podle vašich procesů. Automatizujeme opakující se kroky, propojujeme nástroje a data a stavíme přehledy, které vedení skutečně čte.',
+      title: 'Obchodní automatizace a RPA v prodeji',
+      body: 'Navrhneme a postavíme systémy přesně podle vašich procesů. Automatizujeme opakující se kroky v obchodu, propojujeme CRM s AI nástroji a stavíme přehledy, které vedení skutečně čte.',
       examples: [
         { label: 'Propojení CRM s LinkedIn a e-mailovým nástrojem', icon: 'connect' },
         { label: 'Automatické obohacování kontaktů z veřejných zdrojů', icon: 'enrich' },
@@ -213,16 +213,32 @@ export const cs = {
         a: 'Po dohodě a úvodním nastavení (zhruba dva pracovní dny) odcházejí první zprávy do 48 hodin.',
       },
       {
-        q: 'Jak ty e-maily vypadají?',
-        a: 'U každé firmy systém přečte její web a napíše zprávu, která vychází z toho, co reálně dělá. Není to šablona s doplněným jménem.',
+        q: 'Jak personalizujete cold emaily?',
+        a: 'AI prostuduje web každé firmy a na základě toho napíše unikátní zprávu. Není to šablona s doplněným jménem — text přímo reaguje na to, čím se firma zabývá. Díky tomu je míra odpovědí násobně vyšší než u hromadných rozesílek.',
+      },
+      {
+        q: 'Čím se liší od klasického email marketingu nebo Mailchimpu?',
+        a: 'Email marketing cílí na lidi, kteří vás už znají (odběratelé, zákazníci). SalesAgent automaticky oslovuje firmy, které vás ještě neznají — každou s unikátní zprávou. Je to automatický cold mailing, ne newsletter.',
+      },
+      {
+        q: 'Jak funguje automatické vyhledávání B2B kontaktů?',
+        a: 'Systém prohledává firemní rejstříky, Google Maps a veřejné zdroje podle vašeho zadání. Nepoužíváme nakoupené databáze — kontakty generujeme v reálném čase, vždy čerstvé a relevantní.',
       },
       {
         q: 'Je to v souladu s GDPR?',
         a: 'Oslovujeme firemní kontakty na základě oprávněného zájmu. Každá zpráva obsahuje možnost odhlášení.',
       },
       {
+        q: 'Jaký je rozdíl oproti najímání obchodního zástupce?',
+        a: 'Obchodní zástupce stojí kolem 100 000 Kč měsíčně a zvládne oslovit cca 800 firem. AI obchodník udělá totéž od 5 900 Kč — 17× levněji, bez nemocí, dovolených a výpovědí. Navíc je aktivní do 48 hodin místo měsíců zaučování.',
+      },
+      {
         q: 'Co konkrétně dostanu?',
         a: 'Přehled s čísly (doručenost, otevření, odpovědi) a seznam firem, které projevily zájem — do schránky nebo přímo do vašeho CRM.',
+      },
+      {
+        q: 'Funguje automatický cold mailing i pro malé firmy?',
+        a: 'Ano. Tarif Start začíná od 3 600 Kč měsíčně a je ideální pro firmy, které chtějí oslovovat nové zákazníky, ale nemají rozpočet na vlastního obchodníka.',
       },
     ],
   },

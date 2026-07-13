@@ -8,6 +8,7 @@ const pages = [
   { path: '/how-it-works', priority: 0.9, changeFrequency: 'monthly' as const },
   { path: '/pricing', priority: 0.9, changeFrequency: 'monthly' as const },
   { path: '/contact', priority: 0.8, changeFrequency: 'monthly' as const },
+  { path: '/privacy', priority: 0.3, changeFrequency: 'yearly' as const },
   { path: '/resources', priority: 0.6, changeFrequency: 'monthly' as const },
   {
     path: '/resources/czech-business-companies-register',
@@ -22,6 +23,7 @@ const blogPosts = [
   { slug: '/how-to-implement-sales-automation', priority: 0.75, changeFrequency: 'yearly' as const },
   { slug: '/sales-agent-definition-and-what-he-do', priority: 0.7, changeFrequency: 'yearly' as const },
   { slug: '/how-to-expand-your-business-and-sales-to-the-european-union', priority: 0.7, changeFrequency: 'yearly' as const },
+  { slug: '/jak-personalizovat-cold-emaily-ai', priority: 0.8, changeFrequency: 'monthly' as const },
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

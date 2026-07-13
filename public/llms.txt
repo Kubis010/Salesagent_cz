@@ -1,17 +1,17 @@
 # SalesAgent.cz
 
-> AI Sales Development Rep jako outsourcovaná služba pro B2B firmy v ČR/SK a mezinárodně.
-> AI Sales Development Rep as an outsourced service for B2B companies in CZ/SK and internationally.
+> AI obchodní zástupce jako outsourcovaná služba — automatizace B2B prodeje pro firmy v ČR/SK a mezinárodně.
+> AI sales agent as an outsourced service — B2B sales automation for companies in CZ/SK and internationally.
 
 ## Co je SalesAgent.cz / What is SalesAgent.cz
 
-SalesAgent.cz provides an outsourced AI SDR (Sales Development Representative) service. It is NOT a SaaS tool — it is a fully managed outbound sales system operated on behalf of the client.
+SalesAgent.cz je outsourcovaný AI obchodní zástupce (AI prodejní asistent) pro B2B firmy. Nejde o SaaS nástroj — je to plně řízená služba automatizace B2B obchodu.
 
 The system automatically:
-1. Finds target companies via Google Maps and business registries based on defined ICP (Ideal Customer Profile)
-2. Scrapes and analyses each prospect's website using AI
-3. Generates personalised cold emails for each prospect (not template-based — actual contextual copy)
-4. Sends outreach via email and LinkedIn (automated connection requests and follow-ups)
+1. Automatické vyhledávání B2B kontaktů — prohledává rejstříky a internet na základě ideálního zákazníka
+2. AI analýza webu — prostuduje web každé firmy a pochopí, čím se zabývá
+3. Personalizovaný cold email — napíše unikátní zprávu na základě obsahu webu (ne šablona)
+4. LinkedIn outreach — automatické žádosti o spojení a follow-up zprávy
 
 ## Distinction from sister product
 
@@ -61,3 +61,4 @@ info@salesagent.cz
 - [How to Implement Sales Automation in Your Company](https://salesagent.cz/blog/how-to-implement-sales-automation)
 - [Sales Agent Definition and What He Does](https://salesagent.cz/blog/sales-agent-definition-and-what-he-do)
 - [How to Expand Your Business and Sales to the European Union](https://salesagent.cz/blog/how-to-expand-your-business-and-sales-to-the-european-union)
+- [Jak personalizovat cold emaily pomocí AI](https://salesagent.cz/blog/jak-personalizovat-cold-emaily-ai)

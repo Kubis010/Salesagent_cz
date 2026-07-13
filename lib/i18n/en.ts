@@ -9,10 +9,10 @@ export const en: Translations = {
     bookCall: 'Book a call',
   },
   hero: {
-    badge: 'AI sales development rep',
-    headline: 'We reach the companies\nthat should be your customers.',
+    badge: 'AI sales agent',
+    headline: 'AI sales agent\nthat sells for you.',
     subheadline:
-      'We find companies matching your criteria, read their website and write each one a personal email. Only the ones who show interest reach you.',
+      'We automate B2B contact prospecting and delegate cold emailing to AI. The system reads each company website and sends personalised cold emails and LinkedIn messages. Only the ones who show real interest reach you.',
     cta: 'Book a no-strings call',
     ctaSub: 'or see how it works',
     pipelineLabel: 'System running live',
