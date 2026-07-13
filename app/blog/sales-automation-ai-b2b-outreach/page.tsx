@@ -183,8 +183,23 @@ export default function Page() {
             </a>
           </div>
 
-          <p style={{ marginTop: '8px' }}>
-            <Link href="/blog" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
+          <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>
+            <p style={{ fontSize: '14px', fontWeight: 600, color: 'var(--text)', marginBottom: '12px' }}>Related</p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              <Link href="/blog/jak-personalizovat-cold-emaily-ai" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
+                Jak personalizovat cold emaily pomocí AI →
+              </Link>
+              <Link href="/cs/how-it-works" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
+                Jak to funguje — krok za krokem →
+              </Link>
+              <Link href="/cs/pricing" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
+                Ceník služby →
+              </Link>
+            </div>
+          </div>
+
+          <p style={{ marginTop: '16px' }}>
+            <Link href="/blog" style={{ color: 'var(--text-muted)', textDecoration: 'none', fontSize: '14px' }}>
               ← Back to Blog
             </Link>
           </p>

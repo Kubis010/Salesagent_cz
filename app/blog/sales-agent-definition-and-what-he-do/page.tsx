@@ -360,6 +360,21 @@ export default function SalesAgentDefinitionPage() {
               See how it works &#x2192;
             </Link>
           </div>
+
+          <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>
+            <p style={{ fontSize: '14px', fontWeight: 600, color: 'var(--text)', marginBottom: '12px' }}>Related</p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              <Link href="/blog/sales-automation-ai-b2b-outreach" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
+                Sales Automation: How AI Is Changing B2B Outreach →
+              </Link>
+              <Link href="/blog/jak-personalizovat-cold-emaily-ai" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
+                Jak personalizovat cold emaily pomocí AI →
+              </Link>
+              <Link href="/en/how-it-works" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
+                How it works — step by step →
+              </Link>
+            </div>
+          </div>
         </article>
       </div>
     </>

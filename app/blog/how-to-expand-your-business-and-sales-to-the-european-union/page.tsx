@@ -357,6 +357,21 @@ export default function EUExpansionPage() {
               See how it works &#x2192;
             </Link>
           </div>
+
+          <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>
+            <p style={{ fontSize: '14px', fontWeight: 600, color: 'var(--text)', marginBottom: '12px' }}>Related</p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              <Link href="/blog/jak-personalizovat-cold-emaily-ai" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
+                Jak personalizovat cold emaily pomocí AI →
+              </Link>
+              <Link href="/blog/how-to-implement-sales-automation" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
+                How to Implement Sales Automation in Your Company →
+              </Link>
+              <Link href="/en/pricing" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
+                Pricing →
+              </Link>
+            </div>
+          </div>
         </article>
       </div>
     </>

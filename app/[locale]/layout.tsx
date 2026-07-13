@@ -41,6 +41,14 @@ export async function generateMetadata({
       description: isCz
         ? 'AI obchodní zástupce pro B2B firmy. Automatický cold mailing a vyhledávání kontaktů.'
         : 'AI sales agent for B2B companies. Automated cold email and contact prospecting.',
+      images: [
+        {
+          url: 'https://salesagent.cz/og-image.jpg',
+          width: 1376,
+          height: 768,
+          alt: isCz ? 'SalesAgent.cz — AI obchodní zástupce' : 'SalesAgent.cz — AI Sales Agent',
+        },
+      ],
     },
     robots: {
       index: true,
@@ -69,6 +77,7 @@ export async function generateMetadata({
       description: isCz
         ? 'AI obchodní zástupce pro B2B firmy. Automatický cold mailing a vyhledávání kontaktů.'
         : 'AI sales agent for B2B companies. Automated cold email and contact prospecting.',
+      images: ['https://salesagent.cz/og-image.jpg'],
     },
     other: {
       'llms-txt': 'https://salesagent.cz/llms.txt',
