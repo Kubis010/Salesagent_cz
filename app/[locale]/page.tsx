@@ -13,9 +13,11 @@ export async function generateMetadata({
   const t: Translations = getTranslations(locale as Locale)
   return {
     title: locale === 'cs'
-      ? 'AI SDR jako outsourcovaná služba | SalesAgent.cz'
-      : 'AI SDR as an outsourced service | SalesAgent.cz',
-    description: t.hero.subheadline,
+      ? 'AI obchodní zástupce jako služba | Automatizace B2B prodeje | SalesAgent.cz'
+      : 'AI Sales Agent as a Service | B2B Sales Automation | SalesAgent.cz',
+    description: locale === 'cs'
+      ? 'AI obchodní zástupce vyhledá B2B kontakty, prostuduje web každé firmy a odešle personalizovaný cold email. Automatizace prodeje bez náboru.'
+      : 'AI sales agent finds B2B contacts, reads each company website and sends personalised cold emails. Sales automation without hiring.',
   }
 }
 
