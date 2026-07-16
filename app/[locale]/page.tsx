@@ -173,7 +173,7 @@ export default async function HomePage({
       >
         <div style={{ marginBottom: '56px' }}>
           <div style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '12px' }}>
-            Proces
+            {locale === 'cs' ? 'Proces' : 'Process'}
           </div>
           <h2
             style={{
@@ -321,7 +321,7 @@ export default async function HomePage({
       <section style={{ padding: '80px 24px', maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ marginBottom: '56px' }}>
           <div style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '12px' }}>
-            Naše služby
+            {locale === 'cs' ? 'Naše služby' : 'Our services'}
           </div>
           <h2
             style={{
@@ -381,7 +381,7 @@ export default async function HomePage({
             {/* Right — examples */}
             <div>
               <div style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase', color: 'var(--text-muted)', marginBottom: '16px' }}>
-                Co konkrétně stavíme
+                {locale === 'cs' ? 'Co konkrétně stavíme' : 'What we build'}
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                 {t.services.automation.examples.map((ex: { label: string; icon: string }, i: number) => (

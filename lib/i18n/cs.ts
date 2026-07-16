@@ -8,9 +8,9 @@ export const cs = {
   },
   hero: {
     badge: 'AI obchodní zástupce',
-    headline: 'AI obchodní zástupce,\nkterý prodává za vás.',
+    headline: 'Rozjedeme váš obchod naplno\npomocí AI a unikátního SW.',
     subheadline:
-      'Zautomatizujeme vyhledávání B2B kontaktů a delegujeme cold mailing na AI. Systém prostuduje web každé firmy a odešle personalizovaný cold email i LinkedIn zprávu. K vám se dostanou jen ti, co mají reálný zájem.',
+      'Automatizujeme prodej u firem. Vyhledáme relevantní společnosti, prostudujeme jejich weby a oslovíme je přes personalizované e-maily i LinkedIn outreach. K vám se dostanou jen ti, co mají reálný zájem.',
     cta: 'Domluvit nezávazný hovor',
     ctaSub: 'nebo se podívejte, jak to funguje',
     pipelineLabel: 'Systém běží naživo',
@@ -36,12 +36,12 @@ export const cs = {
   howItWorks: {
     title: 'Jak to celé funguje v praxi',
     subtitle:
-      'Hledáte nástroje na automatizaci prodeje? AI obchodník najde firmy, přečte jejich weby a generuje schůzky na autopilotu — bez náboru a bez databází.',
+      'Nenajímáte si software. Najímáte si kompletní B2B proces, který vyhledává firmy, čte jejich weby a generuje schůzky na autopilotu.',
     steps: [
       {
         number: '01',
-        title: 'Automatické vyhledávání B2B kontaktů',
-        body: 'Společně definujeme vašeho ideálního zákazníka (obor, velikost, region). AI prodejní asistent pak aktivně prohledává rejstříky a internet, aby našel přesné shody. Nepoužíváme mrtvé nakoupené databáze — generujeme čerstvé B2B kontakty v reálném čase.',
+        title: 'Precizní cílení bez databází',
+        body: 'Společně definujeme vašeho ideálního zákazníka (obor, velikost, region). Náš systém pak aktivně prohledává rejstříky a internet, aby našel přesné shody. Nepoužíváme mrtvé nakoupené databáze, ale získáváme čerstvé relevantní kontakty v reálném čase.',
       },
       {
         number: '02',
@@ -50,8 +50,8 @@ export const cs = {
       },
       {
         number: '03',
-        title: 'Personalizovaný cold email na míru',
-        body: 'Pro každého rozhodovatele vygenerujeme unikátní e-mail. Nejde o šablonu s doplněným jménem – text zprávy přímo reaguje na obsah jejich webu. Automatický cold mailing, který působí jako zpráva od člověka a generuje násobně více odpovědí.',
+        title: 'Hyper-personalizované oslovení',
+        body: 'Pro každého rozhodovatele vygenerujeme unikátní e-mail. Nejde o šablonu s doplněným jménem – text zprávy přímo reaguje na obsah jejich vlastního webu. Díky tomu působí zpráva přirozeně, vyhýbá se spamu a generuje násobně více odpovědí.',
       },
       {
         number: '04',
@@ -100,7 +100,7 @@ export const cs = {
   services: {
     title: 'Automatizace B2B obchodu na míru',
     subtitle:
-      'Stavíme obchodní infrastrukturu — od AI generování leadů po uzavřený obchod. Na míru, bez šablon.',
+      'Stavíme obchodní infrastrukturu — od prvního kontaktu po uzavřený obchod. Na míru, bez šablon.',
     automation: {
       badge: 'Vývoj na míru',
       title: 'Obchodní automatizace a RPA v prodeji',
