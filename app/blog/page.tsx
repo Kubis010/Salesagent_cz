@@ -9,6 +9,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    href: '/blog/crm-na-miru',
+    title: 'CRM na míru: Proč generické systémy firmám nevyhovují',
+    date: '16. července 2026',
+    description:
+      'Salesforce a HubSpot jsou drahé a přeplácané pro většinu B2B firem. CRM na míru řeší přesně to, co potřebujete — bez zbytečných funkcí a zbytečných nákladů.',
+  },
+  {
     href: '/blog/jak-personalizovat-cold-emaily-ai',
     title: 'Jak personalizovat cold emaily pomocí AI — průvodce pro B2B firmy',
     date: '13. července 2026',

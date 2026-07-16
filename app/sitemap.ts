@@ -28,6 +28,7 @@ const blogPosts = [
   { slug: '/jak-zavest-automatizaci-prodeje-ve-firme', priority: 0.8, changeFrequency: 'monthly' as const },
   { slug: '/obchodni-zastupce-definice-a-co-dela', priority: 0.75, changeFrequency: 'monthly' as const },
   { slug: '/jak-expandovat-s-obchodem-do-eu', priority: 0.75, changeFrequency: 'monthly' as const },
+  { slug: '/crm-na-miru', priority: 0.8, changeFrequency: 'monthly' as const },
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

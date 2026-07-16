@@ -66,3 +66,4 @@ info@salesagent.cz
 - [Jak zavést automatizaci prodeje ve firmě](https://salesagent.cz/blog/jak-zavest-automatizaci-prodeje-ve-firme)
 - [Obchodní zástupce — definice a co vlastně dělá?](https://salesagent.cz/blog/obchodni-zastupce-definice-a-co-dela)
 - [Jak expandovat s obchodem do EU](https://salesagent.cz/blog/jak-expandovat-s-obchodem-do-eu)
+- [CRM na míru: Proč generické systémy firmám nevyhovují](https://salesagent.cz/blog/crm-na-miru)
