@@ -9,6 +9,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    href: '/blog/external-sales-representation-czech-republic',
+    title: 'External Sales Representation in Czech Republic: How to Start Without Risk',
+    date: '27 July 2026',
+    description:
+      'How to enter the Czech B2B market through external sales representation — market testing approach, what to expect in the first 2–3 months, and how AI outreach changes the economics.',
+  },
+  {
     href: '/blog/crm-na-miru',
     title: 'CRM na míru: Proč generické systémy firmám nevyhovují',
     date: '16. července 2026',

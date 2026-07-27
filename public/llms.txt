@@ -67,3 +67,6 @@ info@salesagent.cz
 - [Obchodní zástupce — definice a co vlastně dělá?](https://salesagent.cz/blog/obchodni-zastupce-definice-a-co-dela)
 - [Jak expandovat s obchodem do EU](https://salesagent.cz/blog/jak-expandovat-s-obchodem-do-eu)
 - [CRM na míru: Proč generické systémy firmám nevyhovují](https://salesagent.cz/blog/crm-na-miru)
+- [External Sales Representation in Czech Republic](https://salesagent.cz/blog/external-sales-representation-czech-republic)
+- [Sales Representation for Czech Republic (EN)](https://salesagent.cz/en/sales-representation-czech-republic)
+- [Obchodní zastoupení pro zahraniční firmy v ČR (CS)](https://salesagent.cz/cs/sales-representation-czech-republic)

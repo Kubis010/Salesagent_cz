@@ -18,6 +18,7 @@ export default function Header({ locale, t }: HeaderProps) {
     { href: `${base}/how-it-works`, label: t.nav.howItWorks },
     { href: `${base}/pricing`, label: t.nav.pricing },
     { href: `${base}/about`, label: t.nav.about },
+    { href: `${base}/sales-representation-czech-republic`, label: t.nav.salesRepCz },
     { href: '/blog', label: 'Blog' },
     { href: `${base}/contact`, label: t.nav.contact },
   ]

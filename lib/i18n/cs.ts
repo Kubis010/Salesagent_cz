@@ -3,6 +3,7 @@ export const cs = {
     howItWorks: 'Jak to funguje',
     pricing: 'Ceník',
     about: 'O nás',
+    salesRepCz: 'Pro zahraniční firmy',
     contact: 'Kontakt',
     bookCall: 'Domluvit hovor',
   },

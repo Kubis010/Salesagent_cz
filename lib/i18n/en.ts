@@ -5,6 +5,7 @@ export const en: Translations = {
     howItWorks: 'How it works',
     pricing: 'Pricing',
     about: 'About',
+    salesRepCz: 'Sales rep for Czech',
     contact: 'Contact',
     bookCall: 'Book a call',
   },
