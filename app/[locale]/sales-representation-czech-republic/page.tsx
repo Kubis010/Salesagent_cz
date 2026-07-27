@@ -169,42 +169,35 @@ export default async function SalesRepCzPage({
           {/* What we do */}
           <section style={{ marginBottom: '80px' }}>
             <h2 style={{ fontSize: '1.8rem', fontWeight: 700, marginBottom: '16px' }}>
-              {isCs ? 'Co jako váš obchodní zástupce děláme' : 'What we do as your sales representative'}
+              {isCs ? 'Jak vaše zastoupení v ČR vypadá v praxi' : 'How we represent you in Czech Republic'}
             </h2>
             <p style={{ color: 'var(--text-muted)', lineHeight: 1.7, marginBottom: '40px', maxWidth: '680px' }}>
               {isCs
-                ? 'Nejde o databázi kontaktů ani o hromadný spam. Každá firma, kterou oslovíme, prošla AI analýzou — systém prostudoval jejich web a připravil personalizovanou zprávu přesně pro ně.'
-                : 'This is not a contact database or bulk email blast. Every company we reach out to has been analysed by AI — the system reads their website and crafts a message tailored specifically to them.'}
+                ? 'Zastoupení zahraniční firmy na českém trhu není jen překlad webu. Je to aktivní obchodní přítomnost — lokalizovaná nabídka, cílené oslovení a zastoupení při reálných jednáních.'
+                : 'Representing a foreign company in Czech Republic is more than translating a website. It is an active commercial presence — a localised offer, targeted outreach, and representation at real business meetings.'}
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '24px' }}>
               {[
                 {
                   step: '01',
-                  title: isCs ? 'Definujeme ideálního zákazníka' : 'We define your ideal customer',
+                  title: isCs ? 'Lokalizace nabídky' : 'Localisation of your offer',
                   body: isCs
-                    ? 'Společně nastavíme kritéria — odvětví, velikost firmy, geografie v rámci ČR. Systém pak hledá přesně tento profil v českých firemních registrech a na internetu.'
-                    : 'Together we set the targeting criteria — industry, company size, geography within CZ. The system then searches Czech business registries and the web for exactly this profile.',
+                    ? 'Pomůžeme přizpůsobit vaši nabídku českému trhu — jak ji komunikovat, co zdůraznit a jak ji zasadit do kontextu, který česká firma pochopí a ocení. Nejde jen o překlad, ale o správné ladění hodnotového argumentu.'
+                    : 'We help adapt your offer to the Czech market — how to communicate it, what to emphasise, and how to frame it in a context Czech companies understand and appreciate. This goes beyond translation into genuine value-proposition tuning.',
                 },
                 {
                   step: '02',
-                  title: isCs ? 'Prostudujeme web každé firmy' : 'We read every company\'s website',
+                  title: isCs ? 'Oslovení správných firem' : 'Reaching the right companies',
                   body: isCs
-                    ? 'Než kohokoliv oslovíme, AI přečte web dané firmy. Zjistí, čím se zabývají, co aktuálně řeší a jak k nim váš produkt nebo služba dává smysl.'
-                    : 'Before reaching out, AI reads the target company\'s website — understanding what they do, what challenges they face and how your product or service fits.',
+                    ? 'Vyhledáme firmy, které přesně odpovídají vašemu ideálnímu zákazníkovi, prostudujeme jejich weby a oslovíme je personalizovanými zprávami. Žádné hromadné rozesílky — každé oslovení dává smysl konkrétnímu příjemci.'
+                    : 'We identify companies that match your ideal customer profile, study their websites, and reach out with personalised messages. No bulk blasting — every outreach makes sense to its specific recipient.',
                 },
                 {
                   step: '03',
-                  title: isCs ? 'Personalizovaný cold email a LinkedIn' : 'Personalised cold email & LinkedIn',
+                  title: isCs ? 'Zastoupení při jednáních' : 'Representation at negotiations',
                   body: isCs
-                    ? 'Každá zpráva je unikátní — ne šablona. Oslovujeme emailem i přes LinkedIn a vedeme follow-up komunikaci, dokud nezjistíme zájem nebo nezájem.'
-                    : 'Every message is unique — not a template. We reach out via email and LinkedIn and run the follow-up sequence until we know whether there\'s interest.',
-                },
-                {
-                  step: '04',
-                  title: isCs ? 'Domluvíme první schůzky' : 'We book the first meetings',
-                  body: isCs
-                    ? 'Firmy, které projevily zájem, předáváme vám — buď jako domluvené hovory ve vašem kalendáři, nebo jako teplé leady připravené k dalšímu kroku.'
-                    : 'Companies that show interest are handed over to you — either as booked calls in your calendar or as warm leads ready for the next step.',
+                    ? 'Když firma projeví zájem, jsme u toho. Pomůžeme s přípravou na jednání, kulturními specifiky českého obchodního prostředí a — pokud potřebujete — můžeme vás při prvních schůzkách přímo zastupovat.'
+                    : 'When a company shows interest, we stay involved. We help you prepare for meetings, navigate Czech business culture, and — where needed — can directly represent you at first-stage negotiations.',
                 },
               ].map((item) => (
                 <div
