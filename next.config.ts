@@ -10,6 +10,16 @@ const nextConfig: NextConfig = {
         destination: '/llms.txt',
         permanent: true,
       },
+      {
+        source: '/cs/how-it-works',
+        destination: '/cs',
+        permanent: true,
+      },
+      {
+        source: '/en/how-it-works',
+        destination: '/en',
+        permanent: true,
+      },
     ]
   },
 }

@@ -149,7 +149,7 @@ export default async function SalesRepCzPage({
                 {isCs ? 'Domluvit nezávaznou konzultaci' : 'Book a free consultation'}
               </a>
               <Link
-                href={`${base}/how-it-works`}
+                href={base}
                 style={{
                   display: 'inline-block',
                   border: '1px solid var(--border)',
