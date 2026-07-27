@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -90,6 +91,18 @@ export default function ExternalSalesRepCzPage() {
               third option — and it starts with 2–3 months of AI-powered market testing.
             </p>
           </header>
+
+          {/* Hero image */}
+          <div className="mb-14 rounded-xl overflow-hidden border border-white/10">
+            <Image
+              src="/blog/czech-flag.jpg"
+              alt="Czech Republic flag — external sales representation"
+              width={1280}
+              height={853}
+              className="w-full object-cover"
+              priority
+            />
+          </div>
 
           {/* Article */}
           <article className="prose prose-invert prose-lg max-w-none">

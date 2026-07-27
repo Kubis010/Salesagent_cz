@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { getTranslations, type Locale, type Translations } from '@/lib/i18n'
 
@@ -149,6 +150,18 @@ export default async function SalesRepCzPage({
                 {isCs ? 'Jak to funguje' : 'How it works'}
               </Link>
             </div>
+          </div>
+
+          {/* Hero image */}
+          <div style={{ marginBottom: '80px', borderRadius: '16px', overflow: 'hidden', border: '1px solid var(--border)' }}>
+            <Image
+              src="/blog/czech-flag.jpg"
+              alt="Czech Republic — external sales representation"
+              width={1280}
+              height={640}
+              style={{ width: '100%', height: '300px', objectFit: 'cover', objectPosition: 'center 40%' }}
+              priority
+            />
           </div>
 
           {/* What we do */}
