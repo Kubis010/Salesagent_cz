@@ -20,6 +20,11 @@ const nextConfig: NextConfig = {
         destination: '/en',
         permanent: true,
       },
+      {
+        source: '/czech-business-companies-register',
+        destination: '/en/resources/czech-business-companies-register',
+        permanent: true,
+      },
     ]
   },
 }

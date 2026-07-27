@@ -28,10 +28,10 @@ export function middleware(request: NextRequest) {
 
   if (hasLocale) return NextResponse.next()
 
-  // Redirect to default locale (Czech)
+  // Redirect to default locale (Czech) — 301 permanent so search engines pass PageRank
   const url = request.nextUrl.clone()
   url.pathname = `/${defaultLocale}${pathname}`
-  return NextResponse.redirect(url)
+  return NextResponse.redirect(url, 301)
 }
 
 export const config = {

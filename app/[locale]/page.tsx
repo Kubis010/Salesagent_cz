@@ -18,6 +18,14 @@ export async function generateMetadata({
     description: locale === 'cs'
       ? 'AI obchodní zástupce vyhledá B2B kontakty, prostuduje web každé firmy a odešle personalizovaný cold email. Automatizace prodeje bez náboru.'
       : 'AI sales agent finds B2B contacts, reads each company website and sends personalised cold emails. Sales automation without hiring.',
+    alternates: {
+      canonical: `https://salesagent.cz/${locale}`,
+      languages: {
+        cs: 'https://salesagent.cz/cs',
+        en: 'https://salesagent.cz/en',
+        'x-default': 'https://salesagent.cz/cs',
+      },
+    },
   }
 }
 
