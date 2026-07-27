@@ -98,11 +98,25 @@ export default async function SalesRepCzPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div style={{ paddingTop: '100px', paddingBottom: '80px', paddingLeft: '24px', paddingRight: '24px' }}>
+      {/* Full-width flag hero */}
+      <div style={{ paddingTop: '64px', marginBottom: '0' }}>
+        <div style={{ position: 'relative', width: '100%', height: '420px', overflow: 'hidden' }}>
+          <Image
+            src="/blog/czech-flag.jpg"
+            alt="Czech Republic — external sales representation"
+            fill
+            style={{ objectFit: 'cover', objectPosition: 'center 35%' }}
+            priority
+          />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(11,19,32,0.3) 0%, rgba(11,19,32,0.7) 100%)' }} />
+        </div>
+      </div>
+
+      <div style={{ paddingBottom: '80px', paddingLeft: '24px', paddingRight: '24px' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
 
           {/* Hero */}
-          <div style={{ textAlign: 'center', marginBottom: '80px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '80px', paddingTop: '60px' }}>
             <p style={{ fontSize: '13px', color: 'var(--accent)', textTransform: 'uppercase', letterSpacing: '0.12em', fontWeight: 600, marginBottom: '20px' }}>
               {isCs ? 'Obchodní zastoupení · Česká republika' : 'Sales Representation · Czech Republic'}
             </p>
@@ -150,18 +164,6 @@ export default async function SalesRepCzPage({
                 {isCs ? 'Jak to funguje' : 'How it works'}
               </Link>
             </div>
-          </div>
-
-          {/* Hero image */}
-          <div style={{ marginBottom: '80px', borderRadius: '16px', overflow: 'hidden', border: '1px solid var(--border)' }}>
-            <Image
-              src="/blog/czech-flag.jpg"
-              alt="Czech Republic — external sales representation"
-              width={1280}
-              height={640}
-              style={{ width: '100%', height: '300px', objectFit: 'cover', objectPosition: 'center 40%' }}
-              priority
-            />
           </div>
 
           {/* What we do */}
