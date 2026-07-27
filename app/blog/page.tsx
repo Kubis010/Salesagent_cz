@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 const posts = [
   {
     href: '/blog/external-sales-representation-czech-republic',
+    lang: 'EN',
     title: 'External Sales Representation in Czech Republic: How to Start Without Risk',
     date: '27 July 2026',
     description:
@@ -17,6 +18,7 @@ const posts = [
   },
   {
     href: '/blog/crm-na-miru',
+    lang: 'CS',
     title: 'CRM na míru: Proč generické systémy firmám nevyhovují',
     date: '16. července 2026',
     description:
@@ -24,6 +26,7 @@ const posts = [
   },
   {
     href: '/blog/jak-personalizovat-cold-emaily-ai',
+    lang: 'CS',
     title: 'Jak personalizovat cold emaily pomocí AI — průvodce pro B2B firmy',
     date: '13. července 2026',
     description:
@@ -31,6 +34,7 @@ const posts = [
   },
   {
     href: '/blog/jak-zavest-automatizaci-prodeje-ve-firme',
+    lang: 'CS',
     title: 'Jak zavést automatizaci prodeje ve firmě',
     date: '12. února 2025',
     description:
@@ -38,6 +42,7 @@ const posts = [
   },
   {
     href: '/blog/automatizace-prodeje-jak-ai-meni-b2b-osloveni',
+    lang: 'CS',
     title: 'Automatizace prodeje: Jak AI mění B2B oslovení',
     date: '5. února 2025',
     description:
@@ -45,6 +50,7 @@ const posts = [
   },
   {
     href: '/blog/jak-expandovat-s-obchodem-do-eu',
+    lang: 'CS',
     title: 'Jak expandovat s obchodem do Evropské unie',
     date: '15. ledna 2025',
     description:
@@ -52,6 +58,7 @@ const posts = [
   },
   {
     href: '/blog/obchodni-zastupce-definice-a-co-dela',
+    lang: 'CS',
     title: 'Obchodní zástupce — definice a co vlastně dělá?',
     date: '9. ledna 2025',
     description:
@@ -59,6 +66,7 @@ const posts = [
   },
   {
     href: '/blog/how-to-implement-sales-automation',
+    lang: 'EN',
     title: 'How to Implement Sales Automation in Your Company',
     date: '12 February 2025',
     description:
@@ -66,6 +74,7 @@ const posts = [
   },
   {
     href: '/blog/sales-automation-ai-b2b-outreach',
+    lang: 'EN',
     title: 'Sales Automation: How AI Is Changing B2B Outreach',
     date: '5 February 2025',
     description:
@@ -73,6 +82,7 @@ const posts = [
   },
   {
     href: '/blog/sales-agent-definition-and-what-he-do',
+    lang: 'EN',
     title: 'Sales Agent — definition and what he does?',
     date: '9 January 2025',
     description:
@@ -80,6 +90,7 @@ const posts = [
   },
   {
     href: '/blog/how-to-expand-your-business-and-sales-to-the-european-union',
+    lang: 'EN',
     title: 'How to expand your business and sales to the European Union',
     date: '15 January 2025',
     description:
@@ -111,7 +122,16 @@ export default function BlogIndex() {
         {posts.map((post) => (
           <Link key={post.href} href={post.href} style={{ textDecoration: 'none' }}>
             <article className="blog-card">
-              <p style={{ fontSize: '12px', color: 'var(--text-muted)', marginBottom: '10px' }}>{post.date}</p>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
+                <p style={{ fontSize: '12px', color: 'var(--text-muted)', margin: 0 }}>{post.date}</p>
+                <span style={{
+                  fontSize: '10px', fontWeight: 700, letterSpacing: '0.08em',
+                  padding: '2px 7px', borderRadius: '4px',
+                  background: post.lang === 'EN' ? 'rgba(59,130,246,0.15)' : 'rgba(255,107,74,0.12)',
+                  color: post.lang === 'EN' ? '#60a5fa' : 'var(--accent)',
+                  border: `1px solid ${post.lang === 'EN' ? 'rgba(59,130,246,0.25)' : 'rgba(255,107,74,0.25)'}`,
+                }}>{post.lang}</span>
+              </div>
               <h2 style={{
                 fontFamily: 'Space Grotesk, sans-serif',
                 fontSize: '20px',
