@@ -9,10 +9,18 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    href: '/blog/external-sales-representation-czech-republic',
+    lang: 'EN',
+    title: 'External Sales Representation in Czech Republic: How to Start Without Risk',
+    date: '27 July 2026',
+    description:
+      'How to enter the Czech B2B market through external sales representation — market testing approach, what to expect in the first 2–3 months, and how AI outreach changes the economics.',
+  },
+  {
     href: '/blog/ai-pro-obchod-a-prodej',
     lang: 'CS',
     title: 'AI pro obchod a prodej: Jak umělá inteligence mění B2B',
-    date: '27. července 2026',
+    date: '26. července 2026',
     description: 'AI pro obchod a prodej přestává být buzzword — stává se konkurenční výhodou. Jak konkrétně umělá inteligence mění B2B prospekting, cold outreach a správu leadů.',
   },
   {
@@ -28,14 +36,6 @@ const posts = [
     title: 'AI agent pro generování leadů: Jak funguje a co od něj čekat',
     date: '21. července 2026',
     description: 'AI agent pro generování leadů hledá B2B kontakty, analyzuje je a oslovuje automaticky. Jak takový agent funguje, co umí a kde má své hranice.',
-  },
-  {
-    href: '/blog/external-sales-representation-czech-republic',
-    lang: 'EN',
-    title: 'External Sales Representation in Czech Republic: How to Start Without Risk',
-    date: '27 July 2026',
-    description:
-      'How to enter the Czech B2B market through external sales representation — market testing approach, what to expect in the first 2–3 months, and how AI outreach changes the economics.',
   },
   {
     href: '/blog/crm-na-miru',
@@ -62,36 +62,20 @@ const posts = [
       'Praktický návod krok za krokem — od definice ideálního zákazníka po měření výsledků. Co nastavit před spuštěním a jak se vyhnout nejčastějším chybám.',
   },
   {
-    href: '/blog/automatizace-prodeje-jak-ai-meni-b2b-osloveni',
-    lang: 'CS',
-    title: 'Automatizace prodeje: Jak AI mění B2B oslovení',
-    date: '5. února 2025',
-    description:
-      'AI automatizace B2B obchodu nahrazuje rutinní prospekting. Co se ve vašem pipeline skutečně změní — a co to znamená pro váš obchodní tým.',
-  },
-  {
-    href: '/blog/jak-expandovat-s-obchodem-do-eu',
-    lang: 'CS',
-    title: 'Jak expandovat s obchodem do Evropské unie',
-    date: '15. ledna 2025',
-    description:
-      'Praktický průvodce expanzí B2B obchodu do EU — průzkum trhu, právní rámec, lokalizace, strategie oslovení a jak najít správný vstupní bod.',
-  },
-  {
-    href: '/blog/obchodni-zastupce-definice-a-co-dela',
-    lang: 'CS',
-    title: 'Obchodní zástupce — definice a co vlastně dělá?',
-    date: '9. ledna 2025',
-    description:
-      'Co obchodní zástupce skutečně dělá den co den, jaké dovednosti role vyžaduje a jak se liší od běžného obchodníka.',
-  },
-  {
     href: '/blog/how-to-implement-sales-automation',
     lang: 'EN',
     title: 'How to Implement Sales Automation in Your Company',
     date: '12 February 2025',
     description:
       'A practical step-by-step guide — from defining your ideal customer to measuring results. What to set up before you launch, and how to avoid the most common mistakes.',
+  },
+  {
+    href: '/blog/automatizace-prodeje-jak-ai-meni-b2b-osloveni',
+    lang: 'CS',
+    title: 'Automatizace prodeje: Jak AI mění B2B oslovení',
+    date: '5. února 2025',
+    description:
+      'AI automatizace B2B obchodu nahrazuje rutinní prospekting. Co se ve vašem pipeline skutečně změní — a co to znamená pro váš obchodní tým.',
   },
   {
     href: '/blog/sales-automation-ai-b2b-outreach',
@@ -102,12 +86,12 @@ const posts = [
       'AI removes the repetitive prospecting work from your pipeline. Here is what actually changes — and what it means for your sales team.',
   },
   {
-    href: '/blog/sales-agent-definition-and-what-he-do',
-    lang: 'EN',
-    title: 'Sales Agent — definition and what he does?',
-    date: '9 January 2025',
+    href: '/blog/jak-expandovat-s-obchodem-do-eu',
+    lang: 'CS',
+    title: 'Jak expandovat s obchodem do Evropské unie',
+    date: '15. ledna 2025',
     description:
-      'What a sales agent actually does day to day, what skills the role demands, and how it differs from a regular sales rep.',
+      'Praktický průvodce expanzí B2B obchodu do EU — průzkum trhu, právní rámec, lokalizace, strategie oslovení a jak najít správný vstupní bod.',
   },
   {
     href: '/blog/how-to-expand-your-business-and-sales-to-the-european-union',
@@ -116,6 +100,22 @@ const posts = [
     date: '15 January 2025',
     description:
       'A practical guide for Czech and Slovak companies looking to grow into EU markets — from first contacts to building a pipeline abroad.',
+  },
+  {
+    href: '/blog/obchodni-zastupce-definice-a-co-dela',
+    lang: 'CS',
+    title: 'Obchodní zástupce — definice a co vlastně dělá?',
+    date: '9. ledna 2025',
+    description:
+      'Co obchodní zástupce skutečně dělá den co den, jaké dovednosti role vyžaduje a jak se liší od běžného obchodníka.',
+  },
+  {
+    href: '/blog/sales-agent-definition-and-what-he-do',
+    lang: 'EN',
+    title: 'Sales Agent — definition and what he does?',
+    date: '9 January 2025',
+    description:
+      'What a sales agent actually does day to day, what skills the role demands, and how it differs from a regular sales rep.',
   },
 ]
 
