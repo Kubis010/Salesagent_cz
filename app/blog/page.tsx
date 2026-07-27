@@ -9,6 +9,27 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    href: '/blog/ai-pro-obchod-a-prodej',
+    lang: 'CS',
+    title: 'AI pro obchod a prodej: Jak umělá inteligence mění B2B',
+    date: '27. července 2026',
+    description: 'AI pro obchod a prodej přestává být buzzword — stává se konkurenční výhodou. Jak konkrétně umělá inteligence mění B2B prospekting, cold outreach a správu leadů.',
+  },
+  {
+    href: '/blog/jak-vyuzit-ai-v-prodeji',
+    lang: 'CS',
+    title: 'Jak využít AI v prodeji: Praktický průvodce pro B2B firmy',
+    date: '24. července 2026',
+    description: 'Jak využít umělou inteligenci v prodeji konkrétně a bez velkých investic. Průvodce pro B2B firmy — od automatizace prospektingu po personalizované oslovení.',
+  },
+  {
+    href: '/blog/ai-agent-pro-generovani-leadu',
+    lang: 'CS',
+    title: 'AI agent pro generování leadů: Jak funguje a co od něj čekat',
+    date: '21. července 2026',
+    description: 'AI agent pro generování leadů hledá B2B kontakty, analyzuje je a oslovuje automaticky. Jak takový agent funguje, co umí a kde má své hranice.',
+  },
+  {
     href: '/blog/external-sales-representation-czech-republic',
     lang: 'EN',
     title: 'External Sales Representation in Czech Republic: How to Start Without Risk',

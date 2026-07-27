@@ -29,6 +29,9 @@ const blogPosts = [
   { slug: '/obchodni-zastupce-definice-a-co-dela', priority: 0.75, changeFrequency: 'monthly' as const },
   { slug: '/jak-expandovat-s-obchodem-do-eu', priority: 0.75, changeFrequency: 'monthly' as const },
   { slug: '/crm-na-miru', priority: 0.8, changeFrequency: 'monthly' as const },
+  { slug: '/ai-pro-obchod-a-prodej', priority: 0.85, changeFrequency: 'monthly' as const },
+  { slug: '/jak-vyuzit-ai-v-prodeji', priority: 0.85, changeFrequency: 'monthly' as const },
+  { slug: '/ai-agent-pro-generovani-leadu', priority: 0.85, changeFrequency: 'monthly' as const },
   { slug: '/external-sales-representation-czech-republic', priority: 0.85, changeFrequency: 'monthly' as const },
 ]
 
