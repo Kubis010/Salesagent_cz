@@ -20,6 +20,7 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: 'https://salesagent.cz/blog/crm-na-miru',
+    languages: { cs: 'https://salesagent.cz/blog/crm-na-miru', 'x-default': 'https://salesagent.cz/blog/crm-na-miru' },
   },
   openGraph: {
     title: 'CRM na míru: Proč generické systémy firmám nevyhovují',

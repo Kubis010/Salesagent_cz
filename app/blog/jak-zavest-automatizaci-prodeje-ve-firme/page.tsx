@@ -16,6 +16,11 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: 'https://salesagent.cz/blog/jak-zavest-automatizaci-prodeje-ve-firme',
+    languages: {
+      cs: 'https://salesagent.cz/blog/jak-zavest-automatizaci-prodeje-ve-firme',
+      en: 'https://salesagent.cz/blog/how-to-implement-sales-automation',
+      'x-default': 'https://salesagent.cz/blog/jak-zavest-automatizaci-prodeje-ve-firme',
+    },
   },
   openGraph: {
     title: 'Jak zavést automatizaci prodeje ve firmě',

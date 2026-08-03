@@ -16,6 +16,11 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: 'https://salesagent.cz/blog/jak-expandovat-s-obchodem-do-eu',
+    languages: {
+      cs: 'https://salesagent.cz/blog/jak-expandovat-s-obchodem-do-eu',
+      en: 'https://salesagent.cz/blog/how-to-expand-your-business-and-sales-to-the-european-union',
+      'x-default': 'https://salesagent.cz/blog/jak-expandovat-s-obchodem-do-eu',
+    },
   },
   openGraph: {
     title: 'Jak expandovat s obchodem do Evropské unie',

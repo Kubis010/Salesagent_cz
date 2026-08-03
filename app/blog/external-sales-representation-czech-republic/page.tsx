@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: 'https://salesagent.cz/blog/external-sales-representation-czech-republic',
+    languages: {
+      en: 'https://salesagent.cz/blog/external-sales-representation-czech-republic',
+      'x-default': 'https://salesagent.cz/blog/external-sales-representation-czech-republic',
+    },
   },
   openGraph: {
     title: 'External Sales Representation in Czech Republic: How to Start Without Risk',

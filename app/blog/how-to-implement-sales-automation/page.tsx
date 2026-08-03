@@ -5,7 +5,14 @@ export const metadata: Metadata = {
   title: 'How to Implement Sales Automation in Your Company | SalesAgent.cz',
   description:
     'A practical step-by-step guide to implementing sales automation in a B2B company — from defining your ideal customer to measuring results.',
-  alternates: { canonical: 'https://salesagent.cz/blog/how-to-implement-sales-automation' },
+  alternates: {
+    canonical: 'https://salesagent.cz/blog/how-to-implement-sales-automation',
+    languages: {
+      cs: 'https://salesagent.cz/blog/jak-zavest-automatizaci-prodeje-ve-firme',
+      en: 'https://salesagent.cz/blog/how-to-implement-sales-automation',
+      'x-default': 'https://salesagent.cz/blog/how-to-implement-sales-automation',
+    },
+  },
   openGraph: {
     title: 'How to Implement Sales Automation in Your Company',
     description:

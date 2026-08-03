@@ -15,7 +15,10 @@ export const metadata: Metadata = {
     '480/2004 Sb cold email',
     'legální cold email',
   ],
-  alternates: { canonical: 'https://salesagent.cz/blog/gdpr-a-cold-email' },
+  alternates: {
+    canonical: 'https://salesagent.cz/blog/gdpr-a-cold-email',
+    languages: { cs: 'https://salesagent.cz/blog/gdpr-a-cold-email', 'x-default': 'https://salesagent.cz/blog/gdpr-a-cold-email' },
+  },
   openGraph: {
     title: 'GDPR a cold email: Co smíte a nesmíte posílat firmám',
     description: 'Praktický průvodce GDPR a zákonem 480/2004 Sb. pro B2B cold emailing — co je legální, co musí zpráva obsahovat a co hrozí za spam.',

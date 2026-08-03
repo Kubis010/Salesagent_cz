@@ -15,7 +15,10 @@ export const metadata: Metadata = {
     'cold email příklad',
     'B2B cold email šablona',
   ],
-  alternates: { canonical: 'https://salesagent.cz/blog/cold-email-vzor-cesky' },
+  alternates: {
+    canonical: 'https://salesagent.cz/blog/cold-email-vzor-cesky',
+    languages: { cs: 'https://salesagent.cz/blog/cold-email-vzor-cesky', 'x-default': 'https://salesagent.cz/blog/cold-email-vzor-cesky' },
+  },
   openGraph: {
     title: 'Cold email vzor česky: 3 šablony pro B2B oslovení',
     description: '3 hotové vzory cold emailů pro B2B s GDPR patičkou. Praktické šablony, které dostávají odpovědi.',

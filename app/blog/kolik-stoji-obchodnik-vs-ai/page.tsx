@@ -15,7 +15,10 @@ export const metadata: Metadata = {
     'obchodní zástupce mzda',
     'AI vs obchodník srovnání',
   ],
-  alternates: { canonical: 'https://salesagent.cz/blog/kolik-stoji-obchodnik-vs-ai' },
+  alternates: {
+    canonical: 'https://salesagent.cz/blog/kolik-stoji-obchodnik-vs-ai',
+    languages: { cs: 'https://salesagent.cz/blog/kolik-stoji-obchodnik-vs-ai', 'x-default': 'https://salesagent.cz/blog/kolik-stoji-obchodnik-vs-ai' },
+  },
   openGraph: {
     title: 'Kolik stojí obchodní zástupce vs. AI outreach? Srovnání nákladů',
     description: 'Reálné srovnání: interní obchodní zástupce vs. AI outreach. Konkrétní čísla, výkon a kdy se co vyplatí.',

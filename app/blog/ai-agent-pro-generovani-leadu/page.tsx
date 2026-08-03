@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: 'https://salesagent.cz/blog/ai-agent-pro-generovani-leadu',
+    languages: { cs: 'https://salesagent.cz/blog/ai-agent-pro-generovani-leadu', 'x-default': 'https://salesagent.cz/blog/ai-agent-pro-generovani-leadu' },
   },
   openGraph: {
     title: 'AI agent pro generování leadů: Jak funguje a co od něj čekat',

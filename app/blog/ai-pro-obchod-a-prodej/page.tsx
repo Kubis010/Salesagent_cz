@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: 'https://salesagent.cz/blog/ai-pro-obchod-a-prodej',
+    languages: { cs: 'https://salesagent.cz/blog/ai-pro-obchod-a-prodej', 'x-default': 'https://salesagent.cz/blog/ai-pro-obchod-a-prodej' },
   },
   openGraph: {
     title: 'AI pro obchod a prodej: Jak umělá inteligence mění B2B',

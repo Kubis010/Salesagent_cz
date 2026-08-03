@@ -15,6 +15,11 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: 'https://salesagent.cz/blog/sales-agent-definition-and-what-he-do',
+    languages: {
+      cs: 'https://salesagent.cz/blog/obchodni-zastupce-definice-a-co-dela',
+      en: 'https://salesagent.cz/blog/sales-agent-definition-and-what-he-do',
+      'x-default': 'https://salesagent.cz/blog/sales-agent-definition-and-what-he-do',
+    },
   },
   openGraph: {
     title: 'Sales Agent Definition and What He Does',

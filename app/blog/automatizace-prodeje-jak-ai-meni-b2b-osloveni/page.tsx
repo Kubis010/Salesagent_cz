@@ -16,6 +16,11 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: 'https://salesagent.cz/blog/automatizace-prodeje-jak-ai-meni-b2b-osloveni',
+    languages: {
+      cs: 'https://salesagent.cz/blog/automatizace-prodeje-jak-ai-meni-b2b-osloveni',
+      en: 'https://salesagent.cz/blog/sales-automation-ai-b2b-outreach',
+      'x-default': 'https://salesagent.cz/blog/automatizace-prodeje-jak-ai-meni-b2b-osloveni',
+    },
   },
   openGraph: {
     title: 'Automatizace prodeje: Jak AI mění B2B oslovení',

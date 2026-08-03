@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: 'https://salesagent.cz/blog/co-dela-externi-obchodnik',
+    languages: { cs: 'https://salesagent.cz/blog/co-dela-externi-obchodnik', 'x-default': 'https://salesagent.cz/blog/co-dela-externi-obchodnik' },
   },
   openGraph: {
     title: 'Co dělá externí obchodník / sales manager?',

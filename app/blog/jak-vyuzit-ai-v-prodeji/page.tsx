@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: 'https://salesagent.cz/blog/jak-vyuzit-ai-v-prodeji',
+    languages: { cs: 'https://salesagent.cz/blog/jak-vyuzit-ai-v-prodeji', 'x-default': 'https://salesagent.cz/blog/jak-vyuzit-ai-v-prodeji' },
   },
   openGraph: {
     title: 'Jak využít AI v prodeji: Praktický průvodce pro B2B firmy',

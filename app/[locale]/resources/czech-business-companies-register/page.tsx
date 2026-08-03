@@ -15,10 +15,17 @@ export const metadata: Metadata = {
     'czech company register',
     'find czech company',
   ],
+  alternates: {
+    canonical: 'https://salesagent.cz/en/resources/czech-business-companies-register',
+    languages: {
+      en: 'https://salesagent.cz/en/resources/czech-business-companies-register',
+      'x-default': 'https://salesagent.cz/en/resources/czech-business-companies-register',
+    },
+  },
   openGraph: {
     title: 'How to Find a Czech Company in the Business Register (ARES)',
-    description:
-      'Step-by-step guide to searching ARES and the Czech Commercial Register.',
+    description: 'Step-by-step guide to searching ARES and the Czech Commercial Register.',
+    locale: 'en_US',
   },
 }
 

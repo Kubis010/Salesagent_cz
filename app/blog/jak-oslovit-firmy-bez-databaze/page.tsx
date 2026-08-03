@@ -15,7 +15,10 @@ export const metadata: Metadata = {
     'cold email bez databáze',
     'jak oslovit nové zákazníky',
   ],
-  alternates: { canonical: 'https://salesagent.cz/blog/jak-oslovit-firmy-bez-databaze' },
+  alternates: {
+    canonical: 'https://salesagent.cz/blog/jak-oslovit-firmy-bez-databaze',
+    languages: { cs: 'https://salesagent.cz/blog/jak-oslovit-firmy-bez-databaze', 'x-default': 'https://salesagent.cz/blog/jak-oslovit-firmy-bez-databaze' },
+  },
   openGraph: {
     title: 'Jak oslovit firmy bez koupené databáze kontaktů',
     description: 'Jak najít B2B kontakty bez placené databáze — konkrétní zdroje, metody a AI nástroje pro outreach.',

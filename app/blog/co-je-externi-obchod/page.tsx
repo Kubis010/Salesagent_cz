@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: 'https://salesagent.cz/blog/co-je-externi-obchod',
+    languages: { cs: 'https://salesagent.cz/blog/co-je-externi-obchod', 'x-default': 'https://salesagent.cz/blog/co-je-externi-obchod' },
   },
   openGraph: {
     title: 'Co je to externí obchod a jak funguje externí obchodník?',

@@ -5,7 +5,10 @@ export const metadata: Metadata = {
   title: 'Jak personalizovat cold emaily pomocí AI — průvodce pro B2B firmy | SalesAgent.cz',
   description:
     'Automatický cold mailing nemusí znamenat spam. Naučte se, jak AI personalizuje cold emaily na základě webu každé firmy a proč to generuje víc odpovědí než šablony.',
-  alternates: { canonical: 'https://salesagent.cz/blog/jak-personalizovat-cold-emaily-ai' },
+  alternates: {
+    canonical: 'https://salesagent.cz/blog/jak-personalizovat-cold-emaily-ai',
+    languages: { cs: 'https://salesagent.cz/blog/jak-personalizovat-cold-emaily-ai', 'x-default': 'https://salesagent.cz/blog/jak-personalizovat-cold-emaily-ai' },
+  },
   openGraph: {
     title: 'Jak personalizovat cold emaily pomocí AI',
     description:

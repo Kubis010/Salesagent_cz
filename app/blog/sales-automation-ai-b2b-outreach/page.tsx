@@ -5,7 +5,14 @@ export const metadata: Metadata = {
   title: 'Sales Automation: How AI Is Changing B2B Outreach | SalesAgent.cz',
   description:
     'AI-driven sales automation is replacing repetitive prospecting work. Here is what actually changes in your pipeline — and what it means for your team.',
-  alternates: { canonical: 'https://salesagent.cz/blog/sales-automation-ai-b2b-outreach' },
+  alternates: {
+    canonical: 'https://salesagent.cz/blog/sales-automation-ai-b2b-outreach',
+    languages: {
+      cs: 'https://salesagent.cz/blog/automatizace-prodeje-jak-ai-meni-b2b-osloveni',
+      en: 'https://salesagent.cz/blog/sales-automation-ai-b2b-outreach',
+      'x-default': 'https://salesagent.cz/blog/sales-automation-ai-b2b-outreach',
+    },
+  },
   openGraph: {
     title: 'Sales Automation: How AI Is Changing B2B Outreach',
     description:

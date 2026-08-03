@@ -25,6 +25,11 @@ const nextConfig: NextConfig = {
         destination: '/en/resources/czech-business-companies-register',
         permanent: true,
       },
+      {
+        source: '/cs/resources/czech-business-companies-register',
+        destination: '/en/resources/czech-business-companies-register',
+        permanent: true,
+      },
     ]
   },
 }
