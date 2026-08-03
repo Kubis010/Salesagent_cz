@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Blog | SalesAgent.cz',
-    description: 'Articles on B2B sales automation, AI outreach and cold email — in Czech and English.',
+    description: 'Articles on B2B sales automation, AI outreach and cold e-mail — in Czech and English.',
     url: 'https://salesagent.cz/blog',
     siteName: 'SalesAgent.cz',
     type: 'website',
@@ -21,18 +21,18 @@ const posts = [
   {
     href: '/blog/cold-email-vzor-cesky',
     lang: 'CS',
-    title: 'Cold email vzor česky: 3 šablony pro B2B oslovení',
+    title: 'Cold e-mail vzor česky: 3 šablony pro B2B oslovení',
     date: '3. srpna 2026',
     description:
-      'Tři konkrétní vzory cold emailů pro B2B outreach v češtině s vysvětlením logiky každé šablony. Jak napsat první zprávu, která dostane odpověď. Včetně povinné GDPR patičky.',
+      'Tři konkrétní vzory cold e-mailů pro B2B outreach v češtině s vysvětlením logiky každé šablony. Jak napsat první zprávu, která dostane odpověď. Včetně povinné GDPR patičky.',
   },
   {
     href: '/blog/gdpr-a-cold-email',
     lang: 'CS',
-    title: 'GDPR a cold email: Co smíte a nesmíte posílat firmám',
+    title: 'GDPR a cold e-mail: Co smíte a nesmíte posílat firmám',
     date: '31. července 2026',
     description:
-      'Jak rozlišit legální B2B cold email od spamu dle GDPR a zák. č. 480/2004 Sb. Co musí každý obchodní email obsahovat a co hrozí za porušení.',
+      'Jak rozlišit legální B2B cold e-mail od spamu dle GDPR a zák. č. 480/2004 Sb. Co musí každý obchodní e-mail obsahovat a co hrozí za porušení.',
   },
   {
     href: '/blog/co-je-externi-obchod',
@@ -106,10 +106,10 @@ const posts = [
   {
     href: '/blog/jak-personalizovat-cold-emaily-ai',
     lang: 'CS',
-    title: 'Jak personalizovat cold emaily pomocí AI — průvodce pro B2B firmy',
+    title: 'Jak personalizovat cold e-maily pomocí AI — průvodce pro B2B firmy',
     date: '13. července 2026',
     description:
-      'Automatický cold mailing nemusí znamenat spam. Jak AI personalizuje cold emaily na základě webu každé firmy a proč to generuje víc odpovědí než šablony.',
+      'Automatický cold mailing nemusí znamenat spam. Jak AI personalizuje cold e-maily na základě webu každé firmy a proč to generuje víc odpovědí než šablony.',
   },
   {
     href: '/blog/jak-zavest-automatizaci-prodeje-ve-firme',

@@ -3,30 +3,30 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'GDPR a cold email: Co smíte a nesmíte posílat firmám | SalesAgent.cz',
+  title: 'GDPR a cold e-mail: Co smíte a nesmíte posílat firmám | SalesAgent.cz',
   description:
-    'Jak rozlišit legální B2B cold email od spamu dle GDPR a zák. č. 480/2004 Sb. Co musí každý obchodní email obsahovat a co hrozí za porušení.',
+    'Jak rozlišit legální B2B cold e-mail od spamu dle GDPR a zák. č. 480/2004 Sb. Co musí každý obchodní e-mail obsahovat a co hrozí za porušení.',
   keywords: [
-    'GDPR cold email',
+    'GDPR cold e-mail',
     'cold email GDPR pravidla',
-    'B2B cold email zákon',
+    'B2B cold e-mail zákon',
     'obchodní sdělení zákon',
     'cold mailing GDPR',
-    '480/2004 Sb cold email',
-    'legální cold email',
+    '480/2004 Sb cold e-mail',
+    'legální cold e-mail',
   ],
   alternates: {
-    canonical: 'https://salesagent.cz/blog/gdpr-a-cold-email',
-    languages: { cs: 'https://salesagent.cz/blog/gdpr-a-cold-email', 'x-default': 'https://salesagent.cz/blog/gdpr-a-cold-email' },
+    canonical: 'https://salesagent.cz/blog/gdpr-a-cold-e-mail',
+    languages: { cs: 'https://salesagent.cz/blog/gdpr-a-cold-e-mail', 'x-default': 'https://salesagent.cz/blog/gdpr-a-cold-e-mail' },
   },
   openGraph: {
-    title: 'GDPR a cold email: Co smíte a nesmíte posílat firmám',
-    description: 'Praktický průvodce GDPR a zákonem 480/2004 Sb. pro B2B cold emailing — co je legální, co musí zpráva obsahovat a co hrozí za spam.',
-    url: 'https://salesagent.cz/blog/gdpr-a-cold-email',
+    title: 'GDPR a cold e-mail: Co smíte a nesmíte posílat firmám',
+    description: 'Praktický průvodce GDPR a zákonem 480/2004 Sb. pro B2B cold e-mailing — co je legální, co musí zpráva obsahovat a co hrozí za spam.',
+    url: 'https://salesagent.cz/blog/gdpr-a-cold-e-mail',
     siteName: 'SalesAgent.cz',
     type: 'article',
     publishedTime: '2026-07-31',
-    images: [{ url: 'https://salesagent.cz/blog/gdpr-cold-email.jpg', width: 1280, height: 853, alt: 'GDPR a cold email pravidla' }],
+    images: [{ url: 'https://salesagent.cz/blog/gdpr-cold-e-mail.jpg', width: 1280, height: 853, alt: 'GDPR a cold e-mail pravidla' }],
   },
   robots: { index: true, follow: true },
 }
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
-  headline: 'GDPR a cold email: Co smíte a nesmíte posílat firmám',
-  description: 'Jak rozlišit legální B2B cold email od spamu dle GDPR a zák. č. 480/2004 Sb.',
-  image: 'https://salesagent.cz/blog/gdpr-cold-email.jpg',
+  headline: 'GDPR a cold e-mail: Co smíte a nesmíte posílat firmám',
+  description: 'Jak rozlišit legální B2B cold e-mail od spamu dle GDPR a zák. č. 480/2004 Sb.',
+  image: 'https://salesagent.cz/blog/gdpr-cold-e-mail.jpg',
   datePublished: '2026-07-31',
   dateModified: '2026-07-31',
   inLanguage: 'cs',
@@ -48,8 +48,8 @@ const jsonLd = {
 const rules = [
   {
     ok: true,
-    title: 'Oslovit firmu emailem bez předchozího souhlasu',
-    note: 'B2B cold emailing je legální dle zák. č. 480/2004 Sb., pokud email obsahuje povinné náležitosti a příjemce má možnost se odhlásit.',
+    title: 'Oslovit firmu e-mailem bez předchozího souhlasu',
+    note: 'B2B cold e-mailing je legální dle zák. č. 480/2004 Sb., pokud e-mail obsahuje povinné náležitosti a příjemce má možnost se odhlásit.',
   },
   {
     ok: true,
@@ -58,7 +58,7 @@ const rules = [
   },
   {
     ok: false,
-    title: 'Posílat emaily fyzickým osobám bez souhlasu',
+    title: 'Posílat e-maily fyzickým osobám bez souhlasu',
     note: 'Spotřebitelé (B2C) potřebují výslovný souhlas dle GDPR. Cold mailing na soukromé osoby bez opt-inu je nezákonný.',
   },
   {
@@ -69,7 +69,7 @@ const rules = [
   {
     ok: false,
     title: 'Skrýt totožnost odesílatele',
-    note: 'Email musí jasně uvádět, kdo ho posílá — název firmy, IČO a kontaktní adresa jsou povinné.',
+    note: 'E-mail musí jasně uvádět, kdo ho posílá — název firmy, IČO a kontaktní adresa jsou povinné.',
   },
 ]
 
@@ -84,10 +84,10 @@ export default function GdprColdEmailPage() {
           <header className="mb-12">
             <p className="text-sm text-orange-400 uppercase tracking-widest mb-4">GDPR · 31. července 2026</p>
             <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-              GDPR a cold email: Co smíte a nesmíte posílat firmám
+              GDPR a cold e-mail: Co smíte a nesmíte posílat firmám
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              B2B cold emailing je v ČR legální — ale jen při splnění konkrétních podmínek. Jak rozlišit, co je povolené obchodní sdělení a co je spam, a co musí každý email povinně obsahovat.
+              B2B cold e-mailing je v ČR legální — ale jen při splnění konkrétních podmínek. Jak rozlišit, co je povolené obchodní sdělení a co je spam, a co musí každý e-mail povinně obsahovat.
             </p>
           </header>
 
@@ -103,19 +103,19 @@ export default function GdprColdEmailPage() {
 
             <h2 className="text-2xl font-bold text-white mt-12 mb-4">Dva zákony, které musíte znát</h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              Při B2B cold emailingu v ČR se pohybujete v rámci dvou předpisů:
+              Při B2B cold e-mailingu v ČR se pohybujete v rámci dvou předpisů:
             </p>
             <div className="grid md:grid-cols-2 gap-4 mb-8">
               {[
                 {
                   law: 'Zákon č. 480/2004 Sb.',
                   full: 'o některých službách informační společnosti',
-                  desc: 'Upravuje obchodní sdělení — co musí email obsahovat, podmínky pro B2B oslovení a povinnost umožnit odhlášení.',
+                  desc: 'Upravuje obchodní sdělení — co musí e-mail obsahovat, podmínky pro B2B oslovení a povinnost umožnit odhlášení.',
                 },
                 {
                   law: 'GDPR (Nařízení EU 2016/679)',
                   full: 'obecné nařízení o ochraně osobních údajů',
-                  desc: 'Reguluje zpracování osobních údajů. Týká se zejména emailů fyzickým osobám a vedení záznamu o zpracování kontaktů.',
+                  desc: 'Reguluje zpracování osobních údajů. Týká se zejména e-mailů fyzickým osobám a vedení záznamu o zpracování kontaktů.',
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-gray-900 border border-gray-700 rounded-xl p-5">
@@ -126,7 +126,7 @@ export default function GdprColdEmailPage() {
               ))}
             </div>
             <p className="text-gray-300 leading-relaxed mb-6">
-              Pro B2B cold email (firma oslovuje firmu) je klíčový zejména zákon č. 480/2004 Sb. GDPR vstupuje do hry tehdy, když pracujete s osobními údaji fyzických osob — jmény, pracovními emaily konkrétních lidí.
+              Pro B2B cold e-mail (firma oslovuje firmu) je klíčový zejména zákon č. 480/2004 Sb. GDPR vstupuje do hry tehdy, když pracujete s osobními údaji fyzických osob — jmény, pracovními e-maily konkrétních lidí.
             </p>
 
             <h2 className="text-2xl font-bold text-white mt-12 mb-6">Co smíte a nesmíte — přehled pravidel</h2>
@@ -150,7 +150,7 @@ export default function GdprColdEmailPage() {
               {[
                 { num: '1', title: 'Příjemce je právnická nebo podnikající fyzická osoba', desc: 'Sdělení musí mířit na firemní kontakt, ne na soukromou osobu.' },
                 { num: '2', title: 'Produkt nebo služba jsou relevantní', desc: 'Nabídka musí být v přímé souvislosti s podnikáním příjemce. Nesmíte posílat náhodné nabídky, které s jeho byznysem nesouvisejí.' },
-                { num: '3', title: 'Email obsahuje všechny povinné náležitosti', desc: 'Identifikace odesílatele, označení jako obchodní sdělení, funkční možnost odhlášení.' },
+                { num: '3', title: 'E-mail obsahuje všechny povinné náležitosti', desc: 'Identifikace odesílatele, označení jako obchodní sdělení, funkční možnost odhlášení.' },
               ].map((item) => (
                 <li key={item.num} className="flex gap-4">
                   <span className="flex-shrink-0 w-8 h-8 rounded-full bg-orange-500/20 text-orange-400 font-bold text-sm flex items-center justify-center">{item.num}</span>
@@ -174,7 +174,7 @@ export default function GdprColdEmailPage() {
                 { label: 'Označení jako obchodní sdělení', desc: 'Příjemce musí jasně poznat, že jde o obchodní komunikaci, ne soukromou zprávu.' },
                 { label: 'Identifikace odesílatele', desc: 'Název firmy, IČO, případně adresa sídla. Skrytá identita je přestupek.' },
                 { label: 'Funkční možnost odmítnutí', desc: 'Odkaz na odhlášení nebo jasná instrukce, jak odhlásit (např. odpovězte „odhlásit"). Musí skutečně fungovat.' },
-                { label: 'Kontakt pro odhlášení', desc: 'Emailová adresa nebo webový formulář, kde může příjemce vznést námitku.' },
+                { label: 'Kontakt pro odhlášení', desc: 'E-mailová adresa nebo webový formulář, kde může příjemce vznést námitku.' },
               ].map((item, i) => (
                 <div key={i} className={`p-4 ${i < 3 ? 'border-b border-gray-700' : ''}`}>
                   <p className="text-white font-semibold text-sm mb-1">{item.label}</p>

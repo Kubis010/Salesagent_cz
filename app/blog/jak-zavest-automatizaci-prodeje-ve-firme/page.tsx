@@ -133,11 +133,11 @@ export default function Page() {
           </h2>
 
           <p>
-            Email a LinkedIn zůstávají dvěma nejúčinnějšími kanály pro B2B oslovení — a nejlépe fungují v kombinaci. Email dorazí přímo do schránky; LinkedIn přidává sociální rozměr, díky kterému odesílatel působí jako skutečná osoba, ne kampaň.
+            E-mail a LinkedIn zůstávají dvěma nejúčinnějšími kanály pro B2B oslovení — a nejlépe fungují v kombinaci. E-mail dorazí přímo do schránky; LinkedIn přidává sociální rozměr, díky kterému odesílatel působí jako skutečná osoba, ne kampaň.
           </p>
 
           <p>
-            Sekvence, která funguje: odeslat personalizovaný cold email → připojit se na LinkedInu s osobní poznámkou → follow-up emailem, pokud nepřijde odpověď po 5–7 dnech → follow-up na LinkedInu, pokud stále nic. Čtyři dotykové body, rozložené přes dva týdny, aniž byste působili dotěrně. Poté stop. Kdokoli, kdo neodpověděl, v tuto chvíli není dobrá investice follow-upu — může znovu vstoupit do systému za 3–6 měsíců.
+            Sekvence, která funguje: odeslat personalizovaný cold e-mail → připojit se na LinkedInu s osobní poznámkou → follow-up e-mailem, pokud nepřijde odpověď po 5–7 dnech → follow-up na LinkedInu, pokud stále nic. Čtyři dotykové body, rozložené přes dva týdny, aniž byste působili dotěrně. Poté stop. Kdokoli, kdo neodpověděl, v tuto chvíli není dobrá investice follow-upu — může znovu vstoupit do systému za 3–6 měsíců.
           </p>
 
           <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, letterSpacing: '-0.02em', marginTop: '16px' }}>
@@ -145,7 +145,7 @@ export default function Page() {
           </h2>
 
           <p>
-            Tady většina implementací padá. Automatizace běží, odpovědi přicházejí — a nikdo je rychle nezpracuje. Prospect, který odpoví na cold email, má krátké okno zájmu. Pokud čeká 48 hodin na odpověď, polovina z nich už bude mentálně jinde.
+            Tady většina implementací padá. Automatizace běží, odpovědi přicházejí — a nikdo je rychle nezpracuje. Prospect, který odpoví na cold e-mail, má krátké okno zájmu. Pokud čeká 48 hodin na odpověď, polovina z nich už bude mentálně jinde.
           </p>
 
           <p>
@@ -215,7 +215,7 @@ export default function Page() {
                 Automatizace prodeje: Jak AI mění B2B oslovení →
               </Link>
               <Link href="/blog/jak-personalizovat-cold-emaily-ai" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
-                Jak personalizovat cold emaily pomocí AI →
+                Jak personalizovat cold e-maily pomocí AI →
               </Link>
               <Link href="/cs/pricing" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
                 Ceník →

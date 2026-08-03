@@ -2,15 +2,15 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Jak personalizovat cold emaily pomocí AI — průvodce pro B2B firmy | SalesAgent.cz',
+  title: 'Jak personalizovat cold e-maily pomocí AI — průvodce pro B2B firmy | SalesAgent.cz',
   description:
-    'Automatický cold mailing nemusí znamenat spam. Naučte se, jak AI personalizuje cold emaily na základě webu každé firmy a proč to generuje víc odpovědí než šablony.',
+    'Automatický cold mailing nemusí znamenat spam. Naučte se, jak AI personalizuje cold e-maily na základě webu každé firmy a proč to generuje víc odpovědí než šablony.',
   alternates: {
-    canonical: 'https://salesagent.cz/blog/jak-personalizovat-cold-emaily-ai',
-    languages: { cs: 'https://salesagent.cz/blog/jak-personalizovat-cold-emaily-ai', 'x-default': 'https://salesagent.cz/blog/jak-personalizovat-cold-emaily-ai' },
+    canonical: 'https://salesagent.cz/blog/jak-personalizovat-cold-e-maily-ai',
+    languages: { cs: 'https://salesagent.cz/blog/jak-personalizovat-cold-e-maily-ai', 'x-default': 'https://salesagent.cz/blog/jak-personalizovat-cold-e-maily-ai' },
   },
   openGraph: {
-    title: 'Jak personalizovat cold emaily pomocí AI',
+    title: 'Jak personalizovat cold e-maily pomocí AI',
     description:
       'AI přečte web firmy a napíše unikátní zprávu. Proč to funguje líp než šablony a jak na to.',
     type: 'article',
@@ -18,10 +18,10 @@ export const metadata: Metadata = {
     locale: 'cs_CZ',
   },
   keywords: [
-    'personalizovaný cold email',
+    'personalizovaný cold e-mail',
     'automatický cold mailing',
-    'AI cold email',
-    'jak personalizovat cold emaily',
+    'AI cold e-mail',
+    'jak personalizovat cold e-maily',
     'cold email automatizace',
     'B2B oslovování firem',
     'AI obchodní zástupce',
@@ -37,9 +37,9 @@ export default function Page() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'BlogPosting',
-            headline: 'Jak personalizovat cold emaily pomocí AI — průvodce pro B2B firmy',
-            description: 'Automatický cold mailing nemusí znamenat spam. Jak AI personalizuje cold emaily na základě webu každé firmy a proč to generuje víc odpovědí než šablony.',
-            image: 'https://salesagent.cz/blog/ai-cold-email.jpg',
+            headline: 'Jak personalizovat cold e-maily pomocí AI — průvodce pro B2B firmy',
+            description: 'Automatický cold mailing nemusí znamenat spam. Jak AI personalizuje cold e-maily na základě webu každé firmy a proč to generuje víc odpovědí než šablony.',
+            image: 'https://salesagent.cz/blog/ai-cold-e-mail.jpg',
             datePublished: '2026-07-13',
             dateModified: '2026-07-13',
             inLanguage: 'cs',
@@ -55,13 +55,13 @@ export default function Page() {
         {/* Breadcrumb */}
         <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '32px' }}>
           <Link href="/blog" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Blog</Link>
-          {' / '}Jak personalizovat cold emaily
+          {' / '}Jak personalizovat cold e-maily
         </p>
 
         {/* Hero image */}
         <img
-          src="/blog/ai-cold-email.jpg"
-          alt="AI personalizace cold emailů pro B2B firmy"
+          src="/blog/ai-cold-e-mail.jpg"
+          alt="AI personalizace cold e-mailů pro B2B firmy"
           style={{ width: '100%', borderRadius: '14px', marginBottom: '40px', display: 'block' }}
         />
 
@@ -76,7 +76,7 @@ export default function Page() {
           lineHeight: 1.2,
           marginBottom: '16px',
         }}>
-          Jak personalizovat cold emaily pomocí AI — průvodce pro B2B firmy
+          Jak personalizovat cold e-maily pomocí AI — průvodce pro B2B firmy
         </h1>
         <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '48px' }}>
           13. července 2026 &middot; Petr Kubíček
@@ -85,26 +85,26 @@ export default function Page() {
         <div style={{ fontSize: '16px', lineHeight: '1.8', color: 'var(--text-muted)' }}>
 
           <p>
-            Cold emaily mají v B2B obchodu špatnou pověst. Většina firem si pod nimi představí hromadné
-            rozesílky, které končí ve spamu. Jenže problém není v cold emailu jako takovém — problém
+            Cold e-maily mají v B2B obchodu špatnou pověst. Většina firem si pod nimi představí hromadné
+            rozesílky, které končí ve spamu. Jenže problém není v cold e-mailu jako takovém — problém
             je v tom, že většina zpráv je <strong>generická</strong>. Šablona s doplněným jménem prostě nefunguje.
           </p>
 
           <p>
-            Co kdyby každý email reagoval na to, čím se daná firma skutečně zabývá? Co kdyby příjemce
+            Co kdyby každý e-mail reagoval na to, čím se daná firma skutečně zabývá? Co kdyby příjemce
             měl pocit, že mu píše někdo, kdo si dal práci prostudovat jeho web? Přesně tohle dnes
             umí <strong>AI cold mailing</strong>.
           </p>
 
-          <H2>Proč šablonové cold emaily nefungují</H2>
+          <H2>Proč šablonové cold e-maily nefungují</H2>
 
           <p>
-            Typický cold email vypadá takto: <em>„Dobrý den, jmenuji se Jan a nabízíme řešení pro firmy
+            Typický cold e-mail vypadá takto: <em>„Dobrý den, jmenuji se Jan a nabízíme řešení pro firmy
             jako je ta vaše."</em> Příjemce okamžitě pozná, že jde o hromadnou rozesílku. Výsledek?
             Míra odpovědí pod 1 %, vysoká míra odhlášení a poškozená doménová reputace.
           </p>
 
-          <p>Hlavní problémy šablonových emailů:</p>
+          <p>Hlavní problémy šablonových e-mailů:</p>
           <ul style={{ paddingLeft: '20px', marginBottom: '24px' }}>
             <li>Neobsahují žádný kontext o firmě příjemce</li>
             <li>Vypadají jako spam — a často ve spamu i končí</li>
@@ -112,17 +112,17 @@ export default function Page() {
             <li>Personalizace typu „jméno + firma" nestačí — příjemce to prokoukne</li>
           </ul>
 
-          <H2>Jak funguje AI personalizace cold emailů</H2>
+          <H2>Jak funguje AI personalizace cold e-mailů</H2>
 
           <p>
             Moderní <strong>nástroje na automatizaci prodeje</strong> pracují úplně jinak než klasický
-            email marketing. Místo jedné šablony pro tisíce kontaktů systém:
+            e-mail marketing. Místo jedné šablony pro tisíce kontaktů systém:
           </p>
 
           <ol style={{ paddingLeft: '20px', marginBottom: '24px' }}>
             <li><strong>Navštíví web každé firmy</strong> — AI přečte obsah, zjistí obor, nabídku, specializaci</li>
             <li><strong>Pochopí kontext</strong> — rozpozná, co firma dělá, na co se zaměřuje a co by ji mohlo zajímat</li>
-            <li><strong>Napíše unikátní zprávu</strong> — email přímo reaguje na obsah webu, ne na šablonu</li>
+            <li><strong>Napíše unikátní zprávu</strong> — e-mail přímo reaguje na obsah webu, ne na šablonu</li>
             <li><strong>Odešle ve správný čas</strong> — automaticky a bez manuálního zásahu</li>
           </ol>
 
@@ -164,7 +164,7 @@ export default function Page() {
             marginBottom: '32px',
           }}>
             <p style={{ fontSize: '12px', fontWeight: 700, color: 'var(--accent)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '12px' }}>
-              AI personalizovaný email
+              AI personalizovaný e-mail
             </p>
             <p style={{ fontStyle: 'italic', margin: 0 }}>
               „Dobrý den, všiml jsem si, že se zaměřujete na dodávky stavební techniky pro
@@ -182,8 +182,8 @@ export default function Page() {
           <H2>Kolik odpovědí to reálně generuje</H2>
 
           <p>
-            Hromadné cold emaily mají typicky míru odpovědí kolem <strong>0,5–1 %</strong>.
-            Personalizované AI cold emaily dosahují <strong>2–5 %</strong> — násobně více.
+            Hromadné cold e-maily mají typicky míru odpovědí kolem <strong>0,5–1 %</strong>.
+            Personalizované AI cold e-maily dosahují <strong>2–5 %</strong> — násobně více.
             U 500 oslovených firem měsíčně to znamená rozdíl mezi 2 a 25 odpověďmi.
           </p>
 
@@ -192,15 +192,15 @@ export default function Page() {
             jeho situaci, je pravděpodobnější, že má skutečný zájem — ne jen zvědavost.
           </p>
 
-          <H2>Automatický cold mailing vs. email marketing — jaký je rozdíl?</H2>
+          <H2>Automatický cold mailing vs. e-mail marketing — jaký je rozdíl?</H2>
 
           <p>
-            Hodně firem si plete cold mailing s email marketingem (Mailchimp, Ecomail apod.).
+            Hodně firem si plete cold mailing s e-mail marketingem (Mailchimp, Ecomail apod.).
             Jsou to ale zásadně odlišné věci:
           </p>
 
           <ul style={{ paddingLeft: '20px', marginBottom: '24px' }}>
-            <li><strong>Email marketing</strong> — oslovuje lidi, kteří se přihlásili k odběru. Pracujete s existující databází.</li>
+            <li><strong>E-mail marketing</strong> — oslovuje lidi, kteří se přihlásili k odběru. Pracujete s existující databází.</li>
             <li><strong>Cold mailing</strong> — oslovuje firmy, které vás ještě neznají. Každý kontakt je nový.</li>
           </ul>
 
@@ -230,8 +230,8 @@ export default function Page() {
           <ol style={{ paddingLeft: '20px', marginBottom: '24px' }}>
             <li>Společně definujeme, koho chcete oslovovat (obor, region, velikost firmy)</li>
             <li>AI automaticky vyhledá B2B kontakty z veřejných zdrojů</li>
-            <li>Prostuduje web každé firmy a napíše personalizovaný cold email</li>
-            <li>Odešle email i LinkedIn zprávu</li>
+            <li>Prostuduje web každé firmy a napíše personalizovaný cold e-mail</li>
+            <li>Odešle e-mail i LinkedIn zprávu</li>
             <li>K vám se dostane jen ten, kdo odpoví se zájmem</li>
           </ol>
 
@@ -244,10 +244,10 @@ export default function Page() {
           <H2>Shrnutí</H2>
 
           <ul style={{ paddingLeft: '20px', marginBottom: '24px' }}>
-            <li>Šablonové cold emaily nefungují — příjemce je pozná a ignoruje</li>
+            <li>Šablonové cold e-maily nefungují — příjemce je pozná a ignoruje</li>
             <li>AI personalizace čte web každé firmy a píše unikátní zprávu</li>
             <li>Míra odpovědí je 2–5× vyšší než u hromadných rozesílek</li>
-            <li>Cold mailing ≠ email marketing — oslovujete firmy, které vás ještě neznají</li>
+            <li>Cold mailing ≠ e-mail marketing — oslovujete firmy, které vás ještě neznají</li>
             <li>SalesAgent.cz to dělá jako služba — vy neřešíte nic, jen přebíráte zájemce</li>
           </ul>
 

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     'automatický cold mailing',
     'AI generování leadů',
     'automatické vyhledávání B2B kontaktů',
-    'personalizovaný cold email',
+    'personalizovaný cold e-mail',
     'nástroje na automatizaci prodeje',
   ],
   alternates: {
@@ -91,7 +91,7 @@ export default function Page() {
         <div style={{ fontSize: '17px', lineHeight: 1.75, color: 'var(--text)', display: 'flex', flexDirection: 'column', gap: '24px' }}>
 
           <p>
-            Léta B2B obchod znamenal obchodníka sedícího za stolem, ručně hledajícího firmy, vyhledávajícího rozhodovací osoby na LinkedInu, psajícího emaily od nuly a volajícího zpět o týden později. Fungovalo to — pomalu, draze a v měřítku omezeném počtem hodin pracovního dne.
+            Léta B2B obchod znamenal obchodníka sedícího za stolem, ručně hledajícího firmy, vyhledávajícího rozhodovací osoby na LinkedInu, psajícího e-maily od nuly a volajícího zpět o týden později. Fungovalo to — pomalu, draze a v měřítku omezeném počtem hodin pracovního dne.
           </p>
 
           <p>
@@ -103,11 +103,11 @@ export default function Page() {
           </h2>
 
           <p>
-            „Automatizace prodeje" je termín, který pokrývá všechno od předpřipravené emailové sekvence po plně autonomního AI obchodního zástupce, který identifikuje, prozkoumá a osloví potenciální zákazníky bez lidského zásahu. Rozdíl je zásadní, protože většina trhu prodává to první, zatímco naznačuje to druhé.
+            „Automatizace prodeje" je termín, který pokrývá všechno od předpřipravené e-mailové sekvence po plně autonomního AI obchodního zástupce, který identifikuje, prozkoumá a osloví potenciální zákazníky bez lidského zásahu. Rozdíl je zásadní, protože většina trhu prodává to první, zatímco naznačuje to druhé.
           </p>
 
           <p>
-            Skutečná automatizace zvládne celý top-of-funnel cyklus: automatické vyhledávání B2B kontaktů odpovídajících vašemu ideálnímu zákaznickému profilu, načtení a analýzu jejich webových stránek, napsání personalizovaného cold emailu na základě zjištěných informací a jeho odeslání emailem i přes LinkedIn — to vše bez toho, aby se člověk musel zapojit, dokud nepřijde odpověď.
+            Skutečná automatizace zvládne celý top-of-funnel cyklus: automatické vyhledávání B2B kontaktů odpovídajících vašemu ideálnímu zákaznickému profilu, načtení a analýzu jejich webových stránek, napsání personalizovaného cold e-mailu na základě zjištěných informací a jeho odeslání e-mailem i přes LinkedIn — to vše bez toho, aby se člověk musel zapojit, dokud nepřijde odpověď.
           </p>
 
           <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, letterSpacing: '-0.02em', marginTop: '16px' }}>
@@ -145,7 +145,7 @@ export default function Page() {
           </p>
 
           <p>
-            <strong>3. Oslovení.</strong> Na základě průzkumu systém vygeneruje unikátní personalizovaný cold email pro každou firmu — ne šablonu s doplněným jménem, ale zprávu, která přímo odkazuje na to, co na webu našel. Stejná logika platí i pro žádost o připojení na LinkedInu s osobní poznámkou.
+            <strong>3. Oslovení.</strong> Na základě průzkumu systém vygeneruje unikátní personalizovaný cold e-mail pro každou firmu — ne šablonu s doplněným jménem, ale zprávu, která přímo odkazuje na to, co na webu našel. Stejná logika platí i pro žádost o připojení na LinkedInu s osobní poznámkou.
           </p>
 
           <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, letterSpacing: '-0.02em', marginTop: '16px' }}>
@@ -153,7 +153,7 @@ export default function Page() {
           </h2>
 
           <p>
-            Počet odeslaných emailů sám o sobě nic neznamená. Důležité je, kolik firem odpoví a projeví zájem — a co se s nimi stane dál. S kvalitní personalizací ve velkém měřítku 2% míra odpovědí z 1 000 oslovení měsíčně znamená 20 kvalifikovaných konverzací. Při 15% uzavírací míře ze schůzky to jsou 3 noví zákazníci měsíčně z jediného automatizovaného systému běžícího za 239 €.
+            Počet odeslaných e-mailů sám o sobě nic neznamená. Důležité je, kolik firem odpoví a projeví zájem — a co se s nimi stane dál. S kvalitní personalizací ve velkém měřítku 2% míra odpovědí z 1 000 oslovení měsíčně znamená 20 kvalifikovaných konverzací. Při 15% uzavírací míře ze schůzky to jsou 3 noví zákazníci měsíčně z jediného automatizovaného systému běžícího za 239 €.
           </p>
 
           <p>
@@ -208,7 +208,7 @@ export default function Page() {
             <p style={{ fontSize: '14px', fontWeight: 600, color: 'var(--text)', marginBottom: '12px' }}>Související články</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
               <Link href="/blog/jak-personalizovat-cold-emaily-ai" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
-                Jak personalizovat cold emaily pomocí AI →
+                Jak personalizovat cold e-maily pomocí AI →
               </Link>
               <Link href="/blog/jak-zavest-automatizaci-prodeje-ve-firme" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
                 Jak zavést automatizaci prodeje ve firmě →

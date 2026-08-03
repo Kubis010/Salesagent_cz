@@ -134,7 +134,7 @@ export default function Page() {
               Role obchodního zástupce se nachází na vrcholu obchodního funnelu. V B2B prostředí se tato pozice často nazývá <em>Sales Development Representative (SDR)</em> nebo <em>Business Development Representative (BDR)</em>. Pozice je náročná, protože zahrnuje vysoký objem odmítnutí — většina kontaktů neodpoví a z těch, kteří ano, se jen zlomek stane skutečnou příležitostí.
             </p>
             <p>
-              Co od role čekat: značná část času jde do průzkumu (hledání správných firem a kontaktů), oslovení (emaily, hovory, LinkedIn) a follow-upu. Výsledky se měří v domluvených schůzkách nebo kvalifikovaných leadech předaných uzavíracímu týmu, ne v uzavřených příjmech.
+              Co od role čekat: značná část času jde do průzkumu (hledání správných firem a kontaktů), oslovení (e-maily, hovory, LinkedIn) a follow-upu. Výsledky se měří v domluvených schůzkách nebo kvalifikovaných leadech předaných uzavíracímu týmu, ne v uzavřených příjmech.
             </p>
           </ArticleSection>
 
@@ -157,7 +157,7 @@ export default function Page() {
             <ul style={{ paddingLeft: '20px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
               <li>Automatické vyhledávání B2B kontaktů odpovídajících ideálnímu zákaznickému profilu</li>
               <li>Hledání správné kontaktní osoby ve firmě (rozhodovací osoba)</li>
-              <li>Psaní a odesílání personalizovaných cold emailů</li>
+              <li>Psaní a odesílání personalizovaných cold e-mailů</li>
               <li>Prospekting přes LinkedIn — žádosti o připojení, zprávy, návštěvy profilů</li>
               <li>Follow-up u prospektů, kteří na první kontakt nereagovali</li>
               <li>Kvalifikace příchozích odpovědí a domlouvání discovery hovorů</li>
@@ -225,7 +225,7 @@ export default function Page() {
             </p>
             <ul style={{ paddingLeft: '20px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
               <li>
-                <strong>Písemná komunikace:</strong> schopnost napsat krátký, jasný, věrohodný email, který nevypadá jako šablona — toto je nejpříměji testovaná dovednost v roli
+                <strong>Písemná komunikace:</strong> schopnost napsat krátký, jasný, věrohodný e-mail, který nevypadá jako šablona — toto je nejpříměji testovaná dovednost v roli
               </li>
               <li>
                 <strong>Schopnost průzkumu:</strong> rychlé pochopení toho, čím se firma zabývá a proč by vaše nabídka mohla být relevantní právě pro ni
@@ -279,7 +279,7 @@ export default function Page() {
               AI obchodní zástupce jako služba
             </h2>
             <p style={{ fontSize: '15px', color: 'var(--text-muted)', lineHeight: '1.65', marginBottom: '24px' }}>
-              SalesAgent.cz poskytuje outsourcovaného AI obchodního zástupce, který najde cílové firmy, přečte jejich weby a odešle personalizovaný cold email vaším jménem. Dostáváte domluvené schůzky — bez najímání obchodníka na plný úvazek.
+              SalesAgent.cz poskytuje outsourcovaného AI obchodního zástupce, který najde cílové firmy, přečte jejich weby a odešle personalizovaný cold e-mail vaším jménem. Dostáváte domluvené schůzky — bez najímání obchodníka na plný úvazek.
             </p>
             <Link
               href="/cs"
@@ -305,7 +305,7 @@ export default function Page() {
                 Automatizace prodeje: Jak AI mění B2B oslovení →
               </Link>
               <Link href="/blog/jak-personalizovat-cold-emaily-ai" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
-                Jak personalizovat cold emaily pomocí AI →
+                Jak personalizovat cold e-maily pomocí AI →
               </Link>
               <Link href="/cs/how-it-works" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
                 Jak to funguje — krok za krokem →

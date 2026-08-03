@@ -75,7 +75,7 @@ export default function AiAgentLeadyPage() {
               AI agent pro generování leadů je systém, který autonomně vyhledává firmy odpovídající vašemu ideálnímu zákaznickému profilu, analyzuje je a oslovuje jménem vaší firmy. Na rozdíl od tradičního lead generation — kde obchodník ručně prohledává databáze a píše zprávy — AI agent tento proces provádí automaticky, nepřetržitě a ve velkém měřítku.
             </p>
             <p className="text-gray-300 leading-relaxed mb-6">
-              Nejde o jednoduchý email automat, který rozešle šablonu tisíci kontaktům. Moderní AI agenti pro lead generation pracují s kontextem — čtou weby cílových firem, chápou jejich obor a připravují zprávy, které dávají smysl konkrétnímu příjemci. Tím se zásadně liší od starých nástrojů hromadného rozesílání.
+              Nejde o jednoduchý e-mail automat, který rozešle šablonu tisíci kontaktům. Moderní AI agenti pro lead generation pracují s kontextem — čtou weby cílových firem, chápou jejich obor a připravují zprávy, které dávají smysl konkrétnímu příjemci. Tím se zásadně liší od starých nástrojů hromadného rozesílání.
             </p>
 
             <h2 className="text-2xl font-bold text-white mt-12 mb-4">Jak AI agent pro lead generation pracuje krok za krokem</h2>
@@ -100,7 +100,7 @@ export default function AiAgentLeadyPage() {
                 {
                   step: '04',
                   title: 'Personalizované oslovení',
-                  body: 'Na základě analýzy AI napíše zprávu — email nebo LinkedIn zprávu — která je relevantní konkrétní firmě. Zmiňuje jejich konkrétní situaci a vysvětluje, proč vaše řešení dává smysl právě pro ně. Žádné generické šablony.',
+                  body: 'Na základě analýzy AI napíše zprávu — e-mail nebo LinkedIn zprávu — která je relevantní konkrétní firmě. Zmiňuje jejich konkrétní situaci a vysvětluje, proč vaše řešení dává smysl právě pro ně. Žádné generické šablony.',
                 },
                 {
                   step: '05',

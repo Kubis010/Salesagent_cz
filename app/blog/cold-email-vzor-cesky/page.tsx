@@ -3,30 +3,30 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Cold email vzor česky: 3 šablony pro B2B oslovení | SalesAgent.cz',
+  title: 'Cold e-mail vzor česky: 3 šablony pro B2B oslovení | SalesAgent.cz',
   description:
-    'Konkrétní vzory cold emailů pro B2B oslovení v češtině — 3 hotové šablony s GDPR patičkou. Jak napsat první zprávu, která dostane odpověď.',
+    'Konkrétní vzory cold e-mailů pro B2B oslovení v češtině — 3 hotové šablony s GDPR patičkou. Jak napsat první zprávu, která dostane odpověď.',
   keywords: [
     'cold email vzor česky',
     'cold email šablona B2B',
-    'jak napsat cold email',
-    'B2B oslovení email',
+    'jak napsat cold e-mail',
+    'B2B oslovení e-mail',
     'cold mailing vzor',
     'cold email příklad',
-    'B2B cold email šablona',
+    'B2B cold e-mail šablona',
   ],
   alternates: {
-    canonical: 'https://salesagent.cz/blog/cold-email-vzor-cesky',
-    languages: { cs: 'https://salesagent.cz/blog/cold-email-vzor-cesky', 'x-default': 'https://salesagent.cz/blog/cold-email-vzor-cesky' },
+    canonical: 'https://salesagent.cz/blog/cold-e-mail-vzor-cesky',
+    languages: { cs: 'https://salesagent.cz/blog/cold-e-mail-vzor-cesky', 'x-default': 'https://salesagent.cz/blog/cold-e-mail-vzor-cesky' },
   },
   openGraph: {
-    title: 'Cold email vzor česky: 3 šablony pro B2B oslovení',
-    description: '3 hotové vzory cold emailů pro B2B s GDPR patičkou. Praktické šablony, které dostávají odpovědi.',
-    url: 'https://salesagent.cz/blog/cold-email-vzor-cesky',
+    title: 'Cold e-mail vzor česky: 3 šablony pro B2B oslovení',
+    description: '3 hotové vzory cold e-mailů pro B2B s GDPR patičkou. Praktické šablony, které dostávají odpovědi.',
+    url: 'https://salesagent.cz/blog/cold-e-mail-vzor-cesky',
     siteName: 'SalesAgent.cz',
     type: 'article',
     publishedTime: '2026-08-03',
-    images: [{ url: 'https://salesagent.cz/blog/cold-email-vzor.png', width: 1280, height: 853, alt: 'Cold email vzor česky' }],
+    images: [{ url: 'https://salesagent.cz/blog/cold-e-mail-vzor.png', width: 1280, height: 853, alt: 'Cold e-mail vzor česky' }],
   },
   robots: { index: true, follow: true },
 }
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
-  headline: 'Cold email vzor česky: 3 šablony pro B2B oslovení',
-  description: 'Konkrétní vzory cold emailů pro B2B oslovení v češtině — 3 hotové šablony s GDPR patičkou.',
-  image: 'https://salesagent.cz/blog/cold-email-vzor.png',
+  headline: 'Cold e-mail vzor česky: 3 šablony pro B2B oslovení',
+  description: 'Konkrétní vzory cold e-mailů pro B2B oslovení v češtině — 3 hotové šablony s GDPR patičkou.',
+  image: 'https://salesagent.cz/blog/cold-e-mail-vzor.png',
   datePublished: '2026-08-03',
   dateModified: '2026-08-03',
   inLanguage: 'cs',
@@ -55,7 +55,7 @@ přečetl jsem si váš web a vidím, že [konkrétní pozorování o firmě —
 
 Firmy ve vašem oboru většinou narážejí na to, že oslovovat nové zákazníky stojí buď hodně peněz (nábor obchodníka) nebo hodně času (ruční procházení kontaktů).
 
-My to řešíme jinak — AI systém, který sám vyhledá relevantní firmy, přečte jejich web a odešle personalizovaný email jménem vaší firmy. Bez koupené databáze, bez šablon.
+My to řešíme jinak — AI systém, který sám vyhledá relevantní firmy, přečte jejich web a odešle personalizovaný e-mail jménem vaší firmy. Bez koupené databáze, bez šablon.
 
 Dáte mi 20 minut na hovor, abychom zjistili, zda to dává smysl pro váš obor?
 
@@ -115,10 +115,10 @@ export default function ColdEmailVzorPage() {
           <header className="mb-12">
             <p className="text-sm text-orange-400 uppercase tracking-widest mb-4">Cold email · 3. srpna 2026</p>
             <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-              Cold email vzor česky: 3 šablony pro B2B oslovení
+              Cold e-mail vzor česky: 3 šablony pro B2B oslovení
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Tři konkrétní vzory cold emailů pro B2B outreach v češtině — s vysvětlením logiky každé šablony, co v ní funguje a jak ji přizpůsobit svému oboru. Včetně povinné GDPR patičky.
+              Tři konkrétní vzory cold e-mailů pro B2B outreach v češtině — s vysvětlením logiky každé šablony, co v ní funguje a jak ji přizpůsobit svému oboru. Včetně povinné GDPR patičky.
             </p>
           </header>
 
@@ -130,10 +130,10 @@ export default function ColdEmailVzorPage() {
 
             <h2 className="text-2xl font-bold text-white mt-12 mb-4">Proč většina cold emailů v češtině nefunguje</h2>
             <p className="text-gray-300 leading-relaxed mb-6">
-              Špatný cold email v češtině se pozná okamžitě: začíná „Dovolte mi představit naši firmu...", je dlouhý jako životopis a žádá o schůzku s celým vedením. Příjemce ho smaže za 3 sekundy — nebo ho označí jako spam.
+              Špatný cold e-mail v češtině se pozná okamžitě: začíná „Dovolte mi představit naši firmu...", je dlouhý jako životopis a žádá o schůzku s celým vedením. Příjemce ho smaže za 3 sekundy — nebo ho označí jako spam.
             </p>
             <p className="text-gray-300 leading-relaxed mb-6">
-              Dobrý cold email je kratší, než si myslíte. Jedno konkrétní pozorování o příjemci, jedna jasná myšlenka o tom, co nabízíte, a jeden nízkobarierový krok dál. Nic víc.
+              Dobrý cold e-mail je kratší, než si myslíte. Jedno konkrétní pozorování o příjemci, jedna jasná myšlenka o tom, co nabízíte, a jeden nízkobarierový krok dál. Nic víc.
             </p>
             <p className="text-gray-300 leading-relaxed mb-6">
               Níže jsou tři funkční vzory pro různé situace — s komentářem k tomu, proč každý prvek tam je.
@@ -190,7 +190,7 @@ export default function ColdEmailVzorPage() {
 
             <h2 className="text-2xl font-bold text-white mt-12 mb-4">Povinná GDPR patička cold emailu</h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              Každý obchodní email musí obsahovat patičku dle zákona č. 480/2004 Sb. o některých službách informační společnosti. Bez ní se vystavujete pokutě a poškozujete reputaci domény.
+              Každý obchodní e-mail musí obsahovat patičku dle zákona č. 480/2004 Sb. o některých službách informační společnosti. Bez ní se vystavujete pokutě a poškozujete reputaci domény.
             </p>
             <div className="bg-gray-900 border border-orange-500/30 rounded-xl p-5 mb-6">
               <p className="text-xs text-orange-400 uppercase tracking-widest mb-3">Vzor povinné patičky</p>
@@ -204,10 +204,10 @@ export default function ColdEmailVzorPage() {
 
             <h2 className="text-2xl font-bold text-white mt-12 mb-4">Jak personalizaci zvládnout ve velkém měřítku</h2>
             <p className="text-gray-300 leading-relaxed mb-6">
-              Ruční personalizace funguje do cca 50 emailů týdně. Nad tím narážíte na limity — buď píšete rychle a ztrácíte kvalitu, nebo píšete pomalu a oslovíte málo firem.
+              Ruční personalizace funguje do cca 50 e-mailů týdně. Nad tím narážíte na limity — buď píšete rychle a ztrácíte kvalitu, nebo píšete pomalu a oslovíte málo firem.
             </p>
             <p className="text-gray-300 leading-relaxed mb-6">
-              Moderní AI systémy přečtou web každé cílové firmy a vygenerují personalizovanou první větu (nebo celý email) automaticky. Výsledek vypadá jako ruční práce, ale obsáhne stovky firem měsíčně. Přesně tak funguje SalesAgent.cz — místo koupené databáze a šablon.
+              Moderní AI systémy přečtou web každé cílové firmy a vygenerují personalizovanou první větu (nebo celý e-mail) automaticky. Výsledek vypadá jako ruční práce, ale obsáhne stovky firem měsíčně. Přesně tak funguje SalesAgent.cz — místo koupené databáze a šablon.
             </p>
 
           </article>

@@ -95,7 +95,7 @@ export default function CoDElaExterniObchodnikPage() {
                 {
                   num: '03',
                   title: 'Oslovování a první kontakt',
-                  body: 'Klíčová disciplína externího obchodníka: umění prvního oslovení. Email, telefonát nebo LinkedIn zpráva — každý kanál má svou logiku. Profesionální obchodník personalizuje každé oslovení na základě toho, co o firmě ví, a sleduje, jak různé přístupy fungují.',
+                  body: 'Klíčová disciplína externího obchodníka: umění prvního oslovení. E-mail, telefonát nebo LinkedIn zpráva — každý kanál má svou logiku. Profesionální obchodník personalizuje každé oslovení na základě toho, co o firmě ví, a sleduje, jak různé přístupy fungují.',
                 },
                 {
                   num: '04',
@@ -136,15 +136,15 @@ export default function CoDElaExterniObchodnikPage() {
                 },
                 {
                   category: 'Prospektingové nástroje',
-                  tools: 'LinkedIn Sales Navigator pro hledání kontaktů, Apollo.io nebo Hunter.io pro dohledávání emailů, ARES nebo zahraniční firemní registry pro verifikaci firem.',
+                  tools: 'LinkedIn Sales Navigator pro hledání kontaktů, Apollo.io nebo Hunter.io pro dohledávání e-mailů, ARES nebo zahraniční firemní registry pro verifikaci firem.',
                 },
                 {
-                  category: 'Email a outreach automatizace',
+                  category: 'E-mail a outreach automatizace',
                   tools: 'Nástroje jako Lemlist, Instantly nebo Woodpecker pro rozesílání personalizovaných sekvencí a sledování otevření, kliknutí a odpovědí.',
                 },
                 {
                   category: 'LinkedIn outreach',
-                  tools: 'Systematická práce s LinkedIn — zasílání žádostí o spojení, zpráv a follow-upů. Správně nastavený LinkedIn profil je stejně důležitý jako email.',
+                  tools: 'Systematická práce s LinkedIn — zasílání žádostí o spojení, zpráv a follow-upů. Správně nastavený LinkedIn profil je stejně důležitý jako e-mail.',
                 },
                 {
                   category: 'Analytika a reporting',

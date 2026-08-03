@@ -55,7 +55,7 @@ const sources = [
   {
     icon: '📒',
     title: 'Firmy.cz',
-    desc: 'Největší český firemní katalog. Filtrujte podle oboru, kraje nebo velikosti. Zobrazuje telefony, weby a v některých případech i emailové adresy přímo v záznamu.',
+    desc: 'Největší český firemní katalog. Filtrujte podle oboru, kraje nebo velikosti. Zobrazuje telefony, weby a v některých případech i e-mailové adresy přímo v záznamu.',
     quality: 'Vysoká — rozsáhlá česká databáze',
   },
   {
@@ -67,7 +67,7 @@ const sources = [
   {
     icon: '🌐',
     title: 'Weby firem',
-    desc: 'Přímý zdroj kontaktů — stránky „Kontakt", „Tým" nebo „O nás". Firmy zde uvádějí emailové adresy, telefony i jména zodpovědných osob. Čtení webu navíc dá kontext pro personalizaci zprávy.',
+    desc: 'Přímý zdroj kontaktů — stránky „Kontakt", „Tým" nebo „O nás". Firmy zde uvádějí e-mailové adresy, telefony i jména zodpovědných osob. Čtení webu navíc dá kontext pro personalizaci zprávy.',
     quality: 'Velmi vysoká — první ruka, aktuální údaje',
   },
   {
@@ -168,7 +168,7 @@ export default function JakOslovitFirmyPage() {
             </p>
             <ol className="space-y-4 mb-8">
               {[
-                { step: '1', title: 'Web firmy', desc: 'Stránky „O nás", „Tým" nebo „Kontakt". Mnoho firem uvádí přímé emaily zaměstnanců.' },
+                { step: '1', title: 'Web firmy', desc: 'Stránky „O nás", „Tým" nebo „Kontakt". Mnoho firem uvádí přímé e-maily zaměstnanců.' },
                 { step: '2', title: 'LinkedIn profil', desc: 'Hledejte jméno + firma. Zjistíte pozici a můžete oslovit přes InMail nebo žádost o připojení.' },
                 { step: '3', title: 'Vzor emailové adresy', desc: 'Pokud znáte jedno firemní emailu (info@firma.cz), odhadněte vzor: jmeno.prijmeni@firma.cz. Ověřte přes Hunter.io (10 hledání zdarma).' },
                 { step: '4', title: 'Firemní tiskové zprávy a PR', desc: 'Citace z tiskových zpráv a článků v médiích často uvádějí jméno i pozici zodpovědné osoby.' },
@@ -211,7 +211,7 @@ export default function JakOslovitFirmyPage() {
                 'Prohledávají obchodní rejstřík nebo Google Maps podle vašich kritérií',
                 'Pro každou nalezenou firmu stáhnou a přečtou web',
                 'Identifikují relevantní signály (čím se zabývají, jaká je jejich velikost, co hledají)',
-                'Napíší personalizovanou první větu emailu na základě webu',
+                'Napíší personalizovanou první větu e-mailu na základě webu',
                 'Odesílají v dávkách s dodržením GDPR patičky',
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3 text-gray-300">
@@ -221,7 +221,7 @@ export default function JakOslovitFirmyPage() {
               ))}
             </ul>
             <p className="text-gray-300 leading-relaxed mb-6">
-              Výsledek: stovky personalizovaných emailů měsíčně bez koupené databáze a bez toho, aby to vypadalo jako šablona.
+              Výsledek: stovky personalizovaných e-mailů měsíčně bez koupené databáze a bez toho, aby to vypadalo jako šablona.
             </p>
 
             <h2 className="text-2xl font-bold text-white mt-12 mb-4">Kdy koupená databáze přece jen dává smysl</h2>
@@ -234,7 +234,7 @@ export default function JakOslovitFirmyPage() {
           <div className="mt-16 p-8 border border-orange-500/30 rounded-2xl bg-orange-900/10">
             <h2 className="text-2xl font-bold mb-3">Celý tento proces umíme automatizovat</h2>
             <p className="text-gray-300 mb-4">
-              SalesAgent.cz automatizuje celý proces hledání a oslovování nových firem. Na základě vašeho ideálního zákaznického profilu systém vyhledá relevantní firmy, přečte jejich weby, identifikuje správné kontakty a odešle personalizovaný cold email.
+              SalesAgent.cz automatizuje celý proces hledání a oslovování nových firem. Na základě vašeho ideálního zákaznického profilu systém vyhledá relevantní firmy, přečte jejich weby, identifikuje správné kontakty a odešle personalizovaný cold e-mail.
             </p>
             <p className="text-gray-300 mb-6">
               Výsledek: 200–500 oslovených firem měsíčně, bez koupené databáze, bez šablon a bez toho, abyste u toho museli sedět vy.

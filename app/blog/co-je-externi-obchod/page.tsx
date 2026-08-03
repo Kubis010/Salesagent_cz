@@ -96,7 +96,7 @@ export default function CoJeExterniObchodPage() {
                 },
                 {
                   title: 'Vlastní SW a HW nástroje bez dalších nákladů',
-                  body: 'Zkušený externí obchodník přináší vlastní sadu nástrojů — CRM systém, nástroje pro prospekting (LinkedIn Sales Navigator, databáze firem), emailové sekvence, analytiku. Firma nemusí pořizovat licence, školit na systémy ani řešit IT infrastrukturu. Všechno je součástí služby.',
+                  body: 'Zkušený externí obchodník přináší vlastní sadu nástrojů — CRM systém, nástroje pro prospekting (LinkedIn Sales Navigator, databáze firem), e-mailové sekvence, analytiku. Firma nemusí pořizovat licence, školit na systémy ani řešit IT infrastrukturu. Všechno je součástí služby.',
                 },
                 {
                   title: 'Nižší celkové náklady',

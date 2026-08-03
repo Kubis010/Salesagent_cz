@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     'AI prodejní automatizace',
     'využití AI B2B',
     'umělá inteligence obchod',
-    'AI cold email',
+    'AI cold e-mail',
   ],
   alternates: {
     canonical: 'https://salesagent.cz/blog/jak-vyuzit-ai-v-prodeji',
@@ -95,7 +95,7 @@ export default function JakVyuzitAiVProdejiPage() {
                 {
                   num: '3',
                   title: 'Automatické follow-upy',
-                  body: 'Většina obchodů nevzniká při prvním kontaktu. AI může řídit celou follow-up sekvenci — načasování, obsah, kanál (email, LinkedIn) — bez nutnosti manuálního sledování. Žádný lead nevychladne kvůli zapomenutému follow-upu.',
+                  body: 'Většina obchodů nevzniká při prvním kontaktu. AI může řídit celou follow-up sekvenci — načasování, obsah, kanál (e-mail, LinkedIn) — bez nutnosti manuálního sledování. Žádný lead nevychladne kvůli zapomenutému follow-upu.',
                 },
                 {
                   num: '4',

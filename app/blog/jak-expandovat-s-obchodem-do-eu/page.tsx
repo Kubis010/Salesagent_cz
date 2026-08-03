@@ -144,7 +144,7 @@ export default function Page() {
                   <strong>Registrace k DPH:</strong> pokud překročíte práh pro vzdálený prodej (ve většině případů 10 000 EUR), musíte se registrovat k DPH v zemích kupujících nebo využít režim EU One-Stop-Shop (OSS)
                 </li>
                 <li>
-                  <strong>Soulad s GDPR:</strong> jakékoli oslovení kontaktů v EU — email, LinkedIn, telefon — musí být v souladu s GDPR. To znamená mít zákonný základ (typicky oprávněný zájem pro B2B) a zahrnout možnost odhlášení v každé zprávě
+                  <strong>Soulad s GDPR:</strong> jakékoli oslovení kontaktů v EU — e-mail, LinkedIn, telefon — musí být v souladu s GDPR. To znamená mít zákonný základ (typicky oprávněný zájem pro B2B) a zahrnout možnost odhlášení v každé zprávě
                 </li>
                 <li>
                   <strong>Lokální entita:</strong> není nutná pro počáteční obchody, ale je potřeba pro najímání lokálních zaměstnanců, podepisování určitých smluv nebo přístup k veřejným zakázkám EU
@@ -182,7 +182,7 @@ export default function Page() {
               </p>
               <ul style={{ paddingLeft: '20px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
                 <li>
-                  <strong>Personalizovaný cold email:</strong> ne šablonový blast — každá zpráva by měla odkazovat na něco konkrétního o firmě nebo oboru příjemce
+                  <strong>Personalizovaný cold e-mail:</strong> ne šablonový blast — každá zpráva by měla odkazovat na něco konkrétního o firmě nebo oboru příjemce
                 </li>
                 <li>
                   <strong>LinkedIn oslovení:</strong> žádost o připojení následovaná krátkou zprávou; míra přijetí v EU bývá vyšší, když profil vypadá věrohodně a lokálně
@@ -192,7 +192,7 @@ export default function Page() {
                 </li>
               </ul>
               <p>
-                Poznámka ke GDPR: B2B cold email na firemní emailové adresy je povolen na základě oprávněného zájmu ve většině členských států EU za předpokladu, že máte jasné odhlášení a zpráva je skutečně relevantní pro profesní roli příjemce.
+                Poznámka ke GDPR: B2B cold e-mail na firemní e-mailové adresy je povolen na základě oprávněného zájmu ve většině členských států EU za předpokladu, že máte jasné odhlášení a zpráva je skutečně relevantní pro profesní roli příjemce.
               </p>
             </ArticleSection>
           </NumberedSection>
@@ -290,7 +290,7 @@ export default function Page() {
             <p style={{ fontSize: '14px', fontWeight: 600, color: 'var(--text)', marginBottom: '12px' }}>Související články</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
               <Link href="/blog/jak-personalizovat-cold-emaily-ai" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
-                Jak personalizovat cold emaily pomocí AI →
+                Jak personalizovat cold e-maily pomocí AI →
               </Link>
               <Link href="/blog/jak-zavest-automatizaci-prodeje-ve-firme" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
                 Jak zavést automatizaci prodeje ve firmě →
