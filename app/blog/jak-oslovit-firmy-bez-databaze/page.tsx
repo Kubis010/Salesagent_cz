@@ -231,10 +231,10 @@ export default function JakOslovitFirmyPage() {
           <div className="mt-16 p-8 border border-orange-500/30 rounded-2xl bg-orange-900/10">
             <h2 className="text-2xl font-bold mb-3">Celý tento proces umíme automatizovat</h2>
             <p className="text-gray-300 mb-4">
-              SalesAgent.cz dělá přesně to, co je popsáno výše — ale automaticky a ve velkém měřítku. Systém prohledá Google, Firmy.cz, obchodní rejstřík nebo weby oborových sdružení, pro každou nalezenou firmu přečte web, identifikuje relevantní signály a odešle personalizovaný cold email.
+              SalesAgent.cz automatizuje celý proces hledání a oslovování nových firem. Na základě vašeho ideálního zákaznického profilu systém vyhledá relevantní firmy, přečte jejich weby, identifikuje správné kontakty a odešle personalizovaný cold email.
             </p>
             <p className="text-gray-300 mb-6">
-              Výsledek: 200–500 oslovených firem měsíčně z veřejných zdrojů, bez koupené databáze, bez šablon a bez toho, abyste u toho museli sedět vy.
+              Výsledek: 200–500 oslovených firem měsíčně, bez koupené databáze, bez šablon a bez toho, abyste u toho museli sedět vy.
             </p>
             <a href="https://cal.com/salesagent/demo" target="_blank" rel="noopener noreferrer" className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors">
               Zjistit, jak to funguje pro váš obor →
