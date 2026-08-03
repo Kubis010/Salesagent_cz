@@ -92,6 +92,10 @@ export default function GdprColdEmailPage() {
             <Image src="/blog/gdpr-cold-email.jpg" alt="GDPR a cold email pravidla" width={1280} height={853} className="w-full object-cover" priority />
           </div>
 
+          <div className="mb-10 p-5 border border-yellow-500/30 bg-yellow-900/10 rounded-xl text-sm text-yellow-200/80 leading-relaxed">
+            <strong className="text-yellow-300">Upozornění:</strong> Tento článek slouží pouze jako informační přehled a nevychází z ověřeného právního poradenství. Nejsme právníci a obsah nepředstavuje právní radu ve smyslu zákona o advokacii. Doporučujeme vždy konzultovat konkrétní situaci s kvalifikovaným právníkem nebo specializovanou advokátní kanceláří, zejména pokud oslovujete větší objemy kontaktů nebo máte pochybnosti o souladu s platnou legislativou.
+          </div>
+
           <article className="prose prose-invert prose-lg max-w-none">
 
             <h2 className="text-2xl font-bold text-white mt-12 mb-4">Dva zákony, které musíte znát</h2>

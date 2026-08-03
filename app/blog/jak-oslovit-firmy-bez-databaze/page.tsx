@@ -44,10 +44,16 @@ const jsonLd = {
 
 const sources = [
   {
-    icon: '🏛',
-    title: 'Obchodní rejstřík (justice.cz)',
-    desc: 'Bezplatný rejstřík všech firem v ČR. Filtrujte podle oboru (NACE kódu), sídla nebo data vzniku. Kontakty na webu firmy hledejte manuálně nebo automaticky.',
-    quality: 'Vysoká — aktuální právní údaje',
+    icon: '🔍',
+    title: 'Hledání Google',
+    desc: 'Nejjednodušší start. Zadejte "[obor] firmy [město/kraj]" nebo "[obor] dodavatel ČR". Google vrátí weby firem přímo — bez prostředníka. Procházením výsledků získáte kontakty rovnou z webu firmy.',
+    quality: 'Vysoká — přímý přístup k firemním webům',
+  },
+  {
+    icon: '📒',
+    title: 'Firmy.cz',
+    desc: 'Největší český firemní katalog. Filtrujte podle oboru, kraje nebo velikosti. Zobrazuje telefony, weby a v některých případech i emailové adresy přímo v záznamu.',
+    quality: 'Vysoká — rozsáhlá česká databáze',
   },
   {
     icon: '🗺',
@@ -56,16 +62,16 @@ const sources = [
     quality: 'Střední — pokrytí závisí na kategorii',
   },
   {
-    icon: '🔵',
-    title: 'LinkedIn (volné vyhledávání)',
-    desc: 'Bez Sales Navigatoru stále najdete firmy a lidi pomocí filtrů. Omezení: 100 výsledků na hledání. Pro větší objem použijte Sales Navigator nebo alternativy.',
-    quality: 'Vysoká — aktuální role a firmy',
+    icon: '🌐',
+    title: 'Weby firem',
+    desc: 'Přímý zdroj kontaktů — stránky „Kontakt", „Tým" nebo „O nás". Firmy zde uvádějí emailové adresy, telefony i jména zodpovědných osob. Čtení webu navíc dá kontext pro personalizaci zprávy.',
+    quality: 'Velmi vysoká — první ruka, aktuální údaje',
   },
   {
-    icon: '🌐',
-    title: 'Weby oborových sdružení',
-    desc: 'Svazy, komory a asociace zveřejňují seznamy členů. Jsou to předkvalifikované firmy z daného oboru — ideální cílová skupina pro relevantní outreach.',
-    quality: 'Velmi vysoká — předkvalifikované kontakty',
+    icon: '🏛',
+    title: 'Obchodní rejstřík (justice.cz)',
+    desc: 'Bezplatný rejstřík všech firem v ČR. Filtrujte podle oboru (NACE kódu), sídla nebo data vzniku. Kontakty na webu firmy hledejte manuálně nebo automaticky.',
+    quality: 'Vysoká — aktuální právní údaje',
   },
   {
     icon: '📋',
@@ -74,9 +80,21 @@ const sources = [
     quality: 'Vysoká — pokrývá všechny registrované subjekty',
   },
   {
+    icon: '🌍',
+    title: 'Weby oborových sdružení',
+    desc: 'Svazy, komory a asociace zveřejňují seznamy členů. Jsou to předkvalifikované firmy z daného oboru — ideální cílová skupina pro relevantní outreach.',
+    quality: 'Velmi vysoká — předkvalifikované kontakty',
+  },
+  {
+    icon: '🔵',
+    title: 'LinkedIn (volné vyhledávání)',
+    desc: 'Bez Sales Navigatoru stále najdete firmy a lidi pomocí filtrů. Omezení: 100 výsledků na hledání. Pro větší objem použijte Sales Navigator nebo alternativy.',
+    quality: 'Vysoká — aktuální role a firmy',
+  },
+  {
     icon: '🤖',
     title: 'AI web scraping',
-    desc: 'Moderní nástroje automaticky procházejí weby firem a extrahují kontakty, obor, velikost a relevantní signály. Nahrazuje ruční práci v obchodním rejstříku.',
+    desc: 'Moderní nástroje automaticky procházejí výše zmíněné zdroje a extrahují kontakty, obor, velikost a relevantní signály. Nahrazuje stovky hodin ruční práce.',
     quality: 'Závisí na nástroji',
   },
 ]
@@ -210,11 +228,16 @@ export default function JakOslovitFirmyPage() {
 
           </article>
 
-          <div className="mt-16 p-8 border border-orange-500/30 rounded-2xl bg-orange-900/10 text-center">
-            <h2 className="text-2xl font-bold mb-3">Nechte AI najít a oslovit firmy za vás</h2>
-            <p className="text-gray-300 mb-6">SalesAgent.cz automaticky vyhledá firmy z veřejných zdrojů, přečte jejich weby a odešle personalizovaný email. Bez koupené databáze, bez šablon.</p>
+          <div className="mt-16 p-8 border border-orange-500/30 rounded-2xl bg-orange-900/10">
+            <h2 className="text-2xl font-bold mb-3">Celý tento proces umíme automatizovat</h2>
+            <p className="text-gray-300 mb-4">
+              SalesAgent.cz dělá přesně to, co je popsáno výše — ale automaticky a ve velkém měřítku. Systém prohledá Google, Firmy.cz, obchodní rejstřík nebo weby oborových sdružení, pro každou nalezenou firmu přečte web, identifikuje relevantní signály a odešle personalizovaný cold email.
+            </p>
+            <p className="text-gray-300 mb-6">
+              Výsledek: 200–500 oslovených firem měsíčně z veřejných zdrojů, bez koupené databáze, bez šablon a bez toho, abyste u toho museli sedět vy.
+            </p>
             <a href="https://cal.com/salesagent/demo" target="_blank" rel="noopener noreferrer" className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors">
-              Domluvit bezplatnou ukázku
+              Zjistit, jak to funguje pro váš obor →
             </a>
           </div>
 
