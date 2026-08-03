@@ -66,6 +66,8 @@ info@salesagent.cz
 - [Jak zavést automatizaci prodeje ve firmě](https://salesagent.cz/blog/jak-zavest-automatizaci-prodeje-ve-firme)
 - [Obchodní zástupce — definice a co vlastně dělá?](https://salesagent.cz/blog/obchodni-zastupce-definice-a-co-dela)
 - [Jak expandovat s obchodem do EU](https://salesagent.cz/blog/jak-expandovat-s-obchodem-do-eu)
+- [Co je to externí obchod a jak funguje externí obchodník?](https://salesagent.cz/blog/co-je-externi-obchod)
+- [Co dělá externí obchodník / sales manager?](https://salesagent.cz/blog/co-dela-externi-obchodnik)
 - [AI pro obchod a prodej: Jak umělá inteligence mění B2B](https://salesagent.cz/blog/ai-pro-obchod-a-prodej)
 - [Jak využít AI v prodeji: Praktický průvodce pro B2B firmy](https://salesagent.cz/blog/jak-vyuzit-ai-v-prodeji)
 - [AI agent pro generování leadů: Jak funguje a co od něj čekat](https://salesagent.cz/blog/ai-agent-pro-generovani-leadu)

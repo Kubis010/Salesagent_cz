@@ -9,12 +9,28 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    href: '/blog/co-je-externi-obchod',
+    lang: 'CS',
+    title: 'Co je to externí obchod a jak funguje externí obchodník?',
+    date: '1. srpna 2026',
+    description:
+      'Externí obchod je model, kdy firma místo vlastního obchodníka využívá externího specialistu. Jaké výhody přináší, proč vyjde levněji a kdy dává největší smysl?',
+  },
+  {
     href: '/blog/external-sales-representation-czech-republic',
     lang: 'EN',
     title: 'External Sales Representation in Czech Republic: How to Start Without Risk',
     date: '27 July 2026',
     description:
       'How to enter the Czech B2B market through external sales representation — market testing approach, what to expect in the first 2–3 months, and how AI outreach changes the economics.',
+  },
+  {
+    href: '/blog/co-dela-externi-obchodnik',
+    lang: 'CS',
+    title: 'Co dělá externí obchodník / sales manager?',
+    date: '29. července 2026',
+    description:
+      'Co přesně dělá externí obchodník nebo sales manager, jaké nástroje používá, jak by měl fungovat a jaké výsledky od něj reálně čekat.',
   },
   {
     href: '/blog/ai-pro-obchod-a-prodej',

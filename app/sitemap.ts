@@ -33,6 +33,8 @@ const blogPosts = [
   { slug: '/jak-vyuzit-ai-v-prodeji', priority: 0.85, changeFrequency: 'monthly' as const },
   { slug: '/ai-agent-pro-generovani-leadu', priority: 0.85, changeFrequency: 'monthly' as const },
   { slug: '/external-sales-representation-czech-republic', priority: 0.85, changeFrequency: 'monthly' as const },
+  { slug: '/co-je-externi-obchod', priority: 0.85, changeFrequency: 'monthly' as const },
+  { slug: '/co-dela-externi-obchodnik', priority: 0.85, changeFrequency: 'monthly' as const },
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
