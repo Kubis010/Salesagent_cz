@@ -9,14 +9,40 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 }
 
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Sales Robots s.r.o.',
+  alternateName: 'SalesAgent.cz',
+  url: 'https://salesagent.cz',
+  logo: 'https://salesagent.cz/logo.svg',
+  contactPoint: {
+    '@type': 'ContactPoint',
+    email: 'info@salesagent.cz',
+    contactType: 'sales',
+    availableLanguage: ['Czech', 'English'],
+  },
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Generála Šišky 2082/26',
+    addressLocality: 'Praha – Modřany',
+    addressCountry: 'CZ',
+  },
+  sameAs: ['https://salesrobots.cz'],
+}
+
 export default function BlogLayout({ children }: { children: React.ReactNode }) {
-  const t = getTranslations('en')
+  const t = getTranslations('cs')
   return (
-    <html lang="en">
+    <html lang="cs">
       <body>
-        <Header locale="en" t={t} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <Header locale="cs" t={t} />
         <main>{children}</main>
-        <Footer locale="en" t={t} />
+        <Footer locale="cs" t={t} />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-TL9MFZ92P0"
           strategy="afterInteractive"

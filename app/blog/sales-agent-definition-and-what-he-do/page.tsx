@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 
 const articleSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Article',
+  '@type': 'BlogPosting',
   headline: 'Sales Agent definition and what he does?',
   description:
     'Full definition of the sales agent role — activities, responsibilities, skills required and what the position means in B2B sales.',

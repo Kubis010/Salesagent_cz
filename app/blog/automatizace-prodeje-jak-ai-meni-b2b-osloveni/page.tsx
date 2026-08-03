@@ -31,23 +31,14 @@ export const metadata: Metadata = {
 
 const articleSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Article',
+  '@type': 'BlogPosting',
   headline: 'Automatizace prodeje: Jak AI mění B2B oslovení',
-  description:
-    'AI automatizace B2B obchodu nahrazuje rutinní prospekting. Co se ve vašem pipeline skutečně změní — a co to znamená pro váš obchodní tým.',
-  url: 'https://salesagent.cz/blog/automatizace-prodeje-jak-ai-meni-b2b-osloveni',
+  description: 'AI automatizace B2B obchodu nahrazuje rutinní prospekting. Co se ve vašem pipeline skutečně změní — a co to znamená pro váš obchodní tým.',
+  image: 'https://salesagent.cz/blog/arrows.jpg',
   inLanguage: 'cs',
-  author: {
-    '@type': 'Person',
-    name: 'Petr Kubicek',
-    url: 'https://salesagent.cz/cs#founder',
-  },
-  publisher: {
-    '@type': 'Organization',
-    name: 'Sales Robots s.r.o.',
-    url: 'https://salesagent.cz',
-    logo: { '@type': 'ImageObject', url: 'https://salesagent.cz/logo.png' },
-  },
+  author: { '@type': 'Organization', name: 'SalesAgent.cz', url: 'https://salesagent.cz' },
+  publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz' },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://salesagent.cz/blog/automatizace-prodeje-jak-ai-meni-b2b-osloveni' },
   datePublished: '2025-02-05',
   dateModified: '2025-02-05',
 }

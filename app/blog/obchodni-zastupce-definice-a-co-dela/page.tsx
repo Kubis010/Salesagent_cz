@@ -31,23 +31,14 @@ export const metadata: Metadata = {
 
 const articleSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Article',
+  '@type': 'BlogPosting',
   headline: 'Obchodní zástupce — definice a co vlastně dělá?',
-  description:
-    'Kompletní definice role obchodního zástupce — aktivity, odpovědnosti, dovednosti a co pozice znamená v B2B prodeji.',
-  url: 'https://salesagent.cz/blog/obchodni-zastupce-definice-a-co-dela',
+  description: 'Kompletní definice role obchodního zástupce — aktivity, odpovědnosti, dovednosti a co pozice znamená v B2B prodeji.',
+  image: 'https://salesagent.cz/og-image.jpg',
   inLanguage: 'cs',
-  author: {
-    '@type': 'Person',
-    name: 'Petr Kubicek',
-    url: 'https://salesagent.cz/cs#founder',
-  },
-  publisher: {
-    '@type': 'Organization',
-    name: 'Sales Robots s.r.o.',
-    url: 'https://salesagent.cz',
-    logo: { '@type': 'ImageObject', url: 'https://salesagent.cz/logo.png' },
-  },
+  author: { '@type': 'Organization', name: 'SalesAgent.cz', url: 'https://salesagent.cz' },
+  publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz' },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://salesagent.cz/blog/obchodni-zastupce-definice-a-co-dela' },
   datePublished: '2025-01-09',
   dateModified: '2025-01-09',
 }

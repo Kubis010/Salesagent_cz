@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'Article',
+  '@type': 'BlogPosting',
   headline: 'Co dělá externí obchodník / sales manager?',
   description: 'Co přesně dělá externí obchodník nebo sales manager, jaké nástroje používá a jak by měl fungovat.',
   image: 'https://salesagent.cz/blog/externi-obchodnik.png',

@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'Article',
+  '@type': 'BlogPosting',
   headline: 'Jak využít AI v prodeji: Praktický průvodce pro B2B firmy',
   description: 'Jak využít umělou inteligenci v prodeji konkrétně a bez velkých investic.',
   image: 'https://salesagent.cz/blog/ai-v-prodeji.jpg',

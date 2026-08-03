@@ -31,23 +31,14 @@ export const metadata: Metadata = {
 
 const articleSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Article',
+  '@type': 'BlogPosting',
   headline: 'Jak expandovat s obchodem do Evropské unie',
-  description:
-    'Praktický průvodce expanzí B2B obchodu do EU — průzkum trhu, právní rámec, lokalizace, strategie oslovení a jak najít správný vstupní bod.',
-  url: 'https://salesagent.cz/blog/jak-expandovat-s-obchodem-do-eu',
+  description: 'Praktický průvodce expanzí B2B obchodu do EU — průzkum trhu, právní rámec, lokalizace, strategie oslovení a jak najít správný vstupní bod.',
+  image: 'https://salesagent.cz/og-image.jpg',
   inLanguage: 'cs',
-  author: {
-    '@type': 'Person',
-    name: 'Petr Kubicek',
-    url: 'https://salesagent.cz/cs#founder',
-  },
-  publisher: {
-    '@type': 'Organization',
-    name: 'Sales Robots s.r.o.',
-    url: 'https://salesagent.cz',
-    logo: { '@type': 'ImageObject', url: 'https://salesagent.cz/logo.png' },
-  },
+  author: { '@type': 'Organization', name: 'SalesAgent.cz', url: 'https://salesagent.cz' },
+  publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz' },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://salesagent.cz/blog/jak-expandovat-s-obchodem-do-eu' },
   datePublished: '2025-01-15',
   dateModified: '2025-01-15',
 }

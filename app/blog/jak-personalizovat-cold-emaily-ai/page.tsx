@@ -33,12 +33,16 @@ export default function Page() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'Article',
+            '@type': 'BlogPosting',
             headline: 'Jak personalizovat cold emaily pomocí AI — průvodce pro B2B firmy',
+            description: 'Automatický cold mailing nemusí znamenat spam. Jak AI personalizuje cold emaily na základě webu každé firmy a proč to generuje víc odpovědí než šablony.',
+            image: 'https://salesagent.cz/blog/ai-cold-email.jpg',
             datePublished: '2026-07-13',
+            dateModified: '2026-07-13',
             inLanguage: 'cs',
-            author: { '@type': 'Person', name: 'Petr Kubíček' },
-            publisher: { '@type': 'Organization', name: 'SalesAgent.cz' },
+            author: { '@type': 'Organization', name: 'SalesAgent.cz', url: 'https://salesagent.cz' },
+            publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz' },
+            mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://salesagent.cz/blog/jak-personalizovat-cold-emaily-ai' },
           }),
         }}
       />

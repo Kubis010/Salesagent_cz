@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'Article',
+  '@type': 'BlogPosting',
   headline: 'AI agent pro generování leadů: Jak funguje a co od něj čekat',
   description: 'AI agent pro generování leadů hledá B2B kontakty, analyzuje je a oslovuje automaticky.',
   image: 'https://salesagent.cz/blog/ai-agent-leady.jpg',

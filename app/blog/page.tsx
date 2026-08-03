@@ -3,8 +3,18 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Blog | SalesAgent.cz',
-  description: 'Articles on B2B sales, outreach and building sales systems.',
-  alternates: { canonical: 'https://salesagent.cz/blog' },
+  description: 'Articles on B2B sales, outreach and building sales systems — in Czech and English.',
+  alternates: {
+    canonical: 'https://salesagent.cz/blog',
+    languages: { 'x-default': 'https://salesagent.cz/blog' },
+  },
+  openGraph: {
+    title: 'Blog | SalesAgent.cz',
+    description: 'Articles on B2B sales automation, AI outreach and cold email — in Czech and English.',
+    url: 'https://salesagent.cz/blog',
+    siteName: 'SalesAgent.cz',
+    type: 'website',
+  },
 }
 
 const posts = [

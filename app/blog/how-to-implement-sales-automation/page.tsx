@@ -23,11 +23,16 @@ export default function Page() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'Article',
+            '@type': 'BlogPosting',
             headline: 'How to Implement Sales Automation in Your Company',
+            description: 'A practical step-by-step guide — from defining your ideal customer to measuring results. What to set up before you launch, and how to avoid the most common mistakes.',
+            image: 'https://salesagent.cz/blog/notebook.jpg',
             datePublished: '2025-02-12',
-            author: { '@type': 'Person', name: 'Petr Kubicek' },
-            publisher: { '@type': 'Organization', name: 'SalesAgent.cz' },
+            dateModified: '2025-02-12',
+            inLanguage: 'en',
+            author: { '@type': 'Organization', name: 'SalesAgent.cz', url: 'https://salesagent.cz' },
+            publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz' },
+            mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://salesagent.cz/blog/how-to-implement-sales-automation' },
           }),
         }}
       />

@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 
 const articleSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Article',
+  '@type': 'BlogPosting',
   headline: 'How to Expand Your Business and sales to the European Union',
   description:
     'A practical guide to expanding B2B sales into the European Union — market research, legal setup, localisation, outreach strategy, and finding the right entry point.',

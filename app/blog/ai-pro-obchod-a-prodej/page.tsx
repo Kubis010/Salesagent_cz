@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'Article',
+  '@type': 'BlogPosting',
   headline: 'AI pro obchod a prodej: Jak umělá inteligence mění B2B',
   description: 'AI pro obchod a prodej přestává být buzzword — stává se konkurenční výhodou.',
   image: 'https://salesagent.cz/blog/ai-pro-obchod.jpg',

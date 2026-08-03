@@ -23,11 +23,16 @@ export default function Page() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'Article',
+            '@type': 'BlogPosting',
             headline: 'Sales Automation: How AI Is Changing B2B Outreach',
+            description: 'AI removes the repetitive prospecting work from your pipeline. Here is what actually changes — and what it means for your sales team.',
+            image: 'https://salesagent.cz/blog/arrows.jpg',
             datePublished: '2025-02-05',
-            author: { '@type': 'Person', name: 'Petr Kubicek' },
-            publisher: { '@type': 'Organization', name: 'SalesAgent.cz' },
+            dateModified: '2025-02-05',
+            inLanguage: 'en',
+            author: { '@type': 'Organization', name: 'SalesAgent.cz', url: 'https://salesagent.cz' },
+            publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz' },
+            mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://salesagent.cz/blog/sales-automation-ai-b2b-outreach' },
           }),
         }}
       />

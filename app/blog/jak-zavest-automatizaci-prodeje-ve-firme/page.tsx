@@ -31,23 +31,14 @@ export const metadata: Metadata = {
 
 const articleSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Article',
+  '@type': 'BlogPosting',
   headline: 'Jak zavést automatizaci prodeje ve firmě',
-  description:
-    'Praktický návod krok za krokem — od definice ideálního zákazníka po měření výsledků.',
-  url: 'https://salesagent.cz/blog/jak-zavest-automatizaci-prodeje-ve-firme',
+  description: 'Praktický návod krok za krokem — od definice ideálního zákazníka po měření výsledků. Co nastavit před spuštěním a jak se vyhnout nejčastějším chybám.',
+  image: 'https://salesagent.cz/blog/notebook.jpg',
   inLanguage: 'cs',
-  author: {
-    '@type': 'Person',
-    name: 'Petr Kubicek',
-    url: 'https://salesagent.cz/cs#founder',
-  },
-  publisher: {
-    '@type': 'Organization',
-    name: 'Sales Robots s.r.o.',
-    url: 'https://salesagent.cz',
-    logo: { '@type': 'ImageObject', url: 'https://salesagent.cz/logo.png' },
-  },
+  author: { '@type': 'Organization', name: 'SalesAgent.cz', url: 'https://salesagent.cz' },
+  publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz' },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://salesagent.cz/blog/jak-zavest-automatizaci-prodeje-ve-firme' },
   datePublished: '2025-02-12',
   dateModified: '2025-02-12',
 }

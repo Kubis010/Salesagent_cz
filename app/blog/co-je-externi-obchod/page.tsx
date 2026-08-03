@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'Article',
+  '@type': 'BlogPosting',
   headline: 'Co je to externí obchod a jak funguje externí obchodník?',
   description: 'Externí obchod je model, kdy firma místo vlastního obchodníka využívá externího specialistu.',
   image: 'https://salesagent.cz/blog/externi-obchod.jpg',
