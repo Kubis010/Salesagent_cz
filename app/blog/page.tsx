@@ -19,6 +19,22 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    href: '/blog/cold-email-vzor-cesky',
+    lang: 'CS',
+    title: 'Cold email vzor česky: 3 šablony pro B2B oslovení',
+    date: '3. srpna 2026',
+    description:
+      'Tři konkrétní vzory cold emailů pro B2B outreach v češtině s vysvětlením logiky každé šablony. Jak napsat první zprávu, která dostane odpověď. Včetně povinné GDPR patičky.',
+  },
+  {
+    href: '/blog/gdpr-a-cold-email',
+    lang: 'CS',
+    title: 'GDPR a cold email: Co smíte a nesmíte posílat firmám',
+    date: '31. července 2026',
+    description:
+      'Jak rozlišit legální B2B cold email od spamu dle GDPR a zák. č. 480/2004 Sb. Co musí každý obchodní email obsahovat a co hrozí za porušení.',
+  },
+  {
     href: '/blog/co-je-externi-obchod',
     lang: 'CS',
     title: 'Co je to externí obchod a jak funguje externí obchodník?',
@@ -41,6 +57,22 @@ const posts = [
     date: '29. července 2026',
     description:
       'Co přesně dělá externí obchodník nebo sales manager, jaké nástroje používá, jak by měl fungovat a jaké výsledky od něj reálně čekat.',
+  },
+  {
+    href: '/blog/jak-oslovit-firmy-bez-databaze',
+    lang: 'CS',
+    title: 'Jak oslovit firmy bez koupené databáze kontaktů',
+    date: '28. července 2026',
+    description:
+      'Jak najít B2B kontakty a oslovit firmy bez placené databáze. Konkrétní zdroje, metody a AI nástroje pro outreach bez Apollo, Lusha nebo SalesNavigatoru.',
+  },
+  {
+    href: '/blog/kolik-stoji-obchodnik-vs-ai',
+    lang: 'CS',
+    title: 'Kolik stojí obchodní zástupce vs. AI outreach? Srovnání nákladů',
+    date: '25. července 2026',
+    description:
+      'Reálné srovnání nákladů: interní obchodní zástupce vs. AI outreach systém. Mzdy, výkon, kapacita a kdy se co vyplatí — s konkrétními čísly pro český trh.',
   },
   {
     href: '/blog/ai-pro-obchod-a-prodej',

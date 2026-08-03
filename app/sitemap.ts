@@ -35,6 +35,10 @@ const blogPosts = [
   { slug: '/external-sales-representation-czech-republic', priority: 0.85, changeFrequency: 'monthly' as const },
   { slug: '/co-je-externi-obchod', priority: 0.85, changeFrequency: 'monthly' as const },
   { slug: '/co-dela-externi-obchodnik', priority: 0.85, changeFrequency: 'monthly' as const },
+  { slug: '/cold-email-vzor-cesky', priority: 0.9, changeFrequency: 'monthly' as const },
+  { slug: '/gdpr-a-cold-email', priority: 0.9, changeFrequency: 'monthly' as const },
+  { slug: '/jak-oslovit-firmy-bez-databaze', priority: 0.9, changeFrequency: 'monthly' as const },
+  { slug: '/kolik-stoji-obchodnik-vs-ai', priority: 0.9, changeFrequency: 'monthly' as const },
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
