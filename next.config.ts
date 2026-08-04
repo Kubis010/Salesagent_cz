@@ -30,6 +30,21 @@ const nextConfig: NextConfig = {
         destination: '/en/resources/czech-business-companies-register',
         permanent: true,
       },
+      {
+        source: '/blog/cold-e-mail-vzor-cesky',
+        destination: '/blog/cold-email-vzor-cesky',
+        permanent: true,
+      },
+      {
+        source: '/blog/gdpr-a-cold-e-mail',
+        destination: '/blog/gdpr-a-cold-email',
+        permanent: true,
+      },
+      {
+        source: '/blog/jak-personalizovat-cold-e-maily-ai',
+        destination: '/blog/jak-personalizovat-cold-emaily-ai',
+        permanent: true,
+      },
     ]
   },
 }
