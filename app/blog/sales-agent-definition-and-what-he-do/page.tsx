@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Sales Agent: Definition, Role & Responsibilities | SalesAgent.cz',
   description:
-    'Sales agent vs. sales rep — what's the real difference? Learn what a B2B sales agent does day-to-day, what skills matter, and when this role fits your business.',
+    "Sales agent vs. sales rep — what's the real difference? Learn what a B2B sales agent does day-to-day, what skills matter, and when this role fits your business.",
   keywords: [
     'sales agent definition',
     'what does a sales agent do',
