@@ -323,6 +323,7 @@ function SliderCard({
       </div>
       <input
         type="range" className="roi-slider"
+        aria-label={label}
         min={min} max={max} step={step} value={current}
         onChange={e => onChange(Number(e.target.value))}
       />
