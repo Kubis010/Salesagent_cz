@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Hiring Czech Sales Staff: Why It Can Be a Costly Mistake | SalesAgent.cz',
+  title: 'Hiring Czech Sales Staff: A Costly Mistake | SalesAgent.cz',
   description:
     'Hiring local Czech staff looks simple — until you see the hidden costs. Payroll taxes, mandatory benefits, notice periods, and slow ramp-up can quickly exceed €5,000/month.',
   keywords: [

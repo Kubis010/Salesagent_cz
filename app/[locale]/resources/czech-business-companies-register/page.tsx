@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { type Locale } from '@/lib/i18n'
 
 export const metadata: Metadata = {
-  title: 'How to Find a Czech Company in the Business Register (ARES) | SalesAgent.cz',
+  title: 'Czech Business Register (ARES) — How to Search',
   description:
     'Step-by-step guide to searching the Czech business register (ARES / Obchodní rejstřík). Find company details, verify ICO numbers, get official extracts.',
   keywords: [

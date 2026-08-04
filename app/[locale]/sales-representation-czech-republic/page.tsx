@@ -12,8 +12,8 @@ export async function generateMetadata({
   const cs = locale === 'cs'
   return {
     title: cs
-      ? 'Obchodní zastoupení pro zahraniční firmy v ČR | SalesAgent.cz'
-      : 'External Sales Representation for Czech Republic | SalesAgent.cz',
+      ? 'Obchodní zastoupení pro zahraniční firmy v ČR'
+      : 'External Sales Representation Czech Republic',
     description: cs
       ? 'Hledáte obchodního zástupce pro český trh? SalesAgent zajistí průzkum trhu, oslovení firem a první schůzky — bez nutnosti zakládat pobočku nebo najímat obchodníka.'
       : 'Looking for sales representation in Czech Republic? SalesAgent handles market testing, outreach and first meetings — without hiring a local sales rep or opening an office.',
