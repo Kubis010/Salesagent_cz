@@ -3,9 +3,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI pro obchod a prodej: Jak umělá inteligence mění B2B | SalesAgent.cz',
+  title: 'AI pro obchod: Jak mění B2B umělá inteligence | SalesAgent.cz',
   description:
-    'AI pro obchod a prodej přestává být buzzword — stává se konkurenční výhodou. Jak konkrétně umělá inteligence mění B2B prospekting, cold outreach a správu leadů.',
+    'AI pro obchod a prodej přestává být buzzword — stává se konkurenční výhodou. Jak konkrétně umělá inteligence mění B2B prospekting a cold outreach.',
   keywords: [
     'AI pro obchod',
     'AI pro prodej',

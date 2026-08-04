@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Cold e-mail vzor česky: 3 šablony pro B2B oslovení | SalesAgent.cz',
+  title: 'Cold e-mail vzor česky: 3 šablony pro B2B | SalesAgent.cz',
   description:
     'Konkrétní vzory cold e-mailů pro B2B oslovení v češtině — 3 hotové šablony s GDPR patičkou. Jak napsat první zprávu, která dostane odpověď.',
   keywords: [

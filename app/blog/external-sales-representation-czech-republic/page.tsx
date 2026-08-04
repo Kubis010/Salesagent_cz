@@ -3,9 +3,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'External Sales Representation in Czech Republic: How to Start Without Risk | SalesAgent.cz',
+  title: 'External Sales Czech Republic: Start Without Risk | SalesAgent.cz',
   description:
-    'How to enter the Czech B2B market through external sales representation — market testing approach, what to expect in the first 2–3 months, and how AI outreach changes the economics.',
+    'How to enter the Czech B2B market through external sales — market testing approach, what to expect in the first 2–3 months, and how AI changes the economics.',
   keywords: [
     'external sales representation Czech Republic',
     'sales agent Czech Republic',

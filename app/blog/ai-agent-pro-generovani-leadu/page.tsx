@@ -3,9 +3,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI agent pro generování leadů: Jak funguje a co od něj čekat | SalesAgent.cz',
+  title: 'AI agent pro generování leadů: Jak funguje? | SalesAgent.cz',
   description:
-    'AI agent pro generování leadů hledá B2B kontakty, analyzuje je a oslovuje automaticky. Jak takový agent funguje, co umí a kde má své hranice.',
+    'AI agent pro generování leadů hledá B2B kontakty, analyzuje je a oslovuje automaticky. Jak takový agent funguje a kde má své hranice.',
   keywords: [
     'AI agent pro generování leadů',
     'generování leadů AI',

@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Jak personalizovat cold e-maily pomocí AI — průvodce pro B2B firmy | SalesAgent.cz',
+  title: 'Jak personalizovat cold e-maily pomocí AI | SalesAgent.cz',
   description:
-    'Automatický cold mailing nemusí znamenat spam. Naučte se, jak AI personalizuje cold e-maily na základě webu každé firmy a proč to generuje víc odpovědí než šablony.',
+    'Automatický cold mailing nemusí znamenat spam. Jak AI personalizuje cold e-maily na základě webu každé firmy a proč to generuje víc odpovědí než šablony.',
   alternates: {
     canonical: 'https://salesagent.cz/blog/jak-personalizovat-cold-e-maily-ai',
     languages: { cs: 'https://salesagent.cz/blog/jak-personalizovat-cold-e-maily-ai', 'x-default': 'https://salesagent.cz/blog/jak-personalizovat-cold-e-maily-ai' },

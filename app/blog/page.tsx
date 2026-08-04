@@ -43,6 +43,14 @@ const posts = [
       'Externí obchod je model, kdy firma místo vlastního obchodníka využívá externího specialistu. Jaké výhody přináší, proč vyjde levněji a kdy dává největší smysl?',
   },
   {
+    href: '/blog/hiring-local-czech-staff-can-be-expensive-mistake',
+    lang: 'EN',
+    title: 'Hiring Local Czech Staff Can Be an Expensive Mistake',
+    date: '4 August 2026',
+    description:
+      'Payroll taxes at 34%, 2-month notice periods, 3–6 month ramp-up — the real cost of hiring a Czech sales rep is often €5,000+/month. Here is what to consider before you commit.',
+  },
+  {
     href: '/blog/external-sales-representation-czech-republic',
     lang: 'EN',
     title: 'External Sales Representation in Czech Republic: How to Start Without Risk',

@@ -5,7 +5,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Co dělá externí obchodník / sales manager? | SalesAgent.cz',
   description:
-    'Co přesně dělá externí obchodník nebo sales manager, jaké nástroje používá, jak by měl fungovat a jaké výsledky od něj reálně čekat. Praktický přehled pro firmy.',
+    'Co přesně dělá externí obchodník nebo sales manager, jaké nástroje používá, jak by měl fungovat a jaké výsledky od něj reálně čekat.',
   keywords: [
     'co dělá externí obchodník',
     'externí sales manager',

@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'GDPR a cold e-mail: Co smíte a nesmíte posílat firmám | SalesAgent.cz',
+  title: 'GDPR a cold e-mail: Co smíte posílat firmám | SalesAgent.cz',
   description:
     'Jak rozlišit legální B2B cold e-mail od spamu dle GDPR a zák. č. 480/2004 Sb. Co musí každý obchodní e-mail obsahovat a co hrozí za porušení.',
   keywords: [

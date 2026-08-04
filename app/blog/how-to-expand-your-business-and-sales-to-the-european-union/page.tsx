@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'How to Expand Your Business and Sales to the European Union | SalesAgent.cz',
+  title: 'How to Expand B2B Sales to the EU | SalesAgent.cz',
   description:
-    'A practical guide to expanding B2B sales into the European Union — market research, legal setup, localisation, outreach strategy, and finding the right entry point.',
+    'A practical guide to expanding B2B sales into the EU — market research, legal setup, localisation strategy, and finding the right entry point.',
   keywords: [
     'expand business to EU',
     'expand sales to Europe',

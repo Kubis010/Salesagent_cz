@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Co je to externí obchod a jak funguje externí obchodník? | SalesAgent.cz',
+  title: 'Co je to externí obchod a jak funguje? | SalesAgent.cz',
   description:
     'Externí obchod je model, kdy firma místo vlastního obchodníka využívá externího specialistu. Jaké výhody přináší, proč vyjde levněji a kdy dává největší smysl?',
   keywords: [

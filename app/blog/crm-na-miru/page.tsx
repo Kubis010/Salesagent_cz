@@ -3,9 +3,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'CRM na míru: Proč generické systémy firmám nevyhovují | SalesAgent.cz',
+  title: 'CRM na míru: Proč generické systémy nestačí | SalesAgent.cz',
   description:
-    'Salesforce a HubSpot jsou drahé a přeplácané pro většinu B2B firem. CRM na míru řeší přesně to, co potřebujete — bez zbytečných funkcí a zbytečných nákladů.',
+    'Salesforce a HubSpot jsou drahé a přeplácané pro většinu B2B firem. CRM na míru řeší přesně to, co potřebujete — bez zbytečných funkcí a nákladů.',
   keywords: [
     'CRM na míru',
     'vlastní CRM systém',

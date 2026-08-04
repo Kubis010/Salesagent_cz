@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Jak využít AI v prodeji: Praktický průvodce pro B2B firmy | SalesAgent.cz',
+  title: 'Jak využít AI v prodeji: Průvodce pro B2B | SalesAgent.cz',
   description:
     'Jak využít umělou inteligenci v prodeji konkrétně a bez velkých investic. Průvodce pro B2B firmy — od automatizace prospektingu po personalizované oslovení.',
   keywords: [

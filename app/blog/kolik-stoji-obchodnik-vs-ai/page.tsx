@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Kolik stojí obchodní zástupce vs. AI outreach? Srovnání nákladů | SalesAgent.cz',
+  title: 'Obchodník vs. AI outreach: Srovnání nákladů | SalesAgent.cz',
   description:
     'Reálné srovnání nákladů: interní obchodní zástupce vs. AI outreach systém. Mzdy, výkon, kapacita a kdy se co vyplatí — s konkrétními čísly.',
   keywords: [
