@@ -104,6 +104,37 @@ Tato zpráva je obchodním sdělením dle zák. č. 480/2004 Sb. Odesílatel: [N
   },
 ]
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Co musí obsahovat cold e-mail v ČR ze zákona?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dle zák. č. 480/2004 Sb. musí každý obchodní e-mail obsahovat identifikaci odesílatele, možnost odhlásit se z odběru a nesmí být klamavý. GDPR navíc vyžaduje oprávněný zájem jako právní základ."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jaká délka cold e-mailu funguje nejlépe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nejúspěšnější cold e-maily mají 50–125 slov. Krátká zpráva s jednou konkrétní žádostí (např. 20minutový hovor) generuje výrazně více odpovědí než dlouhý popis produktu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jak zvýšit míru odpovědí na cold e-maily?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Klíčová jsou tři věci: personalizace (odkaz na konkrétní informaci z webu příjemce), jasná a nízkobarierová výzva k akci, a správné načasování (úterý–čtvrtek ráno). Míra odpovědí 2–5 % je dobrý výsledek."
+      }
+    }
+  ]
+}
+
 export default function ColdEmailVzorPage() {
   return (
     <>

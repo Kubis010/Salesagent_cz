@@ -102,6 +102,37 @@ const sources = [
   },
 ]
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Kde najít B2B kontakty zdarma bez placené databáze?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Veřejné zdroje: hledání Google, ARES a obchodní rejstřík, LinkedIn, oborová sdružení a konference, weby firem, justice.cz. Kombinace více zdrojů dává kvalitnější a aktuálnější seznam než placená databáze."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Je ručně sestavený seznam kontaktů lepší než koupená databáze?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ano, zpravidla ano. Koupené databáze bývají zastaralé a nesegmentované. Vlastní seznam sestavený dle ICP kritérií má vyšší relevanci a výrazně lepší míru odpovědí."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jak personalizovat oslovení bez drahých CRM nástrojů?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Stačí přečíst web každé firmy a zmínit jedno konkrétní pozorování v e-mailu. Tato mikroPersonalizace zvyšuje míru odpovědí 2–3× bez nutnosti drahého nástroje. AI tuto práci dokáže dělat automaticky."
+      }
+    }
+  ]
+}
+
 export default function JakOslovitFirmyPage() {
   return (
     <>

@@ -48,12 +48,47 @@ const articleSchema = {
   dateModified: '2025-01-15',
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Potřebuji místní entitu pro prodej B2B do zemí EU?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ne nutně. Jako česká firma můžete prodávat přeshraničně v rámci jednotného trhu EU bez lokální entity. Místní firma dává smysl až při náboru místních zaměstnanců nebo překročení DPH prahů."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jak dlouho trvá vybudovat pipeline na novém trhu EU?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Realistický harmonogram: 2–4 týdny nastavení, 4–8 týdnů první konverzace, 3–6 měsíců první podpis. Německo a Rakousko mají delší rozhodovací procesy než trhy CEE."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jaké jsou největší výzvy při expanzi do EU?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jazykové a kulturní rozdíly, různé nákupní chování dle zemí, GDPR compliance a budování důvěry bez lokální reference. Většina firem podceňuje čas do první zakázky."
+      }
+    }
+  ]
+}
+
 export default function Page() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <div style={{ paddingTop: '100px', paddingBottom: '80px', paddingLeft: '24px', paddingRight: '24px' }}>
         <article style={{ maxWidth: '740px', margin: '0 auto' }}>
@@ -284,6 +319,34 @@ export default function Page() {
             >
               Jak to funguje &#x2192;
             </Link>
+          </div>
+
+
+          <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>
+            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '20px' }}>Časté otázky</h2>
+            <style>{`
+.faq-item { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+.faq-item + .faq-item { margin-top: 10px; }
+.faq-item summary { list-style: none; cursor: pointer; padding: 16px 20px; font-weight: 600; font-size: 15px; display: flex; justify-content: space-between; align-items: center; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; font-size: 20px; font-weight: 400; color: var(--accent); flex-shrink: 0; margin-left: 12px; }
+.faq-item[open] summary::after { content: '−'; }
+.faq-item .faq-answer { padding: 0 20px 16px; font-size: 15px; line-height: 1.7; color: var(--text-muted); }
+`}</style>
+            <div>
+              <details className="faq-item">
+                <summary>Potřebuji místní entitu pro prodej B2B do zemí EU?</summary>
+                <div className="faq-answer"><p>Ne nutně. Jako česká firma můžete prodávat přeshraničně v rámci jednotného trhu EU bez lokální entity. Místní firma dává smysl až při náboru místních zaměstnanců nebo překročení DPH prahů.</p></div>
+              </details>
+              <details className="faq-item">
+                <summary>Jak dlouho trvá vybudovat pipeline na novém trhu EU?</summary>
+                <div className="faq-answer"><p>Realistický harmonogram: 2–4 týdny nastavení, 4–8 týdnů první konverzace, 3–6 měsíců první podpis. Německo a Rakousko mají delší rozhodovací procesy než trhy CEE.</p></div>
+              </details>
+              <details className="faq-item">
+                <summary>Jaké jsou největší výzvy při expanzi do EU?</summary>
+                <div className="faq-answer"><p>Jazykové a kulturní rozdíly, různé nákupní chování dle zemí, GDPR compliance a budování důvěry bez lokální reference. Většina firem podceňuje čas do první zakázky.</p></div>
+              </details>
+            </div>
           </div>
 
           <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>

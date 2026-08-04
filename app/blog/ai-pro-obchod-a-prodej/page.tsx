@@ -46,6 +46,37 @@ const jsonLd = {
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://salesagent.cz/blog/ai-pro-obchod-a-prodej' },
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Jak konkrétně AI pomáhá v B2B obchodu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI automatizuje vyhledávání potenciálních zákazníků, analýzu jejich webu a psaní personalizovaných zpráv. Obchodník dostává kvalifikované konverzace místo toho, aby trávil čas prospektingem."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Nahradí AI obchodníky úplně?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ne. AI zvládá top-of-funnel — vyhledávání, oslovení, follow-up. Vyjednávání podmínek, budování důvěry a uzavírání obchodů stále vyžadují člověka."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Které prodejní procesy lze automatizovat jako první?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nejdříve prospekting (vyhledávání firem), pak oslovení (cold e-mail, LinkedIn), follow-up sekvence a třídění odpovědí. Tyto fáze zabírají 60–80 % času běžného obchodníka."
+      }
+    }
+  ]
+}
+
 export default function AiProObchodPage() {
   return (
     <>

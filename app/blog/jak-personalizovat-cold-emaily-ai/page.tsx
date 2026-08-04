@@ -28,6 +28,37 @@ export const metadata: Metadata = {
   ],
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Jak AI personalizuje cold e-maily?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI načte web cílové firmy, analyzuje její zaměření, produkty a jazyk, a na základě toho vygeneruje unikátní úvodní odstavec pro každý e-mail. Výsledek je personalizace v měřítku stovek e-mailů denně."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Je AI personalizace e-mailů lepší než ruční příprava?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pro velký objem ano — AI zvládne personalizovat 500 e-mailů za dobu, kdy by člověk připravil 10. Kvalita personalizace závisí na tom, jak dobře AI chápe kontext firmy; nejlepší výsledky dává kombinace AI draft + lidská revize."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jaká míra odpovědí je realistická u personalizovaného cold mailingu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "S dobrou personalizací a cílením je 2–5 % realistický výsledek. Generické šablony dosahují typicky 0,5–1 %. Rozdíl v odpovědích představuje 4–10× větší pipeline při stejném počtu odeslaných zpráv."
+      }
+    }
+  ]
+}
+
 export default function Page() {
   return (
     <article style={{ paddingTop: '96px', paddingBottom: '80px' }}>
@@ -48,6 +79,10 @@ export default function Page() {
             mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://salesagent.cz/blog/jak-personalizovat-cold-emaily-ai' },
           }),
         }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       <div style={{ maxWidth: '760px', margin: '0 auto', padding: '0 24px' }}>

@@ -63,6 +63,37 @@ const jsonLd = {
   },
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How does external sales representation work in Czech Republic?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An external sales partner represents your company in the Czech B2B market — finding prospects, handling first contact, and passing qualified leads to you. You pay for results, not a full-time salary."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long before external sales generates results in Czech B2B?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Expect the first qualified conversations in 4–8 weeks. Czech B2B sales cycles typically run 2–4 months from first contact to signed contract, so meaningful revenue attribution takes 3–6 months."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the typical cost of external sales representation in Czech Republic?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fee structures vary: pure commission (10–20% of contract value), monthly retainer (€600–€2,000), or a hybrid. Total cost is usually 40–60% lower than hiring a local employee with all employment taxes."
+      }
+    }
+  ]
+}
+
 export default function ExternalSalesRepCzPage() {
   return (
     <>

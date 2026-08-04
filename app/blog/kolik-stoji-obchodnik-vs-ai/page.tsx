@@ -59,6 +59,37 @@ const comparison: Row[] = [
   { label: 'Výpovědní doba / flexibilita', obchodnik: 'Výpovědní lhůta, pesangon', ai: 'Zastavení kampaně = žádné náklady', winner: 'ai' },
 ]
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Kolik stojí interní obchodní zástupce celkem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hrubá mzda průměrného B2B obchodníka v ČR je 45 000–70 000 Kč. K tomu přičtěte odvody (33 %), provize, firemní auto nebo diety, telefon a nástroje. Reálné náklady jsou 75 000–120 000 Kč/měsíc."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kolik stojí AI outreach systém?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Managed AI outreach služba jako SalesAgent.cz stojí od 5 990 Kč/měsíc. Do-it-yourself stack (Clay + Instantly + Apollo) vychází na 8 000–15 000 Kč/měsíc plus čas na správu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kdy se vyplatí AI outreach oproti internímu obchodníkovi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI outreach se vyplatí pro top-of-funnel aktivity (vyhledávání a oslovení) při jakémkoli objemu. Interní obchodník má smysl, jakmile máte dostatek příchozích leadů a potřebujete kapacitu na uzavírání obchodů."
+      }
+    }
+  ]
+}
+
 export default function KolikStojiObchodnikPage() {
   return (
     <>

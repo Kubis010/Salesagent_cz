@@ -46,6 +46,37 @@ const jsonLd = {
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://salesagent.cz/blog/ai-agent-pro-generovani-leadu' },
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Co je AI agent pro generování leadů?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI agent pro generování leadů je software, který automaticky vyhledává B2B firmy dle zadaných kritérií, prostuduje jejich web a odešle personalizovanou oslovující zprávu bez lidského zásahu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jak se AI agent liší od klasického cold callingu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cold calling vyžaduje obchodníka s telefonem — AI agent pracuje 24/7, oslovuje stovky firem měsíčně a personalizuje každou zprávu na základě webu příjemce. Výsledkem jsou odpovědi od firem, které projevily zájem."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kolik kontaktů zvládne AI agent oslovit za měsíc?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Závisí na nastavení, ale realalistický rozsah je 300–1 000 firem měsíčně s plnou personalizací. Bez personalizace lze škálovat výrazně výš, ale klesá míra odpovědí."
+      }
+    }
+  ]
+}
+
 export default function AiAgentLeadyPage() {
   return (
     <>

@@ -46,6 +46,37 @@ const jsonLd = {
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://salesagent.cz/blog/co-je-externi-obchod' },
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Co je to externí obchod?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Externí obchod je model, kdy firma svěří část nebo celý obchodní proces externímu partnerovi místo vlastního obchodního oddělení. Partner přináší zkušenosti, kontakty a kapacitu bez nákladů na zaměstnance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Pro koho se hodí model externího obchodu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nejlépe funguje pro firmy bez vlastního obchodního týmu, startupy testující nový trh nebo segment, a firmy, které potřebují rychle škálovat bez náboru."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jaké jsou výhody externího obchodu oproti vlastnímu obchodníkovi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nižší fixní náklady, žádné odvody, rychlejší start a možnost ukončit spolupráci bez pracovněprávních komplikací. Nevýhodou je nižší zaměření pouze na vaši firmu."
+      }
+    }
+  ]
+}
+
 export default function CoJeExterniObchodPage() {
   return (
     <>

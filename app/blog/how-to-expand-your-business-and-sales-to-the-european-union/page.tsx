@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     url: 'https://salesagent.cz/blog/how-to-expand-your-business-and-sales-to-the-european-union',
     siteName: 'SalesAgent.cz',
     type: 'article',
+    publishedTime: '2025-01-15',
   },
   robots: { index: true, follow: true },
 }
@@ -72,6 +73,37 @@ const breadcrumbSchema = {
   ],
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the biggest challenges when expanding B2B sales to the EU?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Language and cultural differences, varying buyer behaviours by country, GDPR compliance across jurisdictions, and building local credibility without an established brand. Most companies underestimate the time to first revenue."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a local legal entity to sell B2B in EU countries?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily. You can sell cross-border as a Czech entity within the EU single market. A local entity becomes useful once you hire local staff or exceed VAT registration thresholds in a given country."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to build a pipeline in a new EU market?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Realistic timeline: 2–4 weeks to set up outreach, 4–8 weeks to first conversations, 3–6 months to first signed contract. Markets like Germany and Austria typically have longer sales cycles than CEE countries."
+      }
+    }
+  ]
+}
+
 export default function EUExpansionPage() {
   return (
     <>
@@ -82,6 +114,10 @@ export default function EUExpansionPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <div style={{ paddingTop: '100px', paddingBottom: '80px', paddingLeft: '24px', paddingRight: '24px' }}>
         <article style={{ maxWidth: '740px', margin: '0 auto' }}>
@@ -361,6 +397,34 @@ export default function EUExpansionPage() {
             >
               See how it works &#x2192;
             </Link>
+          </div>
+
+
+          <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>
+            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '20px' }}>Frequently Asked Questions</h2>
+            <style>{`
+.faq-item { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+.faq-item + .faq-item { margin-top: 10px; }
+.faq-item summary { list-style: none; cursor: pointer; padding: 16px 20px; font-weight: 600; font-size: 15px; display: flex; justify-content: space-between; align-items: center; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; font-size: 20px; font-weight: 400; color: var(--accent); flex-shrink: 0; margin-left: 12px; }
+.faq-item[open] summary::after { content: '−'; }
+.faq-item .faq-answer { padding: 0 20px 16px; font-size: 15px; line-height: 1.7; color: var(--text-muted); }
+`}</style>
+            <div>
+              <details className="faq-item">
+                <summary>What are the biggest challenges when expanding B2B sales to the EU?</summary>
+                <div className="faq-answer"><p>Language and cultural differences, varying buyer behaviours by country, GDPR compliance across jurisdictions, and building local credibility without an established brand. Most companies underestimate the time to first revenue.</p></div>
+              </details>
+              <details className="faq-item">
+                <summary>Do I need a local legal entity to sell B2B in EU countries?</summary>
+                <div className="faq-answer"><p>Not necessarily. You can sell cross-border as a Czech entity within the EU single market. A local entity becomes useful once you hire local staff or exceed VAT registration thresholds in a given country.</p></div>
+              </details>
+              <details className="faq-item">
+                <summary>How long does it take to build a pipeline in a new EU market?</summary>
+                <div className="faq-answer"><p>Realistic timeline: 2–4 weeks to set up outreach, 4–8 weeks to first conversations, 3–6 months to first signed contract. Markets like Germany and Austria typically have longer sales cycles than CEE countries.</p></div>
+              </details>
+            </div>
           </div>
 
           <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>

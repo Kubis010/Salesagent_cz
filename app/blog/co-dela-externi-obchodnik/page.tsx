@@ -46,6 +46,37 @@ const jsonLd = {
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://salesagent.cz/blog/co-dela-externi-obchodnik' },
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Co přesně dělá externí obchodník?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Externí obchodník vyhledává potenciální zákazníky, oslovuje je, vede první schůzky a předává kvalifikované leady klientovi. Pracuje pro více firem zároveň na provizní nebo fixní bázi."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jak se liší externí obchodník od interního?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Interní obchodník je zaměstnanec na plný úvazek. Externí pracuje jako OSVČ nebo agentura, nemá fixní náklady zaměstnavatele a přináší výsledky rychleji díky existující síti kontaktů."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kolik stojí spolupráce s externím obchodníkem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Modely se liší: čistě provizní (10–20 % z obchodu), fixní retainer (15 000–40 000 Kč/měsíc) nebo kombinace. Celkové náklady bývají 30–60 % nižší než u interního zaměstnance."
+      }
+    }
+  ]
+}
+
 export default function CoDElaExterniObchodnikPage() {
   return (
     <>

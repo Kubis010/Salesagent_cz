@@ -46,6 +46,37 @@ const jsonLd = {
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://salesagent.cz/blog/jak-vyuzit-ai-v-prodeji' },
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Jak začít s AI v prodeji bez velkých investic?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nejdřív automatizujte prospekting: nastavte vyhledávání firem dle ICP a personalizovaný cold mailing. To je nejlevnější vstupní bod s okamžitě měřitelným výsledkem (míra odpovědí)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Které části prodejního procesu AI zvládne nejlépe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vyhledávání kontaktů, analýza webů firem, psaní personalizovaných zpráv, follow-up sekvence a třídění odpovědí. Vyjednávání a uzavírání obchodů stále vyžaduje člověka."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jak AI pomáhá s prospektingem B2B?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI prohledává veřejné zdroje (rejstříky, weby, LinkedIn), filtruje firmy dle zadaných kritérií a sestaví seznam potenciálních zákazníků odpovídajících vašemu ICP. Práce, která by obchodníkovi trvala dny, proběhne za hodiny."
+      }
+    }
+  ]
+}
+
 export default function JakVyuzitAiVProdejiPage() {
   return (
     <>

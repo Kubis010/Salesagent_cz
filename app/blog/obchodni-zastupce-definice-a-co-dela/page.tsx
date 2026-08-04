@@ -48,12 +48,47 @@ const articleSchema = {
   dateModified: '2025-01-09',
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Jaký je rozdíl mezi obchodním zástupcem a obchodníkem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Obchodní zástupce (OZ) je smluvní termín: pracuje na základě smlouvy o obchodním zastoupení, je OSVČ a zastupuje dodavatele vůči zákazníkům. Obchodník je volnější pojem, který zahrnuje i zaměstnance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kolik vydělává obchodní zástupce v ČR?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Závisí na modelu. Čistě provizní OZ si vydělá podle výsledků — úspěšní berou 100 000–300 000 Kč/měsíc. Fixní složka bývá 30 000–60 000 Kč + provize 5–15 % z uzavřených obchodů."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Co hledají firmy u obchodního zástupce?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Existující síť kontaktů v daném oboru, prokazatelné výsledky (uzavřené obchody, reference), schopnost samostatně pracovat bez každodenního dozoru a znalost oboru nebo zákazníků."
+      }
+    }
+  ]
+}
+
 export default function Page() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <div style={{ paddingTop: '100px', paddingBottom: '80px', paddingLeft: '24px', paddingRight: '24px' }}>
         <article style={{ maxWidth: '740px', margin: '0 auto' }}>
@@ -296,6 +331,34 @@ export default function Page() {
             >
               Jak to funguje &#x2192;
             </Link>
+          </div>
+
+
+          <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>
+            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '20px' }}>Časté otázky</h2>
+            <style>{`
+.faq-item { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+.faq-item + .faq-item { margin-top: 10px; }
+.faq-item summary { list-style: none; cursor: pointer; padding: 16px 20px; font-weight: 600; font-size: 15px; display: flex; justify-content: space-between; align-items: center; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; font-size: 20px; font-weight: 400; color: var(--accent); flex-shrink: 0; margin-left: 12px; }
+.faq-item[open] summary::after { content: '−'; }
+.faq-item .faq-answer { padding: 0 20px 16px; font-size: 15px; line-height: 1.7; color: var(--text-muted); }
+`}</style>
+            <div>
+              <details className="faq-item">
+                <summary>Jaký je rozdíl mezi obchodním zástupcem a obchodníkem?</summary>
+                <div className="faq-answer"><p>Obchodní zástupce (OZ) je smluvní termín: pracuje na základě smlouvy o obchodním zastoupení, je OSVČ a zastupuje dodavatele vůči zákazníkům. Obchodník je volnější pojem, který zahrnuje i zaměstnance.</p></div>
+              </details>
+              <details className="faq-item">
+                <summary>Kolik vydělává obchodní zástupce v ČR?</summary>
+                <div className="faq-answer"><p>Závisí na modelu. Čistě provizní OZ si vydělá podle výsledků — úspěšní berou 100 000–300 000 Kč/měsíc. Fixní složka bývá 30 000–60 000 Kč + provize 5–15 % z uzavřených obchodů.</p></div>
+              </details>
+              <details className="faq-item">
+                <summary>Co hledají firmy u obchodního zástupce?</summary>
+                <div className="faq-answer"><p>Existující síť kontaktů v daném oboru, prokazatelné výsledky (uzavřené obchody, reference), schopnost samostatně pracovat bez každodenního dozoru a znalost oboru nebo zákazníků.</p></div>
+              </details>
+            </div>
           </div>
 
           <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>

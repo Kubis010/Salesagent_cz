@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     url: 'https://salesagent.cz/blog/sales-agent-definition-and-what-he-do',
     siteName: 'SalesAgent.cz',
     type: 'article',
+    publishedTime: '2025-01-09',
   },
   robots: { index: true, follow: true },
 }
@@ -72,6 +73,37 @@ const breadcrumbSchema = {
   ],
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between a sales agent and a sales representative?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A sales agent is typically self-employed (OSVČ/freelance), working under a commercial representation contract for one or more companies. A sales rep is usually an employee. Sales agents earn primarily on commission; reps often have a fixed salary base."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What skills does a B2B sales agent need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Prospecting, needs analysis, objection handling, negotiation and closing. For B2B specifically: patience for long sales cycles, ability to navigate multiple stakeholders, and industry knowledge that builds credibility quickly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is a sales agent typically compensated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most sales agents work on commission — typically 5–15% of the contract value for B2B. Some arrangements include a small monthly retainer (€500–€1,500) plus lower commission. Pure salary without commission is rare and usually signals low expectations."
+      }
+    }
+  ]
+}
+
 export default function SalesAgentDefinitionPage() {
   return (
     <>
@@ -82,6 +114,10 @@ export default function SalesAgentDefinitionPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <div style={{ paddingTop: '100px', paddingBottom: '80px', paddingLeft: '24px', paddingRight: '24px' }}>
         <article style={{ maxWidth: '740px', margin: '0 auto' }}>
@@ -364,6 +400,34 @@ export default function SalesAgentDefinitionPage() {
             >
               See how it works &#x2192;
             </Link>
+          </div>
+
+
+          <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>
+            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '20px' }}>Frequently Asked Questions</h2>
+            <style>{`
+.faq-item { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+.faq-item + .faq-item { margin-top: 10px; }
+.faq-item summary { list-style: none; cursor: pointer; padding: 16px 20px; font-weight: 600; font-size: 15px; display: flex; justify-content: space-between; align-items: center; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; font-size: 20px; font-weight: 400; color: var(--accent); flex-shrink: 0; margin-left: 12px; }
+.faq-item[open] summary::after { content: '−'; }
+.faq-item .faq-answer { padding: 0 20px 16px; font-size: 15px; line-height: 1.7; color: var(--text-muted); }
+`}</style>
+            <div>
+              <details className="faq-item">
+                <summary>What is the difference between a sales agent and a sales representative?</summary>
+                <div className="faq-answer"><p>A sales agent is typically self-employed (OSVČ/freelance), working under a commercial representation contract for one or more companies. A sales rep is usually an employee. Sales agents earn primarily on commission; reps often have a fixed salary base.</p></div>
+              </details>
+              <details className="faq-item">
+                <summary>What skills does a B2B sales agent need?</summary>
+                <div className="faq-answer"><p>Prospecting, needs analysis, objection handling, negotiation and closing. For B2B specifically: patience for long sales cycles, ability to navigate multiple stakeholders, and industry knowledge that builds credibility quickly.</p></div>
+              </details>
+              <details className="faq-item">
+                <summary>How is a sales agent typically compensated?</summary>
+                <div className="faq-answer"><p>Most sales agents work on commission — typically 5–15% of the contract value for B2B. Some arrangements include a small monthly retainer (€500–€1,500) plus lower commission. Pure salary without commission is rare and usually signals low expectations.</p></div>
+              </details>
+            </div>
           </div>
 
           <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>

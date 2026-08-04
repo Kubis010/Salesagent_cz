@@ -22,6 +22,37 @@ export const metadata: Metadata = {
   },
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is B2B sales automation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "B2B sales automation uses software and AI to handle repetitive top-of-funnel tasks: finding target companies, researching their business, sending personalised outreach, and following up — without manual work from the sales team."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does AI personalise cold outreach at scale?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The AI reads each company's website, extracts what the company does and how they describe their work, then generates a unique opening paragraph for each email referencing those specifics. The result is personalisation at hundreds of contacts per day."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What response rate should I expect from automated B2B outreach?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With good targeting and personalisation: 1.5–3% is healthy. Below 1% usually means poor ICP definition or generic messaging. Above 3% signals strong message-market fit that is worth scaling aggressively."
+      }
+    }
+  ]
+}
+
 export default function Page() {
   return (
     <article style={{ paddingTop: '96px', paddingBottom: '80px' }}>
@@ -42,6 +73,10 @@ export default function Page() {
             mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://salesagent.cz/blog/sales-automation-ai-b2b-outreach' },
           }),
         }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       <div style={{ maxWidth: '760px', margin: '0 auto', padding: '0 24px' }}>
@@ -193,6 +228,34 @@ export default function Page() {
             >
               Book a call →
             </a>
+          </div>
+
+
+          <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>
+            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '20px' }}>Frequently Asked Questions</h2>
+            <style>{`
+.faq-item { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+.faq-item + .faq-item { margin-top: 10px; }
+.faq-item summary { list-style: none; cursor: pointer; padding: 16px 20px; font-weight: 600; font-size: 15px; display: flex; justify-content: space-between; align-items: center; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; font-size: 20px; font-weight: 400; color: var(--accent); flex-shrink: 0; margin-left: 12px; }
+.faq-item[open] summary::after { content: '−'; }
+.faq-item .faq-answer { padding: 0 20px 16px; font-size: 15px; line-height: 1.7; color: var(--text-muted); }
+`}</style>
+            <div>
+              <details className="faq-item">
+                <summary>What is B2B sales automation?</summary>
+                <div className="faq-answer"><p>B2B sales automation uses software and AI to handle repetitive top-of-funnel tasks: finding target companies, researching their business, sending personalised outreach, and following up — without manual work from the sales team.</p></div>
+              </details>
+              <details className="faq-item">
+                <summary>How does AI personalise cold outreach at scale?</summary>
+                <div className="faq-answer"><p>The AI reads each company's website, extracts what the company does and how they describe their work, then generates a unique opening paragraph for each email referencing those specifics. The result is personalisation at hundreds of contacts per day.</p></div>
+              </details>
+              <details className="faq-item">
+                <summary>What response rate should I expect from automated B2B outreach?</summary>
+                <div className="faq-answer"><p>With good targeting and personalisation: 1.5–3% is healthy. Below 1% usually means poor ICP definition or generic messaging. Above 3% signals strong message-market fit that is worth scaling aggressively.</p></div>
+              </details>
+            </div>
           </div>
 
           <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>

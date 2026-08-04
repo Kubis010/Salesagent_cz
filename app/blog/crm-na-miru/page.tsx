@@ -72,6 +72,37 @@ const jsonLd = {
   },
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Co je CRM na míru?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CRM na míru je systém pro správu obchodních kontaktů a pipeline vyvinutý přesně podle procesů firmy. Na rozdíl od Salesforce nebo HubSpotu neobsahuje funkce, které firma nepoužívá."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kdy se vyplatí CRM na míru místo hotového systému?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Když firma má specifické procesy, které generické CRM nepodporuje, nebo když cena licencí přesáhne náklady na vývoj. Typicky při 20+ uživatelích a jasně definovaných workflow."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jak dlouho trvá vývoj CRM na míru?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Základní CRM s pipeline, kontakty a aktivitami lze postavit za 4–8 týdnů. Složitější integrace (ERP, e-shop, telefonie) prodlužují dobu na 3–6 měsíců."
+      }
+    }
+  ]
+}
+
 export default function CrmNaMiruPage() {
   return (
     <>

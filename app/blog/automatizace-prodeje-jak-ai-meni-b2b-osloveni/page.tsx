@@ -48,12 +48,47 @@ const articleSchema = {
   dateModified: '2025-02-05',
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Co je to automatizace B2B prodeje?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Automatizace B2B prodeje je systém, který nahrazuje ruční prospekting a oslovení. AI prohledává trh, studuje weby firem a rozesílá personalizované zprávy bez manuální práce obchodníka."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jak funguje automatický cold mailing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Systém najde firmy odpovídající vašemu ICP, přečte jejich web, vygeneruje unikátní e-mail pro každou firmu a odešle ho. Follow-up zprávy se posílají automaticky, dokud nepřijde odpověď."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jak dlouho trvá nastavit automatizaci B2B obchodu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Základní nastavení trvá 1–2 týdny. Zahrnuje definici ICP, přípravu zpráv a technické napojení. Výsledky (první odpovědi) přicházejí obvykle 2–4 týdny po spuštění."
+      }
+    }
+  ]
+}
+
 export default function Page() {
   return (
     <article style={{ paddingTop: '96px', paddingBottom: '80px' }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       <div style={{ maxWidth: '760px', margin: '0 auto', padding: '0 24px' }}>
@@ -202,6 +237,34 @@ export default function Page() {
             >
               Domluvit hovor →
             </a>
+          </div>
+
+
+          <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>
+            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '20px' }}>Časté otázky</h2>
+            <style>{`
+.faq-item { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+.faq-item + .faq-item { margin-top: 10px; }
+.faq-item summary { list-style: none; cursor: pointer; padding: 16px 20px; font-weight: 600; font-size: 15px; display: flex; justify-content: space-between; align-items: center; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; font-size: 20px; font-weight: 400; color: var(--accent); flex-shrink: 0; margin-left: 12px; }
+.faq-item[open] summary::after { content: '−'; }
+.faq-item .faq-answer { padding: 0 20px 16px; font-size: 15px; line-height: 1.7; color: var(--text-muted); }
+`}</style>
+            <div>
+              <details className="faq-item">
+                <summary>Co je to automatizace B2B prodeje?</summary>
+                <div className="faq-answer"><p>Automatizace B2B prodeje je systém, který nahrazuje ruční prospekting a oslovení. AI prohledává trh, studuje weby firem a rozesílá personalizované zprávy bez manuální práce obchodníka.</p></div>
+              </details>
+              <details className="faq-item">
+                <summary>Jak funguje automatický cold mailing?</summary>
+                <div className="faq-answer"><p>Systém najde firmy odpovídající vašemu ICP, přečte jejich web, vygeneruje unikátní e-mail pro každou firmu a odešle ho. Follow-up zprávy se posílají automaticky, dokud nepřijde odpověď.</p></div>
+              </details>
+              <details className="faq-item">
+                <summary>Jak dlouho trvá nastavit automatizaci B2B obchodu?</summary>
+                <div className="faq-answer"><p>Základní nastavení trvá 1–2 týdny. Zahrnuje definici ICP, přípravu zpráv a technické napojení. Výsledky (první odpovědi) přicházejí obvykle 2–4 týdny po spuštění.</p></div>
+              </details>
+            </div>
           </div>
 
           <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>

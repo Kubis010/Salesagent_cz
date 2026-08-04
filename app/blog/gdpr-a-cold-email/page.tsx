@@ -73,6 +73,37 @@ const rules = [
   },
 ]
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Je cold e-mail B2B kontaktům legální v ČR?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ano, za splnění podmínek. Dle zák. č. 480/2004 Sb. lze oslovit firemní kontakty bez předchozího souhlasu, pokud je zpráva relevantní pro jejich podnikání a obsahuje možnost odhlásit se."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Co musí každý obchodní e-mail obsahovat dle GDPR?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Identifikaci odesílatele (firma, IČO nebo adresa), jasný účel zprávy, možnost odmítnout další kontakt a nesmí být klamavý. Pro fyzické osoby (jednatelé s osobním e-mailem) platí přísnější pravidla."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jaká pokuta hrozí za porušení pravidel cold mailingu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Úřad pro ochranu osobních údajů může uložit pokutu až 10 milionů Kč nebo 2 % ročního obratu. V praxi jsou pokuty za jednotlivé případy nižší, ale opakované porušení vedlo k pokutám v řádu statisíců Kč."
+      }
+    }
+  ]
+}
+
 export default function GdprColdEmailPage() {
   return (
     <>

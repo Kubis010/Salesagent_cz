@@ -61,12 +61,47 @@ const jsonLd = {
   },
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the mandatory employer costs on top of Czech gross salary?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Czech employers pay 24.8% social insurance and 9% health insurance on top of gross salary — totalling 33.8% extra. A CZK 65,000/month gross salary costs approximately CZK 87,000/month (€3,500) in total."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long is the mandatory notice period for Czech employees?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The minimum notice period is 2 months for both parties. It cannot be shortened by contract below this statutory minimum, which means you continue paying salary for at least 2 months after termination notice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the lower-risk alternative to hiring Czech staff for market entry?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "External sales representation combined with AI outreach. You pay €300–€2,000/month depending on service scope instead of €3,500–€6,000/month for a full-time hire, with no employment law obligations."
+      }
+    }
+  ]
+}
+
 export default function Page() {
   return (
     <article style={{ paddingTop: '96px', paddingBottom: '80px' }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       <div style={{ maxWidth: '760px', margin: '0 auto', padding: '0 24px' }}>
@@ -254,6 +289,34 @@ export default function Page() {
             >
               Book a call →
             </a>
+          </div>
+
+
+          <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>
+            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '20px' }}>Frequently Asked Questions</h2>
+            <style>{`
+.faq-item { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+.faq-item + .faq-item { margin-top: 10px; }
+.faq-item summary { list-style: none; cursor: pointer; padding: 16px 20px; font-weight: 600; font-size: 15px; display: flex; justify-content: space-between; align-items: center; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; font-size: 20px; font-weight: 400; color: var(--accent); flex-shrink: 0; margin-left: 12px; }
+.faq-item[open] summary::after { content: '−'; }
+.faq-item .faq-answer { padding: 0 20px 16px; font-size: 15px; line-height: 1.7; color: var(--text-muted); }
+`}</style>
+            <div>
+              <details className="faq-item">
+                <summary>What are the mandatory employer costs on top of Czech gross salary?</summary>
+                <div className="faq-answer"><p>Czech employers pay 24.8% social insurance and 9% health insurance on top of gross salary — totalling 33.8% extra. A CZK 65,000/month gross salary costs approximately CZK 87,000/month (€3,500) in total.</p></div>
+              </details>
+              <details className="faq-item">
+                <summary>How long is the mandatory notice period for Czech employees?</summary>
+                <div className="faq-answer"><p>The minimum notice period is 2 months for both parties. It cannot be shortened by contract below this statutory minimum, which means you continue paying salary for at least 2 months after termination notice.</p></div>
+              </details>
+              <details className="faq-item">
+                <summary>What is the lower-risk alternative to hiring Czech staff for market entry?</summary>
+                <div className="faq-answer"><p>External sales representation combined with AI outreach. You pay €300–€2,000/month depending on service scope instead of €3,500–€6,000/month for a full-time hire, with no employment law obligations.</p></div>
+              </details>
+            </div>
           </div>
 
           <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>

@@ -22,6 +22,37 @@ export const metadata: Metadata = {
   },
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the first step to implementing B2B sales automation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Define your ideal customer profile (ICP) in writing before touching any tool. Automation only amplifies your targeting — without a clear ICP, you generate volume but not quality leads."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long before automated outreach generates qualified leads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "First responses typically arrive 2–4 weeks after launch. Allow 60–90 days to have enough data to evaluate whether messaging and targeting are working before making major changes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a realistic response rate for automated B2B outreach?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With good personalisation and targeting, 1.5–3% response rate is healthy. Below 1% usually signals poor targeting or generic messaging. Above 3% suggests strong message-market fit worth scaling."
+      }
+    }
+  ]
+}
+
 export default function Page() {
   return (
     <article style={{ paddingTop: '96px', paddingBottom: '80px' }}>
@@ -42,6 +73,10 @@ export default function Page() {
             mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://salesagent.cz/blog/how-to-implement-sales-automation' },
           }),
         }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       <div style={{ maxWidth: '760px', margin: '0 auto', padding: '0 24px' }}>
@@ -197,6 +232,34 @@ export default function Page() {
             >
               Book a call →
             </a>
+          </div>
+
+
+          <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>
+            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '20px' }}>Frequently Asked Questions</h2>
+            <style>{`
+.faq-item { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+.faq-item + .faq-item { margin-top: 10px; }
+.faq-item summary { list-style: none; cursor: pointer; padding: 16px 20px; font-weight: 600; font-size: 15px; display: flex; justify-content: space-between; align-items: center; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; font-size: 20px; font-weight: 400; color: var(--accent); flex-shrink: 0; margin-left: 12px; }
+.faq-item[open] summary::after { content: '−'; }
+.faq-item .faq-answer { padding: 0 20px 16px; font-size: 15px; line-height: 1.7; color: var(--text-muted); }
+`}</style>
+            <div>
+              <details className="faq-item">
+                <summary>What is the first step to implementing B2B sales automation?</summary>
+                <div className="faq-answer"><p>Define your ideal customer profile (ICP) in writing before touching any tool. Automation only amplifies your targeting — without a clear ICP, you generate volume but not quality leads.</p></div>
+              </details>
+              <details className="faq-item">
+                <summary>How long before automated outreach generates qualified leads?</summary>
+                <div className="faq-answer"><p>First responses typically arrive 2–4 weeks after launch. Allow 60–90 days to have enough data to evaluate whether messaging and targeting are working before making major changes.</p></div>
+              </details>
+              <details className="faq-item">
+                <summary>What is a realistic response rate for automated B2B outreach?</summary>
+                <div className="faq-answer"><p>With good personalisation and targeting, 1.5–3% response rate is healthy. Below 1% usually signals poor targeting or generic messaging. Above 3% suggests strong message-market fit worth scaling.</p></div>
+              </details>
+            </div>
           </div>
 
           <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>

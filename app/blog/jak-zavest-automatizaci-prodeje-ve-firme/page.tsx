@@ -48,12 +48,47 @@ const articleSchema = {
   dateModified: '2025-02-12',
 }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Jak zavést automatizaci prodeje krok za krokem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "1) Definujte ICP písemně. 2) Rozhodněte se, co žádáte v první zprávě. 3) Zvolte kanály (e-mail + LinkedIn). 4) Nastavte zpracování odpovědí ještě před spuštěním. 5) Měřte míru odpovědí, ne open rate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jaké nástroje jsou potřeba pro automatizaci B2B prodeje?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Základní stack: nástroj pro vyhledávání firem, e-mailová platforma pro sekvence (Lemlist, Apollo, Instantly) a CRM pro správu odpovědí. Alternativou je managed služba, kde to celé provozuje někdo za vás."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Jak dlouho trvá, než automatizace prodeje přinese výsledky?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "První odpovědi přicházejí obvykle 2–4 týdny po spuštění. Na první podpisaný kontrakt počítejte 2–4 měsíce dle délky vašeho prodejního cyklu. Plný potenciál systém ukazuje po 60–90 dnech provozu."
+      }
+    }
+  ]
+}
+
 export default function Page() {
   return (
     <article style={{ paddingTop: '96px', paddingBottom: '80px' }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       <div style={{ maxWidth: '760px', margin: '0 auto', padding: '0 24px' }}>
@@ -206,6 +241,34 @@ export default function Page() {
             >
               Domluvit hovor →
             </a>
+          </div>
+
+
+          <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>
+            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '20px' }}>Časté otázky</h2>
+            <style>{`
+.faq-item { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+.faq-item + .faq-item { margin-top: 10px; }
+.faq-item summary { list-style: none; cursor: pointer; padding: 16px 20px; font-weight: 600; font-size: 15px; display: flex; justify-content: space-between; align-items: center; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; font-size: 20px; font-weight: 400; color: var(--accent); flex-shrink: 0; margin-left: 12px; }
+.faq-item[open] summary::after { content: '−'; }
+.faq-item .faq-answer { padding: 0 20px 16px; font-size: 15px; line-height: 1.7; color: var(--text-muted); }
+`}</style>
+            <div>
+              <details className="faq-item">
+                <summary>Jak zavést automatizaci prodeje krok za krokem?</summary>
+                <div className="faq-answer"><p>1) Definujte ICP písemně. 2) Rozhodněte se, co žádáte v první zprávě. 3) Zvolte kanály (e-mail + LinkedIn). 4) Nastavte zpracování odpovědí ještě před spuštěním. 5) Měřte míru odpovědí, ne open rate.</p></div>
+              </details>
+              <details className="faq-item">
+                <summary>Jaké nástroje jsou potřeba pro automatizaci B2B prodeje?</summary>
+                <div className="faq-answer"><p>Základní stack: nástroj pro vyhledávání firem, e-mailová platforma pro sekvence (Lemlist, Apollo, Instantly) a CRM pro správu odpovědí. Alternativou je managed služba, kde to celé provozuje někdo za vás.</p></div>
+              </details>
+              <details className="faq-item">
+                <summary>Jak dlouho trvá, než automatizace prodeje přinese výsledky?</summary>
+                <div className="faq-answer"><p>První odpovědi přicházejí obvykle 2–4 týdny po spuštění. Na první podpisaný kontrakt počítejte 2–4 měsíce dle délky vašeho prodejního cyklu. Plný potenciál systém ukazuje po 60–90 dnech provozu.</p></div>
+              </details>
+            </div>
           </div>
 
           <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>
