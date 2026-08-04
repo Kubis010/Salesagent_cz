@@ -6,8 +6,8 @@ export const metadata: Metadata = {
   description:
     'Automatický cold mailing nemusí znamenat spam. Jak AI personalizuje cold e-maily na základě webu každé firmy a proč to generuje víc odpovědí než šablony.',
   alternates: {
-    canonical: 'https://salesagent.cz/blog/jak-personalizovat-cold-e-maily-ai',
-    languages: { cs: 'https://salesagent.cz/blog/jak-personalizovat-cold-e-maily-ai', 'x-default': 'https://salesagent.cz/blog/jak-personalizovat-cold-e-maily-ai' },
+    canonical: 'https://salesagent.cz/blog/jak-personalizovat-cold-emaily-ai',
+    languages: { cs: 'https://salesagent.cz/blog/jak-personalizovat-cold-emaily-ai', 'x-default': 'https://salesagent.cz/blog/jak-personalizovat-cold-emaily-ai' },
   },
   openGraph: {
     title: 'Jak personalizovat cold e-maily pomocí AI',
@@ -70,7 +70,7 @@ export default function Page() {
             '@type': 'BlogPosting',
             headline: 'Jak personalizovat cold e-maily pomocí AI — průvodce pro B2B firmy',
             description: 'Automatický cold mailing nemusí znamenat spam. Jak AI personalizuje cold e-maily na základě webu každé firmy a proč to generuje víc odpovědí než šablony.',
-            image: 'https://salesagent.cz/blog/ai-cold-e-mail.jpg',
+            image: 'https://salesagent.cz/blog/ai-cold-email.jpg',
             datePublished: '2026-07-13',
             dateModified: '2026-07-13',
             inLanguage: 'cs',
@@ -95,7 +95,7 @@ export default function Page() {
 
         {/* Hero image */}
         <img
-          src="/blog/ai-cold-e-mail.jpg"
+          src="/blog/ai-cold-email.jpg"
           alt="AI personalizace cold e-mailů pro B2B firmy"
           style={{ width: '100%', borderRadius: '14px', marginBottom: '40px', display: 'block' }}
         />
