@@ -2,7 +2,7 @@ export const cs = {
   nav: {
     home: 'Domů',
     pricing: 'Ceník',
-    salesRepCz: 'Pro zahraniční firmy',
+    salesRepCz: 'Externí obchod pro firmy',
     about: 'O nás',
     contact: 'Kontakt',
     bookCall: 'Domluvit hovor',

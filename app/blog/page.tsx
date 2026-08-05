@@ -93,7 +93,7 @@ const posts = [
     href: '/blog/jak-vyuzit-ai-v-prodeji',
     lang: 'CS',
     title: 'Jak využít AI v prodeji: Praktický průvodce pro B2B firmy',
-    date: '24. července 2026',
+    date: '5. srpna 2026',
     description: 'Jak využít umělou inteligenci v prodeji konkrétně a bez velkých investic. Průvodce pro B2B firmy — od automatizace prospektingu po personalizované oslovení.',
   },
   {

@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     url: 'https://salesagent.cz/blog/jak-vyuzit-ai-v-prodeji',
     siteName: 'SalesAgent.cz',
     type: 'article',
-    publishedTime: '2026-07-24',
+    publishedTime: '2026-08-05',
     images: [{ url: 'https://salesagent.cz/blog/ai-v-prodeji.jpg', width: 640, height: 427, alt: 'Jak využít AI v prodeji' }],
   },
   robots: { index: true, follow: true },
@@ -38,8 +38,8 @@ const jsonLd = {
   headline: 'Jak využít AI v prodeji: Praktický průvodce pro B2B firmy',
   description: 'Jak využít umělou inteligenci v prodeji konkrétně a bez velkých investic.',
   image: 'https://salesagent.cz/blog/ai-v-prodeji.jpg',
-  datePublished: '2026-07-24',
-  dateModified: '2026-07-24',
+  datePublished: '2026-08-05',
+  dateModified: '2026-08-05',
   inLanguage: 'cs',
   author: { '@type': 'Organization', name: 'SalesAgent.cz', url: 'https://salesagent.cz' },
   publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz' },
@@ -86,7 +86,7 @@ export default function JakVyuzitAiVProdejiPage() {
           <Link href="/blog" className="text-sm text-gray-400 hover:text-white transition-colors mb-10 inline-block">← Zpět na blog</Link>
 
           <header className="mb-12">
-            <p className="text-sm text-purple-400 uppercase tracking-widest mb-4">Průvodce · 24. července 2026</p>
+            <p className="text-sm text-purple-400 uppercase tracking-widest mb-4">Průvodce · 5. srpna 2026</p>
             <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
               Jak využít AI v prodeji: Praktický průvodce pro B2B firmy
             </h1>

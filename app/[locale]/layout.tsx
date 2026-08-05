@@ -148,11 +148,11 @@ export default async function LocaleLayout({
         <main>{children}</main>
         <Footer locale={locale as Locale} t={t} />
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-TL9MFZ92P0"
+          src="https://www.googletagmanager.com/gtag/js?id=G-442V6JSVVN"
           strategy="afterInteractive"
         />
         <Script id="gtag-init" strategy="afterInteractive">
-          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-TL9MFZ92P0');`}
+          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-442V6JSVVN');`}
         </Script>
         <Script
           src="https://towhdopfkjwvbfobvoli.supabase.co/functions/v1/contextual-loader?site=90f638ef-eab0-434d-85aa-7dfe88f6b44a"
