@@ -29,10 +29,10 @@ const posts = [
   {
     href: '/blog/gdpr-a-cold-email',
     lang: 'CS',
-    title: 'GDPR a cold e-mail: Co smíte a nesmíte posílat firmám',
-    date: '31. července 2026',
+    title: 'GDPR a cold e-mail: Co říká ÚOOÚ a co to mění',
+    date: '5. srpna 2026',
     description:
-      'Jak rozlišit legální B2B cold e-mail od spamu dle GDPR a zák. č. 480/2004 Sb. Co musí každý obchodní e-mail obsahovat a co hrozí za porušení.',
+      'Zákon č. 480/2004 Sb. nerozlišuje mezi fyzickou a právnickou osobou. Cold e-mail bez souhlasu je formálně v rozporu se zákonem — i na firemní adresy. Co z toho vyplývá v praxi.',
   },
   {
     href: '/blog/co-je-externi-obchod',
