@@ -19,6 +19,14 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    href: '/blog/follow-up-email-vzor',
+    lang: 'CS',
+    title: 'Follow-up e-mail vzor: 3 šablony, které fungují v B2B',
+    date: '5. srpna 2026',
+    description:
+      'Jak napsat follow-up e-mail, který dostane odpověď. 3 konkrétní vzory — bez tlačení, s novým argumentem a krátkým obsahem.',
+  },
+  {
     href: '/blog/cold-email-vzor-cesky',
     lang: 'CS',
     title: 'Cold e-mail vzor česky: 3 šablony pro B2B oslovení',
