@@ -81,3 +81,4 @@ info@salesagent.cz
 - [Sales Representation for Czech Republic (EN)](https://salesagent.cz/en/sales-representation-czech-republic)
 - [Obchodní zastoupení pro zahraniční firmy v ČR (CS)](https://salesagent.cz/cs/sales-representation-czech-republic)
 - [Follow-up e-mail vzor: 3 šablony, které fungují v B2B](https://salesagent.cz/blog/follow-up-email-vzor)
+- [AI agenti pro B2B prospecting a kvalifikaci leadů](https://salesagent.cz/blog/ai-agenti-b2b-prospecting-kvalifikace-leadu)

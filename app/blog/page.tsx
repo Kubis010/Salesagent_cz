@@ -19,6 +19,14 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    href: '/blog/ai-agenti-b2b-prospecting-kvalifikace-leadu',
+    lang: 'CS',
+    title: 'Jak využít AI agenty pro B2B prospecting a kvalifikaci leadů',
+    date: '6. srpna 2026',
+    description:
+      'Jak AI agenti mění B2B prospecting — automatické vyhledávání firem, analýza webů, kvalifikace leadů a personalizované oslovení. Praktický průvodce pro firmy.',
+  },
+  {
     href: '/blog/follow-up-email-vzor',
     lang: 'CS',
     title: 'Follow-up e-mail vzor: 3 šablony, které fungují v B2B',

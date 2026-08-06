@@ -651,6 +651,48 @@ export default async function HomePage({
       {/* ── ROI CALCULATOR ── */}
       <RoiCalculator locale={locale} />
 
+      {/* ── BLOG ── */}
+      <section style={{ padding: '80px 24px', maxWidth: '960px', margin: '0 auto' }}>
+        <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '14px', textAlign: 'center' }}>
+          Blog
+        </p>
+        <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: 'clamp(24px, 3.5vw, 36px)', fontWeight: 700, letterSpacing: '-0.025em', marginBottom: '40px', textAlign: 'center' }}>
+          {locale === 'cs' ? 'Nejnovější články o B2B prodeji a AI' : 'Latest articles on B2B sales & AI'}
+        </h2>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
+          {[
+            {
+              href: '/blog/ai-agenti-b2b-prospecting-kvalifikace-leadu',
+              title: locale === 'cs' ? 'AI agenti pro B2B prospecting a kvalifikaci leadů' : 'AI Agents for B2B Prospecting & Lead Qualification',
+              desc: locale === 'cs' ? 'Jak AI agent najde firmy, přečte jejich web, vyhodnotí shodu s vaším ICP a osloví ty správné.' : 'How AI agents find companies, analyze their websites, score ICP fit, and reach out automatically.',
+            },
+            {
+              href: '/blog/follow-up-email-vzor',
+              title: locale === 'cs' ? 'Follow-up e-mail vzor: 3 šablony pro B2B' : 'Follow-up Email Templates: 3 B2B Templates',
+              desc: locale === 'cs' ? 'Jak napsat follow-up, který dostane odpověď — bez tlačení, s novým argumentem.' : 'How to write a follow-up that gets a reply — without pushing, with a new argument.',
+            },
+            {
+              href: '/blog/gdpr-a-cold-email',
+              title: locale === 'cs' ? 'GDPR a cold e-mail: Co říká ÚOOÚ' : 'GDPR & Cold Email: What Czech DPA Says',
+              desc: locale === 'cs' ? 'Cold e-mail bez souhlasu je formálně v rozporu se zákonem — i na firemní adresy.' : 'Cold email without consent is formally illegal — even to business addresses.',
+            },
+          ].map((post) => (
+            <Link key={post.href} href={post.href} style={{ textDecoration: 'none' }}>
+              <article style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '14px', padding: '24px 28px', height: '100%', transition: 'border-color 0.2s' }} className="blog-card">
+                <h3 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '17px', fontWeight: 700, color: 'var(--text)', marginBottom: '10px', lineHeight: 1.3 }}>{post.title}</h3>
+                <p style={{ fontSize: '14px', color: 'var(--text-muted)', lineHeight: 1.65, marginBottom: '14px' }}>{post.desc}</p>
+                <span style={{ fontSize: '13px', color: 'var(--accent)', fontWeight: 600 }}>{locale === 'cs' ? 'Číst článek →' : 'Read more →'}</span>
+              </article>
+            </Link>
+          ))}
+        </div>
+        <div style={{ textAlign: 'center', marginTop: '32px' }}>
+          <Link href="/blog" style={{ fontSize: '15px', color: 'var(--accent)', fontWeight: 600, textDecoration: 'none' }}>
+            {locale === 'cs' ? 'Všechny články →' : 'All articles →'}
+          </Link>
+        </div>
+      </section>
+
       {/* ── CTA ── */}
       <section
         style={{
