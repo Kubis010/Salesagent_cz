@@ -662,6 +662,11 @@ export default async function HomePage({
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
           {[
             {
+              href: '/blog/ai-pro-obchod-a-obchodniky',
+              title: locale === 'cs' ? 'AI pro obchodníky: kompletní systém automatizace' : 'AI for Sales Teams: Complete Automation System',
+              desc: locale === 'cs' ? 'LinkedIn outreach, kvalifikace leadů, CRM na míru — jak nastavit kompletní AI obchodní systém.' : 'LinkedIn outreach, lead qualification, custom CRM — how to set up a complete AI sales system.',
+            },
+            {
               href: '/blog/ai-agenti-b2b-prospecting-kvalifikace-leadu',
               title: locale === 'cs' ? 'AI agenti pro B2B prospecting a kvalifikaci leadů' : 'AI Agents for B2B Prospecting & Lead Qualification',
               desc: locale === 'cs' ? 'Jak AI agent najde firmy, přečte jejich web, vyhodnotí shodu s vaším ICP a osloví ty správné.' : 'How AI agents find companies, analyze their websites, score ICP fit, and reach out automatically.',
@@ -670,11 +675,6 @@ export default async function HomePage({
               href: '/blog/follow-up-email-vzor',
               title: locale === 'cs' ? 'Follow-up e-mail vzor: 3 šablony pro B2B' : 'Follow-up Email Templates: 3 B2B Templates',
               desc: locale === 'cs' ? 'Jak napsat follow-up, který dostane odpověď — bez tlačení, s novým argumentem.' : 'How to write a follow-up that gets a reply — without pushing, with a new argument.',
-            },
-            {
-              href: '/blog/gdpr-a-cold-email',
-              title: locale === 'cs' ? 'GDPR a cold e-mail: Co říká ÚOOÚ' : 'GDPR & Cold Email: What Czech DPA Says',
-              desc: locale === 'cs' ? 'Cold e-mail bez souhlasu je formálně v rozporu se zákonem — i na firemní adresy.' : 'Cold email without consent is formally illegal — even to business addresses.',
             },
           ].map((post) => (
             <Link key={post.href} href={post.href} style={{ textDecoration: 'none' }}>

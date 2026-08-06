@@ -19,6 +19,14 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    href: '/blog/ai-pro-obchod-a-obchodniky',
+    lang: 'CS',
+    title: 'AI pro obchod a obchodníky: kompletní systém automatizace',
+    date: '4. srpna 2026',
+    description:
+      'Jak nastavit kompletní AI systém pro B2B obchodníky: automatizace LinkedIn outreach, kvalifikace leadů, CRM na míru jako srdce AI procesů a personalizované oslovení.',
+  },
+  {
     href: '/blog/ai-agenti-b2b-prospecting-kvalifikace-leadu',
     lang: 'CS',
     title: 'Jak využít AI agenty pro B2B prospecting a kvalifikaci leadů',
