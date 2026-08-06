@@ -30,6 +30,7 @@ export const metadata: Metadata = {
     siteName: 'SalesAgent.cz',
     type: 'article',
     publishedTime: '2026-07-27',
+    images: [{ url: 'https://salesagent.cz/blog/czech-flag.jpg', width: 1280, height: 853, alt: 'External Sales Representation in Czech Republic' }],
   },
   robots: { index: true, follow: true },
 }
@@ -100,6 +101,10 @@ export default function ExternalSalesRepCzPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main className="min-h-screen bg-black text-white">
         <div className="max-w-3xl mx-auto px-6 py-20">
@@ -310,6 +315,25 @@ export default function ExternalSalesRepCzPage() {
               Book a free consultation
             </a>
           </div>
+
+          {/* FAQ */}
+          <style>{`
+            .faq-item { margin-bottom: 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
+            .faq-item:last-child { border-bottom: none; }
+            .faq-item summary { padding: 18px 0; cursor: pointer; font-weight: 600; font-size: 15px; color: #e5e7eb; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+            .faq-item summary::after { content: '+'; font-size: 20px; color: #9ca3af; transition: transform 0.2s; }
+            .faq-item[open] summary::after { content: '−'; }
+            .faq-item .faq-answer { padding: 0 0 18px; font-size: 14px; line-height: 1.7; color: #9ca3af; }
+          `}</style>
+          <section className="mt-16 pt-10 border-t border-white/10">
+            <h2 className="text-lg font-bold mb-6">Frequently Asked Questions</h2>
+            {faqSchema.mainEntity.map((q, i) => (
+              <details key={i} className="faq-item">
+                <summary>{q.name}</summary>
+                <div className="faq-answer">{q.acceptedAnswer.text}</div>
+              </details>
+            ))}
+          </section>
 
           {/* Related */}
           <nav className="mt-16 pt-10 border-t border-white/10">

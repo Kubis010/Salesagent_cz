@@ -110,6 +110,7 @@ export default function CrmNaMiruPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <main className="min-h-screen bg-black text-white">
         <div className="max-w-3xl mx-auto px-6 py-20">
           {/* Back */}
@@ -311,6 +312,30 @@ export default function CrmNaMiruPage() {
               Domluvit bezplatnou ukázku
             </a>
           </div>
+
+          <style>{`
+            .faq-item { margin-bottom: 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
+            .faq-item:last-child { border-bottom: none; }
+            .faq-item summary { padding: 18px 0; cursor: pointer; font-weight: 600; font-size: 15px; color: #e5e7eb; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+            .faq-item summary::after { content: '+'; font-size: 20px; color: #9ca3af; transition: transform 0.2s; }
+            .faq-item[open] summary::after { content: '−'; }
+            .faq-item .faq-answer { padding: 0 0 18px; font-size: 14px; line-height: 1.7; color: #9ca3af; }
+          `}</style>
+          <section className="mt-16 pt-10 border-t border-white/10">
+            <h2 className="text-lg font-bold mb-6">Časté otázky</h2>
+            <details className="faq-item">
+              <summary>Co je CRM na míru?</summary>
+              <div className="faq-answer">CRM na míru je systém pro správu obchodních kontaktů a pipeline vyvinutý přesně podle procesů firmy. Na rozdíl od Salesforce nebo HubSpotu neobsahuje funkce, které firma nepoužívá.</div>
+            </details>
+            <details className="faq-item">
+              <summary>Kdy se vyplatí CRM na míru místo hotového systému?</summary>
+              <div className="faq-answer">Když firma má specifické procesy, které generické CRM nepodporuje, nebo když cena licencí přesáhne náklady na vývoj. Typicky při 20+ uživatelích a jasně definovaných workflow.</div>
+            </details>
+            <details className="faq-item">
+              <summary>Jak dlouho trvá vývoj CRM na míru?</summary>
+              <div className="faq-answer">Základní CRM s pipeline, kontakty a aktivitami lze postavit za 4–8 týdnů. Složitější integrace (ERP, e-shop, telefonie) prodlužují dobu na 3–6 měsíců.</div>
+            </details>
+          </section>
 
           {/* Related articles */}
           <nav className="mt-16 pt-10 border-t border-white/10">

@@ -139,6 +139,7 @@ export default function ColdEmailVzorPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <main className="min-h-screen bg-black text-white">
         <div className="max-w-3xl mx-auto px-6 py-20">
           <Link href="/blog" className="text-sm text-gray-400 hover:text-white transition-colors mb-10 inline-block">← Zpět na blog</Link>
@@ -250,6 +251,30 @@ export default function ColdEmailVzorPage() {
               Domluvit bezplatnou ukázku
             </a>
           </div>
+
+          <style>{`
+            .faq-item { margin-bottom: 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
+            .faq-item:last-child { border-bottom: none; }
+            .faq-item summary { padding: 18px 0; cursor: pointer; font-weight: 600; font-size: 15px; color: #e5e7eb; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+            .faq-item summary::after { content: '+'; font-size: 20px; color: #9ca3af; transition: transform 0.2s; }
+            .faq-item[open] summary::after { content: '−'; }
+            .faq-item .faq-answer { padding: 0 0 18px; font-size: 14px; line-height: 1.7; color: #9ca3af; }
+          `}</style>
+          <section className="mt-16 pt-10 border-t border-white/10">
+            <h2 className="text-lg font-bold mb-6">Časté otázky</h2>
+            <details className="faq-item">
+              <summary>Co musí obsahovat cold e-mail v ČR ze zákona?</summary>
+              <div className="faq-answer">Dle zák. č. 480/2004 Sb. musí každý obchodní e-mail obsahovat identifikaci odesílatele, možnost odhlásit se z odběru a nesmí být klamavý. GDPR navíc vyžaduje oprávněný zájem jako právní základ.</div>
+            </details>
+            <details className="faq-item">
+              <summary>Jaká délka cold e-mailu funguje nejlépe?</summary>
+              <div className="faq-answer">Nejúspěšnější cold e-maily mají 50–125 slov. Krátká zpráva s jednou konkrétní žádostí (např. 20minutový hovor) generuje výrazně více odpovědí než dlouhý popis produktu.</div>
+            </details>
+            <details className="faq-item">
+              <summary>Jak zvýšit míru odpovědí na cold e-maily?</summary>
+              <div className="faq-answer">Klíčová jsou tři věci: personalizace (odkaz na konkrétní informaci z webu příjemce), jasná a nízkobarierová výzva k akci, a správné načasování (úterý–čtvrtek ráno). Míra odpovědí 2–5 % je dobrý výsledek.</div>
+            </details>
+          </section>
 
           <nav className="mt-16 pt-10 border-t border-white/10">
             <p className="text-sm text-gray-500 uppercase tracking-widest mb-6">Související články</p>

@@ -81,6 +81,7 @@ export default function CoJeExterniObchodPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <main className="min-h-screen bg-black text-white">
         <div className="max-w-3xl mx-auto px-6 py-20">
           <Link href="/blog" className="text-sm text-gray-400 hover:text-white transition-colors mb-10 inline-block">← Zpět na blog</Link>
@@ -209,6 +210,30 @@ export default function CoJeExterniObchodPage() {
               Domluvit bezplatnou konzultaci
             </a>
           </div>
+
+          <style>{`
+            .faq-item { margin-bottom: 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
+            .faq-item:last-child { border-bottom: none; }
+            .faq-item summary { padding: 18px 0; cursor: pointer; font-weight: 600; font-size: 15px; color: #e5e7eb; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+            .faq-item summary::after { content: '+'; font-size: 20px; color: #9ca3af; transition: transform 0.2s; }
+            .faq-item[open] summary::after { content: '−'; }
+            .faq-item .faq-answer { padding: 0 0 18px; font-size: 14px; line-height: 1.7; color: #9ca3af; }
+          `}</style>
+          <section className="mt-16 pt-10 border-t border-white/10">
+            <h2 className="text-lg font-bold mb-6">Časté otázky</h2>
+            <details className="faq-item">
+              <summary>Co je to externí obchod?</summary>
+              <div className="faq-answer">Externí obchod je model, kdy firma svěří část nebo celý obchodní proces externímu partnerovi místo vlastního obchodního oddělení. Partner přináší zkušenosti, kontakty a kapacitu bez nákladů na zaměstnance a odvodů.</div>
+            </details>
+            <details className="faq-item">
+              <summary>Pro koho se hodí model externího obchodu?</summary>
+              <div className="faq-answer">Nejlépe funguje pro firmy bez vlastního obchodního týmu, startupy testující nový trh nebo segment, a firmy, které potřebují rychle škálovat obchod bez zdlouhavého náboru a onboardingu.</div>
+            </details>
+            <details className="faq-item">
+              <summary>Jaké jsou výhody externího obchodu oproti vlastnímu obchodníkovi?</summary>
+              <div className="faq-answer">Nižší fixní náklady, žádné odvody, rychlejší start a možnost ukončit spolupráci bez pracovněprávních komplikací. Externí obchodník navíc přináší vlastní nástroje, CRM a zkušenosti z práce pro více firem.</div>
+            </details>
+          </section>
 
           <nav className="mt-16 pt-10 border-t border-white/10">
             <p className="text-sm text-gray-500 uppercase tracking-widest mb-6">Související články</p>

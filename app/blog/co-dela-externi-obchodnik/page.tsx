@@ -81,6 +81,7 @@ export default function CoDElaExterniObchodnikPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <main className="min-h-screen bg-black text-white">
         <div className="max-w-3xl mx-auto px-6 py-20">
           <Link href="/blog" className="text-sm text-gray-400 hover:text-white transition-colors mb-10 inline-block">← Zpět na blog</Link>
@@ -237,6 +238,30 @@ export default function CoDElaExterniObchodnikPage() {
               Domluvit bezplatnou konzultaci
             </a>
           </div>
+
+          <style>{`
+            .faq-item { margin-bottom: 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
+            .faq-item:last-child { border-bottom: none; }
+            .faq-item summary { padding: 18px 0; cursor: pointer; font-weight: 600; font-size: 15px; color: #e5e7eb; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+            .faq-item summary::after { content: '+'; font-size: 20px; color: #9ca3af; transition: transform 0.2s; }
+            .faq-item[open] summary::after { content: '−'; }
+            .faq-item .faq-answer { padding: 0 0 18px; font-size: 14px; line-height: 1.7; color: #9ca3af; }
+          `}</style>
+          <section className="mt-16 pt-10 border-t border-white/10">
+            <h2 className="text-lg font-bold mb-6">Časté otázky</h2>
+            <details className="faq-item">
+              <summary>Co přesně dělá externí obchodník?</summary>
+              <div className="faq-answer">Externí obchodník vyhledává potenciální zákazníky, oslovuje je, vede první schůzky a předává kvalifikované leady klientovi. Pracuje pro více firem zároveň na provizní nebo fixní bázi a přináší vlastní nástroje i metodiku.</div>
+            </details>
+            <details className="faq-item">
+              <summary>Jak se liší externí obchodník od interního?</summary>
+              <div className="faq-answer">Interní obchodník je zaměstnanec na plný úvazek s fixními náklady. Externí pracuje jako OSVČ nebo agentura, nemá odvody zaměstnavatele a přináší výsledky rychleji díky existující síti kontaktů a hotovým procesům.</div>
+            </details>
+            <details className="faq-item">
+              <summary>Kolik stojí spolupráce s externím obchodníkem?</summary>
+              <div className="faq-answer">Modely se liší: čistě provizní (10-20 % z obchodu), fixní retainer (15 000-40 000 Kč/měsíc) nebo kombinace obojího. Celkové náklady bývají 30-60 % nižší než u interního zaměstnance na HPP.</div>
+            </details>
+          </section>
 
           <nav className="mt-16 pt-10 border-t border-white/10">
             <p className="text-sm text-gray-500 uppercase tracking-widest mb-6">Související články</p>

@@ -112,9 +112,9 @@ const serviceSchema = {
   name: 'AI obchodní zástupce — automatizace B2B prodeje',
   alternateName: 'AI Sales Agent — B2B Sales Automation',
   provider: { '@type': 'Organization', name: 'Sales Robots s.r.o.' },
-  serviceType: 'Automatizace B2B obchodu',
+  serviceType: 'AI pro obchod a obchodníky — automatizace B2B prodeje',
   description:
-    'AI obchodní zástupce jako outsourcovaná služba. Systém automaticky vyhledá B2B kontakty, prostuduje web každé firmy, napíše personalizovaný cold email a odešle LinkedIn zprávu. Nástroj na automatizaci prodeje bez náboru obchodníků.',
+    'AI pro obchod a obchodníky jako outsourcovaná služba. Systém automaticky vyhledá B2B kontakty, prostuduje web každé firmy, napíše personalizovaný cold e-mail a odešle LinkedIn zprávu. Kompletní AI automatizace prodeje bez náboru obchodníků.',
   areaServed: ['CZ', 'SK', 'Internationally'],
   availableChannel: {
     '@type': 'ServiceChannel',

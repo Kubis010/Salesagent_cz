@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-07-13',
     locale: 'cs_CZ',
+    images: [{ url: 'https://salesagent.cz/blog/ai-cold-email.jpg', width: 1200, height: 630, alt: 'Jak personalizovat cold e-maily pomocí AI' }],
   },
   keywords: [
     'personalizovaný cold e-mail',
@@ -318,6 +319,26 @@ export default function Page() {
               Domluvit hovor zdarma
             </a>
           </div>
+
+          <style>{`
+            .faq-item { margin-bottom: 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
+            .faq-item:last-child { border-bottom: none; }
+            .faq-item summary { padding: 18px 0; cursor: pointer; font-weight: 600; font-size: 15px; color: #e5e7eb; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+            .faq-item summary::after { content: '+'; font-size: 20px; color: #9ca3af; transition: transform 0.2s; }
+            .faq-item[open] summary::after { content: '−'; }
+            .faq-item .faq-answer { padding: 0 0 18px; font-size: 14px; line-height: 1.7; color: #9ca3af; }
+          `}</style>
+          <section style={{ marginTop: '64px', paddingTop: '40px', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
+            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '18px', fontWeight: 700, marginBottom: '24px' }}>
+              {"Časté otázky"}
+            </h2>
+            {faqSchema.mainEntity.map((q, i) => (
+              <details key={i} className="faq-item">
+                <summary>{q.name}</summary>
+                <div className="faq-answer">{q.acceptedAnswer.text}</div>
+              </details>
+            ))}
+          </section>
 
         </div>
       </div>

@@ -19,6 +19,7 @@ export const metadata: Metadata = {
       'AI-driven sales automation is replacing repetitive prospecting work. Here is what actually changes in your pipeline — and what it means for your team.',
     type: 'article',
     publishedTime: '2025-02-05',
+    images: [{ url: 'https://salesagent.cz/blog/arrows.jpg', width: 1200, height: 630, alt: 'Sales Automation: How AI Is Changing B2B Outreach' }],
   },
 }
 

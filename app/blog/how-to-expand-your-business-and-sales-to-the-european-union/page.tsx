@@ -29,6 +29,7 @@ export const metadata: Metadata = {
     siteName: 'SalesAgent.cz',
     type: 'article',
     publishedTime: '2025-01-15',
+    images: [{ url: 'https://salesagent.cz/blog/crossroads.jpg', width: 1200, height: 630, alt: 'How to Expand Your Business and Sales to the European Union' }],
   },
   robots: { index: true, follow: true },
 }

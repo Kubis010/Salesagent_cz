@@ -19,6 +19,7 @@ export const metadata: Metadata = {
       'A practical step-by-step guide to implementing sales automation in a B2B company — from defining your ideal customer to measuring results.',
     type: 'article',
     publishedTime: '2025-02-12',
+    images: [{ url: 'https://salesagent.cz/blog/notebook.jpg', width: 1200, height: 630, alt: 'How to Implement Sales Automation' }],
   },
 }
 

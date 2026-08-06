@@ -81,6 +81,7 @@ export default function AiAgentLeadyPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <main className="min-h-screen bg-black text-white">
         <div className="max-w-3xl mx-auto px-6 py-20">
           <Link href="/blog" className="text-sm text-gray-400 hover:text-white transition-colors mb-10 inline-block">← Zpět na blog</Link>
@@ -193,6 +194,30 @@ export default function AiAgentLeadyPage() {
               Domluvit bezplatnou ukázku
             </a>
           </div>
+
+          <style>{`
+            .faq-item { margin-bottom: 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
+            .faq-item:last-child { border-bottom: none; }
+            .faq-item summary { padding: 18px 0; cursor: pointer; font-weight: 600; font-size: 15px; color: #e5e7eb; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+            .faq-item summary::after { content: '+'; font-size: 20px; color: #9ca3af; transition: transform 0.2s; }
+            .faq-item[open] summary::after { content: '−'; }
+            .faq-item .faq-answer { padding: 0 0 18px; font-size: 14px; line-height: 1.7; color: #9ca3af; }
+          `}</style>
+          <section className="mt-16 pt-10 border-t border-white/10">
+            <h2 className="text-lg font-bold mb-6">Časté otázky</h2>
+            <details className="faq-item">
+              <summary>Co je AI agent pro generování leadů?</summary>
+              <div className="faq-answer">AI agent pro generování leadů je software, který automaticky vyhledává B2B firmy podle zadaných kritérií, analyzuje jejich web a odesílá personalizované oslovení bez lidského zásahu. Pracuje nepřetržitě a dokáže oslovit stovky firem měsíčně.</div>
+            </details>
+            <details className="faq-item">
+              <summary>Jak se AI agent liší od klasického cold callingu?</summary>
+              <div className="faq-answer">Cold calling vyžaduje obchodníka s telefonem a zabírá hodiny denně. AI agent pracuje 24/7, personalizuje každou zprávu na základě webu příjemce a předává pouze firmy, které projevily zájem. Výsledkem je vyšší efektivita za zlomek nákladů.</div>
+            </details>
+            <details className="faq-item">
+              <summary>Kolik kontaktů zvládne AI agent oslovit za měsíc?</summary>
+              <div className="faq-answer">Realistický rozsah je 200 až 1 000 firem měsíčně s plnou personalizací. Bez personalizace lze škálovat výrazně výš, ale klesá míra odpovědí. Klíčem je najít rovnováhu mezi objemem a kvalitou každého oslovení.</div>
+            </details>
+          </section>
 
           <nav className="mt-16 pt-10 border-t border-white/10">
             <p className="text-sm text-gray-500 uppercase tracking-widest mb-6">Související články</p>

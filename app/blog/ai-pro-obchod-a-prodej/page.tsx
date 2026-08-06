@@ -81,6 +81,7 @@ export default function AiProObchodPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <main className="min-h-screen bg-black text-white">
         <div className="max-w-3xl mx-auto px-6 py-20">
           <Link href="/blog" className="text-sm text-gray-400 hover:text-white transition-colors mb-10 inline-block">← Zpět na blog</Link>
@@ -161,6 +162,30 @@ export default function AiProObchodPage() {
               Domluvit bezplatnou ukázku
             </a>
           </div>
+
+          <style>{`
+            .faq-item { margin-bottom: 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
+            .faq-item:last-child { border-bottom: none; }
+            .faq-item summary { padding: 18px 0; cursor: pointer; font-weight: 600; font-size: 15px; color: #e5e7eb; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+            .faq-item summary::after { content: '+'; font-size: 20px; color: #9ca3af; transition: transform 0.2s; }
+            .faq-item[open] summary::after { content: '−'; }
+            .faq-item .faq-answer { padding: 0 0 18px; font-size: 14px; line-height: 1.7; color: #9ca3af; }
+          `}</style>
+          <section className="mt-16 pt-10 border-t border-white/10">
+            <h2 className="text-lg font-bold mb-6">Časté otázky</h2>
+            <details className="faq-item">
+              <summary>Jak konkrétně AI pomáhá v B2B obchodu?</summary>
+              <div className="faq-answer">AI automatizuje vyhledávání potenciálních zákazníků, analýzu jejich webu a psaní personalizovaných zpráv. Obchodník pak dostává kvalifikované konverzace místo toho, aby trávil hodiny prospektingem a manuálním oslovováním.</div>
+            </details>
+            <details className="faq-item">
+              <summary>Nahradí AI obchodníky úplně?</summary>
+              <div className="faq-answer">Ne. AI zvládá top-of-funnel aktivity jako vyhledávání firem, oslovení a follow-up. Vyjednávání podmínek, budování důvěry a uzavírání obchodů stále vyžadují lidský přístup a zkušenosti.</div>
+            </details>
+            <details className="faq-item">
+              <summary>Které prodejní procesy lze automatizovat jako první?</summary>
+              <div className="faq-answer">Nejdříve prospekting (vyhledávání firem), pak cold outreach (e-mail, LinkedIn), follow-up sekvence a třídění odpovědí. Tyto fáze zabírají 60-80 % času běžného obchodníka a AI je zvládne rychleji a konzistentněji.</div>
+            </details>
+          </section>
 
           <nav className="mt-16 pt-10 border-t border-white/10">
             <p className="text-sm text-gray-500 uppercase tracking-widest mb-6">Související články</p>

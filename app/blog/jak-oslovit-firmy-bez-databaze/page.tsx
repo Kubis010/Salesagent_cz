@@ -137,6 +137,7 @@ export default function JakOslovitFirmyPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <main className="min-h-screen bg-black text-white">
         <div className="max-w-3xl mx-auto px-6 py-20">
           <Link href="/blog" className="text-sm text-gray-400 hover:text-white transition-colors mb-10 inline-block">← Zpět na blog</Link>
@@ -274,6 +275,30 @@ export default function JakOslovitFirmyPage() {
               Zjistit, jak to funguje pro váš obor →
             </a>
           </div>
+
+          <style>{`
+            .faq-item { margin-bottom: 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
+            .faq-item:last-child { border-bottom: none; }
+            .faq-item summary { padding: 18px 0; cursor: pointer; font-weight: 600; font-size: 15px; color: #e5e7eb; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+            .faq-item summary::after { content: '+'; font-size: 20px; color: #9ca3af; transition: transform 0.2s; }
+            .faq-item[open] summary::after { content: '−'; }
+            .faq-item .faq-answer { padding: 0 0 18px; font-size: 14px; line-height: 1.7; color: #9ca3af; }
+          `}</style>
+          <section className="mt-16 pt-10 border-t border-white/10">
+            <h2 className="text-lg font-bold mb-6">Časté otázky</h2>
+            <details className="faq-item">
+              <summary>Kde najít B2B kontakty zdarma bez placené databáze?</summary>
+              <div className="faq-answer">Veřejné zdroje: hledání Google, ARES a obchodní rejstřík, LinkedIn, oborová sdružení a konference, weby firem, justice.cz. Kombinace více zdrojů dává kvalitnější a aktuálnější seznam než placená databáze.</div>
+            </details>
+            <details className="faq-item">
+              <summary>Je ručně sestavený seznam kontaktů lepší než koupená databáze?</summary>
+              <div className="faq-answer">Ano, zpravidla ano. Koupené databáze bývají zastaralé a nesegmentované. Vlastní seznam sestavený dle ICP kritérií má vyšší relevanci a výrazně lepší míru odpovědí.</div>
+            </details>
+            <details className="faq-item">
+              <summary>Jak personalizovat oslovení bez drahých CRM nástrojů?</summary>
+              <div className="faq-answer">Stačí přečíst web každé firmy a zmínit jedno konkrétní pozorování v e-mailu. Tato mikropersonalizace zvyšuje míru odpovědí 2–3x bez nutnosti drahého nástroje. AI tuto práci dokáže dělat automaticky.</div>
+            </details>
+          </section>
 
           <nav className="mt-16 pt-10 border-t border-white/10">
             <p className="text-sm text-gray-500 uppercase tracking-widest mb-6">Související články</p>

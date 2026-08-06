@@ -29,6 +29,7 @@ export const metadata: Metadata = {
     siteName: 'SalesAgent.cz',
     type: 'article',
     publishedTime: '2025-01-09',
+    images: [{ url: 'https://salesagent.cz/blog/notebook.jpg', width: 1200, height: 630, alt: 'Sales Agent Definition and What He Does' }],
   },
   robots: { index: true, follow: true },
 }

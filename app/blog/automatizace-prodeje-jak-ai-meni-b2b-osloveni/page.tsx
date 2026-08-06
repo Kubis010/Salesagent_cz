@@ -30,6 +30,7 @@ export const metadata: Metadata = {
     siteName: 'SalesAgent.cz',
     type: 'article',
     publishedTime: '2025-02-05',
+    images: [{ url: 'https://salesagent.cz/blog/arrows.jpg', width: 1200, height: 630, alt: 'Automatizace prodeje: Jak AI mění B2B oslovení' }],
   },
   robots: { index: true, follow: true },
 }
