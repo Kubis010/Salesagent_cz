@@ -155,7 +155,7 @@ export default async function LocaleLayout({
           {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-442V6JSVVN');`}
         </Script>
         <Script
-          src="https://towhdopfkjwvbfobvoli.supabase.co/functions/v1/contextual-loader?site=90f638ef-eab0-434d-85aa-7dfe88f6b44a"
+          src="https://towhdopfkjwvbfobvoli.supabase.co/functions/v1/contextual-loader?site=7019e458-5b00-4764-b79b-962ecd053d3c"
           strategy="afterInteractive"
         />
       </body>
