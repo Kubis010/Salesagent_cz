@@ -1,45 +1,46 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI agent pro generování leadů: Jak funguje? | SalesAgent.cz',
+  title: 'Generování B2B leadů v roce 2025: co funguje a co je mrtvé | SalesAgent.cz',
   description:
-    'AI agent pro generování leadů hledá B2B kontakty, analyzuje je a oslovuje automaticky. Jak takový agent funguje a kde má své hranice.',
+    'Studené databáze, LinkedIn spam a hromadné emaily přestávají fungovat. Co generuje B2B leady v 2025 reálně? AI prospecting bez databází, hyper-personalizace a vícekanálový outreach.',
   keywords: [
-    'AI agent pro generování leadů',
-    'generování leadů AI',
-    'AI lead generation',
-    'automatické generování leadů',
-    'AI prospekting B2B',
-    'lead generation automatizace',
-    'AI obchodní agent',
+    'generování leadů',
+    'B2B lead generation',
+    'generování B2B leadů',
+    'jak generovat leady',
+    'lead generation 2025',
   ],
   alternates: {
     canonical: 'https://salesagent.cz/blog/ai-agent-pro-generovani-leadu',
-    languages: { cs: 'https://salesagent.cz/blog/ai-agent-pro-generovani-leadu', 'x-default': 'https://salesagent.cz/blog/ai-agent-pro-generovani-leadu' },
+    languages: {
+      cs: 'https://salesagent.cz/blog/ai-agent-pro-generovani-leadu',
+      'x-default': 'https://salesagent.cz/blog/ai-agent-pro-generovani-leadu',
+    },
   },
   openGraph: {
-    title: 'AI agent pro generování leadů: Jak funguje a co od něj čekat',
+    title: 'Generování B2B leadů v roce 2025: co funguje a co je mrtvé',
     description:
-      'AI agent pro generování leadů hledá B2B kontakty, analyzuje je a oslovuje automaticky. Jak takový agent funguje a co od něj reálně čekat.',
+      'Studené databáze a hromadné emaily přestávají fungovat. Co generuje B2B leady v 2025 reálně.',
     url: 'https://salesagent.cz/blog/ai-agent-pro-generovani-leadu',
     siteName: 'SalesAgent.cz',
     type: 'article',
-    publishedTime: '2026-07-21',
-    images: [{ url: 'https://salesagent.cz/blog/ai-agent-leady.jpg', width: 640, height: 427, alt: 'AI agent pro generování leadů' }],
+    publishedTime: '2025-05-20',
+    locale: 'cs_CZ',
+    images: [{ url: 'https://salesagent.cz/blog/generovani-b2b-leadu.jpg', width: 1200, height: 630, alt: 'Generování B2B leadů v roce 2025' }],
   },
   robots: { index: true, follow: true },
 }
 
-const jsonLd = {
+const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
-  headline: 'AI agent pro generování leadů: Jak funguje a co od něj čekat',
-  description: 'AI agent pro generování leadů hledá B2B kontakty, analyzuje je a oslovuje automaticky.',
-  image: 'https://salesagent.cz/blog/ai-agent-leady.jpg',
-  datePublished: '2026-07-21',
-  dateModified: '2026-07-21',
+  headline: 'Generování B2B leadů v roce 2025: co funguje a co je mrtvé',
+  description: 'Studené databáze, LinkedIn spam a hromadné emaily přestávají fungovat. Co generuje B2B leady v 2025 reálně.',
+  image: 'https://salesagent.cz/blog/generovani-b2b-leadu.jpg',
+  datePublished: '2025-05-20',
+  dateModified: '2025-05-20',
   inLanguage: 'cs',
   author: { '@type': 'Organization', name: 'SalesAgent.cz', url: 'https://salesagent.cz' },
   publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz' },
@@ -47,197 +48,362 @@ const jsonLd = {
 }
 
 const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
     {
-      "@type": "Question",
-      "name": "Co je AI agent pro generování leadů?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "AI agent pro generování leadů je software, který automaticky vyhledává B2B firmy dle zadaných kritérií, prostuduje jejich web a odešle personalizovanou oslovující zprávu bez lidského zásahu."
-      }
+      '@type': 'Question',
+      name: 'Proč přestávají fungovat studené databáze jako Apollo nebo Lusha?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Databáze sdílí tisíce uživatelů — stejné kontakty dostávají desítky studených emailů měsíčně od různých odesílatelů. Data rychle zastarávají (20–30 % ročně). A protože všichni oslovují stejné lidi, příjemci jsou vůči cold outreachi imunní. Výsledkem jsou klesající response rates a poškozená reputace domény.',
+      },
     },
     {
-      "@type": "Question",
-      "name": "Jak se AI agent liší od klasického cold callingu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Cold calling vyžaduje obchodníka s telefonem — AI agent pracuje 24/7, oslovuje stovky firem měsíčně a personalizuje každou zprávu na základě webu příjemce. Výsledkem jsou odpovědi od firem, které projevily zájem."
-      }
+      '@type': 'Question',
+      name: 'Co je AI prospecting bez databáze?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'AI prospecting bez databáze znamená vyhledávání firem přímo z veřejných zdrojů — Google Maps, firemní rejstříky (ARES), oborové portály, LinkedIn — v reálném čase. Firmy jsou čerstvé, nikdo jiný je nescrape ze stejného zdroje ve stejnou dobu. AI pak přečte web každé firmy a napíše personalizovaný email, který reaguje na konkrétní obsah.',
+      },
     },
     {
-      "@type": "Question",
-      "name": "Kolik kontaktů zvládne AI agent oslovit za měsíc?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Závisí na nastavení, ale realalistický rozsah je 300–1 000 firem měsíčně s plnou personalizací. Bez personalizace lze škálovat výrazně výš, ale klesá míra odpovědí."
-      }
-    }
-  ]
+      '@type': 'Question',
+      name: 'Kolik B2B leadů reálně lze generovat za měsíc?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Závisí na velikosti cílového trhu a přesnosti ICP. Reálná čísla: 500–1 500 oslovených firem měsíčně, response rate 1–3 % u personalizovaného outreache = 5–45 odpovědí. Z odpovědí se typicky 30–50 % konvertuje na schůzku.',
+      },
+    },
+  ],
 }
 
-export default function AiAgentLeadyPage() {
+export default function Page() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+    <article style={{ paddingTop: '96px', paddingBottom: '80px' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <main className="min-h-screen bg-black text-white">
-        <div className="max-w-3xl mx-auto px-6 py-20">
-          <Link href="/blog" className="text-sm text-gray-400 hover:text-white transition-colors mb-10 inline-block">← Zpět na blog</Link>
 
-          <header className="mb-12">
-            <p className="text-sm text-purple-400 uppercase tracking-widest mb-4">Lead Generation · 21. července 2026</p>
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-              AI agent pro generování leadů: Jak funguje a co od něj čekat
-            </h1>
-            <p className="text-xl text-gray-300 leading-relaxed">
-              AI agenti pro generování leadů přebírají celý proces vyhledávání a prvního oslovení potenciálních zákazníků. Co přesně takový agent dělá, jak ho nastavit a jaké výsledky reálně přináší?
-            </p>
-          </header>
+      <div style={{ maxWidth: '760px', margin: '0 auto', padding: '0 24px' }}>
 
-          <div className="mb-14 rounded-xl overflow-hidden border border-white/10">
-            <Image src="/blog/ai-agent-leady.jpg" alt="AI agent pro generování leadů — obchodní jednání" width={640} height={427} className="w-full object-cover" priority />
+        <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '32px' }}>
+          <Link href="/blog" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Blog</Link>
+          {' / '}Generování B2B leadů v roce 2025
+        </p>
+
+        <img
+          src="/blog/generovani-b2b-leadu.jpg"
+          alt="Generování B2B leadů v roce 2025 — co funguje a co ne"
+          style={{ width: '100%', borderRadius: '14px', marginBottom: '40px', display: 'block' }}
+        />
+
+        <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '14px' }}>
+          Lead generation · B2B outreach
+        </p>
+        <h1 style={{
+          fontFamily: 'Space Grotesk, sans-serif',
+          fontSize: 'clamp(26px, 4vw, 40px)',
+          fontWeight: 700,
+          letterSpacing: '-0.025em',
+          lineHeight: 1.2,
+          marginBottom: '16px',
+        }}>
+          Generování B2B leadů v roce 2025: co funguje a co je mrtvé
+        </h1>
+        <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '48px' }}>
+          20. května 2025 · Petr Kubíček
+        </p>
+
+        <div style={{ fontSize: '17px', lineHeight: 1.75, color: 'var(--text)', display: 'flex', flexDirection: 'column', gap: '24px' }}>
+
+          <p>
+            Krajina B2B lead generation se za poslední tři roky dramaticky proměnila. Přístupy, které
+            fungovaly v roce 2021, dnes generují zlomek původních výsledků. Spam filtry jsou chytřejší,
+            příjemci otrlejší a sdílené databáze přeplněné. Přesto většina firem stále používá stejné metody
+            — a diví se, proč výsledky klesají.
+          </p>
+
+          <p>
+            Tenhle článek je přehled toho, co v generování B2B leadů v roce 2025 reálně funguje a co
+            přestalo dávat smysl. Bez marketingové omáčky, s konkrétními čísly.
+          </p>
+
+          <H2>Co přestalo fungovat (nebo funguje čím dál hůř)</H2>
+
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+            {[
+              {
+                metoda: 'Studené databáze (Apollo, Lusha, Hunter)',
+                problem: 'Stejné kontakty dostávají desítky cold emailů měsíčně od různých odesílatelů — všichni kupují stejnou databázi. Data zastarávají 20–30 % ročně. Příjemci jsou vůči generickému outreachi imunní. Response rate klesá každým rokem.',
+              },
+              {
+                metoda: 'Hromadné cold emaily bez personalizace',
+                problem: 'Spam filtry dnes zachytí většinu hromadných rozesílek ještě před doručením. Co projde, ignorují příjemci. A odeslání tisíce generických emailů z jedné domény ji poškodí tak, že ani personalizované zprávy nedorazí do doručené pošty.',
+              },
+              {
+                metoda: 'LinkedIn InMail spam',
+                problem: 'Acceptance rate LinkedIn connection requestů klesá. Lidé si nastavují přísnější filtry. A uživatelé, kteří dostávají desítky nevyžádaných InMailů týdně, přestávají reagovat na cokoli, co přijde od cizí osoby.',
+              },
+              {
+                metoda: 'Retargeting reklamy jako primární lead gen kanál',
+                problem: 'GDPR a cookie-less prostředí omezují přesnost retargetingu. Cena za klik roste, konverzní poměr klesá. Pro generování nových B2B leadů (ne retenci) jsou reklamy stále méně efektivní jako samostatný kanál.',
+              },
+            ].map((item) => (
+              <div key={item.metoda} style={{
+                padding: '20px',
+                borderRadius: '10px',
+                border: '1px solid rgba(239,68,68,0.2)',
+                background: 'rgba(239,68,68,0.04)',
+              }}>
+                <div style={{ display: 'flex', gap: '10px', marginBottom: '8px', alignItems: 'flex-start' }}>
+                  <span style={{ color: '#ef4444', flexShrink: 0 }}>✕</span>
+                  <p style={{ fontWeight: 700, fontSize: '15px', color: 'var(--text)', margin: 0 }}>{item.metoda}</p>
+                </div>
+                <p style={{ fontSize: '14px', color: 'var(--text-muted)', margin: 0, paddingLeft: '22px', lineHeight: 1.6 }}>{item.problem}</p>
+              </div>
+            ))}
           </div>
 
-          <article className="prose prose-invert prose-lg max-w-none">
+          <H2>Co funguje v 2025</H2>
 
-            <h2 className="text-2xl font-bold text-white mt-12 mb-4">Co je AI agent pro generování leadů</h2>
-            <p className="text-gray-300 leading-relaxed mb-6">
-              AI agent pro generování leadů je systém, který autonomně vyhledává firmy odpovídající vašemu ideálnímu zákaznickému profilu, analyzuje je a oslovuje jménem vaší firmy. Na rozdíl od tradičního lead generation — kde obchodník ručně prohledává databáze a píše zprávy — AI agent tento proces provádí automaticky, nepřetržitě a ve velkém měřítku.
-            </p>
-            <p className="text-gray-300 leading-relaxed mb-6">
-              Nejde o jednoduchý e-mail automat, který rozešle šablonu tisíci kontaktům. Moderní AI agenti pro lead generation pracují s kontextem — čtou weby cílových firem, chápou jejich obor a připravují zprávy, které dávají smysl konkrétnímu příjemci. Tím se zásadně liší od starých nástrojů hromadného rozesílání.
-            </p>
-
-            <h2 className="text-2xl font-bold text-white mt-12 mb-4">Jak AI agent pro lead generation pracuje krok za krokem</h2>
-
-            <div className="space-y-6 mb-10">
-              {[
-                {
-                  step: '01',
-                  title: 'Definice cílové skupiny',
-                  body: 'Vše začíná nastavením kritérií ideálního zákazníka — odvětví, velikost firmy, geografie, typ produktu nebo služby. Čím přesnější definice, tím relevantnější leady. AI agent pak hledá právě tento profil ve firemních registrech, oborových databázích a na webu.',
-                },
-                {
-                  step: '02',
-                  title: 'Vyhledávání a filtrace firem',
-                  body: 'Agent prohledá dostupné zdroje a sestaví seznam potenciálních zákazníků. Filtruje podle nastavených kritérií, eliminuje firmy na blacklistu a ověřuje základní dostupnost kontaktních údajů. Výsledkem je čistý, relevantní seznam — ne surová databáze.',
-                },
-                {
-                  step: '03',
-                  title: 'AI analýza každé firmy',
-                  body: 'Než agent kohokoliv osloví, přečte web dané firmy. Zjistí, čím se zabývají, jaké mají produkty nebo služby, na co se aktuálně zaměřují. Tato analýza tvoří základ personalizované zprávy — každá firma dostane oslovení, které vychází z toho, co skutečně dělá.',
-                },
-                {
-                  step: '04',
-                  title: 'Personalizované oslovení',
-                  body: 'Na základě analýzy AI napíše zprávu — e-mail nebo LinkedIn zprávu — která je relevantní konkrétní firmě. Zmiňuje jejich konkrétní situaci a vysvětluje, proč vaše řešení dává smysl právě pro ně. Žádné generické šablony.',
-                },
-                {
-                  step: '05',
-                  title: 'Follow-up sekvence a předání zájemců',
-                  body: 'Agent automaticky řídí follow-upy pro firmy, které neodpověděly. Když firma projeví zájem — odpoví, klikne nebo se jinak zapojí — agent ji označí jako teplý lead a předá ho vašemu týmu. Vy přicházíte do hry ve chvíli, kdy je zájem potvrzen.',
-                },
-              ].map((item) => (
-                <div key={item.step} className="flex gap-5">
-                  <span className="text-purple-400 font-bold text-sm mt-1 flex-shrink-0 w-8">{item.step}</span>
-                  <div>
-                    <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
-                    <p className="text-gray-300 leading-relaxed">{item.body}</p>
-                  </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+            {[
+              {
+                metoda: 'AI prospecting bez databáze',
+                desc: 'Vyhledávání firem přímo z veřejných zdrojů v reálném čase — Google Maps, ARES, oborové portály. Firmy jsou čerstvé, nikdo jiný je nescrape ze stejného zdroje ve stejnou chvíli. Výsledkem jsou kontakty, které databázové nástroje nenabízejí.',
+              },
+              {
+                metoda: 'Hyper-personalizace: AI čte web každého prospekta',
+                desc: 'Místo šablony s proměnnými AI přečte web cílové firmy a napíše email, který reaguje na konkrétní obsah. Příjemce pozná, že zpráva je určena jemu — ne tisícovce dalších lidí. Response rate je 3–6× vyšší než u generických emailů.',
+              },
+              {
+                metoda: 'Vícekanálový outreach: email + LinkedIn současně',
+                desc: 'Email a LinkedIn zároveň, ne sequentially. Firma dostane email v úterý, v pátek přijde LinkedIn connection request s personalizovanou poznámkou. Dva doteky z různých kanálů v krátkém čase výrazně zvyšují pravděpodobnost odpovědi.',
+              },
+              {
+                metoda: 'Intent-based targeting',
+                desc: 'Oslovat firmy, které právě teď pravděpodobně hledají řešení: firmy, které nabírají obchodníky (signál rostoucí poptávky), expandují do nového regionu, mění IT systémy, nebo právě získaly investici. Tyto signály jsou z veřejných zdrojů dostupné a dramaticky zvyšují relevanci oslovení.',
+              },
+            ].map((item) => (
+              <div key={item.metoda} style={{
+                padding: '20px',
+                borderRadius: '10px',
+                border: '1px solid rgba(255,107,74,0.25)',
+                background: 'rgba(255,107,74,0.04)',
+              }}>
+                <div style={{ display: 'flex', gap: '10px', marginBottom: '8px', alignItems: 'flex-start' }}>
+                  <span style={{ color: 'var(--accent)', flexShrink: 0 }}>✓</span>
+                  <p style={{ fontWeight: 700, fontSize: '15px', color: 'var(--text)', margin: 0 }}>{item.metoda}</p>
                 </div>
-              ))}
+                <p style={{ fontSize: '14px', color: 'var(--text-muted)', margin: 0, paddingLeft: '22px', lineHeight: 1.6 }}>{item.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <H2>Jak SalesAgent.cz generuje leady bez databáze</H2>
+
+          <p>
+            Konkrétní příklad z praxe — jak vypadá lead generation kampaň pro firmu prodávající software
+            pro správu skladů středním výrobním firmám:
+          </p>
+
+          <ol style={{ paddingLeft: '20px', marginBottom: '8px' }}>
+            <li style={{ marginBottom: '10px' }}>Definujeme ICP: výrobní firmy 30–300 zaměstnanců, ČR + SK, s fyzickým skladem</li>
+            <li style={{ marginBottom: '10px' }}>Systém vyhledá firmy z Google Maps podle klíčových slov jako "výroba", "sklad", "logistika" v cílových regionech</li>
+            <li style={{ marginBottom: '10px' }}>AI přečte web každé firmy: zjistí, co vyrábí, jak velký sklad provozují, zda zmiňují problémy s logistikou</li>
+            <li style={{ marginBottom: '10px' }}>Firmy bez relevantního webu nebo mimo ICP jsou automaticky vyřazeny — do oslovení jdou jen kvalifikované</li>
+            <li style={{ marginBottom: '10px' }}>Pro každou firmu AI napíše unikátní email, který reaguje na jejich konkrétní situaci</li>
+            <li style={{ marginBottom: '10px' }}>Výstup: 400–600 oslovených firem měsíčně, z toho 15–25 odpovědí, 6–12 schůzek</li>
+          </ol>
+
+          <p>
+            Klíčový rozdíl oproti databázovému přístupu: firmy jsou čerstvé, oslovení je unikátní a
+            nikdo jiný ve stejnou chvíli neprovádí identickou kampaň na stejné kontakty.
+          </p>
+
+          <H2>Kolik leadů reálně generovat</H2>
+
+          <p>
+            Čísla závisí na trzích a ICP, ale tato čísla jsou reálná pro česko-slovenský trh:
+          </p>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '12px' }}>
+            {[
+              { label: 'Oslovených firem / měsíc', value: '500–1 500' },
+              { label: 'Response rate (personalizace)', value: '1–3 %' },
+              { label: 'Schůzek / měsíc', value: '5–45' },
+            ].map((stat) => (
+              <div key={stat.label} style={{
+                padding: '20px',
+                borderRadius: '12px',
+                border: '1px solid var(--border)',
+                background: 'var(--bg-card)',
+                textAlign: 'center',
+              }}>
+                <p style={{ fontSize: '26px', fontWeight: 800, color: 'var(--accent)', marginBottom: '6px' }}>{stat.value}</p>
+                <p style={{ fontSize: '12px', color: 'var(--text-muted)', margin: 0, lineHeight: 1.4 }}>{stat.label}</p>
+              </div>
+            ))}
+          </div>
+
+          <p>
+            Čísla se výrazně liší podle oboru a kvality ICP. Firmy s přesně definovanou cílovou skupinou
+            a silným hodnotovým argumentem dosahují horní hranice. Firmy s vágním ICP nebo slabou
+            personalizací zůstávají na dolní hranici nebo pod ní.
+          </p>
+
+          <H2>Jak začít s generováním B2B leadů v 2025</H2>
+
+          <p>
+            Tři kroky, bez kterých jakýkoliv systém selže:
+          </p>
+
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+            <div style={{
+              padding: '20px',
+              borderRadius: '10px',
+              border: '1px solid var(--border)',
+              background: 'var(--bg-card)',
+            }}>
+              <p style={{ fontWeight: 700, color: 'var(--text)', marginBottom: '8px' }}>
+                1. Definujte ICP co nejpřesněji
+              </p>
+              <p style={{ fontSize: '14px', color: 'var(--text-muted)', margin: 0, lineHeight: 1.6 }}>
+                Obor, region, velikost firmy (počet zaměstnanců nebo obrat), pozice rozhodovatele
+                (jednatel, obchodní ředitel, IT manažer). Čím přesnější, tím vyšší relevance oslovení
+                a vyšší response rate.
+              </p>
             </div>
+            <div style={{
+              padding: '20px',
+              borderRadius: '10px',
+              border: '1px solid var(--border)',
+              background: 'var(--bg-card)',
+            }}>
+              <p style={{ fontWeight: 700, color: 'var(--text)', marginBottom: '8px' }}>
+                2. Určete "trigger" — proč by vás firma potřebovala právě teď
+              </p>
+              <p style={{ fontSize: '14px', color: 'var(--text-muted)', margin: 0, lineHeight: 1.6 }}>
+                Nejlepší cold email nevysvětluje, co děláte — vysvětluje, proč je řešení relevantní
+                pro konkrétní situaci firmy právě v tuto chvíli. Nabírají obchodníky? Rozrůstají se?
+                Zmiňují na webu problém, který řešíte? Trigger zvyšuje relevanci zprávy výrazněji
+                než jakákoliv jiná proměnná.
+              </p>
+            </div>
+            <div style={{
+              padding: '20px',
+              borderRadius: '10px',
+              border: '1px solid var(--border)',
+              background: 'var(--bg-card)',
+            }}>
+              <p style={{ fontWeight: 700, color: 'var(--text)', marginBottom: '8px' }}>
+                3. Nastavte systém nebo outsourcujte
+              </p>
+              <p style={{ fontSize: '14px', color: 'var(--text-muted)', margin: 0, lineHeight: 1.6 }}>
+                Interní systém (Clay + Lemlist + vlastní AI) dává smysl, pokud máte technický tým a
+                čas na nastavení. Outsourcovaná služba (jako SalesAgent.cz) dává smysl, pokud chcete
+                výsledky bez investice do infrastruktury a průběžného managementu.
+              </p>
+            </div>
+          </div>
 
-            <h2 className="text-2xl font-bold text-white mt-12 mb-4">Jaké výsledky AI agent pro lead generation přináší</h2>
-            <p className="text-gray-300 leading-relaxed mb-6">
-              Realistická čísla z praxe: AI agent typicky osloví 200–500 firem měsíčně a dosahuje míry odpovědí 2–5 % z kvalifikovaného cold outreache. To znamená 4–25 teplých leadů měsíčně — bez práce vašeho obchodního týmu na prospektingu.
+          <div style={{
+            background: 'rgba(255,107,74,0.06)',
+            border: '1px solid rgba(255,107,74,0.25)',
+            borderRadius: '14px',
+            padding: '32px',
+            marginTop: '16px',
+            textAlign: 'center',
+          }}>
+            <p style={{ fontSize: '18px', fontWeight: 700, color: 'var(--text)', marginBottom: '12px', fontFamily: 'Space Grotesk, sans-serif' }}>
+              Chceme vidět, kolik leadů bychom vygenerovali pro váš trh
             </p>
-            <p className="text-gray-300 leading-relaxed mb-6">
-              Klíčová výhoda oproti tradičnímu lead generation není jen rychlost — je to konzistence. Lidský obchodník má dobré dny a špatné dny, zapomíná na follow-upy, vybírá si "snadnější" kontakty. AI agent pracuje systematicky, bez výkyvů a bez výjimek.
+            <p style={{ fontSize: '14px', color: 'var(--text-muted)', marginBottom: '24px' }}>
+              Na 30minutovém hovoru odhadneme reálný potenciál pro váš obor a ukážeme konkrétní příklady
+              oslovení.
             </p>
-
-            <h2 className="text-2xl font-bold text-white mt-12 mb-4">Pro koho se AI agent na lead generation hodí</h2>
-            <p className="text-gray-300 leading-relaxed mb-6">
-              AI agent pro generování leadů dává největší smysl firmám, které:
-            </p>
-            <ul className="list-none space-y-3 mb-8">
-              {[
-                'Prodávají B2B a cílový zákazník je identifikovatelný (odvětví, velikost, geografie)',
-                'Chtějí škálovat obchod bez úměrného navyšování obchodního týmu',
-                'Mají produkt nebo službu s delším prodejním cyklem, kde záleží na prvním oslovení',
-                'Vstupují na nový trh a chtějí nejdřív otestovat poptávku bez velké investice',
-                'Mají obchodníky, kteří jsou skvělí v jednání, ale nemají čas na prospekting',
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3 text-gray-300">
-                  <span className="text-purple-400 mt-1 flex-shrink-0">✓</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-
-            <h2 className="text-2xl font-bold text-white mt-12 mb-4">Kde má AI agent své hranice</h2>
-            <p className="text-gray-300 leading-relaxed mb-6">
-              AI agent nezavře obchod. Nenahradí schůzku, nerozumí emocionálnímu kontextu rozhodnutí a nedokáže vybudovat dlouhodobý vztah. Jeho role je jasně vymezená: najít firmy se zájmem a předat je lidem, kteří obchod dovedou do konce.
-            </p>
-            <p className="text-gray-300 leading-relaxed mb-6">
-              Nejlepší výsledky proto přicházejí tehdy, když je AI agent přesně nastavený — správná cílová skupina, relevantní hodnotový argument, realistická očekávání. Nasazení AI agenta bez jasné definice ideálního zákazníka vede k oslovování špatných firem, což snižuje výsledky a kazí reputaci domény.
-            </p>
-
-          </article>
-
-          <div className="mt-16 p-8 border border-purple-500/30 rounded-2xl bg-purple-900/10 text-center">
-            <h2 className="text-2xl font-bold mb-3">Vyzkoušejte AI agenta pro vaše leady</h2>
-            <p className="text-gray-300 mb-6">SalesAgent je AI agent pro B2B generování leadů — hledá firmy, čte jejich weby a oslovuje je personalizovaně. Předává vám jen ty se skutečným zájmem.</p>
-            <a href="https://cal.com/salesagent/demo" target="_blank" rel="noopener noreferrer" className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors">
-              Domluvit bezplatnou ukázku
+            <a
+              href="https://outlook.office.com/bookwithme/user/480895b1333541dc94be634dd588fada@salesagent.cz/meetingtype/jwdxCRPBn0CvHccZ7eLwAg2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-block',
+                backgroundColor: 'var(--accent)',
+                color: '#0B1320',
+                fontWeight: 700,
+                fontSize: '15px',
+                padding: '14px 32px',
+                borderRadius: '10px',
+                textDecoration: 'none',
+              }}
+            >
+              Domluvit hovor zdarma
             </a>
           </div>
 
           <style>{`
-            .faq-item { margin-bottom: 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
-            .faq-item:last-child { border-bottom: none; }
-            .faq-item summary { padding: 18px 0; cursor: pointer; font-weight: 600; font-size: 15px; color: #e5e7eb; list-style: none; display: flex; justify-content: space-between; align-items: center; }
-            .faq-item summary::after { content: '+'; font-size: 20px; color: #9ca3af; transition: transform 0.2s; }
+            .faq-item { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+            .faq-item + .faq-item { margin-top: 10px; }
+            .faq-item summary { list-style: none; cursor: pointer; padding: 16px 20px; font-weight: 600; font-size: 15px; display: flex; justify-content: space-between; align-items: center; }
+            .faq-item summary::-webkit-details-marker { display: none; }
+            .faq-item summary::after { content: '+'; font-size: 20px; font-weight: 400; color: var(--accent); flex-shrink: 0; margin-left: 12px; }
             .faq-item[open] summary::after { content: '−'; }
-            .faq-item .faq-answer { padding: 0 0 18px; font-size: 14px; line-height: 1.7; color: #9ca3af; }
+            .faq-item .faq-answer { padding: 0 20px 16px; font-size: 15px; line-height: 1.7; color: var(--text-muted); }
           `}</style>
-          <section className="mt-16 pt-10 border-t border-white/10">
-            <h2 className="text-lg font-bold mb-6">Časté otázky</h2>
-            <details className="faq-item">
-              <summary>Co je AI agent pro generování leadů?</summary>
-              <div className="faq-answer">AI agent pro generování leadů je software, který automaticky vyhledává B2B firmy podle zadaných kritérií, analyzuje jejich web a odesílá personalizované oslovení bez lidského zásahu. Pracuje nepřetržitě a dokáže oslovit stovky firem měsíčně.</div>
-            </details>
-            <details className="faq-item">
-              <summary>Jak se AI agent liší od klasického cold callingu?</summary>
-              <div className="faq-answer">Cold calling vyžaduje obchodníka s telefonem a zabírá hodiny denně. AI agent pracuje 24/7, personalizuje každou zprávu na základě webu příjemce a předává pouze firmy, které projevily zájem. Výsledkem je vyšší efektivita za zlomek nákladů.</div>
-            </details>
-            <details className="faq-item">
-              <summary>Kolik kontaktů zvládne AI agent oslovit za měsíc?</summary>
-              <div className="faq-answer">Realistický rozsah je 200 až 1 000 firem měsíčně s plnou personalizací. Bez personalizace lze škálovat výrazně výš, ale klesá míra odpovědí. Klíčem je najít rovnováhu mezi objemem a kvalitou každého oslovení.</div>
-            </details>
+
+          <section style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>
+            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '20px' }}>
+              Časté otázky
+            </h2>
+            <div>
+              {faqSchema.mainEntity.map((q, i) => (
+                <details key={i} className="faq-item">
+                  <summary>{q.name}</summary>
+                  <div className="faq-answer">{q.acceptedAnswer.text}</div>
+                </details>
+              ))}
+            </div>
           </section>
 
-          <nav className="mt-16 pt-10 border-t border-white/10">
-            <p className="text-sm text-gray-500 uppercase tracking-widest mb-6">Související články</p>
-            <div className="grid gap-4">
-              <Link href="/blog/ai-pro-obchod-a-prodej" className="group flex items-center justify-between p-4 border border-white/10 rounded-xl hover:border-purple-500/50 transition-colors">
-                <span className="text-gray-200 group-hover:text-white transition-colors">AI pro obchod a prodej: Jak umělá inteligence mění B2B</span>
-                <span className="text-gray-500 group-hover:text-purple-400 transition-colors">→</span>
+          <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>
+            <p style={{ fontSize: '14px', fontWeight: 600, color: 'var(--text)', marginBottom: '12px' }}>Související články</p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              <Link href="/blog/jak-personalizovat-cold-emaily-ai" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
+                Jak AI personalizuje cold emaily — bez šablon, bez proměnných →
               </Link>
-              <Link href="/blog/jak-vyuzit-ai-v-prodeji" className="group flex items-center justify-between p-4 border border-white/10 rounded-xl hover:border-purple-500/50 transition-colors">
-                <span className="text-gray-200 group-hover:text-white transition-colors">Jak využít AI v prodeji: praktický průvodce</span>
-                <span className="text-gray-500 group-hover:text-purple-400 transition-colors">→</span>
+              <Link href="/blog/jak-zavest-automatizaci-prodeje-ve-firme" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
+                Jak zavést automatizaci prodeje ve firmě — krok za krokem →
               </Link>
-              <Link href="/blog/jak-personalizovat-cold-emaily-ai" className="group flex items-center justify-between p-4 border border-white/10 rounded-xl hover:border-purple-500/50 transition-colors">
-                <span className="text-gray-200 group-hover:text-white transition-colors">Jak personalizovat cold emaily pomocí AI</span>
-                <span className="text-gray-500 group-hover:text-purple-400 transition-colors">→</span>
+              <Link href="/blog/jak-oslovit-firmy-bez-databaze" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
+                Jak oslovit firmy bez databáze →
               </Link>
             </div>
-          </nav>
+          </div>
+
+          <p style={{ marginTop: '16px' }}>
+            <Link href="/blog" style={{ color: 'var(--text-muted)', textDecoration: 'none', fontSize: '14px' }}>
+              ← Zpět na Blog
+            </Link>
+          </p>
+
         </div>
-      </main>
-    </>
+      </div>
+    </article>
+  )
+}
+
+function H2({ children }: { children: React.ReactNode }) {
+  return (
+    <h2 style={{
+      fontFamily: 'Space Grotesk, sans-serif',
+      fontSize: '22px',
+      fontWeight: 700,
+      letterSpacing: '-0.015em',
+      marginTop: '48px',
+      marginBottom: '16px',
+      color: 'var(--text)',
+    }}>
+      {children}
+    </h2>
   )
 }

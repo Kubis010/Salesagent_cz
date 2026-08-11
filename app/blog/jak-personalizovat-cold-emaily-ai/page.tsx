@@ -2,304 +2,331 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Jak personalizovat cold e-maily pomocí AI | SalesAgent.cz',
+  title: 'Jak AI personalizuje cold emaily — bez šablon, bez proměnných | SalesAgent.cz',
   description:
-    'Automatický cold mailing nemusí znamenat spam. Jak AI personalizuje cold e-maily na základě webu každé firmy a proč to generuje víc odpovědí než šablony.',
+    'Klasické šablony s [Jméno] a [Firma] nefungují. Zjistěte, jak AI čte web každé firmy a píše unikátní email od základu — a proč to má 3× vyšší response rate než klasický template.',
+  keywords: [
+    'ai personalizace emailu',
+    'personalizovaný cold email',
+    'AI cold email',
+    'cold email personalizace',
+    'personalizace emailu B2B',
+  ],
   alternates: {
     canonical: 'https://salesagent.cz/blog/jak-personalizovat-cold-emaily-ai',
-    languages: { cs: 'https://salesagent.cz/blog/jak-personalizovat-cold-emaily-ai', 'x-default': 'https://salesagent.cz/blog/jak-personalizovat-cold-emaily-ai' },
+    languages: {
+      cs: 'https://salesagent.cz/blog/jak-personalizovat-cold-emaily-ai',
+      'x-default': 'https://salesagent.cz/blog/jak-personalizovat-cold-emaily-ai',
+    },
   },
   openGraph: {
-    title: 'Jak personalizovat cold e-maily pomocí AI',
+    title: 'Jak AI personalizuje cold emaily — bez šablon, bez proměnných',
     description:
-      'AI přečte web firmy a napíše unikátní zprávu. Proč to funguje líp než šablony a jak na to.',
+      'AI čte web každé firmy a píše unikátní email od základu. Proč to má 3× vyšší response rate než klasický template.',
+    url: 'https://salesagent.cz/blog/jak-personalizovat-cold-emaily-ai',
+    siteName: 'SalesAgent.cz',
     type: 'article',
-    publishedTime: '2026-07-13',
+    publishedTime: '2025-03-15',
     locale: 'cs_CZ',
-    images: [{ url: 'https://salesagent.cz/blog/ai-cold-email.jpg', width: 1200, height: 630, alt: 'Jak personalizovat cold e-maily pomocí AI' }],
+    images: [{ url: 'https://salesagent.cz/blog/ai-personalizace-emailu.jpg', width: 1200, height: 630, alt: 'AI personalizace cold emailů pro B2B firmy' }],
   },
-  keywords: [
-    'personalizovaný cold e-mail',
-    'automatický cold mailing',
-    'AI cold e-mail',
-    'jak personalizovat cold e-maily',
-    'cold email automatizace',
-    'B2B oslovování firem',
-    'AI obchodní zástupce',
-  ],
+  robots: { index: true, follow: true },
+}
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: 'Jak AI personalizuje cold emaily — bez šablon, bez proměnných',
+  description: 'Klasické šablony s [Jméno] a [Firma] nefungují. Jak AI čte web každé firmy a píše unikátní email od základu.',
+  image: 'https://salesagent.cz/blog/ai-personalizace-emailu.jpg',
+  datePublished: '2025-03-15',
+  dateModified: '2025-03-15',
+  inLanguage: 'cs',
+  author: { '@type': 'Organization', name: 'SalesAgent.cz', url: 'https://salesagent.cz' },
+  publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz' },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://salesagent.cz/blog/jak-personalizovat-cold-emaily-ai' },
 }
 
 const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
     {
-      "@type": "Question",
-      "name": "Jak AI personalizuje cold e-maily?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "AI načte web cílové firmy, analyzuje její zaměření, produkty a jazyk, a na základě toho vygeneruje unikátní úvodní odstavec pro každý e-mail. Výsledek je personalizace v měřítku stovek e-mailů denně."
-      }
+      '@type': 'Question',
+      name: 'Co je AI personalizace emailu a jak se liší od šablony s proměnnými?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Šablona s proměnnými dosazuje hodnoty jako [Jméno] nebo [Firma] do předpřipraveného textu — email vypadá genericky, příjemce to pozná. AI personalizace funguje jinak: AI nejprve přečte web dané firmy, pochopí čemu se věnují a jak se prezentují, a teprve pak napíše email, který na tento obsah přímo reaguje. Výsledkem je text, který nepůsobí jako hromadná rozesílka.',
+      },
     },
     {
-      "@type": "Question",
-      "name": "Je AI personalizace e-mailů lepší než ruční příprava?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Pro velký objem ano — AI zvládne personalizovat 500 e-mailů za dobu, kdy by člověk připravil 10. Kvalita personalizace závisí na tom, jak dobře AI chápe kontext firmy; nejlepší výsledky dává kombinace AI draft + lidská revize."
-      }
+      '@type': 'Question',
+      name: 'Jaký je reálný response rate AI-personalizovaného cold emailu?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Generické cold emaily dosahují response rate 1–2 %. AI-personalizované emaily, kde systém přečte web každé firmy a napíše unikátní zprávu, dosahují 3–6 %. U 500 oslovených firem měsíčně to znamená rozdíl mezi 5 a 30 odpověďmi.',
+      },
     },
     {
-      "@type": "Question",
-      "name": "Jaká míra odpovědí je realistická u personalizovaného cold mailingu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "S dobrou personalizací a cílením je 2–5 % realistický výsledek. Generické šablony dosahují typicky 0,5–1 %. Rozdíl v odpovědích představuje 4–10× větší pipeline při stejném počtu odeslaných zpráv."
-      }
-    }
-  ]
+      '@type': 'Question',
+      name: 'Jak AI ví, co napsat v personalizovaném cold emailu?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'AI přečte web cílové firmy a identifikuje klíčové informace: hlavní produkt nebo službu, jak se firma odlišuje od konkurence, geografii, na které se zaměřují, a způsob, jakým komunikují. Na základě těchto dat napíše email, který mluví ke konkrétní situaci firmy — ne ke generickému "potenciálnímu zákazníkovi".',
+      },
+    },
+  ],
 }
 
 export default function Page() {
   return (
     <article style={{ paddingTop: '96px', paddingBottom: '80px' }}>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'BlogPosting',
-            headline: 'Jak personalizovat cold e-maily pomocí AI — průvodce pro B2B firmy',
-            description: 'Automatický cold mailing nemusí znamenat spam. Jak AI personalizuje cold e-maily na základě webu každé firmy a proč to generuje víc odpovědí než šablony.',
-            image: 'https://salesagent.cz/blog/ai-cold-email.jpg',
-            datePublished: '2026-07-13',
-            dateModified: '2026-07-13',
-            inLanguage: 'cs',
-            author: { '@type': 'Organization', name: 'SalesAgent.cz', url: 'https://salesagent.cz' },
-            publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz' },
-            mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://salesagent.cz/blog/jak-personalizovat-cold-emaily-ai' },
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <div style={{ maxWidth: '760px', margin: '0 auto', padding: '0 24px' }}>
 
-        {/* Breadcrumb */}
         <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '32px' }}>
           <Link href="/blog" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Blog</Link>
-          {' / '}Jak personalizovat cold e-maily
+          {' / '}Jak AI personalizuje cold emaily
         </p>
 
-        {/* Hero image */}
         <img
-          src="/blog/ai-cold-email.jpg"
-          alt="AI personalizace cold e-mailů pro B2B firmy"
+          src="/blog/ai-personalizace-emailu.jpg"
+          alt="AI personalizace cold emailů pro B2B firmy"
           style={{ width: '100%', borderRadius: '14px', marginBottom: '40px', display: 'block' }}
         />
 
         <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '14px' }}>
-          Automatizace prodeje
+          Cold email · B2B outreach
         </p>
         <h1 style={{
           fontFamily: 'Space Grotesk, sans-serif',
-          fontSize: 'clamp(28px, 4vw, 40px)',
+          fontSize: 'clamp(26px, 4vw, 40px)',
           fontWeight: 700,
           letterSpacing: '-0.025em',
           lineHeight: 1.2,
           marginBottom: '16px',
         }}>
-          Jak personalizovat cold e-maily pomocí AI — průvodce pro B2B firmy
+          Jak AI personalizuje cold emaily — bez šablon, bez proměnných
         </h1>
         <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '48px' }}>
-          13. července 2026 &middot; Petr Kubíček
+          15. března 2025 · Petr Kubíček
         </p>
 
-        <div style={{ fontSize: '16px', lineHeight: '1.8', color: 'var(--text-muted)' }}>
+        <div style={{ fontSize: '17px', lineHeight: 1.75, color: 'var(--text)', display: 'flex', flexDirection: 'column', gap: '24px' }}>
 
           <p>
-            Cold e-maily mají v B2B obchodu špatnou pověst. Většina firem si pod nimi představí hromadné
-            rozesílky, které končí ve spamu. Jenže problém není v cold e-mailu jako takovém — problém
-            je v tom, že většina zpráv je <strong>generická</strong>. Šablona s doplněným jménem prostě nefunguje.
+            Každý, kdo pracuje v B2B, dostává denně desítky cold emailů. Poznáte je okamžitě — začínají slovy
+            "Dobrý den [Jméno]" nebo "Oslovuji vás, protože [Firma] působí v oblasti [Obor]." Takový email
+            nečtete celý. Jde rovnou do koše nebo do spamu. A přesto většina firem tento přístup stále používá.
           </p>
 
           <p>
-            Co kdyby každý e-mail reagoval na to, čím se daná firma skutečně zabývá? Co kdyby příjemce
-            měl pocit, že mu píše někdo, kdo si dal práci prostudovat jeho web? Přesně tohle dnes
-            umí <strong>AI cold mailing</strong>.
+            AI personalizace cold emailů funguje na úplně jiném principu — ne dosadit proměnné do šablony,
+            ale přečíst každou firmu a napsat email od základu. Výsledkem je zpráva, která na první pohled
+            nevypadá jako hromadná rozesílka — protože jí není.
           </p>
 
-          <H2>Proč šablonové cold e-maily nefungují</H2>
+          <H2>Co je šablona s proměnnými a proč selže</H2>
 
           <p>
-            Typický cold e-mail vypadá takto: <em>„Dobrý den, jmenuji se Jan a nabízíme řešení pro firmy
-            jako je ta vaše."</em> Příjemce okamžitě pozná, že jde o hromadnou rozesílku. Výsledek?
-            Míra odpovědí pod 1 %, vysoká míra odhlášení a poškozená doménová reputace.
+            Klasický přístup k personalizaci cold emailů vypadá takto: vytvoříte jeden text s proměnnými a
+            nástroj (Apollo, Lemlist, Instantly) do nich dosadí hodnoty z CSV. Výsledný email pak vypadá nějak takto:
           </p>
-
-          <p>Hlavní problémy šablonových e-mailů:</p>
-          <ul style={{ paddingLeft: '20px', marginBottom: '24px' }}>
-            <li>Neobsahují žádný kontext o firmě příjemce</li>
-            <li>Vypadají jako spam — a často ve spamu i končí</li>
-            <li>Neodlišíte se od desítek dalších zpráv, které příjemce denně dostává</li>
-            <li>Personalizace typu „jméno + firma" nestačí — příjemce to prokoukne</li>
-          </ul>
-
-          <H2>Jak funguje AI personalizace cold e-mailů</H2>
-
-          <p>
-            Moderní <strong>nástroje na automatizaci prodeje</strong> pracují úplně jinak než klasický
-            e-mail marketing. Místo jedné šablony pro tisíce kontaktů systém:
-          </p>
-
-          <ol style={{ paddingLeft: '20px', marginBottom: '24px' }}>
-            <li><strong>Navštíví web každé firmy</strong> — AI přečte obsah, zjistí obor, nabídku, specializaci</li>
-            <li><strong>Pochopí kontext</strong> — rozpozná, co firma dělá, na co se zaměřuje a co by ji mohlo zajímat</li>
-            <li><strong>Napíše unikátní zprávu</strong> — e-mail přímo reaguje na obsah webu, ne na šablonu</li>
-            <li><strong>Odešle ve správný čas</strong> — automaticky a bez manuálního zásahu</li>
-          </ol>
-
-          <p>
-            Výsledek? Zpráva, která zní jako od člověka, který si dal práci. Protože AI si tu práci
-            skutečně dala — jen to trvalo sekundy místo desítek minut.
-          </p>
-
-          <img
-            src="/blog/ai-workflow.jpg"
-            alt="Proces automatického vyhledávání B2B kontaktů a cold mailingu"
-            style={{ width: '100%', borderRadius: '14px', margin: '32px 0', display: 'block' }}
-          />
-
-          <H2>Příklad: šablona vs. AI personalizace</H2>
 
           <div style={{
             background: 'var(--bg-card)',
             border: '1px solid var(--border)',
             borderRadius: '12px',
             padding: '24px',
-            marginBottom: '24px',
           }}>
             <p style={{ fontSize: '12px', fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '12px' }}>
-              Klasická šablona
+              Typická šablona s proměnnými
             </p>
-            <p style={{ fontStyle: 'italic', margin: 0 }}>
-              „Dobrý den, jmenuji se Petr a rád bych vám představil naše řešení pro automatizaci
-              prodeje. Pomáháme firmám jako je ta vaše získat více zákazníků. Měli byste zájem
-              o 15minutový hovor?"
-            </p>
-          </div>
-
-          <div style={{
-            background: 'rgba(255,107,74,0.06)',
-            border: '1px solid rgba(255,107,74,0.25)',
-            borderRadius: '12px',
-            padding: '24px',
-            marginBottom: '32px',
-          }}>
-            <p style={{ fontSize: '12px', fontWeight: 700, color: 'var(--accent)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '12px' }}>
-              AI personalizovaný e-mail
-            </p>
-            <p style={{ fontStyle: 'italic', margin: 0 }}>
-              „Dobrý den, všiml jsem si, že se zaměřujete na dodávky stavební techniky pro
-              střední Moravu. Pracujeme s firmami v podobném segmentu a pomáháme jim systematicky
-              oslovovat stavební firmy v regionech, kde zatím nemají pokrytí. Dává vám smysl
-              15 minut na to, jestli by to mohlo fungovat i u vás?"
+            <p style={{ fontStyle: 'italic', margin: 0, lineHeight: 1.7 }}>
+              "Dobrý den Martine, vidím, že ABC s.r.o. působí v oblasti IT konzultací. Pomáháme firmám jako
+              je ta vaše získat více zákazníků pomocí automatizace. Měli byste zájem o 15minutový hovor?"
             </p>
           </div>
 
           <p>
-            Rozdíl je zásadní. První zpráva je generická, mohl ji dostat kdokoliv. Druhá ukazuje,
-            že odesílatel rozumí oboru příjemce. A právě to rozhoduje o tom, jestli někdo odpoví.
-          </p>
-
-          <H2>Kolik odpovědí to reálně generuje</H2>
-
-          <p>
-            Hromadné cold e-maily mají typicky míru odpovědí kolem <strong>0,5–1 %</strong>.
-            Personalizované AI cold e-maily dosahují <strong>2–5 %</strong> — násobně více.
-            U 500 oslovených firem měsíčně to znamená rozdíl mezi 2 a 25 odpověďmi.
+            Příjemce to prokoukne na první pohled. Fráze "firmám jako je ta vaše" neprozrazuje žádnou
+            znalost konkrétní situace. Text by mohl přijít komukoliv v jakémkoliv oboru. A právě to je
+            problém — příjemce cítí, že mu nepsali vy, ale automat s CSV souborem.
           </p>
 
           <p>
-            Navíc jsou odpovědi kvalitnější. Když někdo reaguje na zprávu, která přesně popisuje
-            jeho situaci, je pravděpodobnější, že má skutečný zájem — ne jen zvědavost.
+            Výsledky tomu odpovídají: generické cold emaily dosahují response rate 1–2 %. Většina skončí
+            ve spamu, zbytek je ignorován. Při dostatečném objemu to kazí i reputaci odesílací domény.
           </p>
 
-          <H2>Automatický cold mailing vs. e-mail marketing — jaký je rozdíl?</H2>
+          <H2>Co dělá AI jinak</H2>
 
           <p>
-            Hodně firem si plete cold mailing s e-mail marketingem (Mailchimp, Ecomail apod.).
-            Jsou to ale zásadně odlišné věci:
+            AI personalizace cold emailů nepracuje se šablonou. Pracuje s daty o konkrétní firmě.
+            Proces vypadá takto:
           </p>
 
-          <ul style={{ paddingLeft: '20px', marginBottom: '24px' }}>
-            <li><strong>E-mail marketing</strong> — oslovuje lidi, kteří se přihlásili k odběru. Pracujete s existující databází.</li>
-            <li><strong>Cold mailing</strong> — oslovuje firmy, které vás ještě neznají. Každý kontakt je nový.</li>
-          </ul>
-
-          <p>
-            AI cold mailing navíc řeší celý proces od vyhledání firmy po odeslání zprávy.
-            Není to jen nástroj na rozesílání — je to kompletní <strong>automatizace B2B obchodu</strong>.
-          </p>
-
-          <H2>Pro koho je AI cold mailing vhodný</H2>
-
-          <ul style={{ paddingLeft: '20px', marginBottom: '24px' }}>
-            <li><strong>B2B firmy</strong>, které chtějí systematicky oslovovat nové zákazníky</li>
-            <li><strong>Firmy bez obchodního zástupce</strong> — AI obchodník zvládne první kontakt za zlomek nákladů</li>
-            <li><strong>Zahraniční firmy vstupující na český trh</strong> — komunikace v češtině, znalost místního trhu</li>
-            <li><strong>Rostoucí firmy</strong>, které potřebují víc schůzek, než stíhají generovat samy</li>
-          </ul>
-
-          <H2>Jak na to s SalesAgent.cz</H2>
-
-          <p>
-            <Link href="/cs" style={{ color: 'var(--accent)' }}>SalesAgent.cz</Link> je outsourcovaný
-            AI obchodní zástupce. Nejde o software, který si sami nastavíte — je to služba. Nastavíme
-            ji, spustíme a průběžně ladíme za vás.
-          </p>
-
-          <p>Celý proces vypadá takto:</p>
-          <ol style={{ paddingLeft: '20px', marginBottom: '24px' }}>
-            <li>Společně definujeme, koho chcete oslovovat (obor, region, velikost firmy)</li>
-            <li>AI automaticky vyhledá B2B kontakty z veřejných zdrojů</li>
-            <li>Prostuduje web každé firmy a napíše personalizovaný cold e-mail</li>
-            <li>Odešle e-mail i LinkedIn zprávu</li>
-            <li>K vám se dostane jen ten, kdo odpoví se zájmem</li>
+          <ol style={{ paddingLeft: '20px', marginBottom: '8px' }}>
+            <li style={{ marginBottom: '12px' }}><strong>AI přečte web firmy</strong> — ne jen homepage, ale i sekce O nás, Služby, Produkty, případně blog nebo reference</li>
+            <li style={{ marginBottom: '12px' }}><strong>Identifikuje klíčové informace</strong> — co firma dělá, jak se odlišuje, na koho cílí, v jakém regionu operuje</li>
+            <li style={{ marginBottom: '12px' }}><strong>Napíše email, který reaguje na tento obsah</strong> — ne generický text, ale zpráva adresovaná konkrétní firmě</li>
+            <li style={{ marginBottom: '12px' }}><strong>Každý email je unikátní</strong> — žádné dvě zprávy ve stejné kampani nejsou identické</li>
           </ol>
 
           <p>
-            Začít se dá do 48 hodin. Tarif Grow stojí od 5 900 Kč měsíčně a zahrnuje oslovení
-            až 500 firem.{' '}
-            <Link href="/cs/pricing" style={{ color: 'var(--accent)' }}>Kompletní ceník najdete zde.</Link>
+            Celý proces trvá sekundy na jednu firmu. Systém zvládne personalizovat stovky emailů denně —
+            při kvalitě, na kterou by obchodník potřeboval hodiny práce.
           </p>
 
-          <H2>Shrnutí</H2>
+          <H2>Příklad before/after: šablona vs. AI personalizace</H2>
 
-          <ul style={{ paddingLeft: '20px', marginBottom: '24px' }}>
-            <li>Šablonové cold e-maily nefungují — příjemce je pozná a ignoruje</li>
-            <li>AI personalizace čte web každé firmy a píše unikátní zprávu</li>
-            <li>Míra odpovědí je 2–5× vyšší než u hromadných rozesílek</li>
-            <li>Cold mailing ≠ e-mail marketing — oslovujete firmy, které vás ještě neznají</li>
-            <li>SalesAgent.cz to dělá jako služba — vy neřešíte nic, jen přebíráte zájemce</li>
-          </ul>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: '1fr',
+            gap: '16px',
+          }}>
+            <div style={{
+              background: 'var(--bg-card)',
+              border: '1px solid var(--border)',
+              borderRadius: '12px',
+              padding: '24px',
+            }}>
+              <p style={{ fontSize: '12px', fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '12px' }}>
+                Generický template — stejný pro všechny
+              </p>
+              <p style={{ fontStyle: 'italic', margin: 0, lineHeight: 1.7, fontSize: '15px' }}>
+                "Dobrý den, oslovuji vás, protože Stavební technika Morava s.r.o. působí v oboru stavebnictví.
+                Nabízíme řešení pro získávání nových zákazníků. Bylo by možné se krátce pobavit?"
+              </p>
+            </div>
+
+            <div style={{
+              background: 'rgba(255,107,74,0.06)',
+              border: '1px solid rgba(255,107,74,0.25)',
+              borderRadius: '12px',
+              padding: '24px',
+            }}>
+              <p style={{ fontSize: '12px', fontWeight: 700, color: 'var(--accent)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '12px' }}>
+                AI personalizace — na základě webu firmy
+              </p>
+              <p style={{ fontStyle: 'italic', margin: 0, lineHeight: 1.7, fontSize: '15px' }}>
+                "Dobrý den, vidím, že se specializujete na dodávky jeřábů a manipulační techniky pro průmyslové
+                stavby, zejména v Moravskoslezském kraji. Pracujeme s podobnými firmami na systematickém
+                oslovování průmyslových investorů a generálních dodavatelů mimo váš stávající region.
+                Dává vám smysl 15 minut na to, zda by to mohlo fungovat i u vás?"
+              </p>
+            </div>
+          </div>
+
+          <p>
+            Rozdíl je zásadní. Druhá zpráva prokazuje, že odesílatel četl web. Mluví ke konkrétní situaci —
+            specializaci na jeřáby, region, typ zákazníků. Příjemce cítí, že zpráva je určena jemu, ne
+            tisícovce dalších kontaktů.
+          </p>
+
+          <H2>Co konkrétně AI hledá na webu prospekta</H2>
+
+          <p>
+            Dobrý systém AI personalizace emailů identifikuje na webu firmy tyto informace:
+          </p>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '12px' }}>
+            {[
+              { label: 'Hlavní produkt nebo služba', desc: 'Co firma skutečně prodává nebo nabízí' },
+              { label: 'Způsob odlišení', desc: 'Čím se liší od konkurence, co zdůrazňují' },
+              { label: 'Cílová skupina', desc: 'Komu prodávají, na jaký segment cílí' },
+              { label: 'Geografie', desc: 'Kde operují, zda expandují nebo cílí lokálně' },
+              { label: 'Zmínky o výzvách', desc: 'Problémy, které řeší, nebo potřeby, které popisují' },
+              { label: 'Tón komunikace', desc: 'Formální nebo neformální, technický nebo obecný' },
+            ].map((item) => (
+              <div key={item.label} style={{
+                padding: '16px',
+                borderRadius: '10px',
+                border: '1px solid var(--border)',
+                background: 'var(--bg-card)',
+              }}>
+                <p style={{ fontWeight: 700, fontSize: '14px', color: 'var(--accent)', marginBottom: '6px' }}>{item.label}</p>
+                <p style={{ fontSize: '13px', color: 'var(--text-muted)', margin: 0 }}>{item.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <H2>Proč to funguje lépe — reálná čísla</H2>
+
+          <p>
+            Z kampaní SalesAgent.cz vycházejí tato čísla:
+          </p>
+
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+            <div style={{
+              padding: '24px',
+              borderRadius: '12px',
+              border: '1px solid var(--border)',
+              background: 'var(--bg-card)',
+              textAlign: 'center',
+            }}>
+              <p style={{ fontSize: '36px', fontWeight: 800, color: 'var(--text-muted)', marginBottom: '8px' }}>1–2 %</p>
+              <p style={{ fontSize: '14px', color: 'var(--text-muted)', margin: 0 }}>Response rate generického cold emailu</p>
+            </div>
+            <div style={{
+              padding: '24px',
+              borderRadius: '12px',
+              border: '1px solid rgba(255,107,74,0.3)',
+              background: 'rgba(255,107,74,0.06)',
+              textAlign: 'center',
+            }}>
+              <p style={{ fontSize: '36px', fontWeight: 800, color: 'var(--accent)', marginBottom: '8px' }}>3–6 %</p>
+              <p style={{ fontSize: '14px', color: 'var(--text-muted)', margin: 0 }}>Response rate AI-personalizovaného emailu</p>
+            </div>
+          </div>
+
+          <p>
+            Při oslovení 500 firem měsíčně to znamená rozdíl mezi 5–10 a 15–30 odpověďmi. A kvalita
+            odpovědí je také jiná — kdo reaguje na zprávu, která přesně popsala jeho situaci, má reálný zájem.
+            Ne jen zvědavost.
+          </p>
+
+          <p>
+            Dalším benefitem je reputace domény. Nízká míra spamu a vyšší engagement (otevření, odpovědi)
+            udržuje dobré skóre odesílací domény, což přímo ovlivňuje deliverability dalších kampaní.
+          </p>
+
+          <H2>Jak to funguje v praxi u SalesAgent.cz</H2>
+
+          <p>
+            SalesAgent.cz je outsourcovaná B2B outreach služba — ne SaaS, který si sami nastavíte.
+            Celý proces personalizace funguje takto:
+          </p>
+
+          <ol style={{ paddingLeft: '20px', marginBottom: '8px' }}>
+            <li style={{ marginBottom: '12px' }}>Definujeme spolu ICP — obor, region, velikost firmy, pozici rozhodovatele</li>
+            <li style={{ marginBottom: '12px' }}>Systém vyhledá firmy z Google Maps a dalších veřejných zdrojů (žádná databáze)</li>
+            <li style={{ marginBottom: '12px' }}>AI (Claude) přečte web každé firmy a napíše personalizovaný email</li>
+            <li style={{ marginBottom: '12px' }}>První email z každé nové kampaně zkontroluje člověk — pak systém pokračuje automaticky</li>
+            <li style={{ marginBottom: '12px' }}>Paralelně probíhá LinkedIn outreach — email + LinkedIn současně, ne sequentially</li>
+            <li style={{ marginBottom: '12px' }}>Odpovědi dostanete přímo do schránky — vy vstupujete do procesu až v okamžiku zájmu</li>
+          </ol>
+
+          <p>
+            Výsledkem jsou schůzky v kalendáři s firmami, které reagovaly na zprávu relevantní jejich situaci.
+            Ne cold calling, ne hromadný spam — personalizovaný outreach ve velkém měřítku.
+          </p>
 
           <div style={{
             background: 'rgba(255,107,74,0.06)',
             border: '1px solid rgba(255,107,74,0.25)',
             borderRadius: '14px',
             padding: '32px',
-            marginTop: '48px',
+            marginTop: '16px',
             textAlign: 'center',
           }}>
             <p style={{ fontSize: '18px', fontWeight: 700, color: 'var(--text)', marginBottom: '12px', fontFamily: 'Space Grotesk, sans-serif' }}>
-              Chcete vidět, jak by AI personalizace vypadala ve vašem oboru?
+              Chcete vidět, jak by AI napsala email vaší firmě?
             </p>
             <p style={{ fontSize: '14px', color: 'var(--text-muted)', marginBottom: '24px' }}>
-              Na 30minutovém hovoru vám ukážeme konkrétní příklady pro váš segment.
+              Na 30minutovém hovoru ukážeme konkrétní příklad personalizovaného emailu pro váš segment.
             </p>
             <a
               href="https://outlook.office.com/bookwithme/user/480895b1333541dc94be634dd588fada@salesagent.cz/meetingtype/jwdxCRPBn0CvHccZ7eLwAg2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile"
@@ -321,24 +348,49 @@ export default function Page() {
           </div>
 
           <style>{`
-            .faq-item { margin-bottom: 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
-            .faq-item:last-child { border-bottom: none; }
-            .faq-item summary { padding: 18px 0; cursor: pointer; font-weight: 600; font-size: 15px; color: #e5e7eb; list-style: none; display: flex; justify-content: space-between; align-items: center; }
-            .faq-item summary::after { content: '+'; font-size: 20px; color: #9ca3af; transition: transform 0.2s; }
+            .faq-item { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+            .faq-item + .faq-item { margin-top: 10px; }
+            .faq-item summary { list-style: none; cursor: pointer; padding: 16px 20px; font-weight: 600; font-size: 15px; display: flex; justify-content: space-between; align-items: center; }
+            .faq-item summary::-webkit-details-marker { display: none; }
+            .faq-item summary::after { content: '+'; font-size: 20px; font-weight: 400; color: var(--accent); flex-shrink: 0; margin-left: 12px; }
             .faq-item[open] summary::after { content: '−'; }
-            .faq-item .faq-answer { padding: 0 0 18px; font-size: 14px; line-height: 1.7; color: #9ca3af; }
+            .faq-item .faq-answer { padding: 0 20px 16px; font-size: 15px; line-height: 1.7; color: var(--text-muted); }
           `}</style>
-          <section style={{ marginTop: '64px', paddingTop: '40px', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
-            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '18px', fontWeight: 700, marginBottom: '24px' }}>
-              {"Časté otázky"}
+
+          <section style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>
+            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '20px' }}>
+              Časté otázky
             </h2>
-            {faqSchema.mainEntity.map((q, i) => (
-              <details key={i} className="faq-item">
-                <summary>{q.name}</summary>
-                <div className="faq-answer">{q.acceptedAnswer.text}</div>
-              </details>
-            ))}
+            <div>
+              {faqSchema.mainEntity.map((q, i) => (
+                <details key={i} className="faq-item">
+                  <summary>{q.name}</summary>
+                  <div className="faq-answer">{q.acceptedAnswer.text}</div>
+                </details>
+              ))}
+            </div>
           </section>
+
+          <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>
+            <p style={{ fontSize: '14px', fontWeight: 600, color: 'var(--text)', marginBottom: '12px' }}>Související články</p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              <Link href="/blog/jak-zavest-automatizaci-prodeje-ve-firme" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
+                Jak zavést automatizaci prodeje ve firmě — krok za krokem →
+              </Link>
+              <Link href="/blog/ai-agent-pro-generovani-leadu" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
+                Generování B2B leadů v roce 2025: co funguje a co je mrtvé →
+              </Link>
+              <Link href="/blog/jak-oslovit-firmy-bez-databaze" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
+                Jak oslovit firmy bez databáze →
+              </Link>
+            </div>
+          </div>
+
+          <p style={{ marginTop: '16px' }}>
+            <Link href="/blog" style={{ color: 'var(--text-muted)', textDecoration: 'none', fontSize: '14px' }}>
+              ← Zpět na Blog
+            </Link>
+          </p>
 
         </div>
       </div>
