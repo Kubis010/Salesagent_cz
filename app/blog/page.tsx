@@ -21,6 +21,33 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    href: '/blog/jak-personalizovat-cold-emaily-ai',
+    lang: 'CS',
+    title: 'Jak AI personalizuje cold emaily — bez šablon, bez proměnných',
+    date: '11. srpna 2026',
+    description:
+      'Klasické šablony s [Jméno] a [Firma] nefungují. Jak AI čte web každé firmy a píše unikátní email od základu — a proč to má 3× vyšší response rate než klasický template.',
+    image: '/blog/ai-personalizace-emailu.jpg',
+  },
+  {
+    href: '/blog/jak-zavest-automatizaci-prodeje-ve-firme',
+    lang: 'CS',
+    title: 'Jak zavést automatizaci prodeje ve firmě — krok za krokem',
+    date: '10. srpna 2026',
+    description:
+      'Automatizace prodeje není jen CRM nebo newsletter. Co reálně automatizovat, kde začít a jak vypadá fungující automatizovaný B2B obchodní proces od prvního kontaktu po schůzku.',
+    image: '/blog/automatizace-prodeje.jpg',
+  },
+  {
+    href: '/blog/ai-agent-pro-generovani-leadu',
+    lang: 'CS',
+    title: 'Generování B2B leadů v roce 2025: co funguje a co je mrtvé',
+    date: '9. srpna 2026',
+    description:
+      'Studené databáze, LinkedIn spam a hromadné emaily přestávají fungovat. Co generuje B2B leady reálně? AI prospecting bez databází, hyper-personalizace a vícekanálový outreach.',
+    image: '/blog/generovani-b2b-leadu.jpg',
+  },
+  {
     href: '/blog/ai-pro-obchod-a-obchodniky',
     lang: 'CS',
     title: 'AI pro obchod a obchodníky: kompletní systém automatizace',
@@ -136,14 +163,6 @@ const posts = [
     image: '/blog/ai-v-prodeji.jpg',
   },
   {
-    href: '/blog/ai-agent-pro-generovani-leadu',
-    lang: 'CS',
-    title: 'AI agent pro generování leadů: Jak funguje a co od něj čekat',
-    date: '21. července 2026',
-    description: 'AI agent pro generování leadů hledá B2B kontakty, analyzuje je a oslovuje automaticky. Jak funguje a kde má hranice.',
-    image: '/blog/ai-agent-leady.jpg',
-  },
-  {
     href: '/blog/crm-na-miru',
     lang: 'CS',
     title: 'CRM na míru: Proč generické systémy firmám nevyhovují',
@@ -151,24 +170,6 @@ const posts = [
     description:
       'Salesforce a HubSpot jsou přeplácané pro většinu B2B firem. CRM na míru řeší přesně to, co potřebujete — bez zbytečných funkcí.',
     image: '/blog/crm-na-miru.png',
-  },
-  {
-    href: '/blog/jak-personalizovat-cold-emaily-ai',
-    lang: 'CS',
-    title: 'Jak personalizovat cold e-maily pomocí AI',
-    date: '13. července 2026',
-    description:
-      'Jak AI personalizuje cold e-maily na základě webu každé firmy a proč to generuje víc odpovědí než šablony.',
-    image: '/blog/ai-cold-email.jpg',
-  },
-  {
-    href: '/blog/jak-zavest-automatizaci-prodeje-ve-firme',
-    lang: 'CS',
-    title: 'Jak zavést automatizaci prodeje ve firmě',
-    date: '12. února 2025',
-    description:
-      'Praktický návod krok za krokem — od definice ideálního zákazníka po měření výsledků. Co nastavit před spuštěním.',
-    image: '/blog/ai-workflow.jpg',
   },
   {
     href: '/blog/how-to-implement-sales-automation',
