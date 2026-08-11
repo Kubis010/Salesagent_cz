@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'How to Find a Czech Company in the Business Register (ARES) | SalesAgent.cz',
+  title: 'Czech Business Register (ARES): How to Find & Contact Czech Companies | SalesAgent.cz',
   description:
-    'Step-by-step guide to searching the Czech business register (ARES / Obchodní rejstřík). Find company details, verify ICO numbers, get official extracts.',
+    'Step-by-step guide to searching the Czech business register (ARES / Obchodní rejstřík). Find company details, verify IČO numbers — and learn how to turn this into a B2B prospecting list.',
   keywords: [
     'czech business register',
     'ARES',
@@ -14,6 +14,8 @@ export const metadata: Metadata = {
     'czech company register',
     'find czech company',
     'czech companies register',
+    'czech b2b prospecting',
+    'contact czech companies',
   ],
   alternates: {
     canonical: 'https://salesagent.cz/czech-business-companies-register',

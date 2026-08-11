@@ -15,6 +15,9 @@ const pages = [
     changeFrequency: 'yearly' as const,
   },
   { path: '/sales-representation-czech-republic', priority: 0.9, changeFrequency: 'monthly' as const },
+  { path: '/b2b-lead-generation', priority: 0.95, changeFrequency: 'monthly' as const },
+  { path: '/automatizovane-osloveni', priority: 0.9, changeFrequency: 'monthly' as const },
+  { path: '/linkedin-outreach', priority: 0.9, changeFrequency: 'monthly' as const },
 ]
 
 const blogPosts = [

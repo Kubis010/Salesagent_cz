@@ -13,13 +13,14 @@ export async function generateMetadata({
   const t: Translations = getTranslations(locale as Locale)
   return {
     title: locale === 'cs'
-? 'AI obchodní zástupce jako služba — automatizace B2B outreache | SalesAgent.cz'
-      : 'AI Sales Agent as a Service — B2B Outreach Automation | SalesAgent.cz',
+      ? 'Generování B2B leadů pomocí AI — automatizovaný outreach | SalesAgent.cz'
+      : 'B2B Lead Generation with AI — Automated Outreach as a Service | SalesAgent.cz',
     description: locale === 'cs'
-      ? 'Najměte si AI obchodníka: vyhledá firmy podle vašeho ICP, prostuduje každý web a odešle personalizovaný cold e-mail i LinkedIn zprávu. Výsledky bez náboru, bez čekání.'
-      : 'Hire an AI sales agent: it finds companies matching your ICP, reads each website and sends personalised cold emails and LinkedIn messages. Results without hiring.',    keywords: locale === 'cs'
-      ? ['AI pro obchod', 'AI pro obchodníky', 'AI obchodní zástupce', 'automatizace prodeje', 'B2B prodej', 'cold email AI', 'AI lead generation']
-      : ['AI sales agent', 'sales automation', 'B2B sales', 'AI outreach', 'cold email AI', 'AI lead generation'],
+      ? 'Generujeme B2B leady bez databází: AI vyhledá firmy podle vašeho ICP, prostuduje každý web a odešle personalizovaný cold e-mail i LinkedIn zprávu. Měsíčně stovky oslovených, bez náboru obchodníka.'
+      : 'B2B lead generation without databases: AI finds companies matching your ICP, reads each website and sends personalised cold emails and LinkedIn messages. Hundreds of contacts monthly — no hiring.',
+    keywords: locale === 'cs'
+      ? ['generování B2B leadů', 'B2B lead generation', 'automatizovaný outreach', 'AI lead generation', 'cold email automatizace', 'LinkedIn outreach', 'automatizace prodeje', 'AI obchodní zástupce']
+      : ['B2B lead generation', 'AI lead generation', 'automated outreach', 'cold email automation', 'LinkedIn outreach', 'sales automation', 'AI sales agent'],
     alternates: {
       canonical: `https://salesagent.cz/${locale}`,
       languages: {
