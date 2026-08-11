@@ -3,18 +3,18 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'GDPR a cold e-mail: Co smíte posílat firmám | SalesAgent.cz',
+  title: 'Je legální B2B cold e-mail a databáze firem v EU? GDPR a zákon 480/2004 | SalesAgent.cz',
   description:
-    'Co říká ÚOOÚ o cold e-mailingu v ČR. Zákon č. 480/2004 Sb. nerozlišuje mezi fyzickou a právnickou osobou — cold e-mail bez souhlasu je formálně v rozporu se zákonem.',
+    'Ano, B2B cold e-mail na firemní adresy je v ČR legální — ale za přesně daných podmínek. Přečtěte si, co říká zákon č. 480/2004 Sb. a GDPR o databázích firem a cold outreachi.',
   keywords: [
+    'je legální cold email b2b',
+    'b2b databáze firem cold outreach',
     'GDPR cold e-mail',
     'cold email GDPR pravidla',
     'B2B cold e-mail zákon',
-    'obchodní sdělení zákon',
-    'cold mailing GDPR',
+    'cold outreach EU legálnost',
     '480/2004 Sb cold e-mail',
     'ÚOOÚ cold e-mail',
-    'obchodní sdělení bez souhlasu',
   ],
   alternates: {
     canonical: 'https://salesagent.cz/blog/gdpr-a-cold-email',

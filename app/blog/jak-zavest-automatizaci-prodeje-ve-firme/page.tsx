@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Jak zavést automatizaci prodeje ve firmě — krok za krokem | SalesAgent.cz',
+  title: 'Jak začít s automatizací B2B prodeje — krok za krokem | SalesAgent.cz',
   description:
-    'Automatizace prodeje není jen CRM nebo newsletter. Přečtěte si, co reálně automatizovat, kde začít a jak vypadá fungující automatizovaný B2B obchodní proces od prvního kontaktu po schůzku.',
+    'Jak začít s automatizací B2B prodeje: správné pořadí kroků, co automatizovat jako první a jak vypadá fungující automatizovaný outbound od lead sourcingu po domluvení schůzky.',
   keywords: [
     'automatizace prodeje',
     'automatizace B2B prodeje',

@@ -5,7 +5,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
 title: 'AI agenti pro B2B prospecting: jak za vás hledají a kvalifikují leady | SalesAgent.cz',
   description:
-    'AI agent prohledá Google Maps, prostuduje web každé firmy a vybere jen ty, co sedí vašemu ICP. Bez databáze, bez obchodníka na rešerše — celý proces běží sám. Praktický návod.',  keywords: [
+    'Jak využít AI agenty pro B2B prospecting: systém sám hledá firmy podle vašeho ICP, čte jejich weby a kvalifikuje leady. Bez databáze, bez manuálních rešerší — celý proces na autopilotu.',  keywords: [
     'AI agent prospecting',
     'kvalifikace leadů AI',
     'B2B prospecting automatizace',

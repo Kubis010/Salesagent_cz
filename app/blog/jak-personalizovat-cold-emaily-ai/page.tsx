@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Jak AI personalizuje cold emaily — bez šablon, bez proměnných | SalesAgent.cz',
+  title: 'Jak personalizovat hromadné emaily pomocí AI — bez šablon, bez proměnných | SalesAgent.cz',
   description:
-    'Klasické šablony s [Jméno] a [Firma] nefungují. Zjistěte, jak AI čte web každé firmy a píše unikátní email od základu — a proč to má 3× vyšší response rate než klasický template.',
+    'Jak personalizovat hromadné emaily tak, aby každý vypadal jako individuální? AI přečte web každé firmy a napíše unikátní zprávu od základu — ne šablonu s doplněným jménem. Response rate 3×.',
   keywords: [
+    'jak personalizovat hromadné emaily',
     'ai personalizace emailu',
     'personalizovaný cold email',
     'AI cold email',
