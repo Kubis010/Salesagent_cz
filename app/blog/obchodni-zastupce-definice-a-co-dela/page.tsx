@@ -2,10 +2,9 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Obchodní zástupce — definice a co vlastně dělá? | SalesAgent.cz',
+title: 'Co dělá obchodní zástupce? Definice, úkoly a jak mu dnes pomáhá AI | SalesAgent.cz',
   description:
-    'Co je obchodní zástupce? Kompletní definice role — aktivity, klíčové odpovědnosti, požadované dovednosti a co od pozice očekávat v B2B obchodu.',
-  keywords: [
+    'Obchodní zástupce hledá zákazníky, buduje vztahy a uzavírá obchody — ale rutinní část (rešerše, first contact) dnes za něj zvládne AI. Přečtěte si, jak role vypadá v praxi a kde končí člověk a začíná automat.',  keywords: [
     'obchodní zástupce',
     'AI obchodní zástupce',
     'co dělá obchodní zástupce',

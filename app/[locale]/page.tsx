@@ -13,12 +13,11 @@ export async function generateMetadata({
   const t: Translations = getTranslations(locale as Locale)
   return {
     title: locale === 'cs'
-      ? 'AI obchodní zástupce jako služba | AI pro obchod a obchodníky | SalesAgent.cz'
-      : 'AI Sales Agent as a Service | Sales Automation | SalesAgent.cz',
+? 'AI obchodní zástupce jako služba — automatizace B2B outreache | SalesAgent.cz'
+      : 'AI Sales Agent as a Service — B2B Outreach Automation | SalesAgent.cz',
     description: locale === 'cs'
-      ? 'AI pro obchod a obchodníky — AI obchodní zástupce vyhledá B2B kontakty, prostuduje web každé firmy a odešle personalizovaný cold e-mail. Kompletní automatizace prodeje bez náboru.'
-      : 'AI sales agent finds B2B contacts, reads each company website and sends personalised cold emails. Sales automation without hiring.',
-    keywords: locale === 'cs'
+      ? 'Najměte si AI obchodníka: vyhledá firmy podle vašeho ICP, prostuduje každý web a odešle personalizovaný cold e-mail i LinkedIn zprávu. Výsledky bez náboru, bez čekání.'
+      : 'Hire an AI sales agent: it finds companies matching your ICP, reads each website and sends personalised cold emails and LinkedIn messages. Results without hiring.',    keywords: locale === 'cs'
       ? ['AI pro obchod', 'AI pro obchodníky', 'AI obchodní zástupce', 'automatizace prodeje', 'B2B prodej', 'cold email AI', 'AI lead generation']
       : ['AI sales agent', 'sales automation', 'B2B sales', 'AI outreach', 'cold email AI', 'AI lead generation'],
     alternates: {

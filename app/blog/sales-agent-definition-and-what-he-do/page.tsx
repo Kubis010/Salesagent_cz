@@ -2,10 +2,9 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Sales Agent: Definition, Role & Responsibilities | SalesAgent.cz',
+title: 'What Is a Sales Agent? Definition, Role & Responsibilities | SalesAgent.cz',
   description:
-    "Sales agent vs. sales rep — what's the real difference? Learn what a B2B sales agent does day-to-day, what skills matter, and when this role fits your business.",
-  keywords: [
+    "A sales agent finds prospects, builds relationships and closes deals on behalf of a company — often on commission. Clear definition, day-to-day activities, required skills, and how the role differs from a sales rep.",  keywords: [
     'sales agent definition',
     'what does a sales agent do',
     'sales agent role',

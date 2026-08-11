@@ -158,6 +158,10 @@ export default async function LocaleLayout({
           src="https://towhdopfkjwvbfobvoli.supabase.co/functions/v1/contextual-loader?site=90f638ef-eab0-434d-85aa-7dfe88f6b44a"
           strategy="afterInteractive"
         />
+        <Script
+          src="//cdn.cookie-script.com/s/6195a622ebb5274d4b804e418a7e0e6e.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )
