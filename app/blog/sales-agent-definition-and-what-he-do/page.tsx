@@ -377,29 +377,49 @@ export default function SalesAgentDefinitionPage() {
               marginTop: '56px',
             }}
           >
-            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, marginBottom: '12px' }}>
-              AI SDR as a service
+            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, marginBottom: '8px' }}>
+              Let AI handle the prospecting part
             </h2>
-            <p style={{ fontSize: '15px', color: 'var(--text-muted)', lineHeight: '1.65', marginBottom: '24px' }}>
-              SalesAgent.cz provides an outsourced AI sales agent that finds target companies, reads
-              their websites, and sends personalised outreach on your behalf. You get meetings booked —
-              without hiring a full-time SDR.
+            <p style={{ fontSize: '13px', color: 'var(--accent)', fontWeight: 600, marginBottom: '12px', letterSpacing: '0.04em', textTransform: 'uppercase' }}>
+              SalesAgent.cz — AI SDR as an outsourced service
             </p>
-            <Link
-              href="/en"
-              style={{
-                display: 'inline-block',
-                backgroundColor: 'var(--accent)',
-                color: '#0B1320',
-                fontWeight: 700,
-                fontSize: '14px',
-                padding: '12px 24px',
-                borderRadius: '8px',
-                textDecoration: 'none',
-              }}
-            >
-              See how it works &#x2192;
-            </Link>
+            <p style={{ fontSize: '15px', color: 'var(--text-muted)', lineHeight: '1.65', marginBottom: '16px' }}>
+              Research, first contact and follow-up consume 60–70% of a sales agent&apos;s time. SalesAgent.cz automates all of it: the AI finds companies matching your ICP, reads each website and writes a personalised cold email and LinkedIn message — for every single prospect.
+            </p>
+            <p style={{ fontSize: '15px', color: 'var(--text-muted)', lineHeight: '1.65', marginBottom: '24px' }}>
+              <strong style={{ color: 'var(--text)' }}>Result:</strong> qualified leads land in your calendar. No databases, no manual clicking, no months of hiring.
+            </p>
+            <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+              <Link
+                href="https://outlook.office.com/bookwithme/user/480895b1333541dc94be634dd588fada@salesagent.cz/meetingtype/jwdxCRPBn0CvHccZ7eLwAg2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile"
+                style={{
+                  display: 'inline-block',
+                  backgroundColor: 'var(--accent)',
+                  color: '#0B1320',
+                  fontWeight: 700,
+                  fontSize: '14px',
+                  padding: '13px 26px',
+                  borderRadius: '8px',
+                  textDecoration: 'none',
+                }}
+              >
+                Book a free call &#x2192;
+              </Link>
+              <Link
+                href="/en"
+                style={{
+                  display: 'inline-block',
+                  backgroundColor: 'transparent',
+                  color: 'var(--text-muted)',
+                  fontWeight: 600,
+                  fontSize: '14px',
+                  padding: '13px 0',
+                  textDecoration: 'none',
+                }}
+              >
+                See how it works →
+              </Link>
+            </div>
           </div>
 
 

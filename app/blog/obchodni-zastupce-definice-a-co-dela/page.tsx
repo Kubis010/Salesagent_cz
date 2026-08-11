@@ -310,27 +310,49 @@ export default function Page() {
               marginTop: '56px',
             }}
           >
-            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, marginBottom: '12px' }}>
-              AI obchodní zástupce jako služba
+            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, marginBottom: '8px' }}>
+              Nechte rutinní část obchodníka na AI
             </h2>
-            <p style={{ fontSize: '15px', color: 'var(--text-muted)', lineHeight: '1.65', marginBottom: '24px' }}>
-              SalesAgent.cz poskytuje outsourcovaného AI obchodního zástupce, který najde cílové firmy, přečte jejich weby a odešle personalizovaný cold e-mail vaším jménem. Dostáváte domluvené schůzky — bez najímání obchodníka na plný úvazek.
+            <p style={{ fontSize: '13px', color: 'var(--accent)', fontWeight: 600, marginBottom: '12px', letterSpacing: '0.04em', textTransform: 'uppercase' }}>
+              SalesAgent.cz — AI SDR jako outsourcovaná služba
             </p>
-            <Link
-              href="/cs"
-              style={{
-                display: 'inline-block',
-                backgroundColor: 'var(--accent)',
-                color: '#0B1320',
-                fontWeight: 700,
-                fontSize: '14px',
-                padding: '12px 24px',
-                borderRadius: '8px',
-                textDecoration: 'none',
-              }}
-            >
-              Jak to funguje &#x2192;
-            </Link>
+            <p style={{ fontSize: '15px', color: 'var(--text-muted)', lineHeight: '1.65', marginBottom: '16px' }}>
+              Průzkum, first contact a follow-up zabere obchodníkovi 60–70 % pracovního času. AI systém SalesAgent.cz zvládne celou tuto část automaticky: vyhledá firmy podle vašeho ICP, prostuduje každý web a napíše personalizovaný cold email i LinkedIn zprávu.
+            </p>
+            <p style={{ fontSize: '15px', color: 'var(--text-muted)', lineHeight: '1.65', marginBottom: '24px' }}>
+              <strong style={{ color: 'var(--text)' }}>Výsledek:</strong> váš obchodník dostane kvalifikované zájemce přímo do kalendáře — bez databází, bez ručního proklikávání, bez čekání měsíce na nábor.
+            </p>
+            <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+              <Link
+                href="https://outlook.office.com/bookwithme/user/480895b1333541dc94be634dd588fada@salesagent.cz/meetingtype/jwdxCRPBn0CvHccZ7eLwAg2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile"
+                style={{
+                  display: 'inline-block',
+                  backgroundColor: 'var(--accent)',
+                  color: '#0B1320',
+                  fontWeight: 700,
+                  fontSize: '14px',
+                  padding: '13px 26px',
+                  borderRadius: '8px',
+                  textDecoration: 'none',
+                }}
+              >
+                Domluvit nezávazný hovor &#x2192;
+              </Link>
+              <Link
+                href="/cs"
+                style={{
+                  display: 'inline-block',
+                  backgroundColor: 'transparent',
+                  color: 'var(--text-muted)',
+                  fontWeight: 600,
+                  fontSize: '14px',
+                  padding: '13px 0',
+                  textDecoration: 'none',
+                }}
+              >
+                Jak to funguje →
+              </Link>
+            </div>
           </div>
 
 
