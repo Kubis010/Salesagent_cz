@@ -27,7 +27,7 @@ export async function generateMetadata({
     },
     keywords: cs
       ? ['externí obchodník', 'outsourcing obchodu', 'externí obchodní zástupce', 'outsourcing prodeje', 'B2B oslovení firem', 'externí sales']
-      : ['external sales representation Czech Republic', 'sales agent Czech Republic', 'enter Czech market', 'B2B sales Czech Republic', 'outsourced sales Czech Republic', 'market testing Czech Republic'],
+      : ['external sales representation Czech Republic', 'sales agent Czech Republic', 'czech agent', 'sales agency Czech Republic', 'outsourced sales agent Europe', 'European sales expansion', 'enter Czech market', 'B2B sales Czech Republic', 'outsourced sales Czech Republic', 'market testing Czech Republic'],
     openGraph: {
       type: 'website',
       locale: cs ? 'cs_CZ' : 'en_US',
@@ -292,7 +292,7 @@ export default async function SalesRepCzPage({
                   title: isCs ? 'Firmy testující nový segment nebo službu' : 'Gateway to Central Eastern Europe',
                   body: isCs
                     ? 'Než investujete do vlastního obchodníka, otestujte poptávku s externím obchodem. Za 2–3 měsíce víte, jestli trh reaguje — a rozhodujete se na základě dat, ne odhadů.'
-                    : 'Success in Czech Republic is a natural stepping stone into Slovakia, Poland and other CEE markets. You learn what works, then scale across the region.',
+                    : 'Czech Republic is your gateway to European sales expansion. As your outsourced sales agent in Europe, we run the full outreach cycle — then scale the same system into Slovakia, Poland and other CEE markets.',
                 },
               ].map((item) => (
                 <div

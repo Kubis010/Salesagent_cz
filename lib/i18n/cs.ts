@@ -9,7 +9,7 @@ export const cs = {
   },
   hero: {
     badge: 'AI obchodní zástupce',
-    headline: 'Rozjedeme váš obchod naplno\npomocí AI a unikátního SW.',
+    headline: 'Generování B2B leadů\na automatizace prodeje pomocí AI.',
     subheadline:
       'Automatizujeme prodej u firem. Vyhledáme relevantní společnosti, prostudujeme jejich weby a oslovíme je přes personalizované e-maily i LinkedIn outreach. K vám se dostanou jen ti, co mají reálný zájem.',
     cta: 'Domluvit nezávazný hovor',

@@ -182,6 +182,10 @@ export default function JakVyuzitAiVProdejiPage() {
             <a href="https://cal.com/salesagent/demo" target="_blank" rel="noopener noreferrer" className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors">
               Domluvit bezplatnou konzultaci
             </a>
+            <p className="mt-4 text-sm text-gray-500">
+              <Link href="/cs" className="text-purple-400 hover:text-purple-300 underline">Automatizace B2B prodeje pomocí AI</Link>
+              {' '}— jak to funguje v praxi.
+            </p>
           </div>
 
           <style>{`

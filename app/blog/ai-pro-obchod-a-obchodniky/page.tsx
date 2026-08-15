@@ -301,6 +301,11 @@ export default function AiProObchodPage() {
             <a href="https://cal.com/salesagent/demo" target="_blank" rel="noopener noreferrer" className="inline-block bg-violet-600 hover:bg-violet-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors">
               Domluvit nezávazný hovor
             </a>
+            <p className="mt-4 text-sm text-gray-500">
+              Nebo zjistěte víc o{' '}
+              <Link href="/cs" className="text-violet-400 hover:text-violet-300 underline">automatizaci B2B prodeje</Link>
+              {' '}na naší hlavní stránce.
+            </p>
           </div>
 
           <style>{`

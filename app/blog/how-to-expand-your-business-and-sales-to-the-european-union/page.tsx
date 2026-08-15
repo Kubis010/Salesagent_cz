@@ -431,6 +431,9 @@ export default function EUExpansionPage() {
           <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>
             <p style={{ fontSize: '14px', fontWeight: 600, color: 'var(--text)', marginBottom: '12px' }}>Related</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              <Link href="/en/sales-representation-czech-republic" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
+                External sales representation in Czech Republic — European sales expansion service →
+              </Link>
               <Link href="/blog/jak-personalizovat-cold-emaily-ai" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
                 Jak personalizovat cold emaily pomocí AI →
               </Link>

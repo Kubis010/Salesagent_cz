@@ -337,6 +337,13 @@ export default function Page() {
             >
               Domluvit hovor zdarma
             </a>
+            <p style={{ marginTop: '16px', fontSize: '13px', color: 'var(--text-muted)' }}>
+              Víc o tom, jak funguje{' '}
+              <Link href="/cs" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
+                automatizace B2B prodeje
+              </Link>
+              {' '}na naší hlavní stránce.
+            </p>
           </div>
 
           <style>{`

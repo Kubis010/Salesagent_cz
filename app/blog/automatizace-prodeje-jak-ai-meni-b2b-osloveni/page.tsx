@@ -238,6 +238,13 @@ export default function Page() {
             >
               Domluvit hovor →
             </a>
+            <p style={{ marginTop: '16px', fontSize: '13px', color: 'var(--text-muted)' }}>
+              Zjistěte víc o{' '}
+              <Link href="/cs" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
+                automatizaci B2B prodeje a generování leadů
+              </Link>
+              {' '}— celý proces jako služba.
+            </p>
           </div>
 
 
