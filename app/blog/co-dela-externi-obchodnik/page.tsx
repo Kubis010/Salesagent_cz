@@ -237,6 +237,12 @@ export default function CoDElaExterniObchodnikPage() {
             <a href="https://cal.com/salesagent/demo" target="_blank" rel="noopener noreferrer" className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors">
               Domluvit bezplatnou konzultaci
             </a>
+            <p className="mt-4 text-sm text-gray-500">
+              Zahraniční firma hledající zastoupení v ČR?{' '}
+              <Link href="/en/sales-representation-czech-republic" className="text-orange-400 hover:text-orange-300 underline">
+                Sales representation Czech Republic — jak funguje naše služba pro zahraniční firmy →
+              </Link>
+            </p>
           </div>
 
           <style>{`

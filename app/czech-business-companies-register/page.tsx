@@ -305,6 +305,12 @@ export default function CzechRegisterPage() {
             >
               See how AI SDR works &#x2192;
             </Link>
+            <p style={{ marginTop: '16px', fontSize: '13px', color: 'var(--text-muted)' }}>
+              Looking for a sales agent in Czech Republic?{' '}
+              <Link href="/en/sales-representation-czech-republic" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
+                We represent foreign companies entering the Czech market &#x2192;
+              </Link>
+            </p>
           </div>
         </article>
       </div>

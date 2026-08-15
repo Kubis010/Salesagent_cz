@@ -209,6 +209,12 @@ export default function CoJeExterniObchodPage() {
             <a href="https://cal.com/salesagent/demo" target="_blank" rel="noopener noreferrer" className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors">
               Domluvit bezplatnou konzultaci
             </a>
+            <p className="mt-4 text-sm text-gray-500">
+              Zahraniční firma?{' '}
+              <Link href="/en/sales-representation-czech-republic" className="text-orange-400 hover:text-orange-300 underline">
+                Zajišťujeme sales representation pro firmy vstupující na český trh →
+              </Link>
+            </p>
           </div>
 
           <style>{`

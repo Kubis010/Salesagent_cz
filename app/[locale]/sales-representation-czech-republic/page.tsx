@@ -128,7 +128,7 @@ export default async function SalesRepCzPage({
             <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', maxWidth: '640px', margin: '0 auto 40px', lineHeight: 1.7 }}>
               {isCs
                 ? 'Nechcete najímat obchodníka na plný úvazek? SalesAgent funguje jako váš externí obchodní tým — vyhledá firmy, osloví je personalizovaným e-mailem i na LinkedIn a předá vám ty, kteří mají zájem o schůzku.'
-                : 'Expanding into the Czech Republic but not ready to open an office or hire locally? SalesAgent acts as your external sales team — finding companies, reaching out, and booking first meetings on your behalf.'}
+                : 'Expanding into the Czech Republic but not ready to open an office or hire a local sales agent? SalesAgent provides sales outsourcing for market entry in Czech Republic — finding companies, reaching out, and booking first meetings on your behalf.'}
             </p>
             <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
               <a
@@ -272,7 +272,7 @@ export default async function SalesRepCzPage({
             <p style={{ color: 'var(--text-muted)', lineHeight: 1.7, marginBottom: '32px', maxWidth: '680px' }}>
               {isCs
                 ? 'Outsourcing obchodu není jen pro velké firmy. Využívají ho všichni, kdo potřebují pravidelně oslovovat nové zákazníky, ale nechtějí nebo nemůžou najímat vlastního obchodníka.'
-                : 'Czech Republic is a stable economy with high B2B technology adoption, a growing IT sector, and companies that actively seek international partners and suppliers.'}
+                : 'Czech Republic is a stable economy with high B2B technology adoption. For companies planning market entry into Czech Republic, it offers a local sales agent infrastructure without the overhead of a permanent office.'}
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px' }}>
               {[
