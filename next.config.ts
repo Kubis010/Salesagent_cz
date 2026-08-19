@@ -45,6 +45,17 @@ const nextConfig: NextConfig = {
         destination: '/blog/jak-personalizovat-cold-emaily-ai',
         permanent: true,
       },
+      // EN-prefixed blog URLs Google indexed (blogs live at /blog/, not /en/blog/)
+      {
+        source: '/en/blog/external-sales-representation-czech-republic',
+        destination: '/en/sales-representation-czech-republic',
+        permanent: true,
+      },
+      {
+        source: '/en/blog/:path*',
+        destination: '/blog/:path*',
+        permanent: true,
+      },
     ]
   },
 }

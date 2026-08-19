@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     canonical: 'https://salesagent.cz/en/resources/czech-business-companies-register',
     languages: {
       en: 'https://salesagent.cz/en/resources/czech-business-companies-register',
+      cs: 'https://salesagent.cz/en/resources/czech-business-companies-register',
       'x-default': 'https://salesagent.cz/en/resources/czech-business-companies-register',
     },
   },
@@ -245,15 +246,15 @@ export default async function CzechRegisterPage({
           }}
         >
           <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, marginBottom: '12px' }}>
-            Scaling this for B2B prospecting?
+            Looking for a sales representative in Czech Republic?
           </h2>
           <p style={{ fontSize: '15px', color: 'var(--text-muted)', lineHeight: '1.65', marginBottom: '24px' }}>
-            Manual ARES lookups work for occasional due diligence. If you want to systematically find
-            and contact hundreds of Czech companies per month — with personalised outreach to each —
-            that&apos;s what SalesAgent.cz does as an outsourced AI SDR service.
+            We handle market entry and outreach for foreign companies — finding Czech prospects in
+            ARES and across the web, personalising every message, and booking first meetings on your
+            behalf. No local office, no Czech hire needed.
           </p>
           <Link
-            href={base}
+            href={`${base}/sales-representation-czech-republic`}
             style={{
               display: 'inline-block',
               backgroundColor: 'var(--accent)',
@@ -265,8 +266,15 @@ export default async function CzechRegisterPage({
               textDecoration: 'none',
             }}
           >
-            See how AI SDR works →
+            External sales representation in Czech Republic →
           </Link>
+          <p style={{ marginTop: '12px', fontSize: '13px', color: 'var(--text-muted)' }}>
+            Or{' '}
+            <Link href={base} style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
+              see how the AI SDR system works
+            </Link>
+            .
+          </p>
         </div>
       </article>
     </div>
