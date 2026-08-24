@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Co dělá externí obchodník / sales manager? | SalesAgent.cz',
+  title: 'Co dělá externí obchodník a kolik stojí? Srovnání s interním obchodníkem | SalesAgent.cz',
   description:
     'Co přesně dělá externí obchodník nebo sales manager, jaké nástroje používá, jak by měl fungovat a jaké výsledky od něj reálně čekat.',
   keywords: [
@@ -238,9 +238,9 @@ export default function CoDElaExterniObchodnikPage() {
               Domluvit bezplatnou konzultaci
             </a>
             <p className="mt-4 text-sm text-gray-500">
-              Zahraniční firma hledající zastoupení v ČR?{' '}
-              <Link href="/en/sales-representation-czech-republic" className="text-orange-400 hover:text-orange-300 underline">
-                Sales representation Czech Republic — jak funguje naše služba pro zahraniční firmy →
+              Hledáte externího obchodníka?{' '}
+              <Link href="/cs/sales-representation-czech-republic" className="text-orange-400 hover:text-orange-300 underline">
+                Outsourcing obchodu a externího obchodního zástupce — naše služba →
               </Link>
             </p>
           </div>

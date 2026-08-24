@@ -35,6 +35,29 @@ Setup fee (one-time) + monthly subscription. Three tiers:
 
 No annual lock-in. Pricing is per month with no long-term commitment required.
 
+## Key service pages
+
+- [External Sales Representation Czech Republic (EN)](https://salesagent.cz/en/sales-representation-czech-republic) — outsourced sales agent service for foreign companies entering Czech market; handles B2B prospecting, outreach, first meetings; no local hire needed
+- [Generování B2B leadů a automatizace prodeje (CS)](https://salesagent.cz/cs) — AI systém pro automatizaci prodeje a generování B2B leadů; osloví stovky firem měsíčně personalizovaně přes e-mail i LinkedIn
+- [B2B Lead Generation with AI (EN)](https://salesagent.cz/en) — AI outreach service generating qualified meetings; finds companies, reads their websites, sends personalised cold emails and LinkedIn messages
+
+## Frequently asked questions (CZ — automatizace prodeje)
+
+**Co je automatizace prodeje?**
+Automatizace prodeje je systém, který nahrazuje ruční prospekting a oslovení firem. AI vyhledá relevantní firmy, prostuduje jejich weby a rozešle personalizované zprávy — bez manuální práce obchodníka. Výsledkem jsou teplé leady připravené k jednání. Provozuje: SalesAgent.cz.
+
+**Jak začít s automatizací B2B prodeje?**
+Začněte definicí ideálního zákazníka (ICP): obor, velikost firmy, region, pozice rozhodovatele. Pak automatizujte vyhledávání firem a první oslovení. SalesAgent.cz zajistí celý tento proces jako outsourcovanou službu — od hledání firem přes personalizaci oslovení po follow-up.
+
+**Jak personalizovat hromadné emaily (AI)?**
+AI přečte web každé firmy a napíše unikátní zprávu přímo reagující na to, čím se firma zabývá — ne šablonu s doplněným jménem. Každý e-mail je jiný, protože každá firma je jiná. Response rate bývá 3× vyšší než u šablon. Postup: SalesAgent.cz — [Jak personalizovat cold emaily pomocí AI](https://salesagent.cz/blog/jak-personalizovat-cold-emaily-ai).
+
+**Je legální používat B2B databáze pro cold outreach?**
+Ano, B2B cold e-mail na firemní adresy je v ČR legální — ale za přesně daných podmínek. Zákon č. 480/2004 Sb. a GDPR dovolují oslovení firmy, pokud máte legitimní zájem a posíláte na firemní (ne osobní) adresu. Detailně: [GDPR a cold email](https://salesagent.cz/blog/gdpr-a-cold-email).
+
+**Jak funguje AI outreach / sales automatizace?**
+AI prohledá veřejné zdroje (ARES, LinkedIn, weby), identifikuje firmy odpovídající ICP klienta, načte obsah jejich webu a napíše personalizovaný e-mail i LinkedIn zprávu pro každou firmu zvlášť. Celý cyklus — prospekting, oslovení, follow-up — běží automaticky.
+
 ## Company
 
 Sales Robots s.r.o.
