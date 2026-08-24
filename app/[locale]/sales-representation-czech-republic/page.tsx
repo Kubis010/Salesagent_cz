@@ -375,6 +375,26 @@ export default async function SalesRepCzPage({
             </p>
           </section>
 
+          {/* Already setting up */}
+          {!isCs && (
+            <section style={{ marginBottom: '80px', border: '1px solid var(--border)', borderRadius: '16px', padding: '40px 36px' }}>
+              <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '14px' }}>
+                Already setting up in the Czech Republic?
+              </h2>
+              <p style={{ color: 'var(--text-muted)', lineHeight: 1.7, marginBottom: '20px', maxWidth: '620px' }}>
+                If you&apos;re using corporate or secretarial services to establish your Czech entity, the next step is local sales. We handle market entry, B2B outreach and first meetings — so your Czech expansion starts generating revenue from day one, without hiring a local rep.
+              </p>
+              <a
+                href="https://cal.com/salesagent/demo"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: 'var(--accent)', fontWeight: 600, fontSize: '15px', textDecoration: 'none' }}
+              >
+                Talk to us about European sales expansion →
+              </a>
+            </section>
+          )}
+
           {/* CTA */}
           <section style={{ textAlign: 'center', border: '1px solid var(--border)', borderRadius: '20px', padding: '60px 40px', background: 'var(--surface)' }}>
             <h2 style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '16px' }}>

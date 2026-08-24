@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-title: 'What Is a Sales Agent? Definition, Role & Responsibilities | SalesAgent.cz',
+title: 'Sales Agent in Czech Republic — External Sales Representation | SalesAgent.cz',
   description:
     "A sales agent finds prospects, builds relationships and closes deals on behalf of a company — often on commission. Clear definition, day-to-day activities, required skills, and how the role differs from a sales rep.",  keywords: [
     'sales agent definition',
@@ -158,7 +158,7 @@ export default function SalesAgentDefinitionPage() {
               marginBottom: '20px',
             }}
           >
-            Sales Agent definition and what he does?
+            What a Sales Agent Does — and How to Hire One in the Czech Republic
           </h1>
 
           <div style={{ display: 'flex', gap: '16px', alignItems: 'center', marginBottom: '40px', paddingBottom: '32px', borderBottom: '1px solid var(--border)' }}>
@@ -405,8 +405,8 @@ export default function SalesAgentDefinitionPage() {
               >
                 Book a free call &#x2192;
               </Link>
-              <Link
-                href="/en"
+                <Link
+                href="/en/sales-representation-czech-republic"
                 style={{
                   display: 'inline-block',
                   backgroundColor: 'transparent',
@@ -417,7 +417,7 @@ export default function SalesAgentDefinitionPage() {
                   textDecoration: 'none',
                 }}
               >
-                See how it works →
+                External sales representation in Czech Republic →
               </Link>
             </div>
           </div>

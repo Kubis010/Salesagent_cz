@@ -120,9 +120,10 @@ export default async function HomePage({
             {t.hero.headline}
           </h1>
 
-          <p
+          <h2
             style={{
               fontSize: '17px',
+              fontWeight: 400,
               color: 'var(--text-muted)',
               lineHeight: '1.65',
               marginBottom: '40px',
@@ -130,7 +131,7 @@ export default async function HomePage({
             }}
           >
             {t.hero.subheadline}
-          </p>
+          </h2>
 
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
             <a
@@ -695,6 +696,103 @@ export default async function HomePage({
           </Link>
         </div>
       </section>
+
+      {/* ── FAQ (CZ only) ── */}
+      {locale === 'cs' && (
+        <>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                '@context': 'https://schema.org',
+                '@type': 'FAQPage',
+                mainEntity: [
+                  {
+                    '@type': 'Question',
+                    name: 'Co je automatizace prodeje?',
+                    acceptedAnswer: {
+                      '@type': 'Answer',
+                      text: 'Automatizace prodeje je systém, který nahrazuje ruční prospekting a oslovení firem. AI vyhledá relevantní firmy, prostuduje jejich weby a rozešle personalizované zprávy — bez manuální práce obchodníka. Výsledkem jsou teplé leady připravené k jednání.',
+                    },
+                  },
+                  {
+                    '@type': 'Question',
+                    name: 'Jak začít s automatizací B2B prodeje?',
+                    acceptedAnswer: {
+                      '@type': 'Answer',
+                      text: 'Začněte definicí ideálního zákazníka (ICP): obor, velikost firmy, region, pozice rozhodovatele. Pak automatizujte vyhledávání firem a první oslovení — to bývá nejnákladnější na čas. SalesAgent.cz celý tento proces zajistí jako outsourcovanou službu.',
+                    },
+                  },
+                  {
+                    '@type': 'Question',
+                    name: 'Jak funguje AI outreach a sales automatizace?',
+                    acceptedAnswer: {
+                      '@type': 'Answer',
+                      text: 'AI prohledá veřejné zdroje (ARES, LinkedIn, weby), identifikuje firmy odpovídající vašemu ICP, načte obsah jejich webu a napíše unikátní personalizovaný e-mail i LinkedIn zprávu pro každou firmu zvlášť. Celý cyklus — prospekting, oslovení, follow-up — běží automaticky.',
+                    },
+                  },
+                  {
+                    '@type': 'Question',
+                    name: 'Kolik stojí generování B2B leadů pomocí AI?',
+                    acceptedAnswer: {
+                      '@type': 'Answer',
+                      text: 'SalesAgent.cz funguje na měsíčním paušálu — výrazně nižším než náklady na interního obchodníka (plat + odvody + nástroje). Cena zahrnuje vyhledávání firem, personalizaci oslovení i LinkedIn outreach. Konkrétní kalkulaci si domluvte na bezplatném hovoru.',
+                    },
+                  },
+                ],
+              }),
+            }}
+          />
+          <section style={{ padding: '80px 24px', maxWidth: '760px', margin: '0 auto' }}>
+            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: 'clamp(22px, 3vw, 32px)', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '40px', textAlign: 'center' }}>
+              Časté otázky o automatizaci prodeje
+            </h2>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
+              {[
+                {
+                  q: 'Co je automatizace prodeje?',
+                  a: 'Automatizace prodeje je systém, který nahrazuje ruční prospekting a oslovení firem. AI vyhledá relevantní firmy, prostuduje jejich weby a rozešle personalizované zprávy — bez manuální práce obchodníka. Výsledkem jsou teplé leady připravené k jednání.',
+                },
+                {
+                  q: 'Jak začít s automatizací B2B prodeje?',
+                  a: 'Začněte definicí ideálního zákazníka (ICP): obor, velikost firmy, region, pozice rozhodovatele. Pak automatizujte vyhledávání firem a první oslovení — to bývá nejnákladnější na čas. SalesAgent.cz celý tento proces zajistí jako outsourcovanou službu.',
+                },
+                {
+                  q: 'Jak funguje AI outreach a sales automatizace?',
+                  a: 'AI prohledá veřejné zdroje (ARES, LinkedIn, weby), identifikuje firmy odpovídající vašemu ICP, načte obsah jejich webu a napíše unikátní personalizovaný e-mail i LinkedIn zprávu pro každou firmu zvlášť. Celý cyklus — prospekting, oslovení, follow-up — běží automaticky.',
+                },
+                {
+                  q: 'Kolik stojí generování B2B leadů pomocí AI?',
+                  a: 'SalesAgent.cz funguje na měsíčním paušálu — výrazně nižším než náklady na interního obchodníka. Cena zahrnuje vyhledávání firem, personalizaci oslovení i LinkedIn outreach. Konkrétní kalkulaci si domluvte na bezplatném hovoru.',
+                },
+              ].map(({ q, a }) => (
+                <details
+                  key={q}
+                  style={{ borderBottom: '1px solid var(--border)', padding: '0' }}
+                >
+                  <summary
+                    style={{
+                      padding: '20px 0',
+                      cursor: 'pointer',
+                      fontWeight: 600,
+                      fontSize: '16px',
+                      listStyle: 'none',
+                      display: 'flex',
+                      justifyContent: 'space-between',
+                      alignItems: 'center',
+                      gap: '16px',
+                    }}
+                  >
+                    {q}
+                    <span style={{ color: 'var(--accent)', flexShrink: 0, fontSize: '20px', fontWeight: 400 }}>+</span>
+                  </summary>
+                  <p style={{ paddingBottom: '20px', fontSize: '15px', color: 'var(--text-muted)', lineHeight: 1.7, margin: 0 }}>{a}</p>
+                </details>
+              ))}
+            </div>
+          </section>
+        </>
+      )}
 
       {/* ── CTA ── */}
       <section

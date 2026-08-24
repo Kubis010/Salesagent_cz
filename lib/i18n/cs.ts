@@ -11,7 +11,7 @@ export const cs = {
     badge: 'AI obchodní zástupce',
     headline: 'Generování B2B leadů\na automatizace prodeje pomocí AI.',
     subheadline:
-      'Automatizujeme prodej u firem. Vyhledáme relevantní společnosti, prostudujeme jejich weby a oslovíme je přes personalizované e-maily i LinkedIn outreach. K vám se dostanou jen ti, co mají reálný zájem.',
+      'Sales automatizace, generování B2B leadů a AI oslovení — bez náboru obchodníka. Vyhledáme relevantní firmy, prostudujeme jejich weby a oslovíme je personalizovaně přes e-mail i LinkedIn.',
     cta: 'Domluvit nezávazný hovor',
     ctaSub: 'nebo se podívejte, jak to funguje',
     pipelineLabel: 'Systém běží naživo',
