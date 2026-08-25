@@ -306,13 +306,13 @@ export default function Page() {
             <li style={{ marginBottom: '12px' }}>Systém vyhledá firmy z Google Maps a dalších veřejných zdrojů (žádná databáze)</li>
             <li style={{ marginBottom: '12px' }}>AI (Claude) přečte web každé firmy a napíše personalizovaný email</li>
             <li style={{ marginBottom: '12px' }}>První email z každé nové kampaně zkontroluje člověk — pak systém pokračuje automaticky</li>
-            <li style={{ marginBottom: '12px' }}>Paralelně probíhá LinkedIn outreach — email + LinkedIn současně, ne sequentially</li>
+            <li style={{ marginBottom: '12px' }}>Paralelně probíhá <Link href="/cs/linkedin-outreach" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>LinkedIn outreach</Link> — email + LinkedIn současně, ne sequentially</li>
             <li style={{ marginBottom: '12px' }}>Odpovědi dostanete přímo do schránky — vy vstupujete do procesu až v okamžiku zájmu</li>
           </ol>
 
           <p>
             Výsledkem jsou schůzky v kalendáři s firmami, které reagovaly na zprávu relevantní jejich situaci.
-            Ne cold calling, ne hromadný spam — personalizovaný outreach ve velkém měřítku.
+            Ne cold calling, ne hromadný spam — <Link href="/cs/automatizovane-osloveni" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>automatizované oslovení</Link> ve velkém měřítku.
           </p>
 
           <div style={{

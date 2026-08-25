@@ -124,7 +124,7 @@ export default function Page() {
           </p>
 
           <p>
-            Tenhle článek je přehled toho, co v generování B2B leadů v roce 2025 reálně funguje a co
+            Tenhle článek je přehled toho, co v <Link href="/cs/b2b-lead-generation" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>generování B2B leadů</Link> v roce 2025 reálně funguje a co
             přestalo dávat smysl. Bez marketingové omáčky, s konkrétními čísly.
           </p>
 
@@ -219,6 +219,9 @@ export default function Page() {
           <p>
             Klíčový rozdíl oproti databázovému přístupu: firmy jsou čerstvé, oslovení je unikátní a
             nikdo jiný ve stejnou chvíli neprovádí identickou kampaň na stejné kontakty.
+            Celý proces{' '}
+            <Link href="/cs/automatizovane-osloveni" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>automatizovaného oslovení</Link>
+            {' '}popisujeme detailně na samostatné stránce.
           </p>
 
           <H2>Kolik leadů reálně generovat</H2>

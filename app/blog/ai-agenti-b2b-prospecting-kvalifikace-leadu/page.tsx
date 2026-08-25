@@ -141,7 +141,7 @@ export default function AiAgentiProspektingPage() {
               Jak využít AI agenty pro B2B prospecting a kvalifikaci leadů
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Obchodník stráví většinu času hledáním firem a zjišťováním, jestli vůbec stojí za oslovení. AI agent tohle udělá za něj — najde firmy, přečte jejich weby, vyhodnotí shodu s vaším ICP a osloví ty správné. Tady je, jak to funguje.
+              Obchodník stráví většinu času hledáním firem a zjišťováním, jestli vůbec stojí za oslovení. AI agent tohle udělá za něj — zajistí celé <Link href="/cs/b2b-lead-generation" style={{ color: '#22A06B', textDecoration: 'underline' }}>generování B2B leadů</Link>, přečte jejich weby, vyhodnotí shodu s vaším ICP a zajistí <Link href="/cs/automatizovane-osloveni" style={{ color: '#22A06B', textDecoration: 'underline' }}>automatizované oslovení</Link> těch správných. Tady je, jak to funguje.
             </p>
           </header>
 

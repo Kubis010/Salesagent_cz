@@ -13,8 +13,8 @@ export async function generateMetadata({
   const t: Translations = getTranslations(locale as Locale)
   return {
     title: locale === 'cs'
-      ? 'Generování B2B leadů pomocí AI — automatizovaný outreach | SalesAgent.cz'
-      : 'B2B Lead Generation with AI — Automated Outreach as a Service | SalesAgent.cz',
+      ? 'AI automatizace B2B prodeje — outreach bez náboru obchodníka | SalesAgent.cz'
+      : 'AI Sales Automation — B2B Outreach as a Service | SalesAgent.cz',
     description: locale === 'cs'
       ? 'Generujeme B2B leady bez databází: AI vyhledá firmy podle vašeho ICP, prostuduje každý web a odešle personalizovaný cold e-mail i LinkedIn zprávu. Měsíčně stovky oslovených, bez náboru obchodníka.'
       : 'B2B lead generation without databases: AI finds companies matching your ICP, reads each website and sends personalised cold emails and LinkedIn messages. Hundreds of contacts monthly — no hiring.',
@@ -664,23 +664,39 @@ export default async function HomePage({
           {locale === 'cs' ? 'Nejnovější články o B2B prodeji a AI' : 'Latest articles on B2B sales & AI'}
         </h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
-          {[
+          {(locale === 'en' ? [
+            {
+              href: '/blog/market-entry-czech-republic-hire-sales-vs-open-entity',
+              title: 'Market Entry Czech Republic: Sales First or Entity First?',
+              desc: 'Compare entity-first vs sales-first market entry — cost, speed, risk. How to test demand before committing capital.',
+            },
+            {
+              href: '/blog/hiring-local-czech-staff-can-be-expensive-mistake',
+              title: 'Hiring Local Czech Staff Can Be an Expensive Mistake',
+              desc: 'Payroll taxes at 34 %, 2-month notice periods, 3–6 month ramp-up — the real cost of hiring a Czech sales rep.',
+            },
+            {
+              href: '/blog/sales-agent-definition-and-what-he-do',
+              title: 'What a Sales Agent Does — and How to Hire One in Czech Republic',
+              desc: 'Role breakdown, key skills, and how external sales representation works as an alternative to full-time hiring.',
+            },
+          ] : [
             {
               href: '/blog/ai-pro-obchod-a-obchodniky',
-              title: locale === 'cs' ? 'AI pro obchodníky: kompletní systém automatizace' : 'AI for Sales Teams: Complete Automation System',
-              desc: locale === 'cs' ? 'LinkedIn outreach, kvalifikace leadů, CRM na míru — jak nastavit kompletní AI obchodní systém.' : 'LinkedIn outreach, lead qualification, custom CRM — how to set up a complete AI sales system.',
+              title: 'AI pro obchodníky: kompletní systém automatizace',
+              desc: 'LinkedIn outreach, kvalifikace leadů, CRM na míru — jak nastavit kompletní AI obchodní systém.',
             },
             {
               href: '/blog/ai-agenti-b2b-prospecting-kvalifikace-leadu',
-              title: locale === 'cs' ? 'AI agenti pro B2B prospecting a kvalifikaci leadů' : 'AI Agents for B2B Prospecting & Lead Qualification',
-              desc: locale === 'cs' ? 'Jak AI agent najde firmy, přečte jejich web, vyhodnotí shodu s vaším ICP a osloví ty správné.' : 'How AI agents find companies, analyze their websites, score ICP fit, and reach out automatically.',
+              title: 'AI agenti pro B2B prospecting a kvalifikaci leadů',
+              desc: 'Jak AI agent najde firmy, přečte jejich web, vyhodnotí shodu s vaším ICP a osloví ty správné.',
             },
             {
               href: '/blog/follow-up-email-vzor',
-              title: locale === 'cs' ? 'Follow-up e-mail vzor: 3 šablony pro B2B' : 'Follow-up Email Templates: 3 B2B Templates',
-              desc: locale === 'cs' ? 'Jak napsat follow-up, který dostane odpověď — bez tlačení, s novým argumentem.' : 'How to write a follow-up that gets a reply — without pushing, with a new argument.',
+              title: 'Follow-up e-mail vzor: 3 šablony pro B2B',
+              desc: 'Jak napsat follow-up, který dostane odpověď — bez tlačení, s novým argumentem.',
             },
-          ].map((post) => (
+          ]).map((post) => (
             <Link key={post.href} href={post.href} style={{ textDecoration: 'none' }}>
               <article style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '14px', padding: '24px 28px', height: '100%', transition: 'border-color 0.2s' }} className="blog-card">
                 <h3 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '17px', fontWeight: 700, color: 'var(--text)', marginBottom: '10px', lineHeight: 1.3 }}>{post.title}</h3>

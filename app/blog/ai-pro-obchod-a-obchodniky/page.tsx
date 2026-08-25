@@ -141,7 +141,7 @@ export default function AiProObchodPage() {
               AI pro obchod a obchodníky: kompletní systém automatizace
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Jednotlivé AI nástroje nic nevyřeší. Skutečný efekt přichází, když je celý obchodní proces propojený — od vyhledávání firem přes kvalifikaci a LinkedIn outreach až po CRM, které celý systém řídí. Takhle to nastavujeme.
+              Jednotlivé AI nástroje nic nevyřeší. Skutečný efekt přichází, když je celý obchodní proces propojený — od <Link href="/cs/b2b-lead-generation" style={{ color: '#FF6B4A', textDecoration: 'underline' }}>vyhledávání B2B leadů</Link> přes kvalifikaci a <Link href="/cs/linkedin-outreach" style={{ color: '#FF6B4A', textDecoration: 'underline' }}>LinkedIn outreach</Link> až po CRM, které celý systém řídí. Takhle to nastavujeme.
             </p>
           </header>
 

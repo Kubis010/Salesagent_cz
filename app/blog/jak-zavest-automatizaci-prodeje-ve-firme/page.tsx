@@ -297,8 +297,9 @@ export default function Page() {
 
           <p>
             SalesAgent.cz je outsourcovaná B2B outreach služba. Celý výše popsaný proces — vyhledávání
-            firem, web scraping, AI personalizace, odesílání emailů i LinkedIn outreach — provozujeme
-            jako řízenou službu. Vy nedostáváte nástroj k nastavení, dostáváte fungující systém s výsledky.
+            firem, web scraping, AI personalizace, odesílání emailů i{' '}
+            <Link href="/cs/linkedin-outreach" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>LinkedIn outreach</Link>
+            {' '}— provozujeme jako řízenou službu. Vy nedostáváte nástroj k nastavení, dostáváte fungující systém s výsledky.
           </p>
 
           <p>
@@ -338,11 +339,15 @@ export default function Page() {
               Domluvit hovor zdarma
             </a>
             <p style={{ marginTop: '16px', fontSize: '13px', color: 'var(--text-muted)' }}>
-              Víc o tom, jak funguje{' '}
-              <Link href="/cs" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
-                automatizace B2B prodeje
+              Víc o{' '}
+              <Link href="/cs/b2b-lead-generation" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
+                generování B2B leadů
               </Link>
-              {' '}na naší hlavní stránce.
+              {' a '}
+              <Link href="/cs/automatizovane-osloveni" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
+                automatizovaném oslovení
+              </Link>
+              {' — dedikované stránky služby.'}.
             </p>
           </div>
 

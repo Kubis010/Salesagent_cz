@@ -143,7 +143,7 @@ export default function Page() {
           </p>
 
           <p>
-            Skutečná automatizace zvládne celý top-of-funnel cyklus: automatické vyhledávání B2B kontaktů odpovídajících vašemu ideálnímu zákaznickému profilu, načtení a analýzu jejich webových stránek, napsání personalizovaného cold e-mailu na základě zjištěných informací a jeho odeslání e-mailem i přes LinkedIn — to vše bez toho, aby se člověk musel zapojit, dokud nepřijde odpověď.
+            Skutečná automatizace zvládne celý top-of-funnel cyklus: automatické <Link href="/cs/b2b-lead-generation" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>vyhledávání B2B kontaktů</Link> odpovídajících vašemu ideálnímu zákaznickému profilu, načtení a analýzu jejich webových stránek, napsání personalizovaného cold e-mailu na základě zjištěných informací a jeho odeslání e-mailem i přes <Link href="/cs/linkedin-outreach" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>LinkedIn outreach</Link> — to vše bez toho, aby se člověk musel zapojit, dokud nepřijde odpověď.
           </p>
 
           <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, letterSpacing: '-0.02em', marginTop: '16px' }}>
@@ -240,10 +240,18 @@ export default function Page() {
             </a>
             <p style={{ marginTop: '16px', fontSize: '13px', color: 'var(--text-muted)' }}>
               Zjistěte víc o{' '}
-              <Link href="/cs" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
-                automatizaci B2B prodeje a generování leadů
+              <Link href="/cs/b2b-lead-generation" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
+                generování B2B leadů
               </Link>
-              {' '}— celý proces jako služba.
+              {', '}
+              <Link href="/cs/linkedin-outreach" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
+                LinkedIn outreach
+              </Link>
+              {' a '}
+              <Link href="/cs/automatizovane-osloveni" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
+                automatizovaném oslovení
+              </Link>
+              {' — celý proces jako outsourcovaná služba.'}
             </p>
           </div>
 
