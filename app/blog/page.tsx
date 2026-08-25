@@ -102,6 +102,15 @@ const posts = [
     image: '/blog/externi-obchod.jpg',
   },
   {
+    href: '/blog/market-entry-czech-republic-hire-sales-vs-open-entity',
+    lang: 'EN',
+    title: 'Market Entry Czech Republic: Hire Local Sales or Open an Entity First?',
+    date: '25 August 2026',
+    description:
+      'Compare entity-first vs sales-first market entry into Czech Republic — cost, speed, risk. How to test demand before committing capital to infrastructure.',
+    image: '/blog/market-entry-czech.jpg',
+  },
+  {
     href: '/blog/hiring-local-czech-staff-can-be-expensive-mistake',
     lang: 'EN',
     title: 'Hiring Local Czech Staff Can Be an Expensive Mistake',
