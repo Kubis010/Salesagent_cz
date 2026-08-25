@@ -294,8 +294,14 @@ export default function CrmNaMiruPage() {
             </p>
           </article>
 
+          {/* aidevs note */}
+          <p className="text-gray-400 text-sm mt-10">
+            Vývoj CRM na míru probíhá v rámci projektu{' '}
+            <a href="https://aidevs.cz" target="_blank" rel="nofollow noopener noreferrer" className="text-purple-400 underline">aidevs.cz</a>.
+          </p>
+
           {/* CTA */}
-          <div className="mt-16 p-8 border border-purple-500/30 rounded-2xl bg-purple-900/10 text-center">
+          <div className="mt-10 p-8 border border-purple-500/30 rounded-2xl bg-purple-900/10 text-center">
             <h2 className="text-2xl font-bold mb-3">
               Chcete vidět Sales Robots CRM v akci?
             </h2>
