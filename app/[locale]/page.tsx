@@ -13,11 +13,11 @@ export async function generateMetadata({
   const t: Translations = getTranslations(locale as Locale)
   return {
     title: locale === 'cs'
-      ? 'AI automatizace B2B prodeje — outreach bez náboru obchodníka | SalesAgent.cz'
-      : 'AI Sales Automation — B2B Outreach as a Service | SalesAgent.cz',
+      ? 'Automatizace B2B prodeje — outreach bez náboru obchodníka | SalesAgent.cz'
+      : 'B2B Sales Automation — Outreach as a Service | SalesAgent.cz',
     description: locale === 'cs'
-      ? 'Generujeme B2B leady bez databází: AI vyhledá firmy podle vašeho ICP, prostuduje každý web a odešle personalizovaný cold e-mail i LinkedIn zprávu. Měsíčně stovky oslovených, bez náboru obchodníka.'
-      : 'B2B lead generation without databases: AI finds companies matching your ICP, reads each website and sends personalised cold emails and LinkedIn messages. Hundreds of contacts monthly — no hiring.',
+      ? 'Generujeme B2B leady bez databází: systém vyhledá firmy podle vašeho ICP, prostuduje každý web a odešle personalizovaný cold e-mail i LinkedIn zprávu. Měsíčně stovky oslovených, bez náboru obchodníka.'
+      : 'B2B lead generation without databases: our system finds companies matching your ICP, reads each website and sends personalised cold emails and LinkedIn messages. Hundreds of contacts monthly — no hiring.',
     keywords: locale === 'cs'
       ? ['generování B2B leadů', 'B2B lead generation', 'automatizovaný outreach', 'AI lead generation', 'cold email automatizace', 'LinkedIn outreach', 'automatizace prodeje', 'AI obchodní zástupce']
       : ['B2B lead generation', 'AI lead generation', 'automated outreach', 'cold email automation', 'LinkedIn outreach', 'sales automation', 'AI sales agent'],
@@ -661,7 +661,7 @@ export default async function HomePage({
           Blog
         </p>
         <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: 'clamp(24px, 3.5vw, 36px)', fontWeight: 700, letterSpacing: '-0.025em', marginBottom: '40px', textAlign: 'center' }}>
-          {locale === 'cs' ? 'Nejnovější články o B2B prodeji a AI' : 'Latest articles on B2B sales & AI'}
+          {locale === 'cs' ? 'Nejnovější články o B2B prodeji a automatizaci' : 'Latest articles on B2B sales & automation'}
         </h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
           {(locale === 'en' ? [
@@ -684,12 +684,12 @@ export default async function HomePage({
             {
               href: '/blog/ai-pro-obchod-a-obchodniky',
               title: 'AI pro obchodníky: kompletní systém automatizace',
-              desc: 'LinkedIn outreach, kvalifikace leadů, CRM na míru — jak nastavit kompletní AI obchodní systém.',
+              desc: 'LinkedIn outreach, kvalifikace leadů, CRM na míru — jak nastavit kompletní automatizovaný obchodní systém.',
             },
             {
               href: '/blog/ai-agenti-b2b-prospecting-kvalifikace-leadu',
               title: 'AI agenti pro B2B prospecting a kvalifikaci leadů',
-              desc: 'Jak AI agent najde firmy, přečte jejich web, vyhodnotí shodu s vaším ICP a osloví ty správné.',
+              desc: 'Jak automatizovaný systém najde firmy, přečte jejich web, vyhodnotí shodu s vaším ICP a osloví ty správné.',
             },
             {
               href: '/blog/follow-up-email-vzor',
@@ -728,7 +728,7 @@ export default async function HomePage({
                     name: 'Co je automatizace prodeje?',
                     acceptedAnswer: {
                       '@type': 'Answer',
-                      text: 'Automatizace prodeje je systém, který nahrazuje ruční prospekting a oslovení firem. AI vyhledá relevantní firmy, prostuduje jejich weby a rozešle personalizované zprávy — bez manuální práce obchodníka. Výsledkem jsou teplé leady připravené k jednání.',
+                      text: 'Automatizace prodeje je systém, který nahrazuje ruční prospekting a oslovení firem. Systém vyhledá relevantní firmy, prostuduje jejich weby a rozešle personalizované zprávy — bez manuální práce obchodníka. Výsledkem jsou teplé leady připravené k jednání.',
                     },
                   },
                   {
@@ -741,15 +741,15 @@ export default async function HomePage({
                   },
                   {
                     '@type': 'Question',
-                    name: 'Jak funguje AI outreach a sales automatizace?',
+                    name: 'Jak funguje automatizovaný outreach a sales automatizace?',
                     acceptedAnswer: {
                       '@type': 'Answer',
-                      text: 'AI prohledá veřejné zdroje (ARES, LinkedIn, weby), identifikuje firmy odpovídající vašemu ICP, načte obsah jejich webu a napíše unikátní personalizovaný e-mail i LinkedIn zprávu pro každou firmu zvlášť. Celý cyklus — prospekting, oslovení, follow-up — běží automaticky.',
+                      text: 'Systém prohledá veřejné zdroje (ARES, LinkedIn, weby), identifikuje firmy odpovídající vašemu ICP, načte obsah jejich webu a napíše unikátní personalizovaný e-mail i LinkedIn zprávu pro každou firmu zvlášť. Celý cyklus — prospekting, oslovení, follow-up — běží automaticky.',
                     },
                   },
                   {
                     '@type': 'Question',
-                    name: 'Kolik stojí generování B2B leadů pomocí AI?',
+                    name: 'Kolik stojí automatizované generování B2B leadů?',
                     acceptedAnswer: {
                       '@type': 'Answer',
                       text: 'SalesAgent.cz funguje na měsíčním paušálu — výrazně nižším než náklady na interního obchodníka (plat + odvody + nástroje). Cena zahrnuje vyhledávání firem, personalizaci oslovení i LinkedIn outreach. Konkrétní kalkulaci si domluvte na bezplatném hovoru.',
@@ -767,18 +767,18 @@ export default async function HomePage({
               {[
                 {
                   q: 'Co je automatizace prodeje?',
-                  a: 'Automatizace prodeje je systém, který nahrazuje ruční prospekting a oslovení firem. AI vyhledá relevantní firmy, prostuduje jejich weby a rozešle personalizované zprávy — bez manuální práce obchodníka. Výsledkem jsou teplé leady připravené k jednání.',
+                  a: 'Automatizace prodeje je systém, který nahrazuje ruční prospekting a oslovení firem. Systém vyhledá relevantní firmy, prostuduje jejich weby a rozešle personalizované zprávy — bez manuální práce obchodníka. Výsledkem jsou teplé leady připravené k jednání.',
                 },
                 {
                   q: 'Jak začít s automatizací B2B prodeje?',
                   a: 'Začněte definicí ideálního zákazníka (ICP): obor, velikost firmy, region, pozice rozhodovatele. Pak automatizujte vyhledávání firem a první oslovení — to bývá nejnákladnější na čas. SalesAgent.cz celý tento proces zajistí jako outsourcovanou službu.',
                 },
                 {
-                  q: 'Jak funguje AI outreach a sales automatizace?',
-                  a: 'AI prohledá veřejné zdroje (ARES, LinkedIn, weby), identifikuje firmy odpovídající vašemu ICP, načte obsah jejich webu a napíše unikátní personalizovaný e-mail i LinkedIn zprávu pro každou firmu zvlášť. Celý cyklus — prospekting, oslovení, follow-up — běží automaticky.',
+                  q: 'Jak funguje automatizovaný outreach a sales automatizace?',
+                  a: 'Systém prohledá veřejné zdroje (ARES, LinkedIn, weby), identifikuje firmy odpovídající vašemu ICP, načte obsah jejich webu a napíše unikátní personalizovaný e-mail i LinkedIn zprávu pro každou firmu zvlášť. Celý cyklus — prospekting, oslovení, follow-up — běží automaticky.',
                 },
                 {
-                  q: 'Kolik stojí generování B2B leadů pomocí AI?',
+                  q: 'Kolik stojí automatizované generování B2B leadů?',
                   a: 'SalesAgent.cz funguje na měsíčním paušálu — výrazně nižším než náklady na interního obchodníka. Cena zahrnuje vyhledávání firem, personalizaci oslovení i LinkedIn outreach. Konkrétní kalkulaci si domluvte na bezplatném hovoru.',
                 },
               ].map(({ q, a }) => (

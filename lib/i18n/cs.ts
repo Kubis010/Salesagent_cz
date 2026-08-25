@@ -8,10 +8,10 @@ export const cs = {
     bookCall: 'Domluvit hovor',
   },
   hero: {
-    badge: 'AI obchodní zástupce',
-    headline: 'Automatizace B2B prodeje\na AI outreach bez náboru obchodníka.',
+    badge: 'Automatizace obchodu',
+    headline: 'Automatizace B2B prodeje\nbez náboru obchodníka.',
     subheadline:
-      'Sales automatizace, generování B2B leadů a AI oslovení — bez náboru obchodníka. Vyhledáme relevantní firmy, prostudujeme jejich weby a oslovíme je personalizovaně přes e-mail i LinkedIn.',
+      'Sales automatizace, generování B2B leadů a automatizované oslovení — bez náboru obchodníka. Vyhledáme relevantní firmy, prostudujeme jejich weby a oslovíme je personalizovaně přes e-mail i LinkedIn.',
     cta: 'Domluvit nezávazný hovor',
     ctaSub: 'nebo se podívejte, jak to funguje',
     pipelineLabel: 'Systém běží naživo',
@@ -23,7 +23,7 @@ export const cs = {
     channelLabels: { search: 'Hledání', email: 'E-mail', linkedin: 'LinkedIn', reply: 'Odpověď' },
     steps: [
       { label: 'Firma nalezena', detail: 'Stavební firma Novák s.r.o.', channel: 'search', typing: false },
-      { label: 'Web prostudován', detail: 'Rozbor obsahu pomocí AI', channel: 'search', typing: false },
+      { label: 'Web prostudován', detail: 'Automatický rozbor obsahu', channel: 'search', typing: false },
       { label: 'E-mail napsán', detail: '', channel: 'email', typing: true },
       { label: 'E-mail odeslán', detail: 'Doručeno', channel: 'email', typing: false },
       { label: 'Kontakt nalezen na LinkedIn', detail: 'Jan Novák · jednatel', channel: 'linkedin', typing: false },
@@ -46,8 +46,8 @@ export const cs = {
       },
       {
         number: '02',
-        title: 'AI analýza každého webu',
-        body: 'Předtím, než kohokoliv oslovíme, naše umělá inteligence navštíví a prostuduje web dané firmy. Zjistí, čím se přesně zabývají. Získáme tak klíčový kontext pro naprosto personalizovanou zprávu, kterou by běžný obchoďák psal desítky minut.',
+        title: 'Analýza každého webu',
+        body: 'Předtím, než kohokoliv oslovíme, náš systém navštíví a prostuduje web dané firmy. Zjistí, čím se přesně zabývají. Získáme tak klíčový kontext pro naprosto personalizovanou zprávu, kterou by běžný obchoďák psal desítky minut.',
       },
       {
         number: '03',
@@ -105,11 +105,11 @@ export const cs = {
     automation: {
       badge: 'Vývoj na míru',
       title: 'Obchodní automatizace a RPA v prodeji',
-      body: 'Navrhneme a postavíme systémy přesně podle vašich procesů. Automatizujeme opakující se kroky v obchodu, propojujeme CRM s AI nástroji a stavíme přehledy, které vedení skutečně čte.',
+      body: 'Navrhneme a postavíme systémy přesně podle vašich procesů. Automatizujeme opakující se kroky v obchodu, propojujeme CRM s automatizačními nástroji a stavíme přehledy, které vedení skutečně čte.',
       examples: [
         { label: 'Propojení CRM s LinkedIn a e-mailovým nástrojem', icon: 'connect' },
         { label: 'Automatické obohacování kontaktů z veřejných zdrojů', icon: 'enrich' },
-        { label: 'AI kvalifikace příchozích poptávek a zařazení do CRM', icon: 'ai' },
+        { label: 'Automatická kvalifikace příchozích poptávek a zařazení do CRM', icon: 'ai' },
         { label: 'Follow-up sekvence s podmíněnou logikou', icon: 'flow' },
         { label: 'Obchodní dashboardy a reporty v reálném čase', icon: 'chart' },
         { label: 'Notifikace a eskalace podle aktivity příležitostí', icon: 'alert' },
@@ -215,7 +215,7 @@ export const cs = {
       },
       {
         q: 'Jak personalizujete cold emaily?',
-        a: 'AI prostuduje web každé firmy a na základě toho napíše unikátní zprávu. Není to šablona s doplněným jménem — text přímo reaguje na to, čím se firma zabývá. Díky tomu je míra odpovědí násobně vyšší než u hromadných rozesílek.',
+        a: 'Systém prostuduje web každé firmy a na základě toho napíše unikátní zprávu. Není to šablona s doplněným jménem — text přímo reaguje na to, čím se firma zabývá. Díky tomu je míra odpovědí násobně vyšší než u hromadných rozesílek.',
       },
       {
         q: 'Čím se liší od klasického email marketingu nebo Mailchimpu?',
@@ -231,7 +231,7 @@ export const cs = {
       },
       {
         q: 'Jaký je rozdíl oproti najímání obchodního zástupce?',
-        a: 'Obchodní zástupce stojí kolem 100 000 Kč měsíčně a zvládne oslovit cca 800 firem. AI obchodník udělá totéž od 5 900 Kč — 17× levněji, bez nemocí, dovolených a výpovědí. Navíc je aktivní do 48 hodin místo měsíců zaučování.',
+        a: 'Obchodní zástupce stojí kolem 100 000 Kč měsíčně a zvládne oslovit cca 800 firem. Automatizovaný systém udělá totéž od 5 900 Kč — 17× levněji, bez nemocí, dovolených a výpovědí. Navíc je aktivní do 48 hodin místo měsíců zaučování.',
       },
       {
         q: 'Co konkrétně dostanu?',

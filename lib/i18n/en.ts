@@ -10,10 +10,10 @@ export const en: Translations = {
     bookCall: 'Book a call',
   },
   hero: {
-    badge: 'AI sales agent',
-    headline: 'AI sales agent\nthat sells for you.',
+    badge: 'Sales automation',
+    headline: 'Automated outreach\nthat works for you.',
     subheadline:
-      'We automate B2B contact prospecting and delegate cold emailing to AI. The system reads each company website and sends personalised cold emails and LinkedIn messages. Only the ones who show real interest reach you.',
+      'We automate B2B prospecting and personalised outreach. The system reads each company website and sends personalised cold emails and LinkedIn messages. Only the ones who show real interest reach you.',
     cta: 'Book a no-strings call',
     ctaSub: 'or see how it works',
     pipelineLabel: 'System running live',
@@ -25,7 +25,7 @@ export const en: Translations = {
     channelLabels: { search: 'Search', email: 'Email', linkedin: 'LinkedIn', reply: 'Reply' },
     steps: [
       { label: 'Company found', detail: 'Novak Construction Ltd.', channel: 'search', typing: false },
-      { label: 'Website analysed', detail: 'AI content analysis', channel: 'search', typing: false },
+      { label: 'Website analysed', detail: 'Automated content analysis', channel: 'search', typing: false },
       { label: 'Email written', detail: '', channel: 'email', typing: true },
       { label: 'Email sent', detail: 'Delivered', channel: 'email', typing: false },
       { label: 'Contact found on LinkedIn', detail: 'Jan Novak, managing director', channel: 'linkedin', typing: false },
@@ -48,8 +48,8 @@ export const en: Translations = {
       },
       {
         number: '02',
-        title: 'AI analysis of every website',
-        body: 'Before we contact anyone, our AI visits and reads the company website to understand exactly what they do. This gives us the context for a fully personalised message — one a regular sales rep would spend tens of minutes writing.',
+        title: 'Analysis of every website',
+        body: 'Before we contact anyone, our system visits and reads the company website to understand exactly what they do. This gives us the context for a fully personalised message — one a regular sales rep would spend tens of minutes writing.',
       },
       {
         number: '03',
@@ -111,7 +111,7 @@ export const en: Translations = {
       examples: [
         { label: 'CRM connected to LinkedIn and email tooling', icon: 'connect' },
         { label: 'Automatic contact enrichment from public sources', icon: 'enrich' },
-        { label: 'AI qualification of inbound leads and CRM routing', icon: 'ai' },
+        { label: 'Automated qualification of inbound leads and CRM routing', icon: 'ai' },
         { label: 'Follow-up sequences with conditional logic', icon: 'flow' },
         { label: 'Sales dashboards and real-time reporting', icon: 'chart' },
         { label: 'Notifications and escalations based on opportunity activity', icon: 'alert' },
