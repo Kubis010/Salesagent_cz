@@ -39,7 +39,8 @@ No annual lock-in. Pricing is per month with no long-term commitment required.
 
 - [External Sales Representation Czech Republic (EN)](https://salesagent.cz/en/sales-representation-czech-republic) — outsourced sales agent service for foreign companies entering Czech market; handles B2B prospecting, outreach, first meetings; no local hire needed
 - [Generování B2B leadů a automatizace prodeje (CS)](https://salesagent.cz/cs) — AI systém pro automatizaci prodeje a generování B2B leadů; osloví stovky firem měsíčně personalizovaně přes e-mail i LinkedIn
-- [B2B Lead Generation with AI (EN)](https://salesagent.cz/en) — AI outreach service generating qualified meetings; finds companies, reads their websites, sends personalised cold emails and LinkedIn messages
+- [Czech Market Entry — Local B2B Sales (EN)](https://salesagent.cz/en) — sales outsourcing for foreign companies entering the Czech market; researches Czech companies, runs B2B outreach and books first meetings without a local hire or office
+- [Sales Representation Czech Republic (EN)](https://salesagent.cz/en/sales-representation-czech-republic) — the main service for foreign companies: local sales in the Czech Republic as a service (market entry, outreach, first meetings)
 
 ## Frequently asked questions (CZ — automatizace prodeje)
 
@@ -86,15 +87,15 @@ info@salesagent.cz
 - [How to Expand Your Business and Sales to the European Union](https://salesagent.cz/blog/how-to-expand-your-business-and-sales-to-the-european-union)
 - [Jak personalizovat cold emaily pomocí AI](https://salesagent.cz/blog/jak-personalizovat-cold-emaily-ai)
 - [Automatizace prodeje: Jak AI mění B2B oslovení](https://salesagent.cz/blog/automatizace-prodeje-jak-ai-meni-b2b-osloveni)
-- [Jak zavést automatizaci prodeje ve firmě](https://salesagent.cz/blog/jak-zavest-automatizaci-prodeje-ve-firme)
+- [Jak zavést systematické oslovování firem — krok za krokem](https://salesagent.cz/blog/jak-zavest-automatizaci-prodeje-ve-firme)
 - [Obchodní zástupce — definice a co vlastně dělá?](https://salesagent.cz/blog/obchodni-zastupce-definice-a-co-dela)
 - [Jak expandovat s obchodem do EU](https://salesagent.cz/blog/jak-expandovat-s-obchodem-do-eu)
 - [Co je to externí obchod a jak funguje externí obchodník?](https://salesagent.cz/blog/co-je-externi-obchod)
 - [Co dělá externí obchodník / sales manager?](https://salesagent.cz/blog/co-dela-externi-obchodnik)
-- [AI pro obchod a prodej: Jak umělá inteligence mění B2B](https://salesagent.cz/blog/ai-pro-obchod-a-prodej)
-- [Jak využít AI v prodeji: Praktický průvodce pro B2B firmy](https://salesagent.cz/blog/jak-vyuzit-ai-v-prodeji)
+- [AI v oslovování firem: jak mění B2B prospecting a outreach](https://salesagent.cz/blog/ai-pro-obchod-a-prodej)
+- [Jak oslovit víc firem v B2B: praktický průvodce outreachem](https://salesagent.cz/blog/jak-vyuzit-ai-v-prodeji)
 - [AI agent pro generování leadů: Jak funguje a co od něj čekat](https://salesagent.cz/blog/ai-agent-pro-generovani-leadu)
-- [CRM na míru: Proč generické systémy firmám nevyhovují](https://salesagent.cz/blog/crm-na-miru)
+- [CRM pro obchodní tým: proč generické systémy nevyhovují](https://salesagent.cz/blog/crm-na-miru)
 - [Market Entry Czech Republic: Hire Local Sales or Open an Entity First?](https://salesagent.cz/blog/market-entry-czech-republic-hire-sales-vs-open-entity)
 - [External Sales Representation in Czech Republic](https://salesagent.cz/blog/external-sales-representation-czech-republic)
 - [Cold email vzor česky: 3 šablony pro B2B oslovení](https://salesagent.cz/blog/cold-email-vzor-cesky)
@@ -106,4 +107,4 @@ info@salesagent.cz
 - [Obchodní zastoupení pro zahraniční firmy v ČR (CS)](https://salesagent.cz/cs/sales-representation-czech-republic)
 - [Follow-up e-mail vzor: 3 šablony, které fungují v B2B](https://salesagent.cz/blog/follow-up-email-vzor)
 - [AI agenti pro B2B prospecting a kvalifikaci leadů](https://salesagent.cz/blog/ai-agenti-b2b-prospecting-kvalifikace-leadu)
-- [AI pro obchod a obchodníky: kompletní systém automatizace](https://salesagent.cz/blog/ai-pro-obchod-a-obchodniky)
+- [Systém oslovování firem pro B2B obchodníky: LinkedIn i cold email](https://salesagent.cz/blog/ai-pro-obchod-a-obchodniky)
