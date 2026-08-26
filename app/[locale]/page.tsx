@@ -13,13 +13,13 @@ export async function generateMetadata({
   const t: Translations = getTranslations(locale as Locale)
   return {
     title: locale === 'cs'
-      ? 'Automatizace B2B prodeje — outreach bez náboru obchodníka | SalesAgent.cz'
+      ? 'Externí B2B obchod — oslovování a generování leadů za vás | SalesAgent.cz'
       : 'Enter the Czech Market — Local B2B Sales & Company Research | SalesAgent.cz',
     description: locale === 'cs'
-      ? 'Generujeme B2B leady bez databází: systém vyhledá firmy podle vašeho ICP, prostuduje každý web a odešle personalizovaný cold e-mail i LinkedIn zprávu. Měsíčně stovky oslovených, bez náboru obchodníka.'
+      ? 'Externí obchodní oddělení jako služba: vyhledáme relevantní firmy, oslovíme je personalizovaně přes e-mail i LinkedIn a domluvíme schůzky. Dostanete leady, ne další nástroj — bez náboru obchodníka.'
       : 'Your local sales partner for entering the Czech market. We research Czech companies, run B2B outreach and book first meetings — no local rep to hire, no office to open. Sales outsourcing for foreign companies.',
     keywords: locale === 'cs'
-      ? ['generování B2B leadů', 'B2B lead generation', 'automatizovaný outreach', 'AI lead generation', 'cold email automatizace', 'LinkedIn outreach', 'automatizace prodeje', 'AI obchodní zástupce']
+      ? ['externí obchod', 'externí obchodní zástupce', 'oslovování firem', 'generování B2B leadů', 'obchodní zastoupení', 'B2B outreach', 'outsourcing obchodu', 'schůzky s klienty']
       : ['Czech market entry', 'sales outsourcing', 'outsourced sales', 'b2b sales agency', 'enter the Czech market', 'local sales representative Czech Republic', 'B2B lead generation Czech Republic', 'Czech company research'],
     alternates: {
       canonical: `https://salesagent.cz/${locale}`,
@@ -725,31 +725,31 @@ export default async function HomePage({
                 mainEntity: [
                   {
                     '@type': 'Question',
-                    name: 'Co je automatizace prodeje?',
+                    name: 'Co je externí obchod?',
                     acceptedAnswer: {
                       '@type': 'Answer',
-                      text: 'Automatizace prodeje je systém, který nahrazuje ruční prospekting a oslovení firem. Systém vyhledá relevantní firmy, prostuduje jejich weby a rozešle personalizované zprávy — bez manuální práce obchodníka. Výsledkem jsou teplé leady připravené k jednání.',
+                      text: 'Externí obchod je model, kdy vaše obchodní oslovování převezme externí tým místo interního obchodníka. Vyhledáme relevantní firmy, prostudujeme jejich weby a oslovíme je personalizovaně přes e-mail i LinkedIn. Vy dostanete teplé leady a schůzky, ne další nástroj k obsluze.',
                     },
                   },
                   {
                     '@type': 'Question',
-                    name: 'Jak začít s automatizací B2B prodeje?',
+                    name: 'Jak začít s externím B2B obchodem?',
                     acceptedAnswer: {
                       '@type': 'Answer',
-                      text: 'Začněte definicí ideálního zákazníka (ICP): obor, velikost firmy, region, pozice rozhodovatele. Pak automatizujte vyhledávání firem a první oslovení — to bývá nejnákladnější na čas. SalesAgent.cz celý tento proces zajistí jako outsourcovanou službu.',
+                      text: 'Začněte definicí ideálního zákazníka (ICP): obor, velikost firmy, region, pozice rozhodovatele. Vyhledávání firem a první oslovení pak převezmeme za vás — SalesAgent.cz celý proces zajistí jako externí obchodní oddělení.',
                     },
                   },
                   {
                     '@type': 'Question',
-                    name: 'Jak funguje automatizovaný outreach a sales automatizace?',
+                    name: 'Jak funguje oslovování firem na míru?',
                     acceptedAnswer: {
                       '@type': 'Answer',
-                      text: 'Systém prohledá veřejné zdroje (ARES, LinkedIn, weby), identifikuje firmy odpovídající vašemu ICP, načte obsah jejich webu a napíše unikátní personalizovaný e-mail i LinkedIn zprávu pro každou firmu zvlášť. Celý cyklus — prospekting, oslovení, follow-up — běží automaticky.',
+                      text: 'Prohledáme veřejné zdroje (ARES, LinkedIn, weby), identifikujeme firmy odpovídající vašemu ICP, přečteme obsah jejich webu a napíšeme unikátní personalizovaný e-mail i LinkedIn zprávu pro každou firmu zvlášť. Celý cyklus — vyhledání, oslovení, follow-up — vedeme za vás.',
                     },
                   },
                   {
                     '@type': 'Question',
-                    name: 'Kolik stojí automatizované generování B2B leadů?',
+                    name: 'Kolik stojí externí obchodní oslovování?',
                     acceptedAnswer: {
                       '@type': 'Answer',
                       text: 'SalesAgent.cz funguje na měsíčním paušálu — výrazně nižším než náklady na interního obchodníka (plat + odvody + nástroje). Cena zahrnuje vyhledávání firem, personalizaci oslovení i LinkedIn outreach. Konkrétní kalkulaci si domluvte na bezplatném hovoru.',
@@ -761,24 +761,24 @@ export default async function HomePage({
           />
           <section style={{ padding: '80px 24px', maxWidth: '760px', margin: '0 auto' }}>
             <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: 'clamp(22px, 3vw, 32px)', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '40px', textAlign: 'center' }}>
-              Časté otázky o automatizaci prodeje
+              Časté otázky o externím obchodu a oslovování
             </h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
               {[
                 {
-                  q: 'Co je automatizace prodeje?',
-                  a: 'Automatizace prodeje je systém, který nahrazuje ruční prospekting a oslovení firem. Systém vyhledá relevantní firmy, prostuduje jejich weby a rozešle personalizované zprávy — bez manuální práce obchodníka. Výsledkem jsou teplé leady připravené k jednání.',
+                  q: 'Co je externí obchod?',
+                  a: 'Externí obchod je model, kdy vaše obchodní oslovování převezme externí tým místo interního obchodníka. Vyhledáme relevantní firmy, prostudujeme jejich weby a oslovíme je personalizovaně přes e-mail i LinkedIn. Vy dostanete teplé leady a schůzky, ne další nástroj k obsluze.',
                 },
                 {
-                  q: 'Jak začít s automatizací B2B prodeje?',
-                  a: 'Začněte definicí ideálního zákazníka (ICP): obor, velikost firmy, region, pozice rozhodovatele. Pak automatizujte vyhledávání firem a první oslovení — to bývá nejnákladnější na čas. SalesAgent.cz celý tento proces zajistí jako outsourcovanou službu.',
+                  q: 'Jak začít s externím B2B obchodem?',
+                  a: 'Začněte definicí ideálního zákazníka (ICP): obor, velikost firmy, region, pozice rozhodovatele. Vyhledávání firem a první oslovení pak převezmeme za vás — SalesAgent.cz celý proces zajistí jako externí obchodní oddělení.',
                 },
                 {
-                  q: 'Jak funguje automatizovaný outreach a sales automatizace?',
-                  a: 'Systém prohledá veřejné zdroje (ARES, LinkedIn, weby), identifikuje firmy odpovídající vašemu ICP, načte obsah jejich webu a napíše unikátní personalizovaný e-mail i LinkedIn zprávu pro každou firmu zvlášť. Celý cyklus — prospekting, oslovení, follow-up — běží automaticky.',
+                  q: 'Jak funguje oslovování firem na míru?',
+                  a: 'Prohledáme veřejné zdroje (ARES, LinkedIn, weby), identifikujeme firmy odpovídající vašemu ICP, přečteme obsah jejich webu a napíšeme unikátní personalizovaný e-mail i LinkedIn zprávu pro každou firmu zvlášť. Celý cyklus — vyhledání, oslovení, follow-up — vedeme za vás.',
                 },
                 {
-                  q: 'Kolik stojí automatizované generování B2B leadů?',
+                  q: 'Kolik stojí externí obchodní oslovování?',
                   a: 'SalesAgent.cz funguje na měsíčním paušálu — výrazně nižším než náklady na interního obchodníka. Cena zahrnuje vyhledávání firem, personalizaci oslovení i LinkedIn outreach. Konkrétní kalkulaci si domluvte na bezplatném hovoru.',
                 },
               ].map(({ q, a }) => (

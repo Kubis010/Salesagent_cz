@@ -8,10 +8,10 @@ export const cs = {
     bookCall: 'Domluvit hovor',
   },
   hero: {
-    badge: 'Automatizace obchodu',
-    headline: 'Automatizace B2B prodeje\nbez náboru obchodníka.',
+    badge: 'Externí B2B obchod',
+    headline: 'Externí B2B obchod:\noslovování a leady bez náboru obchodníka.',
     subheadline:
-      'Sales automatizace, generování B2B leadů a automatizované oslovení — bez náboru obchodníka. Vyhledáme relevantní firmy, prostudujeme jejich weby a oslovíme je personalizovaně přes e-mail i LinkedIn.',
+      'Převezmeme vaše obchodní oslovování jako externí obchodní oddělení — vyhledáme relevantní firmy, prostudujeme jejich weby a oslovíme je personalizovaně přes e-mail i LinkedIn. Vy dostanete leady a schůzky, ne další nástroj k obsluze.',
     cta: 'Domluvit nezávazný hovor',
     ctaSub: 'nebo se podívejte, jak to funguje',
     pipelineLabel: 'Systém běží naživo',
@@ -99,9 +99,9 @@ export const cs = {
     note: 'Konkrétní reference a doporučení rádi předáme na vyžádání.',
   },
   services: {
-    title: 'Automatizace B2B obchodu na míru',
+    title: 'Obchodní služby na míru',
     subtitle:
-      'Stavíme obchodní infrastrukturu — od prvního kontaktu po uzavřený obchod. Na míru, bez šablon.',
+      'Převezmeme vaše obchodní oslovování — od prvního kontaktu po uzavřený obchod. Na míru, bez šablon.',
     automation: {
       badge: 'Vývoj na míru',
       title: 'Obchodní automatizace a RPA v prodeji',
