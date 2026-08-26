@@ -107,6 +107,15 @@ export default async function AutomatizovaneOsloveniPage({
               ? 'Výsledkem je dvojitý dotek: email do schránky a zpráva na LinkedIn. Firma vás vidí na dvou místech, aniž byste museli kliknout jediné tlačítko.'
               : 'The result is a double touch: email in the inbox and a message on LinkedIn. The company sees you in two places without you having to click a single button.'}
           </p>
+          <p style={{ fontSize: '16px', color: 'var(--text-muted)', lineHeight: '1.65', maxWidth: '620px', marginTop: '14px' }}>
+            {cs
+              ? 'Oslovování je jádrem našeho '
+              : 'Outreach is the core of our '}
+            <a href={`/${locale}/sales-representation-czech-republic`} style={{ color: 'var(--accent)' }}>
+              {cs ? 'obchodního zastoupení a outsourcingu obchodu v ČR' : 'sales outsourcing for the Czech market'}
+            </a>
+            {cs ? ' — od oslovení po domluvené schůzky.' : ' — local sales in the Czech Republic, from first touch to booked meetings.'}
+          </p>
         </div>
 
         {/* Key differentiator — no templates */}

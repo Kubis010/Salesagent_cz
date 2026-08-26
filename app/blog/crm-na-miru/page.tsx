@@ -3,29 +3,24 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'CRM na míru: Proč generické systémy nestačí | SalesAgent.cz',
+  title: 'CRM pro obchodní tým: proč generické systémy nestačí | SalesAgent.cz',
   description:
-    'Salesforce a HubSpot jsou drahé a přeplácané pro většinu B2B firem. CRM na míru řeší přesně to, co potřebujete — bez zbytečných funkcí a nákladů.',
+    'Salesforce a HubSpot jsou drahé a přeplácané pro obchodní týmy, které hlavně oslovují firmy. Proč generické CRM brzdí outbound a co má CRM pro obchod reálně umět.',
   keywords: [
-    'CRM na míru',
-    'vlastní CRM systém',
-    'CRM pro B2B firmy',
-    'CRM pro malé firmy',
-    'levné CRM',
-    'alternativa Salesforce',
-    'alternativa HubSpot',
-    'CRM systém na zakázku',
-    'jednoduché CRM',
     'CRM pro obchodní tým',
+    'CRM pro B2B obchod',
+    'CRM pro outbound a outreach',
+    'CRM pro obchodníky',
+    'CRM pro oslovování firem',
   ],
   alternates: {
     canonical: 'https://salesagent.cz/blog/crm-na-miru',
     languages: { cs: 'https://salesagent.cz/blog/crm-na-miru', 'x-default': 'https://salesagent.cz/blog/crm-na-miru' },
   },
   openGraph: {
-    title: 'CRM na míru: Proč generické systémy firmám nevyhovují',
+    title: 'CRM pro obchodní tým: proč generické systémy nevyhovují',
     description:
-      'Salesforce a HubSpot jsou drahé a přeplácané pro většinu B2B firem. CRM na míru řeší přesně to, co potřebujete — bez zbytečných funkcí a zbytečných nákladů.',
+      'Salesforce a HubSpot jsou drahé a přeplácané pro obchodní týmy, které hlavně oslovují firmy. Proč generické CRM brzdí outbound a co má CRM pro obchod reálně umět.',
     url: 'https://salesagent.cz/blog/crm-na-miru',
     siteName: 'SalesAgent.cz',
     type: 'article',
@@ -45,9 +40,9 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
-  headline: 'CRM na míru: Proč generické systémy firmám nevyhovují',
+  headline: 'CRM pro obchodní tým: proč generické systémy nevyhovují',
   description:
-    'Salesforce a HubSpot jsou drahé a přeplácané pro většinu B2B firem. CRM na míru řeší přesně to, co potřebujete — bez zbytečných funkcí a zbytečných nákladů.',
+    'Salesforce a HubSpot jsou drahé a přeplácané pro obchodní týmy, které hlavně oslovují firmy. Proč generické CRM brzdí outbound a co má CRM pro obchod reálně umět.',
   image: 'https://salesagent.cz/blog/crm-na-miru.png',
   datePublished: '2026-07-16',
   dateModified: '2026-07-16',
@@ -127,7 +122,7 @@ export default function CrmNaMiruPage() {
               CRM systémy · 16. července 2026
             </p>
             <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-              CRM na míru: Proč generické systémy většině firem nevyhovují
+              CRM pro obchodní tým: proč generické systémy nevyhovují
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
               Salesforce, HubSpot, Pipedrive — znáte je. Jsou populární, mají tisíce funkcí a stojí

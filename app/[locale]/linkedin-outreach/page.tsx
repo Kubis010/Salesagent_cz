@@ -121,6 +121,15 @@ export default async function LinkedInOutreachPage({
               ? 'Rozhodovatelé kontrolují LinkedIn víc než email. Míra přijetí spojení se pohybuje mezi 20–30 %, zatímco emailové open rate klesají. Problém je, že ruční LinkedIn outreach je časově náročný a neškálovatelný.'
               : 'Decision-makers check LinkedIn more than email. Connection acceptance rates run 20–30%, while email open rates keep declining. The problem is that manual LinkedIn outreach is time-consuming and unscalable.'}
           </p>
+          <p style={{ fontSize: '16px', color: 'var(--text-muted)', lineHeight: '1.65', maxWidth: '620px', marginBottom: '16px' }}>
+            {cs
+              ? 'LinkedIn outreach je součástí našeho '
+              : 'LinkedIn outreach is part of our '}
+            <a href={`/${locale}/sales-representation-czech-republic`} style={{ color: 'var(--accent)' }}>
+              {cs ? 'obchodního zastoupení a outsourcingu obchodu v ČR' : 'sales outsourcing for the Czech market'}
+            </a>
+            {cs ? ' — kompletní oslovování firem jako služba.' : ' — local sales in the Czech Republic as a service, no rep to hire.'}
+          </p>
           <p style={{ fontSize: '17px', color: 'var(--text-muted)', lineHeight: '1.65', maxWidth: '620px' }}>
             {cs
               ? 'SalesAgent automatizuje celou sekvenci — od nalezení rozhodovatele přes navštívení profilu až po personalizovanou zprávu a follow-up. Vy nic neklikáte, vy jen odpovídáte na příchozí zájem.'

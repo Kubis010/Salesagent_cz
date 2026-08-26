@@ -683,8 +683,8 @@ export default async function HomePage({
           ] : [
             {
               href: '/blog/ai-pro-obchod-a-obchodniky',
-              title: 'AI pro obchodníky: kompletní systém automatizace',
-              desc: 'LinkedIn outreach, kvalifikace leadů, CRM na míru — jak nastavit kompletní automatizovaný obchodní systém.',
+              title: 'Systém oslovování firem pro B2B obchodníky',
+              desc: 'LinkedIn outreach, kvalifikace leadů, personalizované oslovení — jak propojit celý outbound do jednoho procesu.',
             },
             {
               href: '/blog/ai-agenti-b2b-prospecting-kvalifikace-leadu',

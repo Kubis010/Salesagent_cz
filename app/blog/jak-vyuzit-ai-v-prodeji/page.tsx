@@ -3,26 +3,25 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Jak využít AI v prodeji: Průvodce pro B2B | SalesAgent.cz',
+  title: 'Jak oslovit víc firem v B2B: praktický průvodce outreachem | SalesAgent.cz',
   description:
-    'Jak využít umělou inteligenci v prodeji konkrétně a bez velkých investic. Průvodce pro B2B firmy — od automatizace prospektingu po personalizované oslovení.',
+    'Jak systematicky oslovovat víc firem v B2B — od vyhledávání firem přes prospecting po personalizované oslovení. Praktický průvodce, ne obecná automatizace.',
   keywords: [
-    'jak využít AI v prodeji',
-    'umělá inteligence v prodeji',
-    'AI v obchodě návod',
-    'AI prodejní automatizace',
-    'využití AI B2B',
-    'umělá inteligence obchod',
-    'AI cold e-mail',
+    'jak oslovit firmy',
+    'oslovování firem',
+    'B2B outreach',
+    'B2B prospecting',
+    'cold email B2B',
+    'vyhledávání firem',
   ],
   alternates: {
     canonical: 'https://salesagent.cz/blog/jak-vyuzit-ai-v-prodeji',
     languages: { cs: 'https://salesagent.cz/blog/jak-vyuzit-ai-v-prodeji', 'x-default': 'https://salesagent.cz/blog/jak-vyuzit-ai-v-prodeji' },
   },
   openGraph: {
-    title: 'Jak využít AI v prodeji: Praktický průvodce pro B2B firmy',
+    title: 'Jak oslovit víc firem v B2B: praktický průvodce outreachem',
     description:
-      'Jak využít umělou inteligenci v prodeji konkrétně a bez velkých investic. Průvodce pro B2B firmy.',
+      'Jak systematicky oslovovat víc firem v B2B — praktický průvodce od prospectingu po personalizované oslovení.',
     url: 'https://salesagent.cz/blog/jak-vyuzit-ai-v-prodeji',
     siteName: 'SalesAgent.cz',
     type: 'article',
@@ -35,8 +34,8 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
-  headline: 'Jak využít AI v prodeji: Praktický průvodce pro B2B firmy',
-  description: 'Jak využít umělou inteligenci v prodeji konkrétně a bez velkých investic.',
+  headline: 'Jak oslovit víc firem v B2B: praktický průvodce outreachem',
+  description: 'Jak systematicky oslovovat víc firem v B2B — od prospectingu po personalizované oslovení.',
   image: 'https://salesagent.cz/blog/ai-v-prodeji.jpg',
   datePublished: '2026-08-05',
   dateModified: '2026-08-05',
@@ -89,7 +88,7 @@ export default function JakVyuzitAiVProdejiPage() {
           <header className="mb-12">
             <p className="text-sm text-purple-400 uppercase tracking-widest mb-4">Průvodce · 5. srpna 2026</p>
             <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-              Jak využít AI v prodeji: Praktický průvodce pro B2B firmy
+              Jak oslovit víc firem v B2B: praktický průvodce outreachem
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
               Spousta firem ví, že by měly využívat AI v prodeji, ale neví, kde začít. Tenhle článek není o teorii — je o tom, co konkrétně AI v B2B obchodě dělá, jak to nastavit a co od toho reálně čekat.

@@ -2,15 +2,15 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Jak začít s automatizací B2B prodeje — krok za krokem | SalesAgent.cz',
+  title: 'Jak zavést systematické oslovování firem — krok za krokem | SalesAgent.cz',
   description:
-    'Jak začít s automatizací B2B prodeje: správné pořadí kroků, co automatizovat jako první a jak vypadá fungující automatizovaný outbound od lead sourcingu po domluvení schůzky.',
+    'Jak ve firmě rozjet systematické B2B oslovování: správné pořadí kroků, čím začít a jak vypadá fungující outbound od hledání firem přes personalizované oslovení po domluvenou schůzku.',
   keywords: [
-    'automatizace prodeje',
-    'automatizace B2B prodeje',
-    'jak automatizovat prodej',
-    'sales automation',
-    'obchodní automatizace',
+    'oslovování firem',
+    'B2B outreach',
+    'jak oslovit firmy',
+    'outbound prodej',
+    'cold email a LinkedIn',
   ],
   alternates: {
     canonical: 'https://salesagent.cz/blog/jak-zavest-automatizaci-prodeje-ve-firme',
@@ -20,9 +20,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Jak zavést automatizaci prodeje ve firmě — krok za krokem',
+    title: 'Jak zavést systematické oslovování firem — krok za krokem',
     description:
-      'Co reálně automatizovat, kde začít a jak vypadá fungující automatizovaný B2B obchodní proces od prvního kontaktu po schůzku.',
+      'Čím reálně začít, kde nasadit outbound a jak vypadá fungující B2B oslovování od prvního kontaktu po schůzku.',
     url: 'https://salesagent.cz/blog/jak-zavest-automatizaci-prodeje-ve-firme',
     siteName: 'SalesAgent.cz',
     type: 'article',
@@ -36,8 +36,8 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
-  headline: 'Jak zavést automatizaci prodeje ve firmě — krok za krokem',
-  description: 'Automatizace prodeje není jen CRM nebo newsletter. Co reálně automatizovat, kde začít a jak vypadá fungující B2B obchodní proces od prvního kontaktu po schůzku.',
+  headline: 'Jak zavést systematické oslovování firem — krok za krokem',
+  description: 'Systematické oslovování firem není jen newsletter. Čím reálně začít, kde nasadit outbound a jak vypadá fungující B2B oslovování od prvního kontaktu po schůzku.',
   image: 'https://salesagent.cz/blog/automatizace-prodeje.jpg',
   datePublished: '2026-08-10',
   dateModified: '2026-08-10',
@@ -108,7 +108,7 @@ export default function Page() {
           lineHeight: 1.2,
           marginBottom: '16px',
         }}>
-          Jak zavést automatizaci prodeje ve firmě — krok za krokem
+          Jak zavést systematické oslovování firem — krok za krokem
         </h1>
         <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '48px' }}>
           10. dubna 2025 · Petr Kubíček

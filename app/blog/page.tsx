@@ -32,10 +32,10 @@ const posts = [
   {
     href: '/blog/jak-zavest-automatizaci-prodeje-ve-firme',
     lang: 'CS',
-    title: 'Jak zavést automatizaci prodeje ve firmě — krok za krokem',
+    title: 'Jak zavést systematické oslovování firem — krok za krokem',
     date: '10. srpna 2026',
     description:
-      'Automatizace prodeje není jen CRM nebo newsletter. Co reálně automatizovat, kde začít a jak vypadá fungující automatizovaný B2B obchodní proces od prvního kontaktu po schůzku.',
+      'Systematické oslovování firem není jen newsletter. Čím reálně začít, kde nasadit outbound a jak vypadá fungující B2B oslovování od prvního kontaktu po schůzku.',
     image: '/blog/automatizace-prodeje.jpg',
   },
   {
@@ -50,10 +50,10 @@ const posts = [
   {
     href: '/blog/ai-pro-obchod-a-obchodniky',
     lang: 'CS',
-    title: 'AI pro obchod a obchodníky: kompletní systém automatizace',
+    title: 'Systém oslovování firem pro B2B obchodníky: LinkedIn i cold email',
     date: '4. srpna 2026',
     description:
-      'Jak nastavit kompletní AI systém pro B2B obchodníky: automatizace LinkedIn outreach, kvalifikace leadů, CRM na míru jako srdce AI procesů a personalizované oslovení.',
+      'Jak postavit systematické oslovování firem pro B2B obchodníky: LinkedIn outreach, kvalifikace leadů a personalizované oslovení propojené do jednoho outbound procesu.',
     image: '/blog/ai-pro-obchodniky.jpg',
   },
   {
@@ -158,26 +158,26 @@ const posts = [
   {
     href: '/blog/ai-pro-obchod-a-prodej',
     lang: 'CS',
-    title: 'AI pro obchod a prodej: Jak umělá inteligence mění B2B',
+    title: 'AI v oslovování firem: jak mění B2B prospecting a outreach',
     date: '26. července 2026',
-    description: 'AI pro obchod a prodej se stává konkurenční výhodou. Jak konkrétně AI mění B2B prospekting, cold outreach a správu leadů.',
+    description: 'Jak AI mění B2B prospecting a cold outreach — od vyhledávání firem po personalizované oslovení. Zaměřeno na oslovování firem, ne obecnou automatizaci.',
     image: '/blog/ai-pro-obchod.jpg',
   },
   {
     href: '/blog/jak-vyuzit-ai-v-prodeji',
     lang: 'CS',
-    title: 'Jak využít AI v prodeji: Praktický průvodce pro B2B firmy',
+    title: 'Jak oslovit víc firem v B2B: praktický průvodce outreachem',
     date: '5. srpna 2026',
-    description: 'Jak využít umělou inteligenci v prodeji konkrétně a bez velkých investic — od automatizace prospektingu po personalizované oslovení.',
+    description: 'Jak systematicky oslovovat víc firem v B2B — od vyhledávání firem přes prospecting po personalizované oslovení.',
     image: '/blog/ai-v-prodeji.jpg',
   },
   {
     href: '/blog/crm-na-miru',
     lang: 'CS',
-    title: 'CRM na míru: Proč generické systémy firmám nevyhovují',
+    title: 'CRM pro obchodní tým: proč generické systémy nevyhovují',
     date: '16. července 2026',
     description:
-      'Salesforce a HubSpot jsou přeplácané pro většinu B2B firem. CRM na míru řeší přesně to, co potřebujete — bez zbytečných funkcí.',
+      'Salesforce a HubSpot jsou přeplácané pro obchodní týmy, které hlavně oslovují firmy. Proč generické CRM brzdí outbound a co má CRM pro obchod reálně umět.',
     image: '/blog/crm-na-miru.png',
   },
   {

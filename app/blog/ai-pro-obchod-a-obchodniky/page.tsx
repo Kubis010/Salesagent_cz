@@ -3,26 +3,24 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI pro obchod a obchodníky — kompletní systém automatizace | SalesAgent.cz',
+  title: 'Systém oslovování firem pro B2B obchodníky: LinkedIn i cold email | SalesAgent.cz',
   description:
-    'Jak nastavit kompletní AI systém pro B2B obchodníky: automatizace LinkedIn outreach, kvalifikace leadů, CRM na míru jako srdce AI procesů a personalizované oslovení.',
+    'Jak postavit systematické oslovování firem pro B2B obchodníky: LinkedIn outreach, kvalifikace leadů a personalizované oslovení propojené do jednoho outbound procesu.',
   keywords: [
-    'AI pro obchodníky',
-    'AI automatizace obchodu',
-    'LinkedIn automatizace AI',
-    'AI lead generation',
-    'CRM na míru AI',
-    'AI obchodní systém',
-    'B2B automatizace prodeje',
-    'AI kvalifikace leadů',
+    'oslovování firem',
+    'B2B outreach',
+    'LinkedIn outreach',
+    'cold email B2B',
+    'systematické oslovování',
+    'outbound pro obchodníky',
   ],
   alternates: {
     canonical: 'https://salesagent.cz/blog/ai-pro-obchod-a-obchodniky',
     languages: { cs: 'https://salesagent.cz/blog/ai-pro-obchod-a-obchodniky', 'x-default': 'https://salesagent.cz/blog/ai-pro-obchod-a-obchodniky' },
   },
   openGraph: {
-    title: 'AI pro obchod a obchodníky — kompletní systém automatizace',
-    description: 'Jak nastavit kompletní AI systém pro B2B obchodníky: LinkedIn, kvalifikace leadů, CRM na míru a personalizované oslovení.',
+    title: 'Systém oslovování firem pro B2B obchodníky',
+    description: 'Jak postavit systematické oslovování firem pro B2B obchodníky: LinkedIn outreach, kvalifikace leadů a personalizované oslovení v jednom outbound procesu.',
     url: 'https://salesagent.cz/blog/ai-pro-obchod-a-obchodniky',
     siteName: 'SalesAgent.cz',
     type: 'article',
@@ -35,8 +33,8 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
-  headline: 'AI pro obchod a obchodníky — kompletní systém automatizace',
-  description: 'Jak nastavit kompletní AI systém pro B2B obchodníky: LinkedIn, kvalifikace leadů, CRM na míru a personalizované oslovení.',
+  headline: 'Systém oslovování firem pro B2B obchodníky',
+  description: 'Jak postavit systematické oslovování firem pro B2B obchodníky: LinkedIn outreach, kvalifikace leadů a personalizované oslovení v jednom outbound procesu.',
   image: 'https://salesagent.cz/blog/ai-pro-obchodniky.jpg',
   datePublished: '2026-08-04',
   dateModified: '2026-08-04',
@@ -136,9 +134,9 @@ export default function AiProObchodPage() {
           <Link href="/blog" className="text-sm text-gray-400 hover:text-white transition-colors mb-10 inline-block">← Zpět na blog</Link>
 
           <header className="mb-12">
-            <p className="text-sm text-violet-400 uppercase tracking-widest mb-4">AI automatizace · 4. srpna 2026</p>
+            <p className="text-sm text-violet-400 uppercase tracking-widest mb-4">B2B outreach · 4. srpna 2026</p>
             <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-              AI pro obchod a obchodníky: kompletní systém automatizace
+              Systém oslovování firem pro B2B obchodníky
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
               Jednotlivé AI nástroje nic nevyřeší. Skutečný efekt přichází, když je celý obchodní proces propojený — od <Link href="/cs/b2b-lead-generation" style={{ color: '#FF6B4A', textDecoration: 'underline' }}>vyhledávání B2B leadů</Link> přes kvalifikaci a <Link href="/cs/linkedin-outreach" style={{ color: '#FF6B4A', textDecoration: 'underline' }}>LinkedIn outreach</Link> až po CRM, které celý systém řídí. Takhle to nastavujeme.

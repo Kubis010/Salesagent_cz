@@ -3,26 +3,25 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI pro obchod: Jak mění B2B umělá inteligence | SalesAgent.cz',
+  title: 'AI v oslovování firem: jak mění B2B prospecting a outreach | SalesAgent.cz',
   description:
-    'AI pro obchod a prodej přestává být buzzword — stává se konkurenční výhodou. Jak konkrétně umělá inteligence mění B2B prospekting a cold outreach.',
+    'Jak AI mění B2B prospecting a cold outreach — od vyhledávání firem po personalizované oslovení. Praktický pohled na oslovování firem, ne obecná automatizace.',
   keywords: [
-    'AI pro obchod',
-    'AI pro prodej',
-    'umělá inteligence v obchodu',
-    'AI obchodní nástroje',
-    'AI B2B prodej',
-    'automatizace obchodu AI',
-    'AI sales nástroje',
+    'B2B prospecting',
+    'oslovování firem',
+    'cold outreach',
+    'AI v outreachu',
+    'B2B outreach',
+    'vyhledávání firem',
   ],
   alternates: {
     canonical: 'https://salesagent.cz/blog/ai-pro-obchod-a-prodej',
     languages: { cs: 'https://salesagent.cz/blog/ai-pro-obchod-a-prodej', 'x-default': 'https://salesagent.cz/blog/ai-pro-obchod-a-prodej' },
   },
   openGraph: {
-    title: 'AI pro obchod a prodej: Jak umělá inteligence mění B2B',
+    title: 'AI v oslovování firem: jak mění B2B prospecting a outreach',
     description:
-      'AI pro obchod a prodej přestává být buzzword — stává se konkurenční výhodou. Jak konkrétně AI mění B2B prospekting, cold outreach a správu leadů.',
+      'Jak AI mění B2B prospecting, cold outreach a správu leadů — prakticky, se zaměřením na oslovování firem.',
     url: 'https://salesagent.cz/blog/ai-pro-obchod-a-prodej',
     siteName: 'SalesAgent.cz',
     type: 'article',
@@ -35,8 +34,8 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
-  headline: 'AI pro obchod a prodej: Jak umělá inteligence mění B2B',
-  description: 'AI pro obchod a prodej přestává být buzzword — stává se konkurenční výhodou.',
+  headline: 'AI v oslovování firem: jak mění B2B prospecting a outreach',
+  description: 'Jak AI mění B2B prospecting a cold outreach — se zaměřením na oslovování firem.',
   image: 'https://salesagent.cz/blog/ai-pro-obchod.jpg',
   datePublished: '2026-07-26',
   dateModified: '2026-07-26',
@@ -87,9 +86,9 @@ export default function AiProObchodPage() {
           <Link href="/blog" className="text-sm text-gray-400 hover:text-white transition-colors mb-10 inline-block">← Zpět na blog</Link>
 
           <header className="mb-12">
-            <p className="text-sm text-purple-400 uppercase tracking-widest mb-4">AI v obchodu · 26. července 2026</p>
+            <p className="text-sm text-purple-400 uppercase tracking-widest mb-4">B2B outreach · 26. července 2026</p>
             <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-              AI pro obchod a prodej: Jak umělá inteligence mění B2B
+              AI v oslovování firem: jak mění B2B prospecting a outreach
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
               AI pro obchod a prodej přestala být tématem konferencí a stala se každodenní realitou. Firmy, které ji využívají, oslovují víc firem, personalizují rychleji a uzavírají obchody s nižšími náklady. Co přesně AI v prodeji dělá — a kde skutečně přidává hodnotu?
