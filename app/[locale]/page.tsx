@@ -14,19 +14,19 @@ export async function generateMetadata({
   return {
     title: locale === 'cs'
       ? 'Automatizace B2B prodeje — outreach bez náboru obchodníka | SalesAgent.cz'
-      : 'B2B Sales Automation — Outreach as a Service | SalesAgent.cz',
+      : 'Enter the Czech Market — Local B2B Sales & Company Research | SalesAgent.cz',
     description: locale === 'cs'
       ? 'Generujeme B2B leady bez databází: systém vyhledá firmy podle vašeho ICP, prostuduje každý web a odešle personalizovaný cold e-mail i LinkedIn zprávu. Měsíčně stovky oslovených, bez náboru obchodníka.'
-      : 'B2B lead generation without databases: our system finds companies matching your ICP, reads each website and sends personalised cold emails and LinkedIn messages. Hundreds of contacts monthly — no hiring.',
+      : 'Your local sales partner for entering the Czech market. We research Czech companies, run B2B outreach and book first meetings — no local rep to hire, no office to open. Sales outsourcing for foreign companies.',
     keywords: locale === 'cs'
       ? ['generování B2B leadů', 'B2B lead generation', 'automatizovaný outreach', 'AI lead generation', 'cold email automatizace', 'LinkedIn outreach', 'automatizace prodeje', 'AI obchodní zástupce']
-      : ['B2B lead generation', 'AI lead generation', 'automated outreach', 'cold email automation', 'LinkedIn outreach', 'sales automation', 'AI sales agent'],
+      : ['Czech market entry', 'sales outsourcing', 'outsourced sales', 'b2b sales agency', 'enter the Czech market', 'local sales representative Czech Republic', 'B2B lead generation Czech Republic', 'Czech company research'],
     alternates: {
       canonical: `https://salesagent.cz/${locale}`,
       languages: {
         cs: 'https://salesagent.cz/cs',
         en: 'https://salesagent.cz/en',
-        'x-default': 'https://salesagent.cz/cs',
+        'x-default': 'https://salesagent.cz/en',
       },
     },
   }

@@ -13,10 +13,10 @@ export async function generateMetadata({
   return {
     title: cs
       ? 'B2B Lead Generation pomocí AI — generování leadů bez databází | SalesAgent.cz'
-      : 'B2B Lead Generation with AI — No Databases Needed | SalesAgent.cz',
+      : 'B2B Lead Generation for Your Czech Market Entry | SalesAgent.cz',
     description: cs
       ? 'Generujeme B2B leady přímo z webu: AI prohledá Google Maps, prostuduje web každé firmy a vybere jen ty, co sedí vašemu ICP. Žádná databáze, žádný obchodník na rešerše.'
-      : 'We generate B2B leads directly from the web: AI searches Google Maps, reads each company website and selects only those matching your ICP. No database, no SDR doing research.',
+      : 'Entering the Czech market? We generate B2B leads directly from the web — researching Czech companies and selecting only those matching your ICP. Sales outsourcing, no local SDR to hire.',
     keywords: cs
       ? ['generování leadů', 'B2B lead generation', 'generování B2B leadů', 'AI lead generation', 'vyhledávání firem', 'B2B prospecting']
       : ['B2B lead generation', 'AI lead generation', 'lead generation without database', 'automated prospecting'],
@@ -25,7 +25,7 @@ export async function generateMetadata({
       languages: {
         cs: 'https://salesagent.cz/cs/b2b-lead-generation',
         en: 'https://salesagent.cz/en/b2b-lead-generation',
-        'x-default': 'https://salesagent.cz/cs/b2b-lead-generation',
+        'x-default': 'https://salesagent.cz/en/b2b-lead-generation',
       },
     },
     openGraph: {
@@ -96,7 +96,7 @@ export default async function B2BLeadGenerationPage({
               lineHeight: 1.1,
             }}
           >
-            {cs ? 'Generování B2B leadů bez databází' : 'B2B Lead Generation Without Databases'}
+            {cs ? 'Generování B2B leadů bez databází' : 'B2B Lead Generation for Your Czech Market Entry'}
           </h1>
           <p style={{ fontSize: '18px', color: 'var(--text-muted)', lineHeight: '1.65', maxWidth: '620px', marginBottom: '16px' }}>
             {cs

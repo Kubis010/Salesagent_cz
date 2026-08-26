@@ -13,16 +13,16 @@ export async function generateMetadata({
   return {
     title: cs
       ? 'Automatizované oslovování firem — cold email a LinkedIn na autopilota | SalesAgent.cz'
-      : 'Automated B2B Outreach — Cold Email and LinkedIn on Autopilot | SalesAgent.cz',
+      : 'B2B Outreach to Czech Companies — Email and LinkedIn | SalesAgent.cz',
     description: cs
       ? 'Automatizujeme celý outbound proces: AI napíše personalizovaný cold email pro každou firmu zvlášť, odešle ho a zároveň kontaktuje rozhodovatele na LinkedIn. Bez šablon, bez databází.'
-      : 'We automate the full outbound process: AI writes a personalised cold email for each company, sends it, and simultaneously contacts decision-makers on LinkedIn. No templates, no databases.',
+      : 'B2B outreach to Czech companies as part of your market entry: a personalised cold email for each company, sent alongside LinkedIn contact with decision-makers. Sales outsourcing, no local rep to hire.',
     alternates: {
       canonical: `https://salesagent.cz/${locale}/automatizovane-osloveni`,
       languages: {
         cs: 'https://salesagent.cz/cs/automatizovane-osloveni',
         en: 'https://salesagent.cz/en/automatizovane-osloveni',
-        'x-default': 'https://salesagent.cz/cs/automatizovane-osloveni',
+        'x-default': 'https://salesagent.cz/en/automatizovane-osloveni',
       },
     },
     openGraph: {
@@ -95,7 +95,7 @@ export default async function AutomatizovaneOsloveniPage({
           >
             {cs
               ? 'Automatizované oslovování — email i LinkedIn zároveň'
-              : 'Automated Outreach — Email and LinkedIn Simultaneously'}
+              : 'B2B Outreach to Czech Companies — Email and LinkedIn'}
           </h1>
           <p style={{ fontSize: '18px', color: 'var(--text-muted)', lineHeight: '1.65', maxWidth: '620px', marginBottom: '16px' }}>
             {cs

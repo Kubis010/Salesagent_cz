@@ -66,7 +66,7 @@ export async function generateMetadata({
       languages: {
         'cs': 'https://salesagent.cz/cs',
         'en': 'https://salesagent.cz/en',
-        'x-default': 'https://salesagent.cz/cs',
+        'x-default': 'https://salesagent.cz/en',
       },
     },
     twitter: {

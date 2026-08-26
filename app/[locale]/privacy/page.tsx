@@ -18,7 +18,7 @@ export async function generateMetadata({
       languages: {
         cs: 'https://salesagent.cz/cs/privacy',
         en: 'https://salesagent.cz/en/privacy',
-        'x-default': 'https://salesagent.cz/cs/privacy',
+        'x-default': 'https://salesagent.cz/en/privacy',
       },
     },
     robots: { index: false },

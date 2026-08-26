@@ -13,10 +13,10 @@ export async function generateMetadata({
   return {
     title: cs
       ? 'LinkedIn Outreach Automatizace — oslovujte B2B kontakty na LinkedIn | SalesAgent.cz'
-      : 'LinkedIn Outreach Automation — Reach B2B Decision-Makers at Scale | SalesAgent.cz',
+      : 'LinkedIn Outreach to Czech Decision-Makers | SalesAgent.cz',
     description: cs
       ? 'Automatizujeme LinkedIn outreach: AI najde rozhodovatele, navštíví profil, odešle žádost o spojení s osobní zprávou a follow-up sekvenci. Bez ručního klikání, bez rizika banů.'
-      : 'Automated LinkedIn outreach: AI finds decision-makers, visits profiles, sends connection requests with personal notes and a follow-up sequence. No manual clicking, no ban risk.',
+      : 'Reach Czech B2B decision-makers on LinkedIn as part of your market entry. We find the right people, send personal connection requests and follow up — sales outsourcing, no local rep to hire.',
     keywords: cs
       ? ['LinkedIn outreach', 'LinkedIn automatizace', 'LinkedIn B2B', 'oslovování na LinkedIn', 'LinkedIn prospecting']
       : ['LinkedIn outreach automation', 'LinkedIn B2B outreach', 'automated LinkedIn prospecting'],
@@ -25,7 +25,7 @@ export async function generateMetadata({
       languages: {
         cs: 'https://salesagent.cz/cs/linkedin-outreach',
         en: 'https://salesagent.cz/en/linkedin-outreach',
-        'x-default': 'https://salesagent.cz/cs/linkedin-outreach',
+        'x-default': 'https://salesagent.cz/en/linkedin-outreach',
       },
     },
     openGraph: {
@@ -114,7 +114,7 @@ export default async function LinkedInOutreachPage({
           >
             {cs
               ? 'LinkedIn Outreach — automaticky, bezpečně, personalizovaně'
-              : 'LinkedIn Outreach — Automated, Safe, Personalised'}
+              : 'LinkedIn Outreach to Czech Decision-Makers'}
           </h1>
           <p style={{ fontSize: '18px', color: 'var(--text-muted)', lineHeight: '1.65', maxWidth: '620px', marginBottom: '16px' }}>
             {cs

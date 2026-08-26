@@ -19,7 +19,7 @@ export async function generateMetadata({
       languages: {
         cs: 'https://salesagent.cz/cs/contact',
         en: 'https://salesagent.cz/en/contact',
-        'x-default': 'https://salesagent.cz/cs/contact',
+        'x-default': 'https://salesagent.cz/en/contact',
       },
     },
     openGraph: {

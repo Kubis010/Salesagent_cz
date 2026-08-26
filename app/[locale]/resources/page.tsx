@@ -15,7 +15,7 @@ export async function generateMetadata({
       languages: {
         cs: 'https://salesagent.cz/cs/resources',
         en: 'https://salesagent.cz/en/resources',
-        'x-default': 'https://salesagent.cz/cs/resources',
+        'x-default': 'https://salesagent.cz/en/resources',
       },
     },
   }

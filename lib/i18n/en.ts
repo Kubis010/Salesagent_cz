@@ -10,10 +10,10 @@ export const en: Translations = {
     bookCall: 'Book a call',
   },
   hero: {
-    badge: 'Sales automation',
-    headline: 'Automated outreach\nthat works for you.',
+    badge: 'Czech market entry',
+    headline: 'Your local sales partner\nfor entering the Czech market.',
     subheadline:
-      'We automate B2B prospecting and personalised outreach. The system reads each company website and sends personalised cold emails and LinkedIn messages. Only the ones who show real interest reach you.',
+      'We research Czech companies, run B2B outreach, and book first meetings — so you enter the Czech market without hiring a local rep or opening an office.',
     cta: 'Book a no-strings call',
     ctaSub: 'or see how it works',
     pipelineLabel: 'System running live',

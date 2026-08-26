@@ -74,10 +74,14 @@ export default async function CzechRegisterPage({
             paddingBottom: '32px',
           }}
         >
-          A complete guide to searching Czech companies using ARES (the Administrative Register of
-          Economic Entities) and the Commercial Register (Obchodní rejstřík). Whether you need to
-          verify a company&apos;s ICO number, find contact details, or get an official extract, this
-          guide walks you through every step.
+          Researching the Czech market? Look up any Czech company below using ARES (the Administrative
+          Register of Economic Entities) and the Commercial Register (Obchodní rejstřík) — and when
+          you&apos;re ready to sell here, we handle the{' '}
+          <Link href={`${base}/sales-representation-czech-republic`} style={{ color: 'var(--accent)' }}>
+            local sales in the Czech Republic
+          </Link>{' '}
+          for you. Whether you need to verify a company&apos;s ICO number, find contact details, or
+          get an official extract, this guide walks you through every step.
         </p>
 
         {/* TOC */}
@@ -101,6 +105,7 @@ export default async function CzechRegisterPage({
               ['#ico-number', 'Understanding the ICO number'],
               ['#extracts', 'Getting an official extract'],
               ['#contact', 'Find company contacts'],
+              ['#incorporation', 'Setting up in the Czech Republic?'],
               ['#cta', 'Using this for B2B prospecting'],
             ].map(([href, label]) => (
               <li key={href} style={{ fontSize: '14px' }}>
@@ -234,6 +239,23 @@ export default async function CzechRegisterPage({
           </ul>
         </ContentSection>
 
+        <ContentSection id="incorporation" title="Setting up in the Czech Republic? Your next step is local sales">
+          <p>
+            Many foreign companies looking at the register are weighing incorporation in the Czech
+            Republic — opening an s.r.o., registering for VAT, and building a local presence. But
+            company formation is only the setup. What actually generates revenue is reaching Czech
+            customers.
+          </p>
+          <p>
+            You don&apos;t need a registered entity or a local office to start selling here. We run{' '}
+            <Link href={`${base}/sales-representation-czech-republic`} style={{ color: 'var(--accent)' }}>
+              sales outsourcing for market entry in the Czech Republic
+            </Link>{' '}
+            — researching Czech prospects, running B2B outreach and booking first meetings — so you
+            can test real demand before committing capital to infrastructure.
+          </p>
+        </ContentSection>
+
         {/* CTA section */}
         <div
           id="cta"
@@ -271,7 +293,7 @@ export default async function CzechRegisterPage({
           <p style={{ marginTop: '12px', fontSize: '13px', color: 'var(--text-muted)' }}>
             Or{' '}
             <Link href={base} style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
-              see how the AI SDR system works
+              see how our Czech market entry service works
             </Link>
             .
           </p>
