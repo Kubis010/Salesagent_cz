@@ -102,6 +102,15 @@ const posts = [
     image: '/blog/externi-obchod.jpg',
   },
   {
+    href: '/blog/european-sales-expansion',
+    lang: 'EN',
+    title: 'European Sales Expansion: How We Run It For You',
+    date: '26 August 2026',
+    description:
+      'Expand B2B sales into European markets without opening offices or hiring local reps. We research companies, run outreach and book first meetings — done for you, market by market.',
+    image: '/blog/european-sales-expansion.jpg',
+  },
+  {
     href: '/blog/market-entry-czech-republic-hire-sales-vs-open-entity',
     lang: 'EN',
     title: 'Market Entry Czech Republic: Hire Local Sales or Open an Entity First?',
