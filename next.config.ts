@@ -6,6 +6,11 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: '/',
+        destination: '/cs',
+        permanent: true,
+      },
+      {
         source: '/llms',
         destination: '/llms.txt',
         permanent: true,

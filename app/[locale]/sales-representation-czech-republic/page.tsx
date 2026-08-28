@@ -427,8 +427,8 @@ export default async function SalesRepCzPage({
             </p>
           </section>
 
-          {/* Blog link */}
-          <div style={{ marginTop: '60px', textAlign: 'center' }}>
+          {/* Blog links */}
+          <div style={{ marginTop: '60px', textAlign: 'center', display: 'flex', flexDirection: 'column', gap: '12px' }}>
             <Link
               href={isCs ? '/blog/co-je-externi-obchod' : '/blog/external-sales-representation-czech-republic'}
               style={{ fontSize: '14px', color: 'var(--text-muted)', textDecoration: 'none' }}
@@ -437,6 +437,14 @@ export default async function SalesRepCzPage({
                 ? '→ Přečtěte si, co dělá externí obchodník a kdy se vyplatí'
                 : '→ Read our story: what external sales representation in Czech Republic actually looks like'}
             </Link>
+            {!isCs && (
+              <Link
+                href="/blog/european-sales-expansion"
+                style={{ fontSize: '14px', color: 'var(--text-muted)', textDecoration: 'none' }}
+              >
+                → European sales expansion: how we run it for you across CZ, SK, PL and DACH
+              </Link>
+            )}
           </div>
 
         </div>
