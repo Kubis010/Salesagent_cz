@@ -35,46 +35,46 @@ export const en: Translations = {
     ],
   },
   howItWorks: {
-    title: 'How it works in practice',
+    title: 'How your Czech sales representation works',
     subtitle:
-      'You are not hiring software. You are hiring a complete B2B process that finds companies, reads their websites and generates meetings on autopilot.',
+      'You get a dedicated sales effort in the Czech market — without hiring, without an office. We do the prospecting, outreach and follow-up. You show up to meetings.',
     steps: [
       {
         number: '01',
-        title: 'Precise targeting, no databases',
-        body: 'Together we define your ideal customer (industry, size, region). Our system then actively searches registries and the web to find exact matches. No stale bought databases — fresh, relevant contacts in real time.',
+        title: 'We define your Czech target segment',
+        body: 'Together we build your ideal Czech customer profile — industry, company size, region, decision-maker role. We source companies directly from the Czech business register (ARES) and the web. No bought databases, no stale lists.',
       },
       {
         number: '02',
-        title: 'Analysis of every website',
-        body: 'Before we contact anyone, our system visits and reads the company website to understand exactly what they do. This gives us the context for a fully personalised message — one a regular sales rep would spend tens of minutes writing.',
+        title: 'We read every company\'s website',
+        body: 'Before contacting anyone, we visit and read each company\'s website to understand what they actually do. This is what makes the outreach feel personal — we know their business before we reach out.',
       },
       {
         number: '03',
-        title: 'Hyper-personalised outreach',
-        body: 'For each decision-maker we generate a unique email. Not a template with a name dropped in — the message directly references what we found on their website. It feels natural, avoids spam filters and generates far more replies.',
+        title: 'We write a personal message for each company',
+        body: 'Every email is written specifically for that company. Not a template with a name dropped in — a message that references what we found on their website. Czech decision-makers can tell the difference, and they respond to it.',
       },
       {
         number: '04',
-        title: 'LinkedIn and email on autopilot',
-        body: 'The system sends emails and in parallel finds contacts on LinkedIn, sends a connection request with a personal note, and follows up politely after a few days. You only step in when a company replies and wants a meeting.',
+        title: 'We run email and LinkedIn — you get the meetings',
+        body: 'We send the email, find the decision-maker on LinkedIn, send a connection request with a personal note, and follow up. When a company is ready to talk, the meeting lands directly in your calendar.',
       },
     ],
   },
   forWhom: {
-    title: 'Who it fits',
+    title: 'Who this is for',
     items: [
       {
-        title: 'Companies without their own rep',
-        body: 'You need to reach new companies regularly but hiring a full-time salesperson does not make sense yet. This starts the outreach without recruiting.',
+        title: 'International companies entering Czech Republic',
+        body: 'You want to sell in the Czech market but do not want to hire locally or open an entity yet. We act as your local sales presence — reaching Czech companies on your behalf from day one.',
       },
       {
-        title: 'Companies entering the Czech and Slovak market',
-        body: 'We write in the language and context of the local market. No agency, no months of ramp-up.',
+        title: 'Companies testing Czech demand before committing',
+        body: 'Before you hire a Czech rep or set up a local entity, validate that the market wants what you sell. We run a 30–90 day market test with real outreach — you get data, not assumptions.',
       },
       {
-        title: 'Teams that want time to close',
-        body: 'Your reps should focus on meetings and deals. Finding companies and the first touch — leave that to us.',
+        title: 'Teams that want meetings, not another tool',
+        body: 'You do not need more software to manage. You need a qualified first meeting in your calendar with a Czech decision-maker. That is what we deliver.',
       },
     ],
   },
@@ -147,9 +147,9 @@ export const en: Translations = {
     suffix: 'does — on-site chat and widgets that turn a visit into an enquiry.',
   },
   cta: {
-    title: 'Lets get specific.',
+    title: 'Let\'s talk about your Czech market entry.',
     subtitle:
-      'On a 30-minute call we will go through your market and show what the outreach would look like in your field.',
+      'On a 30-minute call we will go through your product, your target Czech segment, and show you exactly what the first outreach wave would look like.',
     primary: 'Book a call',
     secondary: 'Send an email',
   },
