@@ -10,10 +10,10 @@ export async function generateMetadata({
   const { locale } = await params
   const cs = locale === 'cs'
   return {
-    title: cs ? 'Ceník — AI obchodní zástupce | Automatizace prodeje' : 'Pricing — AI Sales Agent | Sales Automation',
+    title: cs ? 'Ceník — AI obchodní zástupce | Automatizace prodeje' : 'Sales Representation Pricing — Czech Market Entry | SalesAgent.cz',
     description: cs
       ? 'Ceník AI obchodního zástupce — automatický cold mailing a vyhledávání B2B kontaktů. Start, Grow od 5 900 Kč, Scale. Nástroj na automatizaci prodeje bez ročních závazků.'
-      : 'AI sales agent pricing — automated cold email and B2B contact prospecting. Start, Grow from €239, Scale custom. Sales automation tool with no annual lock-in.',
+      : 'Outsourced B2B sales representation in Czech Republic. Part-time from €2,800/month, full-time from €5,000/month. Start within one week — no hiring, no office needed.',
     alternates: {
       canonical: `https://salesagent.cz/${locale}/pricing`,
       languages: {
@@ -27,17 +27,17 @@ export async function generateMetadata({
       locale: cs ? 'cs_CZ' : 'en_US',
       url: `https://salesagent.cz/${locale}/pricing`,
       siteName: 'SalesAgent.cz',
-      title: cs ? 'Ceník — AI obchodní zástupce | SalesAgent.cz' : 'Pricing — AI Sales Agent | SalesAgent.cz',
+      title: cs ? 'Ceník — AI obchodní zástupce | SalesAgent.cz' : 'Sales Representation Pricing — Czech Market Entry | SalesAgent.cz',
       description: cs
         ? 'Automatizace B2B prodeje od 5 900 Kč / měsíc. AI cold mailing a vyhledávání kontaktů.'
-        : 'B2B sales automation from €239 / month. AI cold email and contact prospecting.',
+        : 'Outsourced B2B sales representation in Czech Republic. Part-time from €2,800/month, full-time from €5,000/month.',
     },
     twitter: {
       card: 'summary_large_image',
-      title: cs ? 'Ceník — AI obchodní zástupce | SalesAgent.cz' : 'Pricing — AI Sales Agent | SalesAgent.cz',
+      title: cs ? 'Ceník — AI obchodní zástupce | SalesAgent.cz' : 'Sales Representation Pricing — Czech Market Entry | SalesAgent.cz',
       description: cs
         ? 'Automatizace B2B prodeje od 5 900 Kč / měsíc.'
-        : 'B2B sales automation from €239 / month.',
+        : 'Outsourced B2B sales from €2,800/month. Start in 1 week, no hiring needed.',
     },
   }
 }
