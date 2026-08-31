@@ -445,6 +445,22 @@ export default async function SalesRepCzPage({
                 → European sales expansion: how we run it for you across CZ, SK, PL and DACH
               </Link>
             )}
+            {!isCs && (
+              <Link
+                href="/en/guides/expand-b2b-sales-to-czech-republic"
+                style={{ fontSize: '14px', color: 'var(--text-muted)', textDecoration: 'none' }}
+              >
+                → Guide: How to expand your B2B sales to Czech Republic (2026)
+              </Link>
+            )}
+            {!isCs && (
+              <Link
+                href="/en/guides/b2b-lead-generation-in-the-czech-republic"
+                style={{ fontSize: '14px', color: 'var(--text-muted)', textDecoration: 'none' }}
+              >
+                → Guide: B2B lead generation in Czech Republic — how it actually works
+              </Link>
+            )}
           </div>
 
         </div>

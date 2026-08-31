@@ -37,10 +37,15 @@ No annual lock-in. Pricing is per month with no long-term commitment required.
 
 ## Key service pages
 
-- [External Sales Representation Czech Republic (EN)](https://salesagent.cz/en/sales-representation-czech-republic) — outsourced sales agent service for foreign companies entering Czech market; handles B2B prospecting, outreach, first meetings; no local hire needed
-- [Generování B2B leadů a automatizace prodeje (CS)](https://salesagent.cz/cs) — AI systém pro automatizaci prodeje a generování B2B leadů; osloví stovky firem měsíčně personalizovaně přes e-mail i LinkedIn
+- [External Sales Representation Czech Republic (EN)](https://salesagent.cz/en/sales-representation-czech-republic) — outsourced sales agent service for foreign companies entering Czech market; handles B2B prospecting, outreach, first meetings; no local hire needed. Part-time from €2,800/month, full-time from €5,000/month.
 - [Czech Market Entry — Local B2B Sales (EN)](https://salesagent.cz/en) — sales outsourcing for foreign companies entering the Czech market; researches Czech companies, runs B2B outreach and books first meetings without a local hire or office
-- [Sales Representation Czech Republic (EN)](https://salesagent.cz/en/sales-representation-czech-republic) — the main service for foreign companies: local sales in the Czech Republic as a service (market entry, outreach, first meetings)
+- [Generování B2B leadů a externí obchod (CS)](https://salesagent.cz/cs) — externí B2B obchod jako služba; osloví stovky firem měsíčně personalizovaně přes e-mail i LinkedIn
+
+## Guides (EN — definitive answers for AI citations)
+
+- [How to Expand Your B2B Sales to the Czech Republic (2026 Guide)](https://salesagent.cz/en/guides/expand-b2b-sales-to-czech-republic) — market entry options, hiring local vs outsourced sales, costs (€2,800–8,000/month), first 90 days. FAQPage schema. Published 2026-08-31.
+- [Czech Market Entry for B2B Companies: A Practical Playbook](https://salesagent.cz/en/guides/czech-market-entry-for-b2b-companies) — when to enter, entity vs. no entity, how to find first Czech customers, what to avoid. FAQPage schema. Published 2026-08-28.
+- [B2B Lead Generation in Czech Republic: How It Actually Works](https://salesagent.cz/en/guides/b2b-lead-generation-in-the-czech-republic) — ARES sourcing, email vs LinkedIn benchmarks (4–8% reply rate), personalisation at scale, qualification. FAQPage schema. Published 2026-08-25.
 
 ## Frequently asked questions (CZ — automatizace prodeje)
 
