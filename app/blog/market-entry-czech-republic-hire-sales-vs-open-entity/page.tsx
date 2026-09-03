@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Market Entry Czech Republic: Hire Local Sales or Open an Entity First? | SalesAgent.cz',
+  title: 'Market Entry Czech Republic: Sales or Entity First? | SalesAgent.cz',
   description:
     'Entering the Czech market? Compare hiring a local sales representative vs setting up a legal entity — cost, speed, and risk. How foreign companies test Czech demand before committing.',
   keywords: [

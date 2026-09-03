@@ -12,7 +12,7 @@ export async function generateMetadata({
   const cs = locale === 'cs'
   return {
     title: cs
-      ? 'LinkedIn Outreach Automatizace — oslovujte B2B kontakty na LinkedIn | SalesAgent.cz'
+      ? 'LinkedIn Outreach Automatizace — B2B kontakty | SalesAgent.cz'
       : 'LinkedIn Outreach to Czech Decision-Makers | SalesAgent.cz',
     description: cs
       ? 'Automatizujeme LinkedIn outreach: AI najde rozhodovatele, navštíví profil, odešle žádost o spojení s osobní zprávou a follow-up sekvenci. Bez ručního klikání, bez rizika banů.'

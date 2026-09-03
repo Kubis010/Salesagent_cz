@@ -13,8 +13,8 @@ export async function generateMetadata({
   const t: Translations = getTranslations(locale as Locale)
   return {
     title: locale === 'cs'
-      ? 'Externí B2B obchod — oslovování a generování leadů za vás | SalesAgent.cz'
-      : 'Enter the Czech Market — Local B2B Sales & Company Research | SalesAgent.cz',
+      ? 'Externí B2B obchod — oslovování a schůzky za vás | SalesAgent.cz'
+      : 'Enter the Czech Market — Local B2B Sales | SalesAgent.cz',
     description: locale === 'cs'
       ? 'Externí obchodní oddělení jako služba: vyhledáme relevantní firmy, oslovíme je personalizovaně přes e-mail i LinkedIn a domluvíme schůzky. Dostanete leady, ne další nástroj — bez náboru obchodníka.'
       : 'Your local sales partner for entering the Czech market. We research Czech companies, run B2B outreach and book first meetings — no local rep to hire, no office to open. Sales outsourcing for foreign companies.',

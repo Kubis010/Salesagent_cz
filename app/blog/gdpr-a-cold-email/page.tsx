@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Je legální B2B cold e-mail a databáze firem v EU? GDPR a zákon 480/2004 | SalesAgent.cz',
+  title: 'GDPR a B2B cold email: co říká zákon 480/2004 | SalesAgent.cz',
   description:
     'Ano, B2B cold e-mail na firemní adresy je v ČR legální — ale za přesně daných podmínek. Přečtěte si, co říká zákon č. 480/2004 Sb. a GDPR o databázích firem a cold outreachi.',
   keywords: [

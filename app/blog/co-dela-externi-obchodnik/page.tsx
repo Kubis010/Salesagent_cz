@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Co dělá externí obchodník a kolik stojí? Srovnání s interním obchodníkem | SalesAgent.cz',
+  title: 'Co dělá externí obchodník? Srovnání s interním | SalesAgent.cz',
   description:
     'Co přesně dělá externí obchodník nebo sales manager, jaké nástroje používá, jak by měl fungovat a jaké výsledky od něj reálně čekat.',
   keywords: [

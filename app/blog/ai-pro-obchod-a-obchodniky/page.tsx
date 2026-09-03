@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Systém oslovování firem pro B2B obchodníky: LinkedIn i cold email | SalesAgent.cz',
+  title: 'Systém oslovování firem: LinkedIn i cold email | SalesAgent.cz',
   description:
     'Jak postavit systematické oslovování firem pro B2B obchodníky: LinkedIn outreach, kvalifikace leadů a personalizované oslovení propojené do jednoho outbound procesu.',
   keywords: [

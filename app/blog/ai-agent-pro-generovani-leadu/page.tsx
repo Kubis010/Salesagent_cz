@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Generování B2B leadů v roce 2025: co funguje a co je mrtvé | SalesAgent.cz',
+  title: 'Generování B2B leadů: co funguje a co je mrtvé | SalesAgent.cz',
   description:
     'Studené databáze, LinkedIn spam a hromadné emaily přestávají fungovat. Co generuje B2B leady v 2025 reálně? AI prospecting bez databází, hyper-personalizace a vícekanálový outreach.',
   keywords: [

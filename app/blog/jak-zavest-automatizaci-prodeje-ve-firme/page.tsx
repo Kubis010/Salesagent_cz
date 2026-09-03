@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Jak zavést systematické oslovování firem — krok za krokem | SalesAgent.cz',
+  title: 'Jak zavést oslovování firem krok za krokem | SalesAgent.cz',
   description:
     'Jak ve firmě rozjet systematické B2B oslovování: správné pořadí kroků, čím začít a jak vypadá fungující outbound od hledání firem přes personalizované oslovení po domluvenou schůzku.',
   keywords: [

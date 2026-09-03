@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-title: 'Sales Agent in Czech Republic — External Sales Representation | SalesAgent.cz',
+title: 'Sales Agent in Czech Republic — External Sales | SalesAgent.cz',
   description:
     "A sales agent finds prospects, builds relationships and closes deals on behalf of a company — often on commission. Clear definition, day-to-day activities, required skills, and how the role differs from a sales rep.",  keywords: [
     'sales agent definition',

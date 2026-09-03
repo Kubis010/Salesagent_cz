@@ -12,7 +12,7 @@ export async function generateMetadata({
   const cs = locale === 'cs'
   return {
     title: cs
-      ? 'Automatizované oslovování firem — cold email a LinkedIn na autopilota | SalesAgent.cz'
+      ? 'Automatizované oslovování — cold email i LinkedIn | SalesAgent.cz'
       : 'B2B Outreach to Czech Companies — Email and LinkedIn | SalesAgent.cz',
     description: cs
       ? 'Automatizujeme celý outbound proces: AI napíše personalizovaný cold email pro každou firmu zvlášť, odešle ho a zároveň kontaktuje rozhodovatele na LinkedIn. Bez šablon, bez databází.'

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Automatizace prodeje: jak AI zvládne 300 oslovení měsíčně místo obchodníka | SalesAgent.cz',
+  title: 'Automatizace prodeje: 300 oslovení měsíčně | SalesAgent.cz',
   description:
     'AI automatizace B2B obchodu nahrazuje rutinní prospekting. Co se ve vašem pipeline skutečně změní — a co to znamená pro váš obchodní tým.',
   keywords: [

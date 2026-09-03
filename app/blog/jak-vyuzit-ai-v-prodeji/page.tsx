@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Jak oslovit víc firem v B2B: praktický průvodce outreachem | SalesAgent.cz',
+  title: 'Jak oslovit víc firem v B2B: průvodce outreachem | SalesAgent.cz',
   description:
     'Jak systematicky oslovovat víc firem v B2B — od vyhledávání firem přes prospecting po personalizované oslovení. Praktický průvodce, ne obecná automatizace.',
   keywords: [

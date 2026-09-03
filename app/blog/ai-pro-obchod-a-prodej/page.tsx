@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'AI v oslovování firem: jak mění B2B prospecting a outreach | SalesAgent.cz',
+  title: 'AI v oslovování firem: B2B prospecting a outreach | SalesAgent.cz',
   description:
     'Jak AI mění B2B prospecting a cold outreach — od vyhledávání firem po personalizované oslovení. Praktický pohled na oslovování firem, ne obecná automatizace.',
   keywords: [
