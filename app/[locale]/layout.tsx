@@ -20,27 +20,27 @@ export async function generateMetadata({
   return {
     title: {
       default: isCz
-        ? 'SalesAgent.cz — AI obchodní zástupce | Automatizace B2B prodeje'
-        : 'SalesAgent.cz — AI Sales Agent | B2B Sales Automation',
+        ? 'SalesAgent.cz — AI prodejní systém, který vlastníte'
+        : 'SalesAgent.cz — An AI sales system you actually own',
       template: '%s | SalesAgent.cz',
     },
     description: isCz
-      ? 'AI obchodní zástupce, který automaticky vyhledá B2B kontakty, prostuduje web každé firmy a odešle personalizovaný cold email i LinkedIn zprávu. Nástroj na automatizaci prodeje pro B2B firmy — bez náboru, bez databází.'
-      : 'AI sales agent that automatically finds B2B contacts, reads each company website and sends personalised cold emails and LinkedIn messages. Sales automation tool for B2B companies — no hiring, no databases.',
+      ? 'Postavíme vám kompletní AI prodejní systém na míru — scraper, obohacení dat, LinkedIn a e-mail outreach, napojení na CRM — a předáme klíče. Systém je váš. Od 9 900 Kč jednorázově, za 1–3 týdny.'
+      : 'We build you a complete AI sales system — scraper, enrichment, LinkedIn & email outreach, CRM integration — and hand over the keys. You own it. From €400 one-off, delivered in 1–3 weeks.',
     keywords: isCz
-      ? ['AI obchodní zástupce', 'automatizace B2B obchodu', 'automatický cold mailing', 'AI generování leadů', 'automatické vyhledávání B2B kontaktů', 'personalizovaný cold email', 'nástroje na automatizaci prodeje', 'AI prodejní asistent', 'cold email automatizace', 'LinkedIn automatizace']
-      : ['AI sales agent', 'B2B sales automation', 'automated cold email', 'AI lead generation', 'automated B2B prospecting', 'personalised cold email', 'sales automation tools', 'LinkedIn automation'],
+      ? ['AI prodejní systém', 'automatizace B2B prodeje', 'outbound automatizace', 'AI lead generation', 'vlastní prodejní systém', 'cold email automatizace', 'LinkedIn automatizace', 'AI obchod na míru', 'B2B prospecting']
+      : ['AI sales system', 'B2B sales automation', 'outbound automation', 'AI lead generation', 'owned sales pipeline', 'cold email automation', 'LinkedIn automation', 'custom AI sales'],
     openGraph: {
       type: 'website',
       locale: isCz ? 'cs_CZ' : 'en_US',
       url: `https://salesagent.cz/${locale}`,
       siteName: 'SalesAgent.cz',
       title: isCz
-        ? 'SalesAgent.cz — AI obchodní zástupce | Automatizace B2B prodeje'
-        : 'SalesAgent.cz — AI Sales Agent | B2B Sales Automation',
+        ? 'SalesAgent.cz — AI prodejní systém, který vlastníte'
+        : 'SalesAgent.cz — An AI sales system you actually own',
       description: isCz
-        ? 'AI obchodní zástupce pro B2B firmy. Automatický cold mailing a vyhledávání kontaktů.'
-        : 'AI sales agent for B2B companies. Automated cold email and contact prospecting.',
+        ? 'Kompletní AI outbound systém postavený na míru a předaný do vašeho vlastnictví. Od 9 900 Kč.'
+        : 'A complete AI outbound system built for you and handed over to own. From €400 one-off.',
       images: [
         {
           url: 'https://salesagent.cz/og-image.jpg',
@@ -72,11 +72,11 @@ export async function generateMetadata({
     twitter: {
       card: 'summary_large_image',
       title: isCz
-        ? 'SalesAgent.cz — AI obchodní zástupce | Automatizace B2B prodeje'
-        : 'SalesAgent.cz — AI Sales Agent | B2B Sales Automation',
+        ? 'SalesAgent.cz — AI prodejní systém, který vlastníte'
+        : 'SalesAgent.cz — An AI sales system you actually own',
       description: isCz
-        ? 'AI obchodní zástupce pro B2B firmy. Automatický cold mailing a vyhledávání kontaktů.'
-        : 'AI sales agent for B2B companies. Automated cold email and contact prospecting.',
+        ? 'Kompletní AI outbound systém postavený na míru a předaný do vašeho vlastnictví. Od 9 900 Kč.'
+        : 'A complete AI outbound system built for you and handed over to own. From €400 one-off.',
       images: ['https://salesagent.cz/og-image.jpg'],
     },
     other: {
@@ -109,12 +109,12 @@ const organizationSchema = {
 const serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
-  name: 'AI obchodní zástupce — automatizace B2B prodeje',
-  alternateName: 'AI Sales Agent — B2B Sales Automation',
+  name: 'AI prodejní systém na míru — postavíme a předáme do vlastnictví',
+  alternateName: 'Custom AI sales system — built and handed over',
   provider: { '@type': 'Organization', name: 'Sales Robots s.r.o.' },
-  serviceType: 'AI pro obchod a obchodníky — automatizace B2B prodeje',
+  serviceType: 'AI prodejní systém — outbound automatizace pro B2B',
   description:
-    'AI pro obchod a obchodníky jako outsourcovaná služba. Systém automaticky vyhledá B2B kontakty, prostuduje web každé firmy, napíše personalizovaný cold e-mail a odešle LinkedIn zprávu. Kompletní AI automatizace prodeje bez náboru obchodníků.',
+    'Postavíme kompletní AI prodejní systém: scraper firem, obohacení dat, personalizovaný e-mail a LinkedIn outreach, demo Prezentérem, napojení na CRM. Za 1–3 týdny hotovo, klíče předáme vám — systém vlastníte.',
   areaServed: ['CZ', 'SK', 'Internationally'],
   availableChannel: {
     '@type': 'ServiceChannel',
