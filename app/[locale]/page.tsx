@@ -13,14 +13,14 @@ export async function generateMetadata({
   const t: Translations = getTranslations(locale as Locale)
   return {
     title: locale === 'cs'
-      ? 'Externí B2B obchod — oslovování a schůzky za vás | SalesAgent.cz'
-      : 'Enter the Czech Market — Local B2B Sales | SalesAgent.cz',
+      ? 'AI prodejní systém, který vlastníte | SalesAgent.cz'
+      : 'An AI sales system you actually own | SalesAgent.cz',
     description: locale === 'cs'
-      ? 'Externí obchodní oddělení jako služba: vyhledáme relevantní firmy, oslovíme je personalizovaně přes e-mail i LinkedIn a domluvíme schůzky. Dostanete leady, ne další nástroj — bez náboru obchodníka.'
-      : 'Your local sales partner for entering the Czech market. We research Czech companies, run B2B outreach and book first meetings — no local rep to hire, no office to open. Sales outsourcing for foreign companies.',
+      ? 'Postavíme vám kompletní outbound stroj — scraper, obohacení dat, LinkedIn a e-mail, demo Prezentérem a napojení na CRM. Za 1–3 týdny běží a je váš. Ne pronájem nástroje, ne agentura. Od 9 900 Kč.'
+      : 'We build you a complete outbound machine — scraper, enrichment, LinkedIn & email, live demo and CRM. Built and running in 1–3 weeks, and it is yours to own. Not a rented tool, not an agency.',
     keywords: locale === 'cs'
-      ? ['externí obchod', 'externí obchodní zástupce', 'oslovování firem', 'generování B2B leadů', 'obchodní zastoupení', 'B2B outreach', 'outsourcing obchodu', 'schůzky s klienty']
-      : ['Czech market entry', 'sales outsourcing', 'outsourced sales', 'b2b sales agency', 'enter the Czech market', 'local sales representative Czech Republic', 'B2B lead generation Czech Republic', 'Czech company research'],
+      ? ['AI prodejní systém', 'automatizace obchodu', 'outbound systém na míru', 'scraping firem', 'LinkedIn automatizace', 'obohacení dat', 'napojení na CRM', 'B2B outreach']
+      : ['AI sales system', 'sales automation', 'custom outbound system', 'B2B outreach machine', 'LinkedIn automation', 'lead enrichment', 'CRM integration', 'owned sales pipeline'],
     alternates: {
       canonical: `https://salesagent.cz/${locale}`,
       languages: {
@@ -666,19 +666,19 @@ export default async function HomePage({
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
           {(locale === 'en' ? [
             {
-              href: '/blog/market-entry-czech-republic-hire-sales-vs-open-entity',
-              title: 'Market Entry Czech Republic: Sales First or Entity First?',
-              desc: 'Compare entity-first vs sales-first market entry — cost, speed, risk. How to test demand before committing capital.',
+              href: '/blog/how-to-implement-sales-automation',
+              title: 'How to Implement Sales Automation',
+              desc: 'A practical guide to building an automated outbound process — from data and enrichment to email, LinkedIn and CRM.',
             },
             {
-              href: '/blog/hiring-local-czech-staff-can-be-expensive-mistake',
-              title: 'Hiring Local Czech Staff Can Be an Expensive Mistake',
-              desc: 'Payroll taxes at 34 %, 2-month notice periods, 3–6 month ramp-up — the real cost of hiring a Czech sales rep.',
+              href: '/blog/sales-automation-ai-b2b-outreach',
+              title: 'Sales Automation: How AI Changes B2B Outreach',
+              desc: 'What an AI-driven outbound system actually does — finding companies, reading their sites, and reaching the right people.',
             },
             {
               href: '/blog/sales-agent-definition-and-what-he-do',
-              title: 'What a Sales Agent Does — and How to Hire One in Czech Republic',
-              desc: 'Role breakdown, key skills, and how external sales representation works as an alternative to full-time hiring.',
+              title: 'What a Sales Agent Does',
+              desc: 'Role breakdown, key skills, and how an automated system supports the work an agent would otherwise do by hand.',
             },
           ] : [
             {
@@ -725,34 +725,34 @@ export default async function HomePage({
                 mainEntity: [
                   {
                     '@type': 'Question',
-                    name: 'Co je externí obchod?',
+                    name: 'Co je AI prodejní systém, který vlastníte?',
                     acceptedAnswer: {
                       '@type': 'Answer',
-                      text: 'Externí obchod je model, kdy vaše obchodní oslovování převezme externí tým místo interního obchodníka. Vyhledáme relevantní firmy, prostudujeme jejich weby a oslovíme je personalizovaně přes e-mail i LinkedIn. Vy dostanete teplé leady a schůzky, ne další nástroj k obsluze.',
+                      text: 'Je to kompletní outbound stroj, který vám postavíme a předáme do vlastnictví: scraper a vyhledávání firem, obohacení dat, oslovení přes e-mail i LinkedIn, demo Prezentérem a napojení na váš CRM. Běží na vašich účtech a datech — na rozdíl od agentury nejste na nikom závislí.',
                     },
                   },
                   {
                     '@type': 'Question',
-                    name: 'Jak začít s externím B2B obchodem?',
+                    name: 'Jak dlouho trvá systém postavit?',
                     acceptedAnswer: {
                       '@type': 'Answer',
-                      text: 'Začněte definicí ideálního zákazníka (ICP): obor, velikost firmy, region, pozice rozhodovatele. Vyhledávání firem a první oslovení pak převezmeme za vás — SalesAgent.cz celý proces zajistí jako externí obchodní oddělení.',
+                      text: 'Obvykle 1–3 týdny podle rozsahu a počtu napojení. Proces má čtyři kroky: konzultace, návrh, implementace a testování s předáním klíčů a zaškolením týmu.',
                     },
                   },
                   {
                     '@type': 'Question',
-                    name: 'Jak funguje oslovování firem na míru?',
+                    name: 'Čím se lišíte od agentury nebo od nástrojů jako Apollo či Waalaxy?',
                     acceptedAnswer: {
                       '@type': 'Answer',
-                      text: 'Prohledáme veřejné zdroje (ARES, LinkedIn, weby), identifikujeme firmy odpovídající vašemu ICP, přečteme obsah jejich webu a napíšeme unikátní personalizovaný e-mail i LinkedIn zprávu pro každou firmu zvlášť. Celý cyklus — vyhledání, oslovení, follow-up — vedeme za vás.',
+                      text: 'Agentura dělá práci za vás a když skončíte, nemáte nic. Point-tooly (Apollo, Waalaxy, HubSpot) řeší vždy jen jeden krok funnelu. My stavíme integrovaný systém přes celý funnel a předáme vám ho do vlastnictví — i s daty a know-how.',
                     },
                   },
                   {
                     '@type': 'Question',
-                    name: 'Kolik stojí externí obchodní oslovování?',
+                    name: 'Kolik stojí postavení systému?',
                     acceptedAnswer: {
                       '@type': 'Answer',
-                      text: 'SalesAgent.cz funguje na měsíčním paušálu — výrazně nižším než náklady na interního obchodníka (plat + odvody + nástroje). Cena zahrnuje vyhledávání firem, personalizaci oslovení i LinkedIn outreach. Konkrétní kalkulaci si domluvte na bezplatném hovoru.',
+                      text: 'Systém postavíme od 9 900 Kč jednorázově. Výsledná částka závisí na rozsahu pipeline a počtu napojení. Měsíční provoz a podpora jsou volitelné. Přesné nacenění dostanete po nezávazné konzultaci zdarma.',
                     },
                   },
                 ],
@@ -761,25 +761,25 @@ export default async function HomePage({
           />
           <section style={{ padding: '80px 24px', maxWidth: '760px', margin: '0 auto' }}>
             <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: 'clamp(22px, 3vw, 32px)', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '40px', textAlign: 'center' }}>
-              Časté otázky o externím obchodu a oslovování
+              Časté otázky o AI prodejním systému
             </h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
               {[
                 {
-                  q: 'Co je externí obchod?',
-                  a: 'Externí obchod je model, kdy vaše obchodní oslovování převezme externí tým místo interního obchodníka. Vyhledáme relevantní firmy, prostudujeme jejich weby a oslovíme je personalizovaně přes e-mail i LinkedIn. Vy dostanete teplé leady a schůzky, ne další nástroj k obsluze.',
+                  q: 'Co je AI prodejní systém, který vlastníte?',
+                  a: 'Je to kompletní outbound stroj, který vám postavíme a předáme do vlastnictví: scraper a vyhledávání firem, obohacení dat, oslovení přes e-mail i LinkedIn, demo Prezentérem a napojení na váš CRM. Běží na vašich účtech a datech — na rozdíl od agentury nejste na nikom závislí.',
                 },
                 {
-                  q: 'Jak začít s externím B2B obchodem?',
-                  a: 'Začněte definicí ideálního zákazníka (ICP): obor, velikost firmy, region, pozice rozhodovatele. Vyhledávání firem a první oslovení pak převezmeme za vás — SalesAgent.cz celý proces zajistí jako externí obchodní oddělení.',
+                  q: 'Jak dlouho trvá systém postavit?',
+                  a: 'Obvykle 1–3 týdny podle rozsahu a počtu napojení. Proces má čtyři kroky: konzultace, návrh, implementace a testování s předáním klíčů a zaškolením týmu.',
                 },
                 {
-                  q: 'Jak funguje oslovování firem na míru?',
-                  a: 'Prohledáme veřejné zdroje (ARES, LinkedIn, weby), identifikujeme firmy odpovídající vašemu ICP, přečteme obsah jejich webu a napíšeme unikátní personalizovaný e-mail i LinkedIn zprávu pro každou firmu zvlášť. Celý cyklus — vyhledání, oslovení, follow-up — vedeme za vás.',
+                  q: 'Čím se lišíte od agentury nebo od nástrojů jako Apollo či Waalaxy?',
+                  a: 'Agentura dělá práci za vás a když skončíte, nemáte nic. Point-tooly (Apollo, Waalaxy, HubSpot) řeší vždy jen jeden krok funnelu. My stavíme integrovaný systém přes celý funnel a předáme vám ho do vlastnictví — i s daty a know-how.',
                 },
                 {
-                  q: 'Kolik stojí externí obchodní oslovování?',
-                  a: 'SalesAgent.cz funguje na měsíčním paušálu — výrazně nižším než náklady na interního obchodníka. Cena zahrnuje vyhledávání firem, personalizaci oslovení i LinkedIn outreach. Konkrétní kalkulaci si domluvte na bezplatném hovoru.',
+                  q: 'Kolik stojí postavení systému?',
+                  a: 'Systém postavíme od 9 900 Kč jednorázově. Výsledná částka závisí na rozsahu pipeline a počtu napojení. Měsíční provoz a podpora jsou volitelné. Přesné nacenění dostanete po nezávazné konzultaci zdarma.',
                 },
               ].map(({ q, a }) => (
                 <details

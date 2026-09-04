@@ -10,10 +10,10 @@ export async function generateMetadata({
   const { locale } = await params
   const cs = locale === 'cs'
   return {
-    title: cs ? 'O nás — AI obchodní zástupce' : 'About — AI Sales Agent',
+    title: cs ? 'O nás — AI prodejní systémy na míru' : 'About — custom AI sales systems',
     description: cs
-      ? 'Sales Robots s.r.o. staví nástroje na automatizaci B2B prodeje. SalesAgent.cz je AI obchodní zástupce — outsourcovaný cold mailing a vyhledávání kontaktů pro B2B firmy.'
-      : 'Sales Robots s.r.o. builds B2B sales automation tools. SalesAgent.cz is an AI sales agent — outsourced cold emailing and contact prospecting for B2B companies.',
+      ? 'Sales Robots s.r.o. staví AI prodejní systémy na míru. SalesAgent.cz složí scrapery, obohacení dat, e-mail a LinkedIn outreach a napojení na CRM do systému, který vám předáme do vlastnictví.'
+      : 'Sales Robots s.r.o. builds custom AI sales systems. SalesAgent.cz assembles scrapers, enrichment, email and LinkedIn outreach and CRM integration into a system we hand over for you to own.',
     alternates: {
       canonical: `https://salesagent.cz/${locale}/about`,
       languages: {

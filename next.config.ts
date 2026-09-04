@@ -25,6 +25,28 @@ const nextConfig: NextConfig = {
         destination: '/en',
         permanent: true,
       },
+      // Broken pages (collateral from earlier repositioning) → 301 to relevant
+      {
+        source: '/contact-to-sales-agent',
+        destination: '/cs/contact',
+        permanent: true,
+      },
+      {
+        source: '/sales-outsourcing-blog',
+        destination: '/blog',
+        permanent: true,
+      },
+      // Abandoned "sales representation / Czech market entry" positioning → 301 to homepage
+      {
+        source: '/:locale(cs|en)/sales-representation-czech-republic',
+        destination: '/:locale',
+        permanent: true,
+      },
+      {
+        source: '/:locale(cs|en)/guides/:slug*',
+        destination: '/:locale',
+        permanent: true,
+      },
       {
         source: '/czech-business-companies-register',
         destination: '/en/resources/czech-business-companies-register',
@@ -53,7 +75,7 @@ const nextConfig: NextConfig = {
       // EN-prefixed blog URLs Google indexed (blogs live at /blog/, not /en/blog/)
       {
         source: '/en/blog/external-sales-representation-czech-republic',
-        destination: '/en/sales-representation-czech-republic',
+        destination: '/en',
         permanent: true,
       },
       {

@@ -10,10 +10,10 @@ export async function generateMetadata({
   const { locale } = await params
   const cs = locale === 'cs'
   return {
-    title: cs ? 'Kontakt — AI SDR' : 'Contact — AI SDR',
+    title: cs ? 'Kontakt — konzultace zdarma' : 'Contact — free consultation',
     description: cs
-      ? 'Domluvte si nezávazný 30minutový hovor. Projdeme váš trh a ukážeme, jak by AI outreach vypadal konkrétně u vás.'
-      : 'Book a free 30-minute call. We will walk through your market and show what AI outreach would look like for your business.',
+      ? 'Domluvte si nezávaznou konzultaci zdarma. Projdeme váš prodej a možnosti automatizace a ukážeme, jak by váš vlastní AI prodejní systém mohl vypadat.'
+      : 'Book a free, no-strings consultation. We will go through your sales and automation options and show what your own AI sales system could look like.',
     alternates: {
       canonical: `https://salesagent.cz/${locale}/contact`,
       languages: {

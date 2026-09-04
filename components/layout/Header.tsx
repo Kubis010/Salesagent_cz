@@ -17,7 +17,7 @@ export default function Header({ locale, t }: HeaderProps) {
   const links = [
     { href: base, label: t.nav.home },
     { href: `${base}/pricing`, label: t.nav.pricing },
-    { href: `${base}/sales-representation-czech-republic`, label: t.nav.salesRepCz },
+    { href: `${base}#how-it-works`, label: t.nav.salesRepCz },
     { href: '/blog', label: 'Blog' },
     { href: `${base}/about`, label: t.nav.about },
     { href: `${base}/contact`, label: t.nav.contact },

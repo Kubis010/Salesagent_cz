@@ -10,10 +10,10 @@ export async function generateMetadata({
   const { locale } = await params
   const cs = locale === 'cs'
   return {
-    title: cs ? 'Ceník — AI obchodní zástupce | Automatizace prodeje' : 'Sales Representation Pricing — Czech Market Entry | SalesAgent.cz',
+    title: cs ? 'Ceník — AI prodejní systém od 9 900 Kč' : 'Pricing — an AI sales system you own',
     description: cs
-      ? 'Ceník AI obchodního zástupce — automatický cold mailing a vyhledávání B2B kontaktů. Start, Grow od 5 900 Kč, Scale. Nástroj na automatizaci prodeje bez ročních závazků.'
-      : 'Outsourced B2B sales representation in Czech Republic. Part-time from €2,800/month, full-time from €5,000/month. Start within one week — no hiring, no office needed.',
+      ? 'Postavení AI prodejního systému od 9 900 Kč jednorázově — scraper, obohacení dat, e-mail a LinkedIn outreach, napojení na CRM. Předáme klíče, systém je váš. Provoz a podpora volitelně.'
+      : 'A complete AI sales system built for you from €400 one-off — scraper, enrichment, email and LinkedIn outreach, CRM integration. We hand over the keys; the system is yours. Optional monthly support.',
     alternates: {
       canonical: `https://salesagent.cz/${locale}/pricing`,
       languages: {
@@ -27,17 +27,17 @@ export async function generateMetadata({
       locale: cs ? 'cs_CZ' : 'en_US',
       url: `https://salesagent.cz/${locale}/pricing`,
       siteName: 'SalesAgent.cz',
-      title: cs ? 'Ceník — AI obchodní zástupce | SalesAgent.cz' : 'Sales Representation Pricing — Czech Market Entry | SalesAgent.cz',
+      title: cs ? 'Ceník — AI prodejní systém od 9 900 Kč | SalesAgent.cz' : 'Pricing — an AI sales system you own | SalesAgent.cz',
       description: cs
-        ? 'Automatizace B2B prodeje od 5 900 Kč / měsíc. AI cold mailing a vyhledávání kontaktů.'
-        : 'Outsourced B2B sales representation in Czech Republic. Part-time from €2,800/month, full-time from €5,000/month.',
+        ? 'AI prodejní systém na míru od 9 900 Kč jednorázově. Postavíme, předáme klíče, je váš.'
+        : 'A custom AI sales system from €400 one-off. We build it, hand over the keys, and it is yours.',
     },
     twitter: {
       card: 'summary_large_image',
-      title: cs ? 'Ceník — AI obchodní zástupce | SalesAgent.cz' : 'Sales Representation Pricing — Czech Market Entry | SalesAgent.cz',
+      title: cs ? 'Ceník — AI prodejní systém od 9 900 Kč | SalesAgent.cz' : 'Pricing — an AI sales system you own | SalesAgent.cz',
       description: cs
-        ? 'Automatizace B2B prodeje od 5 900 Kč / měsíc.'
-        : 'Outsourced B2B sales from €2,800/month. Start in 1 week, no hiring needed.',
+        ? 'AI prodejní systém na míru od 9 900 Kč jednorázově. Postavíme a předáme klíče.'
+        : 'A custom AI sales system from €400 one-off. Built, handed over, and yours to own.',
     },
   }
 }

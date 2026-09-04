@@ -21,33 +21,6 @@ export const metadata: Metadata = {
 
 const posts = [
   {
-    href: '/en/guides/expand-b2b-sales-to-czech-republic',
-    lang: 'EN',
-    title: 'How to Expand Your B2B Sales to the Czech Republic (2026 Guide)',
-    date: '31 August 2026',
-    description:
-      'Market entry options, outsourced vs local sales comparison, cost breakdown, and what your first 90 days look like. The definitive guide for international B2B companies.',
-    image: '/guides/expand-b2b-czech.jpg',
-  },
-  {
-    href: '/en/guides/czech-market-entry-for-b2b-companies',
-    lang: 'EN',
-    title: 'Czech Market Entry for B2B Companies: A Practical Playbook',
-    date: '28 August 2026',
-    description:
-      'When to enter, entity vs. no entity, how to find first Czech customers, and what mistakes to avoid. A practitioner playbook for international B2B companies.',
-    image: '/guides/czech-market-entry-guide.jpg',
-  },
-  {
-    href: '/en/guides/b2b-lead-generation-in-the-czech-republic',
-    lang: 'EN',
-    title: 'B2B Lead Generation in the Czech Republic: How It Actually Works',
-    date: '25 August 2026',
-    description:
-      'Where Czech B2B leads come from, email vs LinkedIn benchmarks (4–8% reply rate), how to personalise at scale, and how to qualify leads before handoff.',
-    image: '/guides/czech-b2b-lead-gen.jpg',
-  },
-  {
     href: '/blog/jak-personalizovat-cold-emaily-ai',
     lang: 'CS',
     title: 'Jak AI personalizuje cold emaily — bez šablon, bez proměnných',

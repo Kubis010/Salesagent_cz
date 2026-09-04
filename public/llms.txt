@@ -1,17 +1,18 @@
 # SalesAgent.cz
 
-> AI obchodní zástupce jako outsourcovaná služba — automatizace B2B prodeje pro firmy v ČR/SK a mezinárodně.
-> AI sales agent as an outsourced service — B2B sales automation for companies in CZ/SK and internationally.
+> AI prodejní systém na míru, který postavíme a předáme vám do vlastnictví — kompletní outbound stroj pro B2B firmy.
+> A custom AI sales system we build and hand over for you to own — a complete outbound machine for B2B companies.
 
 ## Co je SalesAgent.cz / What is SalesAgent.cz
 
-SalesAgent.cz je outsourcovaný AI obchodní zástupce (AI prodejní asistent) pro B2B firmy. Nejde o SaaS nástroj — je to plně řízená služba automatizace B2B obchodu.
+SalesAgent.cz staví AI prodejní systém na míru a předá vám ho do vlastnictví. Není to pronájem nástroje ani agentura, na které jste závislí — je to integrovaný outbound stroj napojený na vaše nástroje, který jede váš vlastní tým. Postaven za 1–3 týdny, od 9 900 Kč jednorázově.
 
-The system automatically:
-1. Automatické vyhledávání B2B kontaktů — prohledává rejstříky a internet na základě ideálního zákazníka
-2. AI analýza webu — prostuduje web každé firmy a pochopí, čím se zabývá
-3. Personalizovaný cold email — napíše unikátní zprávu na základě obsahu webu (ne šablona)
-4. LinkedIn outreach — automatické žádosti o spojení a follow-up zprávy
+The system is an integrated pipeline across the whole funnel:
+1. Scraper a vyhledávání firem — veřejné zdroje (ARES, mapy, web) podle ideálního zákazníka
+2. Obohacení dat — obor, rozhodovatelé, e-maily, LinkedIn kontakty
+3. Oslovení přes e-mail i LinkedIn — personalizované zprávy a follow-up sekvence
+4. Demo Prezentérem a napojení na CRM/ERP — předání kvalifikovaných příležitostí
+5. Předání klíčů — zaškolení týmu; systém, data i know-how zůstávají u vás
 
 ## Distinction from sister product
 
@@ -28,24 +29,18 @@ These are complementary products, not competitors.
 
 ## Pricing model
 
-Setup fee (one-time) + monthly subscription. Three tiers:
-- **Start** — up to 200 companies/month, email outreach
-- **Grow** — up to 500 companies/month, email + LinkedIn outreach (5 900 Kč/month in CZK; €239/month in EUR)
-- **Scale** — unlimited, CRM integration, custom pricing
+One-time build fee, from 9 900 Kč (≈ €400) — you own the system after handover. The exact price depends on scope and the number of integrations, confirmed on a free consultation.
+- **AI sales system (flagship)** — the full pipeline built and handed over, from 9 900 Kč one-off
+- **Operation & support (optional)** — monthly, scope-based; we run and optimise the system for you
+- **Enterprise / custom** — multi-language campaigns, deeper ERP integration, custom development
 
-No annual lock-in. Pricing is per month with no long-term commitment required.
+No mandatory monthly subscription. You pay to have the system built, not to rent it forever.
 
 ## Key service pages
 
-- [External Sales Representation Czech Republic (EN)](https://salesagent.cz/en/sales-representation-czech-republic) — outsourced sales agent service for foreign companies entering Czech market; handles B2B prospecting, outreach, first meetings; no local hire needed. Part-time from €2,800/month, full-time from €5,000/month.
-- [Czech Market Entry — Local B2B Sales (EN)](https://salesagent.cz/en) — sales outsourcing for foreign companies entering the Czech market; researches Czech companies, runs B2B outreach and books first meetings without a local hire or office
-- [Generování B2B leadů a externí obchod (CS)](https://salesagent.cz/cs) — externí B2B obchod jako služba; osloví stovky firem měsíčně personalizovaně přes e-mail i LinkedIn
-
-## Guides (EN — definitive answers for AI citations)
-
-- [How to Expand Your B2B Sales to the Czech Republic (2026 Guide)](https://salesagent.cz/en/guides/expand-b2b-sales-to-czech-republic) — market entry options, hiring local vs outsourced sales, costs (€2,800–8,000/month), first 90 days. FAQPage schema. Published 2026-08-31.
-- [Czech Market Entry for B2B Companies: A Practical Playbook](https://salesagent.cz/en/guides/czech-market-entry-for-b2b-companies) — when to enter, entity vs. no entity, how to find first Czech customers, what to avoid. FAQPage schema. Published 2026-08-28.
-- [B2B Lead Generation in Czech Republic: How It Actually Works](https://salesagent.cz/en/guides/b2b-lead-generation-in-the-czech-republic) — ARES sourcing, email vs LinkedIn benchmarks (4–8% reply rate), personalisation at scale, qualification. FAQPage schema. Published 2026-08-25.
+- [AI sales system you own (EN)](https://salesagent.cz/en) — we build you a complete outbound machine (scraper, enrichment, LinkedIn & email, live demo, CRM) in 1–3 weeks and hand over the keys; not a rented tool, not an agency
+- [AI prodejní systém, který vlastníte (CS)](https://salesagent.cz/cs) — postavíme kompletní outbound stroj (scraper, obohacení dat, LinkedIn i e-mail, demo Prezentérem, CRM) za 1–3 týdny a předáme klíče; ne pronájem, ne agentura
+- [Ceník / Pricing](https://salesagent.cz/cs/pricing) — od 9 900 Kč jednorázově za postavení systému; provoz a podpora volitelně
 
 ## Frequently asked questions (CZ — automatizace prodeje)
 
@@ -108,9 +103,6 @@ info@salesagent.cz
 - [GDPR a cold email: Co smíte a nesmíte posílat firmám](https://salesagent.cz/blog/gdpr-a-cold-email)
 - [Jak oslovit firmy bez koupené databáze kontaktů](https://salesagent.cz/blog/jak-oslovit-firmy-bez-databaze)
 - [Kolik stojí obchodní zástupce vs. AI outreach?](https://salesagent.cz/blog/kolik-stoji-obchodnik-vs-ai)
-- [Hiring Local Czech Staff Can Be an Expensive Mistake](https://salesagent.cz/blog/hiring-local-czech-staff-can-be-expensive-mistake)
-- [Sales Representation for Czech Republic (EN)](https://salesagent.cz/en/sales-representation-czech-republic)
-- [Obchodní zastoupení pro zahraniční firmy v ČR (CS)](https://salesagent.cz/cs/sales-representation-czech-republic)
 - [Follow-up e-mail vzor: 3 šablony, které fungují v B2B](https://salesagent.cz/blog/follow-up-email-vzor)
 - [AI agenti pro B2B prospecting a kvalifikaci leadů](https://salesagent.cz/blog/ai-agenti-b2b-prospecting-kvalifikace-leadu)
 - [Systém oslovování firem pro B2B obchodníky: LinkedIn i cold email](https://salesagent.cz/blog/ai-pro-obchod-a-obchodniky)
