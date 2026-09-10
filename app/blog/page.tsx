@@ -102,6 +102,24 @@ const posts = [
     image: '/blog/externi-obchod.jpg',
   },
   {
+    href: '/en/guides/b2b-market-research-agency-czech-republic',
+    lang: 'EN',
+    title: 'B2B Market Research Agency Czech Republic: 3-Month Market Test',
+    date: '10 September 2026',
+    description:
+      'Not sure if Czech Republic is worth the investment? We contact 200–500 Czech companies in your segment, track every response, and deliver a written go/no-go report — fixed price, no long-term commitment.',
+    image: '/blog/market-entry-czech.jpg',
+  },
+  {
+    href: '/en/guides/czech-market-entry-for-b2b-companies',
+    lang: 'EN',
+    title: 'Czech Market Entry for B2B Companies: A Practical Playbook',
+    date: '28 August 2026',
+    description:
+      'When to enter the Czech B2B market, entity vs. no entity, how to find first customers, and what to avoid. A practical guide for international companies.',
+    image: '/blog/european-sales-expansion.jpg',
+  },
+  {
     href: '/blog/european-sales-expansion',
     lang: 'EN',
     title: 'European Sales Expansion: How We Run It For You',
