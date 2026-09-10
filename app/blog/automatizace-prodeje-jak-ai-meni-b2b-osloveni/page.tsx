@@ -46,7 +46,7 @@ const articleSchema = {
   publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://salesagent.cz/blog/automatizace-prodeje-jak-ai-meni-b2b-osloveni' },
   datePublished: '2025-02-05',
-  dateModified: '2025-02-05',
+  dateModified: '2026-09-10',
 }
 
 const faqSchema = {
@@ -219,7 +219,7 @@ export default function Page() {
               Chcete vidět, jak by to vypadalo ve vašem oboru?
             </p>
             <p style={{ fontSize: '14px', color: 'var(--text-muted)', marginBottom: '20px', lineHeight: 1.65 }}>
-              Provozujeme celý cyklus automatického cold mailingu jako službu — vyhledáváme firmy, studujeme jejich weby, píšeme personalizované zprávy. Ozvěte se a ukážeme vám, jak by pipeline vypadal ve vašem oboru.
+              Nemáte čas ani know-how řešit automatizaci sami? Postavíme a rozjedeme vám celý cyklus — vyhledávání firem, studium webů, personalizované zprávy, follow-up a předání odpovědí do CRM. Ozvěte se a ukážeme vám, jak by pipeline vypadal ve vašem oboru.
             </p>
             <a
               href="https://outlook.office.com/bookwithme/user/480895b1333541dc94be634dd588fada@salesagent.cz/meetingtype/jwdxCRPBn0CvHccZ7eLwAg2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile"
@@ -294,6 +294,9 @@ export default function Page() {
               </Link>
               <Link href="/cs/pricing" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
                 Ceník služby →
+              </Link>
+              <Link href="/cs/vlastni-outbound" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
+                Automatizace obchodu na klíč →
               </Link>
             </div>
           </div>

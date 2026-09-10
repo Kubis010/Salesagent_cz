@@ -274,6 +274,7 @@ export default function JakOslovitFirmyPage() {
             <a href="https://cal.com/salesagent/demo" target="_blank" rel="noopener noreferrer" className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors">
               Zjistit, jak to funguje pro váš obor →
             </a>
+            <p className="mt-4 text-sm text-gray-400">Zní to složitě nebo na to nemáte čas? <Link href="/cs/vlastni-outbound" className="text-orange-300 underline">Postavíme a rozjedeme vám automatizaci obchodu na klíč.</Link></p>
           </div>
 
           <style>{`

@@ -38,7 +38,7 @@ const jsonLd = {
   description: 'Konkrétní vzory cold e-mailů pro B2B oslovení v češtině — 3 hotové šablony s GDPR patičkou.',
   image: 'https://salesagent.cz/blog/cold-email-vzor.png',
   datePublished: '2026-08-03',
-  dateModified: '2026-08-03',
+  dateModified: '2026-09-10',
   inLanguage: 'cs',
   author: { '@type': 'Organization', name: 'SalesAgent.cz', url: 'https://salesagent.cz' },
   publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz' },
@@ -242,14 +242,33 @@ export default function ColdEmailVzorPage() {
               Moderní AI systémy přečtou web každé cílové firmy a vygenerují personalizovanou první větu (nebo celý e-mail) automaticky. Výsledek vypadá jako ruční práce, ale obsáhne stovky firem měsíčně. Přesně tak funguje SalesAgent.cz — místo koupené databáze a šablon.
             </p>
 
+            <h2 className="text-2xl font-bold text-white mt-12 mb-4">Od vzoru k vlastnímu systému oslovování</h2>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              Šablona je dobrý začátek, ale sama o sobě neřeší výběr firem, kontrolu kontaktů ani follow-up. Pokud chcete outbound řídit dlouhodobě, spojte copy s procesem: nejdřív definujte ICP, potom vyhledejte relevantní firmy, přečtěte jejich web, vygenerujte návrh zprávy, schvalte pravidla a teprve poté odešlete e-mail nebo LinkedIn zprávu.
+            </p>
+            <div className="grid md:grid-cols-2 gap-4 mb-8">
+              {[
+                ['1. Cílení', 'Každá kampaň má jasný obor, region, velikost firmy a roli rozhodovatele.'],
+                ['2. Kontext', 'Zpráva vychází z konkrétní informace na webu firmy, ne jen z názvu a jména.'],
+                ['3. Sekvence', 'Follow-up přidává nový důvod ke kontaktu a respektuje odpověď i odhlášení.'],
+                ['4. Předání', 'Odpovědi a kvalifikované příležitosti se zapisují do CRM, aby obchodník řešil skutečný zájem.'],
+              ].map(([title, text]) => (
+                <div key={title} className="bg-gray-900 border border-gray-700 rounded-xl p-5">
+                  <p className="text-orange-400 font-semibold mb-2">{title}</p>
+                  <p className="text-gray-300 text-sm leading-relaxed">{text}</p>
+                </div>
+              ))}
+            </div>
+
           </article>
 
           <div className="mt-16 p-8 border border-orange-500/30 rounded-2xl bg-orange-900/10 text-center">
             <h2 className="text-2xl font-bold mb-3">Nechte personalizaci na AI</h2>
             <p className="text-gray-300 mb-6">SalesAgent.cz píše cold emaily za vás — přečte web každé firmy a odešle zprávu, která vypadá jako ruční práce. 200–500 oslovených firem měsíčně.</p>
-            <a href="https://cal.com/salesagent/demo" target="_blank" rel="noopener noreferrer" className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors">
+            <Link href="/cs/contact" className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors">
               Domluvit bezplatnou ukázku
-            </a>
+            </Link>
+            <p className="mt-4 text-sm text-gray-400">Zní to složitě nebo na to nemáte čas? <Link href="/cs/vlastni-outbound" className="text-orange-300 underline">Postavíme a rozjedeme vám automatizaci obchodu na klíč →</Link></p>
           </div>
 
           <style>{`
@@ -289,6 +308,10 @@ export default function ColdEmailVzorPage() {
               </Link>
               <Link href="/blog/jak-personalizovat-cold-emaily-ai" className="group flex items-center justify-between p-4 border border-white/10 rounded-xl hover:border-orange-500/50 transition-colors">
                 <span className="text-gray-200 group-hover:text-white transition-colors">Jak personalizovat cold emaily pomocí AI</span>
+                <span className="text-gray-500 group-hover:text-orange-400 transition-colors">→</span>
+              </Link>
+              <Link href="/cs" className="group flex items-center justify-between p-4 border border-white/10 rounded-xl hover:border-orange-500/50 transition-colors">
+                <span className="text-gray-200 group-hover:text-white transition-colors">Automatizace obchodu na klíč</span>
                 <span className="text-gray-500 group-hover:text-orange-400 transition-colors">→</span>
               </Link>
             </div>

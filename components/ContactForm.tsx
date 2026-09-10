@@ -3,6 +3,12 @@
 import { useState } from 'react'
 import type { Translations } from '@/lib/i18n'
 
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void
+  }
+}
+
 const inputStyle = {
   width: '100%',
   background: 'var(--bg-card)',
@@ -32,6 +38,9 @@ export default function ContactForm({ t }: { t: Translations }) {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams(formData as any).toString(),
+      })
+      window.gtag?.('event', 'generate_lead', {
+        method: 'contact_form',
       })
       setStatus('success')
     } catch (error) {

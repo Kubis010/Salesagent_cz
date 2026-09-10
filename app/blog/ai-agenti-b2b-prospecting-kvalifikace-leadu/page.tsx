@@ -251,6 +251,7 @@ export default function AiAgentiProspektingPage() {
             <a href="https://cal.com/salesagent/demo" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors">
               Domluvit nezávazný hovor
             </a>
+            <p className="mt-4 text-sm text-gray-400">Nemáte čas ani know-how? <Link href="/cs/vlastni-outbound" className="text-emerald-300 underline">Automatizaci obchodu vám postavíme a rozjedeme.</Link></p>
           </div>
 
           <style>{`

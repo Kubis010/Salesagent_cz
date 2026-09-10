@@ -39,7 +39,7 @@ const jsonLd = {
   description: 'Zákon č. 480/2004 Sb. nerozlišuje mezi fyzickou a právnickou osobou. Cold e-mail bez opt-inu je formálně porušení zákona.',
   image: 'https://salesagent.cz/blog/gdpr-cold-email.jpg',
   datePublished: '2026-08-05',
-  dateModified: '2026-08-05',
+  dateModified: '2026-09-10',
   inLanguage: 'cs',
   author: { '@type': 'Organization', name: 'SalesAgent.cz', url: 'https://salesagent.cz' },
   publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz' },
@@ -308,6 +308,18 @@ export default function GdprColdEmailPage() {
               I při práci s firemními kontakty zpracováváte osobní údaje (jméno, pracovní e-mail). Musíte mít právní základ pro zpracování a vést záznamy. Kontakty, které neodpovídají a nejsou vaši zákazníci, neukládejte donekonečna — nastavte dobu uchovávání.
             </p>
 
+            <h2 className="text-2xl font-bold text-white mt-12 mb-4">Jak nastavit B2B outbound s menším právním rizikem</h2>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              Právní posouzení konkrétní kampaně patří právníkovi, ale proces lze nastavit tak, aby se rizika zbytečně nezvyšovala. Začněte přesným ICP, evidujte zdroj každého kontaktu, oddělte obchodní sdělení od neutrálního výzkumu trhu a před odesláním kontrolujte relevanci i správnost adresáta.
+            </p>
+            <ol className="list-decimal pl-6 text-gray-300 leading-relaxed space-y-3 mb-8">
+              <li><strong className="text-white">Definujte, koho oslovujete.</strong> Obor, velikost, region a role rozhodovatele omezí náhodné rozesílání.</li>
+              <li><strong className="text-white">Ukládejte zdroj a účel kontaktu.</strong> Nestačí mít e-mail; potřebujete vědět, proč je pro nabídku relevantní.</li>
+              <li><strong className="text-white">Personalizujte podle veřejného kontextu.</strong> Konkrétní pozorování pomůže relevanci, ale samo o sobě nenahrazuje právní základ.</li>
+              <li><strong className="text-white">Řiďte opt-out centrálně.</strong> Odhlášení musí zastavit další komunikaci napříč kampaněmi a kanály.</li>
+              <li><strong className="text-white">Pravidelně mažte neaktivní kontakty.</strong> Retence má odpovídat účelu a interním pravidlům firmy.</li>
+            </ol>
+
             <h2 className="text-2xl font-bold text-white mt-12 mb-4">Shrnutí</h2>
             <p className="text-gray-300 leading-relaxed mb-4">
               Cold e-mailing bez předchozího souhlasu je dle zákona č. 480/2004 Sb. formálně v rozporu se zákonem — bez ohledu na to, zda oslovujete fyzickou nebo právnickou osobu. ÚOOÚ to potvrzuje explicitně.
@@ -321,9 +333,10 @@ export default function GdprColdEmailPage() {
           <div className="mt-16 p-8 border border-orange-500/30 rounded-2xl bg-orange-900/10 text-center">
             <h2 className="text-2xl font-bold mb-3">Chcete to probrat?</h2>
             <p className="text-gray-300 mb-6">Rádi s vámi probereme, jak nastavit outreach tak, aby minimalizoval právní rizika — řádné patičky, správa opt-outů, personalizace a ochrana domény.</p>
-            <a href="https://cal.com/salesagent/demo" target="_blank" rel="noopener noreferrer" className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors">
+            <Link href="/cs/contact" className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors">
               Domluvit nezávazný hovor
-            </a>
+            </Link>
+            <p className="mt-4 text-sm text-gray-400">Zní to složitě nebo na to nemáte čas? <Link href="/cs/vlastni-outbound" className="text-orange-300 underline">Postavíme a rozjedeme vám automatizaci obchodu na klíč</Link>.</p>
           </div>
 
           <style>{`
@@ -364,6 +377,10 @@ export default function GdprColdEmailPage() {
               </Link>
               <Link href="/blog/jak-personalizovat-cold-emaily-ai" className="group flex items-center justify-between p-4 border border-white/10 rounded-xl hover:border-orange-500/50 transition-colors">
                 <span className="text-gray-200 group-hover:text-white transition-colors">Jak personalizovat cold e-maily pomocí AI</span>
+                <span className="text-gray-500 group-hover:text-orange-400 transition-colors">→</span>
+              </Link>
+              <Link href="/cs" className="group flex items-center justify-between p-4 border border-white/10 rounded-xl hover:border-orange-500/50 transition-colors">
+                <span className="text-gray-200 group-hover:text-white transition-colors">Automatizace obchodu na klíč</span>
                 <span className="text-gray-500 group-hover:text-orange-400 transition-colors">→</span>
               </Link>
             </div>

@@ -17,6 +17,7 @@ const pages = [
   { path: '/b2b-lead-generation', priority: 0.95, changeFrequency: 'monthly' as const },
   { path: '/automatizovane-osloveni', priority: 0.9, changeFrequency: 'monthly' as const },
   { path: '/linkedin-outreach', priority: 0.9, changeFrequency: 'monthly' as const },
+  { path: '/vlastni-outbound', priority: 0.95, changeFrequency: 'monthly' as const },
 ]
 
 const blogPosts = [

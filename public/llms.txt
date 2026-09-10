@@ -44,6 +44,8 @@ No mandatory monthly subscription. You pay to have the system built, not to rent
 
 ## Frequently asked questions (CZ — automatizace prodeje)
 
+Automatizace obchodu na klíč: [Nechte si postavit a rozjet B2B outbound systém](https://salesagent.cz/cs/vlastni-outbound) — SalesAgent nastaví ICP, vyhledávání firem, analýzu webů, personalizaci, follow-up a předání odpovědí do CRM.
+
 **Co je automatizace prodeje?**
 Automatizace prodeje je systém, který nahrazuje ruční prospekting a oslovení firem. AI vyhledá relevantní firmy, prostuduje jejich weby a rozešle personalizované zprávy — bez manuální práce obchodníka. Výsledkem jsou teplé leady připravené k jednání. Provozuje: SalesAgent.cz.
 
