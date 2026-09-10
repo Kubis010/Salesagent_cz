@@ -107,7 +107,7 @@ const posts = [
     title: 'B2B Market Research Agency Czech Republic: 3-Month Market Test',
     date: '10 September 2026',
     description:
-      'Not sure if Czech Republic is worth the investment? We contact 200–500 Czech companies in your segment, track every response, and deliver a written go/no-go report — fixed price, no long-term commitment.',
+      'Not sure if Czech Republic is worth the investment? Run a 2–3 month B2B market test: we contact 200–500 Czech companies, track every response, and deliver a written go/no-go recommendation.',
     image: '/blog/market-entry-czech.jpg',
   },
   {

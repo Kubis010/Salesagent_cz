@@ -97,7 +97,7 @@ const articleSchema = {
     'When to enter the Czech B2B market, entity vs. no entity, how to find first customers, and what to avoid.',
   image: 'https://salesagent.cz/guides/czech-market-entry-guide.jpg',
   datePublished: '2026-08-28',
-  dateModified: '2026-08-28',
+  dateModified: '2026-09-10',
   author: { '@type': 'Organization', name: 'SalesAgent.cz', url: 'https://salesagent.cz' },
   publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz' },
   url: 'https://salesagent.cz/en/guides/czech-market-entry-for-b2b-companies',
@@ -219,6 +219,43 @@ export default async function GuideCzechMarketEntry({
             </p>
           </div>
 
+          {/* Section 2b: Market entry decision framework */}
+          <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '26px', fontWeight: 700, marginBottom: '16px', marginTop: '48px' }}>
+            A practical Czech market entry decision framework
+          </h2>
+          <p style={{ color: 'var(--text-muted)', lineHeight: 1.75, marginBottom: '16px' }}>
+            The right entry model depends less on company size than on the type of sale. A software company with a remote implementation process does not need the same setup as an industrial supplier with local stock, installation, and after-sales service. Before opening an entity, map the commercial requirements of your first ten target accounts.
+          </p>
+          <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px', padding: '24px', marginBottom: '24px' }}>
+            {[
+              { title: 'Remote delivery', body: 'If onboarding, support, and delivery can happen remotely, start with direct sales from your existing EU entity and localised outreach.' },
+              { title: 'Local trust requirement', body: 'If buyers need Czech-language calls, references, or a local point of contact, add a Czech-speaking sales layer before adding a legal entity.' },
+              { title: 'Operational presence', body: 'If the offer needs inventory, technicians, a warehouse, or local employment, model the entity and tax implications with a qualified local adviser.' },
+              { title: 'Regulated or public-sector sales', body: 'Check procurement, certification, data-processing, VAT, and contract requirements before promising a launch date.' },
+            ].map((item) => (
+              <div key={item.title} style={{ borderBottom: '1px solid var(--border)', padding: '14px 0' }}>
+                <p style={{ fontWeight: 700, marginBottom: '5px' }}>{item.title}</p>
+                <p style={{ fontSize: '14px', color: 'var(--text-muted)', lineHeight: 1.7, margin: 0 }}>{item.body}</p>
+              </div>
+            ))}
+          </div>
+
+          <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '26px', fontWeight: 700, marginBottom: '16px', marginTop: '48px' }}>
+            A 90-day validation plan before committing to Czech infrastructure
+          </h2>
+          <p style={{ color: 'var(--text-muted)', lineHeight: 1.75, marginBottom: '16px' }}>
+            A market test should answer commercial questions, not create the illusion of activity. Agree on one narrow ICP, a realistic number of target accounts, the message and the definition of a qualified response. Then review the results every two weeks and change one variable at a time.
+          </p>
+          <ol style={{ paddingLeft: '20px', color: 'var(--text-muted)', lineHeight: 1.9, marginBottom: '24px' }}>
+            <li><strong>Days 1–14:</strong> select the segment, check the offer, prepare English and Czech messaging, and build a verified target list.</li>
+            <li><strong>Days 15–45:</strong> run a small personalised email and LinkedIn sequence; record replies, objections, language preference, and meeting quality.</li>
+            <li><strong>Days 46–75:</strong> refine the ICP and offer around real conversations, then test a second segment or message.</li>
+            <li><strong>Days 76–90:</strong> decide whether to scale outreach, add a local partner, hire, or establish a Czech entity.</li>
+          </ol>
+          <p style={{ color: 'var(--text-muted)', lineHeight: 1.75, marginBottom: '16px' }}>
+            The output should be a short market-entry decision: which segment responded, which buyer role engaged, which objections repeated, what a first customer costs to acquire, and what local investment is justified by the evidence.
+          </p>
+
           {/* Section 3: Finding first customers */}
           <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '26px', fontWeight: 700, marginBottom: '16px', marginTop: '48px' }}>
             How to find your first Czech B2B customers
@@ -314,7 +351,7 @@ export default async function GuideCzechMarketEntry({
               We build you a complete AI sales system — finds Czech companies in your segment, enriches contacts, runs personalised email and LinkedIn outreach — and hand it over for you to own. No agency dependency. Ready in 1–3 weeks.
             </p>
             <Link
-              href="/en/contact"
+              href="/en/guides/b2b-market-research-agency-czech-republic"
               style={{
                 display: 'inline-block',
                 backgroundColor: 'var(--accent)',
@@ -353,7 +390,7 @@ export default async function GuideCzechMarketEntry({
               Before hiring, before an entity, before a long-term contract: we contact 200–500 Czech companies in your segment, log every response, and give you a written go/no-go at the end.
             </p>
             <Link
-              href="/en/guides/b2b-market-research-agency-czech-republic"
+              href="/en/contact"
               style={{
                 display: 'inline-block',
                 border: '1px solid var(--accent)',
