@@ -345,13 +345,13 @@ export default async function GuideCzechMarketEntry({
           {/* CTA */}
           <div style={{ marginTop: '56px', marginBottom: '56px', border: '1px solid rgba(255,107,74,0.35)', borderRadius: '16px', padding: '40px 36px', background: 'rgba(255,107,74,0.04)' }}>
             <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, marginBottom: '12px' }}>
-              Build your own outbound machine for the Czech market
+              We act as your external sales team in Czech Republic
             </h2>
             <p style={{ color: 'var(--text-muted)', lineHeight: 1.7, marginBottom: '24px', maxWidth: '560px' }}>
-              We build you a complete AI sales system — finds Czech companies in your segment, enriches contacts, runs personalised email and LinkedIn outreach — and hand it over for you to own. No agency dependency. Ready in 1–3 weeks.
+              Our agents personally research Czech companies in your segment, contact decision-makers by email and LinkedIn, and book first meetings — all in your name. No Czech entity, no local hire needed. You get qualified meetings; we handle the outreach.
             </p>
             <Link
-              href="/en/guides/b2b-market-research-agency-czech-republic"
+              href="/en/contact"
               style={{
                 display: 'inline-block',
                 backgroundColor: 'var(--accent)',

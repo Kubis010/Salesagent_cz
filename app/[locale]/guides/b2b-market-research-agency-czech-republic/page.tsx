@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { redirect } from 'next/navigation'
 
@@ -173,6 +174,38 @@ export default async function GuideMarketResearchCzech({
 
           <p style={{ fontSize: '18px', lineHeight: 1.7, color: 'var(--text)', marginBottom: '32px', borderLeft: '3px solid var(--accent)', paddingLeft: '20px' }}>
             Before you hire a Czech sales rep, set up an entity, or commit budget to the Czech market — run a 2–3 month test. Our agents systematically contact Czech companies in your target segment, log every response, and give you a real demand signal. Fixed monthly price, no long-term contract, clear go/no-go at the end.
+          </p>
+
+          <Image
+            src="/blog/prague-market-research.jpg"
+            alt="B2B market research Czech Republic — Prague business district"
+            width={760}
+            height={400}
+            style={{ width: '100%', height: '340px', objectFit: 'cover', borderRadius: '12px', marginBottom: '48px' }}
+            priority
+          />
+
+          {/* Section 0: Two services we offer */}
+          <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '26px', fontWeight: 700, marginBottom: '16px', marginTop: '0' }}>
+            Two ways we research the Czech market for you
+          </h2>
+          <p style={{ color: 'var(--text-muted)', lineHeight: 1.75, marginBottom: '24px' }}>
+            Depending on what you need, we offer two complementary services — desk research to understand the market landscape, and a live commercial test to validate real demand with real companies.
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '40px' }}>
+            <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px', padding: '24px' }}>
+              <p style={{ fontSize: '13px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--text-muted)', marginBottom: '10px' }}>Classical market research</p>
+              <p style={{ fontSize: '15px', fontWeight: 700, marginBottom: '10px' }}>Market landscape analysis</p>
+              <p style={{ fontSize: '14px', color: 'var(--text-muted)', lineHeight: 1.7, marginBottom: 0 }}>Sector mapping, competitor landscape, ICP definition, buyer persona research, ARES database analysis, and a written market sizing report. Delivered in 2–3 weeks.</p>
+            </div>
+            <div style={{ background: 'rgba(255,107,74,0.04)', border: '1px solid rgba(255,107,74,0.35)', borderRadius: '12px', padding: '24px' }}>
+              <p style={{ fontSize: '13px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--accent)', marginBottom: '10px' }}>Commercial market test</p>
+              <p style={{ fontSize: '15px', fontWeight: 700, marginBottom: '10px' }}>Live demand validation</p>
+              <p style={{ fontSize: '14px', color: 'var(--text-muted)', lineHeight: 1.7, marginBottom: 0 }}>We contact 200–500 Czech companies, run personalised outreach, log every response, book meetings, and deliver a go/no-go report. Runs 2–3 months at a fixed monthly fee.</p>
+            </div>
+          </div>
+          <p style={{ color: 'var(--text-muted)', lineHeight: 1.75, marginBottom: '40px' }}>
+            Most clients start with a commercial market test — it delivers both the landscape data and real buying signals in one run. The classical research report is the right choice if you need a defined deliverable for an internal decision, board presentation, or investor due diligence first.
           </p>
 
           {/* Section 1: Why a market test, not a report */}

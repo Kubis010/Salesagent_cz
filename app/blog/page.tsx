@@ -108,7 +108,7 @@ const posts = [
     date: '10 September 2026',
     description:
       'Not sure if Czech Republic is worth the investment? Run a 2–3 month B2B market test: we contact 200–500 Czech companies, track every response, and deliver a written go/no-go recommendation.',
-    image: '/blog/market-entry-czech.jpg',
+    image: '/blog/prague-market-research.jpg',
   },
   {
     href: '/en/guides/czech-market-entry-for-b2b-companies',
@@ -117,7 +117,7 @@ const posts = [
     date: '28 August 2026',
     description:
       'When to enter the Czech B2B market, entity vs. no entity, how to find first customers, and what to avoid. A practical guide for international companies.',
-    image: '/blog/european-sales-expansion.jpg',
+    image: '/guides/czech-market-entry-guide.jpg',
   },
   {
     href: '/blog/european-sales-expansion',

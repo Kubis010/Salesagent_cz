@@ -231,7 +231,7 @@ export default function MarketEntryCzechPage() {
           <Section title="How to test the Czech market without hiring">
             <p>
               The practical model: external sales representation. Instead of hiring a local rep or opening an office on day one, you use an{' '}
-              <Link href="/en/sales-representation-czech-republic" style={{ color: 'var(--accent)', textDecoration: 'none' }}>
+              <Link href="/en/guides/czech-market-entry-for-b2b-companies" style={{ color: 'var(--accent)', textDecoration: 'none' }}>
                 external sales representative in the Czech Republic
               </Link>
               {' '}to run outreach and book first meetings — so you validate demand before you commit to infrastructure.
@@ -316,19 +316,36 @@ export default function MarketEntryCzechPage() {
             ))}
           </section>
 
+          {/* Market research crosslink box */}
+          <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '14px', padding: '28px 32px', marginBottom: '32px' }}>
+            <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '10px' }}>Not sure if Czech market is worth the investment?</p>
+            <p style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '17px', fontWeight: 700, marginBottom: '10px' }}>
+              Run a B2B market research first — classical analysis or live commercial test
+            </p>
+            <p style={{ fontSize: '14px', color: 'var(--text-muted)', lineHeight: 1.7, marginBottom: '18px' }}>
+              We offer both: a written market landscape analysis (sector mapping, ICP, competitors) delivered in 2–3 weeks, and a 2–3 month commercial market test where our agents personally contact 200–500 Czech companies and log every response.
+            </p>
+            <Link
+              href="/en/guides/b2b-market-research-agency-czech-republic"
+              style={{ display: 'inline-block', border: '1px solid var(--accent)', color: 'var(--accent)', fontWeight: 700, fontSize: '14px', padding: '11px 22px', borderRadius: '8px', textDecoration: 'none' }}
+            >
+              Read about Czech market research →
+            </Link>
+          </div>
+
           {/* CTA */}
           <div style={{ background: 'rgba(255,107,74,0.06)', border: '1px solid rgba(255,107,74,0.25)', borderRadius: '14px', padding: '36px', marginBottom: '56px' }}>
             <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, marginBottom: '12px' }}>
               Thinking about entering the Czech market?
             </h2>
             <p style={{ fontSize: '15px', color: 'var(--text-muted)', lineHeight: '1.65', marginBottom: '24px' }}>
-              Test demand first. We act as your external sales representative — market research, outreach, and first meetings — so your Czech expansion starts generating pipeline before you open an office.
+              Test demand first. We act as your external sales representative — we personally research Czech companies in your segment, contact decision-makers by email and LinkedIn, and book first meetings in your name. No Czech entity or local hire needed.
             </p>
             <Link
-              href="/en/sales-representation-czech-republic"
+              href="/en/contact"
               style={{ display: 'inline-block', backgroundColor: 'var(--accent)', color: '#0B1320', fontWeight: 700, fontSize: '14px', padding: '12px 24px', borderRadius: '8px', textDecoration: 'none' }}
             >
-              External sales representation in Czech Republic →
+              Book a free consultation →
             </Link>
           </div>
 
@@ -336,8 +353,11 @@ export default function MarketEntryCzechPage() {
           <div style={{ paddingTop: '32px', borderTop: '1px solid var(--border)' }}>
             <p style={{ fontSize: '14px', fontWeight: 600, color: 'var(--text)', marginBottom: '12px' }}>Related</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              <Link href="/en/sales-representation-czech-republic" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
-                External sales representation in Czech Republic — outsourced sales agent service →
+              <Link href="/en/guides/b2b-market-research-agency-czech-republic" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
+                B2B Market Research Agency Czech Republic: 3-Month Market Test →
+              </Link>
+              <Link href="/en/guides/czech-market-entry-for-b2b-companies" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
+                Czech Market Entry for B2B Companies: A Practical Playbook →
               </Link>
               <Link href="/en/resources/czech-business-companies-register" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
                 Czech Business Register (ARES) — how to look up any Czech company →
