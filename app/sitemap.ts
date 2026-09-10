@@ -88,6 +88,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       languages: { en: `${BASE_URL}/en/guides/czech-market-entry-for-b2b-companies` },
     },
   })
+  entries.push({
+    url: `${BASE_URL}/en/guides/b2b-market-research-agency-czech-republic`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.85,
+    alternates: {
+      languages: { en: `${BASE_URL}/en/guides/b2b-market-research-agency-czech-republic` },
+    },
+  })
 
   return entries
 }
