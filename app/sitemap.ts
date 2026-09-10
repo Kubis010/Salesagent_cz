@@ -78,5 +78,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   }
 
+  // EN-only guides
+  entries.push({
+    url: `${BASE_URL}/en/guides/czech-market-entry-for-b2b-companies`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.85,
+    alternates: {
+      languages: { en: `${BASE_URL}/en/guides/czech-market-entry-for-b2b-companies` },
+    },
+  })
+
   return entries
 }

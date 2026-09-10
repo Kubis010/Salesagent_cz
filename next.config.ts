@@ -43,7 +43,12 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: '/:locale(cs|en)/guides/:slug*',
+        source: '/:locale(cs|en)/guides/expand-b2b-sales-to-czech-republic',
+        destination: '/:locale',
+        permanent: true,
+      },
+      {
+        source: '/:locale(cs|en)/guides/b2b-lead-generation-in-the-czech-republic',
         destination: '/:locale',
         permanent: true,
       },

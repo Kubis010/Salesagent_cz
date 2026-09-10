@@ -308,13 +308,13 @@ export default async function GuideCzechMarketEntry({
           {/* CTA */}
           <div style={{ marginTop: '56px', marginBottom: '56px', border: '1px solid rgba(255,107,74,0.35)', borderRadius: '16px', padding: '40px 36px', background: 'rgba(255,107,74,0.04)' }}>
             <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, marginBottom: '12px' }}>
-              We handle your Czech market entry
+              Build your own outbound machine for the Czech market
             </h2>
             <p style={{ color: 'var(--text-muted)', lineHeight: 1.7, marginBottom: '24px', maxWidth: '560px' }}>
-              We research Czech companies in your segment, run personalised email and LinkedIn outreach, and book first meetings. No entity needed, no hiring, no long-term commitment. Start within one week.
+              We build you a complete AI sales system — finds Czech companies in your segment, enriches contacts, runs personalised email and LinkedIn outreach — and hand it over for you to own. No agency dependency. Ready in 1–3 weeks.
             </p>
             <Link
-              href="/en/sales-representation-czech-republic"
+              href="/en/contact"
               style={{
                 display: 'inline-block',
                 backgroundColor: 'var(--accent)',
@@ -326,7 +326,7 @@ export default async function GuideCzechMarketEntry({
                 textDecoration: 'none',
               }}
             >
-              See how it works →
+              Book a free consultation →
             </Link>
           </div>
 
@@ -347,11 +347,11 @@ export default async function GuideCzechMarketEntry({
           <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>
             <p style={{ fontSize: '14px', fontWeight: 600, color: 'var(--text)', marginBottom: '12px' }}>Related guides</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              <Link href="/en/guides/expand-b2b-sales-to-czech-republic" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
-                How to Expand Your B2B Sales to Czech Republic (2026 Guide) →
+              <Link href="/blog/how-to-expand-your-business-and-sales-to-the-european-union" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
+                How to Expand Your Business and Sales to the European Union →
               </Link>
-              <Link href="/en/guides/b2b-lead-generation-in-the-czech-republic" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
-                B2B Lead Generation in the Czech Republic: How It Actually Works →
+              <Link href="/blog/sales-automation-ai-b2b-outreach" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
+                Sales Automation: How AI Is Changing B2B Outreach →
               </Link>
               <Link href="/en/resources/czech-business-companies-register" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
                 Search the Czech Business Register (ARES) →
