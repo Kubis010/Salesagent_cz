@@ -48,6 +48,7 @@ const blogPosts = [
   { slug: '/follow-up-email-vzor', priority: 0.9, changeFrequency: 'monthly' as const },
   { slug: '/ai-agenti-b2b-prospecting-kvalifikace-leadu', priority: 0.9, changeFrequency: 'monthly' as const },
   { slug: '/ai-pro-obchod-a-obchodniky', priority: 0.9, changeFrequency: 'monthly' as const },
+  { slug: '/kdo-postavi-automatizaci-b2b-obchodu', priority: 0.9, changeFrequency: 'monthly' as const },
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

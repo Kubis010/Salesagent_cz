@@ -21,6 +21,15 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    href: '/blog/kdo-postavi-automatizaci-b2b-obchodu',
+    lang: 'CS',
+    title: 'Kdo v ČR postaví a rozjede automatizaci B2B obchodu na klíč?',
+    date: '14. září 2026',
+    description:
+      'Chcete automatizovat obchod, ale nemáte čas ani know-how? Kdo za vás v ČR postaví a rozjede automatizaci B2B oslovování na klíč — co to obnáší, jak vypadá spuštění, kolik to stojí a čím se to liší od agentury i pronajatého nástroje.',
+    image: '/blog/ai-agent-leady.jpg',
+  },
+  {
     href: '/blog/jak-personalizovat-cold-emaily-ai',
     lang: 'CS',
     title: 'Jak AI personalizuje cold emaily — bez šablon, bez proměnných',
