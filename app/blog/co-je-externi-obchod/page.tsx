@@ -210,9 +210,9 @@ export default function CoJeExterniObchodPage() {
               Domluvit bezplatnou konzultaci
             </a>
             <p className="mt-4 text-sm text-gray-500">
-              Chcete outsourcing obchodu?{' '}
-              <Link href="/cs/sales-representation-czech-republic" className="text-orange-400 hover:text-orange-300 underline">
-                Externí obchodní zástupce pro vaši firmu — jak funguje naše služba →
+              Zní to složitě nebo na to nemáte čas?{' '}
+              <Link href="/cs/vlastni-outbound" className="text-orange-400 hover:text-orange-300 underline">
+                Postavíme a rozjedeme vám automatizaci obchodu na klíč →
               </Link>
             </p>
           </div>

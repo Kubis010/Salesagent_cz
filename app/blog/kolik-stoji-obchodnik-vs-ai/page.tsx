@@ -283,6 +283,12 @@ export default function KolikStojiObchodnikPage() {
             <a href="https://cal.com/salesagent/demo" target="_blank" rel="noopener noreferrer" className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors">
               Domluvit bezplatnou ukázku
             </a>
+            <p className="mt-4 text-sm text-gray-500">
+              Zní to složitě nebo na to nemáte čas?{' '}
+              <Link href="/cs/vlastni-outbound" className="text-orange-400 hover:text-orange-300 underline">
+                Postavíme a rozjedeme vám automatizaci obchodu na klíč →
+              </Link>
+            </p>
           </div>
 
           <style>{`

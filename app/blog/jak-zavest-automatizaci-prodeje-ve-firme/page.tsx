@@ -349,6 +349,12 @@ export default function Page() {
               </Link>
               {' — dedikované stránky služby.'}.
             </p>
+            <p style={{ marginTop: '10px', fontSize: '13px', color: 'var(--text-muted)' }}>
+              Zní to složitě nebo na to nemáte čas?{' '}
+              <Link href="/cs/vlastni-outbound" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
+                Postavíme a rozjedeme vám automatizaci obchodu na klíč →
+              </Link>
+            </p>
           </div>
 
           <style>{`

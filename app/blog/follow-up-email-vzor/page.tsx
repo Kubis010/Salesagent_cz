@@ -252,6 +252,12 @@ export default function FollowUpEmailVzorPage() {
             <a href="https://cal.com/salesagent/demo" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors">
               Domluvit nezávazný hovor
             </a>
+            <p className="mt-4 text-sm text-gray-500">
+              Zní to složitě nebo na to nemáte čas?{' '}
+              <Link href="/cs/vlastni-outbound" className="text-blue-400 hover:text-blue-300 underline">
+                Postavíme a rozjedeme vám automatizaci obchodu na klíč →
+              </Link>
+            </p>
           </div>
 
           <style>{`

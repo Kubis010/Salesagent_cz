@@ -346,6 +346,12 @@ export default function Page() {
             >
               Domluvit hovor zdarma
             </a>
+            <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginTop: '18px' }}>
+              Zní to složitě nebo na to nemáte čas?{' '}
+              <Link href="/cs/vlastni-outbound" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
+                Postavíme a rozjedeme vám automatizaci obchodu na klíč →
+              </Link>
+            </p>
           </div>
 
           <style>{`
