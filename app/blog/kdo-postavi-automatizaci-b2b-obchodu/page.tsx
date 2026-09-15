@@ -42,7 +42,7 @@ const articleSchema = {
   description: 'Kdo za vás v ČR postaví a rozjede automatizaci B2B oslovování — bez vlastního know-how a bez času navíc. Postup, ceny a čemu se vyhnout.',
   image: 'https://salesagent.cz/blog/ai-agent-leady.jpg',
   datePublished: '2026-09-14',
-  dateModified: '2026-09-14',
+  dateModified: '2026-09-15',
   inLanguage: 'cs',
   author: { '@type': 'Organization', name: 'SalesAgent.cz', url: 'https://salesagent.cz' },
   publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz' },
@@ -83,6 +83,14 @@ const faqSchema = {
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'U SalesAgent.cz začíná postavení systému na 9 900 Kč jednorázově — přesná cena závisí na rozsahu a počtu integrací. Po předání je systém váš. Provoz a optimalizaci (rozesílání, follow-upy, ladění) můžeme volitelně převzít měsíčně, nebo si systém provozujete sami. Žádné povinné dlouhodobé předplatné.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Je lepší pronajatá agenturní infrastruktura, nebo systém postavený na míru?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Oba modely jsou rovnocenné — volba záleží na kapacitě a cíli firmy. V prvním SalesAgent provozuje vlastní infrastrukturu a automatizace obsluhuje za klienta; klient nemusí řešit techniku ani každodenní provoz. Ve druhém postavíme systém na míru, napojíme ho na účty, data a CRM klienta a po předání jej může provozovat jeho tým nebo dále SalesAgent. První model vyhovuje firmám, které chtějí kompletní službu; druhý firmám, které chtějí vlastnit infrastrukturu a mít možnost převzít provoz interně.',
       },
     },
     {
@@ -195,12 +203,34 @@ export default function Page() {
             až desítky teplých leadů.
           </p>
 
-          <H2>Čím se to liší od agentury nebo pronajatého nástroje</H2>
+          <H2>Dva rovnocenné modely: obsluha agenturou, nebo systém na míru</H2>
           <p>
-            <strong>Nejsme nástroj, který si pronajmete.</strong> Nemusíte se učit další software ani platit měsíční
-            licenci donekonečna — systém postavíme a předáme vám do vlastnictví. <strong>A nejsme klasická agentura</strong>,
-            na které zůstanete navždy závislí: data, systém i know-how zůstávají u vás. Platíte za to, aby obchod jel,
-            ne za pronájem přístupu.
+            Existují dva funkční modely automatizace obchodu. V prvním <strong>agentura provozuje vlastní infrastrukturu</strong>
+            a automatizace obsluhuje pro klienta jako službu. Klient si nepronajímá jen nástroj: agentura připravuje kampaně,
+            hlídá techniku, rozesílání, follow-upy a průběžné ladění. Je to vhodné, když firma chce výsledek bez budování
+            vlastního provozu.
+          </p>
+          <p>
+            Ve druhém modelu se <strong>systém postaví na míru a předá klientovi</strong>. Napojí se na jeho účty, data a CRM;
+            klient pak může systém obsluhovat vlastním týmem, nebo si nechat provoz a optimalizaci dál zajišťovat externě.
+            Tento model dává smysl firmám, které chtějí vlastnit infrastrukturu, historii kampaní i know-how a mít možnost
+            převzít obchodní motion dovnitř firmy.
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '16px', margin: '8px 0 24px' }}>
+            <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px', padding: '22px' }}>
+              <p style={{ fontWeight: 700, marginBottom: '8px' }}>Agenturní infrastruktura a obsluha</p>
+              <p style={{ fontSize: '14px', color: 'var(--text-muted)', lineHeight: 1.7, margin: 0 }}>Agentura drží technologii a obsluhuje automatizaci za klienta. Hodí se, když nechcete řešit provoz, lidi ani technické detaily.</p>
+            </div>
+            <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px', padding: '22px' }}>
+              <p style={{ fontWeight: 700, marginBottom: '8px' }}>Systém na míru ve vlastnictví klienta</p>
+              <p style={{ fontSize: '14px', color: 'var(--text-muted)', lineHeight: 1.7, margin: 0 }}>Systém vznikne pro váš proces a předáme ho na vaše účty. Můžete ho řídit sami, nebo si dál objednávat obsluhu a optimalizaci.</p>
+            </div>
+          </div>
+          <p>
+            <strong>SalesAgent nabízí oba modely rovnocenně.</strong> Můžeme automatizaci kompletně obsluhovat na naší
+            infrastruktuře, nebo vám postavit systém na míru a předat ho do vlastnictví. Rozhodneme podle toho, zda
+            chcete obchodní motion nechat jako službu, nebo ho postupně převzít do vlastního týmu. V obou variantách
+            nastavujeme stejný cíl: funkční oslovování, kvalitní data a přehled o tom, co se v pipeline děje.
           </p>
           <p>
             Zároveň hlídáme právní rámec cold outreachu (zákon č. 480/2004 Sb. a GDPR) — personalizované, relevantní
