@@ -123,7 +123,7 @@ export default async function SalesRepCzPage({
             <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.2rem)', fontWeight: 800, lineHeight: 1.1, letterSpacing: '-0.03em', marginBottom: '24px' }}>
               {isCs
                 ? 'Externí obchodník,\nkterý prodává za vás'
-                : 'Your external sales representative\nin Czech Republic'}
+                : 'We will start your sales\nin the Czech Republic'}
             </h1>
             <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', maxWidth: '640px', margin: '0 auto 40px', lineHeight: 1.7 }}>
               {isCs

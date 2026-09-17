@@ -3,6 +3,7 @@ export const cs = {
     home: 'Domů',
     pricing: 'Ceník',
     salesRepCz: 'Jak to stavíme',
+    czechEntry: 'Vstup na trh ČR',
     about: 'O nás',
     contact: 'Kontakt',
     bookCall: 'Konzultace zdarma',

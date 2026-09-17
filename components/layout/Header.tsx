@@ -18,6 +18,10 @@ export default function Header({ locale, t }: HeaderProps) {
     { href: base, label: t.nav.home },
     { href: `${base}/pricing`, label: t.nav.pricing },
     { href: `${base}#how-it-works`, label: t.nav.salesRepCz },
+    // EN-only: Czech market entry / sales representation service (CS variant is 301'd)
+    ...(locale === 'en'
+      ? [{ href: '/en/sales-representation-czech-republic', label: t.nav.czechEntry }]
+      : []),
     { href: '/blog', label: 'Blog' },
     { href: `${base}/about`, label: t.nav.about },
     { href: `${base}/contact`, label: t.nav.contact },
