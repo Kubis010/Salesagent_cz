@@ -430,12 +430,12 @@ export default async function SalesRepCzPage({
           {/* Blog links */}
           <div style={{ marginTop: '60px', textAlign: 'center', display: 'flex', flexDirection: 'column', gap: '12px' }}>
             <Link
-              href={isCs ? '/blog/co-je-externi-obchod' : '/blog/external-sales-representation-czech-republic'}
+              href={isCs ? '/blog/co-je-externi-obchod' : '/en/guides/czech-market-entry-for-b2b-companies'}
               style={{ fontSize: '14px', color: 'var(--text-muted)', textDecoration: 'none' }}
             >
               {isCs
                 ? '→ Přečtěte si, co dělá externí obchodník a kdy se vyplatí'
-                : '→ Read our story: what external sales representation in Czech Republic actually looks like'}
+                : '→ Guide: Czech market entry for B2B companies — a practical playbook'}
             </Link>
             {!isCs && (
               <Link
@@ -447,18 +447,10 @@ export default async function SalesRepCzPage({
             )}
             {!isCs && (
               <Link
-                href="/en/guides/expand-b2b-sales-to-czech-republic"
+                href="/en/guides/b2b-market-research-agency-czech-republic"
                 style={{ fontSize: '14px', color: 'var(--text-muted)', textDecoration: 'none' }}
               >
-                → Guide: How to expand your B2B sales to Czech Republic (2026)
-              </Link>
-            )}
-            {!isCs && (
-              <Link
-                href="/en/guides/b2b-lead-generation-in-the-czech-republic"
-                style={{ fontSize: '14px', color: 'var(--text-muted)', textDecoration: 'none' }}
-              >
-                → Guide: B2B lead generation in Czech Republic — how it actually works
+                → Guide: B2B market research in Czech Republic — a fixed-price market test
               </Link>
             )}
           </div>

@@ -36,10 +36,11 @@ const nextConfig: NextConfig = {
         destination: '/blog',
         permanent: true,
       },
-      // Abandoned "sales representation / Czech market entry" positioning → 301 to homepage
+      // EN sales-representation service page is live (ranks for "market entry czech republic").
+      // CS stays redirected — Czech positioning is the owned-system homepage, not representation.
       {
-        source: '/:locale(cs|en)/sales-representation-czech-republic',
-        destination: '/:locale',
+        source: '/cs/sales-representation-czech-republic',
+        destination: '/cs',
         permanent: true,
       },
       {

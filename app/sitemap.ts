@@ -99,5 +99,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   })
 
+  // EN-only service page (CS variant is 301'd to homepage)
+  entries.push({
+    url: `${BASE_URL}/en/sales-representation-czech-republic`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.9,
+    alternates: {
+      languages: { en: `${BASE_URL}/en/sales-representation-czech-republic` },
+    },
+  })
+
   return entries
 }
