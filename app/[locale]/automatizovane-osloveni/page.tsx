@@ -16,7 +16,7 @@ export async function generateMetadata({
       : 'B2B Outreach to Czech Companies — Email and LinkedIn',
     description: cs
       ? 'Automatizujeme celý outbound proces: AI napíše personalizovaný cold email pro každou firmu zvlášť, odešle ho a zároveň kontaktuje rozhodovatele na LinkedIn. Bez šablon, bez databází.'
-      : 'Automated B2B outreach: a personalised cold email for each company, sent alongside LinkedIn contact with decision-makers. No templates, no databases.',
+      : 'B2B outreach to Czech companies as part of your market entry: a personalised cold email for each company, sent alongside LinkedIn contact with decision-makers. Sales outsourcing, no local rep to hire.',
     alternates: {
       canonical: `https://salesagent.cz/${locale}/automatizovane-osloveni`,
       languages: {
@@ -46,8 +46,6 @@ export async function generateMetadata({
         ? 'AI napíše unikátní email pro každou firmu a zároveň kontaktuje rozhodovatele na LinkedIn.'
         : 'AI writes a unique email for each company and simultaneously contacts decision-makers on LinkedIn.',
     },
-    // EN is held for later — keep the page built but out of the index. CS stays indexable.
-    robots: cs ? { index: true, follow: true } : { index: false, follow: true },
   }
 }
 
