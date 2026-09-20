@@ -14,8 +14,8 @@ const pages = [
     priority: 0.7,
     changeFrequency: 'yearly' as const,
   },
-  { path: '/b2b-lead-generation', priority: 0.95, changeFrequency: 'monthly' as const },
-  { path: '/automatizovane-osloveni', priority: 0.9, changeFrequency: 'monthly' as const },
+  { path: '/b2b-lead-generation', priority: 0.95, changeFrequency: 'monthly' as const, csOnly: true },
+  { path: '/automatizovane-osloveni', priority: 0.9, changeFrequency: 'monthly' as const, csOnly: true },
   { path: '/linkedin-outreach', priority: 0.9, changeFrequency: 'monthly' as const },
   { path: '/vlastni-outbound', priority: 0.95, changeFrequency: 'monthly' as const },
 ]
@@ -59,6 +59,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   for (const locale of locales) {
     for (const page of pages) {
+      // Pages held for EN (rendered but noindex) are listed CS-only.
+      if ('csOnly' in page && page.csOnly && locale !== 'cs') continue
+      const alternateLocales = 'csOnly' in page && page.csOnly ? (['cs'] as const) : locales
       entries.push({
         url: `${BASE_URL}/${locale}${page.path}`,
         lastModified: new Date(),
@@ -66,7 +69,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: page.priority,
         alternates: {
           languages: Object.fromEntries(
-            locales.map((l) => [l, `${BASE_URL}/${l}${page.path}`])
+            alternateLocales.map((l) => [l, `${BASE_URL}/${l}${page.path}`])
           ),
         },
       })

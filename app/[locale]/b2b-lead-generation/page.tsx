@@ -13,10 +13,10 @@ export async function generateMetadata({
   return {
     title: cs
       ? 'B2B Lead Generation — generování leadů bez databází'
-      : 'B2B Lead Generation for Your Czech Market Entry',
+      : 'B2B Lead Generation with AI — No Databases Needed',
     description: cs
       ? 'Generujeme B2B leady přímo z webu: AI prohledá Google Maps, prostuduje web každé firmy a vybere jen ty, co sedí vašemu ICP. Žádná databáze, žádný obchodník na rešerše.'
-      : 'Entering the Czech market? We generate B2B leads directly from the web — researching Czech companies and selecting only those matching your ICP. Sales outsourcing, no local SDR to hire.',
+      : 'We generate B2B leads directly from the web — AI searches Google Maps, reads each company website, and selects only those matching your ICP. No bought database, no SDR to hire.',
     keywords: cs
       ? ['generování leadů', 'B2B lead generation', 'generování B2B leadů', 'AI lead generation', 'vyhledávání firem', 'B2B prospecting']
       : ['B2B lead generation', 'AI lead generation', 'lead generation without database', 'automated prospecting'],
@@ -49,6 +49,8 @@ export async function generateMetadata({
         ? 'AI prohledá Google Maps a web každé firmy — výstupem jsou leady připravené k oslovení.'
         : 'AI searches Google Maps and each company website — delivering leads ready to contact.',
     },
+    // EN is held for later — keep the page built but out of the index. CS stays indexable.
+    robots: cs ? { index: true, follow: true } : { index: false, follow: true },
   }
 }
 
@@ -96,7 +98,7 @@ export default async function B2BLeadGenerationPage({
               lineHeight: 1.1,
             }}
           >
-            {cs ? 'Generování B2B leadů bez databází' : 'B2B Lead Generation for Your Czech Market Entry'}
+            {cs ? 'Generování B2B leadů bez databází' : 'B2B Lead Generation Without Databases'}
           </h1>
           <p style={{ fontSize: '18px', color: 'var(--text-muted)', lineHeight: '1.65', maxWidth: '620px', marginBottom: '16px' }}>
             {cs
