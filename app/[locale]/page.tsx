@@ -666,6 +666,11 @@ export default async function HomePage({
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
           {(locale === 'en' ? [
             {
+              href: '/en/guides/czech-market-entry-for-b2b-companies',
+              title: 'Czech Market Entry for B2B Companies',
+              desc: 'The 2026 playbook: when to enter, entity vs. no entity, and how we act as your external sales team in the Czech Republic and Slovakia — no local hire.',
+            },
+            {
               href: '/blog/how-to-implement-sales-automation',
               title: 'How to Implement Sales Automation',
               desc: 'A practical guide to building an automated outbound process — from data and enrichment to email, LinkedIn and CRM.',

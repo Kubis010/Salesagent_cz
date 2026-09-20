@@ -13,15 +13,18 @@ export async function generateMetadata({
     return { robots: { index: false, follow: true } }
   }
   return {
-    title: 'Czech Market Entry for B2B Companies: A Practical Playbook',
+    title: 'Czech Market Entry for B2B: The 2026 Playbook (No Entity Needed)',
     description:
-      'When to enter the Czech B2B market, entity vs. no entity, how to find first customers, and what to avoid. A practical guide for international companies.',
+      'How to enter the Czech (and Slovak) B2B market in 2026: when to enter, entity vs. no entity, how to find your first customers, and what to avoid — without hiring a local rep.',
     keywords: [
+      'market entry czech republic',
       'czech market entry b2b',
+      'market entry slovakia',
       'entering czech republic market',
       'how to enter czech market',
       'czech market entry strategy',
       'b2b market entry czech republic',
+      'czech and slovak market entry',
       'czech republic business expansion',
     ],
     alternates: {
@@ -36,8 +39,8 @@ export async function generateMetadata({
       locale: 'en_US',
       url: 'https://salesagent.cz/en/guides/czech-market-entry-for-b2b-companies',
       siteName: 'SalesAgent.cz',
-      title: 'Czech Market Entry for B2B Companies: A Practical Playbook',
-      description: 'When to enter, entity vs. no entity, how to find first customers, and what to avoid.',
+      title: 'Czech Market Entry for B2B: The 2026 Playbook (No Entity Needed)',
+      description: 'How to enter the Czech and Slovak B2B market: when to enter, entity vs. no entity, how to find first customers, and what to avoid.',
       images: [
         {
           url: 'https://salesagent.cz/guides/czech-market-entry-guide.jpg',
@@ -68,6 +71,14 @@ const faqSchema = {
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'SalesAgent.cz acts as your external sales team in the Czech Republic: we build a verified target list matching your ICP, contact decision-makers by personalised email and LinkedIn in your name, run the follow-ups, qualify interest, and book meetings straight into your calendar — in Czech or English as needed. You keep your brand and every relationship; we handle the prospecting and outreach. No Czech entity, no local hire, and no long-term lock-in — most companies start with a fixed-price 2–3 month market test before scaling.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can you help with market entry to Slovakia as well as the Czech Republic?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Slovakia is the natural second market after the Czech Republic — a shared business culture, mutually intelligible language, and buyers who often deal with Czech and Slovak suppliers interchangeably. We run the same outsourced sales representation model in both: build the target list, contact decision-makers in Czech or Slovak, and book meetings in your name. Many companies validate the Czech market first and extend the same outreach into Slovakia once it works.',
       },
     },
     {
