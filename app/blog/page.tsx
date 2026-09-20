@@ -21,6 +21,15 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    href: '/blog/jak-rozjet-a-zautomatizovat-b2b-obchod',
+    lang: 'CS',
+    title: 'Jak rozjet a zautomatizovat B2B obchod — bez dalšího obchodníka',
+    date: '20. září 2026',
+    description:
+      'Váš obchodník neprospektuje? Jak propojit hledání firem, kvalifikaci, personalizované oslovení, follow-up a CRM tak, aby obchodník řešil teplé příležitosti.',
+    image: '/blog/automatizace-prodeje.jpg',
+  },
+  {
     href: '/blog/kdo-postavi-automatizaci-b2b-obchodu',
     lang: 'CS',
     title: 'Kdo v ČR postaví a rozjede automatizaci B2B obchodu na klíč?',
@@ -109,15 +118,6 @@ const posts = [
     description:
       'Externí obchod je model, kdy firma využívá externího specialistu místo vlastního obchodníka. Jaké výhody přináší a kdy dává největší smysl?',
     image: '/blog/externi-obchod.jpg',
-  },
-  {
-    href: '/en/guides/b2b-market-research-agency-czech-republic',
-    lang: 'EN',
-    title: 'B2B Market Research Agency Czech Republic: 3-Month Market Test',
-    date: '10 September 2026',
-    description:
-      'Not sure if Czech Republic is worth the investment? Run a 2–3 month B2B market test: we contact 200–500 Czech companies, track every response, and deliver a written go/no-go recommendation.',
-    image: '/blog/prague-market-research.jpg',
   },
   {
     href: '/en/guides/czech-market-entry-for-b2b-companies',

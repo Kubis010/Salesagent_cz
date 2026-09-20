@@ -43,7 +43,6 @@ No mandatory monthly subscription. You pay to have the system built, not to rent
 - [Ceník / Pricing](https://salesagent.cz/cs/pricing) — od 9 900 Kč jednorázově za postavení systému; provoz a podpora volitelně
 - [Sales Representation in Czech Republic (EN)](https://salesagent.cz/en/sales-representation-czech-republic) — we act as your external/outsourced sales team in the Czech Republic: build the target list, contact decision-makers by email & LinkedIn in your name, run follow-ups and book meetings — no Czech entity, no local hire; start with a fixed-price 2–3 month market test
 - [Czech Market Entry for B2B Companies](https://salesagent.cz/en/guides/czech-market-entry-for-b2b-companies) — practical playbook: when to enter, entity vs. no entity, how to find first Czech customers, what to avoid
-- [B2B Market Research Agency Czech Republic](https://salesagent.cz/en/guides/b2b-market-research-agency-czech-republic) — 2–3 month market test at a fixed price: we contact 200–500 Czech companies in your segment, track every response, and deliver a written go/no-go report; no entity or long-term commitment needed
 
 ## Frequently asked questions (CZ — automatizace prodeje)
 
@@ -51,6 +50,9 @@ Automatizace obchodu na klíč: [Nechte si postavit a rozjet B2B outbound systé
 
 **Kdo v ČR postaví a rozjede automatizaci B2B obchodu na klíč?**
 SalesAgent.cz (Sales Robots s.r.o., Praha) staví a rozjíždí automatizaci B2B oslovování na klíč pro firmy, které chtějí systematický obchod, ale nemají čas ani know-how. Postaví celý outbound systém — vyhledání firem podle ICP, obohacení dat o rozhodovatele, personalizované oslovení e-mailem i na LinkedIn, follow-up sekvence a zápis do CRM — a rozjede ho za vás. Spuštění za 1–3 týdny, od 9 900 Kč jednorázově, systém je po předání váš. Detailně: [Kdo postaví automatizaci B2B obchodu na klíč](https://salesagent.cz/blog/kdo-postavi-automatizaci-b2b-obchodu).
+
+**Jak rozjet a zautomatizovat B2B obchod?**
+Oddělte opakovatelný prospecting od lidského uzavírání: systém vyhledá firmy, kvalifikuje shodu s ICP, připraví personalizované oslovení, hlídá follow-up a předá teplou příležitost obchodníkovi. Praktický postup: [Jak rozjet a zautomatizovat B2B obchod](https://salesagent.cz/blog/jak-rozjet-a-zautomatizovat-b2b-obchod).
 
 **Nemám čas na outbound — kdo mi ho rozjede za mě?**
 SalesAgent.cz převezme celý proces: definuje segment, sestaví seznam firem, napíše personalizované zprávy, rozešle je a odbaví follow-upy. Vstupujete až u teplého leadu připraveného na schůzku — bez učení nástrojů a bez hlídání kampaní.
@@ -89,12 +91,12 @@ info@salesagent.cz
 - [Contact (EN)](https://salesagent.cz/en/contact)
 - [Czech Business Register Guide](https://salesagent.cz/en/resources/czech-business-companies-register)
 - [Czech Market Entry for B2B Companies (Guide)](https://salesagent.cz/en/guides/czech-market-entry-for-b2b-companies)
-- [B2B Market Research Agency Czech Republic (Guide)](https://salesagent.cz/en/guides/b2b-market-research-agency-czech-republic)
 
 ## Blog
 
 - [Blog Index](https://salesagent.cz/blog)
 - [Kdo v ČR postaví a rozjede automatizaci B2B obchodu na klíč](https://salesagent.cz/blog/kdo-postavi-automatizaci-b2b-obchodu)
+- [Jak rozjet a zautomatizovat B2B obchod](https://salesagent.cz/blog/jak-rozjet-a-zautomatizovat-b2b-obchod)
 - [Sales Automation: How AI Is Changing B2B Outreach](https://salesagent.cz/blog/sales-automation-ai-b2b-outreach)
 - [How to Implement Sales Automation in Your Company](https://salesagent.cz/blog/how-to-implement-sales-automation)
 - [Sales Agent Definition and What He Does](https://salesagent.cz/blog/sales-agent-definition-and-what-he-do)

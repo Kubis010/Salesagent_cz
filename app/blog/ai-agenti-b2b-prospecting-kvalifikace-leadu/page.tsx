@@ -282,6 +282,10 @@ export default function AiAgentiProspektingPage() {
           <nav className="mt-16 pt-10 border-t border-white/10">
             <p className="text-sm text-gray-500 uppercase tracking-widest mb-6">Související články</p>
             <div className="grid gap-4">
+              <Link href="/blog/jak-rozjet-a-zautomatizovat-b2b-obchod" className="group flex items-center justify-between p-4 border border-white/10 rounded-xl hover:border-emerald-500/50 transition-colors">
+                <span className="text-gray-200 group-hover:text-white transition-colors">Jak rozjet a zautomatizovat B2B obchod</span>
+                <span className="text-gray-500 group-hover:text-emerald-400 transition-colors">→</span>
+              </Link>
               <Link href="/blog/ai-agent-pro-generovani-leadu" className="group flex items-center justify-between p-4 border border-white/10 rounded-xl hover:border-emerald-500/50 transition-colors">
                 <span className="text-gray-200 group-hover:text-white transition-colors">AI agent pro generování leadů</span>
                 <span className="text-gray-500 group-hover:text-emerald-400 transition-colors">→</span>

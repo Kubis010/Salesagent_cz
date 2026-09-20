@@ -384,6 +384,9 @@ export default function Page() {
           <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>
             <p style={{ fontSize: '14px', fontWeight: 600, color: 'var(--text)', marginBottom: '12px' }}>Související články</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              <Link href="/blog/jak-rozjet-a-zautomatizovat-b2b-obchod" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
+                Jak rozjet a zautomatizovat B2B obchod — hlavní průvodce →
+              </Link>
               <Link href="/blog/jak-personalizovat-cold-emaily-ai" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
                 Jak AI personalizuje cold emaily — bez šablon, bez proměnných →
               </Link>
