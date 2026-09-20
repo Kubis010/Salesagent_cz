@@ -30,6 +30,15 @@ const posts = [
     image: '/blog/automatizace-prodeje.jpg',
   },
   {
+    href: '/blog/jak-najit-nove-leady',
+    lang: 'CS',
+    title: 'Jak najít nové leady — kde hledat B2B zákazníky',
+    date: '20. září 2026',
+    description:
+      'Došly vám kontakty na oslovení? Kde hledat nové B2B leady bez koupené databáze, jak je vybírat podle ICP a jak vyhledávání zautomatizovat, aby přísun leadů neustal.',
+    image: '/blog/external-sales.jpg',
+  },
+  {
     href: '/blog/jak-skorovat-leady',
     lang: 'CS',
     title: 'Jak skórovat leady — lead scoring, který obchodníkovi ušetří čas',

@@ -114,7 +114,7 @@ export default function Page() {
           <H2>Jak vypadá automatizovaný B2B obchod v 7 krocích</H2>
           <ol style={{ display: 'flex', flexDirection: 'column', gap: '14px', paddingLeft: '24px' }}>
             <li><strong>Definice ICP:</strong> obor, velikost, lokalita, role rozhodovatele a situace, ve které má vaše nabídka nejvyšší hodnotu.</li>
-            <li><strong>Vyhledání firem:</strong> systém čerpá z veřejných rejstříků, webů, map, profesních sítí a oborových zdrojů.</li>
+            <li><strong>Vyhledání firem:</strong> systém čerpá z veřejných rejstříků, webů, map, profesních sítí a oborových zdrojů (viz <Link href="/blog/jak-najit-nove-leady" style={linkStyle}>jak najít nové leady</Link>).</li>
             <li><strong>Obohacení dat:</strong> doplní web, kontakty, relevantní role a kontext, který pomůže zprávu personalizovat.</li>
             <li><strong>Kvalifikace a scoring:</strong> firmy mimo ICP odfiltruje a nejvhodnější seřadí podle reálných signálů.</li>
             <li><strong>Oslovení:</strong> připraví stručný e-mail nebo LinkedIn zprávu navázanou na konkrétní firmu, ne jen hromadnou šablonu.</li>
@@ -162,6 +162,7 @@ export default function Page() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
               <Related href="/blog/jak-zavest-automatizaci-prodeje-ve-firme">Jak zavést systematické oslovování firem</Related>
               <Related href="/blog/ai-agenti-b2b-prospecting-kvalifikace-leadu">AI agenti pro prospecting a kvalifikaci leadů</Related>
+              <Related href="/blog/jak-najit-nove-leady">Jak najít nové leady — kde hledat B2B zákazníky</Related>
               <Related href="/blog/jak-skorovat-leady">Jak skórovat leady — lead scoring pro B2B</Related>
               <Related href="/blog/automatizace-prodeje-jak-ai-meni-b2b-osloveni">Jak AI mění automatizaci B2B oslovení</Related>
               <Related href="/blog/kdo-postavi-automatizaci-b2b-obchodu">Kdo postaví automatizaci B2B obchodu na klíč</Related>

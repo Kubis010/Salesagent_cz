@@ -23,6 +23,7 @@ const pages = [
 const blogPosts = [
   { slug: '/jak-rozjet-a-zautomatizovat-b2b-obchod', priority: 0.95, changeFrequency: 'monthly' as const },
   { slug: '/jak-skorovat-leady', priority: 0.9, changeFrequency: 'monthly' as const },
+  { slug: '/jak-najit-nove-leady', priority: 0.9, changeFrequency: 'monthly' as const },
   { slug: '', priority: 0.8, changeFrequency: 'weekly' as const },
   { slug: '/sales-automation-ai-b2b-outreach', priority: 0.75, changeFrequency: 'yearly' as const },
   { slug: '/how-to-implement-sales-automation', priority: 0.75, changeFrequency: 'yearly' as const },

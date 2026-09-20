@@ -13,6 +13,8 @@ export const metadata: Metadata = {
     'automatické vyhledávání B2B kontaktů',
     'personalizovaný cold e-mail',
     'nástroje na automatizaci prodeje',
+    'sales automatizace',
+    'automatizace prodeje',
   ],
   alternates: {
     canonical: 'https://salesagent.cz/blog/automatizace-prodeje-jak-ai-meni-b2b-osloveni',
