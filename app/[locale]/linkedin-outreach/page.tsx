@@ -12,8 +12,8 @@ export async function generateMetadata({
   const cs = locale === 'cs'
   return {
     title: cs
-      ? 'LinkedIn Outreach Automatizace — B2B kontakty | SalesAgent.cz'
-      : 'LinkedIn Outreach to Czech Decision-Makers | SalesAgent.cz',
+      ? 'LinkedIn Outreach Automatizace — B2B kontakty'
+      : 'LinkedIn Outreach to Czech Decision-Makers',
     description: cs
       ? 'Automatizujeme LinkedIn outreach: AI najde rozhodovatele, navštíví profil, odešle žádost o spojení s osobní zprávou a follow-up sekvenci. Bez ručního klikání, bez rizika banů.'
       : 'Reach Czech B2B decision-makers on LinkedIn as part of your market entry. We find the right people, send personal connection requests and follow up — sales outsourcing, no local rep to hire.',

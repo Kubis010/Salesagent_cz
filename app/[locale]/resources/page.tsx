@@ -9,7 +9,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params
   return {
-    title: locale === 'cs' ? 'Zdroje a průvodci | SalesAgent.cz' : 'Resources & Guides | SalesAgent.cz',
+    title: locale === 'cs' ? 'Zdroje a průvodci' : 'Resources & Guides',
     alternates: {
       canonical: `https://salesagent.cz/${locale}/resources`,
       languages: {

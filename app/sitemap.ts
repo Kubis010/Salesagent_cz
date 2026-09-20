@@ -22,6 +22,7 @@ const pages = [
 
 const blogPosts = [
   { slug: '/jak-rozjet-a-zautomatizovat-b2b-obchod', priority: 0.95, changeFrequency: 'monthly' as const },
+  { slug: '/jak-skorovat-leady', priority: 0.9, changeFrequency: 'monthly' as const },
   { slug: '', priority: 0.8, changeFrequency: 'weekly' as const },
   { slug: '/sales-automation-ai-b2b-outreach', priority: 0.75, changeFrequency: 'yearly' as const },
   { slug: '/how-to-implement-sales-automation', priority: 0.75, changeFrequency: 'yearly' as const },
@@ -90,15 +91,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       languages: { en: `${BASE_URL}/en/guides/czech-market-entry-for-b2b-companies` },
     },
   })
-  entries.push({
-    url: `${BASE_URL}/en/guides/b2b-market-research-agency-czech-republic`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.85,
-    alternates: {
-      languages: { en: `${BASE_URL}/en/guides/b2b-market-research-agency-czech-republic` },
-    },
-  })
+  // (b2b-market-research-agency-czech-republic intentionally omitted — retreating from the
+  // "market research" keyword; page stays live but noindex, per 2f.)
 
   // EN-only service page (CS variant is 301'd to homepage)
   entries.push({

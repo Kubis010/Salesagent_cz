@@ -30,6 +30,15 @@ const posts = [
     image: '/blog/automatizace-prodeje.jpg',
   },
   {
+    href: '/blog/jak-skorovat-leady',
+    lang: 'CS',
+    title: 'Jak skórovat leady — lead scoring, který obchodníkovi ušetří čas',
+    date: '20. září 2026',
+    description:
+      'Máte stovky kontaktů, ale nevíte, koho oslovit první? Praktický model lead scoringu: shoda s ICP + nákupní signály, jednoduché bodování a jak scoring automatizovat.',
+    image: '/blog/arrows.jpg',
+  },
+  {
     href: '/blog/kdo-postavi-automatizaci-b2b-obchodu',
     lang: 'CS',
     title: 'Kdo v ČR postaví a rozjede automatizaci B2B obchodu na klíč?',

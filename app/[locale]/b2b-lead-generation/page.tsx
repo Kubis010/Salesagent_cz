@@ -12,8 +12,8 @@ export async function generateMetadata({
   const cs = locale === 'cs'
   return {
     title: cs
-      ? 'B2B Lead Generation — generování leadů bez databází | SalesAgent.cz'
-      : 'B2B Lead Generation for Your Czech Market Entry | SalesAgent.cz',
+      ? 'B2B Lead Generation — generování leadů bez databází'
+      : 'B2B Lead Generation for Your Czech Market Entry',
     description: cs
       ? 'Generujeme B2B leady přímo z webu: AI prohledá Google Maps, prostuduje web každé firmy a vybere jen ty, co sedí vašemu ICP. Žádná databáze, žádný obchodník na rešerše.'
       : 'Entering the Czech market? We generate B2B leads directly from the web — researching Czech companies and selecting only those matching your ICP. Sales outsourcing, no local SDR to hire.',

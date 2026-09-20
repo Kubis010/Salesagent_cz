@@ -7,7 +7,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params
   const cs = locale === 'cs'
   return {
-    title: cs ? 'Automatizace obchodu na klíč | SalesAgent.cz' : 'Done-for-you B2B sales automation | SalesAgent.cz',
+    title: cs ? 'Automatizace obchodu na klíč' : 'Done-for-you B2B sales automation',
     description: cs
       ? 'Chcete automatizovat obchod, ale nemáte čas ani know-how? Postavíme a rozjedeme vám B2B oslovování, personalizaci, follow-up a CRM jako vlastní systém.'
       : 'Want to automate sales but lack the time or know-how? We build and launch your B2B outreach, personalization, follow-ups and CRM as a system you own.',

@@ -41,6 +41,8 @@ export async function generateMetadata({
       description:
         'Systematic outreach campaign to validate Czech demand. Fixed price, 2–3 months, clear go/no-go signal.',
     },
+    // Retreating from the "market research" keyword — keep the page live but out of the index.
+    robots: { index: false, follow: true },
   }
 }
 

@@ -447,10 +447,10 @@ export default async function SalesRepCzPage({
             )}
             {!isCs && (
               <Link
-                href="/en/guides/b2b-market-research-agency-czech-republic"
+                href="/en/guides/czech-market-entry-for-b2b-companies"
                 style={{ fontSize: '14px', color: 'var(--text-muted)', textDecoration: 'none' }}
               >
-                → Guide: B2B market research in Czech Republic — a fixed-price market test
+                → Guide: Czech market entry for B2B companies — a practical playbook
               </Link>
             )}
           </div>

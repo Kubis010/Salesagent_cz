@@ -440,17 +440,17 @@ export default async function GuideCzechMarketEntry({
             ))}
           </div>
 
-          {/* Second CTA — market test */}
+          {/* Second CTA — sales representation service */}
           <div style={{ marginTop: '40px', marginBottom: '40px', background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '16px', padding: '32px 28px' }}>
-            <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '10px' }}>Not sure if Czech market is worth it?</p>
+            <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '10px' }}>Not ready to hire or open an entity?</p>
             <p style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '18px', fontWeight: 700, marginBottom: '10px' }}>
-              Run a 2–3 month market test first — fixed price, no commitment
+              We start your sales in the Czech Republic for you — fixed price, no commitment
             </p>
             <p style={{ color: 'var(--text-muted)', lineHeight: 1.7, marginBottom: '20px', maxWidth: '540px', fontSize: '14px' }}>
-              Before hiring, before an entity, before a long-term contract: we contact 200–500 Czech companies in your segment, log every response, and give you a written go/no-go at the end.
+              We become your external sales team: we contact 200–500 Czech companies in your segment, run the follow-ups, and book qualified meetings in your name — no Czech entity, no local hire.
             </p>
             <Link
-              href="/en/contact"
+              href="/en/sales-representation-czech-republic"
               style={{
                 display: 'inline-block',
                 border: '1px solid var(--accent)',
@@ -462,7 +462,7 @@ export default async function GuideCzechMarketEntry({
                 textDecoration: 'none',
               }}
             >
-              Read about the market test →
+              See how our Czech sales representation works →
             </Link>
           </div>
 
@@ -470,8 +470,8 @@ export default async function GuideCzechMarketEntry({
           <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>
             <p style={{ fontSize: '14px', fontWeight: 600, color: 'var(--text)', marginBottom: '12px' }}>Related guides</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              <Link href="/en/guides/b2b-market-research-agency-czech-republic" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
-                B2B Market Research Agency Czech Republic: 3-Month Market Test →
+              <Link href="/en/sales-representation-czech-republic" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
+                Sales Representation in the Czech Republic — we sell for you →
               </Link>
               <Link href="/blog/how-to-expand-your-business-and-sales-to-the-european-union" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
                 How to Expand Your Business and Sales to the European Union →

@@ -125,7 +125,7 @@ export default function Page() {
 
           <H2>Kvalifikace leadů: méně kontaktů, více obchodních příležitostí</H2>
           <p>Počet nalezených e-mailů není obchodní výsledek. Důležité je, zda firma odpovídá ICP, zda oslovujete správnou roli a zda existuje důvod řešit nabídku právě teď. Scoring proto kombinuje pevná kritéria s veřejnými signály a výsledky předchozích kampaní.</p>
-          <p><Link href="/blog/ai-agenti-b2b-prospecting-kvalifikace-leadu" style={linkStyle}>AI agenti pro prospecting a kvalifikaci leadů</Link> mohou průběžně analyzovat weby a upřednostnit firmy, kterým dává oslovení největší smysl.</p>
+          <p><Link href="/blog/ai-agenti-b2b-prospecting-kvalifikace-leadu" style={linkStyle}>AI agenti pro prospecting a kvalifikaci leadů</Link> mohou průběžně analyzovat weby a upřednostnit firmy, kterým dává oslovení největší smysl. Konkrétní bodovací model najdete v návodu <Link href="/blog/jak-skorovat-leady" style={linkStyle}>jak skórovat leady</Link>.</p>
 
           <H2>E-mail, LinkedIn a demo jako jeden proces</H2>
           <p>Kanály nemají fungovat jako oddělené kampaně. E-mail může otevřít téma, LinkedIn dodat důvěryhodnost a interaktivní demo ukázat produkt ještě před schůzkou. Důležitá je společná historie kontaktu a jedno místo, kde obchodník vidí, co se stalo.</p>
@@ -162,6 +162,7 @@ export default function Page() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
               <Related href="/blog/jak-zavest-automatizaci-prodeje-ve-firme">Jak zavést systematické oslovování firem</Related>
               <Related href="/blog/ai-agenti-b2b-prospecting-kvalifikace-leadu">AI agenti pro prospecting a kvalifikaci leadů</Related>
+              <Related href="/blog/jak-skorovat-leady">Jak skórovat leady — lead scoring pro B2B</Related>
               <Related href="/blog/automatizace-prodeje-jak-ai-meni-b2b-osloveni">Jak AI mění automatizaci B2B oslovení</Related>
               <Related href="/blog/kdo-postavi-automatizaci-b2b-obchodu">Kdo postaví automatizaci B2B obchodu na klíč</Related>
             </div>
