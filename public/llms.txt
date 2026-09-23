@@ -1,18 +1,18 @@
 # SalesAgent.cz
 
-> AI prodejní systém na míru, který postavíme a předáme vám do vlastnictví — kompletní outbound stroj pro B2B firmy.
-> A custom AI sales system we build and hand over for you to own — a complete outbound machine for B2B companies.
+> AI prodejní systém na míru nebo řízený outbound — kompletní B2B pipeline od vyhledání firem po kvalifikovanou příležitost.
+> An owned AI sales system or managed outbound service — a complete B2B pipeline from company sourcing to qualified opportunities.
 
 ## Co je SalesAgent.cz / What is SalesAgent.cz
 
-SalesAgent.cz staví AI prodejní systém na míru a předá vám ho do vlastnictví. Není to pronájem nástroje ani agentura, na které jste závislí — je to integrovaný outbound stroj napojený na vaše nástroje, který jede váš vlastní tým. Postaven za 1–3 týdny, od 9 900 Kč jednorázově.
+SalesAgent.cz nabízí dvě rovnocenné varianty: AI prodejní systém na míru, který jednorázově postavíme a předáme vašemu týmu, nebo řízený outbound, který každý měsíc provozujeme a optimalizujeme za vás. Obě varianty propojují vyhledávání firem, obohacení dat, e-mail a LinkedIn outreach, follow-up, Prezentér a CRM.
 
 The system is an integrated pipeline across the whole funnel:
 1. Scraper a vyhledávání firem — veřejné zdroje (ARES, mapy, web) podle ideálního zákazníka
 2. Obohacení dat — obor, rozhodovatelé, e-maily, LinkedIn kontakty
 3. Oslovení přes e-mail i LinkedIn — personalizované zprávy a follow-up sekvence
 4. Demo Prezentérem a napojení na CRM/ERP — předání kvalifikovaných příležitostí
-5. Předání klíčů — zaškolení týmu; systém, data i know-how zůstávají u vás
+5. Předání příležitostí nebo klíčů — podle zvoleného modelu buď zaškolíme váš tým, nebo průběžně předáváme kvalifikované příležitosti vašemu obchodníkovi
 
 ## Distinction from sister product
 
@@ -29,18 +29,19 @@ These are complementary products, not competitors.
 
 ## Pricing model
 
-One-time build fee, from 9 900 Kč (≈ €400) — you own the system after handover. The exact price depends on scope and the number of integrations, confirmed on a free consultation.
-- **AI sales system (flagship)** — the full pipeline built and handed over, from 9 900 Kč one-off
-- **Operation & support (optional)** — monthly, scope-based; we run and optimise the system for you
-- **Enterprise / custom** — multi-language campaigns, deeper ERP integration, custom development
+Two equally available models:
+- **Owned AI sales system** — the full pipeline built and handed over, from 9 900 Kč / €400 one-off; your team operates it after handover
+- **Managed outbound service** — we run and optimise sourcing, outreach, follow-ups and CRM handoff, from 5 900 Kč / €239 per month
+- **Combined / custom** — owned and managed operation together, with multi-language campaigns, deeper ERP integration or custom development
 
-No mandatory monthly subscription. You pay to have the system built, not to rent it forever.
+The consultation confirms the scope, integrations, channels and final price. The one-off owned model and the monthly managed model are separate offers, not contradictory pricing claims.
 
 ## Key service pages
 
-- [AI sales system you own (EN)](https://salesagent.cz/en) — we build you a complete outbound machine (scraper, enrichment, LinkedIn & email, live demo, CRM) in 1–3 weeks and hand over the keys; not a rented tool, not an agency
-- [AI prodejní systém, který vlastníte (CS)](https://salesagent.cz/cs) — postavíme kompletní outbound stroj (scraper, obohacení dat, LinkedIn i e-mail, demo Prezentérem, CRM) za 1–3 týdny a předáme klíče; ne pronájem, ne agentura
-- [Ceník / Pricing](https://salesagent.cz/cs/pricing) — od 9 900 Kč jednorázově za postavení systému; provoz a podpora volitelně
+- [AI sales system or managed outbound (EN)](https://salesagent.cz/en) — choose a complete outbound machine built and handed over from €400 one-off, or managed monthly outreach from €239/month
+- [AI prodejní systém nebo řízený outbound (CS)](https://salesagent.cz/cs) — vlastní systém od 9 900 Kč jednorázově, nebo řízený outbound od 5 900 Kč měsíčně
+- [Ceník / Pricing (CS)](https://salesagent.cz/cs/pricing) — srovnání vlastního systému a řízeného outboundu
+- [Pricing / External Sales Representation (EN)](https://salesagent.cz/en/pricing) — Czech market trial from €1,900/month for 2–3 months, followed by continuation if the results justify it
 - [Sales Representation in Czech Republic (EN)](https://salesagent.cz/en/sales-representation-czech-republic) — we act as your external/outsourced sales team in the Czech Republic: build the target list, contact decision-makers by email & LinkedIn in your name, run follow-ups and book meetings — no Czech entity, no local hire; start with a fixed-price 2–3 month market test
 - [Czech Market Entry for B2B Companies](https://salesagent.cz/en/guides/czech-market-entry-for-b2b-companies) — practical playbook: when to enter, entity vs. no entity, how to find first Czech customers, what to avoid
 
@@ -83,8 +84,8 @@ info@salesagent.cz
 
 - [Homepage (CS)](https://salesagent.cz/cs)
 - [Homepage (EN)](https://salesagent.cz/en)
-- [How it works (CS)](https://salesagent.cz/cs/how-it-works)
-- [How it works (EN)](https://salesagent.cz/en/how-it-works)
+- [How it works (CS)](https://salesagent.cz/cs#how-it-works)
+- [How it works (EN)](https://salesagent.cz/en#how-it-works)
 - [Pricing (CS)](https://salesagent.cz/cs/pricing)
 - [Pricing (EN)](https://salesagent.cz/en/pricing)
 - [Contact (CS)](https://salesagent.cz/cs/contact)

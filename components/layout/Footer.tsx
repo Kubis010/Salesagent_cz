@@ -89,7 +89,7 @@ export default function Footer({ locale, t }: FooterProps) {
           </div>
           <nav style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
             {[
-              { href: `${base}/how-it-works`, label: t.footer.links.howItWorks },
+              { href: `${base}#how-it-works`, label: t.footer.links.howItWorks },
               { href: `${base}/pricing`, label: t.footer.links.pricing },
               { href: `${base}/contact`, label: t.footer.links.contact },
             ].map((link) => (

@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getTranslations, type Locale, type Translations } from '@/lib/i18n'
 import HeroPipeline from '@/components/home/HeroPipeline'
-import RoiCalculator from '../../components/RoiCalculator'
 
 export async function generateMetadata({
   params,
@@ -16,11 +15,11 @@ export async function generateMetadata({
       ? 'AI prodejní systém, který vlastníte | SalesAgent.cz'
       : 'An AI sales system you actually own | SalesAgent.cz',
     description: locale === 'cs'
-      ? 'Postavíme vám kompletní outbound stroj — scraper, obohacení dat, LinkedIn a e-mail, demo Prezentérem a napojení na CRM. Za 1–3 týdny běží a je váš. Ne pronájem nástroje, ne agentura. Od 9 900 Kč.'
-      : 'We build you a complete outbound machine — scraper, enrichment, LinkedIn & email, live demo and CRM. Built and running in 1–3 weeks, and it is yours to own. Not a rented tool, not an agency.',
+      ? 'Postavíme vám kompletní outbound stroj — scraper, obohacení dat, LinkedIn a e-mail, demo Prezentérem a napojení na CRM. Zvolíte si jednorázové předání systému, nebo měsíční řízený outbound.'
+      : 'Choose between an owned AI outbound system built and handed over from €400 one-off, or a managed monthly outbound service where we run the outreach for you.',
     keywords: locale === 'cs'
       ? ['AI prodejní systém', 'automatizace obchodu', 'outbound systém na míru', 'scraping firem', 'LinkedIn automatizace', 'obohacení dat', 'napojení na CRM', 'B2B outreach']
-      : ['AI sales system', 'sales automation', 'custom outbound system', 'B2B outreach machine', 'LinkedIn automation', 'lead enrichment', 'CRM integration', 'owned sales pipeline'],
+      : ['AI sales system', 'sales automation', 'managed outbound', 'custom outbound system', 'B2B outreach machine', 'LinkedIn automation', 'lead enrichment', 'CRM integration'],
     alternates: {
       canonical: `https://salesagent.cz/${locale}`,
       languages: {
@@ -153,7 +152,7 @@ export default async function HomePage({
               {t.hero.cta}
             </a>
             <Link
-              href={`${base}/how-it-works`}
+              href={`${base}#how-it-works`}
               style={{
                 display: 'inline-block',
                 color: 'var(--text-muted)',
@@ -653,7 +652,6 @@ export default async function HomePage({
       </section>
 
       {/* ── ROI CALCULATOR ── */}
-      <RoiCalculator locale={locale} />
 
       {/* ── BLOG ── */}
       <section style={{ padding: '80px 24px', maxWidth: '960px', margin: '0 auto' }}>
@@ -730,10 +728,10 @@ export default async function HomePage({
                 mainEntity: [
                   {
                     '@type': 'Question',
-                    name: 'Co je AI prodejní systém, který vlastníte?',
+                    name: 'Jaký je rozdíl mezi owned systémem a managed outboundem?',
                     acceptedAnswer: {
                       '@type': 'Answer',
-                      text: 'Je to kompletní outbound stroj, který vám postavíme a předáme do vlastnictví: scraper a vyhledávání firem, obohacení dat, oslovení přes e-mail i LinkedIn, demo Prezentérem a napojení na váš CRM. Běží na vašich účtech a datech — na rozdíl od agentury nejste na nikom závislí.',
+                      text: 'U owned systému vám outbound stroj jednorázově postavíme, předáme přístupy a zaškolíme tým. U managed outboundu systém a kampaně průběžně provozujeme a ladíme my; váš obchodník dostává kvalifikované příležitosti.',
                     },
                   },
                   {
@@ -746,10 +744,10 @@ export default async function HomePage({
                   },
                   {
                     '@type': 'Question',
-                    name: 'Čím se lišíte od agentury nebo od nástrojů jako Apollo či Waalaxy?',
+                    name: 'Jak se nabídka liší od jednoúčelových nástrojů?',
                     acceptedAnswer: {
                       '@type': 'Answer',
-                      text: 'Agentura dělá práci za vás a když skončíte, nemáte nic. Point-tooly (Apollo, Waalaxy, HubSpot) řeší vždy jen jeden krok funnelu. My stavíme integrovaný systém přes celý funnel a předáme vám ho do vlastnictví — i s daty a know-how.',
+                      text: 'Jednoúčelové nástroje (Apollo, Waalaxy, HubSpot) řeší vždy jen část funnelu. My propojujeme vyhledávání firem, obohacení, oslovení, follow-up a CRM — buď do systému, který převezmete, nebo do managed služby, kterou provozujeme za vás.',
                     },
                   },
                   {
@@ -771,16 +769,16 @@ export default async function HomePage({
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
               {[
                 {
-                  q: 'Co je AI prodejní systém, který vlastníte?',
-                  a: 'Je to kompletní outbound stroj, který vám postavíme a předáme do vlastnictví: scraper a vyhledávání firem, obohacení dat, oslovení přes e-mail i LinkedIn, demo Prezentérem a napojení na váš CRM. Běží na vašich účtech a datech — na rozdíl od agentury nejste na nikom závislí.',
+                  q: 'Jaký je rozdíl mezi owned systémem a managed outboundem?',
+                  a: 'U owned systému vám outbound stroj jednorázově postavíme, předáme přístupy a zaškolíme tým. U managed outboundu systém a kampaně průběžně provozujeme a ladíme my; váš obchodník dostává kvalifikované příležitosti.',
                 },
                 {
                   q: 'Jak dlouho trvá systém postavit?',
                   a: 'Obvykle 1–3 týdny podle rozsahu a počtu napojení. Proces má čtyři kroky: konzultace, návrh, implementace a testování s předáním klíčů a zaškolením týmu.',
                 },
                 {
-                  q: 'Čím se lišíte od agentury nebo od nástrojů jako Apollo či Waalaxy?',
-                  a: 'Agentura dělá práci za vás a když skončíte, nemáte nic. Point-tooly (Apollo, Waalaxy, HubSpot) řeší vždy jen jeden krok funnelu. My stavíme integrovaný systém přes celý funnel a předáme vám ho do vlastnictví — i s daty a know-how.',
+                  q: 'Jak se nabídka liší od jednoúčelových nástrojů?',
+                  a: 'Jednoúčelové nástroje (Apollo, Waalaxy, HubSpot) řeší vždy jen část funnelu. My propojujeme vyhledávání firem, obohacení, oslovení, follow-up a CRM — buď do systému, který převezmete, nebo do managed služby, kterou provozujeme za vás.',
                 },
                 {
                   q: 'Kolik stojí postavení systému?',

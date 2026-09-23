@@ -25,11 +25,11 @@ export async function generateMetadata({
       template: '%s | SalesAgent.cz',
     },
     description: isCz
-      ? 'Postavíme vám kompletní AI prodejní systém na míru — scraper, obohacení dat, LinkedIn a e-mail outreach, napojení na CRM — a předáme klíče. Systém je váš. Od 9 900 Kč jednorázově, za 1–3 týdny.'
-      : 'We build you a complete AI sales system — scraper, enrichment, LinkedIn & email outreach, CRM integration — and hand over the keys. You own it. From €400 one-off, delivered in 1–3 weeks.',
+      ? 'Nabízíme vlastní AI prodejní systém od 9 900 Kč jednorázově nebo řízený outbound od 5 900 Kč měsíčně. Propojíme vyhledávání firem, e-mail, LinkedIn, Prezentér a CRM.'
+      : 'Choose an owned AI sales system from €400 one-off or managed outbound from €239 per month. We connect company sourcing, email, LinkedIn, live demo and CRM.',
     keywords: isCz
-      ? ['AI prodejní systém', 'automatizace B2B prodeje', 'outbound automatizace', 'AI lead generation', 'vlastní prodejní systém', 'cold email automatizace', 'LinkedIn automatizace', 'AI obchod na míru', 'B2B prospecting']
-      : ['AI sales system', 'B2B sales automation', 'outbound automation', 'AI lead generation', 'owned sales pipeline', 'cold email automation', 'LinkedIn automation', 'custom AI sales'],
+      ? ['AI prodejní systém', 'automatizace B2B prodeje', 'řízený outbound', 'AI lead generation', 'vlastní prodejní systém', 'cold email automatizace', 'LinkedIn automatizace', 'AI obchod na míru', 'B2B prospecting']
+      : ['AI sales system', 'B2B sales automation', 'managed outbound', 'AI lead generation', 'owned sales system', 'cold email automation', 'LinkedIn automation', 'custom AI sales'],
     openGraph: {
       type: 'website',
       locale: isCz ? 'cs_CZ' : 'en_US',
@@ -39,8 +39,8 @@ export async function generateMetadata({
         ? 'SalesAgent.cz — AI prodejní systém, který vlastníte'
         : 'SalesAgent.cz — An AI sales system you actually own',
       description: isCz
-        ? 'Kompletní AI outbound systém postavený na míru a předaný do vašeho vlastnictví. Od 9 900 Kč.'
-        : 'A complete AI outbound system built for you and handed over to own. From €400 one-off.',
+        ? 'Vlastní AI outbound systém od 9 900 Kč jednorázově nebo řízený outbound od 5 900 Kč měsíčně.'
+        : 'An owned AI outbound system from €400 one-off or managed outbound from €239 per month.',
       images: [
         {
           url: 'https://salesagent.cz/og-image.jpg',
@@ -75,8 +75,8 @@ export async function generateMetadata({
         ? 'SalesAgent.cz — AI prodejní systém, který vlastníte'
         : 'SalesAgent.cz — An AI sales system you actually own',
       description: isCz
-        ? 'Kompletní AI outbound systém postavený na míru a předaný do vašeho vlastnictví. Od 9 900 Kč.'
-        : 'A complete AI outbound system built for you and handed over to own. From €400 one-off.',
+        ? 'Vlastní AI outbound systém od 9 900 Kč jednorázově nebo řízený outbound od 5 900 Kč měsíčně.'
+        : 'An owned AI outbound system from €400 one-off or managed outbound from €239 per month.',
       images: ['https://salesagent.cz/og-image.jpg'],
     },
     other: {
@@ -106,20 +106,42 @@ const organizationSchema = {
   sameAs: ['https://salesrobots.cz'],
 }
 
-const serviceSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Service',
-  name: 'AI prodejní systém na míru — postavíme a předáme do vlastnictví',
-  alternateName: 'Custom AI sales system — built and handed over',
-  provider: { '@type': 'Organization', name: 'Sales Robots s.r.o.' },
-  serviceType: 'AI prodejní systém — outbound automatizace pro B2B',
-  description:
-    'Postavíme kompletní AI prodejní systém: scraper firem, obohacení dat, personalizovaný e-mail a LinkedIn outreach, demo Prezentérem, napojení na CRM. Za 1–3 týdny hotovo, klíče předáme vám — systém vlastníte.',
-  areaServed: ['CZ', 'SK', 'Internationally'],
-  availableChannel: {
-    '@type': 'ServiceChannel',
-    serviceUrl: 'https://salesagent.cz',
-  },
+function getServiceSchema(isCzech: boolean) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: isCzech ? 'AI prodejní systém a řízený outbound' : 'Owned AI sales system and managed outbound',
+    alternateName: isCzech ? 'Owned system or managed B2B outbound' : 'Owned system or managed B2B outbound service',
+    provider: { '@type': 'Organization', name: 'Sales Robots s.r.o.' },
+    serviceType: isCzech ? 'Automatizace B2B obchodu' : 'B2B sales automation and managed outbound service',
+    description: isCzech
+      ? 'Nabízíme dvě rovnocenné varianty: jednorázově postavený AI outbound systém, který převezmete, nebo měsíční řízený outbound, který provozujeme a optimalizujeme za vás.'
+      : 'We offer two equally available models: an AI outbound system built and handed over for a one-off fee, or a managed monthly outbound service that we operate and optimise for you.',
+    inLanguage: isCzech ? 'cs' : 'en',
+    offers: [
+      {
+        '@type': 'Offer',
+        name: isCzech ? 'Vlastní AI prodejní systém' : 'Owned AI sales system',
+        price: isCzech ? '9900' : '400',
+        priceCurrency: isCzech ? 'CZK' : 'EUR',
+        description: isCzech ? 'Jednorázové postavení a předání systému.' : 'One-off system build and handover.',
+        url: `https://salesagent.cz/${isCzech ? 'cs' : 'en'}/pricing`,
+      },
+      {
+        '@type': 'Offer',
+        name: isCzech ? 'Řízený outbound' : 'Managed outbound service',
+        price: isCzech ? '5900' : '239',
+        priceCurrency: isCzech ? 'CZK' : 'EUR',
+        description: isCzech ? 'Měsíční provoz a optimalizace outboundu.' : 'Monthly outbound operation and optimisation.',
+        url: `https://salesagent.cz/${isCzech ? 'cs' : 'en'}/pricing`,
+      },
+    ],
+    areaServed: ['CZ', 'SK', 'Internationally'],
+    availableChannel: {
+      '@type': 'ServiceChannel',
+      serviceUrl: 'https://salesagent.cz',
+    },
+  }
 }
 
 export default async function LocaleLayout({
@@ -142,7 +164,7 @@ export default async function LocaleLayout({
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(getServiceSchema(locale === 'cs')) }}
         />
         <Header locale={locale as Locale} t={t} />
         <main>{children}</main>

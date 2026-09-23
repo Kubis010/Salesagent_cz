@@ -155,20 +155,20 @@ export const cs = {
     secondary: 'Napsat e-mail',
   },
   pricing: {
-    title: 'Kolik to stojí',
+    title: 'Vlastní systém, nebo řízený outbound?',
     subtitle:
-      'Postavení systému od 9 900 Kč jednorázově. Konkrétní částka závisí na rozsahu a napojení — upřesníme ji na nezávazné konzultaci. Provoz a podpora jsou volitelné.',
+      'Nabízíme dvě rovnocenné cesty: jednorázově postavený systém, který převezmete, nebo měsíční řízený outbound, který provozujeme a optimalizujeme za vás.',
     setup: {
-      label: 'Postavíte jednou, vlastníte napořád',
+      label: 'Dvě nabídky, jeden outbound proces',
       description:
-        'Platíte za postavení systému, ne za měsíční pronájem, na kterém jste závislí. Po předání běží systém na vašich účtech a datech. Měsíční podporu a provoz můžete využít, ale nemusíte.',
+        'U owned systému zaplatíte jednorázové postavení a předání. U managed outboundu každý měsíc řídíme výběr firem, oslovení, follow-up a předávání příležitostí vašemu týmu.',
     },
     tiers: [
       {
-        name: 'AI prodejní systém',
+        name: 'Vlastní AI prodejní systém',
         monthlyLabel: 'jednorázově za postavení',
         price: 'od 9 900 Kč',
-        priceNote: 'Vlajková nabídka',
+        priceNote: 'Jednorázově',
         features: [
           'Kompletní pipeline: scraper → obohacení → e-mail → LinkedIn → CRM',
           'Personalizované oslovení a follow-up sekvence',
@@ -180,21 +180,21 @@ export const cs = {
         highlight: true,
       },
       {
-        name: 'Provoz a podpora',
-        monthlyLabel: 'volitelně, měsíčně',
-        price: 'dle rozsahu',
-        priceNote: 'Volitelné',
+        name: 'Řízený outbound',
+        monthlyLabel: 'měsíčně',
+        price: 'od 5 900 Kč',
+        priceNote: 'Managed service',
         features: [
-          'Průběžný provoz systému za vás',
+          'Průběžný provoz outboundu za vás',
           'Optimalizace textů, cílení a doručitelnosti',
           'Rozšiřování o další kanály a segmenty',
-          'Přednostní podpora',
+          'Předávání kvalifikovaných příležitostí',
         ],
         cta: 'Domluvit konzultaci',
         highlight: false,
       },
       {
-        name: 'Enterprise / na míru',
+        name: 'Kombinace / na míru',
         monthlyLabel: 'individuální nacenění',
         price: 'individuálně',
         priceNote: 'Rozsáhlé projekty',
@@ -203,7 +203,7 @@ export const cs = {
           'Hlubší integrace do ERP a interních systémů',
           'Custom vývoj (aidevs)',
           'Demo Prezentérem na míru',
-          'Vyhrazený kontakt u nás',
+          'Možnost owned i managed modelu',
         ],
         cta: 'Domluvit konzultaci',
         highlight: false,
@@ -211,24 +211,24 @@ export const cs = {
     ],
     faq: [
       {
-        q: 'Co přesně znamená „systém, který vlastníte"?',
-        a: 'Postavíme celý outbound stroj a předáme vám ho — běží na vašich účtech a datech, dostanete dokumentaci a zaškolení. Na rozdíl od agentury nejste závislí na tom, že za vás někdo něco dělá. Know-how i procesy zůstávají u vás.',
+        q: 'Jaký je rozdíl mezi owned systémem a managed outboundem?',
+        a: 'U owned systému vám outbound stroj jednorázově postavíme, předáme přístupy a zaškolíme tým. U managed outboundu systém a kampaně průběžně provozujeme a ladíme my; váš obchodník dostává kvalifikované příležitosti.',
       },
       {
         q: 'Jak dlouho trvá postavit systém?',
         a: 'Obvykle 1–3 týdny podle rozsahu a počtu napojení. Proces má čtyři kroky: konzultace, návrh, implementace a testování s předáním.',
       },
       {
-        q: 'Co znamená „od 9 900 Kč"?',
-        a: 'Je to jednorázová cena za postavení systému. Výsledná částka závisí na rozsahu pipeline a na tom, na kolik nástrojů se napojujeme. Přesné nacenění dostanete po nezávazné konzultaci.',
+        q: 'Kolik stojí obě varianty?',
+        a: 'Owned AI prodejní systém začíná od 9 900 Kč jednorázově. Řízený outbound začíná od 5 900 Kč měsíčně. Přesná částka závisí na rozsahu, počtu kanálů a integracích.',
       },
       {
-        q: 'Musím platit něco měsíčně?',
-        a: 'Ne. Základní model je jednorázové postavení a předání. Měsíční provoz, podporu a optimalizaci nabízíme jako volitelnou možnost — pokud chcete, abychom systém jeli a ladili za vás.',
+        q: 'Musím si systém po předání obsluhovat sám?',
+        a: 'U owned varianty ano, případně si můžete objednat provoz a podporu. U managed outboundu systém, kampaně a optimalizaci průběžně řídíme my.',
       },
       {
         q: 'Čím se lišíte od agentury nebo od nástrojů jako Apollo či Waalaxy?',
-        a: 'Agentura dělá práci za vás a když skončíte, nemáte nic. Point-tooly (Apollo, Waalaxy, HubSpot) řeší vždy jen jeden krok funnelu. My stavíme integrovaný systém přes celý funnel a předáme vám ho do vlastnictví.',
+        a: 'Jednoúčelové nástroje (Apollo, Waalaxy, HubSpot) řeší vždy jen část funnelu. My propojujeme vyhledávání firem, obohacení, oslovení, follow-up a CRM — buď do systému, který převezmete, nebo do managed služby, kterou provozujeme za vás.',
       },
       {
         q: 'Je oslovování v souladu s GDPR?',

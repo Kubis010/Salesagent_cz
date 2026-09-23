@@ -10,10 +10,10 @@ export async function generateMetadata({
   const { locale } = await params
   const cs = locale === 'cs'
   return {
-    title: cs ? 'Ceník — AI prodejní systém od 9 900 Kč' : 'Pricing — an AI sales system you own',
+    title: cs ? 'Ceník — vlastní systém nebo řízený outbound' : 'External Sales Representation in the Czech Republic',
     description: cs
-      ? 'Postavení AI prodejního systému od 9 900 Kč jednorázově — scraper, obohacení dat, e-mail a LinkedIn outreach, napojení na CRM. Předáme klíče, systém je váš. Provoz a podpora volitelně.'
-      : 'A complete AI sales system built for you from €400 one-off — scraper, enrichment, email and LinkedIn outreach, CRM integration. We hand over the keys; the system is yours. Optional monthly support.',
+      ? 'Dvě rovnocenné varianty: AI prodejní systém od 9 900 Kč jednorázově, nebo řízený outbound od 5 900 Kč měsíčně. Rozsah upřesníme na konzultaci.'
+      : 'Planning a Czech market entry? Test demand with an external sales team. Start with a 2–3 month trial from €1,900 per month, then extend the representation if the results justify it.',
     alternates: {
       canonical: `https://salesagent.cz/${locale}/pricing`,
       languages: {
@@ -27,17 +27,17 @@ export async function generateMetadata({
       locale: cs ? 'cs_CZ' : 'en_US',
       url: `https://salesagent.cz/${locale}/pricing`,
       siteName: 'SalesAgent.cz',
-      title: cs ? 'Ceník — AI prodejní systém od 9 900 Kč | SalesAgent.cz' : 'Pricing — an AI sales system you own | SalesAgent.cz',
+      title: cs ? 'Ceník — vlastní systém nebo řízený outbound | SalesAgent.cz' : 'External Sales Representation in the Czech Republic | SalesAgent.cz',
       description: cs
-        ? 'AI prodejní systém na míru od 9 900 Kč jednorázově. Postavíme, předáme klíče, je váš.'
-        : 'A custom AI sales system from €400 one-off. We build it, hand over the keys, and it is yours.',
+        ? 'Vlastní AI prodejní systém od 9 900 Kč jednorázově, nebo řízený outbound od 5 900 Kč měsíčně.'
+        : 'Czech market entry support with an external sales team: a 2–3 month trial from €1,900 per month.',
     },
     twitter: {
       card: 'summary_large_image',
-      title: cs ? 'Ceník — AI prodejní systém od 9 900 Kč | SalesAgent.cz' : 'Pricing — an AI sales system you own | SalesAgent.cz',
+      title: cs ? 'Ceník — vlastní systém nebo řízený outbound | SalesAgent.cz' : 'External Sales Representation in the Czech Republic | SalesAgent.cz',
       description: cs
-        ? 'AI prodejní systém na míru od 9 900 Kč jednorázově. Postavíme a předáme klíče.'
-        : 'A custom AI sales system from €400 one-off. Built, handed over, and yours to own.',
+        ? 'Vlastní AI prodejní systém od 9 900 Kč jednorázově, nebo řízený outbound od 5 900 Kč měsíčně.'
+        : 'Test demand during your Czech market entry with an external sales team from €1,900 per month.',
     },
   }
 }
@@ -48,6 +48,7 @@ export default async function PricingPage({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params
+  const cs = locale === 'cs'
   const t: Translations = getTranslations(locale as Locale)
   const base = `/${locale}`
 
@@ -61,12 +62,38 @@ export default async function PricingPage({
     })),
   }
 
+  const representationSchema = !cs
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        name: 'External Sales Representation in the Czech Republic',
+        serviceType: 'B2B sales representation and market testing',
+        description: 'Czech market entry support through a fixed 2–3 month trial in which an external sales team builds the target list, runs personalised email and LinkedIn outreach, qualifies replies and books first meetings. Continuation is agreed after the trial based on results.',
+        provider: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz' },
+        areaServed: { '@type': 'Country', name: 'Czech Republic' },
+        inLanguage: 'en',
+        offers: {
+          '@type': 'Offer',
+          price: '1900',
+          priceCurrency: 'EUR',
+          description: 'Monthly fee during the initial 2–3 month trial; continuation is agreed after the trial.',
+          url: 'https://salesagent.cz/en/pricing',
+        },
+      }
+    : null
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      {representationSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(representationSchema) }}
+        />
+      )}
     <div style={{ paddingTop: '100px', paddingBottom: '80px', paddingLeft: '24px', paddingRight: '24px' }}>
       <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
 

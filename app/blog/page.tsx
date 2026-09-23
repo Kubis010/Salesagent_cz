@@ -314,6 +314,10 @@ export default function BlogIndex() {
         marginBottom: '48px',
         lineHeight: 1.2,
       }}>AI pro obchod a obchodníky — články o B2B prodeji</h1>
+      <p style={{ fontSize: '14px', color: 'var(--text-muted)', lineHeight: 1.6, marginTop: '-28px', marginBottom: '40px' }}>
+        Články jsou česky i anglicky. Anglické články jsou označené štítkem EN.
+        {' '}The EN label marks articles written for English-speaking readers.
+      </p>
 
       <style>{`
         .blog-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; transition: border-color 0.2s; }
@@ -357,7 +361,7 @@ export default function BlogIndex() {
                     lineHeight: 1.3,
                   }}>{post.title}</h2>
                   <p style={{ fontSize: '13px', color: 'var(--text-muted)', lineHeight: 1.6, margin: 0 }}>{post.description}</p>
-                  <p style={{ marginTop: '12px', fontSize: '13px', color: 'var(--accent)', fontWeight: 600 }}>Číst článek →</p>
+                  <p style={{ marginTop: '12px', fontSize: '13px', color: 'var(--accent)', fontWeight: 600 }}>{post.lang === 'EN' ? 'Read article →' : 'Číst článek →'}</p>
                 </div>
               </div>
             </article>
