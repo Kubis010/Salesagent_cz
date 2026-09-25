@@ -27,6 +27,7 @@ export const metadata: Metadata = {
     siteName: 'SalesAgent.cz',
     type: 'article',
     publishedTime: '2025-04-10',
+    modifiedTime: '2026-09-25',
     locale: 'cs_CZ',
     images: [{ url: 'https://salesagent.cz/blog/automatizace-prodeje.jpg', width: 1200, height: 630, alt: 'Automatizace prodeje ve firmě — krok za krokem' }],
   },
@@ -39,8 +40,8 @@ const articleSchema = {
   headline: 'Jak zavést systematické oslovování firem — krok za krokem',
   description: 'Systematické oslovování firem není jen newsletter. Čím reálně začít, kde nasadit outbound a jak vypadá fungující B2B oslovování od prvního kontaktu po schůzku.',
   image: 'https://salesagent.cz/blog/automatizace-prodeje.jpg',
-  datePublished: '2026-08-10',
-  dateModified: '2026-08-10',
+  datePublished: '2025-04-10',
+  dateModified: '2026-09-25',
   inLanguage: 'cs',
   author: { '@type': 'Organization', name: 'SalesAgent.cz', url: 'https://salesagent.cz' },
   publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz' },
@@ -180,6 +181,19 @@ export default function Page() {
             a to ve správném pořadí:
           </p>
 
+          <p>
+            Nejprve určete, který krok dnes obchodníky brzdí: nemají nové firmy, tráví čas ručním
+            dohledáváním kontaktů, nebo se ztrácejí odpovědi? Pro první nasazení vyberte jednu cílovou
+            skupinu a jeden měřitelný cíl, například počet nových relevantních firem týdně. Před spuštěním
+            uložte výchozí stav, abyste poznali, zda automatizace opravdu přinesla lepší příležitosti.
+          </p>
+
+          <p>
+            U seznamu firem kontrolujte IČO, duplicity, zdroj, stáří údajů a správnou roli člověka.
+            Konkrétní postup je v průvodci <Link href="/blog/b2b-kontakty-ceske-firmy" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>B2B kontakty na české firmy</Link>.
+            Teprve nad čistými daty má smysl nastavovat oslovení a předání reakcí obchodníkovi.
+          </p>
+
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {[
               {
@@ -291,6 +305,13 @@ export default function Page() {
           <p>
             Obchodník vstupuje do procesu až ve chvíli odpovědi. Celý prospekting a první kontaktní
             fáze běží automaticky — a přesto personalizovaně.
+          </p>
+
+          <p>
+            Po prvním měsíci porovnejte nejen počet oslovených firem, ale i podíl kontaktů, které skutečně
+            odpovídají ICP, počet relevantních odpovědí a počet schůzek přijatých obchodníkem. Pokud se
+            seznam plní, ale schůzky nevznikají, zkontrolujte nejdřív cílení a kvalitu dat. Pokud firmy
+            reagují, ale příležitosti se ztrácejí, opravte pravidla předání a práci v CRM.
           </p>
 
           <H2>Co SalesAgent.cz dělá za vás</H2>

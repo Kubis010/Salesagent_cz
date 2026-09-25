@@ -14,8 +14,8 @@ export const metadata: Metadata = {
     url,
     siteName: 'SalesAgent.cz',
     type: 'article',
-    publishedTime: '2026-09-20',
-    modifiedTime: '2026-09-20',
+    publishedTime: '2026-09-22',
+    modifiedTime: '2026-09-22',
     locale: 'cs_CZ',
     images: [{ url: 'https://salesagent.cz/blog/arrows.jpg', width: 640, height: 360, alt: 'Lead scoring — seřazení B2B leadů podle priority' }],
   },
@@ -51,8 +51,8 @@ const articleSchema = {
   headline: 'Jak skórovat leady: lead scoring pro B2B obchod',
   description: 'Praktický model lead scoringu pro B2B: shoda s ICP a nákupní signály, bodování a automatizace kvalifikace, aby obchodník řešil jen teplé příležitosti.',
   image: 'https://salesagent.cz/blog/arrows.jpg',
-  datePublished: '2026-09-20',
-  dateModified: '2026-09-20',
+  datePublished: '2026-09-22',
+  dateModified: '2026-09-22',
   inLanguage: 'cs',
   author: { '@type': 'Person', name: 'Petr Kubíček' },
   publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz' },
@@ -81,7 +81,7 @@ export default function Page() {
         <h1 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: 700, letterSpacing: '-0.025em', lineHeight: 1.15, marginBottom: '16px' }}>
           Jak skórovat leady — lead scoring, který obchodníkovi ušetří čas
         </h1>
-        <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '48px' }}>20. září 2026 · Petr Kubíček · 8 minut čtení</p>
+        <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '48px' }}>22. září 2026 · Petr Kubíček · 8 minut čtení</p>
 
         <div style={{ fontSize: '17px', lineHeight: 1.75, color: 'var(--text)', display: 'flex', flexDirection: 'column', gap: '24px' }}>
           <p style={{ fontSize: '19px', lineHeight: 1.65 }}>

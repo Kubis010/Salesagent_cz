@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     siteName: 'SalesAgent.cz',
     type: 'article',
     publishedTime: '2026-09-20',
-    modifiedTime: '2026-09-20',
+    modifiedTime: '2026-09-25',
     locale: 'cs_CZ',
     images: [{ url: 'https://salesagent.cz/blog/automatizace-prodeje.jpg', width: 1200, height: 630, alt: 'Automatizovaný B2B obchod od prospectingu po teplou schůzku' }],
   },
@@ -52,7 +52,7 @@ const articleSchema = {
   description: 'Praktický návod, jak automatizovat B2B prospecting, oslovení, follow-up a kvalifikaci leadů a předávat obchodníkovi teplé příležitosti.',
   image: 'https://salesagent.cz/blog/automatizace-prodeje.jpg',
   datePublished: '2026-09-20',
-  dateModified: '2026-09-20',
+  dateModified: '2026-09-25',
   inLanguage: 'cs',
   author: { '@type': 'Person', name: 'Petr Kubíček' },
   publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz' },
@@ -114,14 +114,14 @@ export default function Page() {
           <H2>Jak vypadá automatizovaný B2B obchod v 7 krocích</H2>
           <ol style={{ display: 'flex', flexDirection: 'column', gap: '14px', paddingLeft: '24px' }}>
             <li><strong>Definice ICP:</strong> obor, velikost, lokalita, role rozhodovatele a situace, ve které má vaše nabídka nejvyšší hodnotu.</li>
-            <li><strong>Vyhledání firem:</strong> systém čerpá z veřejných rejstříků, webů, map, profesních sítí a oborových zdrojů (viz <Link href="/blog/jak-najit-nove-leady" style={linkStyle}>jak najít nové leady</Link>).</li>
+            <li><strong>Vyhledání firem:</strong> systém čerpá z veřejných rejstříků, webů, map, profesních sítí a oborových zdrojů (viz <Link href="/blog/jak-najit-nove-leady" style={linkStyle}>jak najít nové leady</Link>). Konkrétní zdroje a kontrolu kvality řeší průvodce <Link href="/blog/b2b-kontakty-ceske-firmy" style={linkStyle}>B2B kontakty na české firmy</Link>.</li>
             <li><strong>Obohacení dat:</strong> doplní web, kontakty, relevantní role a kontext, který pomůže zprávu personalizovat.</li>
             <li><strong>Kvalifikace a scoring:</strong> firmy mimo ICP odfiltruje a nejvhodnější seřadí podle reálných signálů.</li>
             <li><strong>Oslovení:</strong> připraví stručný e-mail nebo LinkedIn zprávu navázanou na konkrétní firmu, ne jen hromadnou šablonu.</li>
             <li><strong>Follow-up:</strong> připomene se v rozumném intervalu a zastaví sekvenci, jakmile příjemce reaguje.</li>
             <li><strong>Předání příležitosti:</strong> relevantní odpověď, kontext a dosavadní komunikaci zapíše do CRM a upozorní obchodníka.</li>
           </ol>
-          <p>Detailní postup zavedení najdete také v návodu <Link href="/blog/jak-zavest-automatizaci-prodeje-ve-firme" style={linkStyle}>jak zavést systematické oslovování firem krok za krokem</Link>.</p>
+          <p>Pokud už máte vybrané firmy a řešíte samotné spuštění, projděte si <Link href="/blog/jak-zavest-automatizaci-prodeje-ve-firme" style={linkStyle}>praktický postup zavedení automatizace prodeje ve firmě</Link>: od výběru prvního procesu přes kontrolu dat až po měření výsledků. Roli AI v každém kroku rozebírá článek <Link href="/blog/ai-pro-obchod-a-obchodniky" style={linkStyle}>AI pro obchod a obchodníky</Link>.</p>
 
           <H2>Kvalifikace leadů: méně kontaktů, více obchodních příležitostí</H2>
           <p>Počet nalezených e-mailů není obchodní výsledek. Důležité je, zda firma odpovídá ICP, zda oslovujete správnou roli a zda existuje důvod řešit nabídku právě teď. Scoring proto kombinuje pevná kritéria s veřejnými signály a výsledky předchozích kampaní.</p>
@@ -160,7 +160,9 @@ export default function Page() {
           <nav style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>
             <p style={{ fontSize: '14px', fontWeight: 600, marginBottom: '12px' }}>Pokračujte do detailu</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              <Related href="/blog/b2b-kontakty-ceske-firmy">B2B kontakty na české firmy — zdroje a kvalita dat</Related>
               <Related href="/blog/jak-zavest-automatizaci-prodeje-ve-firme">Jak zavést systematické oslovování firem</Related>
+              <Related href="/blog/ai-pro-obchod-a-obchodniky">AI pro obchod a obchodníky — propojený systém</Related>
               <Related href="/blog/ai-agenti-b2b-prospecting-kvalifikace-leadu">AI agenti pro prospecting a kvalifikaci leadů</Related>
               <Related href="/blog/jak-najit-nove-leady">Jak najít nové leady — kde hledat B2B zákazníky</Related>
               <Related href="/blog/jak-skorovat-leady">Jak skórovat leady — lead scoring pro B2B</Related>

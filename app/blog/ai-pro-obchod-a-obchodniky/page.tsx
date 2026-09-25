@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     siteName: 'SalesAgent.cz',
     type: 'article',
     publishedTime: '2026-08-04',
+    modifiedTime: '2026-09-25',
     images: [{ url: 'https://salesagent.cz/blog/ai-pro-obchodniky.jpg', width: 1024, height: 1024, alt: 'AI pro obchod a obchodníky' }],
   },
   robots: { index: true, follow: true },
@@ -37,7 +38,7 @@ const jsonLd = {
   description: 'Jak postavit systematické oslovování firem pro B2B obchodníky: LinkedIn outreach, kvalifikace leadů a personalizované oslovení v jednom outbound procesu.',
   image: 'https://salesagent.cz/blog/ai-pro-obchodniky.jpg',
   datePublished: '2026-08-04',
-  dateModified: '2026-08-04',
+  dateModified: '2026-09-25',
   inLanguage: 'cs',
   author: { '@type': 'Organization', name: 'SalesAgent.cz', url: 'https://salesagent.cz' },
   publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz' },
@@ -155,6 +156,9 @@ export default function AiProObchodPage() {
             </p>
             <p className="text-gray-300 leading-relaxed mb-6">
               Kompletní AI systém funguje jinak. Všechny části — prospekting, kvalifikace, LinkedIn, e-mail, CRM — jsou propojené do jednoho workflow. Data tečou automaticky, sekvence na sebe navazují a obchodník vstupuje až tam, kde je jeho přítomnost skutečně potřeba.
+            </p>
+            <p className="text-gray-300 leading-relaxed mb-6">
+              Nejprve potřebujete spolehlivá vstupní data. Stejnou firmu mohou obsahovat ARES, placená databáze i váš CRM; bez sjednocení podle IČO pak dostane několik různých záznamů a proces ztratí kontext. Jak sestavit čistý seznam pro český trh, ukazuje návod <Link href="/blog/b2b-kontakty-ceske-firmy" className="text-violet-400 underline">B2B kontakty na české firmy</Link>.
             </p>
 
             <h2 className="text-2xl font-bold text-white mt-12 mb-6">5 částí kompletního AI obchodního systému</h2>
@@ -284,6 +288,12 @@ export default function AiProObchodPage() {
             </div>
 
             <h2 className="text-2xl font-bold text-white mt-12 mb-4">Jak začít</h2>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              Vyberte jeden segment a určete, co má systém předat obchodníkovi: firmu odpovídající ICP,
+              ověřenou kontaktní roli, historii komunikace a další doporučený krok. Pak měřte, kolik
+              záznamů projde kontrolou kvality, kolik firem reaguje a kolik z nich obchodník skutečně
+              přijme jako příležitost. <Link href="/blog/jak-zavest-automatizaci-prodeje-ve-firme" className="text-violet-400 underline">Postup zavedení automatizace krok za krokem</Link> popisuje, v jakém pořadí jednotlivé části spustit.
+            </p>
             <p className="text-gray-300 leading-relaxed mb-4">
               Nemusíte kupovat nástroje, stavět infrastrukturu ani zaučovat tým. Celý AI obchodní systém — prospekting, LinkedIn, e-mail, CRM — nastavíme za vás jako outsourcovanou službu. Vy definujete, koho chcete oslovovat, a systém začne pracovat.
             </p>

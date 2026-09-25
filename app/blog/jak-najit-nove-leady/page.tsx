@@ -14,8 +14,8 @@ export const metadata: Metadata = {
     url,
     siteName: 'SalesAgent.cz',
     type: 'article',
-    publishedTime: '2026-09-20',
-    modifiedTime: '2026-09-20',
+    publishedTime: '2026-09-21',
+    modifiedTime: '2026-09-25',
     locale: 'cs_CZ',
     images: [{ url: 'https://salesagent.cz/blog/external-sales.jpg', width: 640, height: 400, alt: 'Jak najít nové B2B leady a zákazníky' }],
   },
@@ -47,8 +47,8 @@ const articleSchema = {
   headline: 'Jak najít nové leady: kde hledat B2B zákazníky',
   description: 'Kde hledat nové B2B leady, jak je vybírat podle ICP a jak vyhledávání zautomatizovat, aby přísun leadů neustal.',
   image: 'https://salesagent.cz/blog/external-sales.jpg',
-  datePublished: '2026-09-20',
-  dateModified: '2026-09-20',
+  datePublished: '2026-09-21',
+  dateModified: '2026-09-25',
   inLanguage: 'cs',
   author: { '@type': 'Person', name: 'Petr Kubíček' },
   publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz' },
@@ -77,7 +77,7 @@ export default function Page() {
         <h1 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: 700, letterSpacing: '-0.025em', lineHeight: 1.15, marginBottom: '16px' }}>
           Jak najít nové leady — kde hledat B2B zákazníky, aniž byste kupovali databázi
         </h1>
-        <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '48px' }}>20. září 2026 · Petr Kubíček · 8 minut čtení</p>
+        <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '48px' }}>21. září 2026 · Petr Kubíček · 8 minut čtení</p>
 
         <div style={{ fontSize: '17px', lineHeight: 1.75, color: 'var(--text)', display: 'flex', flexDirection: 'column', gap: '24px' }}>
           <p style={{ fontSize: '19px', lineHeight: 1.65 }}>
@@ -108,7 +108,7 @@ export default function Page() {
 
           <H2>Jak zajistit stálý přísun leadů</H2>
           <p>Jednorázová akce naplní pipeline na pár týdnů a pak utichne. Stálý tok zajistí opakovatelný proces, kde systém pravidelně vyhledává firmy podle ICP, kvalifikuje je, osloví a předá odpovědi obchodníkovi. Tím se hledání nezastaví ve chvíli, kdy má obchodník napilno s uzavíráním.</p>
-          <p>Jak vyhledávání zapadá do celého automatizovaného obchodu, ukazuje pilíř <Link href="/blog/jak-rozjet-a-zautomatizovat-b2b-obchod" style={linkStyle}>jak rozjet a zautomatizovat B2B obchod</Link>. Samotné vyhledávání a výběr firem řeší i služba <Link href="/cs/b2b-lead-generation" style={linkStyle}>generování B2B leadů</Link>.</p>
+          <p>Jak vyhledávání zapadá do celého automatizovaného obchodu, ukazuje pilíř <Link href="/blog/jak-rozjet-a-zautomatizovat-b2b-obchod" style={linkStyle}>jak rozjet a zautomatizovat B2B obchod</Link>. Pokud už víte, komu chcete prodávat, a řešíte původ a čistotu dat, čtěte samostatný návod <Link href="/blog/b2b-kontakty-ceske-firmy" style={linkStyle}>kde vzít B2B kontakty na české firmy bez duplicit</Link>. Samotné vyhledávání a výběr firem řeší i služba <Link href="/cs/b2b-lead-generation" style={linkStyle}>generování B2B leadů</Link>.</p>
 
           <div style={{ background: 'rgba(255,107,74,0.06)', border: '1px solid rgba(255,107,74,0.25)', borderRadius: '14px', padding: '34px', textAlign: 'center', marginTop: '16px' }}>
             <p style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '23px', fontWeight: 700, marginBottom: '12px' }}>Nechcete leady hledat ručně?</p>

@@ -21,6 +21,14 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    href: '/blog/b2b-kontakty-ceske-firmy',
+    lang: 'CS',
+    title: 'Kde vzít B2B kontakty na české firmy — legálně, kvalitně a bez duplicit',
+    date: '25. září 2026',
+    description: 'ARES, obchodní rejstřík, Sales Navigator a další zdroje. Jak z nich sestavit aktuální seznam firem, odstranit duplicity a dodržet pravidla pro práci s kontakty.',
+    image: '/blog/external-sales.jpg',
+  },
+  {
     href: '/blog/jak-rozjet-a-zautomatizovat-b2b-obchod',
     lang: 'CS',
     title: 'Jak rozjet a zautomatizovat B2B obchod — bez dalšího obchodníka',
@@ -33,7 +41,7 @@ const posts = [
     href: '/blog/jak-najit-nove-leady',
     lang: 'CS',
     title: 'Jak najít nové leady — kde hledat B2B zákazníky',
-    date: '20. září 2026',
+    date: '21. září 2026',
     description:
       'Došly vám kontakty na oslovení? Kde hledat nové B2B leady bez koupené databáze, jak je vybírat podle ICP a jak vyhledávání zautomatizovat, aby přísun leadů neustal.',
     image: '/blog/external-sales.jpg',
@@ -42,7 +50,7 @@ const posts = [
     href: '/blog/jak-skorovat-leady',
     lang: 'CS',
     title: 'Jak skórovat leady — lead scoring, který obchodníkovi ušetří čas',
-    date: '20. září 2026',
+    date: '22. září 2026',
     description:
       'Máte stovky kontaktů, ale nevíte, koho oslovit první? Praktický model lead scoringu: shoda s ICP + nákupní signály, jednoduché bodování a jak scoring automatizovat.',
     image: '/blog/arrows.jpg',

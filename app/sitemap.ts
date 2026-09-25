@@ -21,6 +21,7 @@ const pages = [
 ]
 
 const blogPosts = [
+  { slug: '/b2b-kontakty-ceske-firmy', priority: 0.9, changeFrequency: 'monthly' as const },
   { slug: '/jak-rozjet-a-zautomatizovat-b2b-obchod', priority: 0.95, changeFrequency: 'monthly' as const },
   { slug: '/jak-skorovat-leady', priority: 0.9, changeFrequency: 'monthly' as const },
   { slug: '/jak-najit-nove-leady', priority: 0.9, changeFrequency: 'monthly' as const },
