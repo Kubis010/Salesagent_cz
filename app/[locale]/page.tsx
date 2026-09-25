@@ -134,7 +134,7 @@ export default async function HomePage({
 
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
             <a
-              href="https://outlook.office.com/bookwithme/user/480895b1333541dc94be634dd588fada@salesagent.cz/meetingtype/jwdxCRPBn0CvHccZ7eLwAg2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile"
+              href={`${base}/contact`}
               target="_blank"
               rel="noopener noreferrer"
               style={{

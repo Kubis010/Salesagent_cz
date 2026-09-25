@@ -13,7 +13,7 @@ export const cs = {
     headline: 'Váš obchodník neprospektuje?\nStroj to udělá za něj.',
     subheadline:
       'Najdeme a oslovíme firmy z vašeho trhu — e-mailem, na LinkedInu i reklamou. Zahřejeme je a ukážeme váš produkt přes interaktivního Prezentéra. Vašemu obchodníkovi přistane teplá schůzka, kterou stačí zavřít. Celé to nasadíme a řídíme za vás.',
-    cta: 'Ukažte mi, jak to vypadá',
+    cta: 'Kontaktujte nás',
     ctaSub: 'nebo si domluvte nezávaznou konzultaci',
     pipelineLabel: 'Automat běží za vás',
     statsToday: 'osloveno dnes',
@@ -94,8 +94,8 @@ export const cs = {
       {
         client: 'SavvyLockers',
         sector: 'Chytré schránky · B2B',
-        value: '✓',
-        result: 'průběžné oslovování a kvalifikace kontaktů',
+        value: '5+',
+        result: 'vážných poptávek za 1 měsíc',
       },
     ],
     note: 'Konkrétní reference a doporučení rádi předáme na vyžádání.',
