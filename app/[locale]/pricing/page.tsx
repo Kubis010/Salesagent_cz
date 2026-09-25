@@ -12,7 +12,7 @@ export async function generateMetadata({
   return {
     title: cs ? 'Ceník — vlastní systém nebo řízený outbound' : 'External Sales Representation in the Czech Republic',
     description: cs
-      ? 'Dvě rovnocenné varianty: AI prodejní systém od 9 900 Kč jednorázově, nebo řízený outbound od 5 900 Kč měsíčně. Rozsah upřesníme na konzultaci.'
+      ? 'Nasazení na klíč od 15 000 Kč jednorázově, pak řízená automatizace od 19 900 Kč měsíčně — systém jedeme za vás, váš obchodník zavírá teplé schůzky.'
       : 'Planning a Czech market entry? Test demand with an external sales team. Start with a 2–3 month trial from €1,900 per month, then extend the representation if the results justify it.',
     alternates: {
       canonical: `https://salesagent.cz/${locale}/pricing`,
@@ -29,14 +29,14 @@ export async function generateMetadata({
       siteName: 'SalesAgent.cz',
       title: cs ? 'Ceník — vlastní systém nebo řízený outbound | SalesAgent.cz' : 'External Sales Representation in the Czech Republic | SalesAgent.cz',
       description: cs
-        ? 'Vlastní AI prodejní systém od 9 900 Kč jednorázově, nebo řízený outbound od 5 900 Kč měsíčně.'
+        ? 'Nasazení od 15 000 Kč, řízená automatizace od 19 900 Kč měsíčně.'
         : 'Czech market entry support with an external sales team: a 2–3 month trial from €1,900 per month.',
     },
     twitter: {
       card: 'summary_large_image',
       title: cs ? 'Ceník — vlastní systém nebo řízený outbound | SalesAgent.cz' : 'External Sales Representation in the Czech Republic | SalesAgent.cz',
       description: cs
-        ? 'Vlastní AI prodejní systém od 9 900 Kč jednorázově, nebo řízený outbound od 5 900 Kč měsíčně.'
+        ? 'Nasazení od 15 000 Kč, řízená automatizace od 19 900 Kč měsíčně.'
         : 'Test demand during your Czech market entry with an external sales team from €1,900 per month.',
     },
   }

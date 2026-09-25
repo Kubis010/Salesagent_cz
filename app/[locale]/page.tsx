@@ -12,13 +12,13 @@ export async function generateMetadata({
   const t: Translations = getTranslations(locale as Locale)
   return {
     title: locale === 'cs'
-      ? 'AI prodejní systém, který vlastníte | SalesAgent.cz'
+      ? 'Řízená automatizace obchodu — teplé schůzky pro vašeho obchodníka | SalesAgent.cz'
       : 'An AI sales system you actually own | SalesAgent.cz',
     description: locale === 'cs'
-      ? 'Postavíme vám kompletní outbound stroj — scraper, obohacení dat, LinkedIn a e-mail, demo Prezentérem a napojení na CRM. Zvolíte si jednorázové předání systému, nebo měsíční řízený outbound.'
+      ? 'Najdeme, oslovíme a zahřejeme firmy za vás — e-mailem, na LinkedInu i reklamou. Vašemu obchodníkovi přistane teplá schůzka, kterou stačí zavřít. Nasadíme a řídíme za vás. Od 19 900 Kč měsíčně.'
       : 'Choose between an owned AI outbound system built and handed over from €400 one-off, or a managed monthly outbound service where we run the outreach for you.',
     keywords: locale === 'cs'
-      ? ['AI prodejní systém', 'automatizace obchodu', 'outbound systém na míru', 'scraping firem', 'LinkedIn automatizace', 'obohacení dat', 'napojení na CRM', 'B2B outreach']
+      ? ['automatizace obchodu', 'řízený outbound', 'B2B lead generation', 'teplé schůzky', 'LinkedIn oslovování', 'AI prospecting', 'externí obchodní ředitel', 'automatizace oslovení']
       : ['AI sales system', 'sales automation', 'managed outbound', 'custom outbound system', 'B2B outreach machine', 'LinkedIn automation', 'lead enrichment', 'CRM integration'],
     alternates: {
       canonical: `https://salesagent.cz/${locale}`,
@@ -392,7 +392,7 @@ export default async function HomePage({
             {/* Right — examples */}
             <div>
               <div style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase', color: 'var(--text-muted)', marginBottom: '16px' }}>
-                {locale === 'cs' ? 'Co konkrétně stavíme' : 'What we build'}
+                {locale === 'cs' ? 'Co za vás jede' : 'What we build'}
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                 {t.services.automation.examples.map((ex: { label: string; icon: string }, i: number) => (
@@ -728,34 +728,34 @@ export default async function HomePage({
                 mainEntity: [
                   {
                     '@type': 'Question',
-                    name: 'Jaký je rozdíl mezi owned systémem a managed outboundem?',
+                    name: 'Nahradí to našeho obchodníka?',
                     acceptedAnswer: {
                       '@type': 'Answer',
-                      text: 'U owned systému vám outbound stroj jednorázově postavíme, předáme přístupy a zaškolíme tým. U managed outboundu systém a kampaně průběžně provozujeme a ladíme my; váš obchodník dostává kvalifikované příležitosti.',
+                      text: 'Ne. Dodá mu teplé schůzky. Proaktivní hledání a oslovování dělá stroj, váš člověk jen zavírá zájemce, kteří už produkt viděli.',
                     },
                   },
                   {
                     '@type': 'Question',
-                    name: 'Jak dlouho trvá systém postavit?',
+                    name: 'Musíme systém nějak obsluhovat?',
                     acceptedAnswer: {
                       '@type': 'Answer',
-                      text: 'Obvykle 1–3 týdny podle rozsahu a počtu napojení. Proces má čtyři kroky: konzultace, návrh, implementace a testování s předáním klíčů a zaškolením týmu.',
+                      text: 'Ne. Nasadíme ho za pár dní a pak ho řídíme a ladíme my. Váš člověk jen reaguje na teplé schůzky a domlouvá je.',
                     },
                   },
                   {
                     '@type': 'Question',
-                    name: 'Jak se nabídka liší od jednoúčelových nástrojů?',
+                    name: 'Čím se to liší od nástrojů jako Apollo nebo Waalaxy?',
                     acceptedAnswer: {
                       '@type': 'Answer',
-                      text: 'Jednoúčelové nástroje (Apollo, Waalaxy, HubSpot) řeší vždy jen část funnelu. My propojujeme vyhledávání firem, obohacení, oslovení, follow-up a CRM — buď do systému, který převezmete, nebo do managed služby, kterou provozujeme za vás.',
+                      text: 'Nástroj si musíte obsluhovat sami — a když váš obchodník neprospektuje, ležet ladem. My nástroje nasadíme, propojíme přes celý funnel a řídíme je za vás. Vy dostáváte teplé schůzky, ne další aplikaci.',
                     },
                   },
                   {
                     '@type': 'Question',
-                    name: 'Kolik stojí postavení systému?',
+                    name: 'Kolik to stojí?',
                     acceptedAnswer: {
                       '@type': 'Answer',
-                      text: 'Systém postavíme od 9 900 Kč jednorázově. Výsledná částka závisí na rozsahu pipeline a počtu napojení. Měsíční provoz a podpora jsou volitelné. Přesné nacenění dostanete po nezávazné konzultaci zdarma.',
+                      text: 'Jednorázové nasazení na klíč od 15 000 Kč a pak měsíční řízení od 19 900 Kč — méně než půl obchodníka. Přesnou částku upřesníme na nezávazné konzultaci zdarma.',
                     },
                   },
                 ],
@@ -764,25 +764,25 @@ export default async function HomePage({
           />
           <section style={{ padding: '80px 24px', maxWidth: '760px', margin: '0 auto' }}>
             <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: 'clamp(22px, 3vw, 32px)', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '40px', textAlign: 'center' }}>
-              Časté otázky o AI prodejním systému
+              Časté otázky
             </h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
               {[
                 {
-                  q: 'Jaký je rozdíl mezi owned systémem a managed outboundem?',
-                  a: 'U owned systému vám outbound stroj jednorázově postavíme, předáme přístupy a zaškolíme tým. U managed outboundu systém a kampaně průběžně provozujeme a ladíme my; váš obchodník dostává kvalifikované příležitosti.',
+                  q: 'Nahradí to našeho obchodníka?',
+                  a: 'Ne. Dodá mu teplé schůzky. Proaktivní hledání a oslovování dělá stroj, váš člověk jen zavírá zájemce, kteří už produkt viděli.',
                 },
                 {
-                  q: 'Jak dlouho trvá systém postavit?',
-                  a: 'Obvykle 1–3 týdny podle rozsahu a počtu napojení. Proces má čtyři kroky: konzultace, návrh, implementace a testování s předáním klíčů a zaškolením týmu.',
+                  q: 'Musíme systém nějak obsluhovat?',
+                  a: 'Ne. Nasadíme ho za pár dní a pak ho řídíme a ladíme my. Váš člověk jen reaguje na teplé schůzky a domlouvá je.',
                 },
                 {
-                  q: 'Jak se nabídka liší od jednoúčelových nástrojů?',
-                  a: 'Jednoúčelové nástroje (Apollo, Waalaxy, HubSpot) řeší vždy jen část funnelu. My propojujeme vyhledávání firem, obohacení, oslovení, follow-up a CRM — buď do systému, který převezmete, nebo do managed služby, kterou provozujeme za vás.',
+                  q: 'Čím se to liší od nástrojů jako Apollo nebo Waalaxy?',
+                  a: 'Nástroj si musíte obsluhovat sami — a když váš obchodník neprospektuje, ležet ladem. My nástroje nasadíme, propojíme přes celý funnel a řídíme je za vás. Vy dostáváte teplé schůzky, ne další aplikaci.',
                 },
                 {
-                  q: 'Kolik stojí postavení systému?',
-                  a: 'Systém postavíme od 9 900 Kč jednorázově. Výsledná částka závisí na rozsahu pipeline a počtu napojení. Měsíční provoz a podpora jsou volitelné. Přesné nacenění dostanete po nezávazné konzultaci zdarma.',
+                  q: 'Kolik to stojí?',
+                  a: 'Jednorázové nasazení na klíč od 15 000 Kč a pak měsíční řízení od 19 900 Kč — méně než půl obchodníka. Přesnou částku upřesníme na nezávazné konzultaci zdarma.',
                 },
               ].map(({ q, a }) => (
                 <details
