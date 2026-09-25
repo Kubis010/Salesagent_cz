@@ -577,20 +577,19 @@ export default async function HomePage({
               </p>
 
               {/* Credentials */}
-              <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: '10px', maxWidth: '480px' }}>
                 {t.founder.credentials.map((c: { value: string; label: string }, i: number) => (
                   <div
                     key={i}
                     style={{
-                      padding: '14px 20px',
+                      padding: '14px 10px',
                       background: 'var(--bg-card)',
                       border: '1px solid var(--border)',
                       borderRadius: '10px',
                       textAlign: 'center',
-                      minWidth: '90px',
                     }}
                   >
-                    <div className="font-mono-data" style={{ fontSize: '22px', fontWeight: 600, color: 'var(--text)', lineHeight: 1, marginBottom: '5px' }}>
+                    <div className="font-mono-data" style={{ fontSize: 'clamp(17px, 5vw, 22px)', whiteSpace: 'nowrap', fontWeight: 600, color: 'var(--text)', lineHeight: 1, marginBottom: '5px' }}>
                       {c.value}
                     </div>
                     <div style={{ fontSize: '11px', color: 'var(--text-muted)', lineHeight: '1.4' }}>{c.label}</div>
@@ -599,55 +598,6 @@ export default async function HomePage({
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* ── SALES ROBOTS crosslink ── */}
-      <section
-        style={{
-          padding: '0 24px 80px',
-          maxWidth: '1200px',
-          margin: '0 auto',
-        }}
-      >
-        <div
-          style={{
-            border: '1px solid var(--border)',
-            borderRadius: '12px',
-            padding: '24px 28px',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '16px',
-            flexWrap: 'wrap',
-          }}
-        >
-          <span
-            style={{
-              fontSize: '11px',
-              fontWeight: 600,
-              letterSpacing: '0.08em',
-              textTransform: 'uppercase',
-              color: 'var(--text-muted)',
-              padding: '4px 10px',
-              border: '1px solid var(--border)',
-              borderRadius: '20px',
-              whiteSpace: 'nowrap',
-            }}
-          >
-            {t.salesRobots.label}
-          </span>
-          <p style={{ fontSize: '14px', color: 'var(--text-muted)', margin: 0, flex: 1 }}>
-            {t.salesRobots.text}{' '}
-            <a
-              href="https://salesrobots.cz"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: 'var(--text)', fontWeight: 600, textDecoration: 'none' }}
-            >
-              {t.salesRobots.link}
-            </a>{' '}
-            {t.salesRobots.suffix}
-          </p>
         </div>
       </section>
 
