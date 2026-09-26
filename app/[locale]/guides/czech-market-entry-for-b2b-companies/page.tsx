@@ -17,14 +17,11 @@ export async function generateMetadata({
     description:
       'When to enter the Czech B2B market, entity vs. no entity, how to find first customers, and what to avoid. A practical guide for international companies.',
     keywords: [
-      'market entry czech republic',
       'czech market entry b2b',
-      'market entry slovakia',
       'entering czech republic market',
       'how to enter czech market',
       'czech market entry strategy',
       'b2b market entry czech republic',
-      'czech and slovak market entry',
       'czech republic business expansion',
     ],
     alternates: {
@@ -63,22 +60,6 @@ const faqSchema = {
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'With outsourced sales representation, you can have first meetings booked within 2–4 weeks — no entity needed, no hiring. Setting up a Czech s.r.o. entity takes 2–3 months and requires a notary, registered address, and Czech bank account. Most companies do outreach first, entity later (if at all).',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What does outsourced sales representation in the Czech Republic include?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'SalesAgent.cz acts as your external sales team in the Czech Republic: we build a verified target list matching your ICP, contact decision-makers by personalised email and LinkedIn in your name, run the follow-ups, qualify interest, and book meetings straight into your calendar — in Czech or English as needed. You keep your brand and every relationship; we handle the prospecting and outreach. No Czech entity, no local hire, and no long-term lock-in — most companies start with a fixed-price 2–3 month market test before scaling.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Can you help with market entry to Slovakia as well as the Czech Republic?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. Slovakia is the natural second market after the Czech Republic — a shared business culture, mutually intelligible language, and buyers who often deal with Czech and Slovak suppliers interchangeably. We run the same outsourced sales representation model in both: build the target list, contact decision-makers in Czech or Slovak, and book meetings in your name. Many companies validate the Czech market first and extend the same outreach into Slovakia once it works.',
       },
     },
     {
@@ -180,11 +161,8 @@ export default async function GuideCzechMarketEntry({
           </h1>
 
           {/* AI-citeable answer */}
-          <p style={{ fontSize: '18px', lineHeight: 1.7, color: 'var(--text)', marginBottom: '20px', borderLeft: '3px solid var(--accent)', paddingLeft: '20px' }}>
-            Entering the Czech B2B market means deciding on three things: when (is there enough demand signal to justify the investment?), structure (entity vs. represented sales), and approach (direct outreach vs. partnerships vs. inbound). For most international companies, the right starting point is outsourced sales representation — validate Czech demand in 90 days before committing capital to infrastructure.
-          </p>
           <p style={{ fontSize: '18px', lineHeight: 1.7, color: 'var(--text)', marginBottom: '32px', borderLeft: '3px solid var(--accent)', paddingLeft: '20px' }}>
-            That is exactly what <strong>SalesAgent.cz</strong> does: we act as your outsourced sales representation in the Czech Republic. Our agents research Czech companies in your segment, contact decision-makers by email and LinkedIn, and book qualified meetings — all in your name, with no Czech entity and no local hire. You get meetings; we run the outreach.
+            Entering the Czech B2B market means deciding on three things: when (is there enough demand signal to justify the investment?), structure (entity vs. represented sales), and approach (direct outreach vs. partnerships vs. inbound). For most international companies, the right starting point is outsourced sales outreach — validate Czech demand in 90 days before committing capital to infrastructure.
           </p>
 
           <Image
@@ -364,52 +342,8 @@ export default async function GuideCzechMarketEntry({
             </div>
           ))}
 
-          {/* Section 5: The service — outsourced sales representation */}
-          <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '26px', fontWeight: 700, marginBottom: '16px', marginTop: '48px' }}>
-            Outsourced sales representation: how we become your Czech sales team
-          </h2>
-          <p style={{ color: 'var(--text-muted)', lineHeight: 1.75, marginBottom: '16px' }}>
-            The fastest, lowest-risk way to enter the Czech market is to have someone already on the ground do the selling for you — without you opening an entity or hiring a rep. That is the service SalesAgent.cz provides: <strong>we act as your external sales representation in the Czech Republic and Slovakia</strong>. You keep your brand, your pricing, and every relationship; we do the prospecting, outreach, and meeting-setting in your name.
-          </p>
-          <p style={{ color: 'var(--text-muted)', lineHeight: 1.75, marginBottom: '16px' }}>
-            What we handle for you:
-          </p>
-          {[
-            {
-              title: 'We define and build your Czech target list',
-              body: 'We map your ICP onto Czech company segments (industry, size, region, decision-maker role) and build a verified list of real prospects from public sources — not a bought database.',
-            },
-            {
-              title: 'We contact decision-makers in your name',
-              body: 'We reach CEOs and commercial directors by personalised email and LinkedIn — written after reading each company, in Czech or English as the segment demands. Every message goes out under your brand, from an address you approve.',
-            },
-            {
-              title: 'We run the follow-ups and handle replies',
-              body: 'We manage the sequence, answer first questions, qualify interest, and keep the conversation warm — so nothing drops between the first touch and the meeting.',
-            },
-            {
-              title: 'We book qualified meetings straight into your calendar',
-              body: 'When a Czech company is genuinely interested, we hand over a booked meeting with context. You walk in as the supplier; we stay invisible.',
-            },
-            {
-              title: 'You get a Czech-speaking layer without a local hire',
-              body: 'A local point of contact and Czech-language communication where it matters — at a fraction of the cost of a Czech sales rep, with no employment contract, notice period, or ramp-up risk.',
-            },
-          ].map((item) => (
-            <div key={item.title} style={{ display: 'flex', gap: '16px', marginBottom: '16px' }}>
-              <span style={{ color: 'var(--accent)', fontWeight: 700, fontSize: '18px', lineHeight: 1.5, flexShrink: 0 }}>✓</span>
-              <div>
-                <p style={{ fontWeight: 700, fontSize: '15px', marginBottom: '4px' }}>{item.title}</p>
-                <p style={{ fontSize: '14px', color: 'var(--text-muted)', lineHeight: 1.7, margin: 0 }}>{item.body}</p>
-              </div>
-            </div>
-          ))}
-          <p style={{ color: 'var(--text-muted)', lineHeight: 1.75, marginTop: '20px', marginBottom: '16px' }}>
-            It is a fixed, predictable arrangement — no equity, no long-term lock-in, no Czech s.r.o. required. Most companies start with a fixed-price market test (2–3 months) to validate demand, then scale the representation if the numbers work. Compared with hiring a local rep at €4,000–8,000/month with a 3–6 month ramp, you get selling activity in the Czech market within weeks.
-          </p>
-
           {/* CTA */}
-          <div style={{ marginTop: '40px', marginBottom: '56px', border: '1px solid rgba(255,107,74,0.35)', borderRadius: '16px', padding: '40px 36px', background: 'rgba(255,107,74,0.04)' }}>
+          <div style={{ marginTop: '56px', marginBottom: '56px', border: '1px solid rgba(255,107,74,0.35)', borderRadius: '16px', padding: '40px 36px', background: 'rgba(255,107,74,0.04)' }}>
             <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, marginBottom: '12px' }}>
               We act as your external sales team in Czech Republic
             </h2>
@@ -431,11 +365,6 @@ export default async function GuideCzechMarketEntry({
             >
               Book a free consultation →
             </Link>
-            <p style={{ marginTop: '16px', fontSize: '14px', color: 'var(--text-muted)' }}>
-              <Link href="/en/sales-representation-czech-republic" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
-                See how our Czech sales representation service works →
-              </Link>
-            </p>
           </div>
 
           {/* FAQ */}
@@ -451,17 +380,17 @@ export default async function GuideCzechMarketEntry({
             ))}
           </div>
 
-          {/* Second CTA — sales representation service */}
+          {/* Second CTA — market test */}
           <div style={{ marginTop: '40px', marginBottom: '40px', background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '16px', padding: '32px 28px' }}>
-            <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '10px' }}>Not ready to hire or open an entity?</p>
+            <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '10px' }}>Not sure if Czech market is worth it?</p>
             <p style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '18px', fontWeight: 700, marginBottom: '10px' }}>
-              We start your sales in the Czech Republic for you — fixed price, no commitment
+              Run a 2–3 month market test first — fixed price, no commitment
             </p>
             <p style={{ color: 'var(--text-muted)', lineHeight: 1.7, marginBottom: '20px', maxWidth: '540px', fontSize: '14px' }}>
-              We become your external sales team: we contact 200–500 Czech companies in your segment, run the follow-ups, and book qualified meetings in your name — no Czech entity, no local hire.
+              Before hiring, before an entity, before a long-term contract: we contact 200–500 Czech companies in your segment, log every response, and give you a written go/no-go at the end.
             </p>
             <Link
-              href="/en/sales-representation-czech-republic"
+              href="/en/contact"
               style={{
                 display: 'inline-block',
                 border: '1px solid var(--accent)',
@@ -473,7 +402,7 @@ export default async function GuideCzechMarketEntry({
                 textDecoration: 'none',
               }}
             >
-              See how our Czech sales representation works →
+              Read about the market test →
             </Link>
           </div>
 
@@ -482,7 +411,7 @@ export default async function GuideCzechMarketEntry({
             <p style={{ fontSize: '14px', fontWeight: 600, color: 'var(--text)', marginBottom: '12px' }}>Related guides</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
               <Link href="/en/sales-representation-czech-republic" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
-                Sales Representation in the Czech Republic — we sell for you →
+                Sales Representation in the Czech Republic →
               </Link>
               <Link href="/blog/how-to-expand-your-business-and-sales-to-the-european-union" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
                 How to Expand Your Business and Sales to the European Union →
