@@ -13,9 +13,9 @@ export async function generateMetadata({
     return { robots: { index: false, follow: true } }
   }
   return {
-    title: 'Czech Market Entry for B2B: The 2026 Playbook (No Entity Needed)',
+    title: 'Czech Market Entry for B2B Companies: A Practical Playbook',
     description:
-      'How to enter the Czech (and Slovak) B2B market in 2026: when to enter, entity vs. no entity, how to find your first customers, and what to avoid — without hiring a local rep.',
+      'When to enter the Czech B2B market, entity vs. no entity, how to find first customers, and what to avoid. A practical guide for international companies.',
     keywords: [
       'market entry czech republic',
       'czech market entry b2b',
@@ -39,8 +39,8 @@ export async function generateMetadata({
       locale: 'en_US',
       url: 'https://salesagent.cz/en/guides/czech-market-entry-for-b2b-companies',
       siteName: 'SalesAgent.cz',
-      title: 'Czech Market Entry for B2B: The 2026 Playbook (No Entity Needed)',
-      description: 'How to enter the Czech and Slovak B2B market: when to enter, entity vs. no entity, how to find first customers, and what to avoid.',
+      title: 'Czech Market Entry for B2B Companies: A Practical Playbook',
+      description: 'When to enter, entity vs. no entity, how to find first customers, and what to avoid.',
       images: [
         {
           url: 'https://salesagent.cz/guides/czech-market-entry-guide.jpg',
