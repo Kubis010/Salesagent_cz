@@ -13,13 +13,13 @@ export async function generateMetadata({
   return {
     title: locale === 'cs'
       ? 'Řízená automatizace obchodu — teplé schůzky pro vašeho obchodníka | SalesAgent.cz'
-      : 'An AI sales system you actually own | SalesAgent.cz',
+      : 'Outsourced B2B Sales in the Czech Republic | SalesAgent.cz',
     description: locale === 'cs'
       ? 'Najdeme, oslovíme a zahřejeme firmy za vás — e-mailem, na LinkedInu i reklamou. Vašemu obchodníkovi přistane teplá schůzka, kterou stačí zavřít. Nasadíme a řídíme za vás. Od 19 900 Kč měsíčně.'
-      : 'Choose between an owned AI outbound system built and handed over from €400 one-off, or a managed monthly outbound service where we run the outreach for you.',
+      : 'Czech market entry without an entity or a local hire. We act as your external sales team in the Czech Republic and Slovakia: target list, email and LinkedIn outreach, meetings booked in your calendar. Fixed-price trial from €1,900/month.',
     keywords: locale === 'cs'
       ? ['automatizace obchodu', 'řízený outbound', 'B2B lead generation', 'teplé schůzky', 'LinkedIn oslovování', 'AI prospecting', 'externí obchodní ředitel', 'automatizace oslovení']
-      : ['AI sales system', 'sales automation', 'managed outbound', 'custom outbound system', 'B2B outreach machine', 'LinkedIn automation', 'lead enrichment', 'CRM integration'],
+      : ['czech market entry', 'market entry czech republic', 'external sales representation czech republic', 'outsourced sales czech republic', 'sales agent czech republic', 'b2b lead generation czech republic', 'czech and slovak market entry'],
     alternates: {
       canonical: `https://salesagent.cz/${locale}`,
       languages: {
@@ -392,7 +392,7 @@ export default async function HomePage({
             {/* Right — examples */}
             <div>
               <div style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase', color: 'var(--text-muted)', marginBottom: '16px' }}>
-                {locale === 'cs' ? 'Co za vás jede' : 'What we build'}
+                {locale === 'cs' ? 'Co za vás jede' : 'What we do for you'}
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                 {t.services.automation.examples.map((ex: { label: string; icon: string }, i: number) => (

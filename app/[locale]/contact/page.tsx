@@ -13,7 +13,7 @@ export async function generateMetadata({
     title: cs ? 'Kontakt — konzultace zdarma' : 'Contact — free consultation',
     description: cs
       ? 'Domluvte si nezávaznou konzultaci zdarma. Projdeme váš prodej a možnosti automatizace a ukážeme, jak by váš vlastní AI prodejní systém mohl vypadat.'
-      : 'Book a free, no-strings consultation. We will go through your sales and automation options and show what your own AI sales system could look like.',
+      : 'Book a free, no-strings consultation about your Czech market entry. We will go through your product and target customers and show how a fixed-price sales trial in the Czech Republic would work.',
     alternates: {
       canonical: `https://salesagent.cz/${locale}/contact`,
       languages: {

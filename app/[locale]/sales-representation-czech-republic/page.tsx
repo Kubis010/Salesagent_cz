@@ -13,10 +13,10 @@ export async function generateMetadata({
   return {
     title: cs
       ? 'Externí obchodník pro firmy — outsourcing obchodu'
-      : 'External Sales Representation Czech Republic',
+      : 'Czech Market Entry Services: Sales Representation',
     description: cs
       ? 'Potřebujete externího obchodníka? SalesAgent zajistí vyhledávání firem, personalizované oslovení a předání zájemců — bez náboru, bez fixních nákladů.'
-      : 'Looking for sales representation in Czech Republic? SalesAgent handles market testing, outreach and first meetings — without hiring a local sales rep or opening an office.',
+      : 'Czech market entry services without an entity or local hire. We act as your external sales representation in the Czech Republic and Slovakia: outreach, follow-ups and first meetings booked. From €1,900/month.',
     alternates: {
       canonical: `https://salesagent.cz/${locale}/sales-representation-czech-republic`,
       languages: {
@@ -27,7 +27,7 @@ export async function generateMetadata({
     },
     keywords: cs
       ? ['externí obchodník', 'outsourcing obchodu', 'externí obchodní zástupce', 'outsourcing prodeje', 'B2B oslovení firem', 'externí sales']
-      : ['external sales representation Czech Republic', 'sales agent Czech Republic', 'czech agent', 'sales agency Czech Republic', 'outsourced sales agent Europe', 'European sales expansion', 'enter Czech market', 'B2B sales Czech Republic', 'outsourced sales Czech Republic', 'market testing Czech Republic'],
+      : ['czech market entry services', 'sales representation czech republic', 'external sales representation Czech Republic', 'sales agent Czech Republic', 'czech agent', 'sales agency Czech Republic', 'outsourced sales agent Europe', 'European sales expansion', 'enter Czech market', 'B2B sales Czech Republic', 'outsourced sales Czech Republic', 'market testing Czech Republic'],
     openGraph: {
       type: 'website',
       locale: cs ? 'cs_CZ' : 'en_US',
@@ -35,10 +35,10 @@ export async function generateMetadata({
       siteName: 'SalesAgent.cz',
       title: cs
         ? 'Externí obchodník pro firmy — outsourcing obchodu | SalesAgent.cz'
-        : 'External Sales Representation for Czech Republic | SalesAgent.cz',
+        : 'Czech Market Entry Services: Sales Representation | SalesAgent.cz',
       description: cs
         ? 'Potřebujete externího obchodníka? SalesAgent zajistí vyhledávání firem, oslovení a předání zájemců.'
-        : 'Looking for sales representation in Czech Republic? SalesAgent handles market testing, outreach and first meetings.',
+        : 'Czech market entry services: we act as your external sales representation in the Czech Republic and Slovakia and book first meetings.',
     },
   }
 }
@@ -46,7 +46,7 @@ export async function generateMetadata({
 const jsonLdEn = {
   '@context': 'https://schema.org',
   '@type': 'Service',
-  name: 'External Sales Representation for Czech Republic',
+  name: 'Czech Market Entry Services: External Sales Representation',
   description:
     'AI-powered outsourced sales agency that acts as your external sales representative in the Czech Republic. Handles B2B prospecting, cold outreach and first meetings without hiring a local employee.',
   provider: {
@@ -118,7 +118,7 @@ export default async function SalesRepCzPage({
           {/* Hero */}
           <div style={{ textAlign: 'center', marginBottom: '80px', paddingTop: '60px' }}>
             <p style={{ fontSize: '13px', color: 'var(--accent)', textTransform: 'uppercase', letterSpacing: '0.12em', fontWeight: 600, marginBottom: '20px' }}>
-              {isCs ? 'Externí obchod · Outsourcing prodeje' : 'Sales Representation · Czech Republic'}
+              {isCs ? 'Externí obchod · Outsourcing prodeje' : 'Czech Market Entry · Sales Representation'}
             </p>
             <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.2rem)', fontWeight: 800, lineHeight: 1.1, letterSpacing: '-0.03em', marginBottom: '24px' }}>
               {isCs

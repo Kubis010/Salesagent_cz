@@ -21,15 +21,15 @@ export async function generateMetadata({
     title: {
       default: isCz
         ? 'SalesAgent.cz — AI prodejní systém, který vlastníte'
-        : 'SalesAgent.cz — An AI sales system you actually own',
+        : 'SalesAgent.cz — Czech Market Entry & Outsourced Sales Representation',
       template: '%s | SalesAgent.cz',
     },
     description: isCz
       ? 'Nabízíme vlastní AI prodejní systém od 9 900 Kč jednorázově nebo řízený outbound od 5 900 Kč měsíčně. Propojíme vyhledávání firem, e-mail, LinkedIn, Prezentér a CRM.'
-      : 'Choose an owned AI sales system from €400 one-off or managed outbound from €239 per month. We connect company sourcing, email, LinkedIn, live demo and CRM.',
+      : 'Enter the Czech and Slovak market without an entity or a local hire. We act as your external sales team: target list, email and LinkedIn outreach, meetings booked in your calendar. Fixed-price trial from €1,900/month.',
     keywords: isCz
       ? ['AI prodejní systém', 'automatizace B2B prodeje', 'řízený outbound', 'AI lead generation', 'vlastní prodejní systém', 'cold email automatizace', 'LinkedIn automatizace', 'AI obchod na míru', 'B2B prospecting']
-      : ['AI sales system', 'B2B sales automation', 'managed outbound', 'AI lead generation', 'owned sales system', 'cold email automation', 'LinkedIn automation', 'custom AI sales'],
+      : ['czech market entry', 'external sales representation czech republic', 'outsourced sales czech republic', 'sales agent czech republic', 'b2b lead generation czech republic', 'czech and slovak market entry'],
     openGraph: {
       type: 'website',
       locale: isCz ? 'cs_CZ' : 'en_US',
@@ -37,10 +37,10 @@ export async function generateMetadata({
       siteName: 'SalesAgent.cz',
       title: isCz
         ? 'SalesAgent.cz — AI prodejní systém, který vlastníte'
-        : 'SalesAgent.cz — An AI sales system you actually own',
+        : 'SalesAgent.cz — Czech Market Entry & Outsourced Sales Representation',
       description: isCz
         ? 'Vlastní AI outbound systém od 9 900 Kč jednorázově nebo řízený outbound od 5 900 Kč měsíčně.'
-        : 'An owned AI outbound system from €400 one-off or managed outbound from €239 per month.',
+        : 'Your external sales team in the Czech Republic and Slovakia. Fixed-price trial from €1,900/month, no entity needed.',
       images: [
         {
           url: 'https://salesagent.cz/og-image.jpg',
@@ -73,10 +73,10 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: isCz
         ? 'SalesAgent.cz — AI prodejní systém, který vlastníte'
-        : 'SalesAgent.cz — An AI sales system you actually own',
+        : 'SalesAgent.cz — Czech Market Entry & Outsourced Sales Representation',
       description: isCz
         ? 'Vlastní AI outbound systém od 9 900 Kč jednorázově nebo řízený outbound od 5 900 Kč měsíčně.'
-        : 'An owned AI outbound system from €400 one-off or managed outbound from €239 per month.',
+        : 'Your external sales team in the Czech Republic and Slovakia. Fixed-price trial from €1,900/month, no entity needed.',
       images: ['https://salesagent.cz/og-image.jpg'],
     },
     other: {
@@ -110,32 +110,43 @@ function getServiceSchema(isCzech: boolean) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    name: isCzech ? 'AI prodejní systém a řízený outbound' : 'Owned AI sales system and managed outbound',
-    alternateName: isCzech ? 'Owned system or managed B2B outbound' : 'Owned system or managed B2B outbound service',
+    name: isCzech ? 'AI prodejní systém a řízený outbound' : 'Czech market entry and outsourced sales representation',
+    alternateName: isCzech ? 'External sales representation Czech Republic' : 'External sales representation Czech Republic',
     provider: { '@type': 'Organization', name: 'Sales Robots s.r.o.' },
-    serviceType: isCzech ? 'Automatizace B2B obchodu' : 'B2B sales automation and managed outbound service',
+    serviceType: isCzech ? 'Automatizace B2B obchodu' : 'Outsourced B2B sales representation and market entry',
     description: isCzech
       ? 'Nabízíme dvě rovnocenné varianty: jednorázově postavený AI outbound systém, který převezmete, nebo měsíční řízený outbound, který provozujeme a optimalizujeme za vás.'
-      : 'We offer two equally available models: an AI outbound system built and handed over for a one-off fee, or a managed monthly outbound service that we operate and optimise for you.',
+      : 'We act as the external sales team of foreign companies entering the Czech Republic and Slovakia: we build the target list, contact decision-makers by email and LinkedIn in the client\'s name, run follow-ups and book qualified meetings. Fixed-price 2–3 month trial, no local entity or hire required.',
     inLanguage: isCzech ? 'cs' : 'en',
-    offers: [
-      {
-        '@type': 'Offer',
-        name: isCzech ? 'Vlastní AI prodejní systém' : 'Owned AI sales system',
-        price: isCzech ? '9900' : '400',
-        priceCurrency: isCzech ? 'CZK' : 'EUR',
-        description: isCzech ? 'Jednorázové postavení a předání systému.' : 'One-off system build and handover.',
-        url: `https://salesagent.cz/${isCzech ? 'cs' : 'en'}/pricing`,
-      },
-      {
-        '@type': 'Offer',
-        name: isCzech ? 'Řízený outbound' : 'Managed outbound service',
-        price: isCzech ? '5900' : '239',
-        priceCurrency: isCzech ? 'CZK' : 'EUR',
-        description: isCzech ? 'Měsíční provoz a optimalizace outboundu.' : 'Monthly outbound operation and optimisation.',
-        url: `https://salesagent.cz/${isCzech ? 'cs' : 'en'}/pricing`,
-      },
-    ],
+    offers: isCzech
+      ? [
+          {
+            '@type': 'Offer',
+            name: 'Vlastní AI prodejní systém',
+            price: '9900',
+            priceCurrency: 'CZK',
+            description: 'Jednorázové postavení a předání systému.',
+            url: 'https://salesagent.cz/cs/pricing',
+          },
+          {
+            '@type': 'Offer',
+            name: 'Řízený outbound',
+            price: '5900',
+            priceCurrency: 'CZK',
+            description: 'Měsíční provoz a optimalizace outboundu.',
+            url: 'https://salesagent.cz/cs/pricing',
+          },
+        ]
+      : [
+          {
+            '@type': 'Offer',
+            name: 'Czech market entry trial',
+            price: '1900',
+            priceCurrency: 'EUR',
+            description: 'Monthly fee for a 2–3 month fixed-price external sales trial in the Czech Republic.',
+            url: 'https://salesagent.cz/en/pricing',
+          },
+        ],
     areaServed: ['CZ', 'SK', 'Internationally'],
     availableChannel: {
       '@type': 'ServiceChannel',

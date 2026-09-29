@@ -1,7 +1,7 @@
 # SalesAgent.cz
 
 > AI prodejní systém na míru nebo řízený outbound — kompletní B2B pipeline od vyhledání firem po kvalifikovanou příležitost.
-> An owned AI sales system or managed outbound service — a complete B2B pipeline from company sourcing to qualified opportunities.
+> Czech market entry and outsourced B2B sales representation for foreign companies: we act as your external sales team in the Czech Republic and Slovakia, from a verified target list to first meetings in your calendar. (CZ: řízená automatizace obchodu a AI prodejní systémy.)
 
 ## Co je SalesAgent.cz / What is SalesAgent.cz
 
@@ -38,7 +38,7 @@ The consultation confirms the scope, integrations, channels and final price. The
 
 ## Key service pages
 
-- [AI sales system or managed outbound (EN)](https://salesagent.cz/en) — choose a complete outbound machine built and handed over from €400 one-off, or managed monthly outreach from €239/month
+- [Czech market entry & outsourced sales (EN)](https://salesagent.cz/en) — external sales representation in the Czech Republic and Slovakia, fixed-price trial from €1,900/month, no entity or local hire
 - [AI prodejní systém nebo řízený outbound (CS)](https://salesagent.cz/cs) — vlastní systém od 9 900 Kč jednorázově, nebo řízený outbound od 5 900 Kč měsíčně
 - [Ceník / Pricing (CS)](https://salesagent.cz/cs/pricing) — srovnání vlastního systému a řízeného outboundu
 - [Pricing / External Sales Representation (EN)](https://salesagent.cz/en/pricing) — Czech market trial from €1,900/month for 2–3 months, followed by continuation if the results justify it
