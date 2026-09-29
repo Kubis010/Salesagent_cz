@@ -13,14 +13,13 @@ export async function generateMetadata({
   return {
     title: cs
       ? 'Externí obchodník pro firmy — outsourcing obchodu'
-      : 'Czech Market Entry Services: Sales Representation',
+      : 'Czech Market Entry Services & Sales Representation',
     description: cs
       ? 'Potřebujete externího obchodníka? SalesAgent zajistí vyhledávání firem, personalizované oslovení a předání zájemců — bez náboru, bez fixních nákladů.'
-      : 'Czech market entry services without an entity or local hire. We act as your external sales representation in the Czech Republic and Slovakia: outreach, follow-ups and first meetings booked. From €1,900/month.',
+      : 'Hire us as your outsourced sales team in the Czech Republic and Slovakia: prospecting, outreach in your name and first meetings booked. No entity, no local hire. Fixed-price trial from €1,900/month.',
     alternates: {
       canonical: `https://salesagent.cz/${locale}/sales-representation-czech-republic`,
       languages: {
-        cs: 'https://salesagent.cz/cs/sales-representation-czech-republic',
         en: 'https://salesagent.cz/en/sales-representation-czech-republic',
         'x-default': 'https://salesagent.cz/en/sales-representation-czech-republic',
       },
@@ -35,7 +34,7 @@ export async function generateMetadata({
       siteName: 'SalesAgent.cz',
       title: cs
         ? 'Externí obchodník pro firmy — outsourcing obchodu | SalesAgent.cz'
-        : 'Czech Market Entry Services: Sales Representation | SalesAgent.cz',
+        : 'Czech Market Entry Services & Sales Representation | SalesAgent.cz',
       description: cs
         ? 'Potřebujete externího obchodníka? SalesAgent zajistí vyhledávání firem, oslovení a předání zájemců.'
         : 'Czech market entry services: we act as your external sales representation in the Czech Republic and Slovakia and book first meetings.',
@@ -123,13 +122,18 @@ export default async function SalesRepCzPage({
             <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3.2rem)', fontWeight: 800, lineHeight: 1.1, letterSpacing: '-0.03em', marginBottom: '24px' }}>
               {isCs
                 ? 'Externí obchodník,\nkterý prodává za vás'
-                : 'We will start your sales\nin the Czech Republic'}
+                : 'Sales Representation & Market Entry Services in the Czech Republic'}
             </h1>
             <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', maxWidth: '640px', margin: '0 auto 40px', lineHeight: 1.7 }}>
               {isCs
                 ? 'Nechcete najímat obchodníka na plný úvazek? SalesAgent funguje jako váš externí obchodní tým — vyhledá firmy, osloví je personalizovaným e-mailem i na LinkedIn a předá vám ty, kteří mají zájem o schůzku.'
-                : 'Expanding into the Czech Republic but not ready to open an office or hire a local sales agent? SalesAgent provides sales outsourcing for market entry in Czech Republic — finding companies, reaching out, and booking first meetings on your behalf.'}
+                : 'You get an outsourced sales team in the Czech Republic and Slovakia: we build the target list, contact decision-makers by email and LinkedIn in your name, run the follow-ups and book qualified first meetings into your calendar. No Czech entity, no local hire — a fixed-price trial from €1,900 per month.'}
             </p>
+            {!isCs && (
+              <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', margin: '-20px auto 32px', maxWidth: '640px' }}>
+                New to the market? <Link href="/en/guides/czech-market-entry-for-b2b-companies" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>Read the full Czech market entry playbook</Link> first.
+              </p>
+            )}
             <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
               <a
                 href="https://cal.com/salesagent/demo"

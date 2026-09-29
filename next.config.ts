@@ -21,6 +21,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/en/vlastni-outbound',
+        destination: '/en/sales-representation-czech-republic',
+        permanent: true,
+      },
+      {
         source: '/en/how-it-works',
         destination: '/en',
         permanent: true,

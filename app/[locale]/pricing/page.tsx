@@ -10,7 +10,7 @@ export async function generateMetadata({
   const { locale } = await params
   const cs = locale === 'cs'
   return {
-    title: cs ? 'Ceník — řízená automatizace obchodu' : 'External Sales Representation in the Czech Republic',
+    title: cs ? 'Ceník — řízená automatizace obchodu' : 'Pricing — Czech Market Entry & Sales Representation',
     description: cs
       ? 'Nasazení na klíč od 15 000 Kč jednorázově, pak řízená automatizace od 19 900 Kč měsíčně — systém jedeme za vás, váš obchodník zavírá teplé schůzky.'
       : 'Planning a Czech market entry? Test demand with an external sales team. Start with a 2–3 month trial from €1,900 per month, then extend the representation if the results justify it.',
@@ -27,14 +27,14 @@ export async function generateMetadata({
       locale: cs ? 'cs_CZ' : 'en_US',
       url: `https://salesagent.cz/${locale}/pricing`,
       siteName: 'SalesAgent.cz',
-      title: cs ? 'Ceník — řízená automatizace obchodu | SalesAgent.cz' : 'External Sales Representation in the Czech Republic | SalesAgent.cz',
+      title: cs ? 'Ceník — řízená automatizace obchodu | SalesAgent.cz' : 'Pricing — Czech Market Entry & Sales Representation | SalesAgent.cz',
       description: cs
         ? 'Nasazení od 15 000 Kč, řízená automatizace od 19 900 Kč měsíčně.'
         : 'Czech market entry support with an external sales team: a 2–3 month trial from €1,900 per month.',
     },
     twitter: {
       card: 'summary_large_image',
-      title: cs ? 'Ceník — řízená automatizace obchodu | SalesAgent.cz' : 'External Sales Representation in the Czech Republic | SalesAgent.cz',
+      title: cs ? 'Ceník — řízená automatizace obchodu | SalesAgent.cz' : 'Pricing — Czech Market Entry & Sales Representation | SalesAgent.cz',
       description: cs
         ? 'Nasazení od 15 000 Kč, řízená automatizace od 19 900 Kč měsíčně.'
         : 'Test demand during your Czech market entry with an external sales team from €1,900 per month.',

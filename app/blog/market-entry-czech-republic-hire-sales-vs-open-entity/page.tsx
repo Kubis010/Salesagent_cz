@@ -234,7 +234,8 @@ export default function MarketEntryCzechPage() {
               <Link href="/en/guides/czech-market-entry-for-b2b-companies" style={{ color: 'var(--accent)', textDecoration: 'none' }}>
                 external sales representative in the Czech Republic
               </Link>
-              {' '}to run outreach and book first meetings — so you validate demand before you commit to infrastructure.
+              {' '}to run outreach and book first meetings — so you validate demand before you commit to infrastructure. The full approach is in our{' '}
+              <Link href="/en/guides/czech-market-entry-for-b2b-companies" style={{ color: 'var(--accent)', textDecoration: 'none' }}>Czech market entry</Link>{' '}playbook.
             </p>
             <p>What this looks like in practice:</p>
             <ul style={{ paddingLeft: '20px', display: 'flex', flexDirection: 'column', gap: '8px' }}>

@@ -17,7 +17,7 @@ const pages = [
   { path: '/b2b-lead-generation', priority: 0.95, changeFrequency: 'monthly' as const },
   { path: '/automatizovane-osloveni', priority: 0.9, changeFrequency: 'monthly' as const },
   { path: '/linkedin-outreach', priority: 0.9, changeFrequency: 'monthly' as const },
-  { path: '/vlastni-outbound', priority: 0.95, changeFrequency: 'monthly' as const },
+  { path: '/vlastni-outbound', priority: 0.95, changeFrequency: 'monthly' as const, locales: ['cs'] as const },
 ]
 
 const blogPosts = [
@@ -60,6 +60,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   for (const locale of locales) {
     for (const page of pages) {
+      if ('locales' in page && !(page.locales as readonly string[]).includes(locale)) continue
       entries.push({
         url: `${BASE_URL}/${locale}${page.path}`,
         lastModified: new Date(),

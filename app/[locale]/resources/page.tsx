@@ -51,6 +51,17 @@ export default async function ResourcesPage({
         </p>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+          {locale !== 'cs' && (
+            <Link
+              href="/en/guides/czech-market-entry-for-b2b-companies"
+              className="card-hover"
+              style={{ display: 'block', background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '10px', padding: '24px', textDecoration: 'none', marginBottom: '2px' }}
+            >
+              <div style={{ fontSize: '11px', color: 'var(--text-muted)', fontWeight: 600, letterSpacing: '0.06em', marginBottom: '8px' }}>GUIDE</div>
+              <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '18px', fontWeight: 600, color: 'var(--text)', marginBottom: '8px' }}>Czech market entry for B2B companies</h2>
+              <p style={{ fontSize: '14px', color: 'var(--text-muted)', margin: 0, lineHeight: '1.5' }}>When to enter, entity vs. no entity, how to find your first customers and what to avoid.</p>
+            </Link>
+          )}
           <Link
             href={`${base}/resources/czech-business-companies-register`}
             className="card-hover"

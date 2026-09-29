@@ -10,10 +10,10 @@ export async function generateMetadata({
   const { locale } = await params
   const cs = locale === 'cs'
   return {
-    title: cs ? 'O nás — AI prodejní systémy na míru' : 'About — custom AI sales systems',
+    title: cs ? 'O nás — AI prodejní systémy na míru' : 'About SalesAgent — Outsourced B2B Sales for the Czech Market',
     description: cs
       ? 'Sales Robots s.r.o. staví AI prodejní systémy na míru. SalesAgent.cz složí scrapery, obohacení dat, e-mail a LinkedIn outreach a napojení na CRM do systému, který vám předáme do vlastnictví.'
-      : 'Sales Robots s.r.o. builds custom AI sales systems. SalesAgent.cz assembles scrapers, enrichment, email and LinkedIn outreach and CRM integration into a system we hand over for you to own.',
+      : 'SalesAgent.cz by Sales Robots s.r.o. is an outsourced B2B sales team for companies entering the Czech and Slovak market: prospecting, email and LinkedIn outreach in your name and first meetings booked.',
     alternates: {
       canonical: `https://salesagent.cz/${locale}/about`,
       languages: {
@@ -30,7 +30,7 @@ export async function generateMetadata({
       title: cs ? 'O nás — SalesAgent.cz' : 'About — SalesAgent.cz',
       description: cs
         ? 'Česká firma, která staví AI nástroje pro automatizaci B2B obchodu.'
-        : 'Czech company building AI tools for B2B sales automation.',
+        : 'Prague-based outsourced B2B sales team for the Czech and Slovak market.',
     },
     twitter: {
       card: 'summary',
@@ -68,7 +68,7 @@ export default async function AboutPage({
         <p style={{ fontSize: '17px', color: 'var(--text-muted)', lineHeight: '1.65', marginBottom: '64px', maxWidth: '580px' }}>
           {cs
             ? 'Česká firma, která staví nástroje na automatizaci B2B obchodu. Žádný přeprodávaný software — vlastní infrastruktura, osobní přístup.'
-            : 'A Czech company building B2B sales automation tools. No resold software — our own infrastructure, personal approach.'}
+            : 'A Prague-based team that runs outsourced B2B sales for companies entering the Czech and Slovak market. Our own outreach infrastructure, personal approach.'}
         </p>
 
         {/* Founder */}
@@ -130,7 +130,7 @@ export default async function AboutPage({
           <p style={{ fontSize: '16px', color: 'var(--text-muted)', lineHeight: '1.7', margin: 0 }}>
             {cs
               ? 'SalesAgent.cz je AI obchodní zástupce jako služba. Automaticky vyhledáváme B2B kontakty, studujeme web každé firmy a odesíláme personalizované cold emaily a LinkedIn zprávy. Nejde o software k pronájmu — je to plně řízená služba. Nastavíme ji, spustíme a průběžně ladíme za vás. Vy dostáváte schůzky a zájemce.'
-              : 'SalesAgent.cz is an AI sales agent as a service. We automatically find B2B contacts, study each company\'s website and send personalised cold emails and LinkedIn messages. It\'s not software for rent — it\'s a fully managed service. We set it up, launch it and continuously optimise it for you. You receive meetings and interested leads.'}
+              : 'SalesAgent.cz is your outsourced sales team in the Czech Republic and Slovakia. We build the target list, contact decision-makers by personalised email and LinkedIn in your name, run the follow-ups and book qualified first meetings into your calendar. No Czech entity and no local hire needed — you keep your brand and every relationship, we run the prospecting.'}
           </p>
         </div>
 
@@ -208,7 +208,7 @@ export default async function AboutPage({
         {/* CTA */}
         <div style={{ textAlign: 'center' }}>
           <p style={{ fontSize: '17px', color: 'var(--text-muted)', marginBottom: '20px' }}>
-            {cs ? 'Chcete vědět, jestli má smysl to vyzkoušet ve vašem oboru?' : 'Want to know if it makes sense to try in your industry?'}
+            {cs ? 'Chcete vědět, jestli má smysl to vyzkoušet ve vašem oboru?' : 'Want to know if it makes sense to test the Czech market in your industry?'}
           </p>
           <a
             href="https://outlook.office.com/bookwithme/user/480895b1333541dc94be634dd588fada@salesagent.cz/meetingtype/jwdxCRPBn0CvHccZ7eLwAg2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile"

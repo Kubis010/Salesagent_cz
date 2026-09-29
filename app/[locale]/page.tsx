@@ -328,6 +328,12 @@ export default async function HomePage({
         </div>
       </section>
 
+      {locale === 'en' && (
+        <p style={{ textAlign: 'center', fontSize: '15px', color: 'var(--text-muted)', margin: '-24px 24px 0' }}>
+          Planning your entry? Read the <Link href="/en/guides/czech-market-entry-for-b2b-companies" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>Czech market entry</Link> playbook or see our <Link href="/en/sales-representation-czech-republic" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>sales representation service</Link>.
+        </p>
+      )}
+
       {/* ── SERVICES ── */}
       <section style={{ padding: '80px 24px', maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ marginBottom: '56px' }}>

@@ -390,6 +390,10 @@ export default async function GuideCzechMarketEntry({
             </div>
           ))}
 
+          <p style={{ color: 'var(--text-muted)', lineHeight: 1.75, marginBottom: '16px', marginTop: '8px' }}>
+            Want us to test the Czech market for you?{' '}
+            <Link href="/en/sales-representation-czech-republic" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>Czech market entry services →</Link>
+          </p>
           <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '26px', fontWeight: 700, marginBottom: '16px', marginTop: '48px' }}>
             Extending from the Czech Republic to Slovakia
           </h2>
@@ -491,6 +495,12 @@ export default async function GuideCzechMarketEntry({
             </Link>
           </div>
 
+          <div style={{ marginTop: '40px', marginBottom: '40px', background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '16px', padding: '28px' }}>
+            <p style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '18px', fontWeight: 700, marginBottom: '10px' }}>Want us to test the Czech market for you?</p>
+            <Link href="/en/sales-representation-czech-republic" style={{ color: 'var(--accent)', textDecoration: 'none', fontWeight: 600, fontSize: '15px' }}>
+              Czech market entry services →
+            </Link>
+          </div>
           {/* Related */}
           <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>
             <p style={{ fontSize: '14px', fontWeight: 600, color: 'var(--text)', marginBottom: '12px' }}>Related guides</p>
