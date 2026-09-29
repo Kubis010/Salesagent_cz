@@ -86,6 +86,22 @@ const faqSchema = {
         text: "The most common mistakes: (1) hiring a local rep before proving demand — expensive and hard to unwind; (2) using generic outreach templates instead of researching each company; (3) targeting too broad a segment instead of a specific niche; (4) underestimating Czech decision-makers' preference for relationship-building before a deal.",
       },
     },
+    {
+      '@type': 'Question',
+      name: 'Do I need a Czech company to sell in the Czech Republic?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'No. A foreign EU company can sell to Czech businesses and invoice in EUR from its existing entity. You need a Czech s.r.o. only to employ staff on Czech contracts, invoice from a Czech VAT number, or hold inventory and a local bank account.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the cheapest way to test the Czech and Slovak market?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'A time-boxed outbound test of 60–90 days: one narrow segment, a verified target list from public registers such as ARES, personalised email and LinkedIn outreach, and a written go/no-go at the end. It costs a fraction of a local hire (€4,000–8,000 per month) or an entity (€3,000–8,000 set-up).',
+      },
+    },
   ],
 }
 
@@ -97,10 +113,37 @@ const articleSchema = {
     'When to enter the Czech B2B market, entity vs. no entity, how to find first customers, and what to avoid.',
   image: 'https://salesagent.cz/guides/czech-market-entry-guide.jpg',
   datePublished: '2026-08-28',
-  dateModified: '2026-09-10',
-  author: { '@type': 'Organization', name: 'SalesAgent.cz', url: 'https://salesagent.cz' },
-  publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz' },
+  dateModified: '2026-09-29',
+  inLanguage: 'en',
+  keywords: 'czech market entry, market entry czech republic, czech market entry b2b, market entry slovakia, entity vs no entity czech republic',
+  about: [
+    { '@type': 'Thing', name: 'Market entry' },
+    { '@type': 'Country', name: 'Czech Republic' },
+    { '@type': 'Country', name: 'Slovakia' },
+  ],
+  author: { '@type': 'Person', name: 'Petr Kubíček', jobTitle: 'Founder', worksFor: { '@type': 'Organization', name: 'Sales Robots s.r.o.' } },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Sales Robots s.r.o.',
+    url: 'https://salesagent.cz',
+    logo: { '@type': 'ImageObject', url: 'https://salesagent.cz/logo.svg' },
+  },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://salesagent.cz/en/guides/czech-market-entry-for-b2b-companies' },
   url: 'https://salesagent.cz/en/guides/czech-market-entry-for-b2b-companies',
+}
+
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'How to validate the Czech market in 90 days',
+  description: 'A 90-day plan to test Czech B2B demand before committing to a local entity or hire.',
+  totalTime: 'P90D',
+  step: [
+    { '@type': 'HowToStep', name: 'Days 1–14: prepare', text: 'Select one narrow segment, check the offer, prepare English and Czech messaging and build a verified target list.' },
+    { '@type': 'HowToStep', name: 'Days 15–45: run outreach', text: 'Run a small personalised email and LinkedIn sequence; record replies, objections, language preference and meeting quality.' },
+    { '@type': 'HowToStep', name: 'Days 46–75: refine', text: 'Refine the ICP and offer around real conversations, then test a second segment or message.' },
+    { '@type': 'HowToStep', name: 'Days 76–90: decide', text: 'Decide whether to scale outreach, add a local partner, hire, or establish a Czech entity.' },
+  ],
 }
 
 const breadcrumbSchema = {
@@ -133,6 +176,7 @@ export default async function GuideCzechMarketEntry({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
 
       <div style={{ paddingTop: '96px', paddingBottom: '80px' }}>
         <div style={{ maxWidth: '760px', margin: '0 auto', padding: '0 24px' }}>
@@ -217,6 +261,41 @@ export default async function GuideCzechMarketEntry({
             <p style={{ fontSize: '14px', color: 'var(--text-muted)', lineHeight: 1.7, margin: 0 }}>
               Czech s.r.o. setup: 2–3 months, €3,000–8,000 in legal fees, notary, and registered address. Minimum share capital: CZK 1 (under 2014 reform). Ongoing accounting: ~€400–700/month depending on transaction volume. Alternative: use an EOR (Employer of Record) service to employ Czech staff without a local entity — ~€500–800/month per employee on top of salary.
             </p>
+          </div>
+
+          <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '26px', fontWeight: 700, marginBottom: '16px', marginTop: '48px' }}>
+            Czech market entry options compared
+          </h2>
+          <p style={{ color: 'var(--text-muted)', lineHeight: 1.75, marginBottom: '16px' }}>
+            There are five realistic ways to enter the Czech market. They differ mainly in speed, upfront cost and how hard they are to unwind if demand is weaker than expected.
+          </p>
+          <div style={{ overflowX: 'auto', marginBottom: '24px' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '14px', minWidth: '560px' }}>
+              <thead>
+                <tr style={{ textAlign: 'left', borderBottom: '1px solid var(--border)' }}>
+                  <th style={{ padding: '10px 12px' }}>Model</th>
+                  <th style={{ padding: '10px 12px' }}>Time to first meetings</th>
+                  <th style={{ padding: '10px 12px' }}>Upfront cost</th>
+                  <th style={{ padding: '10px 12px' }}>Best when</th>
+                </tr>
+              </thead>
+              <tbody style={{ color: 'var(--text-muted)' }}>
+                {[
+                  ['Direct sales from your EU entity', '4–8 weeks', 'Low', 'Remote delivery, English-speaking buyers'],
+                  ['Outsourced sales representation', '2–4 weeks', 'Low, fixed monthly fee', 'You need to prove demand before investing'],
+                  ['Distributor or reseller', '3–6 months', 'Medium (margin, onboarding)', 'Physical product, local stock and service'],
+                  ['Employer of Record + local rep', '3–6 months', '€4,000–8,000 per month', 'Demand already proven, need a dedicated person'],
+                  ['Czech s.r.o. with own team', '6+ months', '€3,000–8,000 set-up plus payroll', 'Local presence, inventory or public tenders'],
+                ].map((row) => (
+                  <tr key={row[0]} style={{ borderBottom: '1px solid var(--border)' }}>
+                    <td style={{ padding: '12px', color: 'var(--text)', fontWeight: 600 }}>{row[0]}</td>
+                    <td style={{ padding: '12px' }}>{row[1]}</td>
+                    <td style={{ padding: '12px' }}>{row[2]}</td>
+                    <td style={{ padding: '12px' }}>{row[3]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
 
           {/* Section 2b: Market entry decision framework */}
@@ -311,6 +390,12 @@ export default async function GuideCzechMarketEntry({
             </div>
           ))}
 
+          <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '26px', fontWeight: 700, marginBottom: '16px', marginTop: '48px' }}>
+            Extending from the Czech Republic to Slovakia
+          </h2>
+          <p style={{ color: 'var(--text-muted)', lineHeight: 1.75, marginBottom: '16px' }}>
+            Slovakia is the natural second step: a shared business culture, mutually intelligible languages and many buyers who deal with Czech and Slovak suppliers interchangeably. Once one segment responds in the Czech Republic, the same target-list method (Slovak business register instead of ARES) and message can be reused with Slovak-language follow-up, so market entry into both countries runs from one pipeline.
+          </p>
           {/* Section 4: What to avoid */}
           <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '26px', fontWeight: 700, marginBottom: '16px', marginTop: '48px' }}>
             What to avoid
