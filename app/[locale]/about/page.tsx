@@ -13,7 +13,7 @@ export async function generateMetadata({
     title: cs ? 'O nás — AI prodejní systémy na míru' : 'About SalesAgent — Outsourced B2B Sales for the Czech Market',
     description: cs
       ? 'Sales Robots s.r.o. staví AI prodejní systémy na míru. SalesAgent.cz složí scrapery, obohacení dat, e-mail a LinkedIn outreach a napojení na CRM do systému, který vám předáme do vlastnictví.'
-      : 'SalesAgent.cz by Sales Robots s.r.o. is an outsourced B2B sales team for companies entering the Czech and Slovak market: prospecting, email and LinkedIn outreach in your name and first meetings booked.',
+      : 'Prague-based outsourced B2B sales team for companies entering the Czech and Slovak market: outreach in your name, first meetings booked.',
     alternates: {
       canonical: `https://salesagent.cz/${locale}/about`,
       languages: {
@@ -27,14 +27,14 @@ export async function generateMetadata({
       locale: cs ? 'cs_CZ' : 'en_US',
       url: `https://salesagent.cz/${locale}/about`,
       siteName: 'SalesAgent.cz',
-      title: cs ? 'O nás — SalesAgent.cz' : 'About — SalesAgent.cz',
+      title: cs ? 'O nás — SalesAgent.cz' : 'About SalesAgent — Outsourced Sales for the Czech Market',
       description: cs
         ? 'Česká firma, která staví AI nástroje pro automatizaci B2B obchodu.'
         : 'Prague-based outsourced B2B sales team for the Czech and Slovak market.',
     },
     twitter: {
       card: 'summary',
-      title: cs ? 'O nás — SalesAgent.cz' : 'About — SalesAgent.cz',
+      title: cs ? 'O nás — SalesAgent.cz' : 'About SalesAgent — Outsourced Sales for the Czech Market',
       description: cs
         ? 'Česká firma, která staví AI nástroje pro automatizaci B2B obchodu.'
         : 'Czech company building AI tools for B2B sales automation.',

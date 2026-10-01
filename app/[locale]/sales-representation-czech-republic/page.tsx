@@ -16,7 +16,7 @@ export async function generateMetadata({
       : 'Czech Market Entry Services & Sales Representation',
     description: cs
       ? 'Potřebujete externího obchodníka? SalesAgent zajistí vyhledávání firem, personalizované oslovení a předání zájemců — bez náboru, bez fixních nákladů.'
-      : 'Hire us as your outsourced sales team in the Czech Republic and Slovakia: prospecting, outreach in your name and first meetings booked. No entity, no local hire. Fixed-price trial from €1,900/month.',
+      : 'Outsourced sales team for the Czech Republic and Slovakia: outreach in your name, first meetings booked. No entity or local hire. From €1,900/month.',
     alternates: {
       canonical: `https://salesagent.cz/${locale}/sales-representation-czech-republic`,
       languages: {

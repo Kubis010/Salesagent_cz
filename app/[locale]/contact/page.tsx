@@ -13,7 +13,7 @@ export async function generateMetadata({
     title: cs ? 'Kontakt — konzultace zdarma' : 'Contact — free consultation',
     description: cs
       ? 'Domluvte si nezávaznou konzultaci zdarma. Projdeme váš prodej a možnosti automatizace a ukážeme, jak by váš vlastní AI prodejní systém mohl vypadat.'
-      : 'Book a free, no-strings consultation about your Czech market entry. We will go through your product and target customers and show how a fixed-price sales trial in the Czech Republic would work.',
+      : 'Free, no-strings consultation about your Czech market entry. We review your product and target customers and show how a sales trial would work.',
     alternates: {
       canonical: `https://salesagent.cz/${locale}/contact`,
       languages: {
@@ -27,15 +27,15 @@ export async function generateMetadata({
       locale: cs ? 'cs_CZ' : 'en_US',
       url: `https://salesagent.cz/${locale}/contact`,
       siteName: 'SalesAgent.cz',
-      title: cs ? 'Kontakt — SalesAgent.cz' : 'Contact — SalesAgent.cz',
+      title: cs ? 'Kontakt — SalesAgent.cz' : 'Contact — Czech Market Entry Consultation | SalesAgent.cz',
       description: cs
         ? 'Domluvte si 30minutový hovor zdarma.'
-        : 'Book a free 30-minute call.',
+        : 'Book a free 30-minute call about your Czech market entry.',
     },
     twitter: {
       card: 'summary',
-      title: cs ? 'Kontakt — SalesAgent.cz' : 'Contact — SalesAgent.cz',
-      description: cs ? 'Domluvte si 30minutový hovor zdarma.' : 'Book a free 30-minute call.',
+      title: cs ? 'Kontakt — SalesAgent.cz' : 'Contact — Czech Market Entry Consultation | SalesAgent.cz',
+      description: cs ? 'Domluvte si 30minutový hovor zdarma.' : 'Book a free 30-minute call about your Czech market entry.',
     },
   }
 }
