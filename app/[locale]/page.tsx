@@ -12,13 +12,13 @@ export async function generateMetadata({
   const t: Translations = getTranslations(locale as Locale)
   return {
     title: locale === 'cs'
-      ? 'Řízená automatizace obchodu — teplé schůzky pro vašeho obchodníka | SalesAgent.cz'
+      ? 'Řízená automatizace obchodu — schůzky se zájemci pro vašeho obchodníka | SalesAgent.cz'
       : 'Outsourced B2B Sales in the Czech Republic | SalesAgent.cz',
     description: locale === 'cs'
-      ? 'Najdeme, oslovíme a zahřejeme firmy za vás — e-mailem, na LinkedInu i reklamou. Vašemu obchodníkovi přistane teplá schůzka, kterou stačí zavřít. Nasadíme a řídíme za vás. Od 19 900 Kč měsíčně.'
+      ? 'Najdeme, oslovíme a zahřejeme firmy za vás — e-mailem, na LinkedInu i reklamou. Vašemu obchodníkovi přistane připravená schůzka, kterou stačí zavřít. Nasadíme a řídíme za vás. Od 19 900 Kč měsíčně.'
       : 'Your outsourced sales team in the Czech Republic and Slovakia. Outreach in your name, meetings booked, no entity needed. Trial from €1,900/month.',
     keywords: locale === 'cs'
-      ? ['automatizace obchodu', 'řízený outbound', 'B2B lead generation', 'teplé schůzky', 'LinkedIn oslovování', 'AI prospecting', 'externí obchodní ředitel', 'automatizace oslovení']
+      ? ['automatizace obchodu', 'řízený outbound', 'B2B lead generation', 'schůzky se zájemci', 'LinkedIn oslovování', 'AI prospecting', 'externí obchodní ředitel', 'automatizace oslovení']
       : ['czech market entry', 'market entry czech republic', 'external sales representation czech republic', 'outsourced sales czech republic', 'sales agent czech republic', 'b2b lead generation czech republic', 'czech and slovak market entry'],
     alternates: {
       canonical: `https://salesagent.cz/${locale}`,
@@ -687,7 +687,7 @@ export default async function HomePage({
                     name: 'Nahradí to našeho obchodníka?',
                     acceptedAnswer: {
                       '@type': 'Answer',
-                      text: 'Ne. Dodá mu teplé schůzky. Proaktivní hledání a oslovování dělá stroj, váš člověk jen zavírá zájemce, kteří už produkt viděli.',
+                      text: 'Ne. Dodá mu schůzky se zájemci. Proaktivní hledání a oslovování dělá AI systém, váš člověk jen zavírá zájemce, kteří už produkt viděli.',
                     },
                   },
                   {
@@ -695,7 +695,7 @@ export default async function HomePage({
                     name: 'Musíme systém nějak obsluhovat?',
                     acceptedAnswer: {
                       '@type': 'Answer',
-                      text: 'Ne. Nasadíme ho za pár dní a pak ho řídíme a ladíme my. Váš člověk jen reaguje na teplé schůzky a domlouvá je.',
+                      text: 'Ne. Nasadíme ho za pár dní a pak ho řídíme a ladíme my. Váš člověk jen reaguje na připravené schůzky a domlouvá je.',
                     },
                   },
                   {
@@ -703,7 +703,7 @@ export default async function HomePage({
                     name: 'Čím se to liší od nástrojů jako Apollo nebo Waalaxy?',
                     acceptedAnswer: {
                       '@type': 'Answer',
-                      text: 'Nástroj si musíte obsluhovat sami — a když váš obchodník neprospektuje, ležet ladem. My nástroje nasadíme, propojíme přes celý funnel a řídíme je za vás. Vy dostáváte teplé schůzky, ne další aplikaci.',
+                      text: 'Nástroj si musíte obsluhovat sami — a když váš obchodník neprospektuje, ležet ladem. My nástroje nasadíme, propojíme přes celý funnel a řídíme je za vás. Vy dostáváte schůzky se zájemci, ne další aplikaci.',
                     },
                   },
                   {
@@ -726,15 +726,15 @@ export default async function HomePage({
               {[
                 {
                   q: 'Nahradí to našeho obchodníka?',
-                  a: 'Ne. Dodá mu teplé schůzky. Proaktivní hledání a oslovování dělá stroj, váš člověk jen zavírá zájemce, kteří už produkt viděli.',
+                  a: 'Ne. Dodá mu schůzky se zájemci. Proaktivní hledání a oslovování dělá AI systém, váš člověk jen zavírá zájemce, kteří už produkt viděli.',
                 },
                 {
                   q: 'Musíme systém nějak obsluhovat?',
-                  a: 'Ne. Nasadíme ho za pár dní a pak ho řídíme a ladíme my. Váš člověk jen reaguje na teplé schůzky a domlouvá je.',
+                  a: 'Ne. Nasadíme ho za pár dní a pak ho řídíme a ladíme my. Váš člověk jen reaguje na připravené schůzky a domlouvá je.',
                 },
                 {
                   q: 'Čím se to liší od nástrojů jako Apollo nebo Waalaxy?',
-                  a: 'Nástroj si musíte obsluhovat sami — a když váš obchodník neprospektuje, ležet ladem. My nástroje nasadíme, propojíme přes celý funnel a řídíme je za vás. Vy dostáváte teplé schůzky, ne další aplikaci.',
+                  a: 'Nástroj si musíte obsluhovat sami — a když váš obchodník neprospektuje, ležet ladem. My nástroje nasadíme, propojíme přes celý funnel a řídíme je za vás. Vy dostáváte schůzky se zájemci, ne další aplikaci.',
                 },
                 {
                   q: 'Kolik to stojí?',

@@ -10,9 +10,9 @@ export const cs = {
   },
   hero: {
     badge: 'Řízená automatizace obchodu',
-    headline: 'Váš obchodník neprospektuje?\nStroj to udělá za něj.',
+    headline: 'Váš obchodník neprospektuje?\nAI systém to udělá za něj.',
     subheadline:
-      'Najdeme a oslovíme firmy z vašeho trhu — e-mailem, na LinkedInu i reklamou. Zahřejeme je a ukážeme váš produkt přes interaktivního Prezentéra. Vašemu obchodníkovi přistane teplá schůzka, kterou stačí zavřít. Celé to nasadíme a řídíme za vás.',
+      'Najdeme a oslovíme firmy z vašeho trhu — e-mailem, na LinkedInu i reklamou. Zahřejeme je a ukážeme váš produkt přes interaktivního Prezentéra. Vašemu obchodníkovi přistane připravená schůzka, kterou stačí zavřít. Celé to nasadíme a řídíme za vás.',
     cta: 'Kontaktujte nás',
     ctaSub: 'nebo si domluvte nezávaznou konzultaci',
     pipelineLabel: 'Automat běží za vás',
@@ -38,7 +38,7 @@ export const cs = {
   howItWorks: {
     title: 'Jak to funguje',
     subtitle:
-      'Proaktivní práci — hledání, psaní, zahřívání — dělá stroj. Váš člověk jen zavírá teplé schůzky, které mu přistanou. Úspěch nezávisí na tom, jestli váš obchodník sám prospektuje.',
+      'Proaktivní práci — hledání, psaní, zahřívání — dělá AI systém. Váš člověk jen zavírá připravené schůzky, které mu přistanou. Úspěch nezávisí na tom, jestli váš obchodník sám prospektuje.',
     steps: [
       {
         number: '01',
@@ -53,7 +53,7 @@ export const cs = {
       {
         number: '03',
         title: 'Váš obchodník zavře',
-        body: 'Připravená teplá schůzka přistane vašemu člověku. On zvedne telefon a dojedná — to, co umí a chce. Proaktivitu za něj řeší stroj.',
+        body: 'Připravená schůzka přistane vašemu člověku. On zvedne telefon a dojedná — to, co umí a chce. Proaktivitu za něj řeší AI systém.',
       },
     ],
   },
@@ -62,15 +62,15 @@ export const cs = {
     items: [
       {
         title: 'Firmy s obchodníkem, co neprospektuje',
-        body: 'Platíte člověka, který nedělá nic navíc. Dáme vám stroj, co za něj hledá a oslovuje — on jen zavírá připravené schůzky.',
+        body: 'Platíte člověka, který nedělá nic navíc. Dáme vám AI systém, který za něj hledá a oslovuje — on jen zavírá připravené schůzky.',
       },
       {
         title: 'Firmy, které mají koho na zvednutí telefonu',
-        body: 'Máte aspoň jednoho člověka, co zná byznys a zvládne dojednat teplou schůzku. Zbytek — proaktivní oslovování — jede automat.',
+        body: 'Máte aspoň jednoho člověka, co zná byznys a zvládne dojednat připravenou schůzku. Zbytek — proaktivní oslovování — jede automat.',
       },
       {
         title: 'Majitelé, co to chtějí vyřešit systémem',
-        body: 'Nechcete nabírat celé obchodní oddělení ani honit obchodníka. Chcete, aby vám teplé schůzky prostě chodily.',
+        body: 'Nechcete nabírat celé obchodní oddělení ani honit obchodníka. Chcete, aby vám schůzky se zájemci prostě chodily.',
       },
     ],
   },
@@ -103,17 +103,17 @@ export const cs = {
   services: {
     title: 'Co za vás jede',
     subtitle:
-      'Ne jeden nástroj na jeden krok. Řízený systém přes celý funnel — od hledání firem po teplou schůzku, kterou zavře váš člověk.',
+      'Ne jeden nástroj na jeden krok. Řízený systém přes celý funnel — od hledání firem po připravenou schůzku, kterou zavře váš člověk.',
     automation: {
       badge: 'Proaktivní práce',
-      title: 'Celý horní trychtýř jede stroj',
-      body: 'Systém sám vyhledá firmy, obohatí data, osloví přes e-mail i LinkedIn, zahřeje a nabídne demo Prezentérem — a připravenou teplou schůzku předá vašemu obchodníkovi.',
+      title: 'Celý horní trychtýř jede AI systém',
+      body: 'Systém sám vyhledá firmy, obohatí data, osloví přes e-mail i LinkedIn, zahřeje a nabídne demo Prezentérem — a připravenou připravenou schůzku předá vašemu obchodníkovi.',
       examples: [
         { label: 'Vyhledávání firem z veřejných zdrojů (ARES, mapy, web)', icon: 'ai' },
         { label: 'Obohacení kontaktů — obor, rozhodovatelé, e-maily, LinkedIn', icon: 'enrich' },
         { label: 'Oslovení přes e-mail i LinkedIn s personalizací a follow-upy', icon: 'flow' },
         { label: 'Demo Prezentérem postavené na vašem produktu', icon: 'chart' },
-        { label: 'Teplé schůzky rovnou do vašeho CRM / kalendáře', icon: 'connect' },
+        { label: 'Schůzky se zájemci rovnou do vašeho CRM / kalendáře', icon: 'connect' },
         { label: 'Reporty výsledků, které vedení skutečně čte', icon: 'alert' },
       ],
       cta: 'Domluvit konzultaci',
@@ -121,11 +121,11 @@ export const cs = {
     agency: {
       badge: 'Bez závislosti na vašem člověku',
       title: 'Vyřízneme nejslabší článek',
-      body: 'Váš obchodník neprospektuje? Nevadí. Proaktivní práci za něj dělá stroj, on jen zavírá teplé schůzky. Úspěch tak nestojí na jeho aktivitě — a my celý systém řídíme a ladíme za vás.',
+      body: 'Váš obchodník neprospektuje? Nevadí. Proaktivní práci za něj dělá AI systém, on jen zavírá připravené schůzky. Úspěch tak nestojí na jeho aktivitě — a my celý systém řídíme a ladíme za vás.',
       examples: [
         { label: 'Oslovování jede přes váš ověřený LinkedIn účet — bezpečně a lidsky', icon: 'connect' },
         { label: 'Systém řídíme a optimalizujeme my — vy se ho nedotknete', icon: 'flow' },
-        { label: 'Obchodníkovi chodí teplé schůzky, ne úkoly navíc', icon: 'enrich' },
+        { label: 'Obchodníkovi chodí schůzky se zájemci, ne úkoly navíc', icon: 'enrich' },
         { label: 'Napojení na sesterské produkty (salesbot, Prezentér, custom dev)', icon: 'chart' },
       ],
       cta: 'Domluvit konzultaci',
@@ -135,7 +135,7 @@ export const cs = {
     label: 'Kdo za tím stojí',
     name: 'Petr Kubíček',
     role: 'Zakladatel, Sales Robots s.r.o.',
-    body: 'Přes 20 let v B2B obchodu, roky v seniorních a vedoucích rolích. Automatizaci stavíme na vlastní infrastruktuře — LinkedIn automatizace, Prezentér i custom vývoj. Neprodávám cizí nástroj — nasadím vám systém a řídím ho, aby vám chodily teplé schůzky.',
+    body: 'Přes 20 let v B2B obchodu, roky v seniorních a vedoucích rolích. Automatizaci stavíme na vlastní infrastruktuře — LinkedIn automatizace, Prezentér i custom vývoj. Neprodávám cizí nástroj — nasadím vám systém a řídím ho, aby vám chodily schůzky se zájemci.',
     credentials: [
       { value: '20+', label: 'let v B2B obchodu' },
       { value: 'Ing.', label: 'VŠE Praha' },
@@ -151,7 +151,7 @@ export const cs = {
   cta: {
     title: 'Pojďme probrat, jak by to jelo u vás.',
     subtitle:
-      'Na nezávazné konzultaci projdeme váš prodej a ukážeme, jak by vám systém dodával teplé schůzky — bez zátěže vašeho obchodníka.',
+      'Na nezávazné konzultaci projdeme váš prodej a ukážeme, jak by vám systém dodával schůzky se zájemci — bez zátěže vašeho obchodníka.',
     primary: 'Konzultace zdarma',
     secondary: 'Napsat e-mail',
   },
@@ -162,7 +162,7 @@ export const cs = {
     setup: {
       label: 'Nasadíme, pak to za vás řídíme',
       description:
-        'Jednorázové nasazení vás nastartuje. Hlavní hodnota je v měsíčním řízení — systém jedeme a ladíme my a dodáváme teplé schůzky, vy jen zavíráte.',
+        'Jednorázové nasazení vás nastartuje. Hlavní hodnota je v měsíčním řízení — systém jedeme a ladíme my a dodáváme schůzky se zájemci, vy jen zavíráte.',
     },
     tiers: [
       {
@@ -186,9 +186,9 @@ export const cs = {
         price: 'od 19 900 Kč',
         priceNote: 'Jádro služby',
         features: [
-          'Celý proaktivní outbound jede stroj',
+          'Celý proaktivní outbound jede AI systém',
           'Systém řídíme a průběžně ladíme my',
-          'Teplé schůzky chodí vašemu obchodníkovi',
+          'Schůzky se zájemci chodí vašemu obchodníkovi',
           'Přehled výsledků každý měsíc',
           'Levnější než půl obchodníka',
         ],
@@ -214,11 +214,11 @@ export const cs = {
     faq: [
       {
         q: 'Nahradí to našeho obchodníka?',
-        a: 'Ne. Dodá mu teplé schůzky. Proaktivní hledání a oslovování dělá stroj, váš člověk jen zavírá zájemce, kteří už produkt viděli.',
+        a: 'Ne. Dodá mu schůzky se zájemci. Proaktivní hledání a oslovování dělá AI systém, váš člověk jen zavírá zájemce, kteří už produkt viděli.',
       },
       {
         q: 'Musíme systém nějak obsluhovat?',
-        a: 'Ne. Systém řídíme my. Váš člověk jen reaguje na teplé schůzky a domlouvá je.',
+        a: 'Ne. Systém řídíme my. Váš člověk jen reaguje na připravené schůzky a domlouvá je.',
       },
       {
         q: 'Přes čí LinkedIn to jede?',
@@ -245,7 +245,7 @@ export const cs = {
   about: {
     title: 'Co systém dělá na pozadí',
     subtitle:
-      'Popisujeme přesně, co za vás systém dělá — od hledání firem po teplou schůzku.',
+      'Popisujeme přesně, co za vás systém dělá — od hledání firem po připravenou schůzku.',
     sections: [
       {
         title: 'Vyhledávání firem',
@@ -260,13 +260,13 @@ export const cs = {
         body: 'Systém napíše zprávu, která mluví konkrétně k dané firmě, odešle e-mail a paralelně osloví na LinkedInu z vašeho ověřeného profilu s osobním vzkazem a follow-upem.',
       },
       {
-        title: 'Demo a teplá schůzka',
+        title: 'Demo a připravená schůzka',
         body: 'Zájemcům nabídne interaktivní demo Prezentérem a připravené příležitosti předá vašemu obchodníkovi. Systém přitom řídíme a ladíme my.',
       },
     ],
     notSaas: {
       title: 'Nasadíme a řídíme, vy zavíráte',
-      body: 'Nekupujete si aplikaci, kterou musíte sami obsluhovat. Systém vám nasadíme na míru a jedeme ho za vás — vám chodí teplé schůzky.',
+      body: 'Nekupujete si aplikaci, kterou musíte sami obsluhovat. Systém vám nasadíme na míru a jedeme ho za vás — vám chodí schůzky se zájemci.',
     },
     team: {
       title: 'Za systémem je Sales Robots s.r.o.',
@@ -276,7 +276,7 @@ export const cs = {
   contact: {
     title: 'Pojďme si zavolat.',
     subtitle:
-      'Vyhraďte si třicet minut. Projdeme váš prodej a ukážeme, jak by vám systém dodával teplé schůzky.',
+      'Vyhraďte si třicet minut. Projdeme váš prodej a ukážeme, jak by vám systém dodával schůzky se zájemci.',
     calendly: 'Vybrat termín v kalendáři',
     or: 'nebo napište přímo',
     form: {

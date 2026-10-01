@@ -12,7 +12,7 @@ export async function generateMetadata({
   return {
     title: cs ? 'Ceník — řízená automatizace obchodu' : 'Pricing — Czech Market Entry & Sales Representation',
     description: cs
-      ? 'Nasazení na klíč od 15 000 Kč jednorázově, pak řízená automatizace od 19 900 Kč měsíčně — systém jedeme za vás, váš obchodník zavírá teplé schůzky.'
+      ? 'Nasazení na klíč od 15 000 Kč jednorázově, pak řízená automatizace od 19 900 Kč měsíčně — systém jedeme za vás, váš obchodník zavírá připravené schůzky.'
       : 'Test the Czech market with an external sales team. 2–3 month trial from €1,900/month, extend only if the results justify it.',
     alternates: {
       canonical: `https://salesagent.cz/${locale}/pricing`,

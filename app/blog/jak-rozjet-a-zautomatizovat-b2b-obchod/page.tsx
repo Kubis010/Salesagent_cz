@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     publishedTime: '2026-09-20',
     modifiedTime: '2026-09-25',
     locale: 'cs_CZ',
-    images: [{ url: 'https://salesagent.cz/blog/automatizace-prodeje.jpg', width: 1200, height: 630, alt: 'Automatizovaný B2B obchod od prospectingu po teplou schůzku' }],
+    images: [{ url: 'https://salesagent.cz/blog/automatizace-prodeje.jpg', width: 1200, height: 630, alt: 'Automatizovaný B2B obchod od prospectingu po připravenou schůzku' }],
   },
   robots: { index: true, follow: true },
 }
@@ -76,7 +76,7 @@ export default function Page() {
         <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '32px' }}>
           <Link href="/blog" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Blog</Link> {' / '} Automatizace B2B obchodu
         </p>
-        <img src="/blog/automatizace-prodeje.jpg" alt="Automatizovaný B2B obchod od prospectingu po teplou schůzku" style={{ width: '100%', borderRadius: '14px', marginBottom: '40px', display: 'block' }} />
+        <img src="/blog/automatizace-prodeje.jpg" alt="Automatizovaný B2B obchod od prospectingu po připravenou schůzku" style={{ width: '100%', borderRadius: '14px', marginBottom: '40px', display: 'block' }} />
         <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '14px' }}>B2B obchod · Praktický průvodce</p>
         <h1 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: 700, letterSpacing: '-0.025em', lineHeight: 1.15, marginBottom: '16px' }}>
           Jak rozjet a zautomatizovat B2B obchod — bez najímání dalšího obchodníka
@@ -137,7 +137,7 @@ export default function Page() {
             <li>podíl oslovených firem, které skutečně odpovídají ICP,</li>
             <li>míra odpovědí a podíl relevantních odpovědí,</li>
             <li>počet kvalifikovaných příležitostí a domluvených schůzek,</li>
-            <li>rychlost reakce obchodníka na teplý lead,</li>
+            <li>rychlost reakce obchodníka na kvalifikovaný lead,</li>
             <li>konverze ze schůzky do nabídky a uzavřeného obchodu.</li>
           </ul>
           <p>Po prvních odpovědích upravujte výběr firem, argumentaci i timing. Automatizace bez průběžného vyhodnocení pouze rychleji opakuje původní chybu.</p>

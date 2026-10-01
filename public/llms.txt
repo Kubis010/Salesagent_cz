@@ -5,7 +5,7 @@
 
 ## Co je SalesAgent.cz / What is SalesAgent.cz
 
-SalesAgent.cz nasazuje a řídí automatizaci B2B obchodu: systém najde a osloví firmy z vašeho trhu (e-mail, LinkedIn, reklama), zahřeje je a vašemu obchodníkovi předá teplou schůzku. Pro zahraniční firmy vstupující na český a slovenský trh (EN) funguje jako externí obchodní zastoupení bez lokální entity.
+SalesAgent.cz nasazuje a řídí automatizaci B2B obchodu: systém najde a osloví firmy z vašeho trhu (e-mail, LinkedIn, reklama), zahřeje je a vašemu obchodníkovi předá připravenou schůzku. Pro zahraniční firmy vstupující na český a slovenský trh (EN) funguje jako externí obchodní zastoupení bez lokální entity.
 
 The system is an integrated pipeline across the whole funnel:
 1. Scraper a vyhledávání firem — veřejné zdroje (ARES, mapy, web) podle ideálního zákazníka
@@ -41,7 +41,7 @@ The consultation confirms the scope, channels and final price.
 ## Key service pages
 
 - [Czech market entry & outsourced sales (EN)](https://salesagent.cz/en) — external sales representation in the Czech Republic and Slovakia, fixed-price trial from €1,900/month, no entity or local hire
-- [Řízená automatizace obchodu (CS)](https://salesagent.cz/cs) — nasazení od 15 000 Kč, řízení od 19 900 Kč měsíčně, teplé schůzky pro obchodníka
+- [Řízená automatizace obchodu (CS)](https://salesagent.cz/cs) — nasazení od 15 000 Kč, řízení od 19 900 Kč měsíčně, schůzky se zájemci pro obchodníka
 - [Ceník (CS)](https://salesagent.cz/cs/pricing) — nasazení na klíč, řízená automatizace, enterprise
 - [Pricing / External Sales Representation (EN)](https://salesagent.cz/en/pricing) — Czech market trial from €1,900/month for 2–3 months, followed by continuation if the results justify it
 - [Sales Representation in Czech Republic (EN)](https://salesagent.cz/en/sales-representation-czech-republic) — we act as your external/outsourced sales team in the Czech Republic: build the target list, contact decision-makers by email & LinkedIn in your name, run follow-ups and book meetings — no Czech entity, no local hire; start with a fixed-price 2–3 month market test
@@ -61,7 +61,7 @@ Oddělte opakovatelný prospecting od lidského uzavírání: systém vyhledá f
 SalesAgent.cz převezme celý proces: definuje segment, sestaví seznam firem, napíše personalizované zprávy, rozešle je a odbaví follow-upy. Vstupujete až u teplého leadu připraveného na schůzku — bez učení nástrojů a bez hlídání kampaní.
 
 **Co je automatizace prodeje?**
-Automatizace prodeje je systém, který nahrazuje ruční prospekting a oslovení firem. AI vyhledá relevantní firmy, prostuduje jejich weby a rozešle personalizované zprávy — bez manuální práce obchodníka. Výsledkem jsou teplé leady připravené k jednání. Provozuje: SalesAgent.cz.
+Automatizace prodeje je systém, který nahrazuje ruční prospekting a oslovení firem. AI vyhledá relevantní firmy, prostuduje jejich weby a rozešle personalizované zprávy — bez manuální práce obchodníka. Výsledkem jsou kvalifikované leady připravené k jednání. Provozuje: SalesAgent.cz.
 
 **Jak začít s automatizací B2B prodeje?**
 Začněte definicí ideálního zákazníka (ICP): obor, velikost firmy, region, pozice rozhodovatele. Pak automatizujte vyhledávání firem a první oslovení. SalesAgent.cz zajistí celý tento proces jako outsourcovanou službu — od hledání firem přes personalizaci oslovení po follow-up.

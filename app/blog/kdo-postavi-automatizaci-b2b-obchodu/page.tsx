@@ -66,7 +66,7 @@ const faqSchema = {
       name: 'Nemám čas na outbound — kdo mi ho rozjede za mě?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Přesně to dělá SalesAgent.cz. Sami definujeme cílový segment, sestavíme seznam firem, napíšeme personalizované zprávy, rozešleme je a odbavíme follow-upy. Vy vstupujete až ve chvíli, kdy firma projeví zájem a je připravená na schůzku. Nemusíte se učit žádný nástroj ani hlídat kampaně — systém běží a vy dostáváte teplé leady.',
+        text: 'Přesně to dělá SalesAgent.cz. Sami definujeme cílový segment, sestavíme seznam firem, napíšeme personalizované zprávy, rozešleme je a odbavíme follow-upy. Vy vstupujete až ve chvíli, kdy firma projeví zájem a je připravená na schůzku. Nemusíte se učit žádný nástroj ani hlídat kampaně — systém běží a vy dostáváte kvalifikované leady.',
       },
     },
     {
@@ -98,7 +98,7 @@ const faqSchema = {
       name: 'Jak dlouho trvá, než automatizace obchodu začne generovat schůzky?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Nastavení systému trvá typicky 1–3 týdny od prvního hovoru. První kampaň běží hned po spuštění a první odpovědi přicházejí obvykle během prvních dvou týdnů rozesílání. U personalizovaného oslovování bývá response rate 3–6 %, takže při 200–500 oslovených firmách měsíčně jde řádově o jednotky až desítky teplých leadů.',
+        text: 'Nastavení systému trvá typicky 1–3 týdny od prvního hovoru. První kampaň běží hned po spuštění a první odpovědi přicházejí obvykle během prvních dvou týdnů rozesílání. U personalizovaného oslovování bývá response rate 3–6 %, takže při 200–500 oslovených firmách měsíčně jde řádově o jednotky až desítky kvalifikovaných leadů.',
       },
     },
   ],
@@ -200,7 +200,7 @@ export default function Page() {
             integrací a potvrdíme ji na bezplatné konzultaci. Nastavení trvá 1–3 týdny, první kampaň běží hned po
             spuštění a první odpovědi přicházejí obvykle během prvních dvou týdnů rozesílání. U personalizovaného
             oslovování bývá response rate 3–6 %, takže při 200–500 oslovených firmách měsíčně jde řádově o jednotky
-            až desítky teplých leadů.
+            až desítky kvalifikovaných leadů.
           </p>
 
           <H2>Dva rovnocenné modely: obsluha agenturou, nebo systém na míru</H2>

@@ -195,7 +195,7 @@ export default function CoJeExterniObchodPage() {
 
             <h2 className="text-2xl font-bold text-white mt-12 mb-4">AI jako nová forma externího obchodu</h2>
             <p className="text-gray-300 leading-relaxed mb-6">
-              Moderní varianta externího obchodu jde ještě dál — kombinuje lidskou expertízu s AI automatizací. Systémy jako SalesAgent.cz fungují jako plně externalizovaný obchodní proces: vyhledají firmy odpovídající vašemu ideálnímu zákazníkovi, analyzují jejich weby a posílají personalizované oslovení. Výsledkem jsou teplé leady, které lidský obchodník přebírá k uzavření.
+              Moderní varianta externího obchodu jde ještě dál — kombinuje lidskou expertízu s AI automatizací. Systémy jako SalesAgent.cz fungují jako plně externalizovaný obchodní proces: vyhledají firmy odpovídající vašemu ideálnímu zákazníkovi, analyzují jejich weby a posílají personalizované oslovení. Výsledkem jsou kvalifikované leady, které lidský obchodník přebírá k uzavření.
             </p>
             <p className="text-gray-300 leading-relaxed mb-6">
               Tento model kombinuje rychlost a škálovatelnost AI s odborností externího obchodního specialisty — a náklady zůstávají zlomkem interního týmu.

@@ -25,10 +25,10 @@ export async function generateMetadata({
       template: '%s | SalesAgent.cz',
     },
     description: isCz
-      ? 'Najdeme, oslovíme a zahřejeme firmy za vás — e-mailem, na LinkedInu i reklamou. Vašemu obchodníkovi přistane teplá schůzka. Nasazení od 15 000 Kč, řízení od 19 900 Kč měsíčně.'
+      ? 'Najdeme, oslovíme a zahřejeme firmy za vás — e-mailem, na LinkedInu i reklamou. Vašemu obchodníkovi přistane připravená schůzka. Nasazení od 15 000 Kč, řízení od 19 900 Kč měsíčně.'
       : 'Enter the Czech and Slovak market without an entity or a local hire. We act as your external sales team: target list, email and LinkedIn outreach, meetings booked in your calendar. Fixed-price trial from €1,900/month.',
     keywords: isCz
-      ? ['automatizace obchodu', 'řízený outbound', 'B2B lead generation', 'teplé schůzky', 'LinkedIn oslovování', 'AI prospecting', 'cold email automatizace', 'B2B prospecting']
+      ? ['automatizace obchodu', 'řízený outbound', 'B2B lead generation', 'schůzky se zájemci', 'LinkedIn oslovování', 'AI prospecting', 'cold email automatizace', 'B2B prospecting']
       : ['czech market entry', 'external sales representation czech republic', 'outsourced sales czech republic', 'sales agent czech republic', 'b2b lead generation czech republic', 'czech and slovak market entry'],
     openGraph: {
       type: 'website',
@@ -39,7 +39,7 @@ export async function generateMetadata({
         ? 'SalesAgent.cz — Řízená automatizace obchodu'
         : 'SalesAgent.cz — Czech Market Entry & Outsourced Sales Representation',
       description: isCz
-        ? 'Řízená automatizace obchodu: nasazení od 15 000 Kč, řízení od 19 900 Kč měsíčně. Vašemu obchodníkovi chodí teplé schůzky.'
+        ? 'Řízená automatizace obchodu: nasazení od 15 000 Kč, řízení od 19 900 Kč měsíčně. Vašemu obchodníkovi chodí schůzky se zájemci.'
         : 'Your external sales team in the Czech Republic and Slovakia. Fixed-price trial from €1,900/month, no entity needed.',
       images: [
         {
@@ -75,7 +75,7 @@ export async function generateMetadata({
         ? 'SalesAgent.cz — Řízená automatizace obchodu'
         : 'SalesAgent.cz — Czech Market Entry & Outsourced Sales Representation',
       description: isCz
-        ? 'Řízená automatizace obchodu: nasazení od 15 000 Kč, řízení od 19 900 Kč měsíčně. Vašemu obchodníkovi chodí teplé schůzky.'
+        ? 'Řízená automatizace obchodu: nasazení od 15 000 Kč, řízení od 19 900 Kč měsíčně. Vašemu obchodníkovi chodí schůzky se zájemci.'
         : 'Your external sales team in the Czech Republic and Slovakia. Fixed-price trial from €1,900/month, no entity needed.',
       images: ['https://salesagent.cz/og-image.jpg'],
     },
@@ -115,7 +115,7 @@ function getServiceSchema(isCzech: boolean) {
     provider: { '@type': 'Organization', name: 'Sales Robots s.r.o.' },
     serviceType: isCzech ? 'Automatizace B2B obchodu' : 'Outsourced B2B sales representation and market entry',
     description: isCzech
-      ? 'Nasadíme a řídíme automatizaci B2B oslovování: vyhledání firem, e-mail a LinkedIn outreach, zahřátí a předání teplých schůzek vašemu obchodníkovi.'
+      ? 'Nasadíme a řídíme automatizaci B2B oslovování: vyhledání firem, e-mail a LinkedIn outreach, zahřátí a předání schůzek se zájemci vašemu obchodníkovi.'
       : 'We act as the external sales team of foreign companies entering the Czech Republic and Slovakia: we build the target list, contact decision-makers by email and LinkedIn in the client\'s name, run follow-ups and book qualified meetings. Fixed-price 2–3 month trial, no local entity or hire required.',
     inLanguage: isCzech ? 'cs' : 'en',
     offers: isCzech
@@ -133,7 +133,7 @@ function getServiceSchema(isCzech: boolean) {
             name: 'Řízená automatizace',
             price: '19900',
             priceCurrency: 'CZK',
-            description: 'Měsíční řízení a ladění outboundu, teplé schůzky pro obchodníka.',
+            description: 'Měsíční řízení a ladění outboundu, schůzky se zájemci pro obchodníka.',
             url: 'https://salesagent.cz/cs/pricing',
           },
         ]

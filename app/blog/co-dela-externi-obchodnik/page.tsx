@@ -226,7 +226,7 @@ export default function CoDElaExterniObchodnikPage() {
               ))}
             </ul>
             <p className="text-gray-300 leading-relaxed mb-6">
-              Realistická očekávání: první měsíc je obvykle o nastavení, testování a ladění. Výsledky v podobě teplých leadů se dostavují typicky od druhého nebo třetího měsíce spolupráce. Firmy, které chtějí výsledky od prvního týdne, bývají zklamány — a to bez ohledu na to, kdo obchod dělá.
+              Realistická očekávání: první měsíc je obvykle o nastavení, testování a ladění. Výsledky v podobě kvalifikovaných leadů se dostavují typicky od druhého nebo třetího měsíce spolupráce. Firmy, které chtějí výsledky od prvního týdne, bývají zklamány — a to bez ohledu na to, kdo obchod dělá.
             </p>
 
           </article>
