@@ -76,10 +76,10 @@ const posts = [
   {
     href: '/blog/jak-zavest-automatizaci-prodeje-ve-firme',
     lang: 'CS',
-    title: 'Jak zavést systematické oslovování firem — krok za krokem',
-    date: '10. srpna 2026',
+    title: 'Automatizace prodeje: co automatizovat v outboundu a co ne',
+    date: '10. dubna 2025 · Aktualizováno 5. října 2026',
     description:
-      'Systematické oslovování firem není jen newsletter. Čím reálně začít, kde nasadit outbound a jak vypadá fungující B2B oslovování od prvního kontaktu po schůzku.',
+      'Průvodce od ICP a ověřených dat přes oslovení a kvalifikaci po předání obchodníkovi. Cena řízeného outboundu, měření pilotu a pravidla pro e-mail.',
     image: '/blog/automatizace-prodeje.jpg',
   },
   {

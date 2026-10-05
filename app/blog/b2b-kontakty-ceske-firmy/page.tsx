@@ -135,6 +135,9 @@ export default function Page() {
           .contact-faq > div { padding: 0 20px 18px; color: var(--text-muted); font-size: 15px; line-height: 1.7; }
         `}</style>
       </div>
+          <p style={{ maxWidth: '760px', margin: '24px auto 0', padding: '0 24px', fontSize: '15px', lineHeight: 1.7 }}>
+            Navazující průvodce: <Link href="/blog/jak-zavest-automatizaci-prodeje-ve-firme" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>automatizace prodeje</Link>.
+          </p>
     </article>
   )
 }

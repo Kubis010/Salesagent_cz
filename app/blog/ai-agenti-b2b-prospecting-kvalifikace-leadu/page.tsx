@@ -300,6 +300,9 @@ export default function AiAgentiProspektingPage() {
               </Link>
             </div>
           </nav>
+          <p style={{ maxWidth: '760px', margin: '24px auto 0', padding: '0 24px', fontSize: '15px', lineHeight: 1.7 }}>
+            Navazující průvodce: <Link href="/blog/jak-zavest-automatizaci-prodeje-ve-firme" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>automatizace prodeje</Link>.
+          </p>
         </div>
       </main>
     </>

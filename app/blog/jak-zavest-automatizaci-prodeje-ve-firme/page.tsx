@@ -1,82 +1,60 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
+const URL = 'https://salesagent.cz/blog/jak-zavest-automatizaci-prodeje-ve-firme'
+const TITLE = 'Automatizace prodeje: průvodce outboundem | SalesAgent.cz'
+const DESCRIPTION = 'Co automatizovat v B2B outboundu: ICP, data, oslovení, kvalifikace a předání obchodníkovi. Postup zavedení, cena řízené služby a pravidla pro e-mail.'
+const linkStyle = { color: 'var(--accent)', textDecoration: 'underline' } as const
+
 export const metadata: Metadata = {
-  title: 'Jak zavést oslovování firem krok za krokem | SalesAgent.cz',
-  description:
-    'Jak ve firmě rozjet systematické B2B oslovování: správné pořadí kroků, čím začít a jak vypadá fungující outbound od hledání firem přes personalizované oslovení po domluvenou schůzku.',
-  keywords: [
-    'oslovování firem',
-    'B2B outreach',
-    'jak oslovit firmy',
-    'outbound prodej',
-    'cold email a LinkedIn',
-  ],
-  alternates: {
-    canonical: 'https://salesagent.cz/blog/jak-zavest-automatizaci-prodeje-ve-firme',
-    languages: {
-      cs: 'https://salesagent.cz/blog/jak-zavest-automatizaci-prodeje-ve-firme',
-      'x-default': 'https://salesagent.cz/blog/jak-zavest-automatizaci-prodeje-ve-firme',
-    },
-  },
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: URL, languages: { cs: URL, 'x-default': URL } },
   openGraph: {
-    title: 'Jak zavést systematické oslovování firem — krok za krokem',
-    description:
-      'Čím reálně začít, kde nasadit outbound a jak vypadá fungující B2B oslovování od prvního kontaktu po schůzku.',
-    url: 'https://salesagent.cz/blog/jak-zavest-automatizaci-prodeje-ve-firme',
-    siteName: 'SalesAgent.cz',
-    type: 'article',
-    publishedTime: '2025-04-10',
-    modifiedTime: '2026-09-25',
-    locale: 'cs_CZ',
-    images: [{ url: 'https://salesagent.cz/blog/automatizace-prodeje.jpg', width: 1200, height: 630, alt: 'Automatizace prodeje ve firmě — krok za krokem' }],
+    title: TITLE, description: DESCRIPTION, url: URL, siteName: 'SalesAgent.cz',
+    type: 'article', publishedTime: '2025-04-10', modifiedTime: '2026-10-05', locale: 'cs_CZ',
+    images: [{ url: 'https://salesagent.cz/blog/automatizace-prodeje.jpg', width: 1200, height: 630, alt: 'Automatizace prodeje v B2B outboundu' }],
   },
   robots: { index: true, follow: true },
 }
 
-const articleSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BlogPosting',
-  headline: 'Jak zavést systematické oslovování firem — krok za krokem',
-  description: 'Systematické oslovování firem není jen newsletter. Čím reálně začít, kde nasadit outbound a jak vypadá fungující B2B oslovování od prvního kontaktu po schůzku.',
-  image: 'https://salesagent.cz/blog/automatizace-prodeje.jpg',
-  datePublished: '2025-04-10',
-  dateModified: '2026-09-25',
-  inLanguage: 'cs',
-  author: { '@type': 'Organization', name: 'SalesAgent.cz', url: 'https://salesagent.cz' },
-  publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz' },
-  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://salesagent.cz/blog/jak-zavest-automatizaci-prodeje-ve-firme' },
-}
+const faqs = [
+  {
+    question: 'Co je automatizace prodeje v B2B outboundu?',
+    answer: 'Automatizace prodeje v outboundu propojuje výběr cílových firem, ověření kontaktů, personalizované oslovení, follow-up, kvalifikaci a předání zájemce obchodníkovi. Pomáhá udržet pravidelný přísun příležitostí. Vyjednávání, nabídku a uzavření zakázky dál řeší člověk.',
+  },
+  {
+    question: 'Jak začít s automatizací B2B prodeje?',
+    answer: 'Vyberte jeden segment a popište ideálního zákazníka včetně vylučujících podmínek. Ověřte malý vzorek firem a kontaktů, pravidla komunikace a první zprávu. Až poté spusťte pilot s jasnou kvalifikací a předáním odpovědí obchodníkovi.',
+  },
+  {
+    question: 'Kolik stojí automatizace prodeje u SalesAgent.cz?',
+    answer: 'Nasazení řízeného outboundu začíná od 15 000 Kč jednorázově a průběžné řízení od 19 900 Kč měsíčně. První tři měsíce tak vycházejí od 74 700 Kč. Rozsah kanálů, dat a případných dalších nákladů se stanovuje v konkrétní nabídce.',
+  },
+  {
+    question: 'Nahradí AI automatizace obchodníka?',
+    answer: 'Ne. Systém přebírá opakovanou přípravu dat, oslovení a třídění odpovědí. Obchodník ověřuje potřebu, vede schůzku, řeší podmínky a uzavírá obchod. Smyslem je dát obchodníkovi relevantní příležitosti a kontext.',
+  },
+  {
+    question: 'Stačí oprávněný zájem a odhlášení pro B2B e-mail?',
+    answer: 'Ne. Právní titul pro zpracování osobních údajů a oprávnění zaslat obchodní sdělení jsou dvě odlišné otázky. Pro obchodní e-mail je třeba splnit zákon č. 480/2004 Sb.; samotná veřejná adresa, B2B zaměření ani opt-out nenahrazují předchozí souhlas nebo splnění zákonné zákaznické výjimky.',
+  },
+]
 
+const articleSchema = {
+  '@context': 'https://schema.org', '@type': 'BlogPosting', '@id': URL + '#article',
+  headline: 'Automatizace prodeje: co automatizovat v outboundu a co ne',
+  description: DESCRIPTION, image: 'https://salesagent.cz/blog/automatizace-prodeje.jpg',
+  datePublished: '2025-04-10', dateModified: '2026-10-05', inLanguage: 'cs',
+  author: { '@type': 'Person', name: 'Petr Kubíček', url: 'https://salesagent.cz/cs/about' },
+  publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz', logo: { '@type': 'ImageObject', url: 'https://salesagent.cz/logo.svg' } },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': URL },
+}
 const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'Co lze v B2B prodeji reálně automatizovat?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'V B2B prodeji lze automatizovat: vyhledávání firem (lead sourcing z Google Maps, LinkedIn, ARES), obohacování dat o prospektech, první oslovení (cold email, LinkedIn), follow-up sekvence, základní kvalifikaci odpovědí a aktualizaci CRM. Vyjednávání, uzavírání obchodů a budování vztahů zůstávají na lidech.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Kde začít s automatizací prodeje?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Začněte definicí ICP — bez přesného popisu ideálního zákazníka nepomůže žádná automatizace. Poté automatizujte lead sourcing, pak personalizované první oslovení a follow-up sekvenci. CRM integraci a reporting řešte až po tom, co víte, co vám funguje.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Jaká je nejčastější chyba při zavádění automatizace prodeje?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Nejčastější chyba je automatizovat příliš brzy — před tím, než víte, co funguje manuálně. Druhá velká chyba je posílat šablony bez personalizace. Třetí: ignorovat follow-up. 80 % odpovědí přichází po druhém nebo třetím kontaktu, ne po prvním.',
-      },
-    },
-  ],
+  '@context': 'https://schema.org', '@type': 'FAQPage', '@id': URL + '#faq', inLanguage: 'cs',
+  mainEntity: faqs.map(({ question, answer }) => ({
+    '@type': 'Question', name: question, acceptedAnswer: { '@type': 'Answer', text: answer },
+  })),
 }
 
 export default function Page() {
@@ -84,348 +62,231 @@ export default function Page() {
     <article style={{ paddingTop: '96px', paddingBottom: '80px' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-
       <div style={{ maxWidth: '760px', margin: '0 auto', padding: '0 24px' }}>
-
         <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '32px' }}>
-          <Link href="/blog" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Blog</Link>
-          {' / '}Automatizace prodeje
+          <Link href="/blog" style={linkStyle}>Blog</Link> / Automatizace prodeje
         </p>
-
-        <img
-          src="/blog/automatizace-prodeje.jpg"
-          alt="Automatizace prodeje ve firmě — krok za krokem"
-          style={{ width: '100%', borderRadius: '14px', marginBottom: '40px', display: 'block' }}
-        />
-
-        <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '14px' }}>
-          Automatizace prodeje · B2B obchod
-        </p>
-        <h1 style={{
-          fontFamily: 'Space Grotesk, sans-serif',
-          fontSize: 'clamp(26px, 4vw, 40px)',
-          fontWeight: 700,
-          letterSpacing: '-0.025em',
-          lineHeight: 1.2,
-          marginBottom: '16px',
-        }}>
-          Jak zavést systematické oslovování firem — krok za krokem
+        <img src="/blog/automatizace-prodeje.jpg" alt="Automatizace prodeje v B2B outboundu" style={{ width: '100%', borderRadius: '14px', marginBottom: '32px', display: 'block' }} />
+        <h1 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: 700, letterSpacing: '-0.025em', lineHeight: 1.2, marginBottom: '16px' }}>
+          Automatizace prodeje: co automatizovat v outboundu a co ne
         </h1>
-        <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '48px' }}>
-          10. dubna 2025 · Petr Kubíček
+        <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '32px' }}>
+          Petr Kubíček · Publikováno 10. dubna 2025 · Aktualizováno 5. října 2026
         </p>
-
-        <div style={{ fontSize: '17px', lineHeight: 1.75, color: 'var(--text)', display: 'flex', flexDirection: 'column', gap: '24px' }}>
-
+        <div style={{ fontSize: '17px', lineHeight: 1.75, display: 'flex', flexDirection: 'column', gap: '20px' }}>
           <p>
-            Když se řekne automatizace prodeje, většina firem si představí buď newsletter v Mailchimpu,
-            nebo CRM, které automaticky posílá follow-up po uzavření obchodu. Obojí je sice v pořádku,
-            ale s automatizací prodeje to má pramálo společného.
+            <strong>Automatizace prodeje v B2B outboundu</strong> znamená propojit výběr cílových firem,
+            ověřená data, personalizované oslovení, kvalifikaci a předání zájemce obchodníkovi.
+            Začněte jedním segmentem a malým pilotem. Systém má opakovaně připravovat relevantní
+            příležitosti; obchodník dál vede schůzky, vyjednává a uzavírá zakázky.
+          </p>
+          <p>
+            Tento průvodce řeší získávání nových B2B zákazníků aktivním oslovením. Pokud vám chybí
+            pravidelný přísun příležitostí, důležitější než další nástroj je dohoda, koho chcete oslovit,
+            proč by měl reagovat a kdo převezme odpověď. Teprve nad tím se vyplatí automatizovat.
+            Praktické provedení zajišťujeme jako <Link href="/cs/automatizovane-osloveni" style={linkStyle}>automatizované oslovení</Link>.
           </p>
 
+          <H2>Co automatizovat a co ponechat obchodníkovi</H2>
           <p>
-            Skutečná automatizace prodeje začíná mnohem dříve — u hledání firem, jejich oslovení a
-            systematického follow-upu. Tohle je část, která obchodníkům bere nejvíce času a přitom
-            ji lze z velké části automatizovat bez ztráty kvality.
+            Opakované kroky s jasným vstupem a výsledkem jsou dobrým kandidátem pro automatizaci.
+            Patří sem vyhledávání firem podle kritérií, doplňování veřejných informací, deduplikace,
+            návrh zpráv, řízení schválených sekvencí a třídění odpovědí. U každého kroku musí být možné
+            dohledat zdroj a zjistit, proč systém firmu vybral nebo zařadil do určité kategorie.
+          </p>
+          <ul style={{ paddingLeft: '24px' }}>
+            <li><strong>Systém:</strong> najde firmy, zkontroluje kontakty, připraví relevantní oslovení a eviduje reakce.</li>
+            <li><strong>AI s kontrolou:</strong> navrhne personalizaci a rozliší zájem, dotaz, odmítnutí nebo nejasnou odpověď.</li>
+            <li><strong>Obchodník:</strong> ověří potřebu, řeší konkrétní otázky, vede demo a rozhoduje o nabídce.</li>
+            <li><strong>Odpovědný člověk:</strong> schvaluje cílení, podmínky komunikace a změny kampaně.</li>
+          </ul>
+          <p>
+            AI nemá slibovat cenu, termín dodání nebo vlastnost produktu, kterou nemáte potvrzenou.
+            Nejasná reakce patří k člověku. Stejně tak samotné otevření e-mailu nebo návštěva webu
+            neznamená, že firma chce koupit. Automatizace má šetřit přípravu, nikoli přidávat obchodníkovi
+            falešně kvalifikované kontakty.
           </p>
 
-          <H2>Co všechno lze v prodeji automatizovat</H2>
-
+          <H2>1. Vyberte ICP: komu a s čím pomáháte</H2>
           <p>
-            Přehled toho, co v B2B obchodním procesu lze reálně automatizovat:
+            ICP je profil ideálního zákazníka. Popište obor, velikost firmy, region, roli rozhodovatele
+            a problém, který vaše nabídka řeší. Přidejte vylučující podmínky: stávající klienty,
+            konkurenty, příliš malé firmy nebo obory, pro které produkt nefunguje. Vyloučení má mít
+            přednost před pozitivním skóre.
+          </p>
+          <p>
+            Modelový příklad: dodavatel měřicí techniky hledá výrobní firmy v ČR s vlastní kontrolou
+            kvality. Relevantní role může být vedoucí kvality nebo výroby, nikoli automaticky jednatel.
+            U každé firmy chcete vědět, zda má vlastní výrobu a pro jakou konkrétní činnost by techniku
+            využila. To je lepší zadání než „všechny firmy nad 50 zaměstnanců“.
+          </p>
+          <p>
+            Před spuštěním si s obchodníkem projděte malý vzorek, například 20 firem. U každé napište
+            důvod shody a důvod případného vyloučení. Pokud se neshodnete ani nad tímto vzorkem,
+            rozsáhlejší automatizované hledání problém pouze zvětší. Jeden produkt, jeden segment
+            a jeden hlavní argument usnadní také vyhodnocení pilotu.
           </p>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-            {[
-              {
-                area: 'Vyhledávání firem (lead sourcing)',
-                desc: 'Scraping Google Maps, LinkedIn, ARES nebo oborových portálů podle zadaných kritérií. Systém najde firmy odpovídající vašemu ICP bez manuálního prohledávání.',
-              },
-              {
-                area: 'Obohacování dat o prospektech',
-                desc: 'AI přečte web každé firmy a zjistí klíčové informace: co dělají, jak se odlišují, v jakém regionu operují, na koho cílí. Obchodník dostane kontext, ne jen jméno firmy.',
-              },
-              {
-                area: 'První kontakt (cold email, LinkedIn)',
-                desc: 'Personalizované oslovení generované na základě analýzy webu — ne šablona s proměnnými, ale unikátní zpráva pro každou firmu.',
-              },
-              {
-                area: 'Follow-up sekvence',
-                desc: '3–4 zprávy rozložené přes 10–14 dní. Systém sleduje, kdo odpověděl, a follow-up posílá jen těm, kteří dosud nereagovali.',
-              },
-              {
-                area: 'Základní kvalifikace odpovědí',
-                desc: 'AI dokáže identifikovat, zda odpověď vyjadřuje zájem, odmítnutí nebo požadavek na pozdější kontakt — a podle toho odpovídající kontakt označit.',
-              },
-              {
-                area: 'CRM aktualizace a reporting',
-                desc: 'Automatické logování aktivit, aktualizace statusů a generování reportů o výsledcích kampaní bez manuálního zadávání.',
-              },
-            ].map((item) => (
-              <div key={item.area} style={{
-                padding: '20px',
-                borderRadius: '10px',
-                border: '1px solid var(--border)',
-                background: 'var(--bg-card)',
-              }}>
-                <p style={{ fontWeight: 700, fontSize: '15px', color: 'var(--text)', marginBottom: '6px' }}>{item.area}</p>
-                <p style={{ fontSize: '14px', color: 'var(--text-muted)', margin: 0, lineHeight: 1.6 }}>{item.desc}</p>
-              </div>
+          <H2>2. Připravte data, která lze použít</H2>
+          <p>
+            Seznam firem sestavte z vhodných zdrojů: ARES a obchodní rejstřík ověří identitu firmy,
+            firemní web ukáže nabídku a LinkedIn pomůže dohledat role. Rejstříkový záznam sám o sobě
+            nepotvrzuje obchodní potenciál ani oprávnění kontaktovat konkrétní osobu. Zdroje a kontrolu
+            kvality rozebírá článek <Link href="/blog/b2b-kontakty-ceske-firmy" style={linkStyle}>kde vzít kvalitní B2B kontakty na české firmy</Link>.
+          </p>
+          <p>
+            Minimum pro použitelný záznam je název firmy, IČO nebo jiný stabilní identifikátor,
+            doména, relevantní role, zdroj kontaktu, datum ověření a důvod shody s ICP.
+            Duplicity odstraňujte podle IČO a domény, kontakty podle e-mailu nebo profilu.
+            Pobočka, mateřská společnost a dva lidé ze stejné firmy potřebují společná pravidla,
+            aby nedostali souběžně stejnou nabídku.
+          </p>
+          <p>
+            Technické ověření e-mailu snižuje riziko chybné adresy, ale nezaručuje doručení ani souhlas
+            se zasíláním. Evidujte také odmítnutí a firmy, které už někdo z týmu řeší.
+            Kontaktní seznam porovnejte se stávajícími zákazníky a otevřenými příležitostmi
+            před každým novým kolem oslovení.
+          </p>
+
+          <H2>3. Nastavte automatizaci oslovení a stop podmínky</H2>
+          <p>
+            Zpráva má vysvětlit, proč oslovujete právě tuto firmu, jaký konkrétní problém umíte řešit
+            a jaký je přiměřený další krok. AI může připravit návrh z ověřených informací o firmě.
+            Kontrolujte však, že nevymýšlí zákazníky, technologie nebo potřebu, kterou web nedokládá.
+            Podrobnosti najdete v návodu <Link href="/blog/jak-personalizovat-cold-emaily-ai" style={linkStyle}>jak personalizovat cold e-maily pomocí AI</Link>.
+          </p>
+          <p>
+            E-mail a LinkedIn plánujte jako jednu komunikaci. Odpověď na jednom kanálu musí zastavit
+            navazující automatické zprávy podle dohodnutých pravidel. Odmítnutí, odhlášení, chybná adresa
+            nebo probíhající jednání jsou důvody k zastavení. Follow-up má přidat relevantní informaci;
+            jeho počet a rozestupy nastavte podle nabídky, kanálu a pravidel komunikace.
+          </p>
+          <p>
+            Pilot spusťte s omezeným objemem, abyste dokázali projít skutečné zprávy a odpovědi.
+            Nejprve ověřte správné adresáty, texty, stop podmínky a předání. Objem zvyšujte až po této
+            kontrole. U LinkedInu respektujte podmínky platformy; automatizace ani nastavený denní
+            limit nezaručují, že poskytovatel účet neomezí.
+          </p>
+
+          <H2>4. Kvalifikujte zájem, ne počet kliknutí</H2>
+          <p>
+            Shoda firmy s ICP a skutečný zájem jsou dvě různé věci. První říká, zda má cenu se firmou
+            zabývat. Druhá vychází z odpovědi: jakou potřebu řeší, kdo rozhoduje a zda chce pokračovat.
+            Odpověď „pošlete informace“ může být začátek konverzace, ale ještě není domluvená schůzka.
+          </p>
+          <p>
+            Praktické kategorie jsou: relevantní zájem, doplňující dotaz, pozdější termín, odmítnutí
+            a nejasná odpověď. AI může navrhnout zařazení a stručné shrnutí; nejisté případy
+            předává člověku. Nevyvozujte rozpočet nebo nákupní termín jen z velikosti firmy.
+            Navazují průvodci <Link href="/blog/ai-agenti-b2b-prospecting-kvalifikace-leadu" style={linkStyle}>AI agenti pro prospecting a kvalifikaci leadů</Link>
+            {' '}a <Link href="/blog/jak-skorovat-leady" style={linkStyle}>jak skórovat leady</Link>.
+          </p>
+          <p>
+            Pokud je potřeba produkt nejprve vysvětlit, lze do dohodnutého postupu zapojit Prezentér.
+            Zájemci ukáže produkt před schůzkou a pomůže připravit kontext pro obchodníka.
+            O kvalifikaci ale rozhoduje to, zda příležitost odpovídá nabídce a existuje konkrétní
+            důvod pokračovat, nikoli samotné spuštění dema.
+          </p>
+
+          <H2>5. Předejte obchodníkovi kontext a další krok</H2>
+          <p>
+            Předání má obsahovat firmu, kontakt, důvod shody s ICP, dosavadní komunikaci, vyjádřenou
+            potřebu a domluvený další krok. Určete vlastníka příležitosti a lhůtu, ve které se má ozvat.
+            Záznam ve vašem stávajícím CRM může tento kontext uchovat; pro spuštění outboundu není
+            nutné objednávat nový systém.
+          </p>
+          <p>
+            S obchodníkem si dopředu domluvte, co přijme jako kvalifikovanou příležitost.
+            Pokud vrátí kontakt jako nevhodný, potřebujete konkrétní důvod: jiný segment, chybějící
+            potřeba, nesprávná role nebo nepřesné shrnutí. Tyto důvody se vracejí do cílení a kvalifikace.
+            Bez této zpětné vazby se seznam rozrůstá, ale obchodní výsledek se nezlepšuje.
+          </p>
+
+          <H2>Kolik stojí automatizace prodeje oproti obchodníkovi?</H2>
+          <p>
+            U SalesAgent.cz začíná nasazení řízeného outboundu <strong>od 15 000 Kč jednorázově</strong>
+            {' '}a průběžné řízení <strong>od 19 900 Kč měsíčně</strong>. První tři měsíce tak při základních
+            cenách vycházejí na 15 000 + 3 × 19 900 = <strong>74 700 Kč</strong>.
+            Jde o cenu „od“, nikoli univerzální rozpočet pro každý obor. Rozsah dat, kanálů a případných
+            dalších nákladů si potvrďte v nabídce a v <Link href="/cs/pricing" style={linkStyle}>aktuálním ceníku</Link>.
+          </p>
+          <p>
+            Náklady obchodníka porovnávejte za stejné období: celkové náklady zaměstnavatele, provize,
+            nábor, zaškolení, nástroje a čas vedení. Nedává smysl srovnat měsíční službu pouze s čistou
+            mzdou. Zároveň outbound služba nepřebírá celou roli obchodníka — část jeho kapacity
+            pro schůzky a uzavírání musíte v rozpočtu zachovat.
+          </p>
+          <p>
+            Pro rozhodnutí sledujte cenu obchodníkem přijaté příležitosti a ekonomiku uzavřené zakázky.
+            Modelový výpočet: pokud první tři měsíce stojí 74 700 Kč a obchodník přijme 15 příležitostí,
+            náklad vychází na 4 980 Kč za příležitost. Počet 15 je pouze ilustrace výpočtu, nikoli
+            slibovaný výsledek. Započtěte další náklady a ověřte, jaká část příležitostí se skutečně uzavře.
+          </p>
+
+          <H2>GDPR a obchodní sdělení: co ověřit před spuštěním</H2>
+          <p>
+            Rozlišujte právní titul pro práci s osobními údaji a podmínky zasílání obchodních sdělení.
+            Oprávněný zájem podle GDPR automaticky neopravňuje k rozesílání obchodních e-mailů.
+            Veřejně zveřejněná adresa, firemní doména ani personalizace samy o sobě souhlas nenahrazují.
+          </p>
+          <p>
+            Podle <a href="https://uoou.gov.cz/pravni-ramec/ochrana-osobnich-udaju/sireni-obchodnich-sdeleni" style={linkStyle}>ÚOOÚ</a>
+            {' '}se pravidla obchodních sdělení vztahují i na právnické osoby.
+            Pro e-mail potřebujete předchozí souhlas nebo splnit zákonnou zákaznickou výjimku pro
+            vlastní obdobné výrobky a služby. Identifikace odesílatele a účinné odmítnutí jsou další
+            podmínky, nikoli náhrada souhlasu. Konkrétní vysvětlení uvádí
+            {' '}<Link href="/blog/gdpr-a-cold-email" style={linkStyle}>GDPR a cold e-mail</Link>.
+          </p>
+          <p>
+            Do zadání kampaně proto patří zdroj a oprávnění použití kontaktů, pravidla odhlášení,
+            přístup k datům a odpovědnosti klienta i dodavatele. Odmítnutý kontakt nesmí znovu vstoupit
+            do sekvence z jiného seznamu. Nejasný případ vyřešte před rozesílkou s odborníkem;
+            technická automatizace právní podmínky neodstraňuje.
+          </p>
+
+          <H2>Jak poznáte, že pilot funguje</H2>
+          <p>
+            Vyhodnocujte návaznost celého postupu: kolik firem prošlo kontrolou ICP, kolik kontaktů
+            bylo použitelných, jaké odpovědi přišly a kolik příležitostí obchodník přijal.
+            Oddělte pozitivní reakci, domluvenou schůzku, uskutečněnou schůzku a uzavřenou zakázku.
+            Každá z těchto metrik odpovídá na jinou otázku.
+          </p>
+          <ul style={{ paddingLeft: '24px' }}>
+            <li>Špatná shoda s ICP: zpřesnit výběr firem a vylučující podmínky.</li>
+            <li>Chybné kontakty nebo vrácené e-maily: opravit zdroje, ověření a doručitelnost.</li>
+            <li>Relevantní firmy bez zájmu: ověřit nabídku, argument a načasování.</li>
+            <li>Odpovědi bez dalšího kroku: zkontrolovat kvalifikaci a rychlost předání.</li>
+          </ul>
+          <p>
+            V jednom kole měňte co nejméně proměnných a evidujte, kdy se změna projevila.
+            U delšího B2B prodejního cyklu nehodnoťte pilot pouze podle okamžitých tržeb.
+            Potřebujete také zjistit, zda systém stabilně dodává příležitosti, které váš tým
+            umí převzít a dotáhnout.
+          </p>
+
+          <H2>Nechcete outbound sestavovat a řídit sami?</H2>
+          <p>
+            SalesAgent.cz nasadí a průběžně řídí vyhledávání firem, práci s daty, oslovení a kvalifikaci
+            podle vašeho segmentu. Domluvíme rozsah pilotu, připravíme zprávy a pravidla předání.
+            Váš obchodník se soustředí na relevantní konverzace, schůzky a uzavírání.
+          </p>
+          <p>
+            Pro konkrétní nabídku přejděte na <Link href="/cs/automatizovane-osloveni" style={linkStyle}>automatizované oslovení</Link>
+            {' '}a <Link href="/cs/pricing" style={linkStyle}>ceník nasazení a řízení</Link>.
+            Na <Link href="/cs/contact" style={linkStyle}>nezávazné konzultaci</Link> projdeme váš produkt,
+            cílové firmy a kapacitu obchodníka, abychom navrhli smysluplný první krok.
+          </p>
+
+          <section id="faq">
+            <H2>Časté otázky k automatizaci prodeje</H2>
+            {faqs.map(({ question, answer }) => (
+              <details key={question} style={{ border: '1px solid var(--border)', borderRadius: '10px', padding: '16px 20px', marginBottom: '12px' }}>
+                <summary style={{ cursor: 'pointer', fontWeight: 700 }}>{question}</summary>
+                <p style={{ marginTop: '12px', color: 'var(--text-muted)' }}>{answer}</p>
+              </details>
             ))}
-          </div>
-
-          <H2>Kde začít — doporučené pořadí</H2>
-
-          <p>
-            Automatizace prodeje nefunguje jako celek od první chvíle. Je potřeba ji budovat postupně,
-            a to ve správném pořadí:
-          </p>
-
-          <p>
-            Nejprve určete, který krok dnes obchodníky brzdí: nemají nové firmy, tráví čas ručním
-            dohledáváním kontaktů, nebo se ztrácejí odpovědi? Pro první nasazení vyberte jednu cílovou
-            skupinu a jeden měřitelný cíl, například počet nových relevantních firem týdně. Před spuštěním
-            uložte výchozí stav, abyste poznali, zda automatizace opravdu přinesla lepší příležitosti.
-          </p>
-
-          <p>
-            U seznamu firem kontrolujte IČO, duplicity, zdroj, stáří údajů a správnou roli člověka.
-            Konkrétní postup je v průvodci <Link href="/blog/b2b-kontakty-ceske-firmy" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>B2B kontakty na české firmy</Link>.
-            Teprve nad čistými daty má smysl nastavovat oslovení a předání reakcí obchodníkovi.
-          </p>
-
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-            {[
-              {
-                num: '1',
-                title: 'Nejdřív vyřešte ICP',
-                body: 'Bez přesné definice ideálního zákazníka automatizace nic nenapraví — jen rychleji oslovíte špatné firmy. Napište si písemně: obor, velikost, region, pozice rozhodovatele, signály shody a signály vyloučení. Teprve s tímto dokumentem má smysl spouštět cokoli dalšího.',
-              },
-              {
-                num: '2',
-                title: 'Automatizujte lead sourcing',
-                body: 'Vyhledávání firem z Google Maps, LinkedIn nebo ARES je ideální kandidát na první automatizaci — je opakující se, časově náročné a nevyžaduje kreativitu. Systém vám každý týden dodá čerstvé firmy odpovídající ICP bez toho, aby obchodník cokoliv hledal ručně.',
-              },
-              {
-                num: '3',
-                title: 'Personalizované první oslovení',
-                body: 'Jakmile máte spolehlivý tok firem, přidejte AI personalizaci. Systém přečte web každé firmy a napíše unikátní email. Tohle je krok, který nejvíce ovlivňuje response rate — proto ho nenahrazujte šablonou.',
-              },
-              {
-                num: '4',
-                title: 'Follow-up sekvence',
-                body: '80 % odpovědí nepřijde na první email, ale na druhý nebo třetí. Nastavte sekvenci 3–4 zpráv s 5–7 dny mezi nimi. Každá navazující zpráva by měla přidávat nový pohled nebo hodnotu — ne jen "Jen se chci ujistit, zda jste viděli můj předchozí email."',
-              },
-              {
-                num: '5',
-                title: 'Teprve pak CRM integrace a reporting',
-                body: 'CRM a reporting jsou důležité, ale řešte je až poté, co víte, co funguje. Příliš brzy zavedený CRM systém bez dat k plnění se stane jen dalším nástrojem, který nikdo nepoužívá.',
-              },
-            ].map((step) => (
-              <div key={step.num} style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
-                <span style={{
-                  width: '32px',
-                  height: '32px',
-                  borderRadius: '50%',
-                  background: 'rgba(255,107,74,0.15)',
-                  border: '1px solid rgba(255,107,74,0.4)',
-                  color: 'var(--accent)',
-                  fontWeight: 800,
-                  fontSize: '14px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  flexShrink: 0,
-                  marginTop: '2px',
-                }}>
-                  {step.num}
-                </span>
-                <div>
-                  <p style={{ fontWeight: 700, fontSize: '16px', marginBottom: '6px', color: 'var(--text)' }}>{step.title}</p>
-                  <p style={{ fontSize: '15px', color: 'var(--text-muted)', margin: 0, lineHeight: 1.65 }}>{step.body}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <H2>Nejčastější chyby při automatizaci prodeje</H2>
-
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-            {[
-              {
-                chyba: 'Automatizovat příliš brzy',
-                popis: 'Dřív než víte, co funguje manuálně, nemá smysl to automatizovat. Pokud nevíte, které firmě volat a co říct, systém jen rychleji opakuje špatný přístup ve větším měřítku.',
-              },
-              {
-                chyba: 'Šablony bez personalizace',
-                popis: 'Automatizovaný cold email bez personalizace je spam. Příjemce ho pozná a ignoruje. Personalizace na základě analýzy webu není luxus — je to základní podmínka toho, aby systém vůbec fungoval.',
-              },
-              {
-                chyba: 'Ignorovat follow-up',
-                popis: 'Průzkumy ukazují, že 80 % odpovědí přichází po druhém kontaktu nebo pozdějším. Firmy, které posílají jen jeden email a čekají, přicházejí o většinu potenciálních zákazníků.',
-              },
-              {
-                chyba: 'Nastavit a zapomenout',
-                popis: 'Automatizace prodeje není autonomní systém, který jednou spustíte a pak sledujete výsledky. Potřebuje pravidelnou revizi — texty zpráv, cílení, ICP. Co funguje dnes, nemusí fungovat za 3 měsíce.',
-              },
-            ].map((item) => (
-              <div key={item.chyba} style={{
-                display: 'flex',
-                gap: '12px',
-                padding: '16px 20px',
-                borderRadius: '10px',
-                border: '1px solid var(--border)',
-                background: 'var(--bg-card)',
-              }}>
-                <span style={{ color: '#ef4444', flexShrink: 0, marginTop: '2px' }}>✕</span>
-                <div>
-                  <span style={{ fontWeight: 700, fontSize: '15px', color: 'var(--text)' }}>{item.chyba}</span>
-                  <span style={{ fontSize: '14px', color: 'var(--text-muted)' }}> — {item.popis}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <H2>Jak vypadá fungující automatizovaný B2B outbound</H2>
-
-          <p>
-            Konkrétní příklad fungujícího systému pro firmu poskytující IT služby středním podnikům:
-          </p>
-
-          <ol style={{ paddingLeft: '20px', marginBottom: '8px' }}>
-            <li style={{ marginBottom: '10px' }}>Firma definuje ICP: výrobní firmy 50–500 zaměstnanců, ČR, bez interního IT oddělení</li>
-            <li style={{ marginBottom: '10px' }}>Systém každý týden vyhledá 80–100 nových firem z Google Maps a ARES</li>
-            <li style={{ marginBottom: '10px' }}>AI přečte web každé firmy a napíše personalizovaný email adresovaný jednateli nebo IT manažerovi</li>
-            <li style={{ marginBottom: '10px' }}>Email odchází v úterý ráno; ve čtvrtek odchází LinkedIn connection request</li>
-            <li style={{ marginBottom: '10px' }}>Po 6 dnech follow-up email těm, kteří neodpověděli; po dalších 7 dnech druhý follow-up</li>
-            <li style={{ marginBottom: '10px' }}>Odpovědi dostává obchodník přímo do emailu a reaguje do 2 hodin</li>
-            <li style={{ marginBottom: '10px' }}>Výsledek: 300–400 oslovených firem měsíčně, 8–15 odpovědí, 3–6 schůzek</li>
-          </ol>
-
-          <p>
-            Obchodník vstupuje do procesu až ve chvíli odpovědi. Celý prospekting a první kontaktní
-            fáze běží automaticky — a přesto personalizovaně.
-          </p>
-
-          <p>
-            Po prvním měsíci porovnejte nejen počet oslovených firem, ale i podíl kontaktů, které skutečně
-            odpovídají ICP, počet relevantních odpovědí a počet schůzek přijatých obchodníkem. Pokud se
-            seznam plní, ale schůzky nevznikají, zkontrolujte nejdřív cílení a kvalitu dat. Pokud firmy
-            reagují, ale příležitosti se ztrácejí, opravte pravidla předání a práci v CRM.
-          </p>
-
-          <H2>Co SalesAgent.cz dělá za vás</H2>
-
-          <p>
-            SalesAgent.cz je outsourcovaná B2B outreach služba. Celý výše popsaný proces — vyhledávání
-            firem, web scraping, AI personalizace, odesílání emailů i{' '}
-            <Link href="/cs/linkedin-outreach" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>LinkedIn outreach</Link>
-            {' '}— provozujeme jako řízenou službu. Vy nedostáváte nástroj k nastavení, dostáváte fungující systém s výsledky.
-          </p>
-
-          <p>
-            Nastavení trvá 5–7 pracovních dní od prvního hovoru. První odpovědi přicházejí typicky
-            ve druhém nebo třetím týdnu provozu.
-          </p>
-
-          <div style={{
-            background: 'rgba(255,107,74,0.06)',
-            border: '1px solid rgba(255,107,74,0.25)',
-            borderRadius: '14px',
-            padding: '32px',
-            marginTop: '16px',
-            textAlign: 'center',
-          }}>
-            <p style={{ fontSize: '18px', fontWeight: 700, color: 'var(--text)', marginBottom: '12px', fontFamily: 'Space Grotesk, sans-serif' }}>
-              Chcete vidět automatizaci prodeje v akci?
-            </p>
-            <p style={{ fontSize: '14px', color: 'var(--text-muted)', marginBottom: '24px' }}>
-              Na 30minutovém hovoru ukážeme, jak by fungující outbound systém vypadal konkrétně pro váš obor.
-            </p>
-            <a
-              href="https://outlook.office.com/bookwithme/user/480895b1333541dc94be634dd588fada@salesagent.cz/meetingtype/jwdxCRPBn0CvHccZ7eLwAg2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: 'inline-block',
-                backgroundColor: 'var(--accent)',
-                color: '#0B1320',
-                fontWeight: 700,
-                fontSize: '15px',
-                padding: '14px 32px',
-                borderRadius: '10px',
-                textDecoration: 'none',
-              }}
-            >
-              Domluvit hovor zdarma
-            </a>
-            <p style={{ marginTop: '16px', fontSize: '13px', color: 'var(--text-muted)' }}>
-              Víc o{' '}
-              <Link href="/cs/b2b-lead-generation" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
-                generování B2B leadů
-              </Link>
-              {' a '}
-              <Link href="/cs/automatizovane-osloveni" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
-                automatizovaném oslovení
-              </Link>
-              {' — dedikované stránky služby.'}.
-            </p>
-            <p style={{ marginTop: '10px', fontSize: '13px', color: 'var(--text-muted)' }}>
-              Zní to složitě nebo na to nemáte čas?{' '}
-              <Link href="/cs/vlastni-outbound" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
-                Postavíme a rozjedeme vám automatizaci obchodu na klíč →
-              </Link>
-            </p>
-          </div>
-
-          <style>{`
-            .faq-item { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
-            .faq-item + .faq-item { margin-top: 10px; }
-            .faq-item summary { list-style: none; cursor: pointer; padding: 16px 20px; font-weight: 600; font-size: 15px; display: flex; justify-content: space-between; align-items: center; }
-            .faq-item summary::-webkit-details-marker { display: none; }
-            .faq-item summary::after { content: '+'; font-size: 20px; font-weight: 400; color: var(--accent); flex-shrink: 0; margin-left: 12px; }
-            .faq-item[open] summary::after { content: '−'; }
-            .faq-item .faq-answer { padding: 0 20px 16px; font-size: 15px; line-height: 1.7; color: var(--text-muted); }
-          `}</style>
-
-          <section style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>
-            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '20px' }}>
-              Časté otázky
-            </h2>
-            <div>
-              {faqSchema.mainEntity.map((q, i) => (
-                <details key={i} className="faq-item">
-                  <summary>{q.name}</summary>
-                  <div className="faq-answer">{q.acceptedAnswer.text}</div>
-                </details>
-              ))}
-            </div>
           </section>
-
-          <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>
-            <p style={{ fontSize: '14px', fontWeight: 600, color: 'var(--text)', marginBottom: '12px' }}>Související články</p>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              <Link href="/blog/jak-rozjet-a-zautomatizovat-b2b-obchod" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
-                Jak rozjet a zautomatizovat B2B obchod — hlavní průvodce →
-              </Link>
-              <Link href="/blog/jak-personalizovat-cold-emaily-ai" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
-                Jak AI personalizuje cold emaily — bez šablon, bez proměnných →
-              </Link>
-              <Link href="/blog/ai-agent-pro-generovani-leadu" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
-                Generování B2B leadů v roce 2025: co funguje a co je mrtvé →
-              </Link>
-              <Link href="/blog/jak-oslovit-firmy-bez-databaze" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
-                Jak oslovit firmy bez databáze →
-              </Link>
-            </div>
-          </div>
-
-          <p style={{ marginTop: '16px' }}>
-            <Link href="/blog" style={{ color: 'var(--text-muted)', textDecoration: 'none', fontSize: '14px' }}>
-              ← Zpět na Blog
-            </Link>
-          </p>
-
+          <Link href="/blog" style={linkStyle}>← Zpět na blog</Link>
         </div>
       </div>
     </article>
@@ -433,17 +294,5 @@ export default function Page() {
 }
 
 function H2({ children }: { children: React.ReactNode }) {
-  return (
-    <h2 style={{
-      fontFamily: 'Space Grotesk, sans-serif',
-      fontSize: '22px',
-      fontWeight: 700,
-      letterSpacing: '-0.015em',
-      marginTop: '48px',
-      marginBottom: '16px',
-      color: 'var(--text)',
-    }}>
-      {children}
-    </h2>
-  )
+  return <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: 'clamp(23px, 3vw, 30px)', fontWeight: 700, marginTop: '28px', lineHeight: 1.3 }}>{children}</h2>
 }

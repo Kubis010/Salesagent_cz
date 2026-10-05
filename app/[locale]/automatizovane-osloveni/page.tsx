@@ -3,6 +3,14 @@ import type { Metadata } from 'next'
 const BOOKING_URL =
   'https://outlook.office.com/bookwithme/user/480895b1333541dc94be634dd588fada@salesagent.cz/meetingtype/jwdxCRPBn0CvHccZ7eLwAg2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile'
 
+const czechFaqs = [
+  { question: 'Co zahrnuje automatizace oslovení jako služba?', answer: 'Vybereme cílové firmy podle ICP, ověříme a doplníme data, připravíme personalizované zprávy a řídíme dohodnuté e-mailové a LinkedIn sekvence. Součástí je průběžná kontrola odpovědí, kvalifikace a předání kontextu vašemu obchodníkovi. Konkrétní rozsah schválíme před spuštěním.' },
+  { question: 'Kolik stojí nasazení a měsíční provoz?', answer: 'Nasazení začíná od 15 000 Kč jednorázově. Průběžné řízení outboundu začíná od 19 900 Kč měsíčně. Rozsah kanálů, objem dat a případné další náklady stanovíme v nabídce; nejde o cenu za garantovaný počet schůzek.' },
+  { question: 'Musíme automatizované oslovení obsluhovat sami?', answer: 'V řízeném modelu nasazení i průběžnou obsluhu zajišťuje SalesAgent.cz. Vy schvalujete cílovou skupinu a nabídku a váš obchodník přebírá relevantní konverzace a schůzky. Před spuštěním si určíme pravidla kvalifikace a předání.' },
+  { question: 'Co se stane, když firma odpoví nebo odmítne?', answer: 'Odpověď zastaví navazující automatickou sekvenci podle dohodnutých pravidel. Odmítnuté a odhlášené kontakty vyřadíme z dalšího oslovování. Zájemci se předávají obchodníkovi s historií komunikace; nejasné reakce posoudí člověk.' },
+  { question: 'Je možné oslovit každý veřejný B2B e-mail?', answer: 'Ne. Veřejná adresa ani firemní kontakt nejsou samy o sobě souhlasem s obchodními sděleními. Před spuštěním je potřeba ověřit podmínky podle zákona č. 480/2004 Sb. a pravidla zpracování osobních údajů. Samotný opt-out nebo oprávněný zájem podle GDPR nestačí.' },
+]
+
 export async function generateMetadata({
   params,
 }: {
@@ -12,10 +20,10 @@ export async function generateMetadata({
   const cs = locale === 'cs'
   return {
     title: cs
-      ? 'Automatizované oslovování — cold email i LinkedIn'
+      ? 'Automatizace oslovení: e-mail a LinkedIn'
       : 'B2B Outreach to Czech Companies — Email and LinkedIn',
     description: cs
-      ? 'Automatizujeme celý outbound proces: AI napíše personalizovaný cold email pro každou firmu zvlášť, odešle ho a zároveň kontaktuje rozhodovatele na LinkedIn. Bez šablon, bez databází.'
+      ? 'Automatizované B2B oslovení jako řízená služba: data, e-mail, LinkedIn a kvalifikace. Nasazení od 15 000 Kč, průběžné řízení od 19 900 Kč měsíčně.'
       : 'B2B outreach to Czech companies as part of your market entry: a personalised cold email for each company, sent alongside LinkedIn contact with decision-makers. Sales outsourcing, no local rep to hire.',
     alternates: {
       canonical: `https://salesagent.cz/${locale}/automatizovane-osloveni`,
@@ -31,19 +39,19 @@ export async function generateMetadata({
       url: `https://salesagent.cz/${locale}/automatizovane-osloveni`,
       siteName: 'SalesAgent.cz',
       title: cs
-        ? 'Automatizované oslovování — email i LinkedIn | SalesAgent.cz'
+        ? 'Automatizace oslovení: e-mail a LinkedIn | SalesAgent.cz'
         : 'Automated Outreach — Email and LinkedIn | SalesAgent.cz',
       description: cs
-        ? 'AI napíše unikátní email pro každou firmu a zároveň kontaktuje rozhodovatele na LinkedIn.'
+        ? 'Nasadíme a řídíme B2B outbound. Od vybraných firem přes personalizované oslovení po předání zájemců obchodníkovi.'
         : 'AI writes a unique email for each company and simultaneously contacts decision-makers on LinkedIn.',
     },
     twitter: {
       card: 'summary_large_image',
       title: cs
-        ? 'Automatizované oslovování — email i LinkedIn | SalesAgent.cz'
+        ? 'Automatizace oslovení: e-mail a LinkedIn | SalesAgent.cz'
         : 'Automated Outreach — Email and LinkedIn | SalesAgent.cz',
       description: cs
-        ? 'AI napíše unikátní email pro každou firmu a zároveň kontaktuje rozhodovatele na LinkedIn.'
+        ? 'Nasadíme a řídíme B2B outbound. Od vybraných firem přes personalizované oslovení po předání zájemců obchodníkovi.'
         : 'AI writes a unique email for each company and simultaneously contacts decision-makers on LinkedIn.',
     },
   }
@@ -73,6 +81,11 @@ export default async function AutomatizovaneOsloveniPage({
 
   return (
     <div style={{ paddingTop: '100px', paddingBottom: '80px', paddingLeft: '24px', paddingRight: '24px' }}>
+      {cs && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org', '@type': 'FAQPage',
+        '@id': 'https://salesagent.cz/cs/automatizovane-osloveni#faq', inLanguage: 'cs',
+        mainEntity: czechFaqs.map(({ question, answer }) => ({ '@type': 'Question', name: question, acceptedAnswer: { '@type': 'Answer', text: answer } })),
+      }) }} />}
       <div style={{ maxWidth: '900px', margin: '0 auto' }}>
 
         {/* Hero */}
@@ -94,17 +107,17 @@ export default async function AutomatizovaneOsloveniPage({
             }}
           >
             {cs
-              ? 'Automatizované oslovování — email i LinkedIn zároveň'
+              ? 'Automatizace oslovení: e-mail a LinkedIn jako služba'
               : 'B2B Outreach to Czech Companies — Email and LinkedIn'}
           </h1>
           <p style={{ fontSize: '18px', color: 'var(--text-muted)', lineHeight: '1.65', maxWidth: '620px', marginBottom: '16px' }}>
             {cs
-              ? 'Celý outbound proces na jednom místě. AI napíše personalizovaný cold email pro každou firmu zvlášť — na základě toho, co přečte na jejich webu — a zároveň osloví rozhodovatele na LinkedIn.'
+              ? 'Najdeme správné firmy, připravíme personalizované oslovení a průběžně řídíme outbound. Propojíme data, e-mail, LinkedIn a kvalifikaci tak, aby váš obchodník dostal relevantní konverzace a kontext pro schůzku.'
               : 'The full outbound process in one place. AI writes a personalised cold email for each company individually — based on what it reads on their website — and simultaneously reaches out to decision-makers on LinkedIn.'}
           </p>
           <p style={{ fontSize: '17px', color: 'var(--text-muted)', lineHeight: '1.65', maxWidth: '620px' }}>
             {cs
-              ? 'Výsledkem je dvojitý dotek: email do schránky a zpráva na LinkedIn. Firma vás vidí na dvou místech, aniž byste museli kliknout jediné tlačítko.'
+              ? 'Automatizované oslovení nasadíme i obsluhujeme za vás. Vy schválíte cílovou skupinu a nabídku; obchodník se soustředí na zájemce, jednání a uzavření zakázky.'
               : 'The result is a double touch: email in the inbox and a message on LinkedIn. The company sees you in two places without you having to click a single button.'}
           </p>
           <p style={{ fontSize: '16px', color: 'var(--text-muted)', lineHeight: '1.65', maxWidth: '620px', marginTop: '14px' }}>
@@ -133,7 +146,7 @@ export default async function AutomatizovaneOsloveniPage({
           </h2>
           <p style={{ fontSize: '16px', color: 'var(--text-muted)', lineHeight: '1.7', maxWidth: '640px', marginBottom: '32px' }}>
             {cs
-              ? 'Klasické automatizace vkládají jméno firmy do šablony. My to neděláme. AI přečte web každé firmy, pochopí, co dělají, a napíše email na míru. Příjemce pozná, že mu email byl napsán — ne vygenerován.'
+              ? 'Samotné jméno firmy ve zprávě nestačí. AI připraví návrh z ověřených informací na webu firmy a naváže jej na vaši nabídku. Před spuštěním kontrolujeme argumentaci a ukázky zpráv. Neověřená tvrzení o firmě do oslovení nepatří.'
               : 'Classic automations insert a company name into a template. We don\'t do that. AI reads each company\'s website, understands what they do, and writes a tailored email. The recipient can tell the email was written for them — not generated from a slot.'}
           </p>
 
@@ -298,10 +311,49 @@ export default async function AutomatizovaneOsloveniPage({
           </h2>
           <p style={{ fontSize: '16px', color: 'var(--text-muted)', lineHeight: '1.7', margin: 0 }}>
             {cs
-              ? 'SalesAgent zajišťuje výhradně outbound — vyhledávání, personalizaci a odesílání. Odpovědi od zájemců přijdou do vaší emailové schránky nebo LinkedIn zpráv. Vy reagujete osobně a domluvíte schůzku nebo upřesníte poptávku. Neprodáváte přes robota — robota máte na generování příležitostí.'
+              ? 'Zajistíme outbound a třídění reakcí podle dohodnutých pravidel. Zájemce předáme vašemu obchodníkovi s historií komunikace a dalším krokem. Obchodník ověří potřebu, vede schůzku a uzavírá obchod. Nejasné odpovědi posoudí člověk; odmítnutí a odhlášení zastavují další oslovení.'
               : 'SalesAgent handles exclusively the outbound — finding, personalising and sending. Replies from interested prospects land in your email inbox or LinkedIn messages. You respond personally and arrange a meeting or clarify the enquiry. You don\'t sell through a robot — you use the robot to generate opportunities.'}
           </p>
         </div>
+
+        {cs && (
+          <>
+            <section style={{ marginBottom: '48px', fontSize: '16px', lineHeight: 1.75, color: 'var(--text-muted)' }}>
+              <h2 style={{ fontSize: '26px', color: 'var(--text)', marginBottom: '16px', fontWeight: 700 }}>Co nasadíme a co řídíme každý měsíc</h2>
+              <p style={{ marginBottom: '16px' }}>Služba je vhodná pro B2B firmy s konkrétní nabídkou a obchodníkem, který převezme zájemce. Na začátku společně vybereme segment, relevantní role a vylučující podmínky. Stávající klienti, odmítnuté kontakty a otevřená jednání mají vlastní pravidla, aby se oslovování nepřekrývalo.</p>
+              <ol style={{ paddingLeft: '24px', marginBottom: '20px' }}>
+                <li><strong>Výběr a ověření firem:</strong> hledání podle ICP, doplnění kontextu z webů a odstranění duplicit.</li>
+                <li><strong>Příprava oslovení:</strong> návrh argumentu, e-mailových a LinkedIn zpráv a kontrola prvního vzorku.</li>
+                <li><strong>Spuštění pilotu:</strong> napojení dohodnutých účtů, schválené sekvence a stop podmínky.</li>
+                <li><strong>Kvalifikace:</strong> rozlišení zájmu, dotazu, pozdějšího termínu a odmítnutí; volitelně zapojení Prezentéru před schůzkou.</li>
+                <li><strong>Předání a ladění:</strong> kontext pro obchodníka, zpětná vazba a úpravy cílení podle relevantních odpovědí.</li>
+              </ol>
+              <p style={{ marginBottom: '16px' }}>Průběžné řízení zahrnuje kontrolu dat, textů, reakcí a návaznosti kanálů v dohodnutém rozsahu. Odpověď musí zastavit navazující automatické zprávy. U LinkedInu respektujeme podmínky platformy; žádný nástroj ani denní limit nezaručují, že účet nebude omezen.</p>
+              <p>Měřítkem nejsou odeslané zprávy. Sledujeme, zda firmy odpovídají cílení, jaké potřeby popisují a které příležitosti obchodník přijme. Konkrétní výsledky závisí na segmentu, nabídce a návazné práci týmu.</p>
+            </section>
+            <section style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '14px', padding: '28px', marginBottom: '48px', lineHeight: 1.75 }}>
+              <h2 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '12px' }}>Cena: jednorázové nasazení a průběžné řízení</h2>
+              <p><strong>Nasazení od 15 000 Kč jednorázově</strong> zahrnuje přípravu cílení, napojení účtů a nastavení dohodnutého postupu.</p>
+              <p style={{ marginTop: '12px' }}><strong>Řízení od 19 900 Kč měsíčně</strong> zahrnuje průběžnou obsluhu a ladění outboundu. Rozsah dat, kanálů a případných dalších nákladů stanovíme v nabídce. Cena není zárukou počtu schůzek.</p>
+              <p style={{ marginTop: '16px' }}>Podrobnosti najdete v <a href="/cs/pricing" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>ceníku nasazení a řízení</a>. Pro posouzení vašeho segmentu nás <a href="/cs/contact" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>kontaktujte</a>.</p>
+            </section>
+            <section style={{ marginBottom: '48px', fontSize: '16px', lineHeight: 1.75, color: 'var(--text-muted)' }}>
+              <h2 style={{ fontSize: '24px', color: 'var(--text)', marginBottom: '16px', fontWeight: 700 }}>Pravidla dat a komunikace před spuštěním</h2>
+              <p style={{ marginBottom: '16px' }}>Před rozesílkou ověříme zdroje kontaktů, oprávnění jejich použití a pravidla obchodních sdělení. Veřejný B2B e-mail ani personalizovaná zpráva samy o sobě souhlas nenahrazují. Právní titul pro zpracování osobních údajů je odlišný od oprávnění zaslat obchodní e-mail.</p>
+              <p style={{ marginBottom: '16px' }}>Přehled podmínek najdete v článku <a href="/blog/gdpr-a-cold-email" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>GDPR a cold e-mail</a>. Dohodneme evidenci odmítnutí, přístup k datům a odpovědnosti klienta i dodavatele. Nejasný právní případ patří k odbornému posouzení před spuštěním.</p>
+              <p>Celý postup od ICP po obchodníka vysvětluje průvodce <a href="/blog/jak-zavest-automatizaci-prodeje-ve-firme" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>automatizace prodeje</a>. SalesAgent se soustředí na outbound; navazujeme na nástroje, které váš tým už používá.</p>
+            </section>
+            <section id="faq" style={{ marginBottom: '48px' }}>
+              <h2 style={{ fontSize: '26px', fontWeight: 700, marginBottom: '20px' }}>Časté otázky k automatizovanému oslovení</h2>
+              {czechFaqs.map(({ question, answer }) => (
+                <details key={question} style={{ border: '1px solid var(--border)', borderRadius: '10px', padding: '16px 20px', marginBottom: '12px' }}>
+                  <summary style={{ cursor: 'pointer', fontWeight: 700 }}>{question}</summary>
+                  <p style={{ marginTop: '12px', color: 'var(--text-muted)', lineHeight: 1.7 }}>{answer}</p>
+                </details>
+              ))}
+            </section>
+          </>
+        )}
 
         {/* CTA */}
         <div

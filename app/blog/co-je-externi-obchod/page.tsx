@@ -258,6 +258,9 @@ export default function CoJeExterniObchodPage() {
               </Link>
             </div>
           </nav>
+          <p style={{ maxWidth: '760px', margin: '24px auto 0', padding: '0 24px', fontSize: '15px', lineHeight: 1.7 }}>
+            Navazující služba: <Link href="/cs/automatizovane-osloveni" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>automatizované oslovení</Link>.
+          </p>
         </div>
       </main>
     </>
