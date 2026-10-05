@@ -6,12 +6,13 @@ import Footer from '@/components/layout/Footer'
 
 export default function RegisterLayout({ children }: { children: React.ReactNode }) {
   const t = getTranslations('en')
+  const currentYear = new Date().getFullYear()
   return (
     <html lang="en">
       <body>
         <Header locale="en" t={t} />
         <main>{children}</main>
-        <Footer locale="en" t={t} />
+        <Footer locale="en" t={t} initialYear={currentYear} />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-442V6JSVVN"
           strategy="afterInteractive"

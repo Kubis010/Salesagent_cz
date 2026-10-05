@@ -33,6 +33,7 @@ const organizationSchema = {
 
 export default function BlogLayout({ children }: { children: React.ReactNode }) {
   const t = getTranslations('cs')
+  const currentYear = new Date().getFullYear()
   return (
     <html lang="cs">
       <body>
@@ -42,7 +43,7 @@ export default function BlogLayout({ children }: { children: React.ReactNode }) 
         />
         <Header locale="cs" t={t} />
         <main>{children}</main>
-        <Footer locale="cs" t={t} />
+        <Footer locale="cs" t={t} initialYear={currentYear} />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-442V6JSVVN"
           strategy="afterInteractive"
