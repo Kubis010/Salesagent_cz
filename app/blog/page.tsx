@@ -21,6 +21,14 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    href: '/blog/nastroje-b2b-outbound-2026',
+    lang: 'CS',
+    title: 'Nástroje pro B2B outbound, které používáme v roce 2026',
+    date: '5. října 2026',
+    description: 'Salesbot s AI, scraperem a CRM, interaktivní Prezentér a Hunter Analytics. Jak nástroje používáme a kolik stojí podle výrobců.',
+    image: '/blog/nastroje-automatizace-prodeje-2026.jpg',
+  },
+  {
     href: '/blog/b2b-kontakty-ceske-firmy',
     lang: 'CS',
     title: 'Kde vzít B2B kontakty na české firmy — legálně, kvalitně a bez duplicit',

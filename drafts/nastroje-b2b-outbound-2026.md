@@ -1,8 +1,8 @@
 # Nástroje pro B2B outbound, které používáme v roce 2026
 
-Stav: redakční draft, nikoli publikovaná stránka. Text a metadata jsou v `nastroje-b2b-outbound-2026.tsx`, dodaný obrázek v `nastroje-automatizace-prodeje-2026.jpg`.
+Stav: samostatnou publikaci uživatel výslovně schválil 5. října 2026 navzdory nálezu níže. Text je nyní v `app/blog/nastroje-b2b-outbound-2026/page.tsx`, obrázek v `public/blog/nastroje-automatizace-prodeje-2026.jpg`. Nová URL je `/blog/nastroje-b2b-outbound-2026`; stará draftová URL nebyla publikována, proto nevzniká 301.
 
-## Důvod pozastavení publikace
+## Historický důvod pozastavení před výslovným schválením
 
 Zadání z 5. října 2026 dovoluje novou URL pouze tehdy, pokud související nástrojové dotazy nemají existující stránku přibližně do pozice 20.
 
@@ -32,4 +32,4 @@ Nízký počet zobrazení není důkaz stabilního umístění. Je ale pozitivn�
 - Claude/GPT zůstávají v potvrzeném seznamu; Smartlead/Instantly nejsou přidány bez potvrzení využití v popisovaném procesu.
 - Modelový příklad není prezentován jako skutečný výsledek klienta. Chybí ověřená případová studie a rozpočet jednotlivých licencí; nevymýšlíme je.
 
-Další krok: rozhodnout, zda obsah připojit k existující stránce, nebo výslovně schválit samostatný úžeji zaměřený článek navzdory nálezu. Do chráněných stránek bez nového zadání nezasahovat.
+Nové rozhodnutí: uživatel schválil samostatný článek s užším zaměřením na nástroje a jeden nový odkaz z pilíře a z `/blog/automatizace-prodeje-jak-ai-meni-b2b-osloveni`. Titulky, H1 a úvody těchto stránek zůstávají beze změny. Dřívější GSC nález zůstává zapsaný výše pro dohledatelnost rozhodnutí.

@@ -276,6 +276,8 @@ export default function Page() {
             umí převzít a dotáhnout.
           </p>
 
+          <p>Konkrétní software a jeho role ve stacku popisujeme v článku <Link href="/blog/nastroje-b2b-outbound-2026" style={linkStyle}>nástroje pro B2B outbound, které používáme v roce 2026</Link>.</p>
+
           <H2>Nechcete outbound sestavovat a řídit sami?</H2>
           <p>
             SalesAgent.cz nasadí a průběžně řídí vyhledávání firem, práci s daty, oslovení a kvalifikaci

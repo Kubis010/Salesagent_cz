@@ -317,6 +317,9 @@ export default function Page() {
           <p style={{ maxWidth: '760px', margin: '24px auto 0', padding: '0 24px', fontSize: '15px', lineHeight: 1.7 }}>
             Navazující průvodce: <Link href="/blog/jak-zavest-automatizaci-prodeje-ve-firme" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>automatizace prodeje</Link>.
           </p>
+          <p style={{ maxWidth: '760px', margin: '24px auto 0', padding: '0 24px', fontSize: '15px', lineHeight: 1.7 }}>
+            Konkrétní stack: <Link href="/blog/nastroje-b2b-outbound-2026" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>nástroje pro B2B outbound, které používáme v roce 2026</Link>.
+          </p>
     </article>
   )
 }
