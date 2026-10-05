@@ -1,16 +1,22 @@
 'use client'
 
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
 import type { Locale, Translations } from '@/lib/i18n'
 
 interface FooterProps {
   locale: Locale
   t: Translations
+  initialYear: number
 }
 
-export default function Footer({ locale, t }: FooterProps) {
+export default function Footer({ locale, t, initialYear }: FooterProps) {
   const base = `/${locale}`
-  const year = new Date().getFullYear()
+  const [year, setYear] = useState(initialYear)
+
+  useEffect(() => {
+    setYear(new Date().getFullYear())
+  }, [])
 
   return (
     <footer

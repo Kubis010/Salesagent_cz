@@ -164,6 +164,7 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params
   const t: Translations = getTranslations(locale as Locale)
+  const currentYear = new Date().getFullYear()
 
   return (
     <html lang={locale}>
@@ -179,7 +180,7 @@ export default async function LocaleLayout({
         />
         <Header locale={locale as Locale} t={t} />
         <main>{children}</main>
-        <Footer locale={locale as Locale} t={t} />
+        <Footer locale={locale as Locale} t={t} initialYear={currentYear} />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-442V6JSVVN"
           strategy="afterInteractive"
