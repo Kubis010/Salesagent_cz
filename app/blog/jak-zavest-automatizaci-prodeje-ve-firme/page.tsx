@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 const URL = 'https://salesagent.cz/blog/jak-zavest-automatizaci-prodeje-ve-firme'
-const TITLE = 'Automatizace prodeje: průvodce outboundem | SalesAgent.cz'
+const TITLE = 'Automatizace prodeje a obchodu: outbound | SalesAgent.cz'
 const DESCRIPTION = 'Co automatizovat v B2B outboundu: ICP, data, oslovení, kvalifikace a předání obchodníkovi. Postup zavedení, cena řízené služby a pravidla pro e-mail.'
 const linkStyle = { color: 'var(--accent)', textDecoration: 'underline' } as const
 
@@ -43,7 +43,7 @@ const faqs = [
 
 const articleSchema = {
   '@context': 'https://schema.org', '@type': 'BlogPosting', '@id': URL + '#article',
-  headline: 'Automatizace prodeje: co automatizovat v outboundu a co ne',
+  headline: 'Automatizace prodeje a obchodu: co automatizovat v outboundu a co ne',
   description: DESCRIPTION, image: 'https://salesagent.cz/blog/automatizace-prodeje.jpg',
   datePublished: '2025-04-10', dateModified: '2026-10-05', inLanguage: 'cs',
   author: { '@type': 'Person', name: 'Petr Kubíček', url: 'https://salesagent.cz/cs/about' },
@@ -68,7 +68,7 @@ export default function Page() {
         </p>
         <img src="/blog/automatizace-prodeje.jpg" alt="Automatizace prodeje v B2B outboundu" style={{ width: '100%', borderRadius: '14px', marginBottom: '32px', display: 'block' }} />
         <h1 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: 700, letterSpacing: '-0.025em', lineHeight: 1.2, marginBottom: '16px' }}>
-          Automatizace prodeje: co automatizovat v outboundu a co ne
+          Automatizace prodeje a obchodu: co automatizovat v outboundu a co ne
         </h1>
         <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '32px' }}>
           Petr Kubíček · Publikováno 10. dubna 2025 · Aktualizováno 5. října 2026
@@ -201,6 +201,18 @@ export default function Page() {
             potřeba, nesprávná role nebo nepřesné shrnutí. Tyto důvody se vracejí do cílení a kvalifikace.
             Bez této zpětné vazby se seznam rozrůstá, ale obchodní výsledek se nezlepšuje.
           </p>
+
+          <H2>Co nastavíme za vás</H2>
+          <p>SalesAgent převezme přípravu a řízení outboundu v dohodnutém rozsahu. Váš tým schválí nabídku a cílení; váš obchodník přebírá relevantní zájemce a řeší samotný obchod.</p>
+          <ol style={{ paddingLeft: '24px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            <li><strong>Cílení a data:</strong> vymezíme segment, rozhodovací role a vylučující podmínky, připravíme a ověříme první seznam firem.</li>
+            <li><strong>Zprávy a kanály:</strong> připravíme argumentaci, e-mailové a LinkedIn scénáře a schválíme s vámi vzorek oslovení.</li>
+            <li><strong>Technické nasazení:</strong> napojíme dohodnuté účty, nastavíme limity, evidenci odmítnutí a zastavení sekvence při odpovědi.</li>
+            <li><strong>Kvalifikaci a předání:</strong> domluvíme, co je relevantní příležitost, kdo ji převezme a jaký kontext potřebuje; podle nabídky zapojíme produktové demo.</li>
+            <li><strong>Průběžné řízení:</strong> kontrolujeme reakce, předáváme kontext obchodníkovi a ladíme cílení i zprávy podle výsledků pilotu.</li>
+          </ol>
+          <p><strong>Nasazení je v řádu dní po schválení podkladů a zpřístupnění účtů.</strong> Přesný termín potvrdíme podle rozsahu integrací. Spuštění systému není totéž jako získání první schůzky; výsledek závisí na segmentu, nabídce a reakci zákazníků.</p>
+          <p>Nasazení začíná <strong>od 15 000 Kč jednorázově</strong>, řízený provoz <strong>od 19 900 Kč měsíčně</strong>. Rozsah a případné další náklady stanovíme v nabídce. Podrobnosti a odpovědi na praktické otázky najdete u služby <Link href="/cs/automatizovane-osloveni" style={linkStyle}>automatizované oslovení</Link> a v FAQ níže. <Link href="/cs/contact" style={linkStyle}>Kontaktujte nás</Link> pro návrh pilotu.</p>
 
           <H2>Kolik stojí automatizace prodeje oproti obchodníkovi?</H2>
           <p>

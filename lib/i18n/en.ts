@@ -165,7 +165,7 @@ export const en: Translations = {
   pricing: {
     title: 'External Sales Representation in the Czech Republic',
     subtitle:
-      'Planning a Czech market entry? Test demand with an external sales team. Start with a fixed 2–3 month trial from €1,900 per month, then extend the representation if the results justify it.',
+      'Planning a Czech market entry? Start with Market testing from €1,500 per month (1/2 time) for a fixed 2–3 month trial. Then extend the representation if the results justify it.',
     setup: {
       label: '2–3 month Czech market entry trial',
       description:
@@ -173,9 +173,9 @@ export const en: Translations = {
     },
     tiers: [
       {
-        name: 'Czech market entry trial',
-        monthlyLabel: 'per month · 2–3 month initial term',
-        price: 'from €1,900',
+        name: 'Market testing',
+        monthlyLabel: 'per month · 1/2 time (half-time) · 2–3 month initial term',
+        price: 'from €1,500',
         priceNote: 'Start here',
         features: [
           'Target list built around your ideal customer profile',
@@ -240,7 +240,7 @@ export const en: Translations = {
       },
       {
         q: 'How much does the trial cost?',
-        a: 'The initial trial starts at €1,900 per month for 2–3 months. The final scope depends on your segment, language, number of prospects and channels; we confirm it before starting.',
+        a: 'Market testing starts at €1,500 per month for a 2–3 month trial with 1/2 time (half-time) capacity. Ongoing representation starts at €1,900 per month. The final scope depends on your segment, language, number of prospects and channels; we confirm it before starting.',
       },
       {
         q: 'Is the outreach GDPR-compliant?',

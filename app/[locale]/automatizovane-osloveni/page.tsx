@@ -319,7 +319,7 @@ export default async function AutomatizovaneOsloveniPage({
         {cs && (
           <>
             <section style={{ marginBottom: '48px', fontSize: '16px', lineHeight: 1.75, color: 'var(--text-muted)' }}>
-              <h2 style={{ fontSize: '26px', color: 'var(--text)', marginBottom: '16px', fontWeight: 700 }}>Co nasadíme a co řídíme každý měsíc</h2>
+              <h2 style={{ fontSize: '26px', color: 'var(--text)', marginBottom: '16px', fontWeight: 700 }}>Co nastavíme za vás</h2>
               <p style={{ marginBottom: '16px' }}>Služba je vhodná pro B2B firmy s konkrétní nabídkou a obchodníkem, který převezme zájemce. Na začátku společně vybereme segment, relevantní role a vylučující podmínky. Stávající klienti, odmítnuté kontakty a otevřená jednání mají vlastní pravidla, aby se oslovování nepřekrývalo.</p>
               <ol style={{ paddingLeft: '24px', marginBottom: '20px' }}>
                 <li><strong>Výběr a ověření firem:</strong> hledání podle ICP, doplnění kontextu z webů a odstranění duplicit.</li>
@@ -328,6 +328,7 @@ export default async function AutomatizovaneOsloveniPage({
                 <li><strong>Kvalifikace:</strong> rozlišení zájmu, dotazu, pozdějšího termínu a odmítnutí; volitelně zapojení Prezentéru před schůzkou.</li>
                 <li><strong>Předání a ladění:</strong> kontext pro obchodníka, zpětná vazba a úpravy cílení podle relevantních odpovědí.</li>
               </ol>
+              <p style={{ marginBottom: '16px' }}><strong>Nasazení je v řádu dní po schválení podkladů a zpřístupnění účtů.</strong> Přesný termín potvrdíme podle rozsahu integrací. Termín spuštění není zárukou termínu první schůzky.</p>
               <p style={{ marginBottom: '16px' }}>Průběžné řízení zahrnuje kontrolu dat, textů, reakcí a návaznosti kanálů v dohodnutém rozsahu. Odpověď musí zastavit navazující automatické zprávy. U LinkedInu respektujeme podmínky platformy; žádný nástroj ani denní limit nezaručují, že účet nebude omezen.</p>
               <p>Měřítkem nejsou odeslané zprávy. Sledujeme, zda firmy odpovídají cílení, jaké potřeby popisují a které příležitosti obchodník přijme. Konkrétní výsledky závisí na segmentu, nabídce a návazné práci týmu.</p>
             </section>

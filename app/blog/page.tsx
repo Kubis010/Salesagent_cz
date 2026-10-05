@@ -76,7 +76,7 @@ const posts = [
   {
     href: '/blog/jak-zavest-automatizaci-prodeje-ve-firme',
     lang: 'CS',
-    title: 'Automatizace prodeje: co automatizovat v outboundu a co ne',
+    title: 'Automatizace prodeje a obchodu: co automatizovat v outboundu a co ne',
     date: '10. dubna 2025 · Aktualizováno 5. října 2026',
     description:
       'Průvodce od ICP a ověřených dat přes oslovení a kvalifikaci po předání obchodníkovi. Cena řízeného outboundu, měření pilotu a pravidla pro e-mail.',

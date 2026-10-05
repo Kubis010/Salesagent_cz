@@ -13,7 +13,7 @@ export async function generateMetadata({
     title: cs ? 'Ceník — řízená automatizace obchodu' : 'Pricing — Czech Market Entry & Sales Representation',
     description: cs
       ? 'Nasazení na klíč od 15 000 Kč jednorázově, pak řízená automatizace od 19 900 Kč měsíčně — systém jedeme za vás, váš obchodník zavírá připravené schůzky.'
-      : 'Test the Czech market with an external sales team. 2–3 month trial from €1,900/month, extend only if the results justify it.',
+      : 'Czech Market testing from €1,500/month with 1/2 time (half-time) capacity. Start with a 2–3 month trial, then agree continuation based on results.',
     alternates: {
       canonical: `https://salesagent.cz/${locale}/pricing`,
       languages: {
@@ -30,14 +30,14 @@ export async function generateMetadata({
       title: cs ? 'Ceník — řízená automatizace obchodu | SalesAgent.cz' : 'Pricing — Czech Market Entry & Sales Representation | SalesAgent.cz',
       description: cs
         ? 'Nasazení od 15 000 Kč, řízená automatizace od 19 900 Kč měsíčně.'
-        : 'Czech market entry support with an external sales team: a 2–3 month trial from €1,900 per month.',
+        : 'Czech market entry: Market testing from €1,500 per month (1/2 time), with a fixed 2–3 month trial.',
     },
     twitter: {
       card: 'summary_large_image',
       title: cs ? 'Ceník — řízená automatizace obchodu | SalesAgent.cz' : 'Pricing — Czech Market Entry & Sales Representation | SalesAgent.cz',
       description: cs
         ? 'Nasazení od 15 000 Kč, řízená automatizace od 19 900 Kč měsíčně.'
-        : 'Test demand during your Czech market entry with an external sales team from €1,900 per month.',
+        : 'Market testing for your Czech market entry from €1,500 per month (1/2 time). A 2–3 month trial before continuation.',
     },
   }
 }
@@ -74,9 +74,9 @@ export default async function PricingPage({
         inLanguage: 'en',
         offers: {
           '@type': 'Offer',
-          price: '1900',
+          price: '1500',
           priceCurrency: 'EUR',
-          description: 'Monthly fee during the initial 2–3 month trial; continuation is agreed after the trial.',
+          description: 'Market testing from €1,500 per month with 1/2 time (half-time) capacity during the initial 2–3 month trial. Ongoing representation from €1,900 per month; continuation and scope are agreed after the trial.',
           url: 'https://salesagent.cz/en/pricing',
         },
       }
