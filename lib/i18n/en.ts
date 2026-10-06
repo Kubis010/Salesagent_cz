@@ -14,7 +14,7 @@ export const en: Translations = {
     badge: 'Czech market entry · external sales representation',
     headline: 'We start your sales\nin the Czech Republic.',
     subheadline:
-      'Entering the Czech or Slovak market without an office or a local hire? We act as your outsourced sales team: we find the right companies, reach decision-makers by email and LinkedIn in your name, run the follow-ups and book qualified meetings straight into your calendar. Fixed-price trial, no Czech entity needed.',
+      'We are your external B2B sales team in the Czech Republic and Slovakia. Our people manage prospecting, email and LinkedIn outreach and qualification, supported by AI tools, and book first meetings in your calendar. Market testing starts at €1,500/month with 1/2 time (half-time) capacity for a 2–3 month trial. No Czech entity or local hire needed.',
     cta: 'Free consultation',
     ctaSub: 'or see how it works',
     pipelineLabel: 'Your Czech sales, running',
@@ -165,7 +165,7 @@ export const en: Translations = {
   pricing: {
     title: 'External Sales Representation in the Czech Republic',
     subtitle:
-      'Planning a Czech market entry? Start with Market testing from €1,500 per month (1/2 time) for a fixed 2–3 month trial. Then extend the representation if the results justify it.',
+      'Planning a Czech market entry? Our people manage prospecting, outreach and qualification, supported by AI tools. Start with Market testing from €1,500 per month (1/2 time) for a fixed 2–3 month trial. Then extend the representation if the results justify it.',
     setup: {
       label: '2–3 month Czech market entry trial',
       description:

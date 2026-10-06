@@ -26,7 +26,7 @@ export async function generateMetadata({
     },
     description: isCz
       ? 'Najdeme, oslovíme a zahřejeme firmy za vás — e-mailem, na LinkedInu i reklamou. Vašemu obchodníkovi přistane připravená schůzka. Nasazení od 15 000 Kč, řízení od 19 900 Kč měsíčně.'
-      : 'Enter the Czech and Slovak market without an entity or a local hire. We act as your external sales team: target list, email and LinkedIn outreach, meetings booked in your calendar. Fixed-price trial from €1,900/month.',
+      : 'Your external B2B sales team in CZ/SK. People-led outreach, supported by AI. Market testing from €1,500/month (half-time), with a 2–3 month trial.',
     keywords: isCz
       ? ['automatizace obchodu', 'řízený outbound', 'B2B lead generation', 'schůzky se zájemci', 'LinkedIn oslovování', 'AI prospecting', 'cold email automatizace', 'B2B prospecting']
       : ['czech market entry', 'external sales representation czech republic', 'outsourced sales czech republic', 'sales agent czech republic', 'b2b lead generation czech republic', 'czech and slovak market entry'],
@@ -40,13 +40,13 @@ export async function generateMetadata({
         : 'SalesAgent.cz — Czech Market Entry & Outsourced Sales Representation',
       description: isCz
         ? 'Řízená automatizace obchodu: nasazení od 15 000 Kč, řízení od 19 900 Kč měsíčně. Vašemu obchodníkovi chodí schůzky se zájemci.'
-        : 'Your external sales team in the Czech Republic and Slovakia. Fixed-price trial from €1,900/month, no entity needed.',
+        : 'Your external B2B sales team in CZ/SK. People-led outreach, supported by AI. Market testing from €1,500/month (half-time), with a 2–3 month trial.',
       images: [
         {
           url: 'https://salesagent.cz/og-image.jpg',
           width: 1376,
           height: 768,
-          alt: isCz ? 'SalesAgent.cz — AI obchodní zástupce' : 'SalesAgent.cz — AI Sales Agent',
+          alt: isCz ? 'SalesAgent.cz — AI obchodní zástupce' : 'SalesAgent.cz — External B2B sales team in the Czech Republic',
         },
       ],
     },
@@ -76,7 +76,7 @@ export async function generateMetadata({
         : 'SalesAgent.cz — Czech Market Entry & Outsourced Sales Representation',
       description: isCz
         ? 'Řízená automatizace obchodu: nasazení od 15 000 Kč, řízení od 19 900 Kč měsíčně. Vašemu obchodníkovi chodí schůzky se zájemci.'
-        : 'Your external sales team in the Czech Republic and Slovakia. Fixed-price trial from €1,900/month, no entity needed.',
+        : 'Your external B2B sales team in CZ/SK. People-led outreach, supported by AI. Market testing from €1,500/month (half-time), with a 2–3 month trial.',
       images: ['https://salesagent.cz/og-image.jpg'],
     },
     other: {
@@ -116,7 +116,7 @@ function getServiceSchema(isCzech: boolean) {
     serviceType: isCzech ? 'Automatizace B2B obchodu' : 'Outsourced B2B sales representation and market entry',
     description: isCzech
       ? 'Nasadíme a řídíme automatizaci B2B oslovování: vyhledání firem, e-mail a LinkedIn outreach, zahřátí a předání schůzek se zájemci vašemu obchodníkovi.'
-      : 'We act as the external sales team of foreign companies entering the Czech Republic and Slovakia: we build the target list, contact decision-makers by email and LinkedIn in the client\'s name, run follow-ups and book qualified meetings. Fixed-price 2–3 month trial, no local entity or hire required.',
+      : 'We act as the external B2B sales team of foreign companies entering the Czech Republic and Slovakia. Our people manage prospecting, outreach and qualification, supported by AI tools, and book first meetings in the client\'s calendar. Market testing starts at €1,500 per month with half-time capacity for a fixed 2–3 month trial. No local entity or hire is required; continuation is agreed after reviewing results.',
     inLanguage: isCzech ? 'cs' : 'en',
     offers: isCzech
       ? [
@@ -140,10 +140,18 @@ function getServiceSchema(isCzech: boolean) {
       : [
           {
             '@type': 'Offer',
-            name: 'Czech market entry trial',
+            name: 'Market testing (half-time)',
+            price: '1500',
+            priceCurrency: 'EUR',
+            description: 'Market testing from €1,500 per month with 1/2 time (half-time) capacity for a fixed 2–3 month trial. A people-led external sales team supported by AI tools.',
+            url: 'https://salesagent.cz/en/pricing',
+          },
+          {
+            '@type': 'Offer',
+            name: 'Ongoing representation',
             price: '1900',
             priceCurrency: 'EUR',
-            description: 'Monthly fee for a 2–3 month fixed-price external sales trial in the Czech Republic.',
+            description: 'Ongoing sales representation from €1,900 per month after the trial. Continuation and scope are agreed based on results.',
             url: 'https://salesagent.cz/en/pricing',
           },
         ],

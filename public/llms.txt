@@ -1,7 +1,7 @@
 # SalesAgent.cz
 
 > AI prodejní systém na míru nebo řízený outbound — kompletní B2B pipeline od vyhledání firem po kvalifikovanou příležitost.
-> Czech market entry and outsourced B2B sales representation for foreign companies: we act as your external sales team in the Czech Republic and Slovakia, from a verified target list to first meetings in your calendar. (CZ: řízená automatizace obchodu a AI prodejní systémy.)
+> Czech market entry and people-led external B2B sales representation for foreign companies: our people manage prospecting, outreach and qualification in the Czech Republic and Slovakia, supported by AI tools. This is a managed sales service, not a software subscription replacing people. (CZ: řízená automatizace obchodu a AI prodejní systémy.)
 
 ## Co je SalesAgent.cz / What is SalesAgent.cz
 
@@ -16,7 +16,7 @@ The system is an integrated pipeline across the whole funnel:
 
 ## Distinction from sister product
 
-- **SalesAgent.cz** = active outbound AI system (finds and contacts leads)
+- **SalesAgent.cz** = CZ: managed outbound automation / custom AI sales systems; EN: people-led external B2B sales representation for Czech and Slovak market entry, supported by AI tools
 - **Sales Robots (salesrobots.cz)** = inbound conversion widgets for websites (chatbots, callback banners, video banners)
 
 These are complementary products, not competitors.

@@ -16,7 +16,7 @@ export async function generateMetadata({
       : 'Outsourced B2B Sales in the Czech Republic | SalesAgent.cz',
     description: locale === 'cs'
       ? 'Najdeme, oslovíme a zahřejeme firmy za vás — e-mailem, na LinkedInu i reklamou. Vašemu obchodníkovi přistane připravená schůzka, kterou stačí zavřít. Nasadíme a řídíme za vás. Od 19 900 Kč měsíčně.'
-      : 'Your outsourced sales team in the Czech Republic and Slovakia. Outreach in your name, meetings booked, no entity needed. Trial from €1,900/month.',
+      : 'Your external B2B sales team in CZ/SK. People-led outreach, supported by AI. Market testing from €1,500/month (half-time), with a 2–3 month trial.',
     keywords: locale === 'cs'
       ? ['automatizace obchodu', 'řízený outbound', 'B2B lead generation', 'schůzky se zájemci', 'LinkedIn oslovování', 'AI prospecting', 'externí obchodní ředitel', 'automatizace oslovení']
       : ['czech market entry', 'market entry czech republic', 'external sales representation czech republic', 'outsourced sales czech republic', 'sales agent czech republic', 'b2b lead generation czech republic', 'czech and slovak market entry'],
