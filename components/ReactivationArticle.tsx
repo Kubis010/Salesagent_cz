@@ -11,6 +11,7 @@ type Block =
   | { t: 'tpl'; title: string; text: string }
   | { t: 'box'; title: string; text: string }
   | { t: 'link'; before: string; anchor: string; href: string; after: string }
+  | { t: 'img'; src: string; alt: string }
 
 type Section = { h2: string; blocks: Block[] }
 
@@ -129,6 +130,7 @@ const articles: Record<
       {
         h2: 'Hovor je klíč: jak s klientem mluvit',
         blocks: [
+          { t: 'img', src: '/blog/reaktivace-telefonat.jpg', alt: 'Telefonát s neaktivním klientem — rozhovor je klíčem k reaktivaci' },
           {
             t: 'p',
             text: 'U B2B reaktivace rozhoduje lidský hovor. Cíl prvního telefonátu není prodat, ale porozumět: co se u klienta změnilo, kdo to dnes řeší a co by muselo platit, aby se spolupráce obnovila. Z tohoto rozhovoru vzniká i užitečná zpětná vazba pro váš produkt.',
@@ -408,6 +410,7 @@ const articles: Record<
       {
         h2: 'The call is the key: how to talk to the customer',
         blocks: [
+          { t: 'img', src: '/blog/reaktivace-telefonat.jpg', alt: 'A phone call with a dormant customer — the conversation is the key to reactivation' },
           {
             t: 'p',
             text: 'In B2B reactivation the human call decides. The goal of the first call is not to sell but to understand: what changed at the customer, who handles it now and what would need to be true for the cooperation to resume. That conversation also gives you honest feedback on your product.',
@@ -695,6 +698,8 @@ function renderBlock(b: Block, i: number) {
           <p style={{ fontSize: '15px', color: 'var(--text-muted)', lineHeight: 1.7, margin: 0 }}>{b.text}</p>
         </div>
       )
+    case 'img':
+      return <img key={i} src={b.src} alt={b.alt} loading="lazy" style={{ width: '100%', borderRadius: '14px', margin: '8px 0 24px', display: 'block' }} />
     case 'link':
       return (
         <span key={i}>
