@@ -317,30 +317,30 @@ export default function MarketEntryCzechPage() {
             ))}
           </section>
 
-          {/* Sales automation crosslink box */}
+          {/* Sales representation crosslink box */}
           <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '14px', padding: '28px 32px', marginBottom: '32px' }}>
-            <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '10px' }}>Build a repeatable sales pipeline</p>
+            <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '10px' }}>Test the market without a local hire</p>
             <p style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '17px', fontWeight: 700, marginBottom: '10px' }}>
-              Automate prospecting before adding fixed local sales costs
+              Outsourced sales representation before you commit to an entity
             </p>
             <p style={{ fontSize: '14px', color: 'var(--text-muted)', lineHeight: 1.7, marginBottom: '18px' }}>
-              A connected outbound system can find Czech companies, qualify fit, personalize email and LinkedIn outreach, run follow-ups and hand warm opportunities to your sales team.
+              We act as your external sales team in the Czech Republic and Slovakia: we contact decision-makers in your name and book first meetings, so you see real demand before hiring or opening an entity.
             </p>
             <Link
-              href="/blog/jak-rozjet-a-zautomatizovat-b2b-obchod"
+              href="/en/sales-representation-czech-republic"
               style={{ display: 'inline-block', border: '1px solid var(--accent)', color: 'var(--accent)', fontWeight: 700, fontSize: '14px', padding: '11px 22px', borderRadius: '8px', textDecoration: 'none' }}
             >
-              Read the sales automation guide (Czech) →
+              Czech market entry services →
             </Link>
           </div>
 
           {/* CTA */}
           <div style={{ background: 'rgba(255,107,74,0.06)', border: '1px solid rgba(255,107,74,0.25)', borderRadius: '14px', padding: '36px', marginBottom: '56px' }}>
             <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, marginBottom: '12px' }}>
-              Need a repeatable way to generate Czech B2B opportunities?
+              Thinking about entering the Czech market?
             </h2>
             <p style={{ fontSize: '15px', color: 'var(--text-muted)', lineHeight: '1.65', marginBottom: '24px' }}>
-              We connect company discovery, qualification, personalized email and LinkedIn outreach, follow-up and CRM handoff. Your salesperson receives warm conversations and focuses on meetings and closing.
+              Test demand first. We act as your external sales representative in the Czech Republic and Slovakia: we research companies in your segment, contact decision-makers in your name and book first meetings. No Czech entity and no local hire needed.
             </p>
             <Link
               href="/en/contact"
@@ -354,11 +354,8 @@ export default function MarketEntryCzechPage() {
           <div style={{ paddingTop: '32px', borderTop: '1px solid var(--border)' }}>
             <p style={{ fontSize: '14px', fontWeight: 600, color: 'var(--text)', marginBottom: '12px' }}>Related</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              <Link href="/blog/sales-automation-ai-b2b-outreach" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
-                Sales Automation with AI for B2B Outreach →
-              </Link>
-              <Link href="/blog/jak-rozjet-a-zautomatizovat-b2b-obchod" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
-                How to Launch and Automate B2B Sales (Czech) →
+              <Link href="/en/sales-representation-czech-republic" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
+                Czech Market Entry Services & Sales Representation →
               </Link>
               <Link href="/en/guides/czech-market-entry-for-b2b-companies" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
                 Czech Market Entry for B2B Companies: A Practical Playbook →
