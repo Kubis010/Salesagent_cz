@@ -5,7 +5,8 @@ export const en: Translations = {
     home: 'Home',
     pricing: 'Pricing',
     salesRepCz: 'How it works',
-    czechEntry: 'Czech Market Entry',
+    czechEntry: 'Market Entry',
+    reactivation: 'Reactivation',
     about: 'About',
     contact: 'Contact',
     bookCall: 'Free consultation',
@@ -148,6 +149,12 @@ export const en: Translations = {
       { value: 'Ing.', label: 'Prague Univ. of Economics' },
       { value: 'CZ + SK', label: 'markets we cover' },
     ],
+  },
+  reactivation: {
+    label: 'Client reactivation',
+    title: 'Dormant clients in your database? We win them back.',
+    text: 'We regularly contact customers who have not bought for a long time — by phone, email and LinkedIn — as an outsourced service. Your sales team only gets the clients who show interest.',
+    cta: 'Learn about client reactivation',
   },
   salesRobots: {
     label: 'Sister service',

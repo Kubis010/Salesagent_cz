@@ -137,7 +137,7 @@ export default function Footer({ locale, t, initialYear }: FooterProps) {
           </div>
           <nav style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
             <Link
-              href="/blog"
+              href={locale === 'en' ? '/en/blog' : '/blog'}
               style={{
                 fontSize: '14px',
                 color: 'var(--text-muted)',

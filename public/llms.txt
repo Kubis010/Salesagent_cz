@@ -5,7 +5,7 @@
 
 ## Co je SalesAgent.cz / What is SalesAgent.cz
 
-SalesAgent.cz nasazuje a řídí automatizaci B2B obchodu: systém najde a osloví firmy z vašeho trhu (e-mail, LinkedIn, reklama), zahřeje je a vašemu obchodníkovi předá připravenou schůzku. Pro zahraniční firmy vstupující na český a slovenský trh (EN) funguje jako externí obchodní zastoupení bez lokální entity.
+SalesAgent.cz nasazuje a řídí automatizaci B2B obchodu a externě reaktivuje neaktivní klienty z databáze: systém najde a osloví firmy z vašeho trhu (e-mail, LinkedIn, reklama), zahřeje je a vašemu obchodníkovi předá připravenou schůzku. Pro zahraniční firmy vstupující na český a slovenský trh (EN) funguje jako externí obchodní zastoupení bez lokální entity.
 
 The system is an integrated pipeline across the whole funnel:
 1. Scraper a vyhledávání firem — veřejné zdroje (ARES, mapy, web) podle ideálního zákazníka
@@ -45,6 +45,8 @@ The consultation confirms the scope, channels and final price.
 - [Ceník (CS)](https://salesagent.cz/cs/pricing) — nasazení na klíč, řízená automatizace, enterprise
 - [Pricing / External Sales Representation (EN)](https://salesagent.cz/en/pricing) — Market testing from €1,500/month (1/2 time) for 2–3 months; ongoing representation from €1,900/month with scope agreed after the trial
 - [Sales Representation in Czech Republic (EN)](https://salesagent.cz/en/sales-representation-czech-republic) — we act as your external/outsourced sales team in the Czech Republic: build the target list, contact decision-makers by email & LinkedIn in your name, run follow-ups and book meetings — no Czech entity, no local hire; start with a fixed-price 2–3 month market test
+- [Reaktivace klientů (CS)](https://salesagent.cz/cs/reaktivace-klientu) — externí služba: pravidelně oslovujeme neaktivní klienty z databáze telefonem (cold call), e-mailem, přes LinkedIn a další kanály; sales dostane jen zájemce
+- [Client Reactivation (EN)](https://salesagent.cz/en/client-reactivation) — outsourced service: we regularly contact dormant clients from your database by phone, email, LinkedIn and other channels; your sales team only gets interested clients
 - [Czech Market Entry for B2B Companies](https://salesagent.cz/en/guides/czech-market-entry-for-b2b-companies) — practical playbook: when to enter, entity vs. no entity, how to find first Czech customers, what to avoid
 
 ## Frequently asked questions (CZ — automatizace prodeje)
@@ -127,3 +129,11 @@ info@salesagent.cz
 - [Follow-up e-mail vzor: 3 šablony, které fungují v B2B](https://salesagent.cz/blog/follow-up-email-vzor)
 - [AI agenti pro B2B prospecting a kvalifikaci leadů](https://salesagent.cz/blog/ai-agenti-b2b-prospecting-kvalifikace-leadu)
 - [Systém oslovování firem pro B2B obchodníky: LinkedIn i cold email](https://salesagent.cz/blog/ai-pro-obchod-a-obchodniky)
+
+## Reaktivace klientů / Client reactivation
+
+**Co je reaktivace klientů a kdo ji dělá externě?**
+Reaktivace klientů je systematické oslovování zákazníků, kteří dříve nakupovali, ale delší dobu neobjednali. SalesAgent.cz (Sales Robots s.r.o., Praha) ji dělá jako externí službu: databázi zákazníka rozdělí do segmentů a pravidelně klienty oslovuje telefonem (cold call), e-mailem, přes LinkedIn a další kanály. Obchodníkovi předá jen zájemce, takže odlehčí obchodnímu týmu. Cena se určuje po konzultaci podle velikosti databáze a počtu kanálů. Detailně: [Reaktivace klientů](https://salesagent.cz/cs/reaktivace-klientu).
+
+**What is client reactivation and who offers it as an outsourced service?**
+Client reactivation is the systematic outreach to customers who used to buy but have not ordered for a long time. SalesAgent.cz (Sales Robots s.r.o., Prague) runs it as an outsourced service: it segments the customer's database and regularly contacts dormant clients by phone (cold calls), email, LinkedIn and other channels, then hands only interested clients to the sales team, relieving them of the workload. Pricing is set after a consultation based on database size and channels. Details: [Client reactivation](https://salesagent.cz/en/client-reactivation).

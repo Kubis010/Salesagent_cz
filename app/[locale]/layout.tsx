@@ -115,8 +115,8 @@ function getServiceSchema(isCzech: boolean) {
     provider: { '@type': 'Organization', name: 'Sales Robots s.r.o.' },
     serviceType: isCzech ? 'Automatizace B2B obchodu' : 'Outsourced B2B sales representation and market entry',
     description: isCzech
-      ? 'Nasadíme a řídíme automatizaci B2B oslovování: vyhledání firem, e-mail a LinkedIn outreach, zahřátí a předání schůzek se zájemci vašemu obchodníkovi.'
-      : 'We act as the external B2B sales team of foreign companies entering the Czech Republic and Slovakia. Our people manage prospecting, outreach and qualification, supported by AI tools, and book first meetings in the client\'s calendar. Market testing starts at €1,500 per month with half-time capacity for a fixed 2–3 month trial. No local entity or hire is required; continuation is agreed after reviewing results.',
+      ? 'Nasadíme a řídíme automatizaci B2B oslovování: vyhledání firem, e-mail a LinkedIn outreach, zahřátí a předání schůzek se zájemci vašemu obchodníkovi. Součástí nabídky je i externí reaktivace neaktivních klientů telefonem, e-mailem a přes LinkedIn.'
+      : 'We act as the external B2B sales team of foreign companies entering the Czech Republic and Slovakia. Our people manage prospecting, outreach and qualification, supported by AI tools, and book first meetings in the client\'s calendar. Market testing starts at €1,500 per month with half-time capacity for a fixed 2–3 month trial. No local entity or hire is required; continuation is agreed after reviewing results. We also run outsourced reactivation of dormant clients by phone, email and LinkedIn.',
     inLanguage: isCzech ? 'cs' : 'en',
     offers: isCzech
       ? [

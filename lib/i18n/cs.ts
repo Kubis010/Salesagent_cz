@@ -4,6 +4,7 @@ export const cs = {
     pricing: 'Ceník',
     salesRepCz: 'Jak to funguje',
     czechEntry: 'Vstup na trh ČR',
+    reactivation: 'Reaktivace klientů',
     about: 'O nás',
     contact: 'Kontakt',
     bookCall: 'Konzultace zdarma',
@@ -141,6 +142,12 @@ export const cs = {
       { value: 'Ing.', label: 'VŠE Praha' },
       { value: 'na klíč', label: 'nasadíme a řídíme za vás' },
     ],
+  },
+  reactivation: {
+    label: 'Reaktivace klientů',
+    title: 'Neaktivní klienti v databázi? Oživíme je za vás.',
+    text: 'Externě a pravidelně oslovujeme zákazníky, kteří dlouho nenakoupili — telefonem, e-mailem i přes LinkedIn. Odlehčíme vašemu salesu: dostane jen ty, kdo mají zájem.',
+    cta: 'Zjistit víc o reaktivaci klientů',
   },
   salesRobots: {
     label: 'Sesterská služba',

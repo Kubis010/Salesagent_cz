@@ -22,7 +22,11 @@ export default function Header({ locale, t }: HeaderProps) {
     ...(locale === 'en'
       ? [{ href: '/en/sales-representation-czech-republic', label: t.nav.czechEntry }]
       : []),
-    { href: '/blog', label: 'Blog' },
+    {
+      href: locale === 'en' ? '/en/client-reactivation' : '/cs/reaktivace-klientu',
+      label: t.nav.reactivation,
+    },
+    { href: locale === 'en' ? '/en/blog' : '/blog', label: 'Blog' },
     { href: `${base}/about`, label: t.nav.about },
     { href: `${base}/contact`, label: t.nav.contact },
   ]
@@ -87,7 +91,7 @@ export default function Header({ locale, t }: HeaderProps) {
           style={{
             display: 'flex',
             alignItems: 'center',
-            gap: '32px',
+            gap: '22px',
           }}
           className="desktop-nav"
         >
@@ -101,6 +105,7 @@ export default function Header({ locale, t }: HeaderProps) {
                 textDecoration: 'none',
                 transition: 'color 0.2s',
                 fontWeight: 500,
+                whiteSpace: 'nowrap',
               }}
               onMouseEnter={(e) =>
                 ((e.target as HTMLElement).style.color = 'var(--text)')
@@ -264,11 +269,11 @@ export default function Header({ locale, t }: HeaderProps) {
       )}
 
       <style>{`
-        @media (max-width: 768px) {
+        @media (max-width: 1120px) {
           .desktop-nav { display: none !important; }
           .mobile-menu-btn { display: block !important; }
         }
-        @media (min-width: 769px) {
+        @media (min-width: 1121px) {
           .mobile-menu { display: none !important; }
         }
       `}</style>

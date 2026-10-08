@@ -18,8 +18,8 @@ export async function generateMetadata({
       ? 'Najdeme, oslovíme a zahřejeme firmy za vás — e-mailem, na LinkedInu i reklamou. Vašemu obchodníkovi přistane připravená schůzka, kterou stačí zavřít. Nasadíme a řídíme za vás. Od 19 900 Kč měsíčně.'
       : 'Your external B2B sales team in CZ/SK. People-led outreach, supported by AI. Market testing from €1,500/month (half-time), with a 2–3 month trial.',
     keywords: locale === 'cs'
-      ? ['automatizace obchodu', 'řízený outbound', 'B2B lead generation', 'schůzky se zájemci', 'LinkedIn oslovování', 'AI prospecting', 'externí obchodní ředitel', 'automatizace oslovení']
-      : ['czech market entry', 'market entry czech republic', 'external sales representation czech republic', 'outsourced sales czech republic', 'sales agent czech republic', 'b2b lead generation czech republic', 'czech and slovak market entry'],
+      ? ['automatizace obchodu', 'řízený outbound', 'reaktivace klientů', 'B2B lead generation', 'schůzky se zájemci', 'LinkedIn oslovování', 'AI prospecting', 'externí obchodní ředitel', 'automatizace oslovení']
+      : ['czech market entry', 'market entry czech republic', 'external sales representation czech republic', 'outsourced sales czech republic', 'sales agent czech republic', 'b2b lead generation czech republic', 'czech and slovak market entry', 'client reactivation service'],
     alternates: {
       canonical: `https://salesagent.cz/${locale}`,
       languages: {
@@ -465,6 +465,41 @@ export default async function HomePage({
         </div>
       </section>
 
+      {/* ── CLIENT REACTIVATION ── */}
+      <section style={{ padding: '0 24px 80px', maxWidth: '1200px', margin: '0 auto' }}>
+        <div
+          style={{
+            background: 'var(--bg-card)',
+            border: '1px solid var(--border)',
+            borderRadius: '16px',
+            padding: '36px',
+            display: 'grid',
+            gridTemplateColumns: 'minmax(0, 1fr) auto',
+            gap: '24px',
+            alignItems: 'center',
+          }}
+          className="reactivation-band"
+        >
+          <div>
+            <div style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '10px' }}>
+              {t.reactivation.label}
+            </div>
+            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: 'clamp(22px, 3vw, 30px)', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '12px' }}>
+              {t.reactivation.title}
+            </h2>
+            <p style={{ fontSize: '15px', color: 'var(--text-muted)', lineHeight: 1.7, margin: 0, maxWidth: '680px' }}>
+              {t.reactivation.text}
+            </p>
+          </div>
+          <Link
+            href={locale === 'cs' ? '/cs/reaktivace-klientu' : '/en/client-reactivation'}
+            style={{ display: 'inline-block', border: '1px solid var(--accent)', color: 'var(--accent)', fontWeight: 700, fontSize: '14px', padding: '12px 22px', borderRadius: '9px', textDecoration: 'none', whiteSpace: 'nowrap' }}
+          >
+            {t.reactivation.cta} →
+          </Link>
+        </div>
+      </section>
+
       {/* ── PROOF BAND (light) — references + founder ── */}
       <section className="section-light" style={{ padding: '88px 24px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -832,6 +867,9 @@ export default async function HomePage({
           .hero-grid {
             grid-template-columns: 1fr !important;
             gap: 40px !important;
+          }
+          .reactivation-band {
+            grid-template-columns: 1fr !important;
           }
           .founder-grid {
             grid-template-columns: 1fr !important;

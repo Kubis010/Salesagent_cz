@@ -98,6 +98,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // (b2b-market-research-agency-czech-republic intentionally omitted — retreating from the
   // "market research" keyword; page stays live but noindex, per 2f.)
 
+  // Client reactivation service (separate slug per locale)
+  for (const loc of ['cs', 'en'] as const) {
+    entries.push({
+      url: loc === 'cs' ? `${BASE_URL}/cs/reaktivace-klientu` : `${BASE_URL}/en/client-reactivation`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+      alternates: {
+        languages: { cs: `${BASE_URL}/cs/reaktivace-klientu`, en: `${BASE_URL}/en/client-reactivation` },
+      },
+    })
+  }
+  // EN-only blog index
+  entries.push({
+    url: `${BASE_URL}/en/blog`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.7,
+  })
+
   // EN-only service page (CS variant is 301'd to homepage)
   entries.push({
     url: `${BASE_URL}/en/sales-representation-czech-republic`,

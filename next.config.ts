@@ -21,6 +21,16 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/en/reaktivace-klientu',
+        destination: '/en/client-reactivation',
+        permanent: true,
+      },
+      {
+        source: '/cs/client-reactivation',
+        destination: '/cs/reaktivace-klientu',
+        permanent: true,
+      },
+      {
         source: '/en/vlastni-outbound',
         destination: '/en/sales-representation-czech-republic',
         permanent: true,
@@ -90,7 +100,7 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: '/en/blog/:path*',
+        source: '/en/blog/:path+',
         destination: '/blog/:path*',
         permanent: true,
       },
