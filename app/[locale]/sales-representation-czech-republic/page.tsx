@@ -16,7 +16,7 @@ export async function generateMetadata({
       : 'Czech Market Entry Services & Sales Representation',
     description: cs
       ? 'Potřebujete externího obchodníka? SalesAgent zajistí vyhledávání firem, personalizované oslovení a předání zájemců — bez náboru, bez fixních nákladů.'
-      : 'Outsourced sales team for the Czech Republic and Slovakia: outreach in your name, first meetings booked. No entity or local hire. From €1,900/month.',
+      : 'Outsourced sales team for the Czech Republic and Slovakia: outreach in your name, first meetings booked. No entity or local hire. Market testing from €1,500/month.',
     alternates: {
       canonical: `https://salesagent.cz/${locale}/sales-representation-czech-republic`,
       languages: {
@@ -127,7 +127,7 @@ export default async function SalesRepCzPage({
             <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', maxWidth: '640px', margin: '0 auto 40px', lineHeight: 1.7 }}>
               {isCs
                 ? 'Nechcete najímat obchodníka na plný úvazek? SalesAgent funguje jako váš externí obchodní tým — vyhledá firmy, osloví je personalizovaným e-mailem i na LinkedIn a předá vám ty, kteří mají zájem o schůzku.'
-                : 'You get an outsourced sales team in the Czech Republic and Slovakia: we build the target list, contact decision-makers by email and LinkedIn in your name, run the follow-ups and book qualified first meetings into your calendar. No Czech entity, no local hire — a fixed-price trial from €1,900 per month.'}
+                : 'You get an outsourced sales team in the Czech Republic and Slovakia: we build the target list, contact decision-makers by email and LinkedIn in your name, run the follow-ups and book qualified first meetings into your calendar. No Czech entity, no local hire — market testing from €1,500 per month (half-time capacity) for a 2–3 month trial.'}
             </p>
             {!isCs && (
               <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', margin: '-20px auto 32px', maxWidth: '640px' }}>

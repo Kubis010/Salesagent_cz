@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import Script from 'next/script'
 import '../globals.css'
 import { getTranslations } from '@/lib/i18n'
-import Header from '@/components/layout/Header'
-import Footer from '@/components/layout/Footer'
+import BlogChrome from '@/components/layout/BlogChrome'
+import { posts } from '@/lib/blog-posts'
 
 export const metadata: Metadata = {
   robots: { index: true, follow: true },
@@ -32,7 +32,9 @@ const organizationSchema = {
 }
 
 export default function BlogLayout({ children }: { children: React.ReactNode }) {
-  const t = getTranslations('cs')
+  const csT = getTranslations('cs')
+  const enT = getTranslations('en')
+  const enPaths = posts.filter((p) => p.lang === 'EN' && p.href.startsWith('/blog/')).map((p) => p.href)
   const currentYear = new Date().getFullYear()
   return (
     <html lang="cs">
@@ -41,9 +43,9 @@ export default function BlogLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
-        <Header locale="cs" t={t} />
+        <BlogChrome part="header" csT={csT} enT={enT} enPaths={enPaths} initialYear={currentYear} />
         <main>{children}</main>
-        <Footer locale="cs" t={t} initialYear={currentYear} />
+        <BlogChrome part="footer" csT={csT} enT={enT} enPaths={enPaths} initialYear={currentYear} />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-442V6JSVVN"
           strategy="afterInteractive"
