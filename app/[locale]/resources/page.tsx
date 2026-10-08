@@ -51,6 +51,21 @@ export default async function ResourcesPage({
         </p>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+          <Link
+            href={locale === 'cs' ? '/blog/jak-reaktivovat-neaktivni-klienty' : '/blog/how-to-win-back-dormant-b2b-customers'}
+            className="card-hover"
+            style={{ display: 'block', background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '10px', padding: '24px', textDecoration: 'none', marginBottom: '2px' }}
+          >
+            <div style={{ fontSize: '11px', color: 'var(--text-muted)', fontWeight: 600, letterSpacing: '0.06em', marginBottom: '8px' }}>{locale === 'cs' ? 'PRŮVODCE' : 'GUIDE'}</div>
+            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '18px', fontWeight: 600, color: 'var(--text)', marginBottom: '8px' }}>
+              {locale === 'cs' ? 'Jak reaktivovat neaktivní klienty' : 'How to win back dormant B2B customers'}
+            </h2>
+            <p style={{ fontSize: '14px', color: 'var(--text-muted)', margin: 0, lineHeight: '1.5' }}>
+              {locale === 'cs'
+                ? 'Segmentace, důvody odchodu, hovor, e-mail, LinkedIn, šablony a měření.'
+                : 'Segmentation, reasons for churn, calls, email, LinkedIn, templates and measurement.'}
+            </p>
+          </Link>
           {locale !== 'cs' && (
             <Link
               href="/en/guides/czech-market-entry-for-b2b-companies"

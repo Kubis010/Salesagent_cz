@@ -9,6 +9,22 @@ export type BlogPost = {
 
 export const posts: BlogPost[] = [
   {
+    href: '/blog/jak-reaktivovat-neaktivni-klienty',
+    lang: 'CS',
+    title: 'Jak reaktivovat neaktivní klienty: návod krok za krokem',
+    date: '5. října 2026',
+    description: 'Segmentace databáze, důvody, proč klienti přestali kupovat, hovor, e-mail a LinkedIn, hotové šablony, ekonomika a měření — pro Česko i Slovensko.',
+    image: '/blog/automatizace-prodeje.jpg',
+  },
+  {
+    href: '/blog/how-to-win-back-dormant-b2b-customers',
+    lang: 'EN',
+    title: 'How to Win Back Dormant B2B Customers: A Step-by-Step Guide',
+    date: '5 October 2026',
+    description: 'Segment your database, find out why customers stopped buying, call, email and LinkedIn, templates, economics and measurement — for Czech and Slovak clients.',
+    image: '/blog/automatizace-prodeje.jpg',
+  },
+  {
     href: '/blog/nastroje-b2b-outbound-2026',
     lang: 'CS',
     title: 'Nástroje pro B2B outbound, které používáme v roce 2026',
