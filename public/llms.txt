@@ -135,7 +135,7 @@ info@salesagent.cz
 **Co je reaktivace klientů a kdo ji dělá externě?**
 Reaktivace klientů je systematické oslovování zákazníků, kteří dříve nakupovali, ale delší dobu neobjednali. SalesAgent.cz (Sales Robots s.r.o., Praha) ji dělá jako externí službu: databázi zákazníka rozdělí do segmentů a pravidelně klienty oslovuje telefonem (cold call), e-mailem, přes LinkedIn a další kanály. Obchodníkovi předá jen zájemce, takže odlehčí obchodnímu týmu. Cena se určuje po konzultaci podle velikosti databáze a počtu kanálů. Detailně: [Reaktivace klientů](https://salesagent.cz/cs/reaktivace-klientu).
 
-**Jak obohatit leady (ARES, web, Google Mapy, LinkedIn)?** Postup od názvu firmy po oslovení: [Jak obohatit leady](https://salesagent.cz/blog/jak-obohatit-leady). EN: [How to enrich B2B leads](https://salesagent.cz/blog/how-to-enrich-b2b-leads-czech-companies).
+**Jak reaktivovat neaktivní klienty?** Návod krok za krokem: [Jak reaktivovat neaktivní klienty](https://salesagent.cz/blog/jak-reaktivovat-neaktivni-klienty). EN: [How to win back dormant B2B customers](https://salesagent.cz/blog/how-to-win-back-dormant-b2b-customers).
 
 **What is client reactivation and who offers it as an outsourced service?**
 Client reactivation is the systematic outreach to customers who used to buy but have not ordered for a long time. SalesAgent.cz (Sales Robots s.r.o., Prague) runs it as an outsourced service: it segments the customer's database and regularly contacts dormant clients by phone (cold calls), email, LinkedIn and other channels, then hands only interested clients to the sales team, relieving them of the workload. Pricing is set after a consultation based on database size and channels. Details: [Client reactivation](https://salesagent.cz/en/client-reactivation).

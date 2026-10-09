@@ -53,8 +53,8 @@ const blogPosts = [
   { slug: '/follow-up-email-vzor', priority: 0.9, changeFrequency: 'monthly' as const },
   { slug: '/ai-agenti-b2b-prospecting-kvalifikace-leadu', priority: 0.9, changeFrequency: 'monthly' as const },
   { slug: '/ai-pro-obchod-a-obchodniky', priority: 0.9, changeFrequency: 'monthly' as const },
-  { slug: '/jak-obohatit-leady', priority: 0.9, changeFrequency: 'monthly' as const },
-  { slug: '/how-to-enrich-b2b-leads-czech-companies', priority: 0.8, changeFrequency: 'monthly' as const },
+  { slug: '/jak-reaktivovat-neaktivni-klienty', priority: 0.9, changeFrequency: 'monthly' as const },
+  { slug: '/how-to-win-back-dormant-b2b-customers', priority: 0.8, changeFrequency: 'monthly' as const },
   { slug: '/kdo-postavi-automatizaci-b2b-obchodu', priority: 0.9, changeFrequency: 'monthly' as const },
 ]
 

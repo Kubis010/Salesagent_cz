@@ -32,6 +32,7 @@ const content = {
     h1: 'Reaktivace klientů: pravidelně oživíme neaktivní zákazníky z vaší databáze',
     answer:
       'Reaktivace klientů je externí služba, při které za vás pravidelně oslovujeme zákazníky, kteří dlouho nic neobjednali — telefonem (cold call), e-mailem, přes LinkedIn a dalšími kanály. Ozvou se jen ti, kdo mají zájem, a ty předáme vašemu obchodníkovi. Váš sales tak nemusí procházet starou databázi a může se věnovat novým příležitostem.',
+    guide: { before: 'Praktický postup krok za krokem najdete v článku: ', anchor: 'návod, jak reaktivovat klienty', href: '/blog/jak-reaktivovat-neaktivni-klienty', after: '.' },
     ctaTitle: 'Máte v databázi klienty, kteří už dlouho nenakoupili?',
     ctaText: 'Projdeme vaši databázi a navrhneme, koho a jak oslovit. Konzultace je nezávazná.',
     ctaButton: 'Domluvit konzultaci',
@@ -124,6 +125,7 @@ const content = {
     h1: 'Client reactivation: we regularly win back the dormant customers in your database',
     answer:
       'Client reactivation is an outsourced service in which we regularly contact customers who have not bought for a long time — by phone (cold calls), email, LinkedIn and other channels. Only clients who show interest are passed to your sales rep. Your team no longer has to work through an old database and can focus on new opportunities.',
+    guide: { before: 'A step-by-step approach is in our article: ', anchor: 'how to win back dormant B2B customers', href: '/blog/how-to-win-back-dormant-b2b-customers', after: '.' },
     ctaTitle: 'Do you have customers in your database who have not bought for a long time?',
     ctaText: 'We review your database and propose who to contact and how. The consultation is free and no-strings.',
     ctaButton: 'Book a free consultation',
@@ -292,6 +294,11 @@ export default function ReactivationPage({ locale }: { locale: string }) {
             <div key={s.h2}>
               <H2>{s.h2}</H2>
               {s.paragraphs.map((p) => <p key={p} style={{ color: 'var(--text-muted)', marginBottom: '16px' }}>{p}</p>)}
+              <p style={{ color: 'var(--text-muted)', marginBottom: '16px' }}>
+                {c.guide.before}
+                <Link href={c.guide.href} style={linkStyle}>{c.guide.anchor}</Link>
+                {c.guide.after}
+              </p>
             </div>
           ))}
 
