@@ -52,6 +52,21 @@ export default async function ResourcesPage({
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
           <Link
+            href={locale === 'cs' ? '/blog/jak-obohatit-leady' : '/blog/how-to-enrich-b2b-leads-czech-companies'}
+            className="card-hover"
+            style={{ display: 'block', background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '10px', padding: '24px', textDecoration: 'none', marginBottom: '2px' }}
+          >
+            <div style={{ fontSize: '11px', color: 'var(--text-muted)', fontWeight: 600, letterSpacing: '0.06em', marginBottom: '8px' }}>{locale === 'cs' ? 'PRŮVODCE' : 'GUIDE'}</div>
+            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '18px', fontWeight: 600, color: 'var(--text)', marginBottom: '8px' }}>
+              {locale === 'cs' ? 'Jak obohatit leady' : 'How to enrich B2B leads'}
+            </h2>
+            <p style={{ fontSize: '14px', color: 'var(--text-muted)', margin: 0, lineHeight: '1.5' }}>
+              {locale === 'cs'
+                ? 'ARES, web firmy, Google Mapy, LinkedIn, ověření kontaktů, skórování a oslovení.'
+                : 'ARES, company websites, Google Maps, LinkedIn, verification, scoring and outreach.'}
+            </p>
+          </Link>
+          <Link
             href={locale === 'cs' ? '/blog/jak-reaktivovat-neaktivni-klienty' : '/blog/how-to-win-back-dormant-b2b-customers'}
             className="card-hover"
             style={{ display: 'block', background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '10px', padding: '24px', textDecoration: 'none', marginBottom: '2px' }}

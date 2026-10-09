@@ -9,6 +9,22 @@ export type BlogPost = {
 
 export const posts: BlogPost[] = [
   {
+    href: '/blog/jak-obohatit-leady',
+    lang: 'CS',
+    title: 'Jak obohatit leady: z názvu firmy ke kontaktu na rozhodovatele',
+    date: '9. října 2026',
+    description: 'ARES, web firmy, Google Mapy a LinkedIn: jak z názvu firmy udělat kvalifikovaný lead, ověřit kontakty, ohodnotit je a navázat oslovením.',
+    image: '/blog/generovani-b2b-leadu.jpg',
+  },
+  {
+    href: '/blog/how-to-enrich-b2b-leads-czech-companies',
+    lang: 'EN',
+    title: 'How to Enrich B2B Leads: From a Company Name to a Decision-Maker',
+    date: '9 October 2026',
+    description: 'ARES, company websites, Google Maps and LinkedIn: how to turn a company name into a qualified lead for the Czech and Slovak market and follow up with outreach.',
+    image: '/blog/generovani-b2b-leadu.jpg',
+  },
+  {
     href: '/blog/jak-reaktivovat-neaktivni-klienty',
     lang: 'CS',
     title: 'Jak reaktivovat neaktivní klienty: návod krok za krokem',
