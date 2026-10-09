@@ -71,7 +71,7 @@ const articles: Record<
     h1: 'Jak obohatit leady: z názvu firmy ke kontaktu na rozhodovatele',
     byline: '9. října 2026 · Petr Kubíček · 11 minut čtení · platí pro Česko i Slovensko',
     answer:
-      'Obohacení leadu znamená doplnit k firmě údaje, které potřebujete, abyste věděli, zda ji oslovit a jak: ověřit ji v ARES, přečíst její web, zkontrolovat provozovnu na Google Mapách a najít rozhodovatele na LinkedInu. Teprve s těmito daty lze lead ohodnotit a napsat zprávu, která se netváří jako hromadná. Postup se dá dělat ručně na desítkách firem, nebo ho automatizovat ve Salesbotu na stovkách.',
+      'Obohacení leadu znamená doplnit k firmě údaje, které potřebujete, abyste věděli, zda ji oslovit a jak: ověřit ji v ARES, podívat se na její veřejný web a profil na Google Mapách a najít rozhodovatele na LinkedInu. Teprve s těmito daty lze lead ohodnotit a napsat zprávu, která se netváří jako hromadná. Údaje používejte jen z veřejných zdrojů a v souladu s jejich podmínkami.',
     boxTitle: 'Nechcete leady obohacovat sami?',
     boxText: 'Vyhledávání, obohacení a oslovení můžeme dělat za vás, pro české i slovenské firmy.',
     boxButton: 'Generování B2B leadů jako služba',
@@ -126,9 +126,9 @@ const articles: Record<
       {
         h2: 'Jak to děláme my: Salesbot a lidská kontrola',
         blocks: [
-          { t: 'p', text: 'Na desítkách firem lze všechny kroky udělat ručně v tabulce. U stovek už se to nevyplatí. Proto používáme Salesbot, který hledání a obohacení automatizuje: načte údaje z ARES, přečte web firmy a vytáhne z něj shrnutí, ověří firmu na Google Mapách, dohledá rozhodovatele na LinkedInu a vše uloží do CRM. AI z těchto dat navrhne zprávu, kterou má člověk možnost zkontrolovat před odesláním.' },
+          { t: 'p', text: 'Na desítkách firem lze všechny kroky udělat ručně v tabulce. U stovek už se to časově nevyplatí. Proto používáme Salesbot, který nám pomáhá s evidencí a procesem: napojuje údaje z veřejného rejstříku ARES, uchovává poznámky z ruční kontroly webu a Google Map, řídí LinkedIn kampaně, ukládá historii do CRM a z poznámek pomáhá navrhnout zprávu, kterou má člověk možnost zkontrolovat před odesláním. Samotné prohlížení webu a map děláme jako člověk, nic nestahujeme hromadně.' },
           { t: 'link', before: 'Přehled nástrojů, které používáme, najdete v článku ', anchor: 'nástroje pro B2B outbound 2026', href: '/blog/nastroje-b2b-outbound-2026', after: '.' },
-          { t: 'box', title: 'Automatizace nenahrazuje úsudek', text: 'AI shrne web a navrhne větu, ale relevanci leadu, tón zprávy a výběr kanálu stále potvrzuje člověk. Obohacená data jsou podklad pro rozhodnutí, ne jeho náhrada.' },
+          { t: 'box', title: 'Úsudek zůstává člověku', text: 'AI pomůže se strukturou a návrhem věty, ale relevanci leadu, tón zprávy a výběr kanálu potvrzuje člověk. Obohacená data jsou podklad pro rozhodnutí, ne jeho náhrada. Veřejné zdroje používejte v souladu s jejich podmínkami.' },
         ],
       },
       {
@@ -187,7 +187,7 @@ const articles: Record<
       { q: 'Odkud získat data o českých firmách zdarma?', a: 'Základ nabízí veřejný rejstřík ARES (IČO, sídlo, obor CZ-NACE, statutární orgán). K tomu se přidá web firmy, Google Mapy a LinkedIn. U slovenských firem se používají slovenské rejstříky, například ORSR.' },
       { q: 'K čemu je kontrola firmy na Google Mapách?', a: 'Potvrdí, že firma má reálnou provozovnu a je aktivní, a často doplní telefon, web a otevírací dobu. Pomáhá také najít lokální firmy, které nemají dobrý web.' },
       { q: 'Jak ověřit e-mail před oslovením?', a: 'Pomocí ověřovací služby nebo nástroje, který zkontroluje, zda schránka existuje. Neplatné adresy vyřaďte. Chrání to doručitelnost vašich dalších e-mailů.' },
-      { q: 'Jde obohacení leadů automatizovat?', a: 'Většinu kroků ano: načtení z ARES, přečtení webu, kontrola na Google Mapách a dohledání rozhodovatele. Relevanci leadu a finální zprávu by ale měl potvrdit člověk.' },
+      { q: 'Jde obohacení leadů automatizovat?', a: 'Část ano: napojení na ARES, evidence v CRM, správa LinkedIn kampaní a návrh zpráv. Prohlížení webu a map a posouzení relevance leadu by ale měl dělat člověk. Finální zprávu před odesláním potvrďte.' },
       { q: 'Funguje to i pro slovenské firmy?', a: 'Ano, princip je stejný. Místo ARES se používají slovenské rejstříky a oslovení probíhá slovensky nebo česky podle zvyklostí firmy.' },
     ],
     related: [
@@ -222,7 +222,7 @@ const articles: Record<
     h1: 'How to enrich B2B leads: from a company name to a decision-maker',
     byline: '9 October 2026 · Petr Kubíček · 11 min read · for Czech and Slovak companies',
     answer:
-      'Lead enrichment means adding the data you need to decide whether to contact a company and how: verify it in ARES, read its website, check the location on Google Maps and find the decision-maker on LinkedIn. Only with this data can you score the lead and write a message that does not read like a mass mailing. You can do it manually for dozens of companies, or automate it in Salesbot for hundreds.',
+      'Lead enrichment means adding the data you need to decide whether to contact a company and how: verify it in ARES, look at its public website and Google Maps listing, and find the decision-maker on LinkedIn. Only with this data can you score the lead and write a message that does not read like a mass mailing. Use data from public sources only and in line with their terms.',
     boxTitle: 'Rather not enrich leads yourself?',
     boxText: 'We can handle prospecting, enrichment and outreach for you, for companies in the Czech Republic and Slovakia.',
     boxButton: 'B2B lead generation service',
@@ -276,9 +276,9 @@ const articles: Record<
       {
         h2: 'How we do it: Salesbot and human review',
         blocks: [
-          { t: 'p', text: 'For dozens of companies you can do every step by hand in a spreadsheet. For hundreds it stops paying off. That is why we use Salesbot, which automates the search and enrichment: it pulls data from ARES, reads the company website and summarises it, checks the company on Google Maps, finds the decision-maker on LinkedIn and stores everything in the CRM. AI then drafts a message from this data, and a person can review it before it is sent.' },
+          { t: 'p', text: 'For dozens of companies you can do every step by hand in a spreadsheet. For hundreds it stops paying off in time. That is why we use Salesbot to help with the process: it connects data from the public ARES register, keeps notes from the manual check of the website and Google Maps, runs LinkedIn campaigns, stores the history in the CRM and helps draft a message from those notes, which a person can review before it is sent. Browsing the website and maps is done by a person; nothing is downloaded in bulk.' },
           { t: 'link', before: 'An overview of the tools we use is in our Czech article ', anchor: 'B2B outbound tools in 2026', href: '/blog/nastroje-b2b-outbound-2026', after: '.' },
-          { t: 'box', title: 'Automation does not replace judgement', text: 'AI summarises the website and drafts a line, but relevance of the lead, tone of the message and choice of channel are still confirmed by a person. Enriched data supports the decision; it does not make it.' },
+          { t: 'box', title: 'Judgement stays with a person', text: 'AI helps with structure and a draft line, but relevance of the lead, tone of the message and choice of channel are confirmed by a person. Enriched data supports the decision; it does not make it. Use public sources in line with their terms.' },
         ],
       },
       {
@@ -336,7 +336,7 @@ const articles: Record<
       { q: 'Where can I get Czech company data for free?', a: 'The public ARES register is the foundation (company number, address, CZ-NACE industry, statutory body). Add the company website, Google Maps and LinkedIn. For Slovak companies use Slovak registers such as ORSR.' },
       { q: 'What is checking a company on Google Maps good for?', a: 'It confirms the company has a real location and is active, and often adds phone, website and opening hours. It also helps find local companies without a good website.' },
       { q: 'How do I verify an email before outreach?', a: 'Use a verification service or a tool that checks whether the mailbox exists. Remove invalid addresses; it protects the deliverability of your later emails.' },
-      { q: 'Can lead enrichment be automated?', a: 'Most steps can: pulling from ARES, reading the website, checking Google Maps and finding the decision-maker. A person should still confirm lead relevance and the final message.' },
+      { q: 'Can lead enrichment be automated?', a: 'Partly: connecting to ARES, CRM records, LinkedIn campaign management and message drafts. Browsing websites and maps and judging lead relevance should be done by a person. Confirm the final message before sending.' },
       { q: 'Does it work for Slovak companies too?', a: 'Yes, the principle is the same. Slovak registers replace ARES, and outreach is in Slovak or Czech depending on what the company uses.' },
     ],
     related: [
