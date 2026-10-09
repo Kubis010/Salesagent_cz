@@ -224,9 +224,7 @@ export default function EUExpansionPage() {
                   or use the EU One-Stop-Shop (OSS) scheme
                 </li>
                 <li>
-                  <strong>GDPR compliance:</strong> any outreach to EU contacts — email, LinkedIn,
-                  phone — must comply with GDPR. This means having a lawful basis (typically legitimate
-                  interest for B2B) and including an opt-out in every message
+                  <strong>Legal compliance:</strong> outreach to EU contacts (email, LinkedIn, phone) is subject to GDPR and to national rules on commercial communications, which differ by country. In the Czech Republic, commercial email requires the recipient&apos;s prior consent (Act No. 480/2004 Coll.), including for company addresses. Check the rules for each target country
                 </li>
                 <li>
                   <strong>Local entity:</strong> not required for initial sales, but needed for hiring
@@ -285,10 +283,7 @@ export default function EUExpansionPage() {
                 </li>
               </ul>
               <p>
-                GDPR note: B2B cold email to business email addresses is permitted under legitimate
-                interest in most EU member states, provided you have a clear opt-out and the message is
-                genuinely relevant to the recipient&apos;s professional role.
-              </p>
+                Legal note: rules for commercial email differ between member states. In the Czech Republic, prior consent is required even for company addresses (Act No. 480/2004 Coll.), with an exception for existing customers. This is not legal advice; check with a lawyer.</p>
             </ArticleSection>
           </NumberedSection>
 

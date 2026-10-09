@@ -134,6 +134,7 @@ const articles: Record<
       {
         h2: 'Od obohacených dat k oslovení',
         blocks: [
+          { t: 'box', title: 'Nejdřív souhlas', text: 'E-mailová šablona níže se hodí pro příjemce, kteří souhlas dali, nebo pro stávající zákazníky. Nesmíte ji zasílat na adresy z veřejných zdrojů bez předchozího souhlasu. Platí to i pro firemní a obecné adresy (§ 7 zák. č. 480/2004 Sb.). Nejde o právní poradenství.' },
           { t: 'p', text: 'Obohacení má smysl jen tehdy, když z něj vzniká lepší zpráva. Využijte to, co jste zjistili: jednu konkrétní informaci z webu, roli osoby a důvod, proč se ozýváte právě teď. Zbytek zprávy držte krátký.' },
           {
             t: 'tpl',
@@ -161,15 +162,15 @@ const articles: Record<
               'Personalizace jen jménem. „Dobrý den, Jane“ není personalizace. Jedna konkrétní informace o firmě je.',
               'Obecné e-maily. Zpráva na info@ se často nedostane k rozhodovateli. Hledejte konkrétní osobu.',
               'Koupené databáze. Bývají zastaralé a pro vaše oslovení nejsou záruka relevance. Raději si data poskládejte z veřejných zdrojů.',
-              'Ignorování GDPR a odhlášení. Každá zpráva musí umožnit odhlášení a námitky respektujte.',
+              'Oslovení bez souhlasu. E-mailové obchodní sdělení lze v ČR zaslat jen s předchozím souhlasem, i na firemní adresy. Odhlášení souhlas nenahrazuje.',
             ],
           },
         ],
       },
       {
-        h2: 'GDPR při práci s kontakty na firmy',
+        h2: 'Právo: e-mail a souhlas',
         blocks: [
-          { t: 'link', before: 'Oslovení firemních kontaktů se obvykle opírá o oprávněný zájem. Každá zpráva má umožnit odhlášení a vy s kontakty zacházíte jen pro určený účel. Podrobnosti najdete v článku ', anchor: 'GDPR a cold e-mail', href: '/blog/gdpr-a-cold-email', after: '. Nejde o právní poradenství — nastavení ověřte u právníka.' },
+          { t: 'link', before: 'Obohacená data samy o sobě neznamenají, že kontakt smíte oslovit. Podle § 7 zákona č. 480/2004 Sb. lze obchodní sdělení e-mailem v ČR zasílat jen s předchozím souhlasem příjemce, a to i na firemní a obecné adresy; výjimku mají stávající zákazníci. Veřejně dostupný e-mail souhlas neznamená a oprávněný zájem podle GDPR tuto povinnost nenahrazuje. Telefon a LinkedIn mají vlastní pravidla. Podrobnosti najdete v článku ', anchor: 'GDPR a cold e-mail', href: '/blog/gdpr-a-cold-email', after: '. Nejde o právní poradenství — postup si ověřte u právníka.' },
         ],
       },
       {
@@ -284,6 +285,7 @@ const articles: Record<
       {
         h2: 'From enriched data to outreach',
         blocks: [
+          { t: 'box', title: 'Consent first', text: 'The email template below is for recipients who have consented, or for existing customers. Do not send it to addresses taken from public sources without prior consent. This applies to company and generic addresses too (§ 7 of Act No. 480/2004 Coll.). This is not legal advice.' },
           { t: 'p', text: 'Enrichment only pays off if it produces a better message. Use what you found: one specific fact from the website, the person’s role and a reason you are writing now. Keep the rest short.' },
           {
             t: 'tpl',
@@ -309,15 +311,15 @@ const articles: Record<
               'Personalisation by name only. “Hello John” is not personalisation. One specific fact about the company is.',
               'Generic emails. A message to info@ often never reaches the decision-maker. Find a named person.',
               'Bought databases. They tend to be outdated and are no guarantee of relevance. Assemble data from public sources instead.',
-              'Ignoring GDPR and opt-outs. Every message must allow an opt-out and you must respect objections.',
+              'Contacting without consent. Commercial email in the Czech Republic needs the recipient\'s prior consent, including company addresses. An opt-out does not replace consent.',
             ],
           },
         ],
       },
       {
-        h2: 'GDPR when working with company contacts',
+        h2: 'Legal: email and consent',
         blocks: [
-          { t: 'link', before: 'Contacting business addresses usually relies on legitimate interest. Every message should allow an opt-out and you use the data only for its stated purpose. See our Czech article on ', anchor: 'GDPR and cold email', href: '/blog/gdpr-a-cold-email', after: '. This is not legal advice; check the set-up with a lawyer.' },
+          { t: 'link', before: 'Enriched data does not mean you may contact the person. Under § 7 of Act No. 480/2004 Coll., commercial email in the Czech Republic requires the recipient\'s prior consent, including company and generic addresses; existing customers are an exception. A publicly available email is not consent, and GDPR legitimate interest does not replace this requirement. Phone and LinkedIn have their own rules. See our Czech article on ', anchor: 'GDPR and cold email', href: '/blog/gdpr-a-cold-email', after: '. This is not legal advice; check the set-up with a lawyer.' },
         ],
       },
       {

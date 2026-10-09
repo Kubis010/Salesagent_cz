@@ -80,13 +80,13 @@ const content = {
       'Oproti marketingové automatizaci používáme i telefon, což u starších klientů často rozhoduje.',
     ],
     gdpr:
-      'Oslovujeme existující zákazníky v rámci oprávněného zájmu. Každá zpráva obsahuje možnost odhlášení a respektujeme námitky i žádosti o výmaz. Přesné nastavení probereme na konzultaci.',
+      'E-mailová obchodní sdělení lze v ČR podle § 7 zákona č. 480/2004 Sb. zasílat jen s předchozím souhlasem příjemce; výjimku mají stávající zákazníci, jejichž kontakt jste získali při prodeji a kterým nabízíte obdobné vlastní produkty, s možností jednoduše odmítnout. Rozsah oslovení proto nastavujeme jen podle toho, co vaše databáze a zákon dovolují. Nejde o právní poradenství, nastavení doporučujeme ověřit u právníka.',
     faqTitle: 'Časté otázky o reaktivaci klientů',
     faqs: [
       { q: 'Co je reaktivace klientů?', a: 'Je to systematické oslovování zákazníků, kteří dříve nakupovali, ale delší dobu neobjednali. Cílem je obnovit komunikaci a spolupráci. SalesAgent.cz to dělá externě telefonem, e-mailem, přes LinkedIn a další kanály.' },
       { q: 'Jak dlouho musí být klient neaktivní, aby ho šlo reaktivovat?', a: 'Hranici nastavíme podle vašeho oboru a cyklu nákupu. U některých firem je to 6 měsíců, u jiných rok i déle. Na úvodním auditu databáze vybereme segmenty, které dávají smysl.' },
       { q: 'Co potřebujeme dodat?', a: 'Export klientů z CRM nebo fakturace (firma, kontaktní osoba, kontakt, datum poslední objednávky, případně hodnota). Zbytek nastavíme společně.' },
-      { q: 'Je telefonické a e-mailové oslovení bývalých klientů v souladu s GDPR?', a: 'Existující zákazníky oslovujeme na základě oprávněného zájmu, s možností odhlášení a respektováním námitek. Nastavení vždy zohlední vaše podmínky a zdroj dat.' },
+      { q: 'Je oslovení bývalých klientů v souladu se zákonem?', a: 'Pro e-mail v ČR platí § 7 zákona č. 480/2004 Sb.: obchodní sdělení jen s předchozím souhlasem, výjimku mají stávající zákazníci s obdobnými vlastními produkty a možností odmítnout. Telefonní a další kanály mají vlastní pravidla. Vše nastavujeme podle vaší databáze a zdroje kontaktů, a doporučujeme to ověřit u právníka. Nejde o právní poradenství.' },
       { q: 'Kolik reaktivace stojí?', a: 'Cena závisí na velikosti databáze, počtu kanálů a četnosti oslovování. Přesnou nabídku připravíme po úvodní konzultaci a prohlídce databáze.' },
       { q: 'Nahradí to našeho obchodníka?', a: 'Ne. Předchází mu. Oslovení a první kvalifikaci děláme my, a obchodníkovi předáme jen zájemce, se kterými se vyplatí jednat.' },
     ],
@@ -173,13 +173,13 @@ const content = {
       'Unlike marketing automation, we also use the phone, which often decides with older clients.',
     ],
     gdpr:
-      'We contact existing customers on the basis of legitimate interest. Every message includes an opt-out, and we respect objections and erasure requests. We settle the exact set-up during the consultation.',
+      'In the Czech Republic, commercial email requires the recipient\'s prior consent (§ 7 of Act No. 480/2004 Coll.); the exception is for existing customers whose contact you obtained through a sale and to whom you offer similar own products, with an easy opt-out. We therefore set the scope only to what your database and the law allow. This is not legal advice; we recommend checking it with a lawyer.',
     faqTitle: 'Client reactivation FAQ',
     faqs: [
       { q: 'What is client reactivation?', a: 'It is the systematic outreach to customers who used to buy but have not ordered for a long time. The goal is to restart communication and cooperation. SalesAgent.cz does it as an outsourced service by phone, email, LinkedIn and other channels.' },
       { q: 'How long must a client be inactive to be reactivated?', a: 'We set the threshold according to your industry and buying cycle. For some companies it is 6 months, for others a year or more. In the database audit we pick the segments that make sense.' },
       { q: 'What do we need to provide?', a: 'An export of clients from your CRM or invoicing system (company, contact person, contact details, date of last order, ideally value). We set up the rest together.' },
-      { q: 'Is contacting former clients by phone and email GDPR-compliant?', a: 'We contact existing customers on the basis of legitimate interest, with an opt-out and respect for objections. The set-up always takes your terms and the source of the data into account.' },
+      { q: 'Is contacting former clients legally compliant?', a: 'For email in the Czech Republic § 7 of Act No. 480/2004 Coll. applies: commercial messages need prior consent, with an exception for existing customers and similar own products with an easy opt-out. Phone and other channels have their own rules. We set it up according to your database and the source of the contacts, and recommend checking it with a lawyer. This is not legal advice.' },
       { q: 'How much does client reactivation cost?', a: 'The price depends on the size of the database, the number of channels and the contact frequency. We prepare an exact offer after the initial consultation and a look at your database.' },
       { q: 'Does it replace our sales rep?', a: 'No. It comes before them. We do the outreach and first qualification, and only hand over clients worth your rep’s time.' },
     ],

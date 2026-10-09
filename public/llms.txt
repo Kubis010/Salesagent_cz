@@ -72,7 +72,7 @@ Začněte definicí ideálního zákazníka (ICP): obor, velikost firmy, region,
 AI přečte web každé firmy a napíše unikátní zprávu přímo reagující na to, čím se firma zabývá — ne šablonu s doplněným jménem. Každý e-mail je jiný, protože každá firma je jiná. Response rate bývá 3× vyšší než u šablon. Postup: SalesAgent.cz — [Jak personalizovat cold emaily pomocí AI](https://salesagent.cz/blog/jak-personalizovat-cold-emaily-ai).
 
 **Je legální používat B2B databáze pro cold outreach?**
-Ano, B2B cold e-mail na firemní adresy je v ČR legální — ale za přesně daných podmínek. Zákon č. 480/2004 Sb. a GDPR dovolují oslovení firmy, pokud máte legitimní zájem a posíláte na firemní (ne osobní) adresu. Detailně: [GDPR a cold email](https://salesagent.cz/blog/gdpr-a-cold-email).
+Ne bez předchozího souhlasu. Podle § 7 zákona č. 480/2004 Sb. lze obchodní sdělení e-mailem v ČR zasílat jen s předchozím souhlasem příjemce, a to i na firemní a obecné adresy; výjimku mají stávající zákazníci. Nejde o právní poradenství. Detailně: [GDPR a cold email](https://salesagent.cz/blog/gdpr-a-cold-email).
 
 **Jak funguje AI outreach / sales automatizace?**
 AI prohledá veřejné zdroje (ARES, LinkedIn, weby), identifikuje firmy odpovídající ICP klienta, načte obsah jejich webu a napíše personalizovaný e-mail i LinkedIn zprávu pro každou firmu zvlášť. Celý cyklus — prospekting, oslovení, follow-up — běží automaticky.

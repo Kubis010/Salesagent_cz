@@ -5,7 +5,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'GDPR a B2B cold email: co říká zákon 480/2004 | SalesAgent.cz',
   description:
-    'Ano, B2B cold e-mail na firemní adresy je v ČR legální — ale za přesně daných podmínek. Přečtěte si, co říká zákon č. 480/2004 Sb. a GDPR o databázích firem a cold outreachi.',
+    'Cold e-mail v ČR vyžaduje předchozí souhlas příjemce i na firemní adresy (zákon č. 480/2004 Sb.). Výjimky, postup a rizika. Nejde o právní poradenství.',
   keywords: [
     'je legální cold email b2b',
     'b2b databáze firem cold outreach',

@@ -240,8 +240,8 @@ export const cs = {
         a: 'Nasazení je otázka dní, ne týdnů. Pak systém běží a my ho průběžně ladíme na výsledky.',
       },
       {
-        q: 'Je oslovování v souladu s GDPR?',
-        a: 'Ano. Oslovujeme firemní kontakty na základě oprávněného zájmu a každá zpráva obsahuje možnost odhlášení.',
+        q: 'Je oslovování v souladu se zákonem?',
+        a: 'E-mailová obchodní sdělení v ČR podle § 7 zákona č. 480/2004 Sb. posíláme jen příjemcům, kteří k tomu dali souhlas, nebo stávajícím zákazníkům v rámci zákonné výjimky, vždy s možností odmítnout. To platí i pro firemní a obecné adresy. Kanály a právní základ nastavíme s vámi a doporučujeme je ověřit u právníka.',
       },
       {
         q: 'Funguje to i na Slovensku a v Polsku?',

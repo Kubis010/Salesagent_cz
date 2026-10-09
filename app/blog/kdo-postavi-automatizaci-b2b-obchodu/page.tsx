@@ -233,8 +233,8 @@ export default function Page() {
             nastavujeme stejný cíl: funkční oslovování, kvalitní data a přehled o tom, co se v pipeline děje.
           </p>
           <p>
-            Zároveň hlídáme právní rámec cold outreachu (zákon č. 480/2004 Sb. a GDPR) — personalizované, relevantní
-            zprávy s řádnou patičkou a funkčním odhlášením. Detailně to rozebíráme v článku{' '}
+            Právní rámec je důležitý: e-mailová obchodní sdělení lze v ČR podle zákona č. 480/2004 Sb. zasílat jen s předchozím souhlasem
+            příjemce (i na firemní adresy), s výjimkou stávajících zákazníků. Nejde o právní poradenství. Detailně to rozebíráme v článku{' '}
             <Link href="/blog/gdpr-a-cold-email" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>GDPR a cold e-mail</Link>.
           </p>
 

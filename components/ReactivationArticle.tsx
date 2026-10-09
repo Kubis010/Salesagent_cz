@@ -187,7 +187,7 @@ const articles: Record<
       {
         h2: 'Šablony e-mailů, které můžete použít',
         blocks: [
-          { t: 'p', text: 'Zkopírujte, doplňte v hranatých závorkách a upravte tón podle toho, jak s klientem obvykle komunikujete. Ke každé zprávě patří odhlášení z dalších zpráv.' },
+          { t: 'p', text: 'Zkopírujte, doplňte v hranatých závorkách a upravte tón podle toho, jak s klientem obvykle komunikujete. Ke každé zprávě patří odhlášení z dalších zpráv. Před odesláním ověřte, že můžete dané adresy oslovit (viz část o právu níže).' },
           {
             t: 'tpl',
             title: 'E-mail 1: první kontakt',
@@ -277,11 +277,11 @@ const articles: Record<
         ],
       },
       {
-        h2: 'GDPR u stávajících zákazníků',
+        h2: 'Právo: souhlas a stávající zákazníci',
         blocks: [
           {
             t: 'link',
-            before: 'U stávajících zákazníků se obvykle opíráte o oprávněný zájem. Každá zpráva musí umožnit odhlášení a námitky respektujete. Podrobnosti najdete v článku ',
+            before: 'E-mailová obchodní sdělení lze v ČR podle § 7 zákona č. 480/2004 Sb. zasílat jen s předchozím souhlasem příjemce, i na firemní a obecné adresy. Výjimku mají stávající zákazníci, jejichž kontakt jste získali při prodeji a kterým nabízíte obdobné vlastní produkty, s možností jednoduše odmítnout. U klientů, kteří nekoupili dlouho, nebo u kontaktů bez prodeje si výjimku ověřte. Odhlášení nenahrazuje souhlas. Podrobnosti najdete v článku ',
             anchor: 'GDPR a cold e-mail',
             href: '/blog/gdpr-a-cold-email',
             after: '. Nejde o právní poradenství — nastavení s ohledem na vaše podmínky a zdroj dat si ověřte u právníka.',
@@ -314,7 +314,7 @@ const articles: Record<
       { q: 'Co je reaktivace klientů?', a: 'Je to systematické oslovování zákazníků, kteří dříve nakupovali, ale delší dobu nic neobjednali. Cílem je obnovit komunikaci a spolupráci, zjistit důvod odchodu a předat zájemce obchodníkovi.' },
       { q: 'Kdy je klient neaktivní?', a: 'Když se vymyká svému obvyklému rytmu nákupů. Orientačně je to přibližně dvojnásobek běžného intervalu mezi nákupy u daného klienta; u firem s dlouhým cyklem to může být rok i více. Hranici nastavte podle vlastních dat.' },
       { q: 'Jak často neaktivní klienty oslovovat?', a: 'Doporučuje se pár kontaktů (zhruba 3–4) rozložených v čase, ne všechny najednou, a to různými kanály. Po odpovědi nebo odmítnutí kadenci zastavte. Přesné intervaly upravte podle nákupního cyklu klienta.' },
-      { q: 'Je reaktivace klientů v souladu s GDPR?', a: 'U stávajících zákazníků se obvykle opíráte o oprávněný zájem, zprávy musí umožnit odhlášení a námitky respektujete. Nejde o právní poradenství, konkrétní nastavení si ověřte u právníka.' },
+      { q: 'Je reaktivace klientů v souladu se zákonem?', a: 'E-mail v ČR vyžaduje podle § 7 zákona č. 480/2004 Sb. předchozí souhlas příjemce, i u firemních adres. Výjimku mají stávající zákazníci s obdobnými vlastními produkty a možností odmítnout. Telefon a další kanály mají vlastní pravidla. Nejde o právní poradenství, konkrétní nastavení si ověřte u právníka.' },
       { q: 'Čím se reaktivace liší od newsletteru?', a: 'Newsletter je jednosměrné hromadné sdělení. Reaktivace je osobní: telefonát a individuální e-mail, které zjistí, co se u klienta změnilo, a směřují k hovoru nebo schůzce.' },
       { q: 'Dá se reaktivace použít i u dražšího B2C produktu nebo služby?', a: 'Ano, pokud je produkt dražší a nákupní cyklus dlouhý. Přístup je podobný, ale u fyzických osob jsou pravidla pro obchodní sdělení přísnější, takže je nejprve ověřte.' },
     ],
@@ -467,7 +467,7 @@ const articles: Record<
       {
         h2: 'Email templates you can use',
         blocks: [
-          { t: 'p', text: 'Copy them, fill in the square brackets and adjust the tone to how you normally talk to the customer. Every message should include an opt-out. For Slovak clients, write in Slovak or Czech as you usually do.' },
+          { t: 'p', text: 'Copy them, fill in the square brackets and adjust the tone to how you normally talk to the customer. Every message should include an opt-out. Before sending, confirm that you may contact these addresses (see the legal section below). For Slovak clients, write in Slovak or Czech as you usually do.' },
           {
             t: 'tpl',
             title: 'Email 1: first contact',
@@ -551,11 +551,11 @@ const articles: Record<
         ],
       },
       {
-        h2: 'GDPR for existing customers',
+        h2: 'Legal: consent and existing customers',
         blocks: [
           {
             t: 'link',
-            before: 'With existing customers you usually rely on legitimate interest. Every message must allow an opt-out and you respect objections. This guide on ',
+            before: 'In the Czech Republic, § 7 of Act No. 480/2004 Coll. allows commercial email only with the recipient\'s prior consent, including company and generic addresses. The exception is for existing customers whose contact you obtained through a sale and to whom you offer similar own products, with an easy opt-out. For clients who have not bought for a long time, or contacts without a sale, check the exception. An opt-out does not replace consent. This guide on ',
             anchor: 'GDPR and cold email',
             href: '/blog/gdpr-a-cold-email',
             after: ' is in Czech. This is not legal advice; check the set-up with a lawyer for your terms and data source.',
@@ -588,7 +588,7 @@ const articles: Record<
       { q: 'What is client reactivation?', a: 'It is the systematic outreach to customers who used to buy but have not ordered for a long time. The goal is to restart communication and cooperation, learn why they left and hand interested clients to a salesperson.' },
       { q: 'When is a customer considered dormant?', a: 'When they break their usual buying rhythm. As a rough rule it is about double the normal gap between purchases for that customer; for firms with long cycles it can be a year or more. Set the threshold from your own data.' },
       { q: 'How often should dormant customers be contacted?', a: 'A few contacts (roughly 3–4) spread over time, not all at once, across different channels. Stop after a reply or a refusal. Adjust intervals to the customer’s buying cycle.' },
-      { q: 'Is client reactivation GDPR-compliant?', a: 'With existing customers you usually rely on legitimate interest; messages must allow an opt-out and you respect objections. This is not legal advice, so check the specific set-up with a lawyer.' },
+      { q: 'Is client reactivation legally compliant?', a: 'Email in the Czech Republic needs the recipient\'s prior consent under § 7 of Act No. 480/2004 Coll., including for company addresses. Existing customers with similar own products and an easy opt-out are an exception. Phone and other channels have their own rules. This is not legal advice, so check the specific set-up with a lawyer.' },
       { q: 'How is reactivation different from a newsletter?', a: 'A newsletter is a one-way mass message. Reactivation is personal: a call and an individual email that find out what changed at the customer and lead to a conversation or a meeting.' },
       { q: 'Can reactivation be used for a higher-priced B2C product or service?', a: 'Yes, when the product is expensive and the buying cycle is long. The approach is similar, but rules for commercial messages to individuals are stricter, so check them first.' },
     ],

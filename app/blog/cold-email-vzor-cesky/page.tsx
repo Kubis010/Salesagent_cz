@@ -113,7 +113,7 @@ const faqSchema = {
       "name": "Co musí obsahovat cold e-mail v ČR ze zákona?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Dle zák. č. 480/2004 Sb. musí každý obchodní e-mail obsahovat identifikaci odesílatele, možnost odhlásit se z odběru a nesmí být klamavý. GDPR navíc vyžaduje oprávněný zájem jako právní základ."
+        "text": "Podle § 7 zákona č. 480/2004 Sb. lze obchodní sdělení e-mailem zasílat jen s předchozím souhlasem příjemce. Platí to i pro firemní a obecné adresy (například info@). Výjimku mají stávající zákazníci, kterým nabízíte obdobné vlastní produkty a mohou odmítnout další zasílání. Každé sdělení musí být jasně označeno jako obchodní, obsahovat identifikaci odesílatele a funkční možnost odmítnout. GDPR se posuzuje zvlášť. Nejde o právní poradenství."
       }
     },
     {
@@ -153,6 +153,13 @@ export default function ColdEmailVzorPage() {
               Tři konkrétní vzory cold e-mailů pro B2B outreach v češtině — s vysvětlením logiky každé šablony, co v ní funguje a jak ji přizpůsobit svému oboru. Včetně povinné GDPR patičky.
             </p>
           </header>
+
+          <div className="mb-10 rounded-xl border border-orange-500/40 bg-orange-900/10 p-5">
+            <p className="text-sm font-semibold text-orange-300 mb-2">Důležité: e-mail v ČR a souhlas</p>
+            <p className="text-gray-300 text-sm leading-relaxed">
+              Šablony níže ukazují, jak psát. Samy o sobě neřeší, zda smíte konkrétní adresu oslovit. Obchodní sdělení e-mailem lze v ČR podle § 7 zákona č. 480/2004 Sb. zasílat jen s předchozím souhlasem příjemce, a to i na firemní a obecné adresy (např. info@). Výjimkou jsou stávající zákazníci. Patička nebo odhlášení souhlas nenahrazují. Nejde o právní poradenství, postup si ověřte u právníka.
+            </p>
+          </div>
 
           <div className="mb-14 rounded-xl overflow-hidden border border-white/10">
             <Image src="/blog/cold-email-vzor.png" alt="Cold email vzor česky pro B2B" width={1280} height={853} className="w-full object-cover" priority />
@@ -211,7 +218,7 @@ export default function ColdEmailVzorPage() {
                 'Žádají jeden konkrétní krok (20minutový hovor), ne „schůzku s vedením".',
                 'Začínají příjemcem, ne odesílatelem — co víte o jejich firmě, ne kdo jste vy.',
                 'Předmět je konkrétní — buď číslo, buď přímá otázka. Vyhýbají se „Nabídka spolupráce".',
-                'Obsahují GDPR patičku — povinnost ze zákona č. 480/2004 Sb.',
+                'Obsahují označení obchodního sdělení, identifikaci odesílatele a odhlášení (§ 7 zák. č. 480/2004 Sb.). Patička ale nenahrazuje souhlas příjemce.',
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3 text-gray-300">
                   <span className="text-orange-400 mt-1 flex-shrink-0">✓</span>
@@ -220,12 +227,12 @@ export default function ColdEmailVzorPage() {
               ))}
             </ul>
 
-            <h2 className="text-2xl font-bold text-white mt-12 mb-4">Povinná GDPR patička cold emailu</h2>
+            <h2 className="text-2xl font-bold text-white mt-12 mb-4">Povinné náležitosti obchodního e-mailu</h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              Každý obchodní e-mail musí obsahovat patičku dle zákona č. 480/2004 Sb. o některých službách informační společnosti. Bez ní se vystavujete pokutě a poškozujete reputaci domény.
+              Každý obchodní e-mail musí mít náležitosti podle zákona č. 480/2004 Sb. o některých službách informační společnosti: být jasně označen jako obchodní sdělení, identifikovat odesílatele a umožnit odmítnout další zasílání. Patička ale nenahrazuje předchozí souhlas příjemce, který zákon pro zasílání obchodních sdělení e-mailem vyžaduje (včetně firemních a obecných adres). Bez náležitostí i bez souhlasu hrozí pokuta a poškození reputace domény.
             </p>
             <div className="bg-gray-900 border border-orange-500/30 rounded-xl p-5 mb-6">
-              <p className="text-xs text-orange-400 uppercase tracking-widest mb-3">Vzor povinné patičky</p>
+              <p className="text-xs text-orange-400 uppercase tracking-widest mb-3">Vzor patičky s náležitostmi</p>
               <p className="text-gray-300 text-sm leading-relaxed">
                 Tato zpráva je obchodním sdělením dle zák. č. 480/2004 Sb. Odesílatel: [Název firmy] s.r.o., IČO [12345678], [Adresa]. Pokud si nepřejete dostávat další sdělení, odpovězte „odhlásit" nebo klikněte zde: [odkaz na odhlášení].
               </p>
@@ -283,7 +290,7 @@ export default function ColdEmailVzorPage() {
             <h2 className="text-lg font-bold mb-6">Časté otázky</h2>
             <details className="faq-item">
               <summary>Co musí obsahovat cold e-mail v ČR ze zákona?</summary>
-              <div className="faq-answer">Dle zák. č. 480/2004 Sb. musí každý obchodní e-mail obsahovat identifikaci odesílatele, možnost odhlásit se z odběru a nesmí být klamavý. GDPR navíc vyžaduje oprávněný zájem jako právní základ.</div>
+              <div className="faq-answer">Podle § 7 zákona č. 480/2004 Sb. lze obchodní sdělení e-mailem zasílat jen s předchozím souhlasem příjemce. Platí to i pro firemní a obecné adresy (například info@). Výjimku mají stávající zákazníci, kterým nabízíte obdobné vlastní produkty a mohou odmítnout další zasílání. Každé sdělení musí být jasně označeno jako obchodní, obsahovat identifikaci odesílatele a funkční možnost odmítnout. GDPR se posuzuje zvlášť. Nejde o právní poradenství.</div>
             </details>
             <details className="faq-item">
               <summary>Jaká délka cold e-mailu funguje nejlépe?</summary>

@@ -180,7 +180,7 @@ export default function Page() {
                   <strong>Registrace k DPH:</strong> pokud překročíte práh pro vzdálený prodej (ve většině případů 10 000 EUR), musíte se registrovat k DPH v zemích kupujících nebo využít režim EU One-Stop-Shop (OSS)
                 </li>
                 <li>
-                  <strong>Soulad s GDPR:</strong> jakékoli oslovení kontaktů v EU — e-mail, LinkedIn, telefon — musí být v souladu s GDPR. To znamená mít zákonný základ (typicky oprávněný zájem pro B2B) a zahrnout možnost odhlášení v každé zprávě
+                  <strong>Soulad s právem:</strong> oslovení kontaktů v EU — e-mail, LinkedIn, telefon — podléhá GDPR i národním pravidlům pro obchodní sdělení a ta se liší podle země. V ČR vyžaduje e-mailové obchodní sdělení předchozí souhlas příjemce (zákon č. 480/2004 Sb.), i u firemních adres. Ověřte pravidla pro každou cílovou zemi.
                 </li>
                 <li>
                   <strong>Lokální entita:</strong> není nutná pro počáteční obchody, ale je potřeba pro najímání lokálních zaměstnanců, podepisování určitých smluv nebo přístup k veřejným zakázkám EU
@@ -228,7 +228,7 @@ export default function Page() {
                 </li>
               </ul>
               <p>
-                Poznámka ke GDPR: B2B cold e-mail na firemní e-mailové adresy je povolen na základě oprávněného zájmu ve většině členských států EU za předpokladu, že máte jasné odhlášení a zpráva je skutečně relevantní pro profesní roli příjemce.
+                Poznámka k právu: pravidla pro obchodní e-maily se v členských státech liší. V ČR je podle zákona č. 480/2004 Sb. potřeba předchozí souhlas příjemce i u firemních adres, s výjimkou stávajících zákazníků. Nejde o právní poradenství, ověřte si to u právníka.
               </p>
             </ArticleSection>
           </NumberedSection>

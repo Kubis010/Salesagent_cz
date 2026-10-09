@@ -76,7 +76,7 @@ const faqSchema = {
       name: 'Is cold email legal in Czech Republic?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Cold email to business contacts in Czech Republic is legal under the legitimate interest basis in GDPR and §7 of Act 480/2004 Sb., provided the message is relevant to the company\'s business activity, sent to a professional (not personal) email address, and includes a clear opt-out. Every message we send includes an unsubscribe option.',
+        text: 'In the Czech Republic, §7 of Act No. 480/2004 Coll. allows commercial email only with the recipient\'s prior consent, including to company and generic addresses; existing customers are the main exception. Legitimate interest under GDPR does not replace this. Every message must be clearly marked as commercial, identify the sender and allow opt-out. This is not legal advice; check your set-up with a lawyer.',
       },
     },
     {

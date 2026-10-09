@@ -133,7 +133,7 @@ export const en: Translations = {
       examples: [
         { label: 'Runs through your existing company — no Czech entity needed', icon: 'connect' },
         { label: 'Fixed-price 2–3 month trial, no long-term lock-in', icon: 'flow' },
-        { label: 'Czech, Slovak and English outreach, GDPR-compliant', icon: 'enrich' },
+        { label: 'Czech, Slovak and English outreach', icon: 'enrich' },
         { label: 'Extend monthly if it works, leave with the report if not', icon: 'chart' },
       ],
       cta: 'Book a consultation',
@@ -250,8 +250,8 @@ export const en: Translations = {
         a: 'Market testing starts at €1,500 per month for a 2–3 month trial with 1/2 time (half-time) capacity. Ongoing representation starts at €1,900 per month. The final scope depends on your segment, language, number of prospects and channels; we confirm it before starting.',
       },
       {
-        q: 'Is the outreach GDPR-compliant?',
-        a: 'Yes. We reach business contacts on the basis of legitimate interest, and every message includes an opt-out. We build the system to respect that.',
+        q: 'Is the outreach legally compliant?',
+        a: 'In the Czech Republic we send commercial emails (§ 7 of Act No. 480/2004 Coll.) only to recipients who have consented, or to existing customers under the statutory exception, always with an easy way to opt out. This applies to company and generic addresses too. We agree the channels and legal basis with you and recommend checking them with a lawyer.',
       },
       {
         q: 'Do I need my own sales team?',
