@@ -25,7 +25,7 @@ export async function generateMetadata({
       template: '%s | SalesAgent.cz',
     },
     description: isCz
-      ? 'Najdeme, oslovíme a zahřejeme firmy za vás — e-mailem, na LinkedInu i reklamou. Vašemu obchodníkovi přistane připravená schůzka. Nasazení od 15 000 Kč, řízení od 19 900 Kč měsíčně.'
+      ? 'Najdeme, oslovíme a zahřejeme firmy za vás — e-mailem, na LinkedInu i reklamou. Vašemu obchodníkovi přistane připravená schůzka. Nasazení od 15 000 Kč, řízení od 12 900 Kč měsíčně.'
       : 'Your external B2B sales team in CZ/SK. People-led outreach, supported by AI. Market testing from €1,500/month (half-time), with a 2–3 month trial.',
     keywords: isCz
       ? ['automatizace obchodu', 'řízený outbound', 'B2B lead generation', 'schůzky se zájemci', 'LinkedIn oslovování', 'AI prospecting', 'cold email automatizace', 'B2B prospecting']
@@ -39,7 +39,7 @@ export async function generateMetadata({
         ? 'SalesAgent.cz — Řízená automatizace obchodu'
         : 'SalesAgent.cz — Czech Market Entry & Outsourced Sales Representation',
       description: isCz
-        ? 'Řízená automatizace obchodu: nasazení od 15 000 Kč, řízení od 19 900 Kč měsíčně. Vašemu obchodníkovi chodí schůzky se zájemci.'
+        ? 'Řízená automatizace obchodu: nasazení od 15 000 Kč, řízení od 12 900 Kč měsíčně. Vašemu obchodníkovi chodí schůzky se zájemci.'
         : 'Your external B2B sales team in CZ/SK. People-led outreach, supported by AI. Market testing from €1,500/month (half-time), with a 2–3 month trial.',
       images: [
         {
@@ -75,7 +75,7 @@ export async function generateMetadata({
         ? 'SalesAgent.cz — Řízená automatizace obchodu'
         : 'SalesAgent.cz — Czech Market Entry & Outsourced Sales Representation',
       description: isCz
-        ? 'Řízená automatizace obchodu: nasazení od 15 000 Kč, řízení od 19 900 Kč měsíčně. Vašemu obchodníkovi chodí schůzky se zájemci.'
+        ? 'Řízená automatizace obchodu: nasazení od 15 000 Kč, řízení od 12 900 Kč měsíčně. Vašemu obchodníkovi chodí schůzky se zájemci.'
         : 'Your external B2B sales team in CZ/SK. People-led outreach, supported by AI. Market testing from €1,500/month (half-time), with a 2–3 month trial.',
       images: ['https://salesagent.cz/og-image.jpg'],
     },
@@ -131,7 +131,7 @@ function getServiceSchema(isCzech: boolean) {
           {
             '@type': 'Offer',
             name: 'Řízená automatizace',
-            price: '19900',
+            price: '12900',
             priceCurrency: 'CZK',
             description: 'Měsíční řízení a ladění outboundu, schůzky se zájemci pro obchodníka.',
             url: 'https://salesagent.cz/cs/pricing',

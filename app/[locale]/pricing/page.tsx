@@ -12,7 +12,7 @@ export async function generateMetadata({
   return {
     title: cs ? 'Ceník — řízená automatizace obchodu' : 'Pricing — Czech Market Entry & Sales Representation',
     description: cs
-      ? 'Nasazení na klíč od 15 000 Kč jednorázově, pak řízená automatizace od 19 900 Kč měsíčně — systém jedeme za vás, váš obchodník zavírá připravené schůzky.'
+      ? 'Nasazení na klíč od 15 000 Kč jednorázově, pak řízená automatizace od 12 900 Kč měsíčně — systém jedeme za vás, váš obchodník zavírá připravené schůzky.'
       : 'People-led Czech market testing, supported by AI. From €1,500/month (half-time), with a 2–3 month trial before agreeing ongoing sales representation.',
     alternates: {
       canonical: `https://salesagent.cz/${locale}/pricing`,
@@ -29,14 +29,14 @@ export async function generateMetadata({
       siteName: 'SalesAgent.cz',
       title: cs ? 'Ceník — řízená automatizace obchodu | SalesAgent.cz' : 'Pricing — Czech Market Entry & Sales Representation | SalesAgent.cz',
       description: cs
-        ? 'Nasazení od 15 000 Kč, řízená automatizace od 19 900 Kč měsíčně.'
+        ? 'Nasazení od 15 000 Kč, řízená automatizace od 12 900 Kč měsíčně.'
         : 'People-led Czech market testing, supported by AI. From €1,500/month (half-time), with a 2–3 month trial before agreeing ongoing sales representation.',
     },
     twitter: {
       card: 'summary_large_image',
       title: cs ? 'Ceník — řízená automatizace obchodu | SalesAgent.cz' : 'Pricing — Czech Market Entry & Sales Representation | SalesAgent.cz',
       description: cs
-        ? 'Nasazení od 15 000 Kč, řízená automatizace od 19 900 Kč měsíčně.'
+        ? 'Nasazení od 15 000 Kč, řízená automatizace od 12 900 Kč měsíčně.'
         : 'People-led Czech market testing, supported by AI. From €1,500/month (half-time), with a 2–3 month trial before agreeing ongoing sales representation.',
     },
   }

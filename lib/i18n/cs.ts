@@ -190,7 +190,7 @@ export const cs = {
       {
         name: 'Řízená automatizace',
         monthlyLabel: 'měsíčně',
-        price: 'od 19 900 Kč',
+        price: 'od 12 900 Kč',
         priceNote: 'Jádro služby',
         features: [
           'Celý proaktivní outbound jede AI systém',
@@ -233,7 +233,7 @@ export const cs = {
       },
       {
         q: 'Kolik to stojí?',
-        a: 'Jednorázové nasazení na klíč od 15 000 Kč a pak měsíční řízení od 19 900 Kč. Přesnou částku upřesníme na konzultaci podle rozsahu.',
+        a: 'Jednorázové nasazení na klíč od 15 000 Kč a pak měsíční řízení od 12 900 Kč. Přesnou částku upřesníme na konzultaci podle rozsahu.',
       },
       {
         q: 'Za jak dlouho to poběží?',
