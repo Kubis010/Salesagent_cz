@@ -124,14 +124,6 @@ const articles: Record<
         ],
       },
       {
-        h2: 'Jak to děláme my: Salesbot a lidská kontrola',
-        blocks: [
-          { t: 'p', text: 'Na desítkách firem lze všechny kroky udělat ručně v tabulce. U stovek už se to časově nevyplatí. Proto používáme Salesbot, který nám pomáhá s evidencí a procesem: napojuje údaje z veřejného rejstříku ARES, uchovává poznámky z ruční kontroly webu a Google Map, řídí LinkedIn kampaně, ukládá historii do CRM a z poznámek pomáhá navrhnout zprávu, kterou má člověk možnost zkontrolovat před odesláním. Samotné prohlížení webu a map děláme jako člověk, nic nestahujeme hromadně.' },
-          { t: 'link', before: 'Přehled nástrojů, které používáme, najdete v článku ', anchor: 'nástroje pro B2B outbound 2026', href: '/blog/nastroje-b2b-outbound-2026', after: '.' },
-          { t: 'box', title: 'Úsudek zůstává člověku', text: 'AI pomůže se strukturou a návrhem věty, ale relevanci leadu, tón zprávy a výběr kanálu potvrzuje člověk. Obohacená data jsou podklad pro rozhodnutí, ne jeho náhrada. Veřejné zdroje používejte v souladu s jejich podmínkami.' },
-        ],
-      },
-      {
         h2: 'Od obohacených dat k oslovení',
         blocks: [
           { t: 'box', title: 'Nejdřív souhlas', text: 'E-mailová šablona níže se hodí pro příjemce, kteří souhlas dali, nebo pro stávající zákazníky. Nesmíte ji zasílat na adresy z veřejných zdrojů bez předchozího souhlasu. Platí to i pro firemní a obecné adresy (§ 7 zák. č. 480/2004 Sb.). Nejde o právní poradenství.' },
@@ -272,14 +264,6 @@ const articles: Record<
           },
           { t: 'link', before: 'To learn how to score a lead see ', anchor: 'our Czech guide to lead scoring', href: '/blog/jak-skorovat-leady', after: '. ' },
           { t: 'link', before: 'For the Czech business register see ', anchor: 'how to look up any Czech company in ARES', href: '/en/resources/czech-business-companies-register', after: '.' },
-        ],
-      },
-      {
-        h2: 'How we do it: Salesbot and human review',
-        blocks: [
-          { t: 'p', text: 'For dozens of companies you can do every step by hand in a spreadsheet. For hundreds it stops paying off in time. That is why we use Salesbot to help with the process: it connects data from the public ARES register, keeps notes from the manual check of the website and Google Maps, runs LinkedIn campaigns, stores the history in the CRM and helps draft a message from those notes, which a person can review before it is sent. Browsing the website and maps is done by a person; nothing is downloaded in bulk.' },
-          { t: 'link', before: 'An overview of the tools we use is in our Czech article ', anchor: 'B2B outbound tools in 2026', href: '/blog/nastroje-b2b-outbound-2026', after: '.' },
-          { t: 'box', title: 'Judgement stays with a person', text: 'AI helps with structure and a draft line, but relevance of the lead, tone of the message and choice of channel are confirmed by a person. Enriched data supports the decision; it does not make it. Use public sources in line with their terms.' },
         ],
       },
       {

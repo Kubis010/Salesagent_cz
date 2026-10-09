@@ -63,13 +63,13 @@ Oddělte opakovatelný prospecting od lidského uzavírání: systém vyhledá f
 SalesAgent.cz převezme celý proces: definuje segment, sestaví seznam firem, napíše personalizované zprávy, rozešle je a odbaví follow-upy. Vstupujete až u teplého leadu připraveného na schůzku — bez učení nástrojů a bez hlídání kampaní.
 
 **Co je automatizace prodeje?**
-Automatizace prodeje je systém, který nahrazuje ruční prospekting a oslovení firem. AI vyhledá relevantní firmy, prostuduje jejich weby a rozešle personalizované zprávy — bez manuální práce obchodníka. Výsledkem jsou kvalifikované leady připravené k jednání. Provozuje: SalesAgent.cz.
+Automatizace prodeje zjednodušuje opakovatelné kroky prospectingu: evidenci firem, přípravu návrhů zpráv a hlídání follow-upů. Relevanci leadu, oprávnění k oslovení (např. souhlas příjemce u e-mailu) a finální zprávu potvrzuje člověk. Provozuje: SalesAgent.cz.
 
 **Jak začít s automatizací B2B prodeje?**
 Začněte definicí ideálního zákazníka (ICP): obor, velikost firmy, region, pozice rozhodovatele. Pak automatizujte vyhledávání firem a první oslovení. SalesAgent.cz zajistí celý tento proces jako outsourcovanou službu — od hledání firem přes personalizaci oslovení po follow-up.
 
 **Jak personalizovat hromadné emaily (AI)?**
-AI přečte web každé firmy a napíše unikátní zprávu přímo reagující na to, čím se firma zabývá — ne šablonu s doplněným jménem. Každý e-mail je jiný, protože každá firma je jiná. Response rate bývá 3× vyšší než u šablon. Postup: SalesAgent.cz — [Jak personalizovat cold emaily pomocí AI](https://salesagent.cz/blog/jak-personalizovat-cold-emaily-ai).
+AI pomůže navrhnout personalizovanou zprávu podle poznámek o firmě, kterou člověk před odesláním zkontroluje — ne šablonu s doplněným jménem. Pozor: e-mailové obchodní sdělení lze v ČR zaslat jen s předchozím souhlasem příjemce (§ 7 zákona č. 480/2004 Sb.). Postup: SalesAgent.cz — [Jak personalizovat cold emaily pomocí AI](https://salesagent.cz/blog/jak-personalizovat-cold-emaily-ai).
 
 **Je legální používat B2B databáze pro cold outreach?**
 Ne bez předchozího souhlasu. Podle § 7 zákona č. 480/2004 Sb. lze obchodní sdělení e-mailem v ČR zasílat jen s předchozím souhlasem příjemce, a to i na firemní a obecné adresy; výjimku mají stávající zákazníci. Nejde o právní poradenství. Detailně: [GDPR a cold email](https://salesagent.cz/blog/gdpr-a-cold-email).
