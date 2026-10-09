@@ -21,6 +21,16 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/blog/jak-reaktivovat-neaktivni-klienty',
+        destination: '/cs/reaktivace-klientu',
+        permanent: true,
+      },
+      {
+        source: '/blog/how-to-win-back-dormant-b2b-customers',
+        destination: '/en/client-reactivation',
+        permanent: true,
+      },
+      {
         source: '/en/reaktivace-klientu',
         destination: '/en/client-reactivation',
         permanent: true,
