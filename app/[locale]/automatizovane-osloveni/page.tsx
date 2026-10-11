@@ -5,7 +5,7 @@ const BOOKING_URL =
 
 const czechFaqs = [
   { question: 'Co zahrnuje automatizace oslovení jako služba?', answer: 'Vybereme cílové firmy podle ICP, ověříme a doplníme data, připravíme personalizované zprávy a řídíme dohodnuté e-mailové a LinkedIn sekvence. Součástí je průběžná kontrola odpovědí, kvalifikace a předání kontextu vašemu obchodníkovi. Konkrétní rozsah schválíme před spuštěním.' },
-  { question: 'Kolik stojí nasazení a měsíční provoz?', answer: 'Nasazení začíná od 15 000 Kč jednorázově. Průběžné řízení outboundu začíná od 12 900 Kč měsíčně. Rozsah kanálů, objem dat a případné další náklady stanovíme v nabídce; nejde o cenu za garantovaný počet schůzek.' },
+  { question: 'Kolik stojí nasazení a měsíční provoz?', answer: 'Nasazení začíná od 15 000 Kč jednorázově bez DPH. Průběžné řízení outboundu začíná od 9 900 Kč měsíčně bez DPH. Rozsah kanálů, objem dat a případné další náklady stanovíme v nabídce; nejde o cenu za garantovaný počet schůzek.' },
   { question: 'Musíme automatizované oslovení obsluhovat sami?', answer: 'V řízeném modelu nasazení i průběžnou obsluhu zajišťuje SalesAgent.cz. Vy schvalujete cílovou skupinu a nabídku a váš obchodník přebírá relevantní konverzace a schůzky. Před spuštěním si určíme pravidla kvalifikace a předání.' },
   { question: 'Co se stane, když firma odpoví nebo odmítne?', answer: 'Odpověď zastaví navazující automatickou sekvenci podle dohodnutých pravidel. Odmítnuté a odhlášené kontakty vyřadíme z dalšího oslovování. Zájemci se předávají obchodníkovi s historií komunikace; nejasné reakce posoudí člověk.' },
   { question: 'Je možné oslovit každý veřejný B2B e-mail?', answer: 'Ne. Veřejná adresa ani firemní kontakt nejsou samy o sobě souhlasem s obchodními sděleními. Před spuštěním je potřeba ověřit podmínky podle zákona č. 480/2004 Sb. a pravidla zpracování osobních údajů. Samotný opt-out nebo oprávněný zájem podle GDPR nestačí.' },
@@ -23,7 +23,7 @@ export async function generateMetadata({
       ? 'Automatizace oslovení: e-mail a LinkedIn'
       : 'B2B Outreach to Czech Companies — Email and LinkedIn',
     description: cs
-      ? 'Automatizované B2B oslovení jako řízená služba: data, e-mail, LinkedIn a kvalifikace. Nasazení od 15 000 Kč, průběžné řízení od 12 900 Kč měsíčně.'
+      ? 'Automatizované B2B oslovení jako řízená služba: data, e-mail, LinkedIn a kvalifikace. Nasazení od 15 000 Kč, průběžné řízení od 9 900 Kč měsíčně bez DPH.'
       : 'B2B outreach to Czech companies as part of your market entry: a personalised cold email for each company, sent alongside LinkedIn contact with decision-makers. Sales outsourcing, no local rep to hire.',
     alternates: {
       canonical: `https://salesagent.cz/${locale}/automatizovane-osloveni`,
@@ -334,8 +334,8 @@ export default async function AutomatizovaneOsloveniPage({
             </section>
             <section style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '14px', padding: '28px', marginBottom: '48px', lineHeight: 1.75 }}>
               <h2 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '12px' }}>Cena: jednorázové nasazení a průběžné řízení</h2>
-              <p><strong>Nasazení od 15 000 Kč jednorázově</strong> zahrnuje přípravu cílení, napojení účtů a nastavení dohodnutého postupu.</p>
-              <p style={{ marginTop: '12px' }}><strong>Řízení od 12 900 Kč měsíčně</strong> zahrnuje průběžnou obsluhu a ladění outboundu. Rozsah dat, kanálů a případných dalších nákladů stanovíme v nabídce. Cena není zárukou počtu schůzek.</p>
+              <p><strong>Nasazení od 15 000 Kč jednorázově bez DPH</strong> zahrnuje přípravu cílení, napojení účtů a nastavení dohodnutého postupu.</p>
+              <p style={{ marginTop: '12px' }}><strong>Řízení od 9 900 Kč měsíčně bez DPH</strong> zahrnuje průběžnou obsluhu a ladění outboundu. Rozsah dat, kanálů a případných dalších nákladů stanovíme v nabídce. Cena není zárukou počtu schůzek.</p>
               <p style={{ marginTop: '16px' }}>Podrobnosti najdete v <a href="/cs/pricing" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>ceníku nasazení a řízení</a>. Pro posouzení vašeho segmentu nás <a href="/cs/contact" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>kontaktujte</a>.</p>
             </section>
             <section style={{ marginBottom: '48px', fontSize: '16px', lineHeight: 1.75, color: 'var(--text-muted)' }}>

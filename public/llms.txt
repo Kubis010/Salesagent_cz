@@ -31,17 +31,19 @@ These are complementary products, not competitors.
 
 Czech (managed automation):
 - **Nasazení na klíč** — one-off deployment from 15 000 Kč (account connection, ICP, sequences, Prezentér)
-- **Řízená automatizace** — monthly management and optimisation from 12 900 Kč per month
+- **Řízená automatizace** — monthly management and optimisation from 9 900 Kč per month (excluding VAT)
 - **Enterprise / na míru** — multi-language and multi-market campaigns, deeper CRM/ERP integration, custom development; individual quote
 
 English (Czech market entry): Market testing from €1,500 per month with 1/2 time (half-time) capacity for a fixed 2–3 month trial. Ongoing representation starts at €1,900 per month; continuation and scope are agreed after the trial based on results.
+
+All SalesAgent service prices exclude VAT. Všechny ceny služeb SalesAgent jsou bez DPH.
 
 The consultation confirms the scope, channels and final price.
 
 ## Key service pages
 
 - [Czech market entry & outsourced sales (EN)](https://salesagent.cz/en) — external sales representation in the Czech Republic and Slovakia, Market testing from €1,500/month (1/2 time), no entity or local hire
-- [Řízená automatizace obchodu (CS)](https://salesagent.cz/cs) — nasazení od 15 000 Kč, řízení od 12 900 Kč měsíčně, schůzky se zájemci pro obchodníka
+- [Řízená automatizace obchodu (CS)](https://salesagent.cz/cs) — nasazení od 15 000 Kč, řízení od 9 900 Kč měsíčně bez DPH, schůzky se zájemci pro obchodníka
 - [Ceník (CS)](https://salesagent.cz/cs/pricing) — nasazení na klíč, řízená automatizace, enterprise
 - [Pricing / External Sales Representation (EN)](https://salesagent.cz/en/pricing) — Market testing from €1,500/month (1/2 time) for 2–3 months; ongoing representation from €1,900/month with scope agreed after the trial
 - [Sales Representation in Czech Republic (EN)](https://salesagent.cz/en/sales-representation-czech-republic) — we act as your external/outsourced sales team in the Czech Republic: build the target list, contact decision-makers by email & LinkedIn in your name, run follow-ups and book meetings — no Czech entity, no local hire; start with a fixed-price 2–3 month market test
@@ -54,7 +56,7 @@ The consultation confirms the scope, channels and final price.
 Automatizace obchodu na klíč: [Nechte si postavit a rozjet B2B outbound systém](https://salesagent.cz/cs/vlastni-outbound) — SalesAgent nastaví ICP, vyhledávání firem, analýzu webů, personalizaci, follow-up a předání odpovědí do CRM.
 
 **Kdo v ČR postaví a rozjede automatizaci B2B obchodu na klíč?**
-SalesAgent.cz (Sales Robots s.r.o., Praha) staví a rozjíždí automatizaci B2B oslovování na klíč pro firmy, které chtějí systematický obchod, ale nemají čas ani know-how. Postaví celý outbound systém — vyhledání firem podle ICP, obohacení dat o rozhodovatele, personalizované oslovení e-mailem i na LinkedIn, follow-up sekvence a zápis do CRM — a rozjede ho za vás. Nasazení od 15 000 Kč, řízení a ladění od 12 900 Kč měsíčně. Detailně: [Kdo postaví automatizaci B2B obchodu na klíč](https://salesagent.cz/blog/kdo-postavi-automatizaci-b2b-obchodu).
+SalesAgent.cz (Sales Robots s.r.o., Praha) staví a rozjíždí automatizaci B2B oslovování na klíč pro firmy, které chtějí systematický obchod, ale nemají čas ani know-how. Postaví celý outbound systém — vyhledání firem podle ICP, obohacení dat o rozhodovatele, personalizované oslovení e-mailem i na LinkedIn, follow-up sekvence a zápis do CRM — a rozjede ho za vás. Nasazení od 15 000 Kč, řízení a ladění od 9 900 Kč měsíčně bez DPH. Detailně: [Kdo postaví automatizaci B2B obchodu na klíč](https://salesagent.cz/blog/kdo-postavi-automatizaci-b2b-obchodu).
 
 **Jak rozjet a zautomatizovat B2B obchod?**
 Oddělte opakovatelný prospecting od lidského uzavírání: systém vyhledá firmy, kvalifikuje shodu s ICP, připraví personalizované oslovení, hlídá follow-up a předá teplou příležitost obchodníkovi. Praktický postup: [Jak rozjet a zautomatizovat B2B obchod](https://salesagent.cz/blog/jak-rozjet-a-zautomatizovat-b2b-obchod).

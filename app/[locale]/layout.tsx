@@ -25,7 +25,7 @@ export async function generateMetadata({
       template: '%s | SalesAgent.cz',
     },
     description: isCz
-      ? 'Najdeme, oslovíme a zahřejeme firmy za vás — e-mailem, na LinkedInu i reklamou. Vašemu obchodníkovi přistane připravená schůzka. Nasazení od 15 000 Kč, řízení od 12 900 Kč měsíčně.'
+      ? 'Najdeme, oslovíme a zahřejeme firmy za vás — e-mailem, na LinkedInu i reklamou. Vašemu obchodníkovi přistane připravená schůzka. Nasazení od 15 000 Kč, řízení od 9 900 Kč měsíčně bez DPH.'
       : 'Your external B2B sales team in CZ/SK. People-led outreach, supported by AI. Market testing from €1,500/month (half-time), with a 2–3 month trial.',
     keywords: isCz
       ? ['automatizace obchodu', 'řízený outbound', 'B2B lead generation', 'schůzky se zájemci', 'LinkedIn oslovování', 'AI prospecting', 'cold email automatizace', 'B2B prospecting']
@@ -39,7 +39,7 @@ export async function generateMetadata({
         ? 'SalesAgent.cz — Řízená automatizace obchodu'
         : 'SalesAgent.cz — Czech Market Entry & Outsourced Sales Representation',
       description: isCz
-        ? 'Řízená automatizace obchodu: nasazení od 15 000 Kč, řízení od 12 900 Kč měsíčně. Vašemu obchodníkovi chodí schůzky se zájemci.'
+        ? 'Řízená automatizace obchodu: nasazení od 15 000 Kč, řízení od 9 900 Kč měsíčně bez DPH. Vašemu obchodníkovi chodí schůzky se zájemci.'
         : 'Your external B2B sales team in CZ/SK. People-led outreach, supported by AI. Market testing from €1,500/month (half-time), with a 2–3 month trial.',
       images: [
         {
@@ -75,7 +75,7 @@ export async function generateMetadata({
         ? 'SalesAgent.cz — Řízená automatizace obchodu'
         : 'SalesAgent.cz — Czech Market Entry & Outsourced Sales Representation',
       description: isCz
-        ? 'Řízená automatizace obchodu: nasazení od 15 000 Kč, řízení od 12 900 Kč měsíčně. Vašemu obchodníkovi chodí schůzky se zájemci.'
+        ? 'Řízená automatizace obchodu: nasazení od 15 000 Kč, řízení od 9 900 Kč měsíčně bez DPH. Vašemu obchodníkovi chodí schůzky se zájemci.'
         : 'Your external B2B sales team in CZ/SK. People-led outreach, supported by AI. Market testing from €1,500/month (half-time), with a 2–3 month trial.',
       images: ['https://salesagent.cz/og-image.jpg'],
     },
@@ -125,14 +125,16 @@ function getServiceSchema(isCzech: boolean) {
             name: 'Nasazení na klíč',
             price: '15000',
             priceCurrency: 'CZK',
+            priceSpecification: { '@type': 'PriceSpecification', price: '15000', priceCurrency: 'CZK', valueAddedTaxIncluded: false },
             description: 'Jednorázové nasazení: napojení účtů, ICP, sekvence, Prezentér.',
             url: 'https://salesagent.cz/cs/pricing',
           },
           {
             '@type': 'Offer',
             name: 'Řízená automatizace',
-            price: '12900',
+            price: '9900',
             priceCurrency: 'CZK',
+            priceSpecification: { '@type': 'PriceSpecification', price: '9900', priceCurrency: 'CZK', valueAddedTaxIncluded: false },
             description: 'Měsíční řízení a ladění outboundu, schůzky se zájemci pro obchodníka.',
             url: 'https://salesagent.cz/cs/pricing',
           },
@@ -143,6 +145,7 @@ function getServiceSchema(isCzech: boolean) {
             name: 'Market testing (half-time)',
             price: '1500',
             priceCurrency: 'EUR',
+            priceSpecification: { '@type': 'PriceSpecification', price: '1500', priceCurrency: 'EUR', valueAddedTaxIncluded: false },
             description: 'Market testing from €1,500 per month with 1/2 time (half-time) capacity for a fixed 2–3 month trial. A people-led external sales team supported by AI tools.',
             url: 'https://salesagent.cz/en/pricing',
           },
@@ -151,6 +154,7 @@ function getServiceSchema(isCzech: boolean) {
             name: 'Ongoing representation',
             price: '1900',
             priceCurrency: 'EUR',
+            priceSpecification: { '@type': 'PriceSpecification', price: '1900', priceCurrency: 'EUR', valueAddedTaxIncluded: false },
             description: 'Ongoing sales representation from €1,900 per month after the trial. Continuation and scope are agreed based on results.',
             url: 'https://salesagent.cz/en/pricing',
           },

@@ -15,7 +15,7 @@ export async function generateMetadata({
       ? 'Řízená automatizace obchodu — schůzky se zájemci pro vašeho obchodníka | SalesAgent.cz'
       : 'Outsourced B2B Sales in the Czech Republic | SalesAgent.cz',
     description: locale === 'cs'
-      ? 'Najdeme, oslovíme a zahřejeme firmy za vás — e-mailem, na LinkedInu i reklamou. Vašemu obchodníkovi přistane připravená schůzka, kterou stačí zavřít. Nasadíme a řídíme za vás. Od 12 900 Kč měsíčně.'
+      ? 'Najdeme, oslovíme a zahřejeme firmy za vás — e-mailem, na LinkedInu i reklamou. Vašemu obchodníkovi přistane připravená schůzka, kterou stačí zavřít. Nasadíme a řídíme za vás. Od 9 900 Kč měsíčně bez DPH.'
       : 'Your external B2B sales team in CZ/SK. People-led outreach, supported by AI. Market testing from €1,500/month (half-time), with a 2–3 month trial.',
     keywords: locale === 'cs'
       ? ['automatizace obchodu', 'řízený outbound', 'reaktivace klientů', 'B2B lead generation', 'schůzky se zájemci', 'LinkedIn oslovování', 'AI prospecting', 'externí obchodní ředitel', 'automatizace oslovení']
@@ -746,7 +746,7 @@ export default async function HomePage({
                     name: 'Kolik to stojí?',
                     acceptedAnswer: {
                       '@type': 'Answer',
-                      text: 'Jednorázové nasazení na klíč od 15 000 Kč a pak měsíční řízení od 12 900 Kč — méně než půl obchodníka. Přesnou částku upřesníme na nezávazné konzultaci zdarma.',
+                      text: 'Jednorázové nasazení na klíč od 15 000 Kč a pak měsíční řízení od 9 900 Kč bez DPH — méně než půl obchodníka. Přesnou částku upřesníme na nezávazné konzultaci zdarma.',
                     },
                   },
                 ],
@@ -773,7 +773,7 @@ export default async function HomePage({
                 },
                 {
                   q: 'Kolik to stojí?',
-                  a: 'Jednorázové nasazení na klíč od 15 000 Kč a pak měsíční řízení od 12 900 Kč — méně než půl obchodníka. Přesnou částku upřesníme na nezávazné konzultaci zdarma.',
+                  a: 'Jednorázové nasazení na klíč od 15 000 Kč a pak měsíční řízení od 9 900 Kč bez DPH — méně než půl obchodníka. Přesnou částku upřesníme na nezávazné konzultaci zdarma.',
                 },
               ].map(({ q, a }) => (
                 <details

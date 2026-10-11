@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     question: 'Kolik stojí automatizace prodeje u SalesAgent.cz?',
-    answer: 'Nasazení řízeného outboundu začíná od 15 000 Kč jednorázově a průběžné řízení od 12 900 Kč měsíčně. První tři měsíce tak vycházejí od 53 700 Kč. Rozsah kanálů, dat a případných dalších nákladů se stanovuje v konkrétní nabídce.',
+    answer: 'Nasazení řízeného outboundu začíná od 15 000 Kč jednorázově bez DPH a průběžné řízení od 9 900 Kč měsíčně bez DPH. První tři měsíce tak vycházejí od 44 700 Kč bez DPH. Rozsah kanálů, dat a případných dalších nákladů se stanovuje v konkrétní nabídce.',
   },
   {
     question: 'Nahradí AI automatizace obchodníka?',
@@ -212,13 +212,13 @@ export default function Page() {
             <li><strong>Průběžné řízení:</strong> kontrolujeme reakce, předáváme kontext obchodníkovi a ladíme cílení i zprávy podle výsledků pilotu.</li>
           </ol>
           <p><strong>Nasazení je v řádu dní po schválení podkladů a zpřístupnění účtů.</strong> Přesný termín potvrdíme podle rozsahu integrací. Spuštění systému není totéž jako získání první schůzky; výsledek závisí na segmentu, nabídce a reakci zákazníků.</p>
-          <p>Nasazení začíná <strong>od 15 000 Kč jednorázově</strong>, řízený provoz <strong>od 12 900 Kč měsíčně</strong>. Rozsah a případné další náklady stanovíme v nabídce. Podrobnosti a odpovědi na praktické otázky najdete u služby <Link href="/cs/automatizovane-osloveni" style={linkStyle}>automatizované oslovení</Link> a v FAQ níže. <Link href="/cs/contact" style={linkStyle}>Kontaktujte nás</Link> pro návrh pilotu.</p>
+          <p>Nasazení začíná <strong>od 15 000 Kč jednorázově bez DPH</strong>, řízený provoz <strong>od 9 900 Kč měsíčně bez DPH</strong>. Rozsah a případné další náklady stanovíme v nabídce. Podrobnosti a odpovědi na praktické otázky najdete u služby <Link href="/cs/automatizovane-osloveni" style={linkStyle}>automatizované oslovení</Link> a v FAQ níže. <Link href="/cs/contact" style={linkStyle}>Kontaktujte nás</Link> pro návrh pilotu.</p>
 
           <H2>Kolik stojí automatizace prodeje oproti obchodníkovi?</H2>
           <p>
-            U SalesAgent.cz začíná nasazení řízeného outboundu <strong>od 15 000 Kč jednorázově</strong>
-            {' '}a průběžné řízení <strong>od 12 900 Kč měsíčně</strong>. První tři měsíce tak při základních
-            cenách vycházejí na 15 000 + 3 × 12 900 = <strong>53 700 Kč</strong>.
+            U SalesAgent.cz začíná nasazení řízeného outboundu <strong>od 15 000 Kč jednorázově bez DPH</strong>
+            {' '}a průběžné řízení <strong>od 9 900 Kč měsíčně bez DPH</strong>. První tři měsíce tak při základních
+            cenách vycházejí na 15 000 + 3 × 9 900 = <strong>44 700 Kč bez DPH</strong>.
             Jde o cenu „od“, nikoli univerzální rozpočet pro každý obor. Rozsah dat, kanálů a případných
             dalších nákladů si potvrďte v nabídce a v <Link href="/cs/pricing" style={linkStyle}>aktuálním ceníku</Link>.
           </p>
@@ -230,8 +230,8 @@ export default function Page() {
           </p>
           <p>
             Pro rozhodnutí sledujte cenu obchodníkem přijaté příležitosti a ekonomiku uzavřené zakázky.
-            Modelový výpočet: pokud první tři měsíce stojí 53 700 Kč a obchodník přijme 15 příležitostí,
-            náklad vychází na 3 580 Kč za příležitost. Počet 15 je pouze ilustrace výpočtu, nikoli
+            Modelový výpočet: pokud první tři měsíce stojí 44 700 Kč bez DPH a obchodník přijme 15 příležitostí,
+            náklad vychází na 2 980 Kč bez DPH za příležitost. Počet 15 je pouze ilustrace výpočtu, nikoli
             slibovaný výsledek. Započtěte další náklady a ověřte, jaká část příležitostí se skutečně uzavře.
           </p>
 
