@@ -15,7 +15,7 @@ export const en: Translations = {
     badge: 'Czech market entry · external sales representation',
     headline: 'We start your sales\nin the Czech Republic.',
     subheadline:
-      'We are your external B2B sales team in the Czech Republic and Slovakia. Our people manage prospecting, email and LinkedIn outreach and qualification, supported by AI tools, and book first meetings in your calendar. Market testing starts at €1,500/month with 1/2 time (half-time) capacity for a 2–3 month trial. No Czech entity or local hire needed.',
+      'We are your external B2B sales team in the Czech Republic and Slovakia. Our people manage prospecting, email and LinkedIn outreach and qualification, supported by AI tools, and book first meetings in your calendar. Pricing and scope are agreed individually. A paid 2–3 month market test can be arranged; we do not work on a commission-only basis. No Czech entity or local hire needed.',
     cta: 'Free consultation',
     ctaSub: 'or see how it works',
     pipelineLabel: 'Your Czech sales, running',
@@ -172,17 +172,17 @@ export const en: Translations = {
   pricing: {
     title: 'External Sales Representation in the Czech Republic',
     subtitle:
-      'Planning a Czech market entry? Our people manage prospecting, outreach and qualification, supported by AI tools. Start with Market testing from €1,500 per month (1/2 time) for a fixed 2–3 month trial. Then extend the representation if the results justify it.',
+      'Planning a Czech market entry? Our people manage prospecting, outreach and qualification, supported by AI tools. Pricing and scope are agreed individually. We can arrange a paid 2–3 month market test; we do not work on a commission-only basis. Then extend the representation if the results justify it.',
     setup: {
       label: '2–3 month Czech market entry trial',
       description:
-        'For your Czech market entry, we build the target list, contact decision-makers by personalised email and LinkedIn, handle follow-ups, qualify replies and book first meetings. At the end of the trial, we review the results and agree whether to extend the representation or change the approach.',
+        'We agree the fee, scope and capacity before starting a paid 2–3 month test. We do not work on a commission-only basis. For your Czech market entry, we build the target list, contact decision-makers by personalised email and LinkedIn, handle follow-ups, qualify replies and book first meetings. At the end of the trial, we review the results and agree whether to extend the representation or change the approach.',
     },
     tiers: [
       {
         name: 'Market testing',
-        monthlyLabel: 'per month · 1/2 time (half-time) · 2–3 month initial term',
-        price: 'from €1,500',
+        monthlyLabel: 'paid 2–3 month test · scope by agreement',
+        price: 'By agreement',
         priceNote: 'Start here',
         features: [
           'Target list built around your ideal customer profile',
@@ -196,8 +196,8 @@ export const en: Translations = {
       },
       {
         name: 'Ongoing representation',
-        monthlyLabel: 'monthly after the trial',
-        price: 'from €1,900',
+        monthlyLabel: 'continuation and scope by agreement',
+        price: 'By agreement',
         priceNote: 'If it works',
         features: [
           'Continued outreach and pipeline development',
@@ -226,6 +226,10 @@ export const en: Translations = {
     ],
     faq: [
       {
+        q: 'Do you work on a commission-only basis?',
+        a: 'No. We agree a paid engagement with a fee, scope and capacity defined before starting. A paid 2–3 month market test can be arranged, followed by ongoing representation by mutual agreement.',
+      },
+      {
         q: 'What does the 2–3 month trial include?',
         a: 'We define your ideal customer profile, build a target list, contact relevant decision-makers by personalised email and LinkedIn, run follow-ups, qualify replies and book first meetings into your calendar.',
       },
@@ -247,7 +251,7 @@ export const en: Translations = {
       },
       {
         q: 'How much does the trial cost?',
-        a: 'Market testing starts at €1,500 per month for a 2–3 month trial with 1/2 time (half-time) capacity. Ongoing representation starts at €1,900 per month. The final scope depends on your segment, language, number of prospects and channels; we confirm it before starting.',
+        a: 'The fee, capacity and scope are agreed individually before we start. We can arrange a paid 2–3 month market test and agree ongoing representation after reviewing the results. We do not work on a commission-only basis. All prices exclude VAT.',
       },
       {
         q: 'Is the outreach legally compliant?',

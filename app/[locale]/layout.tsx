@@ -26,7 +26,7 @@ export async function generateMetadata({
     },
     description: isCz
       ? 'Najdeme, oslovíme a zahřejeme firmy za vás — e-mailem, na LinkedInu i reklamou. Vašemu obchodníkovi přistane připravená schůzka. Nasazení od 15 000 Kč, řízení od 9 900 Kč měsíčně bez DPH.'
-      : 'Your external B2B sales team in CZ/SK. People-led outreach, supported by AI. Market testing from €1,500/month (half-time), with a 2–3 month trial.',
+      : 'Your external B2B sales team in CZ/SK. People-led outreach, supported by AI. Pricing by agreement, with a paid 2–3 month market test. No commission-only engagements.',
     keywords: isCz
       ? ['automatizace obchodu', 'řízený outbound', 'B2B lead generation', 'schůzky se zájemci', 'LinkedIn oslovování', 'AI prospecting', 'cold email automatizace', 'B2B prospecting']
       : ['czech market entry', 'external sales representation czech republic', 'outsourced sales czech republic', 'sales agent czech republic', 'b2b lead generation czech republic', 'czech and slovak market entry'],
@@ -40,7 +40,7 @@ export async function generateMetadata({
         : 'SalesAgent.cz — Czech Market Entry & Outsourced Sales Representation',
       description: isCz
         ? 'Řízená automatizace obchodu: nasazení od 15 000 Kč, řízení od 9 900 Kč měsíčně bez DPH. Vašemu obchodníkovi chodí schůzky se zájemci.'
-        : 'Your external B2B sales team in CZ/SK. People-led outreach, supported by AI. Market testing from €1,500/month (half-time), with a 2–3 month trial.',
+        : 'Your external B2B sales team in CZ/SK. People-led outreach, supported by AI. Pricing by agreement, with a paid 2–3 month market test. No commission-only engagements.',
       images: [
         {
           url: 'https://salesagent.cz/og-image.jpg',
@@ -76,7 +76,7 @@ export async function generateMetadata({
         : 'SalesAgent.cz — Czech Market Entry & Outsourced Sales Representation',
       description: isCz
         ? 'Řízená automatizace obchodu: nasazení od 15 000 Kč, řízení od 9 900 Kč měsíčně bez DPH. Vašemu obchodníkovi chodí schůzky se zájemci.'
-        : 'Your external B2B sales team in CZ/SK. People-led outreach, supported by AI. Market testing from €1,500/month (half-time), with a 2–3 month trial.',
+        : 'Your external B2B sales team in CZ/SK. People-led outreach, supported by AI. Pricing by agreement, with a paid 2–3 month market test. No commission-only engagements.',
       images: ['https://salesagent.cz/og-image.jpg'],
     },
     other: {
@@ -116,7 +116,7 @@ function getServiceSchema(isCzech: boolean) {
     serviceType: isCzech ? 'Automatizace B2B obchodu' : 'Outsourced B2B sales representation and market entry',
     description: isCzech
       ? 'Nasadíme a řídíme automatizaci B2B oslovování: vyhledání firem, e-mail a LinkedIn outreach, zahřátí a předání schůzek se zájemci vašemu obchodníkovi. Součástí nabídky je i externí reaktivace neaktivních klientů telefonem, e-mailem a přes LinkedIn.'
-      : 'We act as the external B2B sales team of foreign companies entering the Czech Republic and Slovakia. Our people manage prospecting, outreach and qualification, supported by AI tools, and book first meetings in the client\'s calendar. Market testing starts at €1,500 per month with half-time capacity for a fixed 2–3 month trial. No local entity or hire is required; continuation is agreed after reviewing results. We also run outsourced reactivation of dormant clients by phone, email and LinkedIn.',
+      : 'We act as the external B2B sales team of foreign companies entering the Czech Republic and Slovakia. Our people manage prospecting, outreach and qualification, supported by AI tools, and book first meetings in the client\'s calendar. Pricing and scope are agreed individually. A paid 2–3 month market test can be arranged; we do not work on a commission-only basis. No local entity or hire is required; continuation is agreed after reviewing results. We also run outsourced reactivation of dormant clients by phone, email and LinkedIn.',
     inLanguage: isCzech ? 'cs' : 'en',
     offers: isCzech
       ? [
@@ -143,19 +143,13 @@ function getServiceSchema(isCzech: boolean) {
           {
             '@type': 'Offer',
             name: 'Market testing (half-time)',
-            price: '1500',
-            priceCurrency: 'EUR',
-            priceSpecification: { '@type': 'PriceSpecification', price: '1500', priceCurrency: 'EUR', valueAddedTaxIncluded: false },
-            description: 'Market testing from €1,500 per month with 1/2 time (half-time) capacity for a fixed 2–3 month trial. A people-led external sales team supported by AI tools.',
+            description: 'Paid 2–3 month market testing with fee, scope and capacity agreed individually. A people-led external sales team supported by AI tools. We do not work on a commission-only basis.',
             url: 'https://salesagent.cz/en/pricing',
           },
           {
             '@type': 'Offer',
             name: 'Ongoing representation',
-            price: '1900',
-            priceCurrency: 'EUR',
-            priceSpecification: { '@type': 'PriceSpecification', price: '1900', priceCurrency: 'EUR', valueAddedTaxIncluded: false },
-            description: 'Ongoing sales representation from €1,900 per month after the trial. Continuation and scope are agreed based on results.',
+            description: 'Ongoing sales representation with pricing, continuation and scope agreed after reviewing the test results. We do not work on a commission-only basis.',
             url: 'https://salesagent.cz/en/pricing',
           },
         ],

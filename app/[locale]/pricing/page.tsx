@@ -13,7 +13,7 @@ export async function generateMetadata({
     title: cs ? 'Ceník — řízená automatizace obchodu' : 'Pricing — Czech Market Entry & Sales Representation',
     description: cs
       ? 'Nasazení na klíč od 15 000 Kč jednorázově, pak řízená automatizace od 9 900 Kč měsíčně bez DPH — systém jedeme za vás, váš obchodník zavírá připravené schůzky.'
-      : 'People-led Czech market testing, supported by AI. From €1,500/month (half-time), with a 2–3 month trial before agreeing ongoing sales representation.',
+      : 'People-led Czech sales representation, supported by AI. Pricing by agreement; a paid 2–3 month market test is available. No commission-only engagements.',
     alternates: {
       canonical: `https://salesagent.cz/${locale}/pricing`,
       languages: {
@@ -30,14 +30,14 @@ export async function generateMetadata({
       title: cs ? 'Ceník — řízená automatizace obchodu | SalesAgent.cz' : 'Pricing — Czech Market Entry & Sales Representation | SalesAgent.cz',
       description: cs
         ? 'Nasazení od 15 000 Kč, řízená automatizace od 9 900 Kč měsíčně bez DPH.'
-        : 'People-led Czech market testing, supported by AI. From €1,500/month (half-time), with a 2–3 month trial before agreeing ongoing sales representation.',
+        : 'People-led Czech sales representation, supported by AI. Pricing by agreement; a paid 2–3 month market test is available. No commission-only engagements.',
     },
     twitter: {
       card: 'summary_large_image',
       title: cs ? 'Ceník — řízená automatizace obchodu | SalesAgent.cz' : 'Pricing — Czech Market Entry & Sales Representation | SalesAgent.cz',
       description: cs
         ? 'Nasazení od 15 000 Kč, řízená automatizace od 9 900 Kč měsíčně bez DPH.'
-        : 'People-led Czech market testing, supported by AI. From €1,500/month (half-time), with a 2–3 month trial before agreeing ongoing sales representation.',
+        : 'People-led Czech sales representation, supported by AI. Pricing by agreement; a paid 2–3 month market test is available. No commission-only engagements.',
     },
   }
 }
@@ -75,10 +75,7 @@ export default async function PricingPage({
         offers: {
           '@type': 'Offer',
           name: 'Market testing (half-time)',
-          price: '1500',
-          priceCurrency: 'EUR',
-          priceSpecification: { '@type': 'PriceSpecification', price: '1500', priceCurrency: 'EUR', valueAddedTaxIncluded: false },
-          description: 'Market testing from €1,500 per month with 1/2 time (half-time) capacity during the initial 2–3 month trial. Ongoing representation from €1,900 per month; continuation and scope are agreed after the trial.',
+          description: 'A paid 2–3 month market test can be arranged with pricing, scope and capacity agreed individually. Ongoing representation is agreed after reviewing results. We do not work on a commission-only basis.',
           url: 'https://salesagent.cz/en/pricing',
         },
       }
