@@ -109,7 +109,12 @@
   function refresh(event) {
     if (!consent()) {
       var storedConsent = readCookie("CookieScriptConsent");
-      var revoked = active || (storedConsent && ["accept", "reject"].includes(storedConsent.action))
+      var currentState;
+      try { currentState = window.CookieScript && window.CookieScript.instance && window.CookieScript.instance.currentState(); } catch (_) {}
+      // A newly opened subdomain can have an undecided CMP while the parent cookie
+      // still says accept. This is not a withdrawal and must not erase first touch.
+      var choice = currentState || storedConsent;
+      var revoked = (choice && ["accept", "reject"].includes(choice.action))
         || (event && /CookieScript(Reject|Save|Accept)/.test(event.type));
       if (active) {
         active = false;
