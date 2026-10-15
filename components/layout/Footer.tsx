@@ -98,6 +98,7 @@ export default function Footer({ locale, t, initialYear }: FooterProps) {
               { href: `${base}#how-it-works`, label: t.footer.links.howItWorks },
               { href: `${base}/pricing`, label: t.footer.links.pricing },
               { href: `${base}/contact`, label: t.footer.links.contact },
+              ...(locale === 'cs' ? [{ href: '/cs/automatizace-obchodu-claude-chatgpt', label: 'Automatizace přes Claude a ChatGPT' }] : []),
             ].map((link) => (
               <Link
                 key={link.href}

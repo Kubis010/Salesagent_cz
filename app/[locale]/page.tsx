@@ -173,6 +173,19 @@ export default async function HomePage({
         </div>
       </section>
 
+      {locale === 'cs' && (
+        <section style={{ maxWidth: '1152px', margin: '0 auto 32px', padding: '0 24px' }} aria-label="Ukázka automatizace obchodu bez kódování">
+          <Link href="/cs/automatizace-obchodu-claude-chatgpt" className="card-hover" style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '18px', padding: '24px 28px', border: '1px solid rgba(255,107,74,0.3)', borderRadius: '12px', background: 'rgba(255,107,74,0.05)', textDecoration: 'none', color: 'var(--text)' }}>
+            <div style={{ maxWidth: '700px' }}>
+              <p style={{ color: 'var(--accent)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.08em', marginBottom: '8px' }}>PRAKTICKÁ UKÁZKA · BEZ KÓDOVÁNÍ</p>
+              <h2 style={{ fontSize: '22px', fontWeight: 600, lineHeight: 1.3, marginBottom: '8px' }}>Jak si postavit automatizaci obchodu přes Claude a ChatGPT</h2>
+              <p style={{ color: 'var(--text-muted)', fontSize: '14px', lineHeight: 1.7 }}>Za 15 minut uvidíte, jak hledat leady, klasifikovat je a připravit kampaně se Salesbotem.</p>
+            </div>
+            <span style={{ color: 'var(--accent)', fontSize: '14px', fontWeight: 600 }}>Pustit video a online Prezentér →</span>
+          </Link>
+        </section>
+      )}
+
       {/* ── HOW IT WORKS ── */}
       <section
         id="how-it-works"

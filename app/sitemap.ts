@@ -89,6 +89,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   }
 
+  // CS-only self-serve workshop landing page
+  entries.push({
+    url: `${BASE_URL}/cs/automatizace-obchodu-claude-chatgpt`,
+    lastModified: new Date('2026-10-15'),
+    changeFrequency: 'monthly',
+    priority: 0.85,
+    alternates: { languages: { cs: `${BASE_URL}/cs/automatizace-obchodu-claude-chatgpt` } },
+  })
+
   // EN-only guides
   entries.push({
     url: `${BASE_URL}/en/guides/czech-market-entry-for-b2b-companies`,
