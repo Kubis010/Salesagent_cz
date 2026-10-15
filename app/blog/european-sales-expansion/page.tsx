@@ -219,8 +219,8 @@ export default function EuropeanSalesExpansionPage() {
             </p>
             <p>
               We covered this trade-off in detail for one market in{' '}
-              <Link href="/blog/market-entry-czech-republic-hire-sales-vs-open-entity" style={{ color: 'var(--accent)', textDecoration: 'none' }}>
-                market entry into the Czech Republic: hire local sales or open an entity first
+              <Link href="/en/guides/czech-market-entry-for-b2b-companies" style={{ color: 'var(--accent)', textDecoration: 'none' }}>
+                hire sales vs. open a Czech entity
               </Link>
               . The same logic applies to every European market you expand into.
             </p>
@@ -283,8 +283,8 @@ export default function EuropeanSalesExpansionPage() {
               <Link href="/en/sales-representation-czech-republic" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
                 External sales representation in Czech Republic — outsourced sales agent service →
               </Link>
-              <Link href="/blog/market-entry-czech-republic-hire-sales-vs-open-entity" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
-                Market entry Czech Republic: hire local sales or open an entity first →
+              <Link href="/en/guides/czech-market-entry-for-b2b-companies" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
+                Czech market entry →
               </Link>
               <Link href="/blog/how-to-expand-your-business-and-sales-to-the-european-union" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
                 How to expand B2B sales to the European Union →

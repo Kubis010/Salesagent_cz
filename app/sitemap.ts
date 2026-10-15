@@ -47,7 +47,6 @@ const blogPosts = [
   { slug: '/gdpr-a-cold-email', priority: 0.9, changeFrequency: 'monthly' as const },
   { slug: '/jak-oslovit-firmy-bez-databaze', priority: 0.9, changeFrequency: 'monthly' as const },
   { slug: '/kolik-stoji-obchodnik-vs-ai', priority: 0.9, changeFrequency: 'monthly' as const },
-  { slug: '/market-entry-czech-republic-hire-sales-vs-open-entity', priority: 0.9, changeFrequency: 'monthly' as const },
   { slug: '/european-sales-expansion', priority: 0.9, changeFrequency: 'monthly' as const },
   { slug: '/hiring-local-czech-staff-can-be-expensive-mistake', priority: 0.9, changeFrequency: 'monthly' as const },
   { slug: '/follow-up-email-vzor', priority: 0.9, changeFrequency: 'monthly' as const },
@@ -101,7 +100,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // EN-only guides
   entries.push({
     url: `${BASE_URL}/en/guides/czech-market-entry-for-b2b-companies`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-10-15'),
     changeFrequency: 'monthly' as const,
     priority: 0.85,
     alternates: {

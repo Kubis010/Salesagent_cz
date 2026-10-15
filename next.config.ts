@@ -5,6 +5,17 @@ const nextConfig: NextConfig = {
   // output: 'export',
   async redirects() {
     return [
+      // Consolidated into the market-entry guide; explicit 301, no /en/blog/ chain.
+      {
+        source: '/blog/market-entry-czech-republic-hire-sales-vs-open-entity',
+        destination: '/en/guides/czech-market-entry-for-b2b-companies',
+        statusCode: 301,
+      },
+      {
+        source: '/en/blog/market-entry-czech-republic-hire-sales-vs-open-entity',
+        destination: '/en/guides/czech-market-entry-for-b2b-companies',
+        statusCode: 301,
+      },
       {
         source: '/',
         destination: '/cs',

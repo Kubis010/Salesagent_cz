@@ -179,7 +179,7 @@ export const posts: BlogPost[] = [
     title: 'Czech Market Entry for B2B Companies: A Practical Playbook',
     date: '28 August 2026',
     description:
-      'When to enter the Czech B2B market, entity vs. no entity, how to find first customers, and what to avoid. A practical guide for international companies.',
+      'Czech B2B market entry: hire sales vs. open a Czech entity, compare costs and risks, validate demand and find your first customers.',
     image: '/guides/czech-market-entry-guide.jpg',
   },
   {
@@ -190,15 +190,6 @@ export const posts: BlogPost[] = [
     description:
       'Expand B2B sales into European markets without opening offices or hiring local reps. We research companies, run outreach and book first meetings — done for you, market by market.',
     image: '/blog/european-sales-expansion.jpg',
-  },
-  {
-    href: '/blog/market-entry-czech-republic-hire-sales-vs-open-entity',
-    lang: 'EN',
-    title: 'Market Entry Czech Republic: Hire Local Sales or Open an Entity First?',
-    date: '25 August 2026',
-    description:
-      'Compare entity-first vs sales-first market entry into Czech Republic — cost, speed, risk. How to test demand before committing capital to infrastructure.',
-    image: '/blog/market-entry-czech.jpg',
   },
   {
     href: '/blog/hiring-local-czech-staff-can-be-expensive-mistake',
