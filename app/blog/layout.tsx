@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
+import MeasurementScripts from '@/components/MeasurementScripts'
 import '../globals.css'
 import { getTranslations } from '@/lib/i18n'
 import BlogChrome from '@/components/layout/BlogChrome'
@@ -46,13 +47,7 @@ export default function BlogLayout({ children }: { children: React.ReactNode }) 
         <BlogChrome part="header" csT={csT} enT={enT} enPaths={enPaths} initialYear={currentYear} />
         <main>{children}</main>
         <BlogChrome part="footer" csT={csT} enT={enT} enPaths={enPaths} initialYear={currentYear} />
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-442V6JSVVN"
-          strategy="afterInteractive"
-        />
-        <Script id="gtag-init" strategy="afterInteractive">
-          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-442V6JSVVN');`}
-        </Script>
+        <MeasurementScripts />
         <Script
           src="https://towhdopfkjwvbfobvoli.supabase.co/functions/v1/contextual-loader?site=90f638ef-eab0-434d-85aa-7dfe88f6b44a"
           strategy="afterInteractive"

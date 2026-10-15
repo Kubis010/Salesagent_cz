@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import type { Translations } from '@/lib/i18n'
+import { leadAttribution, trackLead } from '@/lib/measurement'
 
 declare global {
   interface Window {
@@ -32,16 +33,22 @@ export default function ContactForm({ t }: { t: Translations }) {
     
     const formData = new FormData(e.currentTarget)
     formData.append('form-name', 'contact')
+    const attribution = leadAttribution()
+    if (attribution) {
+      formData.set('attribution', JSON.stringify(attribution))
+      for (const key of ['landing_page', 'first_source', 'first_medium', 'first_campaign', 'captured_at']) {
+        formData.set(key, String(attribution[key] ?? ''))
+      }
+    }
 
     try {
-      await fetch('/__forms.html', {
+      const response = await fetch('/__forms.html', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams(formData as any).toString(),
       })
-      window.gtag?.('event', 'generate_lead', {
-        method: 'contact_form',
-      })
+      if (!response.ok) throw new Error(`Form submission failed (${response.status})`)
+      trackLead(document.documentElement.lang.startsWith('cs') ? 'cs' : 'en')
       setStatus('success')
     } catch (error) {
       console.error('Form submission error:', error)

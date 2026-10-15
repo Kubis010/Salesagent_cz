@@ -1,4 +1,5 @@
 import Script from 'next/script'
+import MeasurementScripts from '@/components/MeasurementScripts'
 import '../globals.css'
 import { getTranslations } from '@/lib/i18n'
 import Header from '@/components/layout/Header'
@@ -13,13 +14,7 @@ export default function RegisterLayout({ children }: { children: React.ReactNode
         <Header locale="en" t={t} />
         <main>{children}</main>
         <Footer locale="en" t={t} initialYear={currentYear} />
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-442V6JSVVN"
-          strategy="afterInteractive"
-        />
-        <Script id="gtag-init" strategy="afterInteractive">
-          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-442V6JSVVN');`}
-        </Script>
+        <MeasurementScripts />
         <Script
           src="https://towhdopfkjwvbfobvoli.supabase.co/functions/v1/contextual-loader?site=90f638ef-eab0-434d-85aa-7dfe88f6b44a"
           strategy="afterInteractive"

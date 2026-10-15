@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
+import MeasurementScripts from '@/components/MeasurementScripts'
 import '../globals.css'
 import { locales, getTranslations, type Locale, type Translations } from '@/lib/i18n'
 import Header from '@/components/layout/Header'
@@ -187,19 +188,9 @@ export default async function LocaleLayout({
         <Header locale={locale as Locale} t={t} />
         <main>{children}</main>
         <Footer locale={locale as Locale} t={t} initialYear={currentYear} />
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-442V6JSVVN"
-          strategy="afterInteractive"
-        />
-        <Script id="gtag-init" strategy="afterInteractive">
-          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-442V6JSVVN');`}
-        </Script>
+        <MeasurementScripts />
         <Script
           src="https://towhdopfkjwvbfobvoli.supabase.co/functions/v1/contextual-loader?site=90f638ef-eab0-434d-85aa-7dfe88f6b44a"
-          strategy="afterInteractive"
-        />
-        <Script
-          src="//cdn.cookie-script.com/s/6195a622ebb5274d4b804e418a7e0e6e.js"
           strategy="afterInteractive"
         />
       </body>
