@@ -150,6 +150,30 @@ export default async function PricingPage({
           </div>
         </div>
 
+        {cs && (
+          <section
+            aria-labelledby="campaign-setup-title"
+            style={{
+              background: 'var(--bg-card)',
+              border: '1px solid var(--border)',
+              borderRadius: '10px',
+              padding: '24px',
+              marginBottom: '32px',
+              display: 'flex',
+              flexWrap: 'wrap',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              gap: '16px',
+            }}
+          >
+            <h2 id="campaign-setup-title" style={{ fontSize: '22px', fontWeight: 600, margin: 0 }}>Nastavení kampaně</h2>
+            <div>
+              <p style={{ fontSize: '22px', fontWeight: 600, color: 'var(--accent)', margin: '0 0 4px' }}>od 2 900 Kč bez DPH</p>
+              <p style={{ fontSize: '14px', color: 'var(--text-muted)', margin: 0 }}>za účet · jednorázově</p>
+            </div>
+          </section>
+        )}
+
         {/* Tiers */}
         <div
           style={{
