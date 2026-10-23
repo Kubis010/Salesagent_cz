@@ -15,9 +15,6 @@ export function middleware(request: NextRequest) {
 
   // Skip paths that must keep their exact URLs for SEO/GSC
   if (
-    // Do not redirect to a locale route until the commercial page is published.
-    pathname === '/externi-obchod' ||
-    pathname === '/externi-obchod/' ||
     pathname.startsWith('/blog') ||
     pathname.startsWith('/czech-business-companies-register')
   ) {

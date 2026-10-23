@@ -153,7 +153,7 @@ export default function LandingExperience() {
       }
     `}</style>
     {WEBINAR_ENABLED && WEBINAR_DATE && <section className={styles.webinar}><h2>Živá ukázka: Claude/ChatGPT + Salesbot za 30 minut</h2><p>{WEBINAR_DATE}</p><button type="button" className={styles.primary} onClick={() => { setFormType('webinar'); open() }}>Registrovat se na webinář</button></section>}
-    {choice && !preferences && !opened && <a href="#konzultace" data-consultation data-placement="sticky" className={styles.sticky}>Konzultace zdarma <span>→</span></a>}
+    {choice && !preferences && !opened && <a href="/cs/contact" data-placement="sticky" className={styles.sticky}>Kontaktujte nás <span>→</span></a>}
     {choice && !preferences && <button type="button" className={styles.cookieReopen} onClick={() => setPreferences(true)}>Nastavení cookies</button>}
     {(!choice || preferences) && <section data-landing-cookie-panel className={styles.cookieBanner} aria-label="Nastavení cookies">
       <strong>Vaše soukromí</strong><p>Nezbytné cookies zajišťují chod webu. Analytiku a reklamní cookies zapneme jen s vaším souhlasem. <a href="/cs/privacy">Zásady ochrany soukromí</a></p>

@@ -5,6 +5,13 @@ const nextConfig: NextConfig = {
   // output: 'export',
   async redirects() {
     return [
+      // Legacy entry URLs point directly to their final service/language destination.
+      { source: '/externi-obchod', destination: '/cs/externi-obchod', statusCode: 301 },
+      { source: '/sales-representation-czech-republic', destination: '/cs/externi-obchod', statusCode: 301 },
+      { source: '/services', destination: '/en/sales-representation-czech-republic', statusCode: 301 },
+      { source: '/pricing', destination: '/en/pricing', statusCode: 301 },
+      { source: '/contact', destination: '/en/contact', statusCode: 301 },
+      { source: '/about', destination: '/en/about', statusCode: 301 },
       // Consolidated into the market-entry guide; explicit 301, no /en/blog/ chain.
       {
         source: '/blog/market-entry-czech-republic-hire-sales-vs-open-entity',
@@ -63,11 +70,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       // EN sales-representation service page is live (ranks for "market entry czech republic").
-      // CS stays redirected — Czech positioning is the owned-system homepage, not representation.
+      // The former Czech representation URL is replaced by the commercial service page.
       {
         source: '/cs/sales-representation-czech-republic',
-        destination: '/cs',
-        permanent: true,
+        destination: '/cs/externi-obchod',
+        statusCode: 301,
       },
       {
         source: '/:locale(cs|en)/guides/expand-b2b-sales-to-czech-republic',
