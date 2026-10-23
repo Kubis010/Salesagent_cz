@@ -96,7 +96,7 @@ export const cs = {
         client: 'SavvyLockers',
         sector: 'Chytré schránky · B2B',
         value: '5+',
-        result: 'vážných poptávek za 1 měsíc',
+        result: 'poptávek za 1 měsíc',
       },
     ],
     note: 'Konkrétní reference a doporučení rádi předáme na vyžádání.',
@@ -104,7 +104,7 @@ export const cs = {
   services: {
     title: 'Co za vás jede',
     subtitle:
-      'Ne jeden nástroj na jeden krok. Řízený systém přes celý funnel — od hledání firem po připravenou schůzku, kterou zavře váš člověk.',
+      'Řízená automatizace dodá schůzky vašemu obchodníkovi. Nemáte vlastní obchodní kapacitu? Domluvíme externí obchod a rozsah zastoupení na míru.',
     automation: {
       badge: 'Proaktivní práce',
       title: 'Celý horní trychtýř jede AI systém',
@@ -120,14 +120,14 @@ export const cs = {
       cta: 'Domluvit konzultaci',
     },
     agency: {
-      badge: 'Bez závislosti na vašem člověku',
-      title: 'Vyřízneme nejslabší článek',
-      body: 'Váš obchodník neprospektuje? Nevadí. Proaktivní práci za něj dělá AI systém, on jen zavírá připravené schůzky. Úspěch tak nestojí na jeho aktivitě — a my celý systém řídíme a ladíme za vás.',
+      badge: 'Externí obchod · cena dle domluvy',
+      title: 'Nemáte vlastního obchodníka? Zapojíme se za vás.',
+      body: 'Převezmeme aktivní získávání zákazníků — vyhledání firem, oslovení, follow-upy a kvalifikaci zájmu. Podle dohody se zapojíme i do obchodních jednání a navazující péče o příležitosti. Rozsah zastoupení, kapacitu a cenu si domluvíme předem. Jde o samostatnou službu, ne o součást řízené automatizace od 9 900 Kč měsíčně.',
       examples: [
-        { label: 'Oslovování jede přes váš ověřený LinkedIn účet — bezpečně a lidsky', icon: 'connect' },
-        { label: 'Systém řídíme a optimalizujeme my — vy se ho nedotknete', icon: 'flow' },
-        { label: 'Obchodníkovi chodí schůzky se zájemci, ne úkoly navíc', icon: 'enrich' },
-        { label: 'Napojení na sesterské produkty (salesbot, Prezentér, custom dev)', icon: 'chart' },
+        { label: 'Hledání a oslovování firem podle vašeho ideálního zákazníka', icon: 'connect' },
+        { label: 'Zpracování odpovědí, follow-upy a domlouvání schůzek', icon: 'flow' },
+        { label: 'Účast na obchodních jednáních a další postup dle dohody', icon: 'enrich' },
+        { label: 'Cena dle domluvy podle kapacity a rozsahu zastoupení', icon: 'chart' },
       ],
       cta: 'Domluvit konzultaci',
     },
@@ -165,7 +165,7 @@ export const cs = {
   pricing: {
     title: 'Kolik to stojí',
     subtitle:
-      'Nasazení na klíč jednorázově, pak měsíční řízení systému. Přesnou částku upřesníme na nezávazné konzultaci podle rozsahu a počtu kanálů.',
+      'Nasazení na klíč jednorázově, pak měsíční řízení systému. Externí obchod a obchodní zastoupení nabízíme samostatně s cenou dle domluvy. Rozsah spolupráce upřesníme na nezávazné konzultaci.',
     setup: {
       label: 'Nasadíme, pak to za vás řídíme',
       description:
@@ -203,6 +203,21 @@ export const cs = {
         highlight: true,
       },
       {
+        name: 'Externí obchod',
+        monthlyLabel: 'podle kapacity a rozsahu zastoupení',
+        price: 'dle domluvy',
+        priceNote: 'Obchodní zastoupení',
+        features: [
+          'Aktivní získávání nových B2B zákazníků',
+          'Oslovení, follow-upy a kvalifikace zájmu',
+          'Domlouvání schůzek a péče o příležitosti',
+          'Zapojení do obchodních jednání dle dohody',
+          'Samostatná služba nad rámec řízené automatizace',
+        ],
+        cta: 'Probrat externí obchod',
+        highlight: false,
+      },
+      {
         name: 'Enterprise / na míru',
         monthlyLabel: 'individuální nacenění',
         price: 'individuálně',
@@ -220,8 +235,12 @@ export const cs = {
     ],
     faq: [
       {
+        q: 'Nemáme vlastního obchodníka. Můžete obchod převzít za nás?',
+        a: 'Ano. Vedle řízené automatizace nabízíme samostatnou službu externího obchodu. Převezmeme hledání a oslovování firem, follow-upy a kvalifikaci zájmu. Podle dohody se zapojíme i do obchodních jednání a péče o příležitosti. Cenu, kapacitu i odpovědnost za jednotlivé kroky dohodneme předem; nejde o součást automatizace od 9 900 Kč měsíčně.',
+      },
+      {
         q: 'Nahradí to našeho obchodníka?',
-        a: 'Ne. Dodá mu schůzky se zájemci. Proaktivní hledání a oslovování dělá AI systém, váš člověk jen zavírá zájemce, kteří už produkt viděli.',
+        a: 'Řízená automatizace ho nenahrazuje — dodá mu schůzky se zájemci a váš člověk vede jednání a uzavírá zakázky. Pokud vlastní obchodní kapacitu nemáte, domluvíme samostatnou službu externího obchodu s individuálním rozsahem a cenou.',
       },
       {
         q: 'Musíme systém nějak obsluhovat?',

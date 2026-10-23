@@ -241,6 +241,7 @@ export default function CoJeExterniObchodPage() {
             </details>
           </section>
 
+          <p className="mt-10 text-gray-400">Hledáte partnera pro svou firmu? Podívejte se na službu <Link href="/cs/externi-obchod" className="text-orange-400 underline">externí obchodník / obchodní zástupce na outsourcing</Link>.</p>
           <nav className="mt-16 pt-10 border-t border-white/10">
             <p className="text-sm text-gray-500 uppercase tracking-widest mb-6">Související články</p>
             <div className="grid gap-4">

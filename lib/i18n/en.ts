@@ -103,7 +103,7 @@ export const en: Translations = {
         client: 'SavvyLockers',
         sector: 'Smart lockers · B2B',
         value: '5+',
-        result: 'serious enquiries in one month',
+        result: 'enquiries in one month',
       },
     ],
     note: 'Specific references and recommendations available on request.',

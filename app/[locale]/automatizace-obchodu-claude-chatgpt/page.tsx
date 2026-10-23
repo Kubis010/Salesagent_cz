@@ -3,10 +3,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import styles from './page.module.css'
+import LandingExperience, { DemoEmbed } from './LandingExperience'
 
 const path = '/cs/automatizace-obchodu-claude-chatgpt'
-const demoUrl = 'https://app.salesrobots.cz/demo/salesagent-cz'
-const salesbotUrl = 'https://app.salesbot.cz/auth?lang=cs&mode=signup&utm_source=salesagent.cz&utm_medium=website&utm_campaign=claude-chatgpt-automatizace'
+const salesbotUrl = 'https://app.salesbot.cz/auth?lang=cs&mode=signup&utm_source=salesagent.cz&utm_medium=referral&utm_campaign=ac-claude-gpt-2026-10'
 const description = 'Za 15 minut uvidíte, jak najít leady, klasifikovat je a připravit kampaně přes Claude či ChatGPT a Salesbot. Bez kódování, s interaktivním Prezentérem.'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -116,8 +116,8 @@ function PlayIcon() {
 function ProductActions({ compact = false }: { compact?: boolean }) {
   return (
     <div className={`${styles.actions} ${compact ? styles.compact : ''}`}>
-      <a href={salesbotUrl} className={styles.primary}>Vyzkoušet Salesbota <span aria-hidden="true">↗</span></a>
-      <Link href="/cs/contact" className={styles.secondary}>Chci to mít na klíč <span aria-hidden="true">→</span></Link>
+      {!compact && <a href={salesbotUrl} data-salesbot data-placement="after_demo" className={styles.secondary}>Spustit Salesbota <span aria-hidden="true">↗</span></a>}
+      <a href="#konzultace" data-consultation data-placement="content" className={compact ? styles.textLink : styles.primary}>Domluvit konzultaci <span aria-hidden="true">→</span></a>
     </div>
   )
 }
@@ -131,6 +131,7 @@ export default async function SalesbotWorkshopPage({ params }: { params: Promise
   }
   return (
     <div className={styles.page}>
+      <LandingExperience />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <section className={styles.hero} aria-labelledby="workshop-title">
         <div className={styles.heroCopy}>
@@ -139,17 +140,14 @@ export default async function SalesbotWorkshopPage({ params }: { params: Promise
           <h1 id="workshop-title">Automatizace obchodu přes Claude a ChatGPT.<br /><em>Bez kódování.</em></h1>
           <p className={styles.lead}>Obchod vám běží. Na hledání dalších zákazníků už ale nezbývá čas.</p>
           <p className={styles.intro}>Za 15 minut uvidíte, jak se Salesbotem najít leady, klasifikovat je a připravit osobní oslovení i kampaně. Zadáváte česky. Nemusíte psát program.</p>
-          <a href="#prezentace" className={`${styles.primary} ${styles.watch}`}><PlayIcon /> Pustit video a online Prezentér</a>
+          <div className={`${styles.actions} ${styles.heroActions}`}><a href="#konzultace" data-consultation data-placement="hero" className={styles.primary}>Konzultace zdarma</a><a href="#prezentace" className={styles.secondary}><PlayIcon /> Vyzkoušet ukázku ↓</a></div>
           <p className={styles.finePrint}>Petr vás provede ukázkou. Pak si vyberete, co vás zajímá, a můžete se zeptat.</p>
           <div className={styles.host}>
             <Image src="/petr-kubicek.jpg" alt="Petr Kubíček" width={44} height={44} className={styles.avatar} />
             <div><strong>Petr Kubíček</strong><span>Sales Robots · ukázky ze Salesbota a Prezentéru</span></div>
           </div>
         </div>
-        <div id="prezentace" className={styles.demoFrame}>
-          <div className={styles.demoBar}><span><i /> PREZENTÉR · SALESAGENT.CZ</span><a href={demoUrl} target="_blank" rel="noopener noreferrer">Otevřít samostatně ↗</a></div>
-          <iframe src={demoUrl} title="Salesagent.cz — interactive demo" loading="eager" style={{ width: '100%', height: 'clamp(560px,80vh,820px)', border: 0, borderRadius: '12px', display: 'block' }} allow="microphone" />
-        </div>
+        <DemoEmbed />
       </section>
 
       <div className={styles.factStrip}>
@@ -184,8 +182,8 @@ export default async function SalesbotWorkshopPage({ params }: { params: Promise
       <section className={styles.choiceSection} aria-labelledby="choice-title">
         <p className={styles.eyebrow}>STEJNÝ CÍL. DVĚ CESTY.</p><h2 id="choice-title">Chcete to řídit sami,<br />nebo to mít hotové?</h2>
         <div className={styles.choices}>
-          <div className={styles.selfServe}><span className={styles.choiceLabel}>CHCI ZAČÍT SÁM</span><h3>Vezmu si Salesbota.</h3><p>Pro majitele a malé týmy, které si chtějí nastavit vlastní cílení a mít kampaně ve svých rukou.</p><ul><li>Vlastní účet a přehled o kontaktech</li><li>Claude nebo ChatGPT jako pomocník</li><li>Hledání leadů, klasifikace, kampaně a CRM</li><li>Kontrola zpráv a tempa oslovování</li></ul><a href={salesbotUrl} className={styles.primary}>Vyzkoušet Salesbota ↗</a><small>Licence Salesbota, AI asistenta a Prezentéru jsou samostatné.</small></div>
-          <div className={styles.managed}><span className={styles.choiceLabel}>CHCI ŘEŠIT AŽ ZÁJEMCE</span><h3>Postavte mi to na klíč.</h3><p>Pro firmy, kde na nastavování a každodenní řízení není prostor. Cílení i provoz domluvíme a obsloužíme.</p><ul><li>Návrh cílení a obchodního postupu</li><li>Nastavení systému a kampaní</li><li>Průběžná obsluha a ladění</li><li>Předání připravených příležitostí</li></ul><Link href="/cs/contact" className={styles.secondary}>Chci to mít na klíč →</Link><Link href="/cs/pricing" className={styles.textLink}>Podívat se na ceník řízené automatizace</Link></div>
+          <div className={styles.selfServe}><span className={styles.choiceLabel}>CHCI ZAČÍT SÁM</span><h3>Vezmu si Salesbota.</h3><p>Pro majitele a malé týmy, které si chtějí nastavit vlastní cílení a mít kampaně ve svých rukou.</p><ul><li>Vlastní účet a přehled o kontaktech</li><li>Claude nebo ChatGPT jako pomocník</li><li>Hledání leadů, klasifikace, kampaně a CRM</li><li>Kontrola zpráv a tempa oslovování</li></ul><a href={salesbotUrl} data-salesbot data-placement="self_serve" className={styles.secondary}>Vyzkoušet Salesbota ↗</a><small>Licence Salesbota, AI asistenta a Prezentéru jsou samostatné.</small></div>
+          <div className={styles.managed}><span className={styles.choiceLabel}>CHCI ŘEŠIT AŽ ZÁJEMCE</span><h3>Postavte mi to na klíč.</h3><p>Pro firmy, kde na nastavování a každodenní řízení není prostor. Cílení i provoz domluvíme a obsloužíme.</p><ul><li>Návrh cílení a obchodního postupu</li><li>Nastavení systému a kampaní</li><li>Průběžná obsluha a ladění</li><li>Předání připravených příležitostí</li></ul><a href="#konzultace" data-consultation data-placement="content" className={styles.primary}>Domluvit konzultaci →</a><Link href="/cs/pricing" className={styles.textLink}>Podívat se na ceník řízené automatizace</Link></div>
         </div>
         <p className={styles.disclosure}>Salesbot a Prezentér jsou naše vlastní produkty Sales Robots. Nejde o nezávislé srovnání nástrojů.</p>
       </section>
@@ -195,7 +193,7 @@ export default async function SalesbotWorkshopPage({ params }: { params: Promise
         <div>{faqs.map(({ q, a }) => <details className={styles.faq} key={q}><summary>{q}<span aria-hidden="true">+</span></summary><p>{a}</p></details>)}<p className={styles.setupLink}>Podrobnosti k propojení: <a href="https://salesbot.cz/mcp-server">návod Salesbota pro Claude a ChatGPT ↗</a>. Širší postup pro firmu: <Link href="/blog/jak-zavest-automatizaci-prodeje-ve-firme">jak zavést automatizaci prodeje</Link>.</p></div>
       </section>
 
-      <section className={styles.finalCta}><p className={styles.eyebrow}>NEJDŘÍV UKÁZKA. PAK ROZHODNUTÍ.</p><h2>Méně hledání.<br /><em>Víc skutečných rozhovorů.</em></h2><a href="#prezentace" className={`${styles.primary} ${styles.watch}`}><PlayIcon /> Pustit video a online Prezentér</a><p>Podívejte se, jak to funguje. A pak si vyberte vlastní cestu.</p></section>
+      <section className={styles.finalCta}><p className={styles.eyebrow}>NEJDŘÍV UKÁZKA. PAK ROZHODNUTÍ.</p><h2>Méně hledání.<br /><em>Víc skutečných rozhovorů.</em></h2><a href="#konzultace" data-consultation data-placement="footer" className={`${styles.primary} ${styles.watch}`}>Konzultace zdarma</a><p>Podívejte se, jak to funguje. A pak si vyberte vlastní cestu.</p></section>
     </div>
   )
 }

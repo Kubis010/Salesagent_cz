@@ -1,0 +1,30 @@
+.page { max-width: 1120px; margin: 0 auto; padding: 120px 24px 64px; }
+.page h1, .page h2, .page h3 { font-family: 'Space Grotesk', sans-serif; letter-spacing: -.025em; line-height: 1.2; }
+.page h1 { font-size: clamp(34px, 5.3vw, 62px); max-width: 950px; margin: 20px 0 24px; }
+.page h2 { font-size: clamp(26px, 3vw, 36px); margin-bottom: 24px; }
+.page h3 { font-size: 21px; margin: 0 0 16px; }
+.page p { line-height: 1.75; color: var(--text-muted); margin: 16px 0; }
+.page a { color: var(--accent); text-underline-offset: 4px; }
+.page a:focus-visible, .faq summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+.hero { padding: 32px 0 64px; border-bottom: 1px solid var(--border); }
+.page .eyebrow { font-size: 12px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: .1em; }
+.page .lead { font-size: clamp(18px, 2vw, 21px); max-width: 850px; }
+.page .price { color: var(--text); font-size: 26px; font-weight: 700; margin-top: 32px; }
+.actions { display: flex; flex-wrap: wrap; gap: 16px; margin: 28px 0; align-items: center; }
+.page .primary { display: inline-block; background: var(--accent); color: #0b1320; padding: 15px 22px; border-radius: 9px; text-decoration: none; font-weight: 700; }
+.secondary { padding: 12px 0; }
+.section { margin: 64px 0 0; scroll-margin-top: 100px; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin-top: 24px; }
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: 28px; }
+.card p:last-child { margin-bottom: 0; }
+.steps { display: grid; gap: 24px; padding-left: 24px; }
+.steps li { padding-left: 12px; }
+.steps li::marker { color: var(--accent); font-weight: 700; }
+.page .result { font-size: 23px; color: var(--accent); font-weight: 600; }
+.founder { display: flex; align-items: center; gap: 32px; }
+.founder img { border-radius: 18px; object-fit: cover; flex-shrink: 0; }
+.faq { border-bottom: 1px solid var(--border); padding: 22px 0; }
+.faq summary { cursor: pointer; font-weight: 600; line-height: 1.5; }
+.faq p { max-width: 900px; }
+.closing { background: var(--bg-card); border: 1px solid var(--border); border-radius: 20px; padding: 36px; }
+@media (max-width: 680px) { .page { padding: 100px 20px 48px; } .grid { grid-template-columns: 1fr; } .card, .closing { padding: 24px; } .founder { flex-direction: column; align-items: flex-start; gap: 16px; } .hero { padding-top: 16px; } }

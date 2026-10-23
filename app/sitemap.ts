@@ -88,6 +88,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   }
 
+  entries.push({
+    url: `${BASE_URL}/cs/externi-obchod`,
+    lastModified: new Date('2026-10-22'),
+    changeFrequency: 'monthly',
+    priority: 0.9,
+    alternates: { languages: { cs: `${BASE_URL}/cs/externi-obchod` } },
+  })
+
   // CS-only self-serve workshop landing page
   entries.push({
     url: `${BASE_URL}/cs/automatizace-obchodu-claude-chatgpt`,

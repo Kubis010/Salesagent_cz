@@ -3,6 +3,8 @@
   "use strict";
   if (window.SalesMeasurement) return;
   var host = location.hostname;
+  // Local/Netlify previews of the paid landing must never pollute a production property.
+  if (location.pathname === "/cs/automatizace-obchodu-claude-chatgpt" && !/^(www\.)?salesagent\.cz$/.test(host)) return;
   var isApp = host === "app.salesbot.cz";
   var isAgent = host === "salesagent.cz" || host === "www.salesagent.cz";
   var authPage = isApp && location.pathname === "/auth";
@@ -147,7 +149,8 @@
         page_referrer: initialReferrer ? (function () { try { return new URL(initialReferrer).origin; } catch (_) { return ""; } })() : ""
       };
       var first = get();
-      if (authPage && first) {
+      // Only the paid SalesAgent landing needs campaign dimensions alongside its query-free page_location.
+      if ((authPage || (isAgent && location.pathname === "/cs/automatizace-obchodu-claude-chatgpt")) && first) {
         config.campaign_source = first.first_source;
         config.campaign_medium = first.first_medium;
         config.campaign_name = first.first_campaign;

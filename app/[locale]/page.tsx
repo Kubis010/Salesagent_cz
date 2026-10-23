@@ -464,6 +464,11 @@ export default async function HomePage({
             >
               {t.services.agency.cta} →
             </a>
+            {locale === 'cs' && (
+              <p style={{ marginTop: '18px', fontSize: '14px' }}>
+                <Link href="/cs/externi-obchod" style={{ color: 'var(--accent)' }}>Externí obchodník — rozsah služby a cena dle domluvy →</Link>
+              </p>
+            )}
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', paddingTop: '4px' }}>
             {t.services.agency.examples.map((ex: { label: string; icon: string }, i: number) => (
