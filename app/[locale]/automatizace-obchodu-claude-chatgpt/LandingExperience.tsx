@@ -1,7 +1,6 @@
 'use client'
 
 import { useCallback, useEffect, useRef, useState } from 'react'
-import Image from 'next/image'
 import { attributedUrl, consent, firstTouch, LANDING, syncAdvertisingConsent, trackLanding } from '@/lib/landing-measurement'
 import { postLandingForm } from '@/lib/landing-form'
 import styles from './page.module.css'
@@ -12,19 +11,10 @@ const WEBINAR_ENABLED = process.env.NEXT_PUBLIC_LANDING_WEBINAR_ENABLED === 'tru
 const WEBINAR_DATE = process.env.NEXT_PUBLIC_LANDING_WEBINAR_DATE ?? ''
 
 export function DemoEmbed() {
-  const [started, setStarted] = useState(false)
-  const [failed, setFailed] = useState(false)
   const [textOnly, setTextOnly] = useState(false)
   const [external, setExternal] = useState(DEMO + '?utm_source=salesagent.cz&utm_medium=referral&utm_campaign=ac-claude-gpt-2026-10&utm_content=demo')
   const iframe = useRef<HTMLIFrameElement>(null)
-  const loadTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
   const measured = useRef(false)
-  useEffect(() => {
-    if (!started || failed) return
-    // Only a missing document load can be detected here, not cross-origin application errors.
-    loadTimer.current = setTimeout(() => setFailed(true), 25000)
-    return () => clearTimeout(loadTimer.current)
-  }, [started, failed, external])
   useEffect(() => {
     // Cross-origin iframe contents cannot be observed. Focus is an approximation, not a completed demo.
     const onBlur = () => {
@@ -40,18 +30,13 @@ export function DemoEmbed() {
   const load = (withoutMicrophone = false) => {
     setExternal(attributedUrl(withoutMicrophone ? DEMO + '?mode=text' : DEMO, firstTouch(new URL(location.href), document.referrer), 'demo'))
     setTextOnly(withoutMicrophone)
-    setStarted(true)
-    setFailed(false)
   }
   return <div id="prezentace" className={styles.demoFrame}>
     <div className={styles.demoBar}><span><i /> PREZENTÉR · SALESAGENT.CZ</span><a href={external} data-demo-external target="_blank" rel="noopener noreferrer">Otevřít ukázku v prohlížeči ↗</a></div>
     <div className={styles.demoStage}>
-      {started && !failed ? <iframe ref={iframe} className={`sr-prezenter ${styles.srPrezenter}`} src={textOnly ? DEMO + '?mode=text' : DEMO} title="Salesagent.cz — interaktivní demo" loading="lazy" allow={textOnly ? "microphone 'none'" : 'microphone'} onLoad={() => clearTimeout(loadTimer.current)} onError={() => setFailed(true)} /> : <div className={styles.demoPoster}>
-        <Image src="/how-it-works.jpg" alt="Ukázka obchodního postupu" fill sizes="(max-width: 760px) 100vw, 1200px" />
-        <div className={styles.posterCopy}><span>CLAUDE / CHATGPT + SALESBOT</span><h2>{failed ? 'Ukázka se nenačetla.' : 'Od hledání leadů k připravené kampani.'}</h2><p>Interaktivní Prezentér načteme až po kliknutí.</p><button type="button" className={styles.primary} onClick={() => load()}>{failed ? 'Zkusit načíst znovu' : 'Spustit ukázku'}</button><a href="#konzultace" data-consultation data-placement="hero" className={styles.secondary}>Konzultace zdarma</a><button type="button" className={styles.textMode} onClick={() => load(true)}>Spustit bez mikrofonu</button></div>
-      </div>}
+      <iframe ref={iframe} className={`sr-prezenter ${styles.srPrezenter}`} src={textOnly ? DEMO + '?mode=text' : DEMO} title="Salesagent.cz — interaktivní demo" loading="lazy" allow={textOnly ? "microphone 'none'" : 'microphone'} />
     </div>
-    <p className={styles.demoHelp}>Bez mikrofonu můžete v Prezentéru vybírat témata a psát otázky. Nefunguje vložená ukázka? <a href={external} data-demo-external target="_blank" rel="noopener noreferrer">Otevřete ji samostatně</a> nebo <a href="#konzultace" data-consultation data-placement="hero">domluvte konzultaci</a>. {started && <><button type="button" onClick={() => load(true)}>Přepnout na text bez mikrofonu</button> · <button type="button" onClick={() => setFailed(true)}>Ukázka nefunguje</button></>}</p>
+    <p className={styles.demoHelp}>Bez mikrofonu můžete v Prezentéru vybírat témata a psát otázky. Nefunguje vložená ukázka? <a href={external} data-demo-external target="_blank" rel="noopener noreferrer">Otevřete ji samostatně</a> nebo <a href="#konzultace" data-consultation data-placement="hero">domluvte konzultaci</a>. <button type="button" onClick={() => load(true)}>Přepnout na text bez mikrofonu</button></p>
   </div>
 }
 

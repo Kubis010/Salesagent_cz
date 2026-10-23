@@ -7,13 +7,6 @@
 .heroActions { justify-content: center; }
 .demoStage { height: clamp(560px, 80vh, 820px); position: relative; border-radius: 12px; overflow: hidden; }
 .srPrezenter { display: block; width: 100%; height: clamp(560px, 80vh, 820px); border: 0; border-radius: 12px; background: #0b1320; }
-.demoPoster { position: relative; height: 100%; display: grid; place-items: center; }
-.demoPoster > img { object-fit: cover; opacity: .18; }
-.posterCopy { position: relative; z-index: 1; text-align: center; max-width: 650px; padding: 28px; }
-.posterCopy > span { font-size: 11px; color: var(--accent); letter-spacing: .1em; }
-.posterCopy h2 { margin: 20px 0; }
-.posterCopy p { color: #b8c4d5; font-size: 14px; line-height: 1.7; margin-bottom: 24px; }
-.posterCopy .secondary { margin: 12px; }
 .textMode { display: block; margin: 10px auto 0; background: transparent; border: 0; color: #ffab98; font-size: 13px; text-decoration: underline; padding: 12px; }
 .page .demoHelp { font-size: 12px; color: #b8c4d5; line-height: 1.7; padding: 14px 6px 4px; }
 .demoHelp a, .demoHelp button { color: var(--accent); }
