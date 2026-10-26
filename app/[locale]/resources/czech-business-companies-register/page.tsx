@@ -311,6 +311,7 @@ export default async function CzechRegisterPage({
               see how our Czech market entry service works
             </Link>
             .
+            {locale === 'en' && <>{' '}Planning to enter the Czech market? Read the <Link href="/en/guides/czech-market-entry-for-b2b-companies">Czech market entry playbook for B2B companies</Link>.</>}
           </p>
         </div>
       </article>

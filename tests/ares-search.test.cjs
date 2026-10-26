@@ -185,8 +185,10 @@ test('original page title, H1, canonical and guide copy remain unchanged; EN-onl
   const after = fs.readFileSync(path, 'utf8')
   const linkBlock = /        <p style=\{\{ marginBottom: '40px',[\s\S]*?Source: ARES — Czech Ministry of Finance\.<\/span>\n        <\/p>\n\n/
   assert.ok(before.match(linkBlock))
+  const guideSentence = "            {locale === 'en' && <>{' '}Planning to enter the Czech market? Read the <Link href=\"/en/guides/czech-market-entry-for-b2b-companies\">Czech market entry playbook for B2B companies</Link>.</>}\n"
+  assert.equal(after.split(guideSentence).length, 2, 'exactly one EN-only sentence links directly to the guide')
   const renderBody = source => source.split('export default async function CzechRegisterPage')[1]
-  assert.equal(renderBody(after).replace("        {locale === 'en' && <AresCompanySearch />}\n\n", ''),
+  assert.equal(renderBody(after).replace("        {locale === 'en' && <AresCompanySearch />}\n\n", '').replace(guideSentence, ''),
     renderBody(before).replace(linkBlock, ''))
   const metadataNode = source => ts.createSourceFile(path, source, ts.ScriptTarget.Latest, true, ts.ScriptKind.TSX)
     .statements.find(statement => ts.isVariableStatement(statement) && statement.declarationList.declarations[0].name.getText() === 'metadata')

@@ -38,7 +38,7 @@ export async function generateMetadata({
       siteName: 'SalesAgent.cz',
       title: 'Czech Market Entry for B2B Companies: A Practical Playbook',
       description: 'Czech B2B market entry: hire sales vs. open a Czech entity, compare costs and risks, validate demand and find your first customers.',
-      modifiedTime: '2026-10-15',
+      modifiedTime: '2026-10-26',
       images: [
         {
           url: 'https://salesagent.cz/guides/czech-market-entry-guide.jpg',
@@ -130,7 +130,7 @@ const articleSchema = {
     'Czech B2B market entry: hire sales vs. open a Czech entity, compare costs and risks, validate demand and find your first customers.',
   image: 'https://salesagent.cz/guides/czech-market-entry-guide.jpg',
   datePublished: '2026-08-28',
-  dateModified: '2026-10-15',
+  dateModified: '2026-10-26',
   inLanguage: 'en',
   keywords: 'czech market entry, market entry czech republic, czech market entry b2b, market entry slovakia, entity vs no entity czech republic',
   about: [
@@ -208,7 +208,7 @@ export default async function GuideCzechMarketEntry({
           </nav>
 
           <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '14px' }}>
-            Playbook · Published August 2026 · Updated <time dateTime="2026-10-15">15 October 2026</time>
+            Playbook · Published August 2026 · Updated <time dateTime="2026-10-26">26 October 2026</time>
           </p>
           <h1 style={{
             fontFamily: 'Space Grotesk, sans-serif',
@@ -362,6 +362,39 @@ export default async function GuideCzechMarketEntry({
               </tbody>
             </table>
           </div>
+
+          <section id="competitor-analysis">
+            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '26px', fontWeight: 700, marginBottom: '16px', marginTop: '48px' }}>
+              Competitor analysis for market entry in the Czech Republic
+            </h2>
+            <p style={{ color: 'var(--text-muted)', lineHeight: 1.75, marginBottom: '16px' }}>
+              A Czech market entry strategy needs more than a list of registered companies. Before
+              launching outreach, identify who already serves your target customers, how those
+              competitors position their offers, and why a buyer would consider switching. Include
+              local suppliers, international brands represented by Czech distributors, and the
+              customer&apos;s option of keeping the work in-house.
+            </p>
+            <p style={{ color: 'var(--text-muted)', lineHeight: 1.75, marginBottom: '16px' }}>
+              We can prepare this competitor analysis for you as part of planning your B2B market
+              entry in the Czech Republic. We agree the target segment and scope with you, then
+              review publicly available information to build a practical comparison:
+            </p>
+            <ul style={{ paddingLeft: '20px', color: 'var(--text-muted)', lineHeight: 1.9, marginBottom: '24px' }}>
+              <li><strong>Competitor map:</strong> relevant suppliers, distributors and alternatives in your segment.</li>
+              <li><strong>Offer and positioning:</strong> target customers, product scope, service model, local references and routes to market.</li>
+              <li><strong>Published pricing:</strong> prices and commercial terms where available, with gaps clearly marked rather than estimated.</li>
+              <li><strong>Outreach hypotheses:</strong> which buyer roles to approach, what could differentiate your offer, and which objections to test.</li>
+            </ul>
+            <p style={{ color: 'var(--text-muted)', lineHeight: 1.75, marginBottom: '16px' }}>
+              The output is a competitor comparison and a set of recommendations for your first
+              market test. Public information shows how competitors present themselves; conversations
+              with Czech prospects help establish what buyers actually value. We use both to refine
+              your message and target list before you commit to a local team or office.{' '}
+              <Link href="/en/contact" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
+                Discuss competitor analysis for your Czech market entry
+              </Link>.
+            </p>
+          </section>
 
           {/* Section 2b: Market entry decision framework */}
           <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '26px', fontWeight: 700, marginBottom: '16px', marginTop: '48px' }}>
