@@ -74,7 +74,7 @@ export default async function CzechRegisterPage({
             paddingBottom: '32px',
           }}
         >
-          Researching the Czech market? Look up any Czech company below using ARES (the Administrative
+          Researching the Czech market? Look up Czech companies using ARES (the Administrative
           Register of Economic Entities) and the Commercial Register (Obchodní rejstřík) — and when
           you&apos;re ready to sell here, we handle the{' '}
           <Link href={`${base}/sales-representation-czech-republic`} style={{ color: 'var(--accent)' }}>
@@ -82,6 +82,14 @@ export default async function CzechRegisterPage({
           </Link>{' '}
           for you. Whether you need to verify a company&apos;s ICO number, find contact details, or
           get an official extract, this guide walks you through every step.
+        </p>
+
+        <p style={{ marginBottom: '40px', fontSize: '16px', lineHeight: '1.7' }}>
+          <a href="https://ares.gov.cz/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)' }}>
+            Visit the official ARES website ↗
+          </a>
+          <br />
+          <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>Source: ARES — Czech Ministry of Finance.</span>
         </p>
 
         {/* TOC */}
