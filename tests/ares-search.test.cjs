@@ -74,6 +74,27 @@ test('CAPTCHA bootstrap failure can be retried and a stalled full client times o
   assert.equal(browser.scripts[1].removed, true)
 })
 
+test('Google thenables without finally are accepted, and execution failures clear the timeout', async () => {
+  for (const succeeds of [true, false]) {
+    const browser = captchaBrowser()
+    browser.window.grecaptcha = {
+      ready(callback) { callback() },
+      execute() {
+        // Google's production client returns its own thenable, not a native Promise with finally().
+        return { then(resolve, reject) {
+          Promise.resolve().then(() => succeeds ? resolve('google-token') : reject(Error('Google verification failed')))
+          return this
+        } }
+      },
+    }
+    const pending = browser.api.executeAresCaptcha()
+    if (succeeds) assert.equal(await pending, 'google-token')
+    else await assert.rejects(pending, /Google verification failed/)
+    assert.equal(browser.timers.size, 0)
+    assert.equal(browser.scripts.length, 0)
+  }
+})
+
 test('name and ICO validation, whitespace, leading zeros, no CAPTCHA for invalid input', async () => {
   assert.equal(api.normalizeSearchQuery(' Škoda Auto '), 'Škoda Auto')
   assert.equal(api.normalizeSearchQuery('9586563'), '09586563')

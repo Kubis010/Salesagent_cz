@@ -79,7 +79,7 @@ export async function searchAres(input: string, getToken: () => Promise<string>,
   return rows as AresCompany[]
 }
 
-type Recaptcha = { ready(callback: () => void): void; execute(key: string, options: { action: string }): Promise<string> }
+type Recaptcha = { ready(callback: () => void): void; execute(key: string, options: { action: string }): PromiseLike<string> }
 let captchaScript: Promise<Recaptcha> | undefined
 
 // Load Google only after a valid, explicit search. Never embed a secret or persist a token.
@@ -115,7 +115,11 @@ export async function executeAresCaptcha(): Promise<string> {
     const timeout = setTimeout(() => reject(new Error('CAPTCHA timed out')), 12000)
     captcha.ready(() => {
       try {
-        captcha.execute(ARES_SITE_KEY, { action: ARES_CAPTCHA_ACTION }).then(resolve, reject).finally(() => clearTimeout(timeout))
+        // Google's client returns a thenable which does not necessarily implement finally().
+        Promise.resolve(captcha.execute(ARES_SITE_KEY, { action: ARES_CAPTCHA_ACTION })).then(
+          token => { clearTimeout(timeout); resolve(token) },
+          error => { clearTimeout(timeout); reject(error) },
+        )
       } catch (error) { clearTimeout(timeout); reject(error) }
     })
   })
