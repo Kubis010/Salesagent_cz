@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { type Locale } from '@/lib/i18n'
+import AresCompanySearch from '@/components/AresCompanySearch'
 
 export const metadata: Metadata = {
   title: 'Czech Business Register (ARES) — How to Search',
@@ -27,6 +28,18 @@ export const metadata: Metadata = {
     title: 'How to Find a Czech Company in the Business Register (ARES)',
     description: 'Step-by-step guide to searching ARES and the Czech Commercial Register.',
     locale: 'en_US',
+    images: [{
+      url: 'https://salesagent.cz/resources/czech-business-register-preview-2026-10.jpg',
+      width: 1730,
+      height: 909,
+      alt: 'Czech flag in front of a modern company headquarters',
+    }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Find a Czech Company in the Business Register (ARES)',
+    description: 'Step-by-step guide to searching ARES and the Czech Commercial Register.',
+    images: ['https://salesagent.cz/resources/czech-business-register-preview-2026-10.jpg'],
   },
 }
 
@@ -84,13 +97,7 @@ export default async function CzechRegisterPage({
           get an official extract, this guide walks you through every step.
         </p>
 
-        <p style={{ marginBottom: '40px', fontSize: '16px', lineHeight: '1.7' }}>
-          <a href="https://ares.gov.cz/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent)' }}>
-            Visit the official ARES website ↗
-          </a>
-          <br />
-          <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>Source: ARES — Czech Ministry of Finance.</span>
-        </p>
+        {locale === 'en' && <AresCompanySearch />}
 
         {/* TOC */}
         <div

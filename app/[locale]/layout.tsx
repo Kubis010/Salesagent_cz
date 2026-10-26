@@ -44,10 +44,10 @@ export async function generateMetadata({
         : 'Your external B2B sales team in CZ/SK. People-led outreach, supported by AI. Pricing by agreement, with a paid 2–3 month market test. No commission-only engagements.',
       images: [
         {
-          url: 'https://salesagent.cz/og-image.jpg',
-          width: 1376,
-          height: 768,
-          alt: isCz ? 'SalesAgent.cz — AI obchodní zástupce' : 'SalesAgent.cz — External B2B sales team in the Czech Republic',
+          url: `https://salesagent.cz/social/salesagent-home-${isCz ? 'cs' : 'en'}-2026-10.jpg`,
+          width: 1274,
+          height: 717,
+          alt: isCz ? 'Náhled webu SalesAgent.cz — Řízená automatizace obchodu' : 'SalesAgent.cz homepage — External B2B sales in the Czech Republic',
         },
       ],
     },
@@ -78,7 +78,7 @@ export async function generateMetadata({
       description: isCz
         ? 'Řízená automatizace obchodu: nasazení od 15 000 Kč, řízení od 9 900 Kč měsíčně bez DPH. Vašemu obchodníkovi chodí schůzky se zájemci.'
         : 'Your external B2B sales team in CZ/SK. People-led outreach, supported by AI. Pricing by agreement, with a paid 2–3 month market test. No commission-only engagements.',
-      images: ['https://salesagent.cz/og-image.jpg'],
+      images: [`https://salesagent.cz/social/salesagent-home-${isCz ? 'cs' : 'en'}-2026-10.jpg`],
     },
     other: {
       'llms-txt': 'https://salesagent.cz/llms.txt',

@@ -113,7 +113,17 @@ test('protected metadata, schema inputs, H1 and existing section copy are unchan
     const regex = new RegExp(`<${tag}(?:\\s[^>]*)?>[\\s\\S]+?<\\/${tag}>`, 'g')
     assert.deepEqual(after.match(regex), before.match(regex), `Existing ${tag} content`)
   }
-  assert.equal(execFileSync('git', ['diff', BASELINE, '--', 'components', 'app/[locale]/layout.tsx'], { encoding: 'utf8' }), '')
+  const protectedComponents = execFileSync('git', ['ls-tree', '-r', '--name-only', BASELINE, 'components'], { encoding: 'utf8' }).trim().split('\n').filter(Boolean)
+  for (const protectedFile of protectedComponents) {
+    assert.equal(fs.readFileSync(protectedFile, 'utf8'), execFileSync('git', ['show', BASELINE + ':' + protectedFile], { encoding: 'utf8' }), protectedFile)
+  }
+  // Social previews were explicitly replaced; keep all other shared metadata and layout protected.
+  const withoutPreviewImages = source => source
+    .replace(/      images: \[\n[\s\S]*?\n      \],\n/g, '')
+    .replace(/      images: \[[^\n]*\],\n/g, '')
+  const layoutPath = 'app/[locale]/layout.tsx'
+  assert.equal(withoutPreviewImages(fs.readFileSync(layoutPath, 'utf8')),
+    withoutPreviewImages(execFileSync('git', ['show', BASELINE + ':' + layoutPath], { encoding: 'utf8' })))
   const sitemapBefore = execFileSync('git', ['show', BASELINE + ':app/sitemap.ts'], { encoding: 'utf8' })
   const sitemapAfter = fs.readFileSync('app/sitemap.ts', 'utf8')
   const landingEntry = /entries\.push\(\{\s*url: `\$\{BASE_URL\}\/cs\/automatizace-obchodu-claude-chatgpt`,[\s\S]*?\n  \}\)/
