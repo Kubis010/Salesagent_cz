@@ -5,7 +5,7 @@ import { posts } from '@/lib/blog-posts'
 
 export const metadata: Metadata = {
   title: 'Blog o B2B prodeji, AI a automatizaci obchodu | SalesAgent.cz',
-  description: 'Články o AI pro obchod a obchodníky, automatizaci B2B prodeje, cold e-mailingu, LinkedIn outreach a budování obchodních systémů — česky i anglicky.',
+  description: 'Články o AI pro obchod a obchodníky, automatizaci B2B prodeje, cold e-mailingu, LinkedIn outreach a budování obchodních systémů — česky.',
   keywords: ['AI pro obchodníky', 'B2B prodej blog', 'automatizace obchodu', 'cold email', 'AI outreach', 'LinkedIn automatizace'],
   alternates: {
     canonical: 'https://salesagent.cz/blog',
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Blog o B2B prodeji a AI automatizaci | SalesAgent.cz',
-    description: 'Články o AI pro obchod a obchodníky, automatizaci B2B prodeje, cold e-mailingu a LinkedIn outreach — česky i anglicky.',
+    description: 'Články o AI pro obchod a obchodníky, automatizaci B2B prodeje, cold e-mailingu a LinkedIn outreach — česky.',
     url: 'https://salesagent.cz/blog',
     siteName: 'SalesAgent.cz',
     type: 'website',
@@ -21,6 +21,8 @@ export const metadata: Metadata = {
 }
 
 export default function BlogIndex() {
+  const csPosts = posts.filter((post) => post.lang === 'CS')
+
   return (
     <div style={{ paddingTop: '96px', paddingBottom: '80px', maxWidth: '820px', margin: '0 auto', padding: '96px 24px 80px' }}>
       <p style={{
@@ -35,11 +37,6 @@ export default function BlogIndex() {
         marginBottom: '48px',
         lineHeight: 1.2,
       }}>AI pro obchod a obchodníky — články o B2B prodeji</h1>
-      <p style={{ fontSize: '14px', color: 'var(--text-muted)', lineHeight: 1.6, marginTop: '-28px', marginBottom: '40px' }}>
-        Články jsou česky i anglicky. Anglické články jsou označené štítkem EN.
-        {' '}The EN label marks articles written for English-speaking readers.
-      </p>
-
       <style>{`
         .blog-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; transition: border-color 0.2s; }
         .blog-card:hover { border-color: rgba(255,107,74,0.4); }
@@ -50,7 +47,7 @@ export default function BlogIndex() {
         }
       `}</style>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-        {posts.map((post) => (
+        {csPosts.map((post) => (
           <Link key={post.href} href={post.href} style={{ textDecoration: 'none' }}>
             <article className="blog-card">
               <div className="blog-card-inner">
