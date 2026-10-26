@@ -5,13 +5,13 @@ const vm = require('node:vm')
 const ts = require('typescript')
 const { execFileSync } = require('node:child_process')
 
-function load(file, imports = {}) {
+function load(file, imports = {}, globals = {}) {
   const module = { exports: {} }
   const code = ts.transpileModule(fs.readFileSync(file, 'utf8'), { compilerOptions: {
     module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022, jsx: ts.JsxEmit.ReactJSX, esModuleInterop: true,
   } }).outputText
   vm.runInNewContext(code, { module, exports: module.exports, URL, AbortController,
-    fetch: () => { throw Error('Unexpected live request') },
+    fetch: () => { throw Error('Unexpected live request') }, ...globals,
     require: id => Object.hasOwn(imports, id) ? imports[id] : require(id) })
   return module.exports
 }
@@ -19,6 +19,60 @@ const api = load('lib/ares-search.ts')
 const company = { ico: '27082440', name: 'Example company', natural_person: false, address: 'Example street 1',
   legal_form: 'Akciová společnost', active: true, founded: '2003-01-01', main_activity: 'Retail', employees: '100–199' }
 const response = (body, status = 200) => new Response(JSON.stringify(body), { status })
+
+function captchaBrowser() {
+  const scripts = [], timers = new Map(), window = {}
+  let timerId = 0
+  const api = load('lib/ares-search.ts', {}, {
+    window,
+    document: {
+      createElement: () => ({ remove() { this.removed = true } }),
+      head: { appendChild(script) { scripts.push(script) } },
+    },
+    setTimeout(fn) { timers.set(++timerId, fn); return timerId },
+    clearTimeout(id) { timers.delete(id) },
+  })
+  return { api, window, scripts, timers }
+}
+
+test('CAPTCHA waits for the full Google client after bootstrap onload, then gets fresh tokens', async () => {
+  const browser = captchaBrowser(), ready = [], calls = []
+  let outcome = 'pending'
+  const first = browser.api.executeAresCaptcha()
+  first.then(() => { outcome = 'resolved' }, () => { outcome = 'rejected' })
+  // api.js only installs ready(); the gstatic client providing execute() loads later.
+  browser.window.grecaptcha = { ready(callback) { ready.push(callback) } }
+  browser.scripts[0].onload()
+  await Promise.resolve(); await Promise.resolve()
+  assert.equal(outcome, 'pending', 'bootstrap onload must not reject before the full client is ready')
+  assert.equal(browser.timers.size, 1, 'readiness timeout stays active during the second script load')
+  browser.window.grecaptcha.execute = async (key, options) => {
+    calls.push({ key, action: options.action }); return 'token-' + calls.length
+  }
+  browser.window.grecaptcha.ready = callback => callback()
+  ready.forEach(callback => callback())
+  assert.equal(await first, 'token-1')
+  assert.equal(await browser.api.executeAresCaptcha(), 'token-2')
+  assert.equal(browser.scripts.length, 1)
+  assert.equal(browser.timers.size, 0)
+  assert.deepEqual(calls, [1, 2].map(() => ({ key: browser.api.ARES_SITE_KEY, action: 'ares_search' })))
+})
+
+test('CAPTCHA bootstrap failure can be retried and a stalled full client times out', async () => {
+  const browser = captchaBrowser()
+  const failed = browser.api.executeAresCaptcha()
+  browser.scripts[0].onerror()
+  await assert.rejects(failed, /CAPTCHA script failed/)
+  assert.equal(browser.timers.size, 0)
+  const stalled = browser.api.executeAresCaptcha()
+  browser.window.grecaptcha = { ready() {} }
+  browser.scripts[1].onload()
+  assert.equal(browser.timers.size, 1)
+  const [id, timeout] = browser.timers.entries().next().value
+  browser.timers.delete(id); timeout()
+  await assert.rejects(stalled, /CAPTCHA script timed out/)
+  assert.equal(browser.scripts[1].removed, true)
+})
 
 test('name and ICO validation, whitespace, leading zeros, no CAPTCHA for invalid input', async () => {
   assert.equal(api.normalizeSearchQuery(' Škoda Auto '), 'Škoda Auto')

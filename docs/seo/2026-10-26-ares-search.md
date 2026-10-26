@@ -14,6 +14,8 @@ Local implementation only. No deployment, commit or push requested.
 
 ## Verification and release gate
 
+Follow-up fix after the owner's production error screenshot: the Google `api.js` bootstrap exposes `ready()` before its asynchronous gstatic client exposes `execute()`. Wait for the readiness callback instead of rejecting at the bootstrap script's `onload`. The readiness timeout remains active. Regression tests reproduce the two-stage load, fresh tokens, load failure/retry and stalled-client timeout without executing real CAPTCHA or sending production searches. This follow-up is local until separately published; it does not establish that production domain/key configuration or backend searches work.
+
 Run `node --test tests/ares-search.test.cjs`, `npx tsc --noEmit --incremental false` and `npm run build`.
 
 Before public release, separately confirm the CAPTCHA-protected backend is deployed; the existing key permits `salesagent.cz` and `www.salesagent.cz`; the paired backend secret is configured; and client-IP handling is verified on Supabase's actual ingress. None of those production facts are proven by frontend tests.

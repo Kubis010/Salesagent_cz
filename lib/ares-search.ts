@@ -93,9 +93,18 @@ export async function executeAresCaptcha(): Promise<string> {
       script.async = true
       const timeout = setTimeout(() => { script.remove(); reject(new Error('CAPTCHA script timed out')) }, 12000)
       script.onload = () => {
-        clearTimeout(timeout)
-        if (recaptchaWindow.grecaptcha?.execute) resolve(recaptchaWindow.grecaptcha)
-        else { script.remove(); reject(new Error('CAPTCHA unavailable')) }
+        // api.js only bootstraps ready(); execute() arrives with the asynchronous gstatic client.
+        const captcha = recaptchaWindow.grecaptcha
+        if (!captcha?.ready) {
+          clearTimeout(timeout); script.remove(); reject(new Error('CAPTCHA unavailable')); return
+        }
+        try {
+          captcha.ready(() => {
+            clearTimeout(timeout)
+            if (typeof captcha.execute === 'function') resolve(captcha)
+            else { script.remove(); reject(new Error('CAPTCHA unavailable')) }
+          })
+        } catch (error) { clearTimeout(timeout); script.remove(); reject(error) }
       }
       script.onerror = () => { clearTimeout(timeout); script.remove(); reject(new Error('CAPTCHA script failed')) }
       document.head.appendChild(script)
