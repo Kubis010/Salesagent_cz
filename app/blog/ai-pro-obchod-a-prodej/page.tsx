@@ -157,7 +157,7 @@ export default function AiProObchodPage() {
           <div className="mt-16 p-8 border border-purple-500/30 rounded-2xl bg-purple-900/10 text-center">
             <h2 className="text-2xl font-bold mb-3">Chcete vyzkoušet AI pro váš obchod?</h2>
             <p className="text-gray-300 mb-6">Ukážeme vám, jak AI obchodní zástupce funguje v praxi — na vaší cílové skupině, v češtině nebo angličtině.</p>
-            <a href="https://cal.com/salesagent/demo" target="_blank" rel="noopener noreferrer" className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors">
+            <a href="https://outlook.office.com/bookwithme/user/480895b1333541dc94be634dd588fada@salesagent.cz/meetingtype/jwdxCRPBn0CvHccZ7eLwAg2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile" target="_blank" rel="noopener noreferrer" className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors">
               Domluvit bezplatnou ukázku
             </a>
             <p className="mt-4 text-sm text-gray-500">

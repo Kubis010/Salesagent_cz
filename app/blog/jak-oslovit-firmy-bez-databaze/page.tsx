@@ -271,7 +271,7 @@ export default function JakOslovitFirmyPage() {
             <p className="text-gray-300 mb-6">
               Výsledek: 200–500 oslovených firem měsíčně, bez koupené databáze, bez šablon a bez toho, abyste u toho museli sedět vy.
             </p>
-            <a href="https://cal.com/salesagent/demo" target="_blank" rel="noopener noreferrer" className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors">
+            <a href="https://outlook.office.com/bookwithme/user/480895b1333541dc94be634dd588fada@salesagent.cz/meetingtype/jwdxCRPBn0CvHccZ7eLwAg2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile" target="_blank" rel="noopener noreferrer" className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors">
               Zjistit, jak to funguje pro váš obor →
             </a>
             <p className="mt-4 text-sm text-gray-400">Zní to složitě nebo na to nemáte čas? <Link href="/cs/vlastni-outbound" className="text-orange-300 underline">Postavíme a rozjedeme vám automatizaci obchodu na klíč.</Link></p>

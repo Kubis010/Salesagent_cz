@@ -248,7 +248,7 @@ export default function AiAgentiProspektingPage() {
           <div className="mt-16 p-8 border border-emerald-500/30 rounded-2xl bg-emerald-900/10 text-center">
             <h2 className="text-2xl font-bold mb-3">Vyzkoušejte AI prospecting v praxi</h2>
             <p className="text-gray-300 mb-6">Na třicetiminutovém hovoru ukážeme, jak by AI agent hledal a oslovoval firmy konkrétně ve vašem oboru.</p>
-            <a href="https://cal.com/salesagent/demo" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors">
+            <a href="https://outlook.office.com/bookwithme/user/480895b1333541dc94be634dd588fada@salesagent.cz/meetingtype/jwdxCRPBn0CvHccZ7eLwAg2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors">
               Domluvit nezávazný hovor
             </a>
             <p className="mt-4 text-sm text-gray-400">Nemáte čas ani know-how? <Link href="/cs/vlastni-outbound" className="text-emerald-300 underline">Automatizaci obchodu vám postavíme a rozjedeme.</Link></p>

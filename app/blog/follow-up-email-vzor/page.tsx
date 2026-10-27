@@ -249,7 +249,7 @@ export default function FollowUpEmailVzorPage() {
           <div className="mt-16 p-8 border border-blue-500/30 rounded-2xl bg-blue-900/10 text-center">
             <h2 className="text-2xl font-bold mb-3">Follow-upy na autopilota</h2>
             <p className="text-gray-300 mb-6">SalesAgent automaticky posílá personalizované follow-upy s novým argumentem — ve správný čas, ve správném tónu. Vy se ozvete až když firma projeví zájem.</p>
-            <a href="https://cal.com/salesagent/demo" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors">
+            <a href="https://outlook.office.com/bookwithme/user/480895b1333541dc94be634dd588fada@salesagent.cz/meetingtype/jwdxCRPBn0CvHccZ7eLwAg2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors">
               Domluvit nezávazný hovor
             </a>
             <p className="mt-4 text-sm text-gray-500">

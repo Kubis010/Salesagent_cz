@@ -206,7 +206,7 @@ export default function CoJeExterniObchodPage() {
           <div className="mt-16 p-8 border border-orange-500/30 rounded-2xl bg-orange-900/10 text-center">
             <h2 className="text-2xl font-bold mb-3">Vyzkoušejte externí obchod s AI</h2>
             <p className="text-gray-300 mb-6">SalesAgent.cz zajistí celý proces oslovování B2B zákazníků — vyhledávání, analýzu webů i personalizované zprávy. Předáváme jen firmy se skutečným zájmem.</p>
-            <a href="https://cal.com/salesagent/demo" target="_blank" rel="noopener noreferrer" className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors">
+            <a href="https://outlook.office.com/bookwithme/user/480895b1333541dc94be634dd588fada@salesagent.cz/meetingtype/jwdxCRPBn0CvHccZ7eLwAg2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile" target="_blank" rel="noopener noreferrer" className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors">
               Domluvit bezplatnou konzultaci
             </a>
             <p className="mt-4 text-sm text-gray-500">
