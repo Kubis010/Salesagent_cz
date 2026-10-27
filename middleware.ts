@@ -28,12 +28,10 @@ export function middleware(request: NextRequest) {
 
   if (hasLocale) return NextResponse.next()
 
-  // Rewrite root to default locale — URL stays as-is, content from /cs/
-  // This keeps salesagent.cz/ indexable (not a redirect) while serving CS content
-  // Subpaths (e.g. /pricing) still redirect so they get the locale prefix in the URL
+  // Serve the English homepage at the root; legacy subpaths keep their existing routing.
   if (pathname === '/') {
     const url = request.nextUrl.clone()
-    url.pathname = `/${defaultLocale}`
+    url.pathname = '/en'
     return NextResponse.rewrite(url)
   }
 

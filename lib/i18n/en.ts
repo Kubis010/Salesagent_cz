@@ -14,8 +14,7 @@ export const en: Translations = {
   hero: {
     badge: 'Czech market entry · external sales representation',
     headline: 'We start your sales\nin the Czech Republic.',
-    subheadline:
-      'We are your external B2B sales team in the Czech Republic and Slovakia. Our people manage prospecting, email and LinkedIn outreach and qualification, supported by AI tools, and book first meetings in your calendar. Pricing and scope are agreed individually. A paid 2–3 month market test can be arranged; we do not work on a commission-only basis. No Czech entity or local hire needed.',
+    subheadline: 'We’ll be your sales agent and help you grow your business in the Czech market.',
     cta: 'Free consultation',
     ctaSub: 'or see how it works',
     pipelineLabel: 'Your Czech sales, running',

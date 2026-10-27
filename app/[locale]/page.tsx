@@ -165,6 +165,13 @@ export default async function HomePage({
               {t.hero.ctaSub} →
             </Link>
           </div>
+          {locale === 'en' && (
+            <p style={{ marginTop: '20px', fontSize: '14px' }}>
+              <Link href="/cs/externi-obchod" hrefLang="cs" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
+                Česky: Externí obchod
+              </Link>
+            </p>
+          )}
         </div>
 
         {/* Right: Pipeline */}

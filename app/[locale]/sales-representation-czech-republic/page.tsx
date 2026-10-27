@@ -136,7 +136,7 @@ export default async function SalesRepCzPage({
             )}
             <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
               <a
-                href="https://cal.com/salesagent/demo"
+                href="https://outlook.office.com/bookwithme/user/480895b1333541dc94be634dd588fada@salesagent.cz/meetingtype/jwdxCRPBn0CvHccZ7eLwAg2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
@@ -389,7 +389,7 @@ export default async function SalesRepCzPage({
                 If you&apos;re using corporate or secretarial services to establish your Czech entity, the next step is local sales. We handle market entry, B2B outreach and first meetings — so your Czech expansion starts generating revenue from day one, without hiring a local rep.
               </p>
               <a
-                href="https://cal.com/salesagent/demo"
+                href="https://outlook.office.com/bookwithme/user/480895b1333541dc94be634dd588fada@salesagent.cz/meetingtype/jwdxCRPBn0CvHccZ7eLwAg2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: 'var(--accent)', fontWeight: 600, fontSize: '15px', textDecoration: 'none' }}
@@ -410,7 +410,7 @@ export default async function SalesRepCzPage({
                 : 'In a first call we\'ll discuss your product, your ideal Czech customer, and what realistic results look like in the first months.'}
             </p>
             <a
-              href="https://cal.com/salesagent/demo"
+              href="https://outlook.office.com/bookwithme/user/480895b1333541dc94be634dd588fada@salesagent.cz/meetingtype/jwdxCRPBn0CvHccZ7eLwAg2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile"
               target="_blank"
               rel="noopener noreferrer"
               style={{

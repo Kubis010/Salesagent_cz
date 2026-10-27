@@ -24,11 +24,6 @@ const nextConfig: NextConfig = {
         statusCode: 301,
       },
       {
-        source: '/',
-        destination: '/cs',
-        permanent: true,
-      },
-      {
         source: '/llms',
         destination: '/llms.txt',
         permanent: true,

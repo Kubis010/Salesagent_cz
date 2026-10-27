@@ -1,8 +1,32 @@
 'use client'
 
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import type { Locale, Translations } from '@/lib/i18n'
+
+const translatedPaths: Record<string, string> = {
+  '/cs/pricing': '/en/pricing', '/en/pricing': '/cs/pricing',
+  '/cs/contact': '/en/contact', '/en/contact': '/cs/contact',
+  '/cs/about': '/en/about', '/en/about': '/cs/about',
+  '/cs/privacy': '/en/privacy', '/en/privacy': '/cs/privacy',
+  '/cs/resources': '/en/resources', '/en/resources': '/cs/resources',
+  '/cs/reaktivace-klientu': '/en/client-reactivation', '/en/client-reactivation': '/cs/reaktivace-klientu',
+  '/cs/externi-obchod': '/en/sales-representation-czech-republic', '/en/sales-representation-czech-republic': '/cs/externi-obchod',
+  '/blog': '/en/blog', '/en/blog': '/blog',
+  '/blog/jak-obohatit-leady': '/blog/how-to-enrich-b2b-leads-czech-companies',
+  '/blog/how-to-enrich-b2b-leads-czech-companies': '/blog/jak-obohatit-leady',
+  '/blog/jak-reaktivovat-neaktivni-klienty': '/blog/how-to-win-back-dormant-b2b-customers',
+  '/blog/how-to-win-back-dormant-b2b-customers': '/blog/jak-reaktivovat-neaktivni-klienty',
+  '/blog/jak-zavest-automatizaci-prodeje-ve-firme': '/blog/how-to-implement-sales-automation',
+  '/blog/how-to-implement-sales-automation': '/blog/jak-zavest-automatizaci-prodeje-ve-firme',
+  '/blog/automatizace-prodeje-jak-ai-meni-b2b-osloveni': '/blog/sales-automation-ai-b2b-outreach',
+  '/blog/sales-automation-ai-b2b-outreach': '/blog/automatizace-prodeje-jak-ai-meni-b2b-osloveni',
+  '/blog/jak-expandovat-s-obchodem-do-eu': '/blog/how-to-expand-your-business-and-sales-to-the-european-union',
+  '/blog/how-to-expand-your-business-and-sales-to-the-european-union': '/blog/jak-expandovat-s-obchodem-do-eu',
+  '/blog/obchodni-zastupce-definice-a-co-dela': '/blog/sales-agent-definition-and-what-he-do',
+  '/blog/sales-agent-definition-and-what-he-do': '/blog/obchodni-zastupce-definice-a-co-dela',
+}
 
 interface HeaderProps {
   locale: Locale
@@ -12,6 +36,8 @@ interface HeaderProps {
 export default function Header({ locale, t }: HeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false)
   const otherLocale = locale === 'cs' ? 'en' : 'cs'
+  const pathname = (usePathname() ?? '').replace(/\/$/, '')
+  const otherHref = translatedPaths[pathname] ?? `/${otherLocale}`
   const base = `/${locale}`
 
   const links = [
@@ -120,7 +146,9 @@ export default function Header({ locale, t }: HeaderProps) {
 
           {/* Language switcher */}
           <Link
-            href={`/${otherLocale}`}
+            href={otherHref}
+            hrefLang={otherLocale}
+            aria-label={locale === 'en' ? 'Switch to Czech' : 'Přepnout do angličtiny'}
             style={{
               fontSize: '12px',
               color: 'var(--text-muted)',
@@ -144,7 +172,7 @@ export default function Header({ locale, t }: HeaderProps) {
               el.style.color = 'var(--text-muted)'
             }}
           >
-            {otherLocale.toUpperCase()}
+            {otherLocale === 'cs' ? 'CZ' : 'EN'}
           </Link>
 
           {/* CTA */}
@@ -173,6 +201,16 @@ export default function Header({ locale, t }: HeaderProps) {
             {t.nav.bookCall}
           </a>
         </nav>
+
+        <Link
+          href={otherHref}
+          hrefLang={otherLocale}
+          aria-label={locale === 'en' ? 'Switch to Czech' : 'Přepnout do angličtiny'}
+          className="mobile-language"
+          style={{ display: 'none', marginLeft: 'auto', padding: '8px 12px', color: 'var(--text-muted)', textDecoration: 'none', fontSize: '13px', fontWeight: 600 }}
+        >
+          {otherLocale === 'cs' ? 'CZ' : 'EN'}
+        </Link>
 
         {/* Mobile hamburger */}
         <button
@@ -232,21 +270,6 @@ export default function Header({ locale, t }: HeaderProps) {
               {link.label}
             </Link>
           ))}
-          <div style={{ display: 'flex', gap: '12px', marginTop: '8px' }}>
-            <Link
-              href={`/${otherLocale}`}
-              style={{
-                fontSize: '13px',
-                color: 'var(--text-muted)',
-                textDecoration: 'none',
-                fontWeight: 600,
-                letterSpacing: '0.05em',
-                textTransform: 'uppercase',
-              }}
-            >
-              {otherLocale.toUpperCase()}
-            </Link>
-          </div>
           <a
             href="https://outlook.office.com/bookwithme/user/480895b1333541dc94be634dd588fada@salesagent.cz/meetingtype/jwdxCRPBn0CvHccZ7eLwAg2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile"
             target="_blank"
@@ -272,6 +295,7 @@ export default function Header({ locale, t }: HeaderProps) {
         @media (max-width: 1120px) {
           .desktop-nav { display: none !important; }
           .mobile-menu-btn { display: block !important; }
+          .mobile-language { display: inline-flex !important; }
         }
         @media (min-width: 1121px) {
           .mobile-menu { display: none !important; }
