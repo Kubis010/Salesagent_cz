@@ -1,4 +1,5 @@
 import type { NextConfig } from 'next'
+import { legacyEnRedirects } from './lib/legacy-en-redirects'
 
 const nextConfig: NextConfig = {
   // Static export for Netlify (optional - comment out if using SSR on Netlify)
@@ -7,11 +8,7 @@ const nextConfig: NextConfig = {
     return [
       // Legacy entry URLs point directly to their final service/language destination.
       { source: '/externi-obchod', destination: '/cs/externi-obchod', statusCode: 301 },
-      { source: '/sales-representation-czech-republic', destination: '/cs/externi-obchod', statusCode: 301 },
-      { source: '/services', destination: '/en/sales-representation-czech-republic', statusCode: 301 },
-      { source: '/pricing', destination: '/en/pricing', statusCode: 301 },
-      { source: '/contact', destination: '/en/contact', statusCode: 301 },
-      { source: '/about', destination: '/en/about', statusCode: 301 },
+      ...Object.entries(legacyEnRedirects).map(([source, destination]) => ({ source, destination, statusCode: 301 as const })),
       // Consolidated into the market-entry guide; explicit 301, no /en/blog/ chain.
       {
         source: '/blog/market-entry-czech-republic-hire-sales-vs-open-entity',
@@ -51,17 +48,6 @@ const nextConfig: NextConfig = {
       {
         source: '/en/how-it-works',
         destination: '/en',
-        permanent: true,
-      },
-      // Broken pages (collateral from earlier repositioning) → 301 to relevant
-      {
-        source: '/contact-to-sales-agent',
-        destination: '/cs/contact',
-        permanent: true,
-      },
-      {
-        source: '/sales-outsourcing-blog',
-        destination: '/blog',
         permanent: true,
       },
       // EN sales-representation service page is live (ranks for "market entry czech republic").

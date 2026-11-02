@@ -125,7 +125,7 @@ export default async function LinkedInOutreachPage({
             {cs
               ? 'LinkedIn outreach je součástí našeho '
               : 'LinkedIn outreach is part of our '}
-            <a href={`/${locale}/sales-representation-czech-republic`} style={{ color: 'var(--accent)' }}>
+            <a href={locale === 'cs' ? '/cs/externi-obchod' : '/en/sales-representation-czech-republic'} style={{ color: 'var(--accent)' }}>
               {cs ? 'obchodního zastoupení a outsourcingu obchodu v ČR' : 'sales outsourcing for the Czech market'}
             </a>
             {cs ? ' — kompletní oslovování firem jako služba.' : ' — local sales in the Czech Republic as a service, no rep to hire.'}

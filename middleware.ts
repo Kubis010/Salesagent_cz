@@ -1,8 +1,16 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { locales, defaultLocale } from '@/lib/i18n'
+import { legacyEnRedirects } from '@/lib/legacy-en-redirects'
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
+
+  const legacyDestination = legacyEnRedirects[pathname]
+  if (legacyDestination) {
+    const url = request.nextUrl.clone()
+    url.pathname = legacyDestination
+    return NextResponse.redirect(url, 301)
+  }
 
   // Skip static files and API routes
   if (

@@ -124,7 +124,7 @@ export default async function AutomatizovaneOsloveniPage({
             {cs
               ? 'Oslovování je jádrem našeho '
               : 'Outreach is the core of our '}
-            <a href={`/${locale}/sales-representation-czech-republic`} style={{ color: 'var(--accent)' }}>
+            <a href={locale === 'cs' ? '/cs/externi-obchod' : '/en/sales-representation-czech-republic'} style={{ color: 'var(--accent)' }}>
               {cs ? 'obchodního zastoupení a outsourcingu obchodu v ČR' : 'sales outsourcing for the Czech market'}
             </a>
             {cs ? ' — od oslovení po domluvené schůzky.' : ' — local sales in the Czech Republic, from first touch to booked meetings.'}

@@ -112,7 +112,7 @@ export default async function B2BLeadGenerationPage({
             {cs
               ? 'Lead generation je první krok naší širší služby '
               : 'Lead generation is the first step of our broader '}
-            <a href={`/${locale}/sales-representation-czech-republic`} style={{ color: 'var(--accent)' }}>
+            <a href={locale === 'cs' ? '/cs/externi-obchod' : '/en/sales-representation-czech-republic'} style={{ color: 'var(--accent)' }}>
               {cs ? 'obchodního zastoupení a outsourcingu obchodu v ČR' : 'sales outsourcing for the Czech market'}
             </a>
             {cs ? ' — od generování leadů po první schůzky.' : ' — from lead generation to first meetings, without hiring a local rep.'}
