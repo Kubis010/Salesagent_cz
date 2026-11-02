@@ -36,13 +36,12 @@ export function DemoEmbed() {
     <div className={styles.demoStage}>
       <iframe ref={iframe} className={`sr-prezenter ${styles.srPrezenter}`} src={textOnly ? DEMO + '?mode=text' : DEMO} title="Salesagent.cz — interaktivní demo" loading="lazy" allow={textOnly ? "microphone 'none'" : 'microphone'} />
     </div>
-    <p className={styles.demoHelp}>Bez mikrofonu můžete v Prezentéru vybírat témata a psát otázky. Nefunguje vložená ukázka? <a href={external} data-demo-external target="_blank" rel="noopener noreferrer">Otevřete ji samostatně</a> nebo <a href="#konzultace" data-consultation data-placement="hero">domluvte konzultaci</a>. <button type="button" onClick={() => load(true)}>Přepnout na text bez mikrofonu</button></p>
+    <p className={styles.demoHelp}>V ukázce si můžete vybrat téma a ptát se hlasem nebo textem. <button type="button" onClick={() => load(true)}>Přepnout na text bez mikrofonu</button></p>
   </div>
 }
 
 export default function LandingExperience() {
   const dialog = useRef<HTMLDialogElement>(null)
-  const [opened, setOpened] = useState(false)
   const [choice, setChoice] = useState(false)
   const [ready, setReady] = useState(false)
   const [preferences, setPreferences] = useState(false)
@@ -53,7 +52,7 @@ export default function LandingExperience() {
   const [formType, setFormType] = useState<'consultation' | 'webinar'>('consultation')
   const submitting = useRef(false)
   const initial = useRef<{ url: URL; referrer: string } | null>(null)
-  const open = useCallback(() => { setOpened(true); dialog.current?.showModal() }, [])
+  const open = useCallback(() => { dialog.current?.showModal() }, [])
 
   useEffect(() => {
     initial.current = { url: new URL(location.href), referrer: document.referrer }
@@ -153,7 +152,6 @@ export default function LandingExperience() {
       }
     `}</style>
     {WEBINAR_ENABLED && WEBINAR_DATE && <section className={styles.webinar}><h2>Živá ukázka: Claude/ChatGPT + Salesbot za 30 minut</h2><p>{WEBINAR_DATE}</p><button type="button" className={styles.primary} onClick={() => { setFormType('webinar'); open() }}>Registrovat se na webinář</button></section>}
-    {choice && !preferences && !opened && <a href="/cs/contact" data-placement="sticky" className={styles.sticky}>Kontaktujte nás <span>→</span></a>}
     {choice && !preferences && <button type="button" className={styles.cookieReopen} onClick={() => setPreferences(true)}>Nastavení cookies</button>}
     {(!choice || preferences) && <section data-landing-cookie-panel className={styles.cookieBanner} aria-label="Nastavení cookies">
       <strong>Vaše soukromí</strong><p>Nezbytné cookies zajišťují chod webu. Analytiku a reklamní cookies zapneme jen s vaším souhlasem. <a href="/cs/privacy">Zásady ochrany soukromí</a></p>
@@ -161,7 +159,7 @@ export default function LandingExperience() {
       <div className={styles.cookieActions}><button type="button" disabled={!ready} onClick={() => choose('accept')}>Přijmout vše</button><button type="button" disabled={!ready} onClick={() => choose('reject')}>Odmítnout vše</button><button type="button" disabled={!ready} onClick={() => settings ? choose('save') : setSettings(true)}>{settings ? 'Uložit výběr' : 'Nastavení'}</button></div>
       {!ready && <small>Načítání nastavení souhlasu… Analytika zůstává vypnutá.</small>}
     </section>}
-    <dialog id="konzultace" ref={dialog} className={styles.consultation} aria-labelledby="consultation-title" onClose={() => setOpened(false)}>
+    <dialog id="konzultace" ref={dialog} className={styles.consultation} aria-labelledby="consultation-title">
       <button type="button" aria-label="Zavřít formulář" className={styles.closeDialog} onClick={() => dialog.current?.close()}>×</button>
       <h2 id="consultation-title">{formType === 'webinar' ? 'Registrace na webinář' : 'Konzultace zdarma'}</h2>
       {status === 'success' ? <div role="status"><p>Děkujeme, váš požadavek jsme přijali. Ozveme se vám.</p><button type="button" className={styles.primary} onClick={() => dialog.current?.close()}>Hotovo</button></div> : <form onSubmit={submit} name={formType === 'webinar' ? 'landing-webinar' : 'landing-consultation'} method="POST">

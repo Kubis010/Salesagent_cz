@@ -6,7 +6,6 @@ import styles from './page.module.css'
 import LandingExperience, { DemoEmbed } from './LandingExperience'
 
 const path = '/cs/automatizace-obchodu-claude-chatgpt'
-const salesbotUrl = 'https://app.salesbot.cz/auth?lang=cs&mode=signup&utm_source=salesagent.cz&utm_medium=referral&utm_campaign=ac-claude-gpt-2026-10'
 const description = 'Za 15 minut uvidíte, jak najít leady, klasifikovat je a připravit kampaně přes Claude či ChatGPT a Salesbot. Bez kódování, s interaktivním Prezentérem.'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -113,15 +112,6 @@ function PlayIcon() {
   return <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 5 11 7-11 7V5Z" fill="currentColor" /></svg>
 }
 
-function ProductActions({ compact = false }: { compact?: boolean }) {
-  return (
-    <div className={`${styles.actions} ${compact ? styles.compact : ''}`}>
-      {!compact && <a href={salesbotUrl} data-salesbot data-placement="after_demo" className={styles.secondary}>Spustit Salesbota <span aria-hidden="true">↗</span></a>}
-      <a href="#konzultace" data-consultation data-placement="content" className={compact ? styles.textLink : styles.primary}>Domluvit konzultaci <span aria-hidden="true">→</span></a>
-    </div>
-  )
-}
-
 export default async function SalesbotWorkshopPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
   if (locale !== 'cs') notFound()
@@ -138,9 +128,9 @@ export default async function SalesbotWorkshopPage({ params }: { params: Promise
           <Link href="/cs" className={styles.back}>SalesAgent.cz <span aria-hidden="true">/</span> Praktická ukázka</Link>
           <p className={styles.eyebrow}><span /> PRO MAJITELE A ŠÉFY MALÝCH FIREM</p>
           <h1 id="workshop-title">Automatizace obchodu přes Claude a ChatGPT.<br /><em>Bez kódování.</em></h1>
-          <p className={styles.lead}>Obchod vám běží. Na hledání dalších zákazníků už ale nezbývá čas.</p>
-          <p className={styles.intro}>Za 15 minut uvidíte, jak se Salesbotem najít leady, klasifikovat je a připravit osobní oslovení i kampaně. Zadáváte česky. Nemusíte psát program.</p>
-          <div className={`${styles.actions} ${styles.heroActions}`}><a href="#konzultace" data-consultation data-placement="hero" className={styles.primary}>Konzultace zdarma</a><a href="#prezentace" className={styles.secondary}><PlayIcon /> Vyzkoušet ukázku ↓</a></div>
+          <p className={styles.lead}>Oslovujte desítky vhodných firem, aniž byste je museli jednu po druhé ručně hledat.</p>
+          <p className={styles.intro}>V 15minutové ukázce uvidíte, jak s Claudem nebo ChatGPT a Salesbotem najít nové zákazníky, vybrat ty správné a připravit osobní oslovení e-mailem i na LinkedInu. Vy se pak můžete věnovat odpovědím a obchodním jednáním. Bez kódování.</p>
+          <div className={`${styles.actions} ${styles.heroActions}`}><a href="#prezentace" className={styles.primary}><PlayIcon /> Pustit interaktivní ukázku</a></div>
           <p className={styles.finePrint}>Petr vás provede ukázkou. Pak si vyberete, co vás zajímá, a můžete se zeptat.</p>
           <div className={styles.host}>
             <Image src="/petr-kubicek.jpg" alt="Petr Kubíček" width={44} height={44} className={styles.avatar} />
@@ -154,43 +144,26 @@ export default async function SalesbotWorkshopPage({ params }: { params: Promise
         <span><strong>15 minut</strong> pro první představu</span><span><strong>Bez kódování</strong> s připojeným Salesbotem</span><span><strong>Vlastní tempo</strong> a prostor na otázky</span>
       </div>
 
-      <div className={styles.afterDemo}><p>Chcete si to osahat na vlastních kontaktech?<br /><span>Začněte Salesbotem. Nebo si nechte celý postup nastavit od nás.</span></p><ProductActions /></div>
-
-      <section className={styles.lightSection} aria-labelledby="roles-title">
-        <div className={styles.rolesWrap}>
-          <div><p className={styles.eyebrow}>NEMUSÍTE STAVĚT VLASTNÍ SOFTWARE</p><h2 id="roles-title">Vy víte, komu prodáváte.<br />Zbytek nemusíte dělat ručně.</h2></div>
-          <div className={styles.roles}>
-            <div><span className={styles.roleNumber}>01 / ZADÁNÍ</span><h3>Claude nebo ChatGPT</h3><p>Popíšete úkol běžnou češtinou. AI pomůže hledat souvislosti, roztřídit leady a připravit další krok.</p></div>
-            <div><span className={styles.roleNumber}>02 / ZÁZEMÍ</span><h3>Salesbot</h3><p>Po propojení drží pohromadě kontakty, jejich průzkum, kampaně, zprávy a vlastní CRM. Tady práci kontrolujete.</p></div>
-            <div><span className={styles.roleNumber}>03 / OBCHOD</span><h3>Vy nebo váš obchodník</h3><p>Schválíte, komu a co odejde. Řešíte odpovědi, jednání a nabídky — místo večerního hledání dalšího seznamu firem.</p></div>
-          </div>
-        </div>
-      </section>
-
       <section className={styles.topicsSection} aria-labelledby="topics-title">
         <div className={styles.topicsIntro}><p className={styles.eyebrow}>OD PRVNÍHO LEADU PO DALŠÍ KROK</p><h2 id="topics-title">Co si společně<br />projdeme.</h2><p>Jedenáct konkrétních témat. Rozbalte si, co potřebujete vyřešit, a podívejte se na příklad zadání pro AI.</p><div className={styles.topicNote}><span aria-hidden="true">↳</span><p>Po připojení Salesbota je začátek obyčejná věta česky. Ne řádky kódu.</p></div><a href="#prezentace" className={styles.textLink}><PlayIcon /> Přejít na video a Prezentér</a></div>
         <div className={styles.topicsList}>
           {topics.map((topic, index) => (
             <details className={styles.topic} key={topic.title} open={index === 0}>
               <summary><span className={styles.topicIndex}>{String(index + 1).padStart(2, '0')}</span><span><small>{topic.label}</small><strong>{topic.title}</strong></span><span className={styles.expand} aria-hidden="true">+</span></summary>
-              <div className={styles.topicBody}><p>{topic.body}</p><div className={styles.example}><span>TAKHLE TO ŘEKNETE ČESKY</span><blockquote>„{topic.prompt}“</blockquote><small>Příklad zadání po propojení Salesbota s AI. Výstup i další akce kontrolujete.</small></div><p className={styles.oneSentence}>S Claudem napojeným na Salesbota začnete jednou větou česky.</p><ProductActions compact /></div>
+              <div className={styles.topicBody}><p>{topic.body}</p><div className={styles.example}><span>TAKHLE TO ŘEKNETE ČESKY</span><blockquote>„{topic.prompt}“</blockquote><small>Příklad zadání po propojení Salesbota s AI. Výstup i další akce kontrolujete.</small></div><p className={styles.oneSentence}>S Claudem napojeným na Salesbota začnete jednou větou česky.</p></div>
             </details>
           ))}
         </div>
       </section>
 
       <section className={styles.choiceSection} aria-labelledby="choice-title">
-        <p className={styles.eyebrow}>STEJNÝ CÍL. DVĚ CESTY.</p><h2 id="choice-title">Chcete to řídit sami,<br />nebo to mít hotové?</h2>
-        <div className={styles.choices}>
-          <div className={styles.selfServe}><span className={styles.choiceLabel}>CHCI ZAČÍT SÁM</span><h3>Vezmu si Salesbota.</h3><p>Pro majitele a malé týmy, které si chtějí nastavit vlastní cílení a mít kampaně ve svých rukou.</p><ul><li>Vlastní účet a přehled o kontaktech</li><li>Claude nebo ChatGPT jako pomocník</li><li>Hledání leadů, klasifikace, kampaně a CRM</li><li>Kontrola zpráv a tempa oslovování</li></ul><a href={salesbotUrl} data-salesbot data-placement="self_serve" className={styles.secondary}>Vyzkoušet Salesbota ↗</a><small>Licence Salesbota, AI asistenta a Prezentéru jsou samostatné.</small></div>
-          <div className={styles.managed}><span className={styles.choiceLabel}>CHCI ŘEŠIT AŽ ZÁJEMCE</span><h3>Postavte mi to na klíč.</h3><p>Pro firmy, kde na nastavování a každodenní řízení není prostor. Cílení i provoz domluvíme a obsloužíme.</p><ul><li>Návrh cílení a obchodního postupu</li><li>Nastavení systému a kampaní</li><li>Průběžná obsluha a ladění</li><li>Předání připravených příležitostí</li></ul><a href="#konzultace" data-consultation data-placement="content" className={styles.primary}>Domluvit konzultaci →</a><Link href="/cs/pricing" className={styles.textLink}>Podívat se na ceník řízené automatizace</Link></div>
-        </div>
+        <div className={styles.choicePanel}><div><p className={styles.eyebrow}>DALŠÍ KROK JE NA VÁS</p><h2 id="choice-title">Pojďme najít cestu pro váš obchod.</h2><p>Chcete se Salesbotem začít sami, nebo potřebujete nastavit a řídit kampaně za vás? Probereme váš obchod a navrhneme další postup.</p></div><a href="#konzultace" data-consultation data-placement="content" className={styles.primary}>Domluvit konzultaci <span aria-hidden="true">→</span></a></div>
         <p className={styles.disclosure}>Salesbot a Prezentér jsou naše vlastní produkty Sales Robots. Nejde o nezávislé srovnání nástrojů.</p>
       </section>
 
       <section className={styles.faqSection} aria-labelledby="faq-title">
         <div><p className={styles.eyebrow}>JEŠTĚ NEŽ ZAČNETE</p><h2 id="faq-title">Na co se ptáte.</h2><p>Další otázku můžete položit přímo v <a href="#prezentace">Prezentéru</a>.</p></div>
-        <div>{faqs.map(({ q, a }) => <details className={styles.faq} key={q}><summary>{q}<span aria-hidden="true">+</span></summary><p>{a}</p></details>)}<p className={styles.setupLink}>Podrobnosti k propojení: <a href="https://salesbot.cz/mcp-server">návod Salesbota pro Claude a ChatGPT ↗</a>. Širší postup pro firmu: <Link href="/blog/jak-zavest-automatizaci-prodeje-ve-firme">jak zavést automatizaci prodeje</Link>.</p></div>
+        <div>{faqs.map(({ q, a }) => <details className={styles.faq} key={q}><summary>{q}<span aria-hidden="true">+</span></summary><p>{a}</p></details>)}<p className={styles.setupLink}>Širší postup pro firmu: <Link href="/blog/jak-zavest-automatizaci-prodeje-ve-firme">jak zavést automatizaci prodeje</Link>.</p></div>
       </section>
 
       <section className={styles.finalCta}><p className={styles.eyebrow}>NEJDŘÍV UKÁZKA. PAK ROZHODNUTÍ.</p><h2>Méně hledání.<br /><em>Víc skutečných rozhovorů.</em></h2><a href="#konzultace" data-consultation data-placement="footer" className={`${styles.primary} ${styles.watch}`}>Konzultace zdarma</a><p>Podívejte se, jak to funguje. A pak si vyberte vlastní cestu.</p></section>
