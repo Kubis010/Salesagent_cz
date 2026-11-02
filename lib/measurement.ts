@@ -8,8 +8,13 @@ declare global {
   }
 }
 export function leadAttribution() {
-  return window.SalesMeasurement?.get() ?? null;
+  try { return window.SalesMeasurement?.get() ?? null; } catch { return null; }
 }
 export function trackLead(lang: string) {
-  window.SalesMeasurement?.track('generate_lead', { form_id: 'contact', lang });
+  try {
+    window.SalesMeasurement?.refresh();
+    window.SalesMeasurement?.track('generate_lead', { form_id: 'contact', lang });
+  } catch {
+    // A tracking failure must never turn an accepted form submission into an error.
+  }
 }

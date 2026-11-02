@@ -92,7 +92,7 @@
   }
   function track(name, params) {
     if (!active || !consent() || !["sign_up", "generate_lead", "contact_click"].includes(name)) return false;
-    var clean = Object.assign({ site_area: area }, attributionParams());
+    var clean = Object.assign({ send_to: id, site_area: area, page_location: location.origin + safePath(location.pathname) }, attributionParams());
     ["method", "form_id", "lang", "link_type"].forEach(function (key) {
       var value = safeToken(params && params[key]); if (value) clean[key] = value;
     });
@@ -155,6 +155,14 @@
         config.campaign_medium = first.first_medium;
         config.campaign_name = first.first_campaign;
       }
+      // Keep the current visit's explicit UTM source when page_location omits the query string.
+      var currentSource = safeToken(initialUrl.searchParams.get("utm_source"));
+      if (isAgent && currentSource && location.pathname !== "/cs/automatizace-obchodu-claude-chatgpt") {
+        config.campaign_source = currentSource;
+        config.campaign_medium = safeToken(initialUrl.searchParams.get("utm_medium")) || "referral";
+        var currentCampaign = safeToken(initialUrl.searchParams.get("utm_campaign"));
+        if (currentCampaign) config.campaign_name = currentCampaign;
+      }
       window.gtag("js", new Date());
       window.gtag("config", id, config);
       var script = document.createElement("script");
@@ -175,7 +183,14 @@
     var target = event.target instanceof Element ? event.target.closest("a[href]") : null;
     if (!target) return;
     var href = target.getAttribute("href") || "";
-    var type = href.startsWith("tel:") ? "phone" : (href.startsWith("mailto:") ? "email" : (/^https?:\/\/(wa\.me|api\.whatsapp\.com)\//.test(href) ? "whatsapp" : ""));
+    var type = href.startsWith("tel:") ? "phone" : (href.startsWith("mailto:") ? "email" : (/^https?:\/\/(wa\.me|api\.whatsapp\.com)\//i.test(href) ? "whatsapp" : ""));
+    if (isAgent && location.pathname !== "/cs/automatizace-obchodu-claude-chatgpt") {
+      try {
+        var destination = new URL(href, location.href);
+        if (destination.origin === location.origin && /^\/(cs|en)\/contact\/?$/.test(destination.pathname)) type = "contact_page";
+        else if (destination.hostname === "outlook.office.com" && destination.pathname.startsWith("/bookwithme/")) type = "booking";
+      } catch (_) {}
+    }
     if (type) track("contact_click", { link_type: type });
   });
   refresh();

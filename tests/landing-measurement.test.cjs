@@ -133,5 +133,15 @@ test('protected metadata, schema inputs, H1 and existing section copy are unchan
   assert.equal(sitemapAfter.match(landingEntry)?.[0], sitemapBefore.match(landingEntry)[0])
   const sharedBefore = execFileSync('git', ['show', BASELINE + ':public/measurement.js'], { encoding: 'utf8' })
   const sharedAfter = fs.readFileSync('public/measurement.js', 'utf8')
-  assert.equal(sharedAfter.replace('  // Local/Netlify previews of the paid landing must never pollute a production property.\n  if (location.pathname === "/cs/automatizace-obchodu-claude-chatgpt" && !/^(www\\.)?salesagent\\.cz$/.test(host)) return;\n', '').replace('      // Only the paid SalesAgent landing needs campaign dimensions alongside its query-free page_location.\n', '').replace('(authPage || (isAgent && location.pathname === "/cs/automatizace-obchodu-claude-chatgpt")) && first', 'authPage && first'), sharedBefore)
+  const originalClean = sharedBefore.match(/^    var clean = Object\.assign.*$/m)?.[0]
+  const originalClickType = sharedBefore.match(/^    var type = href\.startsWith.*$/m)?.[0]
+  assert.ok(originalClean && originalClickType, 'baseline measurement statements exist')
+  const normalized = sharedAfter
+    .replace('  // Local/Netlify previews of the paid landing must never pollute a production property.\n  if (location.pathname === "/cs/automatizace-obchodu-claude-chatgpt" && !/^(www\\.)?salesagent\\.cz$/.test(host)) return;\n', '')
+    .replace('      // Only the paid SalesAgent landing needs campaign dimensions alongside its query-free page_location.\n', '')
+    .replace('(authPage || (isAgent && location.pathname === "/cs/automatizace-obchodu-claude-chatgpt")) && first', 'authPage && first')
+    .replace(/^    var clean = Object\.assign.*$/m, originalClean)
+    .replace(/      \/\/ Keep the current visit's explicit UTM source[\s\S]*?(?=      window\.gtag\("js")/, '')
+    .replace(/    var type = href\.startsWith[^\n]*\n    if \(isAgent && location\.pathname !== "\/cs\/automatizace-obchodu-claude-chatgpt"\) \{[\s\S]*?\n    \}/, originalClickType)
+  assert.equal(normalized, sharedBefore, 'unrelated shared measurement remains unchanged')
 })
