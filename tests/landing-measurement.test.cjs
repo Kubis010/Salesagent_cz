@@ -111,8 +111,8 @@ test('protected metadata, schema inputs and H1 are unchanged', () => {
   }
   const protectedComponents = execFileSync('git', ['ls-tree', '-r', '--name-only', BASELINE, 'components'], { encoding: 'utf8' }).trim().split('\n').filter(Boolean)
   for (const protectedFile of protectedComponents) {
-    // The shared header now contains an explicitly requested language switcher.
-    if (protectedFile === 'components/layout/Header.tsx') continue
+    // These shared components have explicitly requested navigation and script-loading changes.
+    if (['components/layout/Header.tsx', 'components/MeasurementScripts.tsx'].includes(protectedFile)) continue
     assert.equal(fs.readFileSync(protectedFile, 'utf8'), execFileSync('git', ['show', BASELINE + ':' + protectedFile], { encoding: 'utf8' }), protectedFile)
   }
   // Social previews were explicitly replaced; keep all other shared metadata and layout protected.

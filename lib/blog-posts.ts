@@ -9,6 +9,14 @@ export type BlogPost = {
 
 export const posts: BlogPost[] = [
   {
+    href: '/blog/fractional-obchodni-reditel',
+    lang: 'CS',
+    title: 'Fractional obchodní ředitel: kdy dává firmě smysl a co zařídí',
+    date: '3. listopadu 2026',
+    description: 'Kdy najmout externího obchodního ředitele na část úvazku, co přinese týmu a jak propojí obchodní procesy, CRM a AI.',
+    image: '/blog/fractional-obchodni-reditel.jpg',
+  },
+  {
     href: '/blog/jak-obohatit-leady',
     lang: 'CS',
     title: 'Jak obohatit leady: z názvu firmy ke kontaktu na rozhodovatele',

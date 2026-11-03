@@ -21,6 +21,7 @@ const pages = [
 ]
 
 const blogPosts = [
+  { slug: '/fractional-obchodni-reditel', priority: 0.8, changeFrequency: 'monthly' as const },
   { slug: '/nastroje-b2b-outbound-2026', priority: 0.8, changeFrequency: 'monthly' as const },
   { slug: '/b2b-kontakty-ceske-firmy', priority: 0.9, changeFrequency: 'monthly' as const },
   { slug: '/jak-rozjet-a-zautomatizovat-b2b-obchod', priority: 0.95, changeFrequency: 'monthly' as const },
@@ -94,6 +95,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: 'monthly',
     priority: 0.9,
     alternates: { languages: { cs: `${BASE_URL}/cs/externi-obchod` } },
+  })
+
+  entries.push({
+    url: `${BASE_URL}/cs/workshop`,
+    lastModified: new Date('2026-11-03'),
+    changeFrequency: 'monthly',
+    priority: 0.8,
+    alternates: { languages: { cs: `${BASE_URL}/cs/workshop` } },
+  })
+
+  entries.push({
+    url: `${BASE_URL}/cs/externi-obchodni-reditel`,
+    lastModified: new Date('2026-11-03'),
+    changeFrequency: 'monthly',
+    priority: 0.8,
+    alternates: { languages: { cs: `${BASE_URL}/cs/externi-obchodni-reditel` } },
   })
 
   // CS-only self-serve workshop landing page
