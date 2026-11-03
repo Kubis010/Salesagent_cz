@@ -125,13 +125,13 @@ export default async function SalesbotWorkshopPage({ params }: { params: Promise
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <section className={styles.hero} aria-labelledby="workshop-title">
         <div className={styles.heroCopy}>
-          <Link href="/cs" className={styles.back}>SalesAgent.cz <span aria-hidden="true">/</span> Praktická ukázka</Link>
+          <Link href="/cs" className={styles.back}>SalesAgent.cz <span aria-hidden="true">/</span> Návod zdarma</Link>
           <p className={styles.eyebrow}><span /> PRO MAJITELE A ŠÉFY MALÝCH FIREM</p>
           <h1 id="workshop-title">Automatizace obchodu přes Claude a ChatGPT.<br /><em>Bez kódování.</em></h1>
           <p className={styles.lead}>Oslovujte desítky vhodných firem, aniž byste je museli jednu po druhé ručně hledat.</p>
-          <p className={styles.intro}>V 15minutové ukázce uvidíte, jak s Claudem nebo ChatGPT a Salesbotem najít nové zákazníky, vybrat ty správné a připravit osobní oslovení e-mailem i na LinkedInu. Vy se pak můžete věnovat odpovědím a obchodním jednáním. Bez kódování.</p>
-          <div className={`${styles.actions} ${styles.heroActions}`}><a href="#prezentace" className={styles.primary}><PlayIcon /> Pustit interaktivní ukázku</a></div>
-          <p className={styles.finePrint}>Petr vás provede ukázkou. Pak si vyberete, co vás zajímá, a můžete se zeptat.</p>
+          <p className={styles.intro}>V 15minutovém návodu zdarma uvidíte, jak s Claudem nebo ChatGPT a Salesbotem najít nové zákazníky, vybrat ty správné a připravit osobní oslovení e-mailem i na LinkedInu. Vy se pak můžete věnovat odpovědím a obchodním jednáním. Bez kódování.</p>
+          <div className={`${styles.actions} ${styles.heroActions}`}><a href="#prezentace" className={styles.primary}><PlayIcon /> Pustit návod zdarma</a></div>
+          <p className={styles.finePrint}>Petr vás provede návodem. Pak si vyberete, co vás zajímá, a můžete se zeptat.</p>
           <div className={styles.host}>
             <Image src="/petr-kubicek.jpg" alt="Petr Kubíček" width={44} height={44} className={styles.avatar} />
             <div><strong>Petr Kubíček</strong><span>Sales Robots · ukázky ze Salesbota a Prezentéru</span></div>
@@ -145,7 +145,7 @@ export default async function SalesbotWorkshopPage({ params }: { params: Promise
       </div>
 
       <section className={styles.topicsSection} aria-labelledby="topics-title">
-        <div className={styles.topicsIntro}><p className={styles.eyebrow}>OD PRVNÍHO LEADU PO DALŠÍ KROK</p><h2 id="topics-title">Co si společně<br />projdeme.</h2><p>Jedenáct konkrétních témat. Rozbalte si, co potřebujete vyřešit, a podívejte se na příklad zadání pro AI.</p><div className={styles.topicNote}><span aria-hidden="true">↳</span><p>Po připojení Salesbota je začátek obyčejná věta česky. Ne řádky kódu.</p></div><a href="#prezentace" className={styles.textLink}><PlayIcon /> Přejít na video a Prezentér</a></div>
+        <div className={styles.topicsIntro}><p className={styles.eyebrow}>OD PRVNÍHO LEADU PO DALŠÍ KROK</p><h2 id="topics-title">Co si společně<br />projdeme.</h2><p>Jedenáct konkrétních témat. Rozbalte si, co potřebujete vyřešit, a podívejte se na příklad zadání pro AI.</p><div className={styles.topicNote}><span aria-hidden="true">↳</span><p>Po připojení Salesbota je začátek obyčejná věta česky. Ne řádky kódu.</p></div><a href="#prezentace" className={styles.textLink}><PlayIcon /> Přejít na návod zdarma</a></div>
         <div className={styles.topicsList}>
           {topics.map((topic, index) => (
             <details className={styles.topic} key={topic.title} open={index === 0}>
@@ -166,7 +166,7 @@ export default async function SalesbotWorkshopPage({ params }: { params: Promise
         <div>{faqs.map(({ q, a }) => <details className={styles.faq} key={q}><summary>{q}<span aria-hidden="true">+</span></summary><p>{a}</p></details>)}<p className={styles.setupLink}>Širší postup pro firmu: <Link href="/blog/jak-zavest-automatizaci-prodeje-ve-firme">jak zavést automatizaci prodeje</Link>.</p></div>
       </section>
 
-      <section className={styles.finalCta}><p className={styles.eyebrow}>NEJDŘÍV UKÁZKA. PAK ROZHODNUTÍ.</p><h2>Méně hledání.<br /><em>Víc skutečných rozhovorů.</em></h2><a href="#konzultace" data-consultation data-placement="footer" className={`${styles.primary} ${styles.watch}`}>Konzultace zdarma</a><p>Podívejte se, jak to funguje. A pak si vyberte vlastní cestu.</p></section>
+      <section className={styles.finalCta}><p className={styles.eyebrow}>NEJDŘÍV NÁVOD. PAK ROZHODNUTÍ.</p><h2>Méně hledání.<br /><em>Víc skutečných rozhovorů.</em></h2><a href="#konzultace" data-consultation data-placement="footer" className={`${styles.primary} ${styles.watch}`}>Konzultace zdarma</a><p>Podívejte se, jak to funguje. A pak si vyberte vlastní cestu.</p></section>
     </div>
   )
 }

@@ -32,11 +32,11 @@ export function DemoEmbed() {
     setTextOnly(withoutMicrophone)
   }
   return <div id="prezentace" className={styles.demoFrame}>
-    <div className={styles.demoBar}><span><i /> PREZENTÉR · SALESAGENT.CZ</span><a href={external} data-demo-external target="_blank" rel="noopener noreferrer">Otevřít ukázku v prohlížeči ↗</a></div>
+    <div className={styles.demoBar}><span><i /> PREZENTÉR · SALESAGENT.CZ</span><a href={external} data-demo-external target="_blank" rel="noopener noreferrer">Otevřít návod v prohlížeči ↗</a></div>
     <div className={styles.demoStage}>
-      <iframe ref={iframe} className={`sr-prezenter ${styles.srPrezenter}`} src={textOnly ? DEMO + '?mode=text' : DEMO} title="Salesagent.cz — interaktivní demo" loading="lazy" allow={textOnly ? "microphone 'none'" : 'microphone'} />
+      <iframe ref={iframe} className={`sr-prezenter ${styles.srPrezenter}`} src={textOnly ? DEMO + '?mode=text' : DEMO} title="Salesagent.cz — návod zdarma" loading="lazy" allow={textOnly ? "microphone 'none'" : 'microphone'} />
     </div>
-    <p className={styles.demoHelp}>V ukázce si můžete vybrat téma a ptát se hlasem nebo textem. <button type="button" onClick={() => load(true)}>Přepnout na text bez mikrofonu</button></p>
+    <p className={styles.demoHelp}>V návodu si můžete vybrat téma a ptát se hlasem nebo textem. <button type="button" onClick={() => load(true)}>Přepnout na text bez mikrofonu</button></p>
   </div>
 }
 
