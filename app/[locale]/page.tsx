@@ -181,7 +181,7 @@ export default async function HomePage({
       </section>
 
       {locale === 'cs' && (
-        <section style={{ maxWidth: '1152px', margin: '0 auto 32px', padding: '0 24px' }} aria-label="Ukázka automatizace obchodu bez kódování">
+        <section style={{ maxWidth: '1152px', margin: '0 auto 32px', padding: '0 24px' }} aria-label="Návod a workshop automatizace obchodu">
           <Link href="/cs/automatizace-obchodu-claude-chatgpt" className="card-hover" style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '18px', padding: '24px 28px', border: '1px solid rgba(255,107,74,0.3)', borderRadius: '12px', background: 'rgba(255,107,74,0.05)', textDecoration: 'none', color: 'var(--text)' }}>
             <div style={{ maxWidth: '700px' }}>
               <p style={{ color: 'var(--accent)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.08em', marginBottom: '8px' }}>PRAKTICKÁ UKÁZKA · BEZ KÓDOVÁNÍ</p>
@@ -189,6 +189,14 @@ export default async function HomePage({
               <p style={{ color: 'var(--text-muted)', fontSize: '14px', lineHeight: 1.7 }}>Za 15 minut uvidíte, jak hledat leady, klasifikovat je a připravit kampaně se Salesbotem.</p>
             </div>
             <span style={{ color: 'var(--accent)', fontSize: '14px', fontWeight: 600 }}>Pustit video a online Prezentér →</span>
+          </Link>
+          <Link href="/cs/workshop" className="card-hover" style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '18px', padding: '24px 28px', marginTop: '16px', border: '1px solid var(--border)', borderRadius: '12px', background: 'var(--bg-card)', textDecoration: 'none', color: 'var(--text)' }}>
+            <div style={{ maxWidth: '700px' }}>
+              <p style={{ color: 'var(--accent)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.08em', marginBottom: '8px' }}>WORKSHOP PRO OBCHODNÍ TÝMY · ONLINE NEBO U VÁS</p>
+              <h2 style={{ fontSize: '22px', fontWeight: 600, lineHeight: 1.3, marginBottom: '8px' }}>Naučte svůj obchodní tým pracovat s AI za 2 hodiny</h2>
+              <p style={{ color: 'var(--text-muted)', fontSize: '14px', lineHeight: 1.7 }}>Praktický workshop na vašem trhu, až pro 8 účastníků. 9 900 Kč bez DPH.</p>
+            </div>
+            <span style={{ color: 'var(--accent)', fontSize: '14px', fontWeight: 600 }}>Více o workshopu →</span>
           </Link>
         </section>
       )}

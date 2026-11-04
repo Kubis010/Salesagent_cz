@@ -13,11 +13,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       : 'How B2B outbound works for Czech and Slovak market entry: target list, personalised email and LinkedIn outreach, follow-ups and booked meetings — run for you, with no local entity or hire.',
     alternates: {
       canonical: `https://salesagent.cz/${locale}/vlastni-outbound`,
-      languages: {
-        cs: 'https://salesagent.cz/cs/vlastni-outbound',
-        en: 'https://salesagent.cz/en/vlastni-outbound',
-        'x-default': 'https://salesagent.cz/en/vlastni-outbound',
-      },
+      languages: cs ? { cs: 'https://salesagent.cz/cs/vlastni-outbound' } : {},
     },
     openGraph: {
       type: 'article',

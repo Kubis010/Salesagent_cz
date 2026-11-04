@@ -13,6 +13,7 @@ const pages = [
     path: '/resources/czech-business-companies-register',
     priority: 0.7,
     changeFrequency: 'yearly' as const,
+    locales: ['en'] as const,
   },
   { path: '/b2b-lead-generation', priority: 0.95, changeFrequency: 'monthly' as const },
   { path: '/automatizovane-osloveni', priority: 0.9, changeFrequency: 'monthly' as const },
@@ -73,7 +74,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: page.priority,
         alternates: {
           languages: Object.fromEntries(
-            locales.map((l) => [l, `${BASE_URL}/${l}${page.path}`])
+            (('locales' in page ? page.locales : undefined) ?? locales).map((l) => [l, `${BASE_URL}/${l}${page.path}`])
           ),
         },
       })
