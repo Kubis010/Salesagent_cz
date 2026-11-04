@@ -29,7 +29,6 @@ export default async function ResourcesPage({
 }) {
   const { locale } = await params
   const t: Translations = getTranslations(locale as Locale)
-  const base = `/${locale}`
 
   return (
     <div style={{ paddingTop: '100px', paddingBottom: '80px', paddingLeft: '24px', paddingRight: '24px' }}>
@@ -94,7 +93,7 @@ export default async function ResourcesPage({
             </Link>
           )}
           <Link
-            href={`${base}/resources/czech-business-companies-register`}
+            href="/en/resources/czech-business-companies-register"
             className="card-hover"
             style={{
               display: 'block',

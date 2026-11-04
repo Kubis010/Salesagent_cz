@@ -462,7 +462,7 @@ export default function SalesAgentDefinitionPage() {
               <Link href="/blog/jak-personalizovat-cold-emaily-ai" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
                 Jak personalizovat cold emaily pomocí AI →
               </Link>
-              <Link href="/en/how-it-works" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
+              <Link href="/en#how-it-works" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
                 How it works — step by step →
               </Link>
             </div>

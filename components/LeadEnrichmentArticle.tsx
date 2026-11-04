@@ -186,6 +186,7 @@ const articles: Record<
     related: [
       { href: '/cs/b2b-lead-generation', label: 'Generování B2B leadů jako služba' },
       { href: '/blog/jak-rozjet-a-zautomatizovat-b2b-obchod', label: 'Jak rozjet a zautomatizovat B2B obchod' },
+      { href: '/cs/resources', label: 'Průvodci a zdroje pro B2B obchod' },
     ],
     relatedTitle: 'Související',
     headline: 'Jak obohatit leady: z názvu firmy ke kontaktu na rozhodovatele',

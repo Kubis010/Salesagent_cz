@@ -269,6 +269,12 @@ export default function Page() {
               <Link href="/blog/sales-automation-ai-b2b-outreach" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
                 Sales Automation: How AI Is Changing B2B Outreach →
               </Link>
+              <Link href="/en/automatizovane-osloveni" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
+                B2B outreach to Czech companies →
+              </Link>
+              <Link href="/en/linkedin-outreach" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
+                LinkedIn outreach to Czech decision-makers →
+              </Link>
               <Link href="/blog/jak-personalizovat-cold-emaily-ai" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
                 Jak personalizovat cold emaily pomocí AI →
               </Link>

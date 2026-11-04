@@ -113,7 +113,11 @@ test('protected metadata, schema inputs and H1 are unchanged', () => {
   for (const protectedFile of protectedComponents) {
     // These shared components have explicitly requested navigation and script-loading changes.
     if (['components/layout/Header.tsx', 'components/MeasurementScripts.tsx'].includes(protectedFile)) continue
-    assert.equal(fs.readFileSync(protectedFile, 'utf8'), execFileSync('git', ['show', BASELINE + ':' + protectedFile], { encoding: 'utf8' }), protectedFile)
+    // Allow only the explicitly requested direct ARES link and related resource link.
+    const current = fs.readFileSync(protectedFile, 'utf8')
+      .replace('href="/en/resources/czech-business-companies-register"', 'href={`${base}/resources/czech-business-companies-register`}')
+      .replace("      { href: '/cs/resources', label: 'Průvodci a zdroje pro B2B obchod' },\n", '')
+    assert.equal(current, execFileSync('git', ['show', BASELINE + ':' + protectedFile], { encoding: 'utf8' }), protectedFile)
   }
   // Social previews were explicitly replaced; keep all other shared metadata and layout protected.
   const withoutPreviewImages = source => source

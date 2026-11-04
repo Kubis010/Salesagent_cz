@@ -392,7 +392,7 @@ export default function Page() {
               <Link href="/blog/jak-personalizovat-cold-emaily-ai" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
                 Jak personalizovat cold e-maily pomocí AI →
               </Link>
-              <Link href="/cs/how-it-works" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
+              <Link href="/cs#how-it-works" style={{ color: 'var(--accent)', textDecoration: 'none', fontSize: '14px' }}>
                 Jak to funguje — krok za krokem →
               </Link>
             </div>

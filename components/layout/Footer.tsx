@@ -155,7 +155,7 @@ export default function Footer({ locale, t, initialYear }: FooterProps) {
               Blog
             </Link>
             <Link
-              href={`${base}/resources/czech-business-companies-register`}
+              href="/en/resources/czech-business-companies-register"
               style={{
                 fontSize: '14px',
                 color: 'var(--text-muted)',
