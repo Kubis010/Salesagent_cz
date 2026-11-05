@@ -10,7 +10,9 @@ export async function generateMetadata({
   const { locale } = await params
   return {
     title: locale === 'cs' ? 'Zdroje a průvodci' : 'Resources & Guides',
-    ...(locale === 'en' ? { description: 'Guides and resources for B2B sales, prospecting and entering the Czech market, including a guide to the Czech business register.' } : {}),
+    description: locale === 'cs'
+      ? 'Průvodci a nástroje pro B2B prodej, prospecting a vstup na český trh, včetně průvodce českým obchodním rejstříkem.'
+      : 'Guides and resources for B2B sales, prospecting and entering the Czech market, including a guide to the Czech business register.',
     alternates: {
       canonical: `https://salesagent.cz/${locale}/resources`,
       languages: {
