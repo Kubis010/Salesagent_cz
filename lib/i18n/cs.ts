@@ -7,7 +7,7 @@ export const cs = {
     reactivation: 'Reaktivace klientů',
     about: 'O nás',
     contact: 'Kontakt',
-    bookCall: 'Konzultace zdarma',
+    bookCall: 'Probrat váš obchod',
   },
   hero: {
     badge: 'Řízená automatizace obchodu',
@@ -159,7 +159,7 @@ export const cs = {
     title: 'Pojďme probrat, jak by to jelo u vás.',
     subtitle:
       'Na nezávazné konzultaci projdeme váš prodej a ukážeme, jak by vám systém dodával schůzky se zájemci — bez zátěže vašeho obchodníka.',
-    primary: 'Konzultace zdarma',
+    primary: 'Probrat váš obchod',
     secondary: 'Napsat e-mail',
   },
   pricing: {

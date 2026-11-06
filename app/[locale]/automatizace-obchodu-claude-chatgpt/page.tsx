@@ -166,7 +166,7 @@ export default async function SalesbotWorkshopPage({ params }: { params: Promise
         <div>{faqs.map(({ q, a }) => <details className={styles.faq} key={q}><summary>{q}<span aria-hidden="true">+</span></summary><p>{a}</p></details>)}<p className={styles.setupLink}>Širší postup pro firmu: <Link href="/blog/jak-zavest-automatizaci-prodeje-ve-firme">jak zavést automatizaci prodeje</Link>.</p></div>
       </section>
 
-      <section className={styles.finalCta}><p className={styles.eyebrow}>NEJDŘÍV NÁVOD. PAK ROZHODNUTÍ.</p><h2>Méně hledání.<br /><em>Víc skutečných rozhovorů.</em></h2><a href="#konzultace" data-consultation data-placement="footer" className={`${styles.primary} ${styles.watch}`}>Konzultace zdarma</a><p>Podívejte se, jak to funguje. A pak si vyberte vlastní cestu.</p></section>
+      <section className={styles.finalCta}><p className={styles.eyebrow}>NEJDŘÍV NÁVOD. PAK ROZHODNUTÍ.</p><h2>Méně hledání.<br /><em>Víc skutečných rozhovorů.</em></h2><a href="#konzultace" data-consultation data-placement="footer" className={`${styles.primary} ${styles.watch}`}>Probrat váš obchod</a><p>Podívejte se, jak to funguje. A pak si vyberte vlastní cestu.</p></section>
     </div>
   )
 }

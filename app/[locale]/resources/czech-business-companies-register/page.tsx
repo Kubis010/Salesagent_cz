@@ -20,7 +20,6 @@ export const metadata: Metadata = {
     canonical: 'https://salesagent.cz/en/resources/czech-business-companies-register',
     languages: {
       en: 'https://salesagent.cz/en/resources/czech-business-companies-register',
-      cs: 'https://salesagent.cz/en/resources/czech-business-companies-register',
       'x-default': 'https://salesagent.cz/en/resources/czech-business-companies-register',
     },
   },

@@ -195,9 +195,12 @@ test('original page title, H1, canonical and guide copy remain unchanged; EN-onl
     .declarationList.declarations[0].initializer
   const property = (node, name) => node.properties.find(p => p.name.getText() === name).initializer
   const originalMetadata = metadataNode(before), currentMetadata = metadataNode(after)
-  for (const name of ['title', 'description', 'keywords', 'alternates']) {
+  for (const name of ['title', 'description', 'keywords']) {
     assert.equal(property(currentMetadata, name).getText(), property(originalMetadata, name).getText(), name)
   }
+  const originalAlternates = property(originalMetadata, 'alternates').getText()
+    .replace("      cs: 'https://salesagent.cz/en/resources/czech-business-companies-register',\n", '')
+  assert.equal(property(currentMetadata, 'alternates').getText(), originalAlternates, 'alternates')
   for (const name of ['title', 'description', 'locale']) {
     assert.equal(property(property(currentMetadata, 'openGraph'), name).getText(),
       property(property(originalMetadata, 'openGraph'), name).getText(), 'openGraph.' + name)

@@ -14,8 +14,8 @@ export const en: Translations = {
   hero: {
     badge: 'Czech market entry · external sales representation',
     headline: 'We start your sales\nin the Czech Republic.',
-    subheadline: 'We’ll be your sales agent and help you grow your business in the Czech market.',
-    cta: 'Free consultation',
+    subheadline: 'Your local sales partner: we find the right companies, open conversations in your name and, by agreement, support you at business meetings.',
+    cta: 'Discuss your Czech market entry',
     ctaSub: 'or see how it works',
     pipelineLabel: 'Your Czech sales, running',
     statsToday: 'reached today',
@@ -40,7 +40,7 @@ export const en: Translations = {
   howItWorks: {
     title: 'How your Czech market entry works',
     subtitle:
-      'No office, no local hire, no long contract. We run the prospecting and outreach in the Czech Republic and Slovakia; your team only takes the meetings that land in the calendar.',
+      'No office or local hire needed. We research your market, approach prospects in your name and arrange meetings. By agreement, we can join local negotiations and support commercial follow-up.',
     steps: [
       {
         number: '01',
@@ -77,7 +77,7 @@ export const en: Translations = {
       },
       {
         title: 'SaaS and service companies expanding into Central Europe',
-        body: 'You need Czech and Slovak decision-makers reached systematically. We prospect and book the meetings; your team closes.',
+        body: 'You need Czech and Slovak decision-makers reached systematically. We build the pipeline and, by agreement, support your team at meetings and in follow-up.',
       },
     ],
   },
@@ -114,7 +114,7 @@ export const en: Translations = {
     automation: {
       badge: 'Outsourced sales representation',
       title: 'We are your sales team in the Czech Republic',
-      body: 'We research Czech and Slovak companies in your segment, contact decision-makers by personalised email and LinkedIn, run the follow-ups, qualify interest and book meetings into your calendar — all in your name.',
+      body: 'We research Czech and Slovak companies, contact decision-makers in your name, qualify interest and arrange meetings. By agreement, we join local negotiations and support follow-up; the scope is agreed in advance.',
       examples: [
         { label: 'Target list built from public sources (ARES, maps, web)', icon: 'ai' },
         { label: 'Decision-makers, emails and LinkedIn profiles enriched', icon: 'enrich' },
@@ -142,7 +142,7 @@ export const en: Translations = {
     label: 'Who is behind it',
     name: 'Petr Kubicek',
     role: 'Founder, Sales Robots s.r.o.',
-    body: 'Over 20 years in B2B sales, including years in senior and leadership roles. We run outsourced sales for foreign companies entering the Czech and Slovak markets on our own outreach infrastructure. I do not resell someone else\'s tool — I run the prospecting for you so that first meetings land in your calendar.',
+    body: 'Over 20 years in B2B sales, including senior and leadership roles. I represent international companies in the Czech market and help clients find prospects, prepare for meetings and navigate local business discussions. The scope of my involvement is agreed with each client.',
     credentials: [
       { value: '20+', label: 'years in B2B sales' },
       { value: 'Ing.', label: 'Prague Univ. of Economics' },
@@ -164,8 +164,8 @@ export const en: Translations = {
   cta: {
     title: 'Let\'s talk about your Czech market entry.',
     subtitle:
-      'On a no-strings consultation we go through your product, your target customers and how a fixed-price trial in the Czech Republic would look.',
-    primary: 'Free consultation',
+      'On a free consultation we discuss your product, target customers, local representation and the next steps for your Czech market entry.',
+    primary: 'Discuss your Czech market entry',
     secondary: 'Send an email',
   },
   pricing: {

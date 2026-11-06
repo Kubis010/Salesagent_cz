@@ -16,7 +16,7 @@ export async function generateMetadata({
       : 'Czech Market Entry Services & Sales Representation',
     description: cs
       ? 'Potřebujete externího obchodníka? SalesAgent zajistí vyhledávání firem, personalizované oslovení a předání zájemců — bez náboru, bez fixních nákladů.'
-      : 'Outsourced sales team for the Czech Republic and Slovakia: outreach in your name, first meetings booked. No entity or local hire. Market testing from €1,500/month.',
+      : 'Local B2B sales representation in the Czech Republic and Slovakia: research, outreach and meetings in your name. Scope and pricing by agreement.',
     alternates: {
       canonical: `https://salesagent.cz/${locale}/sales-representation-czech-republic`,
       languages: {
@@ -47,7 +47,7 @@ const jsonLdEn = {
   '@type': 'Service',
   name: 'Czech Market Entry Services: External Sales Representation',
   description:
-    'AI-powered outsourced sales agency that acts as your external sales representative in the Czech Republic. Handles B2B prospecting, cold outreach and first meetings without hiring a local employee.',
+    'Local B2B sales representation for international companies in the Czech Republic: market research, outreach, first meetings and, by agreement, support at local negotiations.',
   provider: {
     '@type': 'Organization',
     name: 'Sales Robots s.r.o.',
@@ -127,7 +127,7 @@ export default async function SalesRepCzPage({
             <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', maxWidth: '640px', margin: '0 auto 40px', lineHeight: 1.7 }}>
               {isCs
                 ? 'Nechcete najímat obchodníka na plný úvazek? SalesAgent funguje jako váš externí obchodní tým — vyhledá firmy, osloví je personalizovaným e-mailem i na LinkedIn a předá vám ty, kteří mají zájem o schůzku.'
-                : 'You get an outsourced sales team in the Czech Republic and Slovakia: we build the target list, contact decision-makers by email and LinkedIn in your name, run the follow-ups and book qualified first meetings into your calendar. No Czech entity, no local hire — market testing from €1,500 per month (half-time capacity) for a 2–3 month trial.'}
+                : 'Your local sales partner in the Czech Republic and Slovakia: we research your market, find the right companies and open conversations in your name. We arrange first meetings and, by agreement, represent you at local negotiations and support commercial follow-up. Scope and pricing are agreed individually; a paid 2–3 month market test can be arranged.'}
             </p>
             {!isCs && (
               <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', margin: '-20px auto 32px', maxWidth: '640px' }}>
@@ -150,7 +150,7 @@ export default async function SalesRepCzPage({
                   textDecoration: 'none',
                 }}
               >
-                {isCs ? 'Domluvit nezávazný hovor' : 'Book a free consultation'}
+                {isCs ? 'Domluvit nezávazný hovor' : 'Discuss your Czech market entry'}
               </a>
               <Link
                 href={base}
@@ -222,10 +222,57 @@ export default async function SalesRepCzPage({
             </div>
           </section>
 
+          {!isCs && (
+            <section style={{ marginBottom: '80px' }}>
+              <h2 style={{ fontSize: '1.8rem', fontWeight: 700, marginBottom: '16px' }}>What we can handle for you</h2>
+              <p style={{ color: 'var(--text-muted)', lineHeight: 1.7, marginBottom: '24px' }}>We agree the scope and responsibilities before starting. The initial engagement can include:</p>
+              <ul style={{ color: 'var(--text-muted)', lineHeight: 1.9, paddingLeft: '22px' }}>
+                <li>Research of your target market, relevant companies and competitors.</li>
+                <li>Target lists, personalised email and LinkedIn outreach in your name, and follow-ups.</li>
+                <li>Handling replies, qualifying interest and arranging first meetings.</li>
+                <li>Reporting on outreach, responses, qualified prospects, meetings and market feedback.</li>
+              </ul>
+              <p style={{ color: 'var(--text-muted)', lineHeight: 1.7, marginTop: '16px' }}>By agreement, we can also join local business meetings, represent you at initial negotiations and support commercial follow-up. We agree who leads negotiations and closes each opportunity.</p>
+            </section>
+          )}
+
+          {!isCs && (
+            <section style={{ marginBottom: '80px' }}>
+              <h2 style={{ fontSize: '1.8rem', fontWeight: 700, marginBottom: '16px' }}>Local sales supported by our own tools and data</h2>
+              <p style={{ color: 'var(--text-muted)', lineHeight: 1.7, marginBottom: '24px' }}>Our people run your sales activity with support from Salesbot and our own software. We use relevant company data to build a target list for your market, then keep the work organised in CRM.</p>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '20px' }}>
+                <div style={{ border: '1px solid var(--border)', borderRadius: '16px', padding: '24px' }}><h3>Company research and data</h3><p style={{ color: 'var(--text-muted)', lineHeight: 1.7 }}>We combine public company registers, websites and other relevant sources to identify Czech and Slovak companies that fit your target market.</p></div>
+                <div style={{ border: '1px solid var(--border)', borderRadius: '16px', padding: '24px' }}><h3>Salesbot and CRM</h3><p style={{ color: 'var(--text-muted)', lineHeight: 1.7 }}>Our tools help us research prospects, prepare outreach and keep companies, conversations and next steps together. Reporting and access are agreed with you.</p></div>
+                <div style={{ border: '1px solid var(--border)', borderRadius: '16px', padding: '24px' }}><h3>Custom sales tools</h3><p style={{ color: 'var(--text-muted)', lineHeight: 1.7 }}>When your process needs more, we can discuss a tailored CRM, integrations or an interactive product presentation as a separate agreed scope.</p></div>
+              </div>
+            </section>
+          )}
+
+          {!isCs && (
+            <section style={{ marginBottom: '80px' }}>
+              <h2 style={{ fontSize: '1.8rem', fontWeight: 700, marginBottom: '20px' }}>Experience working with international clients</h2>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '20px' }}>
+                <div style={{ border: '1px solid var(--border)', borderRadius: '16px', padding: '24px' }}><h3>Whistlelink</h3><p style={{ color: 'var(--text-muted)', lineHeight: 1.7 }}>Whistleblowing SaaS · Sweden<br />37 qualified leads over a 2-month trial.</p></div>
+                <div style={{ border: '1px solid var(--border)', borderRadius: '16px', padding: '24px' }}><h3>Bierbauer &amp; Söhne</h3><p style={{ color: 'var(--text-muted)', lineHeight: 1.7 }}>Agricultural machinery · Germany<br />Ongoing lead generation across the Czech and Slovak markets.</p></div>
+              </div>
+              <p style={{ color: 'var(--text-muted)', marginTop: '16px' }}>Specific references and recommendations are available on request.</p>
+            </section>
+          )}
+
+          {!isCs && (
+            <section style={{ marginBottom: '80px', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '28px' }}>
+              <Image src="/petr-kubicek.jpg" alt="Petr Kubíček, founder of Sales Robots" width={120} height={120} style={{ borderRadius: '50%', objectFit: 'cover' }} />
+              <div style={{ flex: '1 1 320px' }}>
+                <h2 style={{ fontSize: '1.8rem', fontWeight: 700, marginBottom: '12px' }}>Your local point of contact: Petr Kubíček</h2>
+                <p style={{ color: 'var(--text-muted)', lineHeight: 1.7 }}>Founder of Sales Robots with over 20 years in B2B sales. Petr represents international companies in the Czech market and helps clients prepare for meetings and navigate local business discussions. His involvement in your opportunities is agreed with you in advance.</p>
+              </div>
+            </section>
+          )}
+
           {/* Market testing section */}
           <section style={{ marginBottom: '80px', background: 'var(--surface)', borderRadius: '20px', padding: '48px' }}>
             <h2 style={{ fontSize: '1.8rem', fontWeight: 700, marginBottom: '16px' }}>
-              {isCs ? 'Proč outsourcing obchodu dává smysl' : 'Start with market testing — risk-free'}
+              {isCs ? 'Proč outsourcing obchodu dává smysl' : 'Start with a paid market test'}
             </h2>
             <p style={{ color: 'var(--text-muted)', lineHeight: 1.7, marginBottom: '32px', maxWidth: '640px' }}>
               {isCs
@@ -239,12 +286,12 @@ export default async function SalesRepCzPage({
                   value: isCs ? 'až 500' : '2–3 months',
                 },
                 {
-                  label: isCs ? 'Úspora oproti vlastnímu obchodníkovi' : 'Companies reached per month',
-                  value: isCs ? '17×' : 'up to 500',
+                  label: isCs ? 'Úspora oproti vlastnímu obchodníkovi' : 'Scope and pricing',
+                  value: isCs ? '17×' : 'By agreement',
                 },
                 {
-                  label: isCs ? 'Bez závazku' : 'No long-term commitment',
-                  value: isCs ? 'Měsíc po měsíci' : 'Month by month',
+                  label: isCs ? 'Bez závazku' : 'Review before continuing',
+                  value: isCs ? 'Měsíc po měsíci' : 'After the test',
                 },
               ].map((stat) => (
                 <div
@@ -336,7 +383,7 @@ export default async function SalesRepCzPage({
                   duration: isCs ? 'průběžně' : '2–3 months',
                   body: isCs
                     ? 'Systém oslovuje stovky firem měsíčně e-mailem i na LinkedIn. Průběžně vyhodnocujeme výsledky, ladíme zprávy a předáváme zájemce přímo do vašeho kalendáře nebo CRM.'
-                    : 'The system reaches out to hundreds of companies monthly. We continuously evaluate results, adjust targeting and messaging. Booked meetings land directly in your calendar.',
+                    : 'We reach relevant companies in your name, evaluate responses and adjust targeting and messaging. We agree the scope and activity levels with you in advance.',
                 },
                 {
                   phase: isCs ? 'Fáze 3' : 'Phase 3',
@@ -344,7 +391,7 @@ export default async function SalesRepCzPage({
                   duration: isCs ? 'od 3. měsíce' : 'from month 4',
                   body: isCs
                     ? 'Na základě dat rozhodneme, jak pokračovat — zvýšit objem, oslovit jiný segment nebo rozšířit kanály. Rozhodujete se na základě čísel, ne pocitů.'
-                    : 'Based on first months of data, we decide together how to proceed — higher volume, a different segment, or transitioning into full commercial representation in Czech Republic.',
+                    : 'We review the results and decide together whether to continue, change the target segment or agree a broader scope of representation.',
                 },
               ].map((item) => (
                 <div
@@ -371,7 +418,7 @@ export default async function SalesRepCzPage({
                     {isCs ? 'ceník' : 'pricing'}
                   </Link>{isCs ? ' pro detaily.' : ' for details.'}</>
               ) : (
-                <>No annual lock-in. See{' '}
+                <>Scope, pricing and continuation are agreed individually. See{' '}
                   <Link href={`${base}/pricing`} style={{ color: 'var(--accent)', textDecoration: 'none' }}>
                     pricing
                   </Link>{' '}for details.</>
@@ -386,7 +433,7 @@ export default async function SalesRepCzPage({
                 Already setting up in the Czech Republic?
               </h2>
               <p style={{ color: 'var(--text-muted)', lineHeight: 1.7, marginBottom: '20px', maxWidth: '620px' }}>
-                If you&apos;re using corporate or secretarial services to establish your Czech entity, the next step is local sales. We handle market entry, B2B outreach and first meetings — so your Czech expansion starts generating revenue from day one, without hiring a local rep.
+                If you&apos;re using corporate or secretarial services to establish your Czech entity, the next step is local sales. We help you research the market, reach relevant companies and arrange first meetings without hiring a local representative.
               </p>
               <a
                 href="https://outlook.office.com/bookwithme/user/480895b1333541dc94be634dd588fada@salesagent.cz/meetingtype/jwdxCRPBn0CvHccZ7eLwAg2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile"
@@ -424,10 +471,10 @@ export default async function SalesRepCzPage({
                 textDecoration: 'none',
               }}
             >
-              {isCs ? 'Domluvit nezávazný hovor' : 'Book a free consultation'}
+              {isCs ? 'Domluvit nezávazný hovor' : 'Discuss your Czech market entry'}
             </a>
             <p style={{ marginTop: '16px', fontSize: '13px', color: 'var(--text-muted)' }}>
-              {isCs ? 'Bez závazku · Odpovídáme do 24 hodin' : 'No commitment · We reply within 24 hours'}
+              {isCs ? 'Bez závazku · Odpovídáme do 24 hodin' : 'A free conversation about your product, target customers, local representation and next steps.'}
             </p>
           </section>
 
