@@ -39,6 +39,9 @@ export default function Header({ locale, t }: HeaderProps) {
   const pathname = (usePathname() ?? '').replace(/\/$/, '')
   const otherHref = translatedPaths[pathname] ?? `/${otherLocale}`
   const base = `/${locale}`
+  const rememberLanguage = () => {
+    document.cookie = `site_language=${otherLocale}; Path=/; Max-Age=31536000; SameSite=Lax${location.protocol === 'https:' ? '; Secure' : ''}`
+  }
 
   const links = [
     { href: base, label: t.nav.home },
@@ -149,6 +152,7 @@ export default function Header({ locale, t }: HeaderProps) {
           {/* Language switcher */}
           <Link
             href={otherHref}
+            onClick={rememberLanguage}
             hrefLang={otherLocale}
             aria-label={locale === 'en' ? 'Switch to Czech' : 'Přepnout do angličtiny'}
             style={{
@@ -206,6 +210,7 @@ export default function Header({ locale, t }: HeaderProps) {
 
         <Link
           href={otherHref}
+          onClick={rememberLanguage}
           hrefLang={otherLocale}
           aria-label={locale === 'en' ? 'Switch to Czech' : 'Přepnout do angličtiny'}
           className="mobile-language"

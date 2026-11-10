@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { locales, defaultLocale } from '@/lib/i18n'
 import { legacyEnRedirects } from '@/lib/legacy-en-redirects'
+import { browserLanguage } from '@/lib/browser-language'
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
@@ -36,11 +37,16 @@ export function middleware(request: NextRequest) {
 
   if (hasLocale) return NextResponse.next()
 
-  // Serve the English homepage at the root; legacy subpaths keep their existing routing.
+  // Explicit language pages remain stable; choose a language only at the root.
   if (pathname === '/') {
+    const saved = request.cookies.get('site_language')?.value
+    const language = saved === 'cs' || saved === 'en' ? saved : browserLanguage(request.headers.get('accept-language'))
     const url = request.nextUrl.clone()
-    url.pathname = '/en'
-    return NextResponse.rewrite(url)
+    url.pathname = `/${language}`
+    const response = language === 'cs' ? NextResponse.redirect(url, 307) : NextResponse.rewrite(url)
+    response.headers.set('Cache-Control', 'private, no-store')
+    response.headers.set('Vary', 'Accept-Language, Cookie')
+    return response
   }
 
   // Redirect subpaths to locale prefix
