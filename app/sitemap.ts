@@ -69,12 +69,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       if ('locales' in page && !(page.locales as readonly string[]).includes(locale)) continue
       entries.push({
         url: `${BASE_URL}/${locale}${page.path}`,
-        lastModified: new Date(),
         changeFrequency: page.changeFrequency,
         priority: page.priority,
         alternates: {
           languages: Object.fromEntries(
-            (('locales' in page ? page.locales : undefined) ?? locales).map((l) => [l, `${BASE_URL}/${l}${page.path}`])
+            (page.path === '' ? [locale] : (('locales' in page ? page.locales : undefined) ?? locales)).map((l) => [l, `${BASE_URL}/${l}${page.path}`])
           ),
         },
       })
@@ -84,7 +83,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const post of blogPosts) {
     entries.push({
       url: `${BASE_URL}/blog${post.slug}`,
-      lastModified: new Date(),
       changeFrequency: post.changeFrequency,
       priority: post.priority,
     })
@@ -140,7 +138,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const loc of ['cs', 'en'] as const) {
     entries.push({
       url: loc === 'cs' ? `${BASE_URL}/cs/reaktivace-klientu` : `${BASE_URL}/en/client-reactivation`,
-      lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.9,
       alternates: {
@@ -151,7 +148,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // EN-only blog index
   entries.push({
     url: `${BASE_URL}/en/blog`,
-    lastModified: new Date(),
     changeFrequency: 'weekly' as const,
     priority: 0.7,
   })
@@ -159,7 +155,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // EN-only service page (CS variant is 301'd to homepage)
   entries.push({
     url: `${BASE_URL}/en/sales-representation-czech-republic`,
-    lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.9,
     alternates: {

@@ -239,7 +239,7 @@ export default function CoDElaExterniObchodnikPage() {
             </a>
             <p className="mt-4 text-sm text-gray-500">
               Hledáte externího obchodníka?{' '}
-              <Link href="/cs/sales-representation-czech-republic" className="text-orange-400 hover:text-orange-300 underline">
+              <Link href="/cs/externi-obchod" className="text-orange-400 hover:text-orange-300 underline">
                 Outsourcing obchodu a externího obchodního zástupce — naše služba →
               </Link>
             </p>

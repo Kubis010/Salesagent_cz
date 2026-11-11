@@ -22,11 +22,9 @@ export async function generateMetadata({
       : ['czech market entry', 'market entry czech republic', 'external sales representation czech republic', 'outsourced sales czech republic', 'sales agent czech republic', 'b2b lead generation czech republic', 'czech and slovak market entry', 'client reactivation service'],
     alternates: {
       canonical: `https://salesagent.cz/${locale}`,
-      languages: {
-        cs: 'https://salesagent.cz/cs',
-        en: 'https://salesagent.cz/en',
-        'x-default': 'https://salesagent.cz/en',
-      },
+      languages: locale === 'cs'
+        ? { cs: 'https://salesagent.cz/cs' }
+        : { en: 'https://salesagent.cz/en', 'x-default': 'https://salesagent.cz/en' },
     },
   }
 }
