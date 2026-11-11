@@ -149,15 +149,15 @@
         page_referrer: initialReferrer ? (function () { try { return new URL(initialReferrer).origin; } catch (_) { return ""; } })() : ""
       };
       var first = get();
-      // Only the paid SalesAgent landing needs campaign dimensions alongside its query-free page_location.
-      if ((authPage || (isAgent && location.pathname === "/cs/automatizace-obchodu-claude-chatgpt")) && first) {
+      // App signup attribution uses first touch; website sessions use the current visit.
+      if (authPage && first) {
         config.campaign_source = first.first_source;
         config.campaign_medium = first.first_medium;
         config.campaign_name = first.first_campaign;
       }
       // Keep the current visit's explicit UTM source when page_location omits the query string.
       var currentSource = safeToken(initialUrl.searchParams.get("utm_source"));
-      if (isAgent && currentSource && location.pathname !== "/cs/automatizace-obchodu-claude-chatgpt") {
+      if (isAgent && currentSource) {
         config.campaign_source = currentSource;
         config.campaign_medium = safeToken(initialUrl.searchParams.get("utm_medium")) || "referral";
         var currentCampaign = safeToken(initialUrl.searchParams.get("utm_campaign"));

@@ -76,7 +76,10 @@ test('invalid UTM and AI referral classification', () => {
   assert.equal(data.first_medium, 'ai-assistant'); assert.equal(data.referrer, 'claude.ai')
 })
 test('shared GA config keeps paid campaign dimensions although page_location has no query', () => {
-  const calls = [], jar = new Map()
+  const calls = [], jar = new Map([['sr_first_touch_v1', encodeURIComponent(JSON.stringify({
+    v: 1, consent: true, captured_at: new Date().toISOString(), landing_page: '/cs',
+    first_source: 'old-source', first_medium: 'referral', first_campaign: 'old-campaign',
+  }))]])
   const document = { referrer: '', addEventListener() {}, createElement: () => ({}), head: { appendChild() {} } }
   Object.defineProperty(document, 'cookie', { get: () => [...jar].map(([k,v]) => k + '=' + v).join('; '),
     set: value => { const pair = value.split(';')[0], i = pair.indexOf('='); jar.set(pair.slice(0,i),pair.slice(i+1)) } })
@@ -138,8 +141,7 @@ test('protected metadata, schema inputs and H1 are unchanged', () => {
   assert.ok(originalClean && originalClickType, 'baseline measurement statements exist')
   const normalized = sharedAfter
     .replace('  // Local/Netlify previews of the paid landing must never pollute a production property.\n  if (location.pathname === "/cs/automatizace-obchodu-claude-chatgpt" && !/^(www\\.)?salesagent\\.cz$/.test(host)) return;\n', '')
-    .replace('      // Only the paid SalesAgent landing needs campaign dimensions alongside its query-free page_location.\n', '')
-    .replace('(authPage || (isAgent && location.pathname === "/cs/automatizace-obchodu-claude-chatgpt")) && first', 'authPage && first')
+    .replace('      // App signup attribution uses first touch; website sessions use the current visit.\n', '')
     .replace(/^    var clean = Object\.assign.*$/m, originalClean)
     .replace(/      \/\/ Keep the current visit's explicit UTM source[\s\S]*?(?=      window\.gtag\("js")/, '')
     .replace(/    var type = href\.startsWith[^\n]*\n    if \(isAgent && location\.pathname !== "\/cs\/automatizace-obchodu-claude-chatgpt"\) \{[\s\S]*?\n    \}/, originalClickType)
