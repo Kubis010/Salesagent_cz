@@ -1,0 +1,42 @@
+/* Shared visual language, including legacy articles using Tailwind utilities. */
+.site-shell > header { background: #f6f5f0 !important; backdrop-filter: none !important; }
+.site-shell > header > div:not(.mobile-menu) { max-width: 1320px !important; height: 82px !important; }
+.site-shell > header .mobile-menu { background: var(--bg); }
+.site-shell > header .mobile-menu > a:last-child { color: var(--on-accent) !important; border-radius: 3px !important; }
+.site-shell > header nav > a:last-child { background: #202b2a !important; color: #fff !important; border-radius: 3px !important; }
+.site-shell > header a[style*="background-color:var(--accent)"] { color: var(--on-accent) !important; }
+.site-shell > footer { background: #eaece5 !important; }
+.site-content { color: var(--text); }
+.site-content :is(h1,h2,h3,h4) { font-family: 'Inter', sans-serif !important; letter-spacing: -.035em; }
+.site-content :is(h1,h2) { font-weight: 500 !important; }
+.site-content h1 { text-wrap: balance; }
+.site-content :is(p,li) { text-wrap: pretty; }
+.site-content :is(input,textarea,select) { color: var(--text); background-color: var(--bg-card); border-color: var(--border-strong); }
+.site-content :is(input,textarea)::placeholder { color: var(--text-muted); opacity: 1; }
+.site-content :is(a,button,summary) { transition: color .2s, background-color .2s, border-color .2s, box-shadow .2s, transform .2s; }
+.site-content :is(a,button):hover { text-underline-offset: 5px; }
+.site-content a[style*="background-color:var(--accent)"], .site-content button[style*="background-color:var(--accent)"] { color: var(--on-accent) !important; border-radius: 3px !important; }
+.site-content a[style*="background:var(--accent)"], .site-content button[style*="background:var(--accent)"] { color: var(--on-accent) !important; border-radius: 3px !important; }
+.site-content .glow { display: none; }
+.site-content .dot-grid { background-image: none; }
+.site-content .font-mono-data { font-family: 'Inter', sans-serif; font-variant-numeric: tabular-nums; }
+.site-content :is(.bg-black,.bg-gray-900,.bg-gray-800) { background-color: var(--bg) !important; }
+.site-content :is(.bg-gray-900\/50,.bg-gray-900\/30,.bg-gray-800\/50) { background-color: var(--bg-card) !important; }
+.site-content .text-white { color: var(--text) !important; }
+.site-content :is(.text-gray-200,.text-gray-300,.text-gray-400,.text-gray-500) { color: var(--text-muted) !important; }
+.site-content :is(.text-orange-300,.text-orange-400,.text-orange-500,.text-violet-300,.text-violet-400,.text-blue-300,.text-blue-400) { color: var(--accent) !important; }
+.site-content :is(.text-green-300,.text-green-400,.text-emerald-300,.text-emerald-400) { color: var(--green) !important; }
+.site-content :is(.border-gray-700,.border-gray-800) { border-color: var(--border) !important; }
+.site-content :is(.bg-orange-600,.bg-orange-500,.bg-violet-600,.bg-blue-600,.bg-emerald-600) { background: var(--accent) !important; color: var(--on-accent) !important; }
+.site-content :is(.bg-blue-900,.bg-orange-900,.bg-violet-900,.bg-green-900) { background: var(--bg-2) !important; }
+.site-content :is(.bg-orange-900\/10,.bg-violet-900\/10,.bg-green-900\/10,.bg-blue-900\/10) { background: var(--bg-2) !important; }
+.site-content .blog-card { border-radius: 4px !important; box-shadow: none !important; }
+.site-content :is(.blog-card,.card-hover):hover { box-shadow: 0 8px 24px #202b2a0b !important; transform: translateY(-3px); }
+.site-content summary { cursor: pointer; }
+.site-content details[open] > :not(summary) { animation: detail-enter .3s ease; }
+@keyframes detail-enter { from { opacity: .4; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 600px) { .site-shell > header > div:not(.mobile-menu) { height: 72px !important; } }
+@media (prefers-reduced-motion: reduce) {
+  .site-content *, .site-content *::before, .site-content *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  .site-content :is(.blog-card,.card-hover):hover { transform: none; }
+}

@@ -1,5 +1,6 @@
 import Script from 'next/script'
 import MeasurementScripts from '@/components/MeasurementScripts'
+import SiteMotion from '@/components/layout/SiteMotion'
 import '../globals.css'
 import { getTranslations } from '@/lib/i18n'
 import Header from '@/components/layout/Header'
@@ -10,9 +11,10 @@ export default function RegisterLayout({ children }: { children: React.ReactNode
   const currentYear = new Date().getFullYear()
   return (
     <html lang="en">
-      <body>
+      <body className="site-shell">
         <Header locale="en" t={t} />
-        <main>{children}</main>
+        <main className="site-content">{children}</main>
+        <SiteMotion />
         <Footer locale="en" t={t} initialYear={currentYear} />
         <MeasurementScripts />
         <Script

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getTranslations, type Locale, type Translations } from '@/lib/i18n'
 import HeroPipeline from '@/components/home/HeroPipeline'
+import './home-design.css'
 
 export async function generateMetadata({
   params,
@@ -37,12 +38,13 @@ export default async function HomePage({
   const { locale } = await params
   const t: Translations = getTranslations(locale as Locale)
   const base = `/${locale}`
+  const heroSentences = t.hero.subheadline.match(/^(.+?[.!?])\s+([\s\S]+)$/)
 
   return (
-    <>
+    <div className="home-design">
       {/* ── HERO ── */}
       <section
-        className="hero-grid dot-grid"
+        className="hero-grid home-hero"
         style={{
           position: 'relative',
           overflow: 'hidden',
@@ -71,7 +73,7 @@ export default async function HomePage({
         />
 
         {/* Left */}
-        <div style={{ position: 'relative', zIndex: 1 }}>
+        <div className="home-copy" style={{ position: 'relative', zIndex: 1 }}>
           <div
             style={{
               display: 'inline-flex',
@@ -104,7 +106,7 @@ export default async function HomePage({
 
           <h1
             style={{
-              fontFamily: 'Space Grotesk, sans-serif',
+              fontFamily: 'var(--home-display, Inter), sans-serif',
               fontSize: 'clamp(36px, 5vw, 56px)',
               fontWeight: 700,
               lineHeight: '1.1',
@@ -117,18 +119,11 @@ export default async function HomePage({
             {t.hero.headline}
           </h1>
 
-          <h2
-            style={{
-              fontSize: '17px',
-              fontWeight: 400,
-              color: 'var(--text-muted)',
-              lineHeight: '1.65',
-              marginBottom: '40px',
-              maxWidth: '500px',
-            }}
-          >
-            {t.hero.subheadline}
-          </h2>
+          <p className="home-intro">{heroSentences?.[1] ?? t.hero.subheadline}</p>
+          {heroSentences?.[2] && <details className="home-intro-details">
+            <summary>{locale === 'cs' ? 'Jak to celé funguje' : 'How it works'} <span aria-hidden="true">+</span></summary>
+            <p>{heroSentences[2]}</p>
+          </details>}
 
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
             <a
@@ -172,14 +167,13 @@ export default async function HomePage({
           )}
         </div>
 
-        {/* Right: Pipeline */}
-        <div style={{ position: 'relative', zIndex: 1 }}>
+        <div className="home-pipeline">
           <HeroPipeline t={t} />
         </div>
       </section>
 
       {locale === 'cs' && (
-        <section style={{ maxWidth: '1152px', margin: '0 auto 32px', padding: '0 24px' }} aria-label="Návod a workshop automatizace obchodu">
+        <section className="home-learning" style={{ maxWidth: '1152px', margin: '0 auto 32px', padding: '0 24px' }} aria-label="Návod a workshop automatizace obchodu">
           <Link href="/cs/automatizace-obchodu-claude-chatgpt" className="card-hover" style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '18px', padding: '24px 28px', border: '1px solid rgba(255,107,74,0.3)', borderRadius: '12px', background: 'rgba(255,107,74,0.05)', textDecoration: 'none', color: 'var(--text)' }}>
             <div style={{ maxWidth: '700px' }}>
               <p style={{ color: 'var(--accent)', fontSize: '11px', fontWeight: 700, letterSpacing: '0.08em', marginBottom: '8px' }}>PRAKTICKÁ UKÁZKA · BEZ KÓDOVÁNÍ</p>
@@ -202,6 +196,7 @@ export default async function HomePage({
       {/* ── HOW IT WORKS ── */}
       <section
         id="how-it-works"
+        className="home-process"
         style={{
           padding: '80px 24px',
           maxWidth: '1200px',
@@ -214,7 +209,7 @@ export default async function HomePage({
           </div>
           <h2
             style={{
-              fontFamily: 'Space Grotesk, sans-serif',
+              fontFamily: 'var(--home-display, Inter), sans-serif',
               fontSize: 'clamp(28px, 4vw, 40px)',
               fontWeight: 700,
               letterSpacing: '-0.025em',
@@ -279,7 +274,7 @@ export default async function HomePage({
                 </div>
                 <h3
                   style={{
-                    fontFamily: 'Space Grotesk, sans-serif',
+                    fontFamily: 'var(--home-display, Inter), sans-serif',
                     fontSize: '17px',
                     fontWeight: 700,
                     marginBottom: '12px',
@@ -310,7 +305,7 @@ export default async function HomePage({
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <h2
             style={{
-              fontFamily: 'Space Grotesk, sans-serif',
+              fontFamily: 'var(--home-display, Inter), sans-serif',
               fontSize: 'clamp(28px, 4vw, 40px)',
               fontWeight: 700,
               letterSpacing: '-0.025em',
@@ -337,7 +332,7 @@ export default async function HomePage({
               >
                 <h3
                   style={{
-                    fontFamily: 'Space Grotesk, sans-serif',
+                    fontFamily: 'var(--home-display, Inter), sans-serif',
                     fontSize: '17px',
                     fontWeight: 600,
                     marginBottom: '10px',
@@ -368,7 +363,7 @@ export default async function HomePage({
           </div>
           <h2
             style={{
-              fontFamily: 'Space Grotesk, sans-serif',
+              fontFamily: 'var(--home-display, Inter), sans-serif',
               fontSize: 'clamp(28px, 4vw, 40px)',
               fontWeight: 700,
               letterSpacing: '-0.025em',
@@ -406,12 +401,15 @@ export default async function HomePage({
                 <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor"><circle cx="5" cy="5" r="3" /></svg>
                 {t.services.automation.badge}
               </div>
-              <h3 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: 'clamp(20px, 2.5vw, 26px)', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '16px', lineHeight: '1.25' }}>
+              <h3 style={{ fontFamily: 'var(--home-display, Inter), sans-serif', fontSize: 'clamp(20px, 2.5vw, 26px)', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '16px', lineHeight: '1.25' }}>
                 {t.services.automation.title}
               </h3>
+              <details className="home-service-details">
+                <summary>{locale === 'cs' ? 'Podrobnosti spolupráce' : 'How we work together'} <span aria-hidden="true">+</span></summary>
               <p style={{ fontSize: '15px', color: 'var(--text-muted)', lineHeight: '1.75', marginBottom: '28px' }}>
                 {t.services.automation.body}
               </p>
+              </details>
               <a
                 href="https://outlook.office.com/bookwithme/user/480895b1333541dc94be634dd588fada@salesagent.cz/meetingtype/jwdxCRPBn0CvHccZ7eLwAg2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile"
                 target="_blank"
@@ -463,12 +461,15 @@ export default async function HomePage({
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '11px', fontWeight: 700, letterSpacing: '0.07em', textTransform: 'uppercase', color: 'var(--accent)', border: '1px solid rgba(255,107,74,0.3)', borderRadius: '20px', padding: '4px 12px', marginBottom: '20px', background: 'rgba(255,107,74,0.06)' }}>
               {t.services.agency.badge}
             </div>
-            <h3 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '14px' }}>
+            <h3 style={{ fontFamily: 'var(--home-display, Inter), sans-serif', fontSize: '22px', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '14px' }}>
               {t.services.agency.title}
             </h3>
+            <details className="home-service-details">
+              <summary>{locale === 'cs' ? 'Podrobnosti spolupráce' : 'How we work together'} <span aria-hidden="true">+</span></summary>
             <p style={{ fontSize: '15px', color: 'var(--text-muted)', lineHeight: '1.75', marginBottom: '24px' }}>
               {t.services.agency.body}
             </p>
+            </details>
             <a
               href="https://outlook.office.com/bookwithme/user/480895b1333541dc94be634dd588fada@salesagent.cz/meetingtype/jwdxCRPBn0CvHccZ7eLwAg2?anonymous&ismsaljsauthenabled&ep=mLinkFromTile"
               target="_blank"
@@ -515,7 +516,7 @@ export default async function HomePage({
             <div style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '10px' }}>
               {t.reactivation.label}
             </div>
-            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: 'clamp(22px, 3vw, 30px)', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '12px' }}>
+            <h2 style={{ fontFamily: 'var(--home-display, Inter), sans-serif', fontSize: 'clamp(22px, 3vw, 30px)', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '12px' }}>
               {t.reactivation.title}
             </h2>
             <p style={{ fontSize: '15px', color: 'var(--text-muted)', lineHeight: 1.7, margin: 0, maxWidth: '680px' }}>
@@ -532,13 +533,13 @@ export default async function HomePage({
       </section>
 
       {/* ── PROOF BAND (light) — references + founder ── */}
-      <section className="section-light" style={{ padding: '88px 24px' }}>
+      <section className="section-light home-proof" style={{ padding: '88px 24px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           {/* References */}
           <div style={{ maxWidth: '620px', marginBottom: '48px' }}>
             <h2
               style={{
-                fontFamily: 'Space Grotesk, sans-serif',
+                fontFamily: 'var(--home-display, Inter), sans-serif',
                 fontSize: 'clamp(28px, 4vw, 40px)',
                 fontWeight: 700,
                 letterSpacing: '-0.025em',
@@ -582,7 +583,7 @@ export default async function HomePage({
                   {r.result}
                 </p>
                 <div style={{ borderTop: '1px solid var(--border)', paddingTop: '14px' }}>
-                  <div style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '15px', fontWeight: 700, color: 'var(--text)' }}>
+                  <div style={{ fontFamily: 'var(--home-display, Inter), sans-serif', fontSize: '15px', fontWeight: 700, color: 'var(--text)' }}>
                     {r.client}
                   </div>
                   <div style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '3px' }}>{r.sector}</div>
@@ -638,7 +639,7 @@ export default async function HomePage({
               >
                 {t.founder.label}
               </div>
-              <div style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, color: 'var(--text)', lineHeight: 1.2 }}>
+              <div style={{ fontFamily: 'var(--home-display, Inter), sans-serif', fontSize: '22px', fontWeight: 700, color: 'var(--text)', lineHeight: 1.2 }}>
                 {t.founder.name}
               </div>
               <div style={{ fontSize: '14px', color: 'var(--text-muted)', marginBottom: '16px', marginTop: '4px' }}>
@@ -680,7 +681,7 @@ export default async function HomePage({
         <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '14px', textAlign: 'center' }}>
           Blog
         </p>
-        <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: 'clamp(24px, 3.5vw, 36px)', fontWeight: 700, letterSpacing: '-0.025em', marginBottom: '40px', textAlign: 'center' }}>
+        <h2 style={{ fontFamily: 'var(--home-display, Inter), sans-serif', fontSize: 'clamp(24px, 3.5vw, 36px)', fontWeight: 700, letterSpacing: '-0.025em', marginBottom: '40px', textAlign: 'center' }}>
           {locale === 'cs' ? 'Nejnovější články o B2B prodeji a automatizaci' : 'Latest articles on B2B sales & automation'}
         </h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
@@ -724,7 +725,7 @@ export default async function HomePage({
           ]).map((post) => (
             <Link key={post.href} href={post.href} style={{ textDecoration: 'none' }}>
               <article style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '14px', padding: '24px 28px', height: '100%', transition: 'border-color 0.2s' }} className="blog-card">
-                <h3 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '17px', fontWeight: 700, color: 'var(--text)', marginBottom: '10px', lineHeight: 1.3 }}>{post.title}</h3>
+                <h3 style={{ fontFamily: 'var(--home-display, Inter), sans-serif', fontSize: '17px', fontWeight: 700, color: 'var(--text)', marginBottom: '10px', lineHeight: 1.3 }}>{post.title}</h3>
                 <p style={{ fontSize: '14px', color: 'var(--text-muted)', lineHeight: 1.65, marginBottom: '14px' }}>{post.desc}</p>
                 <span style={{ fontSize: '13px', color: 'var(--accent)', fontWeight: 600 }}>{locale === 'cs' ? 'Číst článek →' : 'Read more →'}</span>
               </article>
@@ -785,7 +786,7 @@ export default async function HomePage({
             }}
           />
           <section style={{ padding: '80px 24px', maxWidth: '760px', margin: '0 auto' }}>
-            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: 'clamp(22px, 3vw, 32px)', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '40px', textAlign: 'center' }}>
+            <h2 style={{ fontFamily: 'var(--home-display, Inter), sans-serif', fontSize: 'clamp(22px, 3vw, 32px)', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '40px', textAlign: 'center' }}>
               Časté otázky
             </h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
@@ -846,7 +847,7 @@ export default async function HomePage({
       >
         <h2
           style={{
-            fontFamily: 'Space Grotesk, sans-serif',
+            fontFamily: 'var(--home-display, Inter), sans-serif',
             fontSize: 'clamp(28px, 4vw, 44px)',
             fontWeight: 700,
             letterSpacing: '-0.025em',
@@ -919,6 +920,6 @@ export default async function HomePage({
           }
         }
       `}</style>
-    </>
+    </div>
   )
 }

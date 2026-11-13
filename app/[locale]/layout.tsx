@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
 import MeasurementScripts from '@/components/MeasurementScripts'
+import SiteMotion from '@/components/layout/SiteMotion'
 import '../globals.css'
 import { locales, getTranslations, type Locale, type Translations } from '@/lib/i18n'
 import Header from '@/components/layout/Header'
@@ -175,7 +176,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body>
+      <body className="site-shell">
         {/* JSON-LD structured data — Next.js App Router hoists these to <head> */}
         <script
           type="application/ld+json"
@@ -186,7 +187,8 @@ export default async function LocaleLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(getServiceSchema(locale === 'cs')) }}
         />
         <Header locale={locale as Locale} t={t} />
-        <main>{children}</main>
+        <main className="site-content">{children}</main>
+        <SiteMotion />
         <Footer locale={locale as Locale} t={t} initialYear={currentYear} />
         <MeasurementScripts />
         <Script

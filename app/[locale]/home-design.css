@@ -1,0 +1,66 @@
+/* A quieter, editorial visual direction scoped to the two homepages. */
+.home-design { --home-display: 'Inter'; }
+.home-design .glow, .home-hero .animate-pulse-dot { display: none; }
+.home-design h1 { font-family: 'Inter', sans-serif !important; font-size: clamp(38px, 4.5vw, 64px) !important; line-height: 1.09 !important; letter-spacing: -.052em !important; font-weight: 500 !important; }
+.home-design h2 { font-weight: 500 !important; letter-spacing: -.035em !important; }
+.home-design h3 { letter-spacing: -.025em !important; }
+.home-design .home-hero { max-width: 1320px !important; padding: 150px 40px 76px !important; display: grid !important; gap: 72px !important; align-items: center; grid-template-columns: 1.2fr 1fr !important; }
+.home-copy > div:first-child { border: 0 !important; padding: 0 !important; background: none !important; border-radius: 0 !important; letter-spacing: .13em !important; font-size: 10px !important; margin-bottom: 24px !important; }
+.home-hero h2 { font-family: 'Inter', sans-serif; font-size: 16px !important; line-height: 1.8 !important; letter-spacing: 0 !important; max-width: 550px !important; }
+.home-design a[style*="background-color:var(--accent)"] { border-radius: 3px !important; color: #fff !important; }
+.home-learning { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; max-width: 1240px !important; padding: 0 !important; }
+.home-learning > a { padding: 28px 0 !important; border: 0 !important; border-top: 2px solid var(--text) !important; border-radius: 0 !important; background: none !important; margin: 0 !important; }
+.home-learning h2 { font-size: 23px !important; }
+.home-process > div:last-child > div { background: transparent !important; border: 0 !important; border-top: 1px solid var(--border-strong) !important; border-radius: 0 !important; padding: 28px 20px 12px 0 !important; }
+.home-process .font-mono-data { border: none !important; background: none !important; padding: 0 !important; font-size: 28px !important; font-family: 'Inter', sans-serif; font-weight: 400 !important; }
+.home-process > div:last-child > div > div:first-child > div:last-child { display: none; }
+.home-design .services-main-card, .home-design .services-agency-card, .home-design .reactivation-band { background: #e9ede5 !important; border: none !important; border-radius: 0 !important; box-shadow: none !important; }
+.home-design .services-agency-card { background: #fff !important; border-top: 1px solid var(--border) !important; }
+.home-design .services-main-card > div:first-child[aria-hidden] { display: none; }
+.home-design .home-proof { background: #e7eae1; }
+.home-proof { --text: #202b2a; --text-muted: #59625e; --border: #cdd3c8; }
+.home-proof > div > div:nth-child(2) > div { background: transparent !important; border: none !important; border-left: 1px solid var(--border) !important; border-radius: 0 !important; box-shadow: none !important; }
+.home-proof .font-mono-data { font-family: 'Inter', sans-serif; }
+.home-design .blog-card { background: transparent !important; border: none !important; border-top: 1px solid var(--border-strong) !important; border-radius: 0 !important; padding: 24px 0 !important; }
+.home-design > section:last-of-type { color: var(--text); background: #202b2a !important; --text: #f6f5f0; --text-muted: #d5dbd2; --border: #657067; padding: 80px 24px 90px !important; }
+.home-design > section:last-of-type h2 { max-width: 800px; margin-left: auto; margin-right: auto; }
+@media (max-width: 860px) {
+  .home-design .home-hero { padding: 122px 24px 48px !important; grid-template-columns: 1fr !important; gap: 40px !important; }
+  .home-learning { grid-template-columns: 1fr; gap: 0; }
+}
+@media (max-width: 480px) {
+
+}
+
+
+
+.home-pipeline { min-width: 0; }
+.home-pipeline > div { background: #fff !important; border: 1px solid var(--border) !important; border-radius: 4px !important; box-shadow: none !important; }
+.home-pipeline > div > div:first-child { background: transparent !important; }
+.home-pipeline > div > div:first-child > div:first-child { visibility: hidden; }
+.home-pipeline span { opacity: 1 !important; }
+.home-pipeline .animate-pulse-dot { animation: none; }
+@media (max-width: 1300px) {
+  .home-learning { margin-left: 40px !important; margin-right: 40px !important; }
+}
+@media (max-width: 860px) {
+  .home-learning { margin-left: 24px !important; margin-right: 24px !important; }
+}
+
+.home-intro { font-size: 20px; line-height: 1.65; max-width: 510px; color: var(--text-muted); margin: 30px 0 14px; }
+.home-intro-details { max-width: 500px; margin-bottom: 36px; font-size: 14px; }
+.home-intro-details summary, .home-service-details summary { display: flex; align-items: center; justify-content: space-between; gap: 20px; list-style: none; border-bottom: 1px solid var(--border); padding: 12px 0; color: var(--text-muted); }
+.home-intro-details summary::-webkit-details-marker, .home-service-details summary::-webkit-details-marker { display: none; }
+.home-intro-details summary span, .home-service-details summary span { color: var(--accent); transition: transform .25s; }
+.home-intro-details[open] summary span, .home-service-details[open] summary span { transform: rotate(45deg); }
+.home-intro-details p { line-height: 1.85; margin-top: 18px; color: var(--text-muted); }
+.home-service-details { margin-bottom: 26px; font-size: 14px; }
+.home-service-details p { padding-top: 16px; margin-bottom: 0 !important; }
+.home-design > section { scroll-margin-top: 100px; }
+.home-design .home-process { padding-top: 110px !important; padding-bottom: 110px !important; }
+.home-design .home-proof { padding-top: 110px !important; padding-bottom: 110px !important; }
+.home-pipeline { animation: hero-arrive .9s cubic-bezier(.2,.7,.2,1) both; }
+.home-copy { animation: hero-arrive .7s cubic-bezier(.2,.7,.2,1) both; }
+@keyframes hero-arrive { from { opacity: .3; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 600px) { .home-intro { font-size: 18px; } .home-design .home-process, .home-design .home-proof { padding-top: 70px !important; padding-bottom: 70px !important; } }
+@media (prefers-reduced-motion: reduce) { .home-pipeline, .home-copy { animation: none; } }

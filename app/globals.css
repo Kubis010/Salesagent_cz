@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
 
 @import "tailwindcss";
+@import "./site-design.css";
 
 :root {
-  --bg: #0B1320;
-  --bg-2: #0e1726;
-  --bg-card: #131c2e;
-  --bg-card-hover: #1a2438;
-  --text: #F5F3EE;
-  --text-muted: #94A3B8;
-  --green: #22A06B;
-  --accent: #FF6B4A;
-  --border: rgba(255, 255, 255, 0.09);
-  --border-strong: rgba(255, 255, 255, 0.16);
+  --bg: #f6f5f0;
+  --bg-2: #eeede7;
+  --bg-card: #fff;
+  --bg-card-hover: #eeede7;
+  --text: #202b2a;
+  --text-muted: #59625e;
+  --green: #35715a;
+  --accent: #b94124;
+  --on-accent: #fff;
+  --border: #d9ddd4;
+  --border-strong: #aeb8ad;
 }
 
 /* Warm light band — re-scopes the design tokens so existing
@@ -39,11 +41,7 @@ html {
 }
 
 body {
-  background:
-    radial-gradient(900px 600px at 78% -5%, rgba(255, 107, 74, 0.10), transparent 60%),
-    radial-gradient(700px 500px at 8% 8%, rgba(34, 160, 107, 0.07), transparent 55%),
-    linear-gradient(180deg, #0B1320 0%, #0c1422 100%);
-  background-attachment: fixed;
+  background: var(--bg);
   color: var(--text);
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -66,7 +64,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .font-mono-data {

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
 import MeasurementScripts from '@/components/MeasurementScripts'
+import SiteMotion from '@/components/layout/SiteMotion'
 import '../globals.css'
 import { getTranslations } from '@/lib/i18n'
 import BlogChrome from '@/components/layout/BlogChrome'
@@ -39,13 +40,14 @@ export default function BlogLayout({ children }: { children: React.ReactNode }) 
   const currentYear = new Date().getFullYear()
   return (
     <html lang="cs">
-      <body>
+      <body className="site-shell">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
         <BlogChrome part="header" csT={csT} enT={enT} enPaths={enPaths} initialYear={currentYear} />
-        <main>{children}</main>
+        <main className="site-content">{children}</main>
+        <SiteMotion />
         <BlogChrome part="footer" csT={csT} enT={enT} enPaths={enPaths} initialYear={currentYear} />
         <MeasurementScripts />
         <Script

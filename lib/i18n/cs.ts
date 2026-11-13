@@ -11,7 +11,7 @@ export const cs = {
   },
   hero: {
     badge: 'Řízená automatizace obchodu',
-    headline: 'Váš obchodník neprospektuje?\nAI systém to udělá za něj.',
+    headline: 'Rozjeďte obchod naplno\ndíky automatizaci.',
     subheadline:
       'Najdeme a oslovíme firmy z vašeho trhu — e-mailem, na LinkedInu i reklamou. Zahřejeme je a ukážeme váš produkt přes interaktivního Prezentéra. Vašemu obchodníkovi přistane připravená schůzka, kterou stačí zavřít. Celé to nasadíme a řídíme za vás.',
     cta: 'Kontaktujte nás',
