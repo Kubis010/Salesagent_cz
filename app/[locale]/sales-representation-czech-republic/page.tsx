@@ -132,6 +132,7 @@ export default async function SalesRepCzPage({
             {!isCs && (
               <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', margin: '-20px auto 32px', maxWidth: '640px' }}>
                 New to the market? <Link href="/en/guides/czech-market-entry-for-b2b-companies" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>Read the full Czech market entry playbook</Link> first.
+                {' '}<a href="/de/markteintritt-tschechien" hrefLang="de" lang="de" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>Deutsch</a>
               </p>
             )}
             <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>

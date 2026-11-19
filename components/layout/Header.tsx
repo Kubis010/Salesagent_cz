@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import type { Locale, Translations } from '@/lib/i18n'
+import { ENGLISH_MARKET_ENTRY, GERMAN_MARKET_ENTRY } from '@/lib/market-entry-languages'
 
 const translatedPaths: Record<string, string> = {
   '/cs/pricing': '/en/pricing', '/en/pricing': '/cs/pricing',
@@ -208,6 +209,7 @@ export default function Header({ locale, t }: HeaderProps) {
           </a>
         </nav>
 
+        {pathname === ENGLISH_MARKET_ENTRY && <a href={GERMAN_MARKET_ENTRY} hrefLang="de" lang="de" className="market-entry-language" style={{ fontSize: '12px', color: 'var(--text-muted)', padding: '8px 10px', textDecoration: 'none' }}>Deutsch</a>}
         <Link
           href={otherHref}
           onClick={rememberLanguage}
@@ -299,6 +301,13 @@ export default function Header({ locale, t }: HeaderProps) {
       )}
 
       <style>{`
+        header:has(.market-entry-language) .desktop-nav { margin-left: auto; margin-right: 16px; }
+        @media (max-width: 1250px) {
+          header:has(.market-entry-language) .desktop-nav { display: none !important; }
+          header .market-entry-language { margin-left: auto; }
+          header:has(.market-entry-language) .mobile-menu-btn { display: block !important; }
+          header:has(.market-entry-language) .mobile-language { display: inline-flex !important; margin-left: 0 !important; }
+        }
         @media (max-width: 1120px) {
           .desktop-nav { display: none !important; }
           .mobile-menu-btn { display: block !important; }

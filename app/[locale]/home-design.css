@@ -7,7 +7,7 @@
 .home-design .home-hero { max-width: 1320px !important; padding: 150px 40px 76px !important; display: grid !important; gap: 72px !important; align-items: center; grid-template-columns: 1.2fr 1fr !important; }
 .home-copy > div:first-child { border: 0 !important; padding: 0 !important; background: none !important; border-radius: 0 !important; letter-spacing: .13em !important; font-size: 10px !important; margin-bottom: 24px !important; }
 .home-hero h2 { font-family: 'Inter', sans-serif; font-size: 16px !important; line-height: 1.8 !important; letter-spacing: 0 !important; max-width: 550px !important; }
-.home-design a[style*="background-color:var(--accent)"] { border-radius: 3px !important; color: #fff !important; }
+.home-design a[style*="background-color:var(--accent)"] { border-radius: 3px !important; color: var(--on-accent) !important; }
 .home-learning { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; max-width: 1240px !important; padding: 0 !important; }
 .home-learning > a { padding: 28px 0 !important; border: 0 !important; border-top: 2px solid var(--text) !important; border-radius: 0 !important; background: none !important; margin: 0 !important; }
 .home-learning h2 { font-size: 23px !important; }

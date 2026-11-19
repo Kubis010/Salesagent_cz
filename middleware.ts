@@ -23,6 +23,11 @@ export function middleware(request: NextRequest) {
   }
 
   // Skip paths that must keep their exact URLs for SEO/GSC
+  // German is a single localized guide, not a third site-wide locale.
+  if (pathname === '/de/markteintritt-tschechien') return NextResponse.next()
+  if (pathname === '/de' || pathname.startsWith('/de/')) {
+    return new NextResponse(null, { status: 404, headers: { 'X-Robots-Tag': 'noindex' } })
+  }
   if (
     pathname.startsWith('/blog') ||
     pathname.startsWith('/czech-business-companies-register')

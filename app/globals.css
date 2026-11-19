@@ -11,8 +11,9 @@
   --text: #202b2a;
   --text-muted: #59625e;
   --green: #35715a;
-  --accent: #b94124;
-  --on-accent: #fff;
+  --accent: #fe6a4b;
+  --accent-hover: #ff795c;
+  --on-accent: #202b2a;
   --border: #d9ddd4;
   --border-strong: #aeb8ad;
 }

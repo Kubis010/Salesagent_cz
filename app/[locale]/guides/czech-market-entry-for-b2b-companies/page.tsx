@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { redirect } from 'next/navigation'
+import { marketEntryLanguages } from '@/lib/market-entry-languages'
 
 export async function generateMetadata({
   params,
@@ -26,10 +27,7 @@ export async function generateMetadata({
     ],
     alternates: {
       canonical: 'https://salesagent.cz/en/guides/czech-market-entry-for-b2b-companies',
-      languages: {
-        en: 'https://salesagent.cz/en/guides/czech-market-entry-for-b2b-companies',
-        'x-default': 'https://salesagent.cz/en/guides/czech-market-entry-for-b2b-companies',
-      },
+      languages: marketEntryLanguages,
     },
     openGraph: {
       type: 'article',

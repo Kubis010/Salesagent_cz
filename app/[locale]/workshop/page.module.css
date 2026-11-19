@@ -76,4 +76,4 @@
 @media (prefers-reduced-motion: reduce) { .primary,.secondary { transition: none; }.primary:hover { transform: none; } }
 
 .primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
-.primary:hover { background: #9f351d; border-color: #9f351d; color: var(--on-accent); }
+.primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); color: var(--on-accent); }

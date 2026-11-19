@@ -30,4 +30,4 @@
 @media (max-width: 680px) { .page { padding: 100px 20px 48px; } .grid { grid-template-columns: 1fr; } .card, .closing { padding: 24px; } .founder { flex-direction: column; align-items: flex-start; gap: 16px; } .hero { padding-top: 16px; } }
 
 .primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
-.primary:hover { background: #9f351d; border-color: #9f351d; color: var(--on-accent); }
+.primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); color: var(--on-accent); }

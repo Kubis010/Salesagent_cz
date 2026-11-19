@@ -4,10 +4,10 @@ const fs = require('node:fs')
 const vm = require('node:vm')
 const ts = require('typescript')
 
-function browser({ consent = true, path = '/cs/externi-obchod', query = '', referrer = 'https://www.google.com/search?q=private' } = {}) {
+function browser({ consent = true, path = '/cs/externi-obchod', query = '', lang = 'cs', referrer = 'https://www.google.com/search?q=private' } = {}) {
   const jar = new Map(), listeners = {}, calls = [], scripts = []
   const location = { origin: 'https://salesagent.cz', hostname: 'salesagent.cz', protocol: 'https:', pathname: path, href: `https://salesagent.cz${path}${query}` }
-  const document = { referrer, addEventListener(name, fn) { (listeners[name] ??= []).push(fn) }, createElement: () => ({}), head: { appendChild(node) { scripts.push(node) } } }
+  const document = { referrer, documentElement: { lang }, addEventListener(name, fn) { (listeners[name] ??= []).push(fn) }, createElement: () => ({}), head: { appendChild(node) { scripts.push(node) } } }
   Object.defineProperty(document, 'cookie', { get: () => [...jar].map(([k,v]) => `${k}=${v}`).join('; '), set(value) { const pair = value.split(';')[0], i = pair.indexOf('='); jar.set(pair.slice(0,i), pair.slice(i+1)) } })
   class Element { constructor(href) { this.href = href } closest() { return this } getAttribute() { return this.href } }
   let currentConsent = consent
@@ -16,6 +16,23 @@ function browser({ consent = true, path = '/cs/externi-obchod', query = '', refe
   return { calls, scripts, jar, location, click: href => (listeners.click || []).forEach(fn => fn({ target: new Element(href) })), revoke: () => { currentConsent = false; window.SalesMeasurement.refresh() }, measurement: window.SalesMeasurement }
 }
 const events = x => x.calls.filter(call => call[0] === 'event')
+
+test('German consultation tracks the German landing and language only with consent, never a completed lead', () => {
+  for (const consent of [true, false]) {
+    const x = browser({ consent, lang: 'de', path: '/de/markteintritt-tschechien' })
+    x.click('https://outlook.office.com/bookwithme/user/example')
+    assert.equal(events(x).length, consent ? 1 : 0)
+    if (consent) {
+      const [, name, data] = events(x)[0]
+      assert.equal(name, 'contact_click')
+      assert.equal(data.lang, 'de')
+      assert.equal(data.link_type, 'booking')
+      assert.equal(data.landing_page, '/de/markteintritt-tschechien')
+      assert.equal(data.send_to, 'G-442V6JSVVN')
+    }
+    assert.equal(events(x).some(event => event[1] === 'generate_lead'), false)
+  }
+})
 
 test('contact page, booking, phone and email clicks are distinct and contain no contact details', () => {
   const x = browser()

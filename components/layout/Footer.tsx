@@ -2,6 +2,8 @@
 
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
+import { usePathname } from 'next/navigation'
+import { GERMAN_MARKET_ENTRY } from '@/lib/market-entry-languages'
 import type { Locale, Translations } from '@/lib/i18n'
 
 interface FooterProps {
@@ -12,6 +14,7 @@ interface FooterProps {
 
 export default function Footer({ locale, t, initialYear }: FooterProps) {
   const base = `/${locale}`
+  const pathname = usePathname()
   const [year, setYear] = useState(initialYear)
 
   useEffect(() => {
@@ -265,6 +268,7 @@ export default function Footer({ locale, t, initialYear }: FooterProps) {
           © {year} Sales Robots s.r.o. {t.footer.rights}
         </p>
           <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
+            {(pathname === '/cs' || pathname === '/en') && <a href={GERMAN_MARKET_ENTRY} hrefLang="de" lang="de" style={{ fontSize: '12px', color: 'var(--text-muted)', textDecoration: 'none' }}>Deutsch</a>}
             <Link
               href={`/${locale}/privacy`}
               style={{ fontSize: '12px', color: 'var(--text-muted)', textDecoration: 'none' }}

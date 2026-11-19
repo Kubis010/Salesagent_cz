@@ -191,7 +191,7 @@
         else if (destination.hostname === "outlook.office.com" && destination.pathname.startsWith("/bookwithme/")) type = "booking";
       } catch (_) {}
     }
-    if (type) track("contact_click", { link_type: type });
+    if (type) track("contact_click", Object.assign({ link_type: type }, document.documentElement.lang === "de" ? { lang: "de" } : {}));
   });
   refresh();
   timer = window.setInterval(refresh, 1500);

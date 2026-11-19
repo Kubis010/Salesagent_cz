@@ -3,7 +3,7 @@
 .site-shell > header > div:not(.mobile-menu) { max-width: 1320px !important; height: 82px !important; }
 .site-shell > header .mobile-menu { background: var(--bg); }
 .site-shell > header .mobile-menu > a:last-child { color: var(--on-accent) !important; border-radius: 3px !important; }
-.site-shell > header nav > a:last-child { background: #202b2a !important; color: #fff !important; border-radius: 3px !important; }
+.site-shell > header nav > a:last-child { background: var(--accent) !important; color: var(--on-accent) !important; border-radius: 3px !important; }
 .site-shell > header a[style*="background-color:var(--accent)"] { color: var(--on-accent) !important; }
 .site-shell > footer { background: #eaece5 !important; }
 .site-content { color: var(--text); }

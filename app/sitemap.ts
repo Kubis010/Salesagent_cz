@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next'
+import { marketEntryLanguages } from '@/lib/market-entry-languages'
 
 const BASE_URL = 'https://salesagent.cz'
 const locales = ['cs', 'en'] as const
@@ -121,15 +122,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     alternates: { languages: { cs: `${BASE_URL}/cs/automatizace-obchodu-claude-chatgpt` } },
   })
 
-  // EN-only guides
+  // English guide and its German counterpart.
   entries.push({
     url: `${BASE_URL}/en/guides/czech-market-entry-for-b2b-companies`,
     lastModified: new Date('2026-10-26'),
     changeFrequency: 'monthly' as const,
     priority: 0.85,
     alternates: {
-      languages: { en: `${BASE_URL}/en/guides/czech-market-entry-for-b2b-companies` },
+      languages: marketEntryLanguages,
     },
+  })
+  entries.push({
+    url: marketEntryLanguages.de,
+    changeFrequency: 'monthly',
+    priority: 0.8,
+    alternates: { languages: marketEntryLanguages },
   })
   // (b2b-market-research-agency-czech-republic intentionally omitted — retreating from the
   // "market research" keyword; page stays live but noindex, per 2f.)
