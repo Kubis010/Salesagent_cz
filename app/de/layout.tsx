@@ -3,9 +3,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import MeasurementScripts from '@/components/MeasurementScripts'
 import SiteMotion from '@/components/layout/SiteMotion'
-import { CONSULTATION_URL, ENGLISH_MARKET_ENTRY, GERMAN_MARKET_ENTRY } from '@/lib/market-entry-languages'
+import MarketEntryLanguageLinks from '@/components/MarketEntryLanguageLinks'
+import { CONSULTATION_URL, GERMAN_MARKET_ENTRY } from '@/lib/market-entry-languages'
 import '../globals.css'
-import './markteintritt-tschechien/page.css'
+import '../market-entry.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://salesagent.cz'),
@@ -20,7 +21,7 @@ export default function GermanLayout({ children }: { children: React.ReactNode }
           <div>
             <Link href={GERMAN_MARKET_ENTRY} aria-label="SalesAgent.cz – Markteintritt Tschechien"><Image src="/logo.svg" alt="SalesAgent.cz" width={180} height={36} /></Link>
             <nav aria-label="Hauptnavigation">
-              <a href={ENGLISH_MARKET_ENTRY} hrefLang="en" lang="en">English</a>
+              <MarketEntryLanguageLinks locale="de" />
               <a href={CONSULTATION_URL} target="_blank" rel="noopener noreferrer">Erstgespräch</a>
             </nav>
           </div>
@@ -36,7 +37,7 @@ export default function GermanLayout({ children }: { children: React.ReactNode }
             <nav aria-label="Weitere Informationen">
               <a href="/en/privacy" hrefLang="en">Datenschutz (Englisch)</a>
               <a href="/en/about" hrefLang="en">Über uns (Englisch)</a>
-              <a href={ENGLISH_MARKET_ENTRY} hrefLang="en" lang="en">English</a>
+              <MarketEntryLanguageLinks locale="de" />
             </nav>
             <p>© {new Date().getFullYear()} Sales Robots s.r.o.</p>
           </div>

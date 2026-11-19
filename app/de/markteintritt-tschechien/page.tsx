@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
   openGraph: {
     type: 'article', title, description, url: marketEntryLanguages.de,
-    siteName: 'SalesAgent.cz', locale: 'de_DE', alternateLocale: ['en_US'],
+    siteName: 'SalesAgent.cz', locale: 'de_DE', alternateLocale: ['en_US', 'pl_PL'],
     images: [{ url: image, alt: 'Tschechische Flagge – Markteintritt in Tschechien' }],
   },
   twitter: { card: 'summary_large_image', title, description, images: [image] },

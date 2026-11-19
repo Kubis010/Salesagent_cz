@@ -138,6 +138,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
     alternates: { languages: marketEntryLanguages },
   })
+  entries.push({
+    url: marketEntryLanguages.pl,
+    changeFrequency: 'monthly',
+    priority: 0.8,
+    alternates: { languages: marketEntryLanguages },
+  })
   // (b2b-market-research-agency-czech-republic intentionally omitted — retreating from the
   // "market research" keyword; page stays live but noindex, per 2f.)
 

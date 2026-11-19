@@ -17,20 +17,22 @@ function browser({ consent = true, path = '/cs/externi-obchod', query = '', lang
 }
 const events = x => x.calls.filter(call => call[0] === 'event')
 
-test('German consultation tracks the German landing and language only with consent, never a completed lead', () => {
-  for (const consent of [true, false]) {
-    const x = browser({ consent, lang: 'de', path: '/de/markteintritt-tschechien' })
-    x.click('https://outlook.office.com/bookwithme/user/example')
-    assert.equal(events(x).length, consent ? 1 : 0)
-    if (consent) {
-      const [, name, data] = events(x)[0]
-      assert.equal(name, 'contact_click')
-      assert.equal(data.lang, 'de')
-      assert.equal(data.link_type, 'booking')
-      assert.equal(data.landing_page, '/de/markteintritt-tschechien')
-      assert.equal(data.send_to, 'G-442V6JSVVN')
+test('localized consultations track their landing and language only with consent, never a completed lead', () => {
+  for (const [lang, path] of [['de', '/de/markteintritt-tschechien'], ['pl', '/pl/wejscie-na-rynek-czeski']]) {
+    for (const consent of [true, false]) {
+      const x = browser({ consent, lang, path })
+      x.click('https://outlook.office.com/bookwithme/user/example')
+      assert.equal(events(x).length, consent ? 1 : 0)
+      if (consent) {
+        const [, name, data] = events(x)[0]
+        assert.equal(name, 'contact_click')
+        assert.equal(data.lang, lang)
+        assert.equal(data.link_type, 'booking')
+        assert.equal(data.landing_page, path)
+        assert.equal(data.send_to, 'G-442V6JSVVN')
+      }
+      assert.equal(events(x).some(event => event[1] === 'generate_lead'), false)
     }
-    assert.equal(events(x).some(event => event[1] === 'generate_lead'), false)
   }
 })
 

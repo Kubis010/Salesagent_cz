@@ -1,4 +1,11 @@
 /* Shared visual language, including legacy articles using Tailwind utilities. */
+.market-language-links { display: inline-flex; align-items: center; gap: 12px; font-size: 12px; }
+.market-language-links a { color: inherit; text-decoration: none; }
+.market-language-code { display: none; }
+@media (max-width: 600px) {
+  header .market-language-name { display: none; }
+  header .market-language-code { display: inline; }
+}
 .site-shell > header { background: #f6f5f0 !important; backdrop-filter: none !important; }
 .site-shell > header > div:not(.mobile-menu) { max-width: 1320px !important; height: 82px !important; }
 .site-shell > header .mobile-menu { background: var(--bg); }

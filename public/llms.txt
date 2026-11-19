@@ -51,6 +51,7 @@ The consultation confirms the scope, channels and final price.
 - [Client Reactivation (EN)](https://salesagent.cz/en/client-reactivation) — outsourced service: we regularly contact dormant clients from your database by phone, email, LinkedIn and other channels; your sales team only gets interested clients
 - [Czech Market Entry for B2B Companies](https://salesagent.cz/en/guides/czech-market-entry-for-b2b-companies) — practical playbook: when to enter, entity vs. no entity, how to find first Czech customers, what to avoid
 - [Markteintritt Tschechien (DE)](https://salesagent.cz/de/markteintritt-tschechien) — deutschsprachiger B2B-Leitfaden für DACH: Vertriebsvertretung oder eigene Gesellschaft, 90-Tage-Plan, ARES und zulässige Ansprache. Deutsche Fassung des englischen Market-Entry-Guides.
+- [Wejście na rynek czeski (PL)](https://salesagent.cz/pl/wejscie-na-rynek-czeski) — poradnik dla polskich firm B2B: zewnętrzna reprezentacja, własna spółka, plan pierwszych 90 dni, ARES i dopuszczalne formy kontaktu.
 
 ## Frequently asked questions (CZ — automatizace prodeje)
 

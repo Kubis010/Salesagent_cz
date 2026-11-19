@@ -54,9 +54,13 @@ test('manual choice wins at root and explicit URLs remain accessible', () => {
   assert.equal(middleware(request('/cs', 'en-US', 'en')).kind, 'next')
 })
 
-test('German guide keeps its exact URL without changing homepage language selection', () => {
+test('localized guides keep exact URLs without opening other locales or changing the homepage', () => {
   assert.equal(middleware(request('/de/markteintritt-tschechien', 'cs-CZ', 'cs')).kind, 'next')
   assert.equal(middleware(request('/de/pricing', 'de-DE')).status, 404)
   assert.equal(middleware(request('/de', 'de-DE')).status, 404)
+  assert.equal(middleware(request('/pl/wejscie-na-rynek-czeski', 'cs-CZ', 'cs')).kind, 'next')
+  assert.equal(middleware(request('/pl/pricing', 'pl-PL')).status, 404)
+  assert.equal(middleware(request('/pl', 'pl-PL')).status, 404)
   assert.equal(middleware(request('/', 'de-DE')).url, 'https://salesagent.cz/en')
+  assert.equal(middleware(request('/', 'pl-PL')).url, 'https://salesagent.cz/en')
 })

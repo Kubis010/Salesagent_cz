@@ -8,10 +8,10 @@ Datum přípravy a místní kontroly: 19. 11. 2026.
 - Německý B2B obsah pro DACH: místní zastoupení, porovnání s vlastní společností, postup prvních 90 dnů, ARES a pravidla kontaktování, sedm FAQ. Bez cen a příslibů počtu schůzek nebo tržeb.
 - Obrázek je existující `/blog/czech-flag.jpg`, použitý na `/en/sales-representation-czech-republic`. Nevzniká nová kopie obrázku.
 - Samostatný německý layout, `html lang="de"`, self-canonical, `index, follow`, Article, Organization, BreadcrumbList a FAQPage JSON-LD. FAQ schema vychází ze stejných dat jako viditelný obsah. Viditelný autor, datum revize a stručná odpověď odpovídají údajům Article; primární zdroje jsou také v `citation`. DE odkaz je doplněn do llms.txt.
-- Hreflang DE ↔ EN Guide se stejnou skupinou v HTML a sitemapě; x-default je EN Guide. CS se nepřidává, protože nemá odpovídající obsah.
+- Hreflang DE ↔ EN Guide ↔ PL se stejnou skupinou v HTML a sitemapě; x-default je EN Guide. CS se nepřidává, protože nemá odpovídající obsah.
 - Přechody mezi samostatnými EN/CS a DE layouty používají plné načtení dokumentu, aby se nepřenášel anglický chatovací widget a stav skriptů z předchozí verze.
 - Na EN Guide je právě jeden odkaz Deutsch v přepínači. Na EN sales-representation je právě jeden přidaný odkaz Deutsch. Odkaz v patičce se přidává pouze na `/cs` a `/en`.
-- PL stránka není vytvořena; její SERP je podle zadání stále neověřený.
+- Původně odložená PL stránka byla následně vyžádána a doplněna po ověření podnikatelského záměru. Aktuální skupina je EN ↔ DE ↔ PL, podrobnosti v `docs/VERIFY-pl-market-entry.md`.
 
 ## Ochrana existujících SEO stránek
 

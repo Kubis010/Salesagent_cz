@@ -23,9 +23,9 @@ export function middleware(request: NextRequest) {
   }
 
   // Skip paths that must keep their exact URLs for SEO/GSC
-  // German is a single localized guide, not a third site-wide locale.
-  if (pathname === '/de/markteintritt-tschechien') return NextResponse.next()
-  if (pathname === '/de' || pathname.startsWith('/de/')) {
+  // German and Polish are individual guides, not additional site-wide locales.
+  if (pathname === '/de/markteintritt-tschechien' || pathname === '/pl/wejscie-na-rynek-czeski') return NextResponse.next()
+  if (/^\/(de|pl)(\/|$)/.test(pathname)) {
     return new NextResponse(null, { status: 404, headers: { 'X-Robots-Tag': 'noindex' } })
   }
   if (

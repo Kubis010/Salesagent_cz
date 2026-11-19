@@ -4,7 +4,8 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import type { Locale, Translations } from '@/lib/i18n'
-import { ENGLISH_MARKET_ENTRY, GERMAN_MARKET_ENTRY } from '@/lib/market-entry-languages'
+import { ENGLISH_MARKET_ENTRY } from '@/lib/market-entry-languages'
+import MarketEntryLanguageLinks from '@/components/MarketEntryLanguageLinks'
 
 const translatedPaths: Record<string, string> = {
   '/cs/pricing': '/en/pricing', '/en/pricing': '/cs/pricing',
@@ -209,7 +210,7 @@ export default function Header({ locale, t }: HeaderProps) {
           </a>
         </nav>
 
-        {pathname === ENGLISH_MARKET_ENTRY && <a href={GERMAN_MARKET_ENTRY} hrefLang="de" lang="de" className="market-entry-language" style={{ fontSize: '12px', color: 'var(--text-muted)', padding: '8px 10px', textDecoration: 'none' }}>Deutsch</a>}
+        {pathname === ENGLISH_MARKET_ENTRY && <div className="market-entry-language" style={{ color: 'var(--text-muted)', padding: '8px 10px' }}><MarketEntryLanguageLinks locale="en" /></div>}
         <Link
           href={otherHref}
           onClick={rememberLanguage}
