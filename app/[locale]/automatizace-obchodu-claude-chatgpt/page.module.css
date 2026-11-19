@@ -179,5 +179,5 @@
   .primary, .secondary { transition: none; }
   .primary:hover { transform: none; }
 }
-.primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.primary { border-radius: var(--cta-radius); background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
 .primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); color: var(--on-accent); }

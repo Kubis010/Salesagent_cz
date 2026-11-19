@@ -14,6 +14,7 @@
   --accent: #fe6a4b;
   --accent-hover: #ff795c;
   --on-accent: #202b2a;
+  --cta-radius: 10px;
   --border: #d9ddd4;
   --border-strong: #aeb8ad;
 }
@@ -152,6 +153,7 @@ h1, h2, h3, h4, h5, h6 {
 .card-hover:hover { border-color: var(--border-strong) !important; }
 
 .btn-accent {
+  border-radius: var(--cta-radius);
   background-color: var(--accent);
   color: #0B1320;
   transition: opacity 0.2s;

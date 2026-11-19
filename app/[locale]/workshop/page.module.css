@@ -75,5 +75,5 @@
 @media (max-width: 600px) { .container,.heroInner { width: min(100% - 36px, 1200px); }.hero { padding: 105px 0 65px; }.hero h1 { font-size: 42px; }.heroLead { font-size: 15px; }.actions > a { width: 100%; }.heroVisual { padding: 20px; }.visualTitle { margin-top: 30px; }.problem,.lessons,.audience,.offer,.founder { padding-block: 60px; }.sectionHeading { display: block; }.sectionHeading > p { margin-top: 18px; }.lessonGrid,.audienceGrid,.formGrid { grid-template-columns: 1fr; }.lesson { min-height: 0; }.free { padding: 25px; gap: 28px; }.priceCard,.form { padding: 24px; }.contact { padding-block: 65px; }.founderName span { display: block; margin-top: 6px; }.heroFoot span { padding: 0 2px; } }
 @media (prefers-reduced-motion: reduce) { .primary,.secondary { transition: none; }.primary:hover { transform: none; } }
 
-.primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.primary { border-radius: var(--cta-radius); background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
 .primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); color: var(--on-accent); }
