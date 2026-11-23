@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Script from 'next/script'
 import MeasurementScripts from '@/components/MeasurementScripts'
 import SiteMotion from '@/components/layout/SiteMotion'
+import RootLanguageChoice from '@/components/layout/RootLanguageChoice'
 import '../globals.css'
 import { locales, getTranslations, type Locale, type Translations } from '@/lib/i18n'
 import Header from '@/components/layout/Header'
@@ -177,6 +178,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body className="site-shell">
+        <RootLanguageChoice />
         {/* JSON-LD structured data — Next.js App Router hoists these to <head> */}
         <script
           type="application/ld+json"

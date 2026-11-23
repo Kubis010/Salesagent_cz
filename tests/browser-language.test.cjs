@@ -36,22 +36,41 @@ test('browser language respects preference order and quality', () => {
   for (const value of [null, 'en-US,en;q=0.9,cs;q=0.8', 'de-DE,de;q=0.9', 'cs;q=0,en;q=0.5']) assert.equal(browserLanguage(value), 'en')
 })
 
-test('root selects language, preserves query, and avoids shared caching', () => {
-  const cs = middleware(request('/?utm_source=test', 'cs-CZ,cs;q=0.9'))
-  assert.equal(cs.kind, 'redirect'); assert.equal(cs.status, 307)
-  assert.equal(cs.url, 'https://salesagent.cz/cs?utm_source=test')
-  assert.equal(cs.headers.get('cache-control'), 'private, no-store')
-  assert.match(cs.headers.get('vary'), /Accept-Language/)
-  const en = middleware(request('/', 'de-DE'))
-  assert.equal(en.kind, 'rewrite'); assert.equal(en.url, 'https://salesagent.cz/en')
-  assert.equal(en.headers.get('cache-control'), 'private, no-store')
+test('root serves identical English HTML for every language and preserves query', () => {
+  for (const language of ['cs-CZ,cs;q=0.9', 'en-US', 'de-DE', null]) {
+    const result = middleware(request('/?utm_source=test', language))
+    assert.equal(result.kind, 'rewrite')
+    assert.equal(result.url, 'https://salesagent.cz/en?utm_source=test')
+  }
 })
 
-test('manual choice wins at root and explicit URLs remain accessible', () => {
+test('root does not vary by saved choice and explicit URLs remain accessible', () => {
   assert.equal(middleware(request('/', 'cs-CZ', 'en')).kind, 'rewrite')
-  assert.equal(middleware(request('/', 'en-US', 'cs')).url, 'https://salesagent.cz/cs')
+  assert.equal(middleware(request('/', 'en-US', 'cs')).url, 'https://salesagent.cz/en')
   assert.equal(middleware(request('/en', 'cs-CZ', 'cs')).kind, 'next')
   assert.equal(middleware(request('/cs', 'en-US', 'en')).kind, 'next')
+})
+
+test('client language selection runs only on first human root visit and respects manual choice', () => {
+  function run({ path = '/', lang = 'cs-CZ', cookie = '', agent = 'Mozilla/5.0', seen = false } = {}) {
+    let destination = null
+    const storage = { getItem: () => seen ? '1' : null, setItem() {} }
+    const window = { location: { pathname: path, search: '?utm_source=test', hash: '#part', replace: url => { destination = url } }, sessionStorage: storage }
+    const exports = {}
+    const code = ts.transpileModule(fs.readFileSync('components/layout/RootLanguageChoice.tsx', 'utf8'), {
+      compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020, jsx: ts.JsxEmit.ReactJSX },
+    }).outputText
+    vm.runInNewContext(code, { exports, require: name => name === 'react' ? { useEffect: fn => fn() } : undefined,
+      window, document: { cookie }, navigator: { language: lang, userAgent: agent } })
+    exports.default()
+    return destination
+  }
+  assert.equal(run(), '/cs?utm_source=test#part')
+  assert.equal(run({ cookie: 'site_language=en' }), null)
+  assert.equal(run({ lang: 'en-US', cookie: 'site_language=cs' }), '/cs?utm_source=test#part')
+  assert.equal(run({ path: '/en' }), null)
+  assert.equal(run({ agent: 'Googlebot/2.1' }), null)
+  assert.equal(run({ seen: true }), null)
 })
 
 test('localized guides keep exact URLs without opening other locales or changing the homepage', () => {
