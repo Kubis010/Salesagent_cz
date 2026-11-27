@@ -62,7 +62,7 @@ const structuredData = {
       image, inLanguage: 'pl', url: marketEntryLanguages.pl, abstract: summary,
       dateCreated: reviewed, dateModified: reviewed,
       mainEntityOfPage: { '@type': 'WebPage', '@id': marketEntryLanguages.pl },
-      author: { '@type': 'Person', name: 'Petr Kubíček', url: 'https://salesagent.cz/en/about', jobTitle: 'Założyciel Sales Robots', worksFor: { '@id': 'https://salesagent.cz/#organization' } },
+      author: { '@type': 'Person', name: 'Petr Kubíček', url: 'https://salesagent.cz/en/about', worksFor: { '@id': 'https://salesagent.cz/#organization' } },
       publisher: { '@id': 'https://salesagent.cz/#organization' },
       about: [{ '@type': 'Country', name: 'Czechy' }, { '@type': 'Thing', name: 'Wejście na rynek B2B' }],
       citation: ['https://mf.gov.cz/cs/ministerstvo/informacni-systemy/ares', 'https://uoou.gov.cz/index.php/profesional/qa-otazky-a-odpovedi/obchodni-sdeleni'],
@@ -96,11 +96,11 @@ export default function PolishMarketEntry() {
     <div className="de-content">
       <nav className="de-breadcrumb" aria-label="Ścieżka nawigacji"><a href="/en" hrefLang="en">SalesAgent.cz</a><span aria-hidden="true">/</span><span>Wejście na rynek czeski</span></nav>
       <nav className="de-contents" aria-label="Spis treści"><a href="#reprezentacja">Reprezentacja czy spółka?</a><a href="#plan">Pierwsze 90 dni</a><a href="#praktyka">Czeskie realia</a><a href="#faq">Pytania i odpowiedzi</a></nav>
-      <div className="de-byline">Autor: <a href="/en/about" hrefLang="en">Petr Kubíček, założyciel Sales Robots</a> · Aktualizacja: <time dateTime={reviewed}>19.11.2026</time></div>
+      <div className="de-byline">Autor: <a href="/en/about" hrefLang="en">Petr Kubíček</a> · Aktualizacja: <time dateTime={reviewed}>19.11.2026</time></div>
       <section className="de-answer" aria-labelledby="pl-quick-title"><h2 id="pl-quick-title">Na czym polega wejście na rynek czeski B2B?</h2><p id="pl-quick-answer">{summary}</p></section>
       <section aria-labelledby="pl-about"><p className="de-eyebrow">Lokalny partner do rozwoju sprzedaży</p><h2 id="pl-about">Wsparcie sprzedaży w Czechach, dopasowane do Państwa firmy.</h2>
         <p>SalesAgent to usługa Sales Robots s.r.o., firmy z siedzibą w Pradze. Pomagamy zagranicznym przedsiębiorstwom B2B wybierać odpowiednich klientów, przygotowywać ofertę zrozumiałą na czeskim rynku i organizować dalszy proces kontaktu.</p>
-        <p>Petr Kubíček, założyciel Sales Robots, ma ponad 20 lat doświadczenia w sprzedaży B2B. Pracę prowadzą ludzie, a własne narzędzia, w tym Salesbot, wspierają badanie firm, przygotowanie komunikacji i ewidencję kolejnych kroków. Oprogramowanie nie zastępuje sprawdzenia informacji ani uzgodnienia działań z klientem.</p>
+        <p>Petr Kubíček ma ponad 20 lat doświadczenia w sprzedaży B2B. Pracę prowadzą ludzie, a własne narzędzia, w tym Salesbot, wspierają badanie firm, przygotowanie komunikacji i ewidencję kolejnych kroków. Oprogramowanie nie zastępuje sprawdzenia informacji ani uzgodnienia działań z klientem.</p>
         <p>Przed startem ustalamy, kto kontaktuje się z firmami, odpowiada na pytania, organizuje spotkania i prowadzi negocjacje. Dalszy udział w rozmowach i obsłudze uzgadniamy indywidualnie. Szczegóły zakresu opisuje również <a href="/en/sales-representation-czech-republic" hrefLang="en">angielska strona naszej reprezentacji handlowej</a>.</p>
       </section>
       <section id="reprezentacja" aria-labelledby="pl-options"><p className="de-eyebrow">Najpierw cel, potem forma obecności</p><h2 id="pl-options">Zewnętrzna reprezentacja czy własna spółka w Czechach?</h2>

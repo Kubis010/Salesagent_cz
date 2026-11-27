@@ -74,16 +74,11 @@ export default async function AboutPage({
         {/* Founder */}
         <div style={{
           display: 'grid',
-          gridTemplateColumns: '160px 1fr',
+          gridTemplateColumns: '1fr',
           gap: '40px',
           alignItems: 'start',
           marginBottom: '56px',
         }} className="about-founder">
-          <img
-            src="/petr-kubicek.jpg"
-            alt="Petr Kubíček"
-            style={{ width: '160px', height: '160px', borderRadius: '14px', objectFit: 'cover' }}
-          />
           <div>
             <h2 style={{
               fontFamily: 'Space Grotesk, sans-serif',
@@ -95,7 +90,7 @@ export default async function AboutPage({
               Petr Kubíček
             </h2>
             <p style={{ fontSize: '14px', color: 'var(--accent)', fontWeight: 600, marginBottom: '16px' }}>
-              {cs ? 'Zakladatel, Sales Robots s.r.o.' : 'Founder, Sales Robots s.r.o.'}
+              Sales Robots s.r.o.
             </p>
             <p style={{ fontSize: '16px', color: 'var(--text-muted)', lineHeight: '1.7', marginBottom: '16px' }}>
               {cs

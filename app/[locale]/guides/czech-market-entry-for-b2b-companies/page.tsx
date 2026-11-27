@@ -146,7 +146,7 @@ const articleSchema = {
     { '@type': 'Country', name: 'Czech Republic' },
     { '@type': 'Country', name: 'Slovakia' },
   ],
-  author: { '@type': 'Person', name: 'Petr Kubíček', jobTitle: 'Founder', worksFor: { '@type': 'Organization', name: 'Sales Robots s.r.o.' } },
+  author: { '@type': 'Person', name: 'Petr Kubíček', worksFor: { '@type': 'Organization', name: 'Sales Robots s.r.o.' } },
   publisher: {
     '@type': 'Organization',
     name: 'Sales Robots s.r.o.',

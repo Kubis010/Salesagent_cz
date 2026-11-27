@@ -141,7 +141,7 @@ export const en: Translations = {
   founder: {
     label: 'Who is behind it',
     name: 'Petr Kubicek',
-    role: 'Founder, Sales Robots s.r.o.',
+    role: 'Sales Robots s.r.o.',
     body: 'Over 20 years in B2B sales, including senior and leadership roles. I represent international companies in the Czech market and help clients find prospects, prepare for meetings and navigate local business discussions. The scope of my involvement is agreed with each client.',
     credentials: [
       { value: '20+', label: 'years in B2B sales' },

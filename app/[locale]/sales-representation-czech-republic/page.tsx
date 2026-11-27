@@ -263,10 +263,9 @@ export default async function SalesRepCzPage({
 
           {!isCs && (
             <section style={{ marginBottom: '80px', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '28px' }}>
-              <Image src="/petr-kubicek.jpg" alt="Petr Kubíček, founder of Sales Robots" width={120} height={120} style={{ borderRadius: '50%', objectFit: 'cover' }} />
               <div style={{ flex: '1 1 320px' }}>
                 <h2 style={{ fontSize: '1.8rem', fontWeight: 700, marginBottom: '12px' }}>Your local point of contact: Petr Kubíček</h2>
-                <p style={{ color: 'var(--text-muted)', lineHeight: 1.7 }}>Founder of Sales Robots with over 20 years in B2B sales. Petr represents international companies in the Czech market and helps clients prepare for meetings and navigate local business discussions. His involvement in your opportunities is agreed with you in advance.</p>
+                <p style={{ color: 'var(--text-muted)', lineHeight: 1.7 }}>With over 20 years in B2B sales, Petr represents international companies in the Czech market and helps clients prepare for meetings and navigate local business discussions. His involvement in your opportunities is agreed with you in advance.</p>
               </div>
             </section>
           )}

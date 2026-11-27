@@ -602,7 +602,7 @@ export default async function HomePage({
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'auto 1fr',
+              gridTemplateColumns: '1fr',
               gap: '48px',
               alignItems: 'start',
               borderTop: '1px solid var(--border)',
@@ -610,23 +610,6 @@ export default async function HomePage({
             }}
             className="founder-grid"
           >
-            {/* Photo */}
-            <div style={{ flexShrink: 0 }}>
-              <img
-                src="/petr-kubicek.jpg"
-                alt="Petr Kubíček"
-                style={{
-                  width: '160px',
-                  height: '160px',
-                  borderRadius: '16px',
-                  objectFit: 'cover',
-                  objectPosition: 'center top',
-                  border: '1px solid var(--border)',
-                  display: 'block',
-                }}
-              />
-            </div>
-
             {/* Text + credentials */}
             <div>
               <div

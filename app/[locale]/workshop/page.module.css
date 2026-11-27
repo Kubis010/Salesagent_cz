@@ -57,7 +57,7 @@
 .priceCard > p:not(.price):not(.tax) { color: var(--text-muted); line-height: 1.75; font-size: 14px; }
 .priceCard .primary { width: 100%; margin-top: 28px; }
 .priceCard small,.freeCard small { display: block; color: var(--text-muted); line-height: 1.6; font-size: 11px; margin-top: 14px; }
-.founder { display: grid; grid-template-columns: 220px minmax(0, 1fr); align-items: center; gap: 52px; padding: 110px 0; border-bottom: 1px solid var(--border); }
+.founder { display: grid; grid-template-columns: 1fr; align-items: center; gap: 52px; padding: 110px 0; border-bottom: 1px solid var(--border); }
 .portrait { border: 1px solid var(--border); border-radius: 4px; overflow: hidden; background: var(--bg-card); width: 220px; max-width: 100%; }
 .portrait img { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; object-position: center 25%; }
 .founderName { color: var(--text); font-size: 16px; font-weight: 700; margin: 25px 0 12px !important; }

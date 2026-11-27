@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import styles from './page.module.css'
@@ -133,7 +132,6 @@ export default async function SalesbotWorkshopPage({ params }: { params: Promise
           <div className={`${styles.actions} ${styles.heroActions}`}><a href="#prezentace" className={styles.primary}><PlayIcon /> Pustit návod zdarma</a></div>
           <p className={styles.finePrint}>Petr vás provede návodem. Pak si vyberete, co vás zajímá, a můžete se zeptat.</p>
           <div className={styles.host}>
-            <Image src="/petr-kubicek.jpg" alt="Petr Kubíček" width={44} height={44} className={styles.avatar} />
             <div><strong>Petr Kubíček</strong><span>Sales Robots · ukázky ze Salesbota a Prezentéru</span></div>
           </div>
         </div>
