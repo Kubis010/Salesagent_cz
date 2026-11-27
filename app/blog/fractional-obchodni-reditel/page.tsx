@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import { notFound } from 'next/navigation'
 import styles from './page.module.css'
 
 const url = 'https://salesagent.cz/blog/fractional-obchodni-reditel'
@@ -33,6 +34,8 @@ const articleSchema = {
 const faqSchema = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(({ q, a }) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }
 
 export default function Page() {
+  // Temporarily unpublished; the article remains in the repository for possible restoration.
+  notFound()
   return <article className={styles.article}>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
