@@ -23,6 +23,7 @@ const pages = [
 ]
 
 const blogPosts = [
+  { slug: '/cold-calling-b2b', priority: 0.8, changeFrequency: 'monthly' as const },
   { slug: '/fractional-obchodni-reditel', priority: 0.8, changeFrequency: 'monthly' as const },
   { slug: '/nastroje-b2b-outbound-2026', priority: 0.8, changeFrequency: 'monthly' as const },
   { slug: '/b2b-kontakty-ceske-firmy', priority: 0.9, changeFrequency: 'monthly' as const },

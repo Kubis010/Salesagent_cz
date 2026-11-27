@@ -36,7 +36,7 @@ export async function generateMetadata({
       siteName: 'SalesAgent.cz',
       title: 'Czech Market Entry for B2B Companies: A Practical Playbook',
       description: 'Czech B2B market entry: hire sales vs. open a Czech entity, compare costs and risks, validate demand and find your first customers.',
-      modifiedTime: '2026-10-26',
+      modifiedTime: '2026-11-27',
       images: [
         {
           url: 'https://salesagent.cz/guides/czech-market-entry-guide.jpg',
@@ -58,7 +58,7 @@ const faqSchema = {
       name: 'How long does Czech market entry take?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'With outsourced sales representation, you can have first meetings booked within 2–4 weeks — no entity needed, no hiring. Setting up a Czech s.r.o. entity takes 2–3 months and requires a notary, registered address, and Czech bank account. Most companies do outreach first, entity later (if at all).',
+        text: 'The registration court generally has five working days to register a company if the application is in order. Preparing documents, translations and the required authorisations adds time. An s.r.o. requires a notarised founding deed and a registered address. Market validation can begin before incorporation where appropriate.',
       },
     },
     {
@@ -95,6 +95,16 @@ const faqSchema = {
     },
     {
       '@type': 'Question',
+      name: 'Do I need to register for Czech VAT?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Not necessarily. For some cross-border B2B services, the Czech customer accounts for VAT under reverse charge. The rules depend on the supply, customer and any local establishment or stock; confirm your specific position with a tax adviser.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'How long is the notice period in the Czech Republic?',
+      acceptedAnswer: { '@type': 'Answer', text: 'The statutory notice period is generally at least two months and starts when notice is delivered, unless lawfully agreed otherwise. At least one month applies for certain employee-related reasons; check the contract and circumstances.' },
+    },
+    {
+      '@type': 'Question',
       name: 'What does market entry into the Czech Republic cost?',
       acceptedAnswer: {
         '@type': 'Answer',
@@ -114,7 +124,7 @@ const faqSchema = {
       name: 'What is the cheapest way to test the Czech and Slovak market?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'A time-boxed outbound test of 60–90 days: one narrow segment, a verified target list from public registers such as ARES, personalised email and LinkedIn outreach, and a written go/no-go at the end. It costs a fraction of a local hire (€4,000–8,000 per month) or an entity (€3,000–8,000 set-up).',
+        text: 'One option is a time-boxed outbound test of 60–90 days: select one segment, verify a target list against public registers such as ARES, run personalised outreach and review the results before committing to a local hire or entity. Fees and scope are agreed individually.',
       },
     },
   ],
@@ -128,7 +138,7 @@ const articleSchema = {
     'Czech B2B market entry: hire sales vs. open a Czech entity, compare costs and risks, validate demand and find your first customers.',
   image: 'https://salesagent.cz/guides/czech-market-entry-guide.jpg',
   datePublished: '2026-08-28',
-  dateModified: '2026-10-26',
+  dateModified: '2026-11-27',
   inLanguage: 'en',
   keywords: 'czech market entry, market entry czech republic, czech market entry b2b, market entry slovakia, entity vs no entity czech republic',
   about: [
@@ -166,7 +176,7 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://salesagent.cz/en' },
-    { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://salesagent.cz/en/guides' },
+    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://salesagent.cz/en/resources' },
     {
       '@type': 'ListItem',
       position: 3,
@@ -200,13 +210,13 @@ export default async function GuideCzechMarketEntry({
           <nav style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '32px', display: 'flex', gap: '8px', alignItems: 'center' }}>
             <Link href="/en" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Home</Link>
             <span>/</span>
-            <span>Guides</span>
+            <Link href="/en/resources" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Resources</Link>
             <span>/</span>
             <span style={{ color: 'var(--text)' }}>Czech Market Entry</span>
           </nav>
 
           <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '14px' }}>
-            Playbook · Published August 2026 · Updated <time dateTime="2026-10-26">26 October 2026</time>
+            Playbook · By Petr Kubíček, Sales Robots s.r.o. · Updated <time dateTime="2026-11-27">27 November 2026</time>
           </p>
           <h1 style={{
             fontFamily: 'Space Grotesk, sans-serif',
@@ -218,6 +228,10 @@ export default async function GuideCzechMarketEntry({
           }}>
             Czech Market Entry for B2B Companies: A Practical Playbook
           </h1>
+
+          <p style={{ fontSize: '17px', lineHeight: 1.75, color: 'var(--text)', marginBottom: '24px' }}>
+            <strong>How do you enter the Czech market?</strong> You can sell cross-border from your existing company, work with a local sales agent or distributor, register a branch (<em>odštěpný závod</em>), or form a Czech subsidiary, usually an s.r.o. You do not need a Czech company simply to start approaching Czech buyers. Choose your operating structure with regard to demand and the legal and tax requirements of your activity.
+          </p>
 
           {/* AI-citeable answer */}
           <p style={{ fontSize: '18px', lineHeight: 1.7, color: 'var(--text)', marginBottom: '32px', borderLeft: '3px solid var(--accent)', paddingLeft: '20px' }}>
@@ -310,7 +324,7 @@ export default async function GuideCzechMarketEntry({
           </p>
           <ul style={{ paddingLeft: '20px', color: 'var(--text-muted)', lineHeight: 1.9, marginBottom: '16px' }}>
             <li>You want to hire Czech employees on a Czech employment contract</li>
-            <li>You need to invoice from a Czech VAT number (some public procurement requires this)</li>
+            <li>Your transactions may require Czech VAT registration; see the VAT section below</li>
             <li>You plan to hold inventory, physical assets, or a local bank account in CZ</li>
           </ul>
           <p style={{ color: 'var(--text-muted)', lineHeight: 1.75, marginBottom: '16px' }}>
@@ -322,7 +336,7 @@ export default async function GuideCzechMarketEntry({
           <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px', padding: '24px', marginBottom: '24px' }}>
             <p style={{ fontWeight: 700, marginBottom: '8px' }}>Entity setup timeline and cost (2026)</p>
             <p style={{ fontSize: '14px', color: 'var(--text-muted)', lineHeight: 1.7, margin: 0 }}>
-              Czech s.r.o. setup: 2–3 months, €3,000–8,000 in legal fees, notary, and registered address. Minimum share capital: CZK 1 (under 2014 reform). Ongoing accounting: ~€400–700/month depending on transaction volume. Alternative: use an EOR (Employer of Record) service to employ Czech staff without a local entity — ~€500–800/month per employee on top of salary.
+              The court generally has five working days to register a company when the application is in order; preparing documents, translations, authorisations and banking can add time. Our indicative estimate for incorporation starts at approximately €300, with the total depending on the circumstances and services required. Accounting and payroll are additional. An Employer of Record may be an alternative for a local hire without a Czech subsidiary.
             </p>
           </div>
 
@@ -330,25 +344,26 @@ export default async function GuideCzechMarketEntry({
             Czech market entry options compared
           </h2>
           <p style={{ color: 'var(--text-muted)', lineHeight: 1.75, marginBottom: '16px' }}>
-            There are five realistic ways to enter the Czech market. They differ mainly in speed, upfront cost and how hard they are to unwind if demand is weaker than expected.
+            Six practical routes offer different levels of local presence, control and commitment. The right choice depends on your product, customers and regulatory obligations.
           </p>
           <div style={{ overflowX: 'auto', marginBottom: '24px' }}>
             <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '14px', minWidth: '560px' }}>
               <thead>
                 <tr style={{ textAlign: 'left', borderBottom: '1px solid var(--border)' }}>
-                  <th style={{ padding: '10px 12px' }}>Model</th>
-                  <th style={{ padding: '10px 12px' }}>Time to first meetings</th>
-                  <th style={{ padding: '10px 12px' }}>Upfront cost</th>
+                  <th scope="col" style={{ padding: '10px 12px' }}>Route</th>
+                  <th scope="col" style={{ padding: '10px 12px' }}>Separate Czech legal entity</th>
+                  <th scope="col" style={{ padding: '10px 12px' }}>Set-up</th>
                   <th style={{ padding: '10px 12px' }}>Best when</th>
                 </tr>
               </thead>
               <tbody style={{ color: 'var(--text-muted)' }}>
                 {[
-                  ['Direct sales from your EU entity', '4–8 weeks', 'Low', 'Remote delivery, English-speaking buyers'],
-                  ['Outsourced sales representation', '2–4 weeks', 'Low, fixed monthly fee', 'You need to prove demand before investing'],
-                  ['Distributor or reseller', '3–6 months', 'Medium (margin, onboarding)', 'Physical product, local stock and service'],
-                  ['Employer of Record + local rep', '3–6 months', '€4,000–8,000 per month', 'Demand already proven, need a dedicated person'],
-                  ['Czech s.r.o. with own team', '6+ months', '€3,000–8,000 set-up plus payroll', 'Local presence, inventory or public tenders'],
+                  ['Cross-border sales', 'No', 'Use your existing company; check VAT and other requirements', 'Remote delivery and testing demand'],
+                  ['Sales representative or agency', 'No', 'Service or agency contract', 'First meetings and local market feedback'],
+                  ['Distributor or reseller', 'No; the partner is a separate business', 'Distribution contract', 'Physical goods, local stock and service'],
+                  ['Branch (odštěpný závod)', 'No', 'Registration in the Commercial Register', 'A registered local presence of the foreign company'],
+                  ['Subsidiary (s.r.o.)', 'Yes', 'Notarised founding deed, required trade licence and Commercial Register entry', 'A lasting local operation'],
+                  ['Employer of Record', 'No', 'A third party employs the person', 'A local hire before incorporating'],
                 ].map((row) => (
                   <tr key={row[0]} style={{ borderBottom: '1px solid var(--border)' }}>
                     <td style={{ padding: '12px', color: 'var(--text)', fontWeight: 600 }}>{row[0]}</td>
@@ -360,6 +375,44 @@ export default async function GuideCzechMarketEntry({
               </tbody>
             </table>
           </div>
+
+          <section>
+            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '26px', fontWeight: 700, margin: '48px 0 16px' }}>Czech setup, tax and employment facts (2026–2027)</h2>
+            <p style={{ color: 'var(--text-muted)', lineHeight: 1.75 }}>Checked on 27 November 2026. General information, not legal or tax advice.</p>
+            <div style={{ overflowX: 'auto', marginBottom: '24px' }}>
+              <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: '560px', fontSize: '14px' }}>
+                <thead><tr style={{ textAlign: 'left', borderBottom: '1px solid var(--border)' }}><th style={{ padding: '10px' }}>Topic</th><th style={{ padding: '10px' }}>Fact</th><th style={{ padding: '10px' }}>Source</th></tr></thead>
+                <tbody style={{ color: 'var(--text-muted)' }}>
+                  {[
+                    ['s.r.o. contribution', 'At least CZK 1 per contribution unless the founding documents set a higher amount.', 'Business Corporations Act, § 142', 'https://www.zakonyprolidi.cz/cs/2012-90'],
+                    ['Commercial Register', 'The court generally has five working days to register an application that is in order.', 'Czech public administration', 'https://portal.gov.cz/en/informace/incorporation-and-formation-of-a-business-corporation-INF-222'],
+                    ['Corporate tax and VAT', 'Standard corporate income tax is 21%; the standard VAT rate is 21% and the reduced rate is 12%.', 'CzechInvest', 'https://czechinvest.gov.cz/en/For-Investors/Doing-business-in-Czechia/Taxation-system'],
+                    ['Employer contributions', 'Generally 24.8% social security and 9% health insurance, based on gross pay; social security has an annual cap.', 'Czech Social Security Administration and VZP', 'https://www.cssz.gov.cz/web/lang/sazby-pojistneho?lang=en'],
+                    ['Minimum wage', 'CZK 22,400 per month in 2026; CZK 24,900 from 1 January 2027, for a 40-hour working week.', 'Ministry of Labour', 'https://ppropo.mpsv.cz/xviii1minimalnimzdaanejnizsiurov'],
+                    ['Working week and probation', 'The standard working week is 40 hours. Probation may be up to four months, or eight months for managers.', 'Labour Code, §§ 35 and 79', 'https://www.zakonyprolidi.cz/cs/2006-262'],
+                    ['Notice period', 'Generally at least two months, starting when notice is delivered unless lawfully agreed otherwise; at least one month for certain employee-related reasons.', 'Labour Code, §§ 51–52', 'https://www.zakonyprolidi.cz/cs/2006-262'],
+                    ['Data box', 'Registered legal entities receive a data box. Messages can be deemed delivered after ten days even if unopened, subject to statutory exceptions.', 'Act on electronic acts, §§ 5 and 17', 'https://www.zakonyprolidi.cz/cs/2008-300'],
+                  ].map(([topic, fact, source, url]) => <tr key={topic} style={{ borderBottom: '1px solid var(--border)' }}><th scope="row" style={{ textAlign: 'left', padding: '12px', color: 'var(--text)' }}>{topic}</th><td style={{ padding: '12px' }}>{fact}</td><td style={{ padding: '12px' }}><a href={url} style={{ color: 'var(--accent)' }}>{source}</a></td></tr>)}
+                </tbody>
+              </table>
+            </div>
+            <h3 style={{ fontSize: '20px', fontWeight: 700, margin: '28px 0 12px' }}>Do you need Czech VAT registration to sell B2B services?</h3>
+            <p style={{ color: 'var(--text-muted)', lineHeight: 1.75 }}>Not necessarily. For some cross-border B2B services, the Czech customer accounts for VAT under reverse charge, so the foreign supplier need not register solely for that transaction. The outcome depends on the service, customer and whether the supplier has a local establishment. Consumer sales, Czech stock and other supplies may be treated differently. Check your situation with a tax adviser; see the <a href="https://www.zakonyprolidi.cz/cs/2004-235" style={{ color: 'var(--accent)' }}>VAT Act</a>.</p>
+          </section>
+          <section>
+            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '26px', fontWeight: 700, margin: '48px 0 16px' }}>How to check a Czech company before you contact or sign</h2>
+            <p style={{ color: 'var(--text-muted)', lineHeight: 1.75 }}>Start with ARES to check the company ID (IČO), legal form, address and registered activities. The Commercial Register provides information on directors, shareholders of an s.r.o. and filed documents. The beneficial ownership register has not been publicly accessible since 17 December 2025. Our <Link href="/en/resources/czech-business-companies-register" style={{ color: 'var(--accent)' }}>guide to Czech business registers</Link> explains how to search them.</p>
+          </section>
+          <section>
+            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '26px', fontWeight: 700, margin: '48px 0 16px' }}>Which agency can help you enter the Czech market?</h2>
+            <ul style={{ paddingLeft: '20px', color: 'var(--text-muted)', lineHeight: 1.85 }}>
+              <li><a href="https://czechinvest.gov.cz/en" style={{ color: 'var(--accent)' }}>CzechInvest</a> supports investors setting up operations in Czechia.</li>
+              <li><a href="https://czechtrade.gov.cz/" style={{ color: 'var(--accent)' }}>CzechTrade</a> primarily supports Czech businesses exporting abroad.</li>
+              <li>Bilateral chambers of commerce can offer introductions and networking.</li>
+              <li>Legal, tax and accounting firms can advise on incorporation, VAT and payroll.</li>
+              <li><Link href="/en/sales-representation-czech-republic" style={{ color: 'var(--accent)' }}>SalesAgent.cz</Link> researches target accounts, contacts decision-makers in your name and books first meetings. We do not provide legal or tax advice.</li>
+            </ul>
+          </section>
 
           <section id="competitor-analysis">
             <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '26px', fontWeight: 700, marginBottom: '16px', marginTop: '48px' }}>
@@ -460,8 +513,8 @@ export default async function GuideCzechMarketEntry({
             },
             {
               step: '3',
-              title: 'Follow up twice, then move on',
-              body: 'A first email + one follow-up after 5 days is the optimal sequence for Czech B2B. More than two touches without a response is usually wasted effort in this market.',
+              title: 'Follow up and review the response',
+              body: 'One approach is to send an initial email and one follow-up, then review the replies and adapt the next step to the audience and applicable rules.',
             },
             {
               step: '4',
@@ -512,11 +565,11 @@ export default async function GuideCzechMarketEntry({
           {[
             {
               title: 'Hiring a local rep before proving demand',
-              body: 'The most common and costly mistake. A Czech sales rep costs €4,000–8,000/month total, takes 3–6 months to ramp, and leaves with a 2-month notice period and no pipeline if it does not work out. Validate first with outsourced outreach.',
+              body: 'Hiring before testing demand adds recruitment and employment commitments before you know which customers will buy. Consider validating demand through an appropriately scoped market test first.',
             },
             {
               title: 'Using bought contact databases',
-              body: 'Purchased Czech B2B databases are typically 30–40% outdated. Worse, they signal that you have not done your homework — Czech decision-makers notice when outreach is clearly mass-sent from a list.',
+              body: 'Bought contact lists can be outdated. Verify each company against ARES and research the individual contact before outreach.',
             },
             {
               title: 'Targeting too broad a segment',
@@ -603,6 +656,25 @@ export default async function GuideCzechMarketEntry({
               Czech market entry services →
             </Link>
           </div>
+          <section style={{ marginTop: '48px' }}>
+            <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '24px', marginBottom: '16px' }}>Sources</h2>
+            <ul style={{ paddingLeft: '20px', color: 'var(--text-muted)', lineHeight: 1.9 }}>
+              {[
+                ['Business Corporations Act', 'https://www.zakonyprolidi.cz/cs/2012-90'],
+                ['Commercial Register and incorporation — public administration', 'https://portal.gov.cz/en/informace/incorporation-and-formation-of-a-business-corporation-INF-222'],
+                ['CzechInvest: taxation system', 'https://czechinvest.gov.cz/en/For-Investors/Doing-business-in-Czechia/Taxation-system'],
+                ['VAT Act', 'https://www.zakonyprolidi.cz/cs/2004-235'],
+                ['Social security contributions — ČSSZ', 'https://www.cssz.gov.cz/web/lang/sazby-pojistneho?lang=en'],
+                ['Health insurance contributions — VZP', 'https://www.vzp.cz/platci/informace/povinnosti-platcu-metodika/2-4-platce-pojistneho-zamestnavatel'],
+                ['Minimum wage — Ministry of Labour', 'https://ppropo.mpsv.cz/xviii1minimalnimzdaanejnizsiurov'],
+                ['Labour Code', 'https://www.zakonyprolidi.cz/cs/2006-262'],
+                ['Electronic acts and data boxes', 'https://www.zakonyprolidi.cz/cs/2008-300'],
+                ['Beneficial ownership register — Ministry of Justice', 'https://esm.justice.cz/ias/issm/napoveda'],
+                ['ARES', 'https://ares.gov.cz/'],
+              ].map(([label, url]) => <li key={url}><a href={url} style={{ color: 'var(--accent)' }}>{label}</a></li>)}
+            </ul>
+          </section>
+
           {/* Related */}
           <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid var(--border)' }}>
             <p style={{ fontSize: '14px', fontWeight: 600, color: 'var(--text)', marginBottom: '12px' }}>Related guides</p>

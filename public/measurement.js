@@ -91,11 +91,17 @@
     } : {};
   }
   function track(name, params) {
-    if (!active || !consent() || !["sign_up", "generate_lead", "contact_click"].includes(name)) return false;
+    if (!active || !consent() || !["sign_up", "generate_lead", "contact_click", "guide_click"].includes(name)) return false;
+    if (name === "guide_click") {
+      if (!params || !["ares_box", "existing"].includes(params.placement)) return false;
+      window.gtag("event", name, { send_to: id, placement: params.placement, page_location: location.origin + safePath(location.pathname) });
+      return true;
+    }
     var clean = Object.assign({ send_to: id, site_area: area, page_location: location.origin + safePath(location.pathname) }, attributionParams());
     ["method", "form_id", "lang", "link_type"].forEach(function (key) {
       var value = safeToken(params && params[key]); if (value) clean[key] = value;
     });
+    if (name === "contact_click" && params && params.placement === "blog_cold_calling") clean.placement = "blog_cold_calling";
     window.gtag("event", name, clean);
     return true;
   }
@@ -191,7 +197,10 @@
         else if (destination.hostname === "outlook.office.com" && destination.pathname.startsWith("/bookwithme/")) type = "booking";
       } catch (_) {}
     }
-    if (type) track("contact_click", Object.assign({ link_type: type }, ["de", "pl"].includes(document.documentElement.lang) ? { lang: document.documentElement.lang } : {}));
+    if (type) {
+      var placement = location.pathname === "/blog/cold-calling-b2b" && target.getAttribute("data-measurement-placement") === "blog_cold_calling" ? { placement: "blog_cold_calling" } : {};
+      track("contact_click", Object.assign({ link_type: type }, placement, ["de", "pl"].includes(document.documentElement.lang) ? { lang: document.documentElement.lang } : {}));
+    }
   });
   refresh();
   timer = window.setInterval(refresh, 1500);

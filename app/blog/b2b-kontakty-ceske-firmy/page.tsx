@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: 'SalesAgent.cz',
     type: 'article',
     publishedTime: '2026-09-25',
-    modifiedTime: '2026-09-25',
+    modifiedTime: '2026-11-27',
     locale: 'cs_CZ',
     images: [{ url: 'https://salesagent.cz/blog/external-sales.jpg', width: 640, height: 400, alt: 'Zdroje a kvalita B2B kontaktů na české firmy' }],
   },
@@ -41,6 +41,18 @@ const faqs = [
     q: 'Je databáze firemních e-mailů zdarma vhodná pro oslovení?',
     a: 'Bezplatný seznam může být výchozí podklad pro kontrolu firem, ale často neříká, kdy a odkud kontakt pochází, zda je aktuální a zda už jej někdo odmítl. Zveřejněný e-mail ani nákup databáze navíc samy o sobě nedávají souhlas k zasílání obchodních sdělení.',
   },
+  {
+    q: 'Kde najdu kontakty na firmy zdarma?',
+    a: 'Firmy a IČO ověříte zdarma v ARES a veřejném rejstříku. Veřejné kontaktní údaje a informace o nabídce najdete na firemních webech; dostupnost konkrétních kontaktů se liší.',
+  },
+  {
+    q: 'Která B2B databáze firem je nejlepší?',
+    a: 'Univerzálně nejlepší databáze neexistuje. Záleží na segmentu, požadovaných údajích a aktuálnosti. Před nákupem si vyžádejte vzorek ze svého oboru a ověřte původ dat i možnosti oprav.',
+  },
+  {
+    q: 'Smím poslat e-mail na adresu z veřejného rejstříku?',
+    a: 'Veřejně dostupná adresa sama o sobě není souhlas se zasíláním obchodních sdělení. U stávajících zákazníků může za zákonných podmínek platit výjimka pro vlastní obdobnou nabídku s možností odmítnutí. Konkrétní kampaň si nechte právně posoudit.',
+  },
 ]
 
 const articleSchema = {
@@ -50,7 +62,7 @@ const articleSchema = {
   description,
   image: 'https://salesagent.cz/blog/external-sales.jpg',
   datePublished: '2026-09-25',
-  dateModified: '2026-09-25',
+  dateModified: '2026-11-27',
   inLanguage: 'cs',
   author: { '@type': 'Person', name: 'Petr Kubíček' },
   publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz' },
@@ -75,7 +87,7 @@ export default function Page() {
         <img src="/blog/external-sales.jpg" alt="Zdroje a kvalita B2B kontaktů na české firmy" style={{ width: '100%', borderRadius: '14px', marginBottom: '40px', display: 'block' }} />
         <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '14px' }}>B2B obchod · Firemní data</p>
         <h1 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: 'clamp(28px, 4vw, 42px)', lineHeight: 1.15, marginBottom: '16px' }}>{title}</h1>
-        <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '48px' }}>25. září 2026 · Petr Kubíček · 7 minut čtení</p>
+        <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '48px' }}>25. září 2026 · Aktualizováno 27. listopadu 2026 · Petr Kubíček · 7 minut čtení</p>
 
         <div style={{ fontSize: '17px', lineHeight: 1.75, color: 'var(--text)', display: 'flex', flexDirection: 'column', gap: '24px' }}>
           <p style={{ fontSize: '19px', lineHeight: 1.65 }}><strong>B2B kontakty na české firmy získáte kombinací ARES a obchodního rejstříku pro ověření firem, Sales Navigatoru pro dohledání správné role, komerčních dat a firemních webů pro doplnění kontextu.</strong> Výsledný seznam slučte podle IČO, ověřte aktuálnost každého kontaktu a evidujte zdroj. Seznam firem a oprávnění poslat jim obchodní sdělení jsou dvě různé věci.</p>
@@ -92,6 +104,37 @@ export default function Page() {
 
           <h3>4. Firemní weby: aktuální kontext</h3>
           <p>Web firmy ukáže její služby, lokality, tým a veřejně uvedené kontakty. Ruční kontrola je přesná, ale pomalá; automatizované získávání veřejných údajů pomůže s objemem, pokud respektuje podmínky zdroje a přiměřený rozsah sběru. U každého záznamu si ponechte URL zdroje a datum ověření. Web obvykle pomůže potvrdit relevanci firmy, ne automaticky získat přímý e-mail na rozhodovatele.</p>
+
+          <H2>Která databáze firem se hodí pro váš obchod</H2>
+          <p>Nejlepší databáze neexistuje. Záleží, jestli potřebujete seznam firem, konkrétní osobu, nebo kontext k oslovení.</p>
+          <div style={{ overflowX: 'auto', maxWidth: '100%', minWidth: 0 }}>
+            <table style={{ width: '100%', minWidth: '600px', borderCollapse: 'collapse', fontSize: '15px' }}>
+              <thead><tr style={{ textAlign: 'left', borderBottom: '1px solid var(--border)' }}><th style={{ padding: '10px' }}>Zdroj</th><th style={{ padding: '10px' }}>Co z něj dostanete</th><th style={{ padding: '10px' }}>Platí se</th><th style={{ padding: '10px' }}>Na co nestačí</th></tr></thead>
+              <tbody>
+                <tr><th scope="row" style={{ padding: '10px', textAlign: 'left' }}><Link href="/en/resources/czech-business-companies-register" style={linkStyle}>ARES a obchodní rejstřík</Link></th><td style={{ padding: '10px' }}>IČO, název, sídlo, obor činnosti, statutární osoby</td><td style={{ padding: '10px' }}>Veřejné, zdarma</td><td style={{ padding: '10px' }}>Přímý kontakt na rozhodovatele</td></tr>
+                {[
+                  ['Komerční databáze firem', 'Filtry podle velikosti a oboru, obohacené údaje', 'Placené', 'Aktuálnost ověřte na vzorku'],
+                  ['LinkedIn Sales Navigator', 'Lidé podle role a firmy', 'Placené', 'E-mail a telefon, souhlas s oslovením'],
+                  ['Firemní weby', 'Služby, tým, veřejné kontakty', 'Zdarma, ale ruční práce', 'Objem a aktuálnost'],
+                ].map(([source, data, price, limitation]) => <tr key={source} style={{ borderTop: '1px solid var(--border)' }}><th scope="row" style={{ padding: '10px', textAlign: 'left' }}>{source}</th><td style={{ padding: '10px' }}>{data}</td><td style={{ padding: '10px' }}>{price}</td><td style={{ padding: '10px' }}>{limitation}</td></tr>)}
+              </tbody>
+            </table>
+          </div>
+          <h3>Jmenné příklady dodavatelů</h3>
+          <p><a href="https://www.merk.cz/nastroj/" style={linkStyle}>Merk</a> nabízí vyhledávání a filtrování firemních dat pro ČR a SR. <a href="https://www.bizmachine.com/prospector" style={linkStyle}>BizMachine Prospector</a> poskytuje segmentaci firem a kontaktní údaje pro obchodní týmy. Podle informací výrobců, ověřeno 27. listopadu 2026; konkrétní dostupnost údajů si ověřte na vzorku.</p>
+
+          <H2>Vlastní seznam, nebo koupená databáze?</H2>
+          <p><strong>Koupená databáze</strong> se hodí, když potřebujete rychle větší objem firem v jasně vymezeném segmentu a můžete zkontrolovat vzorek. <strong>Vlastní seznam</strong> dává smysl pro úzký segment desítek až stovek firem, kde rozhoduje relevance a přesná role.</p>
+          <p>Než data koupíte, zeptejte se: Kdy byl záznam naposledy ověřen? Odkud pochází? Má každá firma IČO? Jak se řeší opravy a námitky? Dostanete vzorek ze svého segmentu?</p>
+
+          <H2>Příklad: 100 firem pro první kampaň</H2>
+          <ol style={{ paddingLeft: '24px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            <li>Vymezte segment podle oboru CZ-NACE, velikosti a regionu.</li>
+            <li>Vyhledejte odpovídající firmy a slučte záznamy podle IČO.</li>
+            <li>Na webu každé firmy ověřte, že vašemu zadání skutečně odpovídá.</li>
+            <li>Dohledejte jednu relevantní roli pro danou nabídku.</li>
+            <li>Uložte zdroj a datum ověření, abyste se k údaji mohli vrátit.</li>
+          </ol>
 
           <H2>Jak ze zdrojů udělat kvalitní seznam bez duplicit</H2>
           <ol style={{ paddingLeft: '24px', display: 'flex', flexDirection: 'column', gap: '10px' }}>

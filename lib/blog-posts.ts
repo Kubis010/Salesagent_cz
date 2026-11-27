@@ -9,6 +9,22 @@ export type BlogPost = {
 
 export const posts: BlogPost[] = [
   {
+    href: '/blog/cold-calling-b2b',
+    lang: 'CS',
+    title: 'Cold calling v B2B: skript, námitky a co dovoluje zákon',
+    date: '27. listopadu 2026',
+    description: 'Jak připravit obchodní telefonát, kdy smíte volat a jak reagovat na námitky. Praktický skript a pravidla pro Českou republiku.',
+    image: '/blog/laptop-phone.jpg',
+  },
+  {
+    href: '/blog/b2b-kontakty-ceske-firmy',
+    lang: 'CS',
+    title: 'Kde vzít B2B kontakty na české firmy — legálně, kvalitně a bez duplicit',
+    date: '25. září 2026 · Aktualizováno 27. listopadu 2026',
+    description: 'ARES, obchodní rejstřík, Sales Navigator a další zdroje. Jak z nich sestavit aktuální seznam firem, odstranit duplicity a dodržet pravidla pro práci s kontakty.',
+    image: '/blog/external-sales.jpg',
+  },
+  {
     href: '/blog/fractional-obchodni-reditel',
     lang: 'CS',
     title: 'Fractional obchodní ředitel: kdy dává firmě smysl a co zařídí',
@@ -55,14 +71,6 @@ export const posts: BlogPost[] = [
     date: '5. října 2026',
     description: 'Salesbot s AI, scraperem a CRM, interaktivní Prezentér a Hunter Analytics. Jak nástroje používáme a kolik stojí podle výrobců.',
     image: '/blog/nastroje-automatizace-prodeje-2026.jpg',
-  },
-  {
-    href: '/blog/b2b-kontakty-ceske-firmy',
-    lang: 'CS',
-    title: 'Kde vzít B2B kontakty na české firmy — legálně, kvalitně a bez duplicit',
-    date: '25. září 2026',
-    description: 'ARES, obchodní rejstřík, Sales Navigator a další zdroje. Jak z nich sestavit aktuální seznam firem, odstranit duplicity a dodržet pravidla pro práci s kontakty.',
-    image: '/blog/external-sales.jpg',
   },
   {
     href: '/blog/jak-rozjet-a-zautomatizovat-b2b-obchod',

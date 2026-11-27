@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { type Locale } from '@/lib/i18n'
 import AresCompanySearch from '@/components/AresCompanySearch'
+import MarketEntryGuideLink from '@/components/MarketEntryGuideLink'
 
 export const metadata: Metadata = {
   title: 'Czech Business Register (ARES) — How to Search',
@@ -170,6 +171,12 @@ export default async function CzechRegisterPage({
           </Tip>
         </ContentSection>
 
+        {locale === 'en' && <aside style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: '12px', padding: '24px', margin: '24px 0 40px' }}>
+          <p style={{ fontWeight: 700, marginBottom: '8px' }}>Checking a Czech company because you plan to sell there?</p>
+          <p style={{ color: 'var(--text-muted)', lineHeight: 1.7, marginBottom: '12px' }}>Our Czech market entry guide compares the ways to enter the market, from cross-border sales to a local s.r.o., and shows how to test demand first.</p>
+          <MarketEntryGuideLink placement="ares_box">Read the Czech market entry guide →</MarketEntryGuideLink>
+        </aside>}
+
         <ContentSection id="commercial-register" title="Czech Commercial Register (Obchodní rejstřík)">
           <p>
             The Commercial Register (<em>Obchodní rejstřík</em>) is the official register of
@@ -310,7 +317,7 @@ export default async function CzechRegisterPage({
               see how our Czech market entry service works
             </Link>
             .
-            {locale === 'en' && <>{' '}Planning to enter the Czech market? Read the <Link href="/en/guides/czech-market-entry-for-b2b-companies">Czech market entry playbook for B2B companies</Link>.</>}
+            {locale === 'en' && <>{' '}Planning to enter the Czech market? Read the <MarketEntryGuideLink placement="existing">Czech market entry playbook for B2B companies</MarketEntryGuideLink>.</>}
           </p>
         </div>
       </article>

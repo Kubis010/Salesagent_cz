@@ -119,3 +119,28 @@ test('contact form reports a lead once only after successful server acknowledgem
     assert.equal(statuses.at(-1), accepted ? 'success' : 'error')
   }
 })
+
+
+test('guide clicks require analytics consent, distinguish placement and exclude personal fields', () => {
+  for (const consent of [true, false]) {
+    const x = browser({ consent, path: '/en/resources/czech-business-companies-register' })
+    for (const placement of ['ares_box', 'existing']) {
+      assert.equal(x.measurement.track('guide_click', { placement, email: 'private@example.com' }), consent)
+    }
+    assert.equal(x.measurement.track('guide_click', { placement: 'unrecognised' }), false)
+    assert.equal(events(x).length, consent ? 2 : 0)
+    if (consent) {
+      assert.deepEqual(events(x).map(e => e[2].placement), ['ares_box', 'existing'])
+      assert.doesNotMatch(JSON.stringify(events(x)), /private@example/)
+    }
+  }
+})
+
+test('cold-calling contact placement is tracked only with analytics consent', () => {
+  for (const consent of [true, false]) {
+    const x = browser({ consent, path: '/blog/cold-calling-b2b' })
+    assert.equal(x.measurement.track('contact_click', { link_type: 'contact_page', placement: 'blog_cold_calling' }), consent)
+    if (consent) assert.equal(events(x)[0][2].placement, 'blog_cold_calling')
+    else assert.equal(events(x).length, 0)
+  }
+})
