@@ -112,7 +112,7 @@ export default function Page() {
           Jak AI personalizuje cold emaily — bez šablon, bez proměnných
         </h1>
         <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '48px' }}>
-          15. března 2025 · Petr Kubíček
+          15. března 2025 · SalesAgent.cz
         </p>
 
         <div style={{ fontSize: '17px', lineHeight: 1.75, color: 'var(--text)', display: 'flex', flexDirection: 'column', gap: '24px' }}>

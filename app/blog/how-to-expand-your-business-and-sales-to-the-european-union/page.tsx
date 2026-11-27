@@ -42,9 +42,9 @@ const articleSchema = {
     'A practical guide to expanding B2B sales into the European Union — market research, legal setup, localisation, outreach strategy, and finding the right entry point.',
   url: 'https://salesagent.cz/blog/how-to-expand-your-business-and-sales-to-the-european-union',
   author: {
-    '@type': 'Person',
-    name: 'Petr Kubicek',
-    url: 'https://salesagent.cz/en#founder',
+    '@type': 'Organization',
+    name: 'SalesAgent.cz',
+    url: 'https://salesagent.cz',
   },
   publisher: {
     '@type': 'Organization',
@@ -163,7 +163,7 @@ export default function EUExpansionPage() {
           </h1>
 
           <div style={{ display: 'flex', gap: '16px', alignItems: 'center', marginBottom: '40px', paddingBottom: '32px', borderBottom: '1px solid var(--border)' }}>
-            <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>Petr Kubicek</span>
+            <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>SalesAgent.cz</span>
             <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>·</span>
             <time dateTime="2025-01-15" style={{ fontSize: '13px', color: 'var(--text-muted)' }}>
               January 15, 2025

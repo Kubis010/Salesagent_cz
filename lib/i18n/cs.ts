@@ -134,7 +134,7 @@ export const cs = {
   },
   founder: {
     label: 'Kdo za tím stojí',
-    name: 'Petr Kubíček',
+    name: 'SalesAgent.cz',
     role: 'Sales Robots s.r.o.',
     body: 'Přes 20 let v B2B obchodu, roky v seniorních a vedoucích rolích. Automatizaci stavíme na vlastní infrastruktuře — LinkedIn automatizace, Prezentér i custom vývoj. Neprodávám cizí nástroj — nasadím vám systém a řídím ho, aby vám chodily schůzky se zájemci.',
     credentials: [

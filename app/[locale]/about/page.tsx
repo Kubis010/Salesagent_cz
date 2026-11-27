@@ -71,40 +71,6 @@ export default async function AboutPage({
             : 'A Prague-based team that runs outsourced B2B sales for companies entering the Czech and Slovak market. Our own outreach infrastructure, personal approach.'}
         </p>
 
-        {/* Founder */}
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: '1fr',
-          gap: '40px',
-          alignItems: 'start',
-          marginBottom: '56px',
-        }} className="about-founder">
-          <div>
-            <h2 style={{
-              fontFamily: 'Space Grotesk, sans-serif',
-              fontSize: '24px',
-              fontWeight: 700,
-              letterSpacing: '-0.02em',
-              marginBottom: '8px',
-            }}>
-              Petr Kubíček
-            </h2>
-            <p style={{ fontSize: '14px', color: 'var(--accent)', fontWeight: 600, marginBottom: '16px' }}>
-              Sales Robots s.r.o.
-            </p>
-            <p style={{ fontSize: '16px', color: 'var(--text-muted)', lineHeight: '1.7', marginBottom: '16px' }}>
-              {cs
-                ? 'Patnáct let v B2B obchodu a marketingu, z toho roky v seniorních a vedoucích pozicích. Inženýr Vysoké školy ekonomické v Praze. SalesAgent.cz stavím a provozuji na vlastní infrastruktuře — neprodávám cizí nástroj, ale službu, za kterou ručím osobně.'
-                : 'Fifteen years in B2B sales and marketing, including years in senior and management positions. Engineering degree from the Prague University of Economics and Business. I build and operate SalesAgent.cz on my own infrastructure — I don\'t resell someone else\'s tool, I deliver a service I personally stand behind.'}
-            </p>
-            <div style={{ display: 'flex', gap: '32px', fontSize: '14px', color: 'var(--text-muted)' }}>
-              <div><span style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, color: 'var(--text)', display: 'block' }}>15+</span>{cs ? 'let v B2B' : 'years in B2B'}</div>
-              <div><span style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, color: 'var(--text)', display: 'block' }}>Ing.</span>{cs ? 'VŠE Praha' : 'Prague UoE'}</div>
-              <div><span style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '22px', fontWeight: 700, color: 'var(--text)', display: 'block' }}>48 h</span>{cs ? 'do startu' : 'to launch'}</div>
-            </div>
-          </div>
-        </div>
-
         {/* What we do */}
         <div style={{
           background: 'rgba(255,107,74,0.06)',

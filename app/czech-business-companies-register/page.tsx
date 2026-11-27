@@ -39,9 +39,9 @@ const articleSchema = {
     'A complete guide to searching Czech companies using ARES and the Commercial Register (Obchodní rejstřík).',
   url: 'https://salesagent.cz/czech-business-companies-register',
   author: {
-    '@type': 'Person',
-    name: 'Petr Kubicek',
-    url: 'https://salesagent.cz/en#founder',
+    '@type': 'Organization',
+    name: 'SalesAgent.cz',
+    url: 'https://salesagent.cz',
   },
   publisher: {
     '@type': 'Organization',

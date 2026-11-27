@@ -24,7 +24,7 @@ const faqs = [
   { q: 'Co dělat, když volaný řekne, ať už nevolám?', a: 'Hovor slušně ukončete, odmítnutí bez odkladu zaznamenejte a kontakt z dalších marketingových hovorů vyřaďte. Zkontrolujte také, že se nevrátí při dalším importu.' },
 ]
 const schema = [
-  { '@context': 'https://schema.org', '@type': 'BlogPosting', headline: heading, description, datePublished: date, dateModified: date, inLanguage: 'cs', author: { '@type': 'Person', name: 'Petr Kubíček' }, publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz' }, mainEntityOfPage: { '@type': 'WebPage', '@id': url }, image: 'https://salesagent.cz/blog/laptop-phone.jpg' },
+  { '@context': 'https://schema.org', '@type': 'BlogPosting', headline: heading, description, datePublished: date, dateModified: date, inLanguage: 'cs', author: { '@type': 'Organization', name: 'SalesAgent.cz' }, publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz' }, mainEntityOfPage: { '@type': 'WebPage', '@id': url }, image: 'https://salesagent.cz/blog/laptop-phone.jpg' },
   { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(({ q, a }) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) },
   { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Blog', item: 'https://salesagent.cz/blog' }, { '@type': 'ListItem', position: 2, name: heading, item: url }] },
 ]
@@ -37,7 +37,7 @@ export default function ColdCallingArticle() {
       <nav style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '32px' }}><Link href="/blog" style={link}>Blog</Link> / Cold calling v B2B</nav>
       <p style={{ color: 'var(--accent)', fontSize: '12px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em' }}>B2B obchod · Telefonování</p>
       <h1 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: 'clamp(28px, 4vw, 42px)', lineHeight: 1.2, margin: '14px 0' }}>{heading}</h1>
-      <p style={{ color: 'var(--text-muted)', fontSize: '13px', marginBottom: '36px' }}>27. listopadu 2026 · Petr Kubíček</p>
+      <p style={{ color: 'var(--text-muted)', fontSize: '13px', marginBottom: '36px' }}>27. listopadu 2026 · SalesAgent.cz</p>
       <div className="cold-article">
         <p><strong>Cold calling je telefonát člověku nebo firmě, se kterou ještě nemáte vztah, s cílem nabídnout produkt nebo domluvit schůzku.</strong> V B2B má smysl připravit úzký seznam firem, jasný důvod hovoru a předem ověřit, zda na dané číslo smíte volat.</p>
 

@@ -43,9 +43,9 @@ const articleSchema = {
     'How foreign companies expand B2B sales into European markets without opening offices or hiring local reps — a done-for-you outreach model, validated market by market.',
   url: 'https://salesagent.cz/blog/european-sales-expansion',
   author: {
-    '@type': 'Person',
-    name: 'Petr Kubicek',
-    url: 'https://salesagent.cz/en#founder',
+    '@type': 'Organization',
+    name: 'SalesAgent.cz',
+    url: 'https://salesagent.cz',
   },
   publisher: {
     '@type': 'Organization',
@@ -140,7 +140,7 @@ export default function EuropeanSalesExpansionPage() {
           </h1>
 
           <div style={{ display: 'flex', gap: '16px', alignItems: 'center', marginBottom: '40px', paddingBottom: '32px', borderBottom: '1px solid var(--border)' }}>
-            <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>Petr Kubicek</span>
+            <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>SalesAgent.cz</span>
             <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>·</span>
             <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>26. 8. 2026</span>
           </div>

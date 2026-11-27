@@ -1,5 +1,7 @@
 // Historical English URLs. Keep the middleware and Next.js redirects in sync.
 export const legacyEnRedirects: Record<string, string> = {
+  '/cs/externi-obchodni-reditel': '/cs/externi-obchod',
+  '/externi-obchodni-reditel': '/cs/externi-obchod',
   '/guides': '/en/resources',
   '/pricing': '/en/pricing',
   '/contact': '/en/contact',

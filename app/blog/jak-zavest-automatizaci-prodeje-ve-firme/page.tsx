@@ -46,7 +46,7 @@ const articleSchema = {
   headline: 'Automatizace prodeje a obchodu: co automatizovat v outboundu a co ne',
   description: DESCRIPTION, image: 'https://salesagent.cz/blog/automatizace-prodeje.jpg',
   datePublished: '2025-04-10', dateModified: '2026-10-05', inLanguage: 'cs',
-  author: { '@type': 'Person', name: 'Petr Kubíček', url: 'https://salesagent.cz/cs/about' },
+  author: { '@type': 'Organization', name: 'SalesAgent.cz', url: 'https://salesagent.cz' },
   publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz', logo: { '@type': 'ImageObject', url: 'https://salesagent.cz/logo.svg' } },
   mainEntityOfPage: { '@type': 'WebPage', '@id': URL },
 }
@@ -71,7 +71,7 @@ export default function Page() {
           Automatizace prodeje a obchodu: co automatizovat v outboundu a co ne
         </h1>
         <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '32px' }}>
-          Petr Kubíček · Publikováno 10. dubna 2025 · Aktualizováno 5. října 2026
+          SalesAgent.cz · Publikováno 10. dubna 2025 · Aktualizováno 5. října 2026
         </p>
         <div style={{ fontSize: '17px', lineHeight: 1.75, display: 'flex', flexDirection: 'column', gap: '20px' }}>
           <p>

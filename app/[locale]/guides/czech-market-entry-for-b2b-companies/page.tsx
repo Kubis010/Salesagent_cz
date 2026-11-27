@@ -146,7 +146,7 @@ const articleSchema = {
     { '@type': 'Country', name: 'Czech Republic' },
     { '@type': 'Country', name: 'Slovakia' },
   ],
-  author: { '@type': 'Person', name: 'Petr Kubíček', worksFor: { '@type': 'Organization', name: 'Sales Robots s.r.o.' } },
+  author: { '@type': 'Organization', name: 'SalesAgent.cz', url: 'https://salesagent.cz' },
   publisher: {
     '@type': 'Organization',
     name: 'Sales Robots s.r.o.',
@@ -216,7 +216,7 @@ export default async function GuideCzechMarketEntry({
           </nav>
 
           <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '14px' }}>
-            Playbook · By Petr Kubíček, Sales Robots s.r.o. · Updated <time dateTime="2026-11-27">27 November 2026</time>
+            Playbook · By SalesAgent.cz, Sales Robots s.r.o. · Updated <time dateTime="2026-11-27">27 November 2026</time>
           </p>
           <h1 style={{
             fontFamily: 'Space Grotesk, sans-serif',

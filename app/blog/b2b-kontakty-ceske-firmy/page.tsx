@@ -64,7 +64,7 @@ const articleSchema = {
   datePublished: '2026-09-25',
   dateModified: '2026-11-27',
   inLanguage: 'cs',
-  author: { '@type': 'Person', name: 'Petr Kubíček' },
+  author: { '@type': 'Organization', name: 'SalesAgent.cz' },
   publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': url },
 }
@@ -87,7 +87,7 @@ export default function Page() {
         <img src="/blog/external-sales.jpg" alt="Zdroje a kvalita B2B kontaktů na české firmy" style={{ width: '100%', borderRadius: '14px', marginBottom: '40px', display: 'block' }} />
         <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '14px' }}>B2B obchod · Firemní data</p>
         <h1 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: 'clamp(28px, 4vw, 42px)', lineHeight: 1.15, marginBottom: '16px' }}>{title}</h1>
-        <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '48px' }}>25. září 2026 · Aktualizováno 27. listopadu 2026 · Petr Kubíček · 7 minut čtení</p>
+        <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '48px' }}>25. září 2026 · Aktualizováno 27. listopadu 2026 · SalesAgent.cz · 7 minut čtení</p>
 
         <div style={{ fontSize: '17px', lineHeight: 1.75, color: 'var(--text)', display: 'flex', flexDirection: 'column', gap: '24px' }}>
           <p style={{ fontSize: '19px', lineHeight: 1.65 }}><strong>B2B kontakty na české firmy získáte kombinací ARES a obchodního rejstříku pro ověření firem, Sales Navigatoru pro dohledání správné role, komerčních dat a firemních webů pro doplnění kontextu.</strong> Výsledný seznam slučte podle IČO, ověřte aktuálnost každého kontaktu a evidujte zdroj. Seznam firem a oprávnění poslat jim obchodní sdělení jsou dvě různé věci.</p>

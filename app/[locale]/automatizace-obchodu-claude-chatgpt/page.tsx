@@ -130,9 +130,9 @@ export default async function SalesbotWorkshopPage({ params }: { params: Promise
           <p className={styles.lead}>Oslovujte desítky vhodných firem, aniž byste je museli jednu po druhé ručně hledat.</p>
           <p className={styles.intro}>V 15minutovém návodu zdarma uvidíte, jak s Claudem nebo ChatGPT a Salesbotem najít nové zákazníky, vybrat ty správné a připravit osobní oslovení e-mailem i na LinkedInu. Vy se pak můžete věnovat odpovědím a obchodním jednáním. Bez kódování.</p>
           <div className={`${styles.actions} ${styles.heroActions}`}><a href="#prezentace" className={styles.primary}><PlayIcon /> Pustit návod zdarma</a></div>
-          <p className={styles.finePrint}>Petr vás provede návodem. Pak si vyberete, co vás zajímá, a můžete se zeptat.</p>
+          <p className={styles.finePrint}>Provedeme vás návodem. Pak si vyberete, co vás zajímá, a můžete se zeptat.</p>
           <div className={styles.host}>
-            <div><strong>Petr Kubíček</strong><span>Sales Robots · ukázky ze Salesbota a Prezentéru</span></div>
+            <div><strong>SalesAgent.cz</strong><span>Sales Robots · ukázky ze Salesbota a Prezentéru</span></div>
           </div>
         </div>
         <DemoEmbed />

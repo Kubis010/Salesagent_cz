@@ -8,7 +8,6 @@ const pages = [
   { path: '', priority: 1.0, changeFrequency: 'weekly' as const },
   { path: '/pricing', priority: 0.9, changeFrequency: 'monthly' as const },
   { path: '/contact', priority: 0.8, changeFrequency: 'monthly' as const },
-  { path: '/privacy', priority: 0.3, changeFrequency: 'yearly' as const },
   { path: '/resources', priority: 0.6, changeFrequency: 'monthly' as const },
   {
     path: '/resources/czech-business-companies-register',
@@ -103,14 +102,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: 'monthly',
     priority: 0.8,
     alternates: { languages: { cs: `${BASE_URL}/cs/workshop` } },
-  })
-
-  entries.push({
-    url: `${BASE_URL}/cs/externi-obchodni-reditel`,
-    lastModified: new Date('2026-11-03'),
-    changeFrequency: 'monthly',
-    priority: 0.8,
-    alternates: { languages: { cs: `${BASE_URL}/cs/externi-obchodni-reditel` } },
   })
 
   // CS-only self-serve workshop landing page

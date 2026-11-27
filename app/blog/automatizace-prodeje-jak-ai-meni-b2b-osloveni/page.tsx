@@ -123,7 +123,7 @@ export default function Page() {
         </h1>
 
         <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '40px' }}>
-          5. února 2025 · Petr Kubicek
+          5. února 2025 · SalesAgent.cz
         </p>
 
         <div style={{ fontSize: '17px', lineHeight: 1.75, color: 'var(--text)', display: 'flex', flexDirection: 'column', gap: '24px' }}>

@@ -69,7 +69,7 @@ const articles: Record<
     crumb: 'Obohacení leadů',
     eyebrow: 'B2B obchod · Generování leadů',
     h1: 'Jak obohatit leady: z názvu firmy ke kontaktu na rozhodovatele',
-    byline: '9. října 2026 · Petr Kubíček · 11 minut čtení · platí pro Česko i Slovensko',
+    byline: '9. října 2026 · SalesAgent.cz · 11 minut čtení · platí pro Česko i Slovensko',
     answer:
       'Obohacení leadu znamená doplnit k firmě údaje, které potřebujete, abyste věděli, zda ji oslovit a jak: ověřit ji v ARES, podívat se na její veřejný web a profil na Google Mapách a najít rozhodovatele na LinkedInu. Teprve s těmito daty lze lead ohodnotit a napsat zprávu, která se netváří jako hromadná. Údaje používejte jen z veřejných zdrojů a v souladu s jejich podmínkami.',
     boxTitle: 'Nechcete leady obohacovat sami?',
@@ -214,7 +214,7 @@ const articles: Record<
     crumb: 'Lead enrichment',
     eyebrow: 'B2B sales · Lead generation',
     h1: 'How to enrich B2B leads: from a company name to a decision-maker',
-    byline: '9 October 2026 · Petr Kubíček · 11 min read · for Czech and Slovak companies',
+    byline: '9 October 2026 · SalesAgent.cz · 11 min read · for Czech and Slovak companies',
     answer:
       'Lead enrichment means adding the data you need to decide whether to contact a company and how: verify it in ARES, look at its public website and Google Maps listing, and find the decision-maker on LinkedIn. Only with this data can you score the lead and write a message that does not read like a mass mailing. Use data from public sources only and in line with their terms.',
     boxTitle: 'Rather not enrich leads yourself?',
@@ -479,7 +479,7 @@ export default function LeadEnrichmentArticle({ loc }: { loc: Loc }) {
     datePublished: DATE_ISO,
     dateModified: DATE_ISO,
     inLanguage: c.inLanguage,
-    author: { '@type': 'Person', name: 'Petr Kubíček', url: `${ORIGIN}/cs/about` },
+    author: { '@type': 'Organization', name: 'SalesAgent.cz', url: ORIGIN },
     publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: ORIGIN, logo: { '@type': 'ImageObject', url: `${ORIGIN}/logo.svg` } },
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
   }

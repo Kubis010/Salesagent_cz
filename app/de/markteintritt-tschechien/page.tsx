@@ -63,7 +63,7 @@ const structuredData = {
       image, inLanguage: 'de', url: marketEntryLanguages.de,
       abstract: summary, dateCreated: reviewed, dateModified: reviewed,
       mainEntityOfPage: { '@type': 'WebPage', '@id': marketEntryLanguages.de },
-      author: { '@type': 'Person', name: 'Petr Kubíček', url: 'https://salesagent.cz/en/about', worksFor: { '@id': 'https://salesagent.cz/#organization' } },
+      author: { '@type': 'Organization', name: 'SalesAgent.cz', url: 'https://salesagent.cz' },
       publisher: { '@id': 'https://salesagent.cz/#organization' },
       citation: ['https://mf.gov.cz/cs/ministerstvo/informacni-systemy/ares', 'https://uoou.gov.cz/index.php/profesional/qa-otazky-a-odpovedi/obchodni-sdeleni'],
       speakable: { '@type': 'SpeakableSpecification', cssSelector: ['#de-quick-answer'] },
@@ -105,7 +105,7 @@ export default function GermanMarketEntry() {
       <nav className="de-contents" aria-label="Inhalt">
         <a href="#vertretung">Vertretung oder Gesellschaft?</a><a href="#plan">Die ersten 90 Tage</a><a href="#praxis">Lokale Besonderheiten</a><a href="#faq">Fragen und Antworten</a>
       </nav>
-      <div className="de-byline">Von <a href="/en/about" hrefLang="en">Petr Kubíček</a> · Redaktioneller Stand: <time dateTime={reviewed}>19.11.2026</time></div>
+      <div className="de-byline">Von <a href="/en/about" hrefLang="en">SalesAgent.cz</a> · Redaktioneller Stand: <time dateTime={reviewed}>19.11.2026</time></div>
       <section className="de-answer" aria-labelledby="de-quick-title">
         <h2 id="de-quick-title">Was gehört zum Markteintritt in Tschechien?</h2>
         <p id="de-quick-answer">{summary}</p>
@@ -114,7 +114,7 @@ export default function GermanMarketEntry() {
         <p className="de-eyebrow">Ihr Ansprechpartner vor Ort</p>
         <h2 id="de-about">Vertrieb in Tschechien aufbauen – mit lokaler Begleitung.</h2>
         <p>SalesAgent ist ein Angebot von Sales Robots s.r.o., einem Unternehmen mit Sitz in Prag. Wir unterstützen ausländische B2B-Unternehmen dabei, passende Firmen in Tschechien zu recherchieren, ihr Angebot lokal verständlich zu machen und Geschäftsgespräche vorzubereiten.</p>
-        <p>Petr Kubíček bringt über 20 Jahre Erfahrung im B2B-Vertrieb mit. Unsere Arbeit wird von Menschen geführt und durch eigene Werkzeuge wie Salesbot unterstützt: für Recherche, Vorbereitung der Ansprache und die Organisation von Kontakten und nächsten Schritten. Der Einsatz von Software ersetzt weder die fachliche Prüfung noch die persönliche Abstimmung mit Ihnen.</p>
+        <p>Unsere Arbeit wird von Menschen geführt und durch eigene Werkzeuge wie Salesbot unterstützt: für Recherche, Vorbereitung der Ansprache und die Organisation von Kontakten und nächsten Schritten. Der Einsatz von Software ersetzt weder die fachliche Prüfung noch die persönliche Abstimmung mit Ihnen.</p>
         <p>Vor Beginn vereinbaren wir, wer Unternehmen anspricht, Antworten bearbeitet und Termine führt. Eine Begleitung bei Verhandlungen und weitere Aufgaben sind Teil einer gesondert abgestimmten Verantwortung. Sie können die <a href="/en/sales-representation-czech-republic" hrefLang="en">Leistungen unserer Vertriebsvertretung auf Englisch</a> nachlesen.</p>
       </section>
       <section id="vertretung" aria-labelledby="de-options">

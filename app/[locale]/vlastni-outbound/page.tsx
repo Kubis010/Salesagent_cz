@@ -56,7 +56,7 @@ function getJsonLd(cs: boolean) {
         inLanguage: cs ? 'cs' : 'en',
         description: cs ? 'Praktický průvodce automatizací B2B obchodu od cílení po CRM.' : 'How outsourced B2B outbound works for Czech and Slovak market entry, from target list to booked meetings.',
         about: { '@type': 'Thing', name: 'B2B outbound for market entry' },
-        author: { '@type': 'Person', name: 'Petr Kubíček', url: 'https://salesagent.cz/cs/about' },
+        author: { '@type': 'Organization', name: 'SalesAgent.cz', url: 'https://salesagent.cz' },
       },
       {
         '@type': 'FAQPage',

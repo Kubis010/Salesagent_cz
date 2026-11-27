@@ -134,7 +134,7 @@ export default function Page() {
           </h1>
 
           <div style={{ display: 'flex', gap: '16px', alignItems: 'center', marginBottom: '40px', paddingBottom: '32px', borderBottom: '1px solid var(--border)' }}>
-            <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>Petr Kubicek</span>
+            <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>SalesAgent.cz</span>
             <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>·</span>
             <time dateTime="2025-01-15" style={{ fontSize: '13px', color: 'var(--text-muted)' }}>
               15. ledna 2025

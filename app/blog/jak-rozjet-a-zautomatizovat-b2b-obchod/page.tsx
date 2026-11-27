@@ -54,7 +54,7 @@ const articleSchema = {
   datePublished: '2026-09-20',
   dateModified: '2026-09-25',
   inLanguage: 'cs',
-  author: { '@type': 'Person', name: 'Petr Kubíček' },
+  author: { '@type': 'Organization', name: 'SalesAgent.cz' },
   publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz' },
   mainEntityOfPage: { '@type': 'WebPage', '@id': url },
 }
@@ -81,7 +81,7 @@ export default function Page() {
         <h1 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: 'clamp(28px, 4vw, 42px)', fontWeight: 700, letterSpacing: '-0.025em', lineHeight: 1.15, marginBottom: '16px' }}>
           Jak rozjet a zautomatizovat B2B obchod — bez najímání dalšího obchodníka
         </h1>
-        <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '48px' }}>20. září 2026 · Petr Kubíček · 10 minut čtení</p>
+        <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '48px' }}>20. září 2026 · SalesAgent.cz · 10 minut čtení</p>
 
         <div style={{ fontSize: '17px', lineHeight: 1.75, color: 'var(--text)', display: 'flex', flexDirection: 'column', gap: '24px' }}>
           <p style={{ fontSize: '19px', lineHeight: 1.65 }}>

@@ -19,7 +19,7 @@ export async function generateMetadata({
       ? 'Najdeme, oslovíme a zahřejeme firmy za vás — e-mailem, na LinkedInu i reklamou. Vašemu obchodníkovi přistane připravená schůzka, kterou stačí zavřít. Nasadíme a řídíme za vás. Od 9 900 Kč měsíčně bez DPH.'
       : 'Enter the Czech market without a local team or entity. We prospect, reach decision-makers and book meetings for foreign B2B companies in CZ/SK.',
     keywords: locale === 'cs'
-      ? ['automatizace obchodu', 'řízený outbound', 'reaktivace klientů', 'B2B lead generation', 'schůzky se zájemci', 'LinkedIn oslovování', 'AI prospecting', 'externí obchodní ředitel', 'automatizace oslovení']
+      ? ['automatizace obchodu', 'řízený outbound', 'reaktivace klientů', 'B2B lead generation', 'schůzky se zájemci', 'LinkedIn oslovování', 'AI prospecting', 'automatizace oslovení']
       : ['czech market entry', 'market entry czech republic', 'external sales representation czech republic', 'outsourced sales czech republic', 'sales agent czech republic', 'b2b lead generation czech republic', 'czech and slovak market entry', 'client reactivation service'],
     alternates: {
       canonical: `https://salesagent.cz/${locale}`,
@@ -598,64 +598,7 @@ export default async function HomePage({
             {t.references.note}
           </p>
 
-          {/* Founder */}
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: '1fr',
-              gap: '48px',
-              alignItems: 'start',
-              borderTop: '1px solid var(--border)',
-              paddingTop: '64px',
-            }}
-            className="founder-grid"
-          >
-            {/* Text + credentials */}
-            <div>
-              <div
-                style={{
-                  fontSize: '11px',
-                  fontWeight: 600,
-                  letterSpacing: '0.08em',
-                  textTransform: 'uppercase',
-                  color: 'var(--accent)',
-                  marginBottom: '10px',
-                }}
-              >
-                {t.founder.label}
-              </div>
-              <div style={{ fontFamily: 'var(--home-display, Inter), sans-serif', fontSize: '22px', fontWeight: 700, color: 'var(--text)', lineHeight: 1.2 }}>
-                {t.founder.name}
-              </div>
-              <div style={{ fontSize: '14px', color: 'var(--text-muted)', marginBottom: '16px', marginTop: '4px' }}>
-                {t.founder.role}
-              </div>
-              <p style={{ fontSize: '15px', color: 'var(--text-muted)', lineHeight: '1.75', marginBottom: '28px', maxWidth: '600px' }}>
-                {t.founder.body}
-              </p>
 
-              {/* Credentials */}
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: '10px', maxWidth: '480px' }}>
-                {t.founder.credentials.map((c: { value: string; label: string }, i: number) => (
-                  <div
-                    key={i}
-                    style={{
-                      padding: '14px 10px',
-                      background: 'var(--bg-card)',
-                      border: '1px solid var(--border)',
-                      borderRadius: '10px',
-                      textAlign: 'center',
-                    }}
-                  >
-                    <div className="font-mono-data" style={{ fontSize: 'clamp(17px, 5vw, 22px)', whiteSpace: 'nowrap', fontWeight: 600, color: 'var(--text)', lineHeight: 1, marginBottom: '5px' }}>
-                      {c.value}
-                    </div>
-                    <div style={{ fontSize: '11px', color: 'var(--text-muted)', lineHeight: '1.4' }}>{c.label}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 

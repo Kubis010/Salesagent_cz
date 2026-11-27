@@ -137,7 +137,7 @@ export default function Page() {
           Kdo v ČR postaví a rozjede automatizaci B2B obchodu na klíč?
         </h1>
         <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '48px' }}>
-          14. září 2026 · Petr Kubíček
+          14. září 2026 · SalesAgent.cz
         </p>
 
         <div style={{ fontSize: '17px', lineHeight: 1.75, color: 'var(--text)', display: 'flex', flexDirection: 'column', gap: '24px' }}>

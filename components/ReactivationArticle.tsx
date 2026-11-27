@@ -70,7 +70,7 @@ const articles: Record<
     crumb: 'Reaktivace klientů',
     eyebrow: 'B2B obchod · Reaktivace klientů',
     h1: 'Jak reaktivovat neaktivní klienty: návod krok za krokem',
-    byline: '5. října 2026 · Petr Kubíček · 11 minut čtení · platí pro Česko i Slovensko',
+    byline: '5. října 2026 · SalesAgent.cz · 11 minut čtení · platí pro Česko i Slovensko',
     answer:
       'Reaktivace je obvykle levnější a rychlejší než získávání nového zájemce, protože klienta znáte, máte jeho data a on zná vás. Skládá se z pěti kroků: vybrat segment neaktivních klientů, zjistit důvod, proč přestali kupovat, osobně je oslovit (telefon, e-mail, LinkedIn), s odstupem navázat a zájemce předat obchodníkovi. Nejdůležitější je hovor — upřímný rozhovor, který zjistí, co se u klienta změnilo, ne hned prodejní nabídka.',
     boxTitle: 'Nemáte kapacitu to dělat sami?',
@@ -350,7 +350,7 @@ const articles: Record<
     crumb: 'Client reactivation',
     eyebrow: 'B2B sales · Client reactivation',
     h1: 'How to win back dormant B2B customers: a step-by-step guide',
-    byline: '5 October 2026 · Petr Kubíček · 11 min read · for Czech and Slovak clients',
+    byline: '5 October 2026 · SalesAgent.cz · 11 min read · for Czech and Slovak clients',
     answer:
       'Reactivation is usually cheaper and faster than winning a brand-new lead, because you know the customer, you have their data, and they know you. It has five steps: choose a segment of dormant customers, find out why they stopped buying, contact them personally (phone, email, LinkedIn), follow up over time, and hand interested clients to a salesperson. The most important part is the conversation: an honest call that finds out what changed, not an immediate sales pitch.',
     boxTitle: 'No capacity to do it yourself?',
@@ -747,7 +747,7 @@ export default function ReactivationArticle({ loc }: { loc: Loc }) {
     datePublished: DATE_ISO,
     dateModified: DATE_ISO,
     inLanguage: c.inLanguage,
-    author: { '@type': 'Person', name: 'Petr Kubíček', url: `${ORIGIN}/cs/about` },
+    author: { '@type': 'Organization', name: 'SalesAgent.cz', url: ORIGIN },
     publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: ORIGIN, logo: { '@type': 'ImageObject', url: `${ORIGIN}/logo.svg` } },
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
   }

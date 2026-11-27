@@ -54,7 +54,8 @@ function BookingLink({ label = 'Domluvit nezávaznou schůzku' }: { label?: stri
 
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
-  if (locale !== 'cs') notFound()
+  // Keep the unpublished service in source for possible future restoration.
+  notFound()
   return <main className={styles.page}>
     <section className={styles.hero}><div className={styles.heroInner}>
       <div><p className={styles.eyebrow}><span /> INTERIM A FRACTIONAL OBCHODNÍ ŘEDITEL · B2B · ČR A SK</p><h1>Obchodní ředitel s 20 lety praxe. <em>Bez plného úvazku.</em></h1><p className={styles.lead}>Pomohu vám nastavit obchod, vést obchodníky a otevřít nové trhy. Zkušenosti seniorního obchodního ředitele podle potřeb vaší firmy — včetně praktického využití AI.</p><BookingLink /><p className={styles.heroNote}>První 30minutová konzultace zdarma <span>·</span> nejvýš 2 firmy současně</p></div>

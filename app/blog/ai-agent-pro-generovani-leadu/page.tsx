@@ -111,7 +111,7 @@ export default function Page() {
           Generování B2B leadů v roce 2025: co funguje a co je mrtvé
         </h1>
         <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '48px' }}>
-          20. května 2025 · Petr Kubíček
+          20. května 2025 · SalesAgent.cz
         </p>
 
         <div style={{ fontSize: '17px', lineHeight: 1.75, color: 'var(--text)', display: 'flex', flexDirection: 'column', gap: '24px' }}>

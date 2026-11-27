@@ -44,7 +44,7 @@ export default function Page() {
     {
       '@context': 'https://schema.org', '@type': 'BlogPosting', headline: title, description,
       image: `https://salesagent.cz${image}`, datePublished: date, dateModified: date, inLanguage: 'cs',
-      author: { '@type': 'Person', name: 'Petr Kubíček' },
+      author: { '@type': 'Organization', name: 'SalesAgent.cz' },
       publisher: { '@type': 'Organization', name: 'Sales Robots s.r.o.', url: 'https://salesagent.cz' },
       mainEntityOfPage: { '@type': 'WebPage', '@id': url },
     },
@@ -58,7 +58,7 @@ export default function Page() {
         <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '24px' }}><Link href="/blog" style={linkStyle}>Blog</Link> / Nástroje pro automatizaci prodeje</p>
         <p style={{ color: 'var(--accent)', fontSize: '12px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em' }}>B2B outbound · Náš stack 2026</p>
         <h1 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: 'clamp(28px, 4vw, 42px)', lineHeight: 1.15, margin: '16px 0' }}>{title}</h1>
-        <p style={{ color: 'var(--text-muted)', fontSize: '13px', marginBottom: '28px' }}><time dateTime={date}>5. října 2026</time> · Petr Kubíček · SalesAgent.cz</p>
+        <p style={{ color: 'var(--text-muted)', fontSize: '13px', marginBottom: '28px' }}><time dateTime={date}>5. října 2026</time> · SalesAgent.cz · SalesAgent.cz</p>
         <figure style={{ margin: '0 0 36px' }}>
           <Image src={image} alt="Ilustrace obchodního týmu v kanceláři s digitálními přehledy prodejních aktivit" width={1408} height={768} sizes="(max-width: 820px) 100vw, 772px" priority style={{ width: '100%', height: 'auto', borderRadius: '14px' }} />
           <figcaption style={{ color: 'var(--text-muted)', fontSize: '12px', marginTop: '8px' }}>Ilustrační obrázek: nástroje mají obchodníkovi připravit příležitosti, ne přidat další obrazovky ke správě.</figcaption>
@@ -160,7 +160,7 @@ export default function Page() {
 
           <H2>Časté otázky k nástrojům pro automatizaci prodeje</H2>
           {faqs.map(({ q, a }) => <section key={q}><h3 style={{ fontSize: '20px', lineHeight: 1.4, margin: '0 0 10px' }}>{q}</h3><p style={{ margin: 0 }}>{a}</p></section>)}
-          <p style={{ color: 'var(--text-muted)', fontSize: '14px' }}>Autor: Petr Kubíček, SalesAgent.cz / SalesRobots. Přehled popisuje náš pracovní stack k 5. říjnu 2026; dostupnost funkcí a podmínky vždy ověřte na odkazovaných produktových stránkách.</p>
+          <p style={{ color: 'var(--text-muted)', fontSize: '14px' }}>Autor: SalesAgent.cz / Sales Robots. Přehled popisuje náš pracovní stack k 5. říjnu 2026; dostupnost funkcí a podmínky vždy ověřte na odkazovaných produktových stránkách.</p>
         </div>
       </div>
     </article>

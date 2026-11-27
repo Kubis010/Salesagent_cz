@@ -49,7 +49,7 @@ export default function Header({ locale, t }: HeaderProps) {
     { href: base, label: t.nav.home },
     { href: `${base}/pricing`, label: t.nav.pricing },
     locale === 'cs'
-      ? { href: '/cs/externi-obchodni-reditel', label: 'Externí CSO' }
+      ? { href: '/cs/externi-obchod', label: 'Externí obchod' }
       : { href: `${base}#how-it-works`, label: t.nav.salesRepCz },
     // EN-only: Czech market entry / sales representation service (CS variant is 301'd)
     ...(locale === 'en'

@@ -77,7 +77,6 @@ export default async function ExternalSalesPage({ params }: { params: Promise<{ 
         <article className={styles.card}><h3>SavvyLockers</h3><p className={styles.result}>5+ poptávek za 1 měsíc</p><p>Chytré schránky · B2B</p></article>
       </div><p>Konkrétní reference a doporučení rádi předáme na vyžádání.</p></section>
 
-      <section className={`${styles.section} ${styles.founder}`}><div><p className={styles.eyebrow}>Kdo za tím stojí</p><h2>Petr Kubíček</h2><p>{cs.founder.body}</p></div></section>
 
       <section className={styles.section}><h2>Co potřebujete vědět před startem</h2>{faqs.map(({ q, a }) => <details className={styles.faq} key={q}><summary>{q}</summary><p>{a}</p></details>)}<p><Link href="/blog/gdpr-a-cold-email">Podrobněji: GDPR a cold e-mail →</Link></p></section>
 
